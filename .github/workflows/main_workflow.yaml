@@ -13,16 +13,16 @@ jobs:
         shell: bash
         run: |
           echo "I am Workflow of Parent REPO"
-      # - name: Trigger child repo workflow
-      #   uses: convictional/trigger-workflow-and-wait@v1.6.1
-      #   with:
-      #     owner: positive-intentions
-      #     repo: chat-app
-      #     github_token: ${{ secrets.ACTIONS_KEY }}
-      #     workflow_file_name: child_workflow.yml
-      #     ref: staging
-      #     wait_interval: 10
-      #     propagate_failure: true
-      #     trigger_workflow: true
-      #     wait_workflow: true
+      - name: Trigger child repo workflow
+        uses: convictional/trigger-workflow-and-wait@v1.6.1
+        with:
+          owner: positive-intentions
+          repo: chat-app
+          github_token: ${{ secrets.ACTIONS_KEY }}
+          workflow_file_name: child_workflow.yml
+          ref: staging
+          wait_interval: 10
+          propagate_failure: true
+          trigger_workflow: true
+          wait_workflow: true
           
