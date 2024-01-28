@@ -5,7 +5,8 @@ import "./index.css";
 // import Login from './components/pages/login/Login';
 // import reportWebVitals from './reportWebVitals';
 
-import styles from "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
+// import styles from "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
+import "./index.css";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -13,12 +14,10 @@ import "@fontsource/roboto/700.css";
 import Router from "./components/router/Router";
 import Redux from "./components/redux/Redux";
 import ReduxConnectedPeerProvider from "./components/p2p/ReduxConnectedPeerProvider";
+import ReduxConnectedCryptography from "./components/cryptography/ReduxConnectedCryptography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { StylesProvider, jssPreset } from "@mui/styles";
-import {
-  SnackbarProvider,
-  closeSnackbar,
-} from "./components/notifications/notificationManager";
+import { SnackbarProvider } from "./components/notifications/notificationManager";
 import ErrorBoundary from "./components/atomic/atom/errorBoundary/ErrorBoundary";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./components/translations/i18n";
@@ -26,7 +25,6 @@ import { create } from "jss";
 import rtl from "jss-rtl";
 import { useTranslation } from "react-i18next";
 import { logToNLevelAnalytics } from "./components/utils/analytics";
-import ReduxConnectedCryptography from "./components/cryptography/ReduxConnectedCryptography";
 
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
@@ -129,6 +127,8 @@ const App = () => {
       }),
     [mode],
   );
+
+  // return <div>hello world</div>;
 
   return (
     <React.StrictMode>

@@ -50,7 +50,7 @@ import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import { useTranslation } from "react-i18next";
-import { ColorModeContext } from "../../../../";
+import { ColorModeContext } from "../../../../App.tsx";
 import { useTheme } from "@mui/material/styles";
 import { useNotification } from "../../../notifications/notificationManager";
 import { languages } from "../../../translations/i18n";
