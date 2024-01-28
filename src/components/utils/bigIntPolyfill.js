@@ -58,7 +58,7 @@ if (typeof window.BigInt === "undefined") {
     };
 
     // Placeholder for subtraction (not fully implemented)
-    window.BigInt.prototype.subtract = function (other) {
+    window.BigInt.prototype.subtract = function () {
       // This is a placeholder; actual subtraction logic will be more complex.
       // For simplicity, assume the current number is larger than the 'other'.
       return new window.BigInt("0");

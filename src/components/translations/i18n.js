@@ -71,8 +71,6 @@ i18n
             setAvatar: "Set Avatar",
             displayName: "Display Name",
             cryptoSignature: "Crypto Signature",
-            inAppNotification: "In-app Notifications",
-            browserNotification: "Browser Notifications",
             welcome:
               "positive-intentions is a decentralised, browser-agnostic and no-registration-required P2P chat application providing secure messaging, video calls and data ownership with push notifications and effortless data export/import. All encapsulated within a JavaScript-based Progressive Web App.",
             featuresInclude:
@@ -204,8 +202,6 @@ i18n
             setAvatar: "અવતાર સેટ કરો",
             displayName: "ડિસ્પ્લે નામ",
             cryptoSignature: "ક્રિપ્ટો સિગ્નેચર",
-            inAppNotification: "એપ્લિકેશન નોટિફિકેશન્સ",
-            browserNotification: "બ્રાઉઝર નોટિફિકેશન્સ",
             welcome:
               "પોઝિટિવ-ઇન્ટેન્શન્સ એક ડિસેન્ટ્રલાઇઝ્ડ, બ્રાઉઝર-અગ્નોસ્ટિક અને કોઈ રજીસ્ટ્રેશન જરૂરી નથી P2P ચેટ એપ્લિકેશન છે જે સુરક્ષિત મેસેજિંગ, વિડિઓ કૉલ અને ડેટા માલિકીને પ્રદાન કરે છે જેથી પુશ નોટિફિકેશન અને ડેટા એક્સપોર્ટ / ઇમ્પોર્ટ સહજ છે. બધું જે જાવાસ્ક્રિપ્ટ આધારિત પ્રોગ્રેસિવ વેબ એપ્લિકેશનમાં બંધ કરવામાં આવે છે.",
             featuresInclude:
@@ -448,8 +444,6 @@ i18n
             setAvatar: "设置头像",
             displayName: "显示名称",
             cryptoSignature: "加密签名",
-            inAppNotification: "应用程序通知",
-            browserNotification: "浏览器通知",
             welcome:
               "positive-intentions是一个独立的、独立的、无注册的P2P聊天应用程序，提供安全的消息传递、视频通话和数据所有权，具有推送通知和轻松的数据导出/导入。所有这些都包含在基于JavaScript的渐进式Web应用程序中。",
             featuresInclude:
@@ -577,8 +571,6 @@ i18n
             setAvatar: "अवतार सेट करें",
             displayName: "प्रदर्शन नाम",
             cryptoSignature: "क्रिप्टो हस्ताक्षर",
-            inAppNotification: "ऐप अधिसूचना",
-            browserNotification: "ब्राउज़र अधिसूचना",
             welcome:
               "positive-intentions एक डिसेंट्रलाइज्ड, ब्राउज़र-अग्नोस्टिक और कोई पंजीकरण आवश्यक नहीं P2P चैट ऐप है जो सुरक्षित संदेश, वीडियो कॉल और डेटा स्वामित्व प्रदान करता है जिसमें पुश अधिसूचनाएं और आसान डेटा निर्यात / आयात शामिल हैं। सब कुछ जावास्क्रिप्ट पर आधारित एक प्रगतिशील वेब ऐप में बंद है।",
             featuresInclude:
@@ -700,8 +692,6 @@ i18n
             setAvatar: "Установить аватар",
             displayName: "Отображаемое имя",
             cryptoSignature: "Криптографическая подпись",
-            inAppNotification: "Уведомления приложения",
-            browserNotification: "Уведомления браузера",
             welcome:
               "positive-intentions - это децентрализованное, независимое от браузера, без регистрации приложение для обмена сообщениями P2P, которое обеспечивает безопасную передачу сообщений, видеозвонки и владение данными с push-уведомлениями и без проблем экспорта / импорта данных. Все это вклю",
             featuresInclude:
@@ -824,8 +814,6 @@ i18n
             setAvatar: "Definir avatar",
             displayName: "Nome de exibição",
             cryptoSignature: "Assinatura criptográfica",
-            inAppNotification: "Notificações do aplicativo",
-            browserNotification: "Notificações do navegador",
             welcome:
               "positive-intentions é um aplicativo de bate-papo P2P independente, independente do navegador, sem registro, que fornece mensagens seguras, chamadas de vídeo e propriedade de dados com notificações push e exportação / importação de dados fácil. Tudo isso está contido em um aplicativo da web progressivo baseado em JavaScript.",
             featuresInclude:
@@ -949,8 +937,6 @@ i18n
             setAvatar: "アバターを設定する",
             displayName: "表示名",
             cryptoSignature: "暗号署名",
-            inAppNotification: "アプリの通知",
-            browserNotification: "ブラウザの通知",
             welcome:
               "positive-intentionsは、安全なメッセージング、ビデオ通話、プッシュ通知、簡単なデータエクスポート/インポートを提供する、ブラウザに依存しない、登録不要のP2Pチャットアプリです。すべてはJavaScriptに基づくプログレッシブWebアプリケーションに含まれています。",
             featuresInclude:
@@ -1073,8 +1059,6 @@ i18n
             setAvatar: "Définir l'avatar",
             displayName: "Nom d'affichage",
             cryptoSignature: "Signature cryptographique",
-            inAppNotification: "Notifications de l'application",
-            browserNotification: "Notifications du navigateur",
             welcome:
               "positive-intentions est une application de chat P2P indépendante, indépendante du navigateur, sans inscription, qui fournit des messages sécurisés, des appels vidéo et la propriété de données avec des notifications push et une exportation / importation de données facile. Tout cela est contenu dans une application Web progressive basée sur JavaScript.",
             featuresInclude:
@@ -1186,8 +1170,6 @@ i18n
             setAvatar: "অবতার সেট করুন",
             displayName: "প্রদর্শনীর নাম",
             cryptoSignature: "ক্রিপ্টো স্বাক্ষর",
-            inAppNotification: "অ্যাপ বিজ্ঞপ্তি",
-            browserNotification: "ব্রাউজার বিজ্ঞপ্তি",
             welcome:
               "positive-intentions একটি ব্রাউজার নির্ভরশীল, নিবন্ধনকৃত ছাড়াই একটি পি 2 পি চ্যাট অ্যাপ্লিকেশন যা সুরক্ষিত মেসেজ, ভিডিও কল এবং পুশ বিজ্ঞপ্তি এবং সহজে ডেটা রপ্তানি / আমদানি সরবরাহ করে। এটি সবই জাভাস্ক্রিপ্ট ভিত্তিক প্রগ্রেসিভ ওয়েব অ্যাপ্লিকেশনে রয়েছে।",
             featuresInclude:
@@ -1310,8 +1292,6 @@ i18n
             setAvatar: "Avatar festlegen",
             displayName: "Anzeigename",
             cryptoSignature: "Kryptografische Signatur",
-            inAppNotification: "App-Benachrichtigungen",
-            browserNotification: "Browser-Benachrichtigungen",
             welcome:
               "positive-intentions ist eine browserunabhängige, registrierungsfreie P2P-Chat-App, die sichere Nachrichten, Videoanrufe und Datenbesitz mit Push-Benachrichtigungen und einfacher Datenexport / -import bietet. All dies ist in einer JavaScript-basierten progressiven Webanwendung enthalten.",
             featuresInclude:
@@ -1433,8 +1413,6 @@ i18n
             setAvatar: "Imposta avatar",
             displayName: "Nome da visualizzare",
             cryptoSignature: "Firma crittografica",
-            inAppNotification: "Notifiche dell'app",
-            browserNotification: "Notifiche del browser",
             welcome:
               "positive-intentions è un'app di chat P2P indipendente dal browser, senza registrazione, che fornisce messaggi sicuri, videochiamate e proprietà dei dati con notifiche push e un'esportazione / importazione dati semplice. Tutto questo è contenuto in un'app Web progressiva basata su JavaScript.",
             featuresInclude:
@@ -1544,8 +1522,6 @@ i18n
             setAvatar: "아바타 설정",
             displayName: "표시 이름",
             cryptoSignature: "암호 서명",
-            inAppNotification: "앱 알림",
-            browserNotification: "브라우저 알림",
             welcome:
               "positive-intentions은 브라우저에 독립적이고 등록되지 않은 P2P 채팅 앱으로 안전한 메시지, 비디오 통화 및 푸시 알림 및 간단한 데이터 내보내기 / 가져 오기를 제공합니다. 이 모든 것은 JavaScript 기반의 프로그레시브 웹 응용 프로그램에 포함되어 있습니다.",
             featuresInclude:
@@ -1667,8 +1643,6 @@ i18n
             setAvatar: "Avatar instellen",
             displayName: "Weergavenaam",
             cryptoSignature: "Cryptografische handtekening",
-            inAppNotification: "App-meldingen",
-            browserNotification: "Browsermeldingen",
             welcome:
               "positive-intentions is een browseronafhankelijke, niet-geregistreerde P2P-chat-app die veilige berichten, videogesprekken en pushmeldingen en eenvoudige gegevensexport / import biedt. Dit alles is opgenomen in een op JavaScript gebaseerde progressieve webapplicatie.",
             featuresInclude:
@@ -1791,8 +1765,6 @@ i18n
             setAvatar: "Ustaw awatar",
             displayName: "Nazwa wyświetlana",
             cryptoSignature: "Podpis kryptograficzny",
-            inAppNotification: "Powiadomienia aplikacji",
-            browserNotification: "Powiadomienia przeglądarki",
             welcome:
               "positive-intentions to aplikacja czatu P2P niezależna od przeglądarki, bez rejestracji, która zapewnia bezpieczne wiadomości, rozmowy wideo i własność danych z powiadomieniami push oraz prostym eksportem / importem danych. Wszystko to znajduje się w opartej na JavaScript progresywnej aplikacji internetowej.",
             featuresInclude:
@@ -1916,8 +1888,6 @@ i18n
             setAvatar: "Atur avatar",
             displayName: "Nama tampilan",
             cryptoSignature: "Tanda tangan kripto",
-            inAppNotification: "Notifikasi aplikasi",
-            browserNotification: "Notifikasi browser",
             welcome:
               "positive-intentions adalah aplikasi obrolan P2P independen dari browser, tanpa pendaftaran, yang menyediakan pesan aman, panggilan video, dan kepemilikan data dengan notifikasi push dan ekspor / impor data yang sederhana. Semua ini tercakup dalam aplikasi web progresif berbasis JavaScript.",
             featuresInclude:
@@ -2028,8 +1998,6 @@ i18n
             setAvatar: "Weka avatar",
             displayName: "Jina la kuonyesha",
             cryptoSignature: "Sahihi ya kripto",
-            inAppNotification: "Arifa ya programu",
-            browserNotification: "Arifa ya kivinjari",
             welcome:
               "positive-intentions ni programu ya gumzo ya P2P isiyo na kivinjari, isiyo na usajili, ambayo hutoa ujumbe salama, simu za video, na umiliki wa data na arifa za kushinikiza na kuingiza / kutoa data rahisi. Yote haya yamejumuishwa katika programu ya wavuti ya maendeleo ya JavaScript.",
             featuresInclude:
@@ -2141,8 +2109,6 @@ i18n
             setAvatar: "Avatar ayarla",
             displayName: "Görünen ad",
             cryptoSignature: "Kripto imza",
-            inAppNotification: "Uygulama bildirimleri",
-            browserNotification: "Tarayıcı bildirimleri",
             welcome:
               "positive-intentions, güvenli mesajlaşma, video görüşmeleri ve basit veri dışa aktarma / içe aktarma ile tarayıcıdan bağımsız, kayıt olmadan P2P sohbet uygulamasıdır. Tüm bunlar JavaScript tabanlı bir ilerici web uygulamasında sunulmaktadır.",
             featuresInclude:
@@ -2255,8 +2221,6 @@ i18n
             setAvatar: "تعيين الصورة الرمزية",
             displayName: "اسم العرض",
             cryptoSignature: "التوقيع الرقمي",
-            inAppNotification: "إشعارات التطبيق",
-            browserNotification: "إشعارات المتصفح",
             welcome:
               "positive-intentions هو تطبيق دردشة P2P مستقل عن المتصفح ، بدون تسجيل ، يوفر رسائل آمنة ومكالمات فيديو وملكية البيانات مع إشعارات الدفع وتصدير / استيراد البيانات البسيطة. كل هذا مدمج في تطبيق ويب تقدمي قائم على JavaScript.",
             featuresInclude:
@@ -2378,8 +2342,6 @@ i18n
             setAvatar: "Thiết lập hình đại diện",
             displayName: "Tên hiển thị",
             cryptoSignature: "Chữ ký mật mã",
-            inAppNotification: "Thông báo ứng dụng",
-            browserNotification: "Thông báo trình duyệt",
             welcome:
               "positive-intentions là một ứng dụng trò chuyện P2P độc lập khỏi trình duyệt, không đăng ký, cung cấp tin nhắn an toàn, cuộc gọi video và sở hữu dữ liệu với thông báo đẩy và xuất / nhập dữ liệu đơn giản. Tất cả điều này được tích hợp trong một ứng dụng web tiến bộ dựa trên JavaScript.",
             featuresInclude:
@@ -2501,8 +2463,6 @@ i18n
             setAvatar: "הגדר אווטר",
             displayName: "שם להציג",
             cryptoSignature: "חתימה קריפטוגרפית",
-            inAppNotification: "התראות אפליקציה",
-            browserNotification: "התראות דפדפן",
             welcome:
               "positive-intentions היא אפליקציית צ'אט P2P עצמאית מהדפדפן, ללא הרשמה, המספקת הודעות מאובטחות, שיחות וידאו ובעלות נתונים עם הודעות דחיפה וייצוא / ייבוא נתונים פשוטים. כל זה מובנה ביישום ווב מתקדם המבוסס על JavaScript.",
             featuresInclude:
@@ -2620,8 +2580,6 @@ i18n
             setAvatar: "avatar chep",
             displayName: "qonwIj pong",
             cryptoSignature: "crypto Daqel",
-            inAppNotification: "app-ghap qIp",
-            browserNotification: "browser qIp",
             welcome:
               "positive-intentions chel P2P chat app browser, ghogh, messages, video calls, 'ej data ownership push notifications, 'ej export / import data. 'op app web-based JavaScript.",
             featuresInclude:
@@ -2745,8 +2703,6 @@ i18n
             setAvatar: "అవతార్ సెట్ చేయండి",
             displayName: "ప్రదర్శన పేరు",
             cryptoSignature: "క్రిప్టో సంతకం",
-            inAppNotification: "అనువర్తన ప్రకటన",
-            browserNotification: "బ్రౌజర్ ప్రకటన",
             welcome:
               "positive-intentions ఒక బ్రౌజర్ నుండి స్వయంచాలకంగా పీ2పీ చాట్ అనువర్తనం, సందేశాలు, వీడియో కాల్స్ మరియు డేటా స్వతంత్రత ప్రసారాలను అందిస్తుంది. ఇది జావాస్క్రిప్ట్ ఆధారిత ఒక అడ్వాన్స్ వెబ్ అనువర్తనం.",
             featuresInclude:
@@ -2868,8 +2824,6 @@ i18n
             setAvatar: "அவதார் அமைக்கவும்",
             displayName: "பயனர் பெயர்",
             cryptoSignature: "கிரிப்டோ கையொப்பம்",
-            inAppNotification: "பயன்பாட்டு அறிவிப்பு",
-            browserNotification: "உலாவி அறிவிப்பு",
             welcome:
               "positive-intentions ஒரு உலாவி அடிப்படையில் சுயவிவரம் மற்றும் தரவு சுயவிவரத்தை வழங்குகிறது, செயல்பாடுகள், வீடியோ அழைப்புகள் மற்றும் தரவு சுயவிவரத்தை வழங்குகிறது. இது ஜாவாஸ்கிரிப்ட் அடிப்படையில் ஒரு மேம்பாட்டு வலை பயன்பாடு.",
             featuresInclude:
@@ -2991,8 +2945,6 @@ i18n
             setAvatar: "اوتار ترتیب دیں",
             displayName: "نام",
             cryptoSignature: "کرپٹو سائنیچر",
-            inAppNotification: "ان ایپ کی اطلاع",
-            browserNotification: "براؤزر کی اطلاع",
             welcome:
               "positive-intentions ایک ایپ کی بنیادی پروفائل اور ڈیٹا پلیٹ فارم ہے جو اپنے پروفائل اور خصوصی معلومات کو آپ کے سرور اور خصوصی سرورز پر محفوظ طریقے سے ذخیرہ کرتا ہے. یہ ایک جاوا اسکرپٹ پر مبنی ایک معیاری ویب ایپلی کیشن ہے.",
             featuresInclude:
@@ -3110,8 +3062,6 @@ i18n
             setAvatar: "設置頭像",
             displayName: "顯示名稱",
             cryptoSignature: "加密簽名",
-            inAppNotification: "應用程式通知",
-            browserNotification: "瀏覽器通知",
             welcome:
               "positive-intentions 是一個基於瀏覽器的個人資料和數據平台，可將您的個人資料和私人信息安全地存儲在您的服務器和私人服務器上。 它是一個基於JavaScript的標準Web應用程序。",
             featuresInclude:
@@ -3233,8 +3183,6 @@ i18n
             setAvatar: "Встановити аватар",
             displayName: "Ім'я користувача",
             cryptoSignature: "Криптографічний підпис",
-            inAppNotification: "Сповіщення додатка",
-            browserNotification: "Сповіщення браузера",
             welcome:
               "positive-intentions - це основна платформа профілів та обробки даних на основі браузера, яка безпечно зберігає ваш профіль, ваш сервер та ваші приватні сервери. Це стандартний веб-додаток на основі JavaScript.",
             featuresInclude:

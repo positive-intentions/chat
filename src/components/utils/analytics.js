@@ -13,7 +13,7 @@ export const logToNLevelAnalytics = async (action) => {
   };
 
   try {
-    const response = await fetch(url, {
+    await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
