@@ -57,12 +57,14 @@ export default () => {
   );
 
   useEffect(() => {
-    setRouter(createBrowserRouter([
-      {
-        path: "*",
-        element: <Maintainance />,
-      },
-    ]));
+    setRouter(
+      createBrowserRouter([
+        {
+          path: "*",
+          element: <Maintainance />,
+        },
+      ]),
+    );
   }, [storedUsername]);
 
   // useEffect(() => {

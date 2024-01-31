@@ -1,4 +1,4 @@
-import React, {} from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { makeStyles } from "@mui/styles";
