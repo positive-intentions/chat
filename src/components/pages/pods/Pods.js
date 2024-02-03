@@ -18,7 +18,7 @@ import { compiler as profileCompiler } from "../../blockchain/chains/profileChai
 import { compiler as podCompiler } from "../../blockchain/chains/podChain";
 import { useNotification } from "../../notifications/notificationManager";
 import { useTranslation } from "react-i18next";
-import { ColorModeContext } from "../../..";
+import { ColorModeContext } from "../../../App.tsx";
 import { t } from "i18next";
 import { logToNLevelAnalytics } from "../../utils/analytics";
 import { CoachMark } from "react-coach-mark";

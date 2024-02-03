@@ -59,7 +59,7 @@ import {
   SceneLoader,
   PhysicsImpostor,
 } from "@babylonjs/core";
-import SceneComponent from "./SceneComponent"; // uses above component in same directory
+import SceneComponent from "./SceneComponent.jsx"; // uses above component in same directory
 // import SceneComponent from 'babylonjs-hook'; // if you install 'babylonjs-hook' NPM.
 // import "./App.css";
 
