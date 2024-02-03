@@ -1,37 +1,37 @@
 {
   "icons": [
     {
-      "src": "icon_512x512.6ba19993e5858a75794f64b511eec86f.png",
+      "src": "/icon_512x512.6ba19993e5858a75794f64b511eec86f.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "icon_384x384.734cd7de30db54389e945c5a7daffd6b.png",
+      "src": "/icon_384x384.734cd7de30db54389e945c5a7daffd6b.png",
       "sizes": "384x384",
       "type": "image/png"
     },
     {
-      "src": "icon_256x256.d01b3819d0812f641d33c550c8cfa4ea.png",
+      "src": "/icon_256x256.d01b3819d0812f641d33c550c8cfa4ea.png",
       "sizes": "256x256",
       "type": "image/png"
     },
     {
-      "src": "icon_192x192.8657aef3016cd6ddd82aae8e577e359d.png",
+      "src": "/icon_192x192.8657aef3016cd6ddd82aae8e577e359d.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon_128x128.1a68a1b7b2101391792aa075844f42a6.png",
+      "src": "/icon_128x128.1a68a1b7b2101391792aa075844f42a6.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "icon_96x96.7d926ad0c36fcc378b71eb7b9777e3b8.png",
+      "src": "/icon_96x96.7d926ad0c36fcc378b71eb7b9777e3b8.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "icon_96x96.c8e6c0f69a9731b2f220d36a46d3adea.ico",
+      "src": "/icon_96x96.c8e6c0f69a9731b2f220d36a46d3adea.ico",
       "sizes": "96x96",
       "type": "image/vnd.microsoft.icon"
     }
