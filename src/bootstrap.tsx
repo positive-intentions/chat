@@ -6,7 +6,6 @@ import MainApp from "./App.tsx";
 const App = () => {
   return (
     <div>
-      <Example>positive-intentions</Example>
       <MainApp />
     </div>
   );

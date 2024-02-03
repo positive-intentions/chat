@@ -22,6 +22,7 @@ import { ColorModeContext } from "../../../App.tsx";
 import { t } from "i18next";
 import { logToNLevelAnalytics } from "../../utils/analytics";
 import { CoachMark } from "react-coach-mark";
+import ExampleButton from 'pi-base/Example';
 
 const useStyles = makeStyles((theme) => ({
   root: {

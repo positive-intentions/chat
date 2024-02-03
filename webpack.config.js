@@ -14,7 +14,7 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: ""
+        publicPath: "/"
     },
     devServer: {
         static: path.resolve(__dirname, "/dist"),
@@ -107,10 +107,14 @@ module.exports = {
             inject: true,
         }),
         new ModuleFederationPlugin({
-            name: 'frontendBase',
+            name: 'chatApp',
             filename: 'remoteEntry.js',
-            exposes: {
-                './Example': './src/stories/components/Example.tsx',
+            // exposes: {
+            //     './Example': './src/stories/components/Example.tsx',
+            // },
+            remotes: {
+                // frontendBase: "frontendBase@https://example-staging.positive-intentions.com/remoteEntry.js",
+                "pi-base": "frontendBase@http://localhost:3000/remoteEntry.js",
             },
             // shared: {react: {singleton: true}, "react-dom": {singleton: true}}
         }),
