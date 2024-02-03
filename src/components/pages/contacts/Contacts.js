@@ -125,7 +125,7 @@ import {
 } from "../../blockchain/chains/profileChain";
 import ConnectToPeer from "../../atomic/molecules/connect-to-peer/ConnectToPeer";
 import { red } from "@mui/material/colors";
-import { ColorModeContext } from "../../..";
+import { ColorModeContext } from "../../../App.tsx";
 import { useTranslation } from "react-i18next";
 import { logToNLevelAnalytics } from "../../../components/utils/analytics";
 import { CoachMark } from "react-coach-mark";

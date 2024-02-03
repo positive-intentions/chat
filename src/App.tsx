@@ -42,7 +42,7 @@ const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
 // i18n.then (() => console.log('translations loaded'))
 
-logToNLevelAnalytics();
+// logToNLevelAnalytics();
 
 export const ColorModeContext = React.createContext({
   toggleColorMode: () => {},

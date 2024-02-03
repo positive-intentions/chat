@@ -176,7 +176,7 @@ import {
   blockBuilders,
 } from "../../blockchain/chains/profileChain";
 import SignatureCanvas from "../../atomic/atom/signatureCanvas/SignatureCanvas";
-import { ColorModeContext } from "../../..";
+import { ColorModeContext } from "../../../App.tsx";
 // import {Adsense} from '@ctrl/react-adsense';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -305,8 +305,8 @@ export default function LoginPage() {
     dispatch(setInAppNotification(inAppNotification));
   const setBrowserNotificationDispatch = (browserNotification) =>
     dispatch(setBrowserNotification(browserNotification));
-  const { enqueueSnackbar } = useSnackbar();
-  const sendNotification = useNotification();
+  // const { enqueueSnackbar } = useSnackbar();
+  // const sendNotification = useNotification();
 
   const fileRef = useRef(null);
   const setAvatarRef = useRef(null);
@@ -457,17 +457,17 @@ export default function LoginPage() {
     onChange: handleBrowserNotificationChange,
   };
 
-  // useEffect(() => {
-  //   if (contactId && storedUsername && (storedConnectionId !== contactId)) {
-  //     navigate(`/pods`);
-  //     navigate(`/contacts`);
-  //     navigate(`/contact/${contactId}`);
-  //   }
+  useEffect(() => {
+    if (contactId && storedUsername && (storedConnectionId !== contactId)) {
+      navigate(`/pods`);
+      navigate(`/contacts`);
+      navigate(`/contact/${contactId}`);
+    }
 
-  //   if (!contactId && storedUsername) {
-  //     navigate(`/pods`);
-  //   }
-  // }, [contactId, storedUsername]);
+    if (!contactId && storedUsername) {
+      navigate(`/pods`);
+    }
+  }, [contactId, storedUsername]);
 
   const { t, i18n } = useTranslation();
   const pageTitle = t("loginPage.pageTitle");
@@ -873,7 +873,7 @@ export default function LoginPage() {
         <Typography variant="p" gutterBottom>
           {t("Temporarily unavailable. Apologies for the inconvenience.")}
         </Typography>
-        {!!false && (
+        {!false && (
           <>
             <br />
             <Typography variant="p" gutterBottom>

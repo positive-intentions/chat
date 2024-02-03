@@ -1,16 +1,26 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const WorkboxPlugin = require('workbox-webpack-plugin');
+const { HotModuleReplacementPlugin } = require('webpack');
 const { ModuleFederationPlugin } = require('webpack').container;
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 
+const isDevelopment = process.env.NODE_ENV !== 'production';
+
+
 module.exports = {
-    mode: 'development',
+    mode: isDevelopment ? 'development' : 'production',
     entry: './src/index.ts',
     output: {
         filename: 'main.js',
-        path: __dirname + '/dist',
+        path: path.resolve(__dirname, 'dist'),
         publicPath: ""
+    },
+    devServer: {
+        static: path.resolve(__dirname, "/dist"),
+        watchContentBase: true,
+        hot: true,
+        historyApiFallback: true,
     },
     module: {
         rules: [
@@ -22,10 +32,17 @@ module.exports = {
                     presets: ["@babel/preset-react"],
                 },
             },
-            // css loader
+            // css and scss loader
             {
-                test: /\.css$/,
+                // test: /\.css$/,
+                test: /\.(css|scss)$/,
                 use: ["style-loader", "css-loader"],
+            },
+
+            // image loader
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: "asset/resource",
             },
         ],
     },
@@ -48,6 +65,7 @@ module.exports = {
         //     include: [/\.html$/, /\.js$/, /\.css$/, /\.woff$/, /\.woff2$/, /\.ttf$/, /\.eot$/, /\.svg$/],
 
         // }),
+        // new HotModuleReplacementPlugin(),
         new WebpackPwaManifest({
             filename: "manifest.json",
             name: 'positive-intentions',
@@ -61,8 +79,8 @@ module.exports = {
                 // },
                 {
                     src: path.resolve('./public/favicon.ico'),
-                    sizes: [96, 128, 192, 256, 384, 512] // multiple sizes
-                  },
+                    sizes: [96] // multiple sizes
+                },
                 // {
                 //   "src": "logo192.png",
                 //   "type": "image/png",
@@ -78,6 +96,7 @@ module.exports = {
                     sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
                     maskable: true,
                 }
+                
 
               ],
               "start_url": ".",
