@@ -458,7 +458,7 @@ export default function LoginPage() {
   };
 
   useEffect(() => {
-    if (contactId && storedUsername && (storedConnectionId !== contactId)) {
+    if (contactId && storedUsername && storedConnectionId !== contactId) {
       navigate(`/pods`);
       navigate(`/contacts`);
       navigate(`/contact/${contactId}`);

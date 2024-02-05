@@ -25,6 +25,7 @@ import { create } from "jss";
 import rtl from "jss-rtl";
 import { useTranslation } from "react-i18next";
 import { logToNLevelAnalytics } from "./components/utils/analytics";
+// import { PaletteMode } from "@mui/material";
 
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
