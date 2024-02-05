@@ -7,10 +7,14 @@
     "noImplicitAny": false,
     "sourceMap": true,
     "preserveConstEnums":true,
+    "jsx": "react-jsx",
     "lib": [
         "dom",
         "es6"
     ],
-    "rootDir": "src"
+    "rootDir": "src",
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
   }
 }

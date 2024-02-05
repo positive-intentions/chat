@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import Example from "./stories/components/Example.tsx";
 import MainApp from "./App.tsx";
 
-const App = () => {
+export const App = () => {
   return (
     <div>
       <MainApp />
