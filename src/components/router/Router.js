@@ -56,156 +56,156 @@ export default () => {
     TermsAndConditions[TermsAndConditions.length - 1]?.version,
   );
 
-  useEffect(() => {
-    setRouter(
-      createBrowserRouter([
-        {
-          path: "*",
-          element: <Maintainance />,
-        },
-      ]),
-    );
-  }, [storedUsername]);
-
   // useEffect(() => {
-  //   if (!storedUsername || !agreedToLatestTerms) {
-  //     setRouter(
-  //       createBrowserRouter([
-  //         {
-  //           path: "*",
-  //           element: <Navigate to="/login" />,
-  //         },
-  //         {
-  //           path: "/terms",
-  //           element: <TermsAndConditionsComponent />,
-  //         },
-  //         {
-  //           path: "/login",
-  //           element: <Login />,
-  //         },
-  //         {
-  //           path: "/login/:contactId",
-  //           element: <Login />,
-  //         },
-  //         {
-  //           path: "/login/:contactId/:contactName",
-  //           element: <Login />,
-  //         },
-  //         {
-  //           path: "/feed",
-  //           element: <Feed />,
-  //         },
-  //         {
-  //           path: "/verse",
-  //           element: (
-  //             <Suspense fallback={<div>Loading...</div>}>
-  //               <Verse />
-  //             </Suspense>
-  //           ),
-  //         },
-  //         {
-  //           path: "/map",
-  //           element: <Map />,
-  //         },
-  //         {
-  //           path: "/ai",
-  //           element: <AI />,
-  //         },
-  //       ]),
-  //     );
-  //   } else {
-  //     setRouter(
-  //       createBrowserRouter([
-  //         {
-  //           path: "*",
-  //           element: <Navigate to="/pods" />,
-  //         },
-  //         {
-  //           path: "/login/:contactId",
-  //           element: <Login />,
-  //         },
-  //         {
-  //           path: "/terms",
-  //           element: <TermsAndConditionsComponent />,
-  //         },
-  //         {
-  //           path: "/login/:contactId/:contactName",
-  //           element: <Login />,
-  //         },
-  //         {
-  //           path: "/contacts",
-  //           exact: true,
-  //           element: <Contacts />,
-  //         },
-  //         {
-  //           path: "/contact/:contactId",
-  //           element: <ContactDetails />,
-  //         },
-  //         {
-  //           path: "/pods",
-  //           element: <Pods />,
-  //         },
-  //         {
-  //           path: "/pod/:podId",
-  //           element: <Pod />,
-  //         },
-  //         {
-  //           path: "/pod/:podId/details",
-  //           element: <PodDetails />,
-  //         },
-  //         {
-  //           path: "/pod/:podId/files",
-  //           element: <Files />,
-  //         },
-  //         {
-  //           path: "/pod/:podId/file/:fileId",
-  //           element: <File />,
-  //         },
-  //         {
-  //           path: "/pod/:podId/verse",
-  //           element: (
-  //             <Suspense fallback={<div>Loading...</div>}>
-  //               <Verse />
-  //             </Suspense>
-  //           ),
-  //         },
-  //         {
-  //           path: "/profile",
-  //           element: <Profile />,
-  //         },
-  //         {
-  //           path: "/profile/qr",
-  //           element: <Profile qr />,
-  //         },
-  //         {
-  //           path: "/feed",
-  //           element: (
-  //             // <SplitPane split="vertical" minSize={350}>
-  //             //   <Pods />
-  //             <Feed />
-  //             // </SplitPane>
-  //           ),
-  //         },
-  //         {
-  //           path: "/verse",
-  //           element: (
-  //             <Suspense fallback={<div>Loading...</div>}>
-  //               <Verse />
-  //             </Suspense>
-  //           ),
-  //         },
-  //         {
-  //           path: "/map",
-  //           element: <Map />,
-  //         },
-  //         {
-  //           path: "/ai",
-  //           element: <AI />,
-  //         },
-  //       ]),
-  //     );
-  //   }
+  //   setRouter(
+  //     createBrowserRouter([
+  //       {
+  //         path: "*",
+  //         element: <Maintainance />,
+  //       },
+  //     ]),
+  //   );
   // }, [storedUsername]);
+
+  useEffect(() => {
+    if (!storedUsername || !agreedToLatestTerms) {
+      setRouter(
+        createHashRouter([
+          {
+            path: "*",
+            element: <Navigate to="/login" />,
+          },
+          {
+            path: "/terms",
+            element: <TermsAndConditionsComponent />,
+          },
+          {
+            path: "/login",
+            element: <Login />,
+          },
+          {
+            path: "/login/:contactId",
+            element: <Login />,
+          },
+          {
+            path: "/login/:contactId/:contactName",
+            element: <Login />,
+          },
+          {
+            path: "/feed",
+            element: <Feed />,
+          },
+          {
+            path: "/verse",
+            element: (
+              <Suspense fallback={<div>Loading...</div>}>
+                <Verse />
+              </Suspense>
+            ),
+          },
+          {
+            path: "/map",
+            element: <Map />,
+          },
+          {
+            path: "/ai",
+            element: <AI />,
+          },
+        ]),
+      );
+    } else {
+      setRouter(
+        createHashRouter([
+          {
+            path: "*",
+            element: <Navigate to="/pods" />,
+          },
+          {
+            path: "/login/:contactId",
+            element: <Login />,
+          },
+          {
+            path: "/terms",
+            element: <TermsAndConditionsComponent />,
+          },
+          {
+            path: "/login/:contactId/:contactName",
+            element: <Login />,
+          },
+          {
+            path: "/contacts",
+            exact: true,
+            element: <Contacts />,
+          },
+          {
+            path: "/contact/:contactId",
+            element: <ContactDetails />,
+          },
+          {
+            path: "/pods",
+            element: <Pods />,
+          },
+          {
+            path: "/pod/:podId",
+            element: <Pod />,
+          },
+          {
+            path: "/pod/:podId/details",
+            element: <PodDetails />,
+          },
+          {
+            path: "/pod/:podId/files",
+            element: <Files />,
+          },
+          {
+            path: "/pod/:podId/file/:fileId",
+            element: <File />,
+          },
+          {
+            path: "/pod/:podId/verse",
+            element: (
+              <Suspense fallback={<div>Loading...</div>}>
+                <Verse />
+              </Suspense>
+            ),
+          },
+          {
+            path: "/profile",
+            element: <Profile />,
+          },
+          {
+            path: "/profile/qr",
+            element: <Profile qr />,
+          },
+          {
+            path: "/feed",
+            element: (
+              // <SplitPane split="vertical" minSize={350}>
+              //   <Pods />
+              <Feed />
+              // </SplitPane>
+            ),
+          },
+          {
+            path: "/verse",
+            element: (
+              <Suspense fallback={<div>Loading...</div>}>
+                <Verse />
+              </Suspense>
+            ),
+          },
+          {
+            path: "/map",
+            element: <Map />,
+          },
+          {
+            path: "/ai",
+            element: <AI />,
+          },
+        ]),
+      );
+    }
+  }, [storedUsername]);
 
   return router?.state && <RouterProvider router={router} />;
 };

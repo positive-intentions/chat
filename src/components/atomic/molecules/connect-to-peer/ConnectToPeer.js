@@ -126,13 +126,13 @@ const ConnectToPeer = ({ qr, open, link, collapse }) => {
     if (collapse) {
       setExpanded([]);
     } else {
-      navigate(`/login/${extractIDFromLink(peerLink)}`);
+      navigate(`/#/login/${extractIDFromLink(peerLink)}`);
     }
   };
 
   const handleCopyConnectionIdToClipboard = () => {
     navigator.clipboard.writeText(
-      `${window.location.origin}/login/${storedConnectionId}${contactNamePreset ? `/${contactNamePreset}` : ""}`,
+      `${window.location.origin}/#/login/${storedConnectionId}${contactNamePreset ? `/${contactNamePreset}` : ""}`,
     );
   };
 
@@ -196,7 +196,7 @@ const ConnectToPeer = ({ qr, open, link, collapse }) => {
               id="connectionId"
               label={t("components.connectToPeer.shareToConnect")}
               name="connectionId"
-              value={`${window.location.origin}/login/${storedConnectionId}${contactNamePreset ? `/${contactNamePreset}` : ""}`}
+              value={`${window.location.origin}/#/login/${storedConnectionId}${contactNamePreset ? `/${contactNamePreset}` : ""}`}
               onChange={handleConnectionIdChange}
               InputProps={{
                 readOnly: true,
@@ -285,7 +285,7 @@ const ConnectToPeer = ({ qr, open, link, collapse }) => {
                 ref={qrcodeRef}
                 size={256}
                 style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-                value={`${window.location.origin}/login/${storedConnectionId}`}
+                value={`${window.location.origin}/#/login/${storedConnectionId}`}
                 viewBox={`0 0 256 256`}
               />
             )}

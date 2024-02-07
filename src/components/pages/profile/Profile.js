@@ -211,7 +211,7 @@ export default function Profile({ qr }) {
 
   const handleCopyConnectionIdToClipboard = () => {
     navigator.clipboard.writeText(
-      `${window.location.origin}/login/${storedConnectionId}${contactNamePreset ? `/${contactNamePreset}` : ""}`,
+      `${window.location.origin}/#/login/${storedConnectionId}${contactNamePreset ? `/${contactNamePreset}` : ""}`,
     );
     // navigate(`/contacts/${storedConnectionId}`)
   };
