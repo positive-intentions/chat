@@ -185,6 +185,7 @@ import JSZip from "jszip";
 import { useTranslation } from "react-i18next";
 import { useCryptography } from "../../cryptography/Cryptography";
 import { CoachMark } from "react-coach-mark";
+import hipaintImage from "../../../../public/logo512.png";
 
 const avatars = [
   {
@@ -637,6 +638,7 @@ export default function LoginPage() {
   const ref4 = useRef(null);
   const ref5 = useRef(null);
   const ref6 = useRef(null);
+  const ref7 = useRef(null);
 
   const coachList = [
     // {
@@ -737,7 +739,7 @@ export default function LoginPage() {
 
   const handleCopyConnectionIdToClipboard = () => {
     navigator.clipboard.writeText(
-      `${window.location.origin}/login/${storedConnectionId}`,
+      `${window.location.origin}/#/login/${storedConnectionId}`,
     );
   };
 
@@ -758,7 +760,7 @@ export default function LoginPage() {
             id="connectionId"
             label="Share to connect"
             name="connectionId"
-            defaultValue={`${window.location.origin}/login/${storedConnectionId}`}
+            defaultValue={`${window.location.origin}/#/login/${storedConnectionId}`}
             readOnly
             InputProps={{
               endAdornment: (
@@ -780,7 +782,6 @@ export default function LoginPage() {
   }
 
   // the hipain image to use as the default file
-  const hipaintImage = "/logo-large.png";
 
   return (
     <PageContainer

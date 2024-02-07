@@ -65,7 +65,7 @@ i18n
             browserNotification: "Browser Notifications",
             goToTermsAndConditions: "Read Terms and Conditions",
             termsAgreement:
-              " I agree to these Terms and Conditions, and I acknowledge that this app is currently in a testing phase. I understand that features and functionalities are subject to change.",
+              " I agree to these Terms and Conditions and privacy policy, and I acknowledge that this app is currently in a testing phase. I understand that features and functionalities are subject to change.",
             connect: "Connect",
             loadProfileFromFile: "Load Profile from File",
             setAvatar: "Set Avatar",
