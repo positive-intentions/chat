@@ -32,7 +32,7 @@ import {
   decrypt,
   deserializePrivateKey,
 } from "../encryption/Encryption";
-import { useCryptography } from "../cryptography/Cryptography";
+import { useCryptography } from "cryptography/Cryptography";
 
 export default ({ children }) => {
   const { randomString } = useCryptography();

@@ -183,7 +183,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import JSZip from "jszip";
 import { useTranslation } from "react-i18next";
-import { useCryptography } from "../../cryptography/Cryptography";
+import { useCryptography } from "cryptography/Cryptography";
 import { CoachMark } from "react-coach-mark";
 import hipaintImage from "../../../../public/logo512.png";
 

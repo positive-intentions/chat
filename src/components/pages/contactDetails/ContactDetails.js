@@ -130,7 +130,7 @@ import {
 } from "../../blockchain/chains/podChain";
 // import Blockchain from "../../blockchain/Blockchain";
 import { useTranslation } from "react-i18next";
-import { useCryptography } from "../../cryptography/Cryptography";
+import { useCryptography } from "cryptography/Cryptography";
 import { CoachMark } from "react-coach-mark";
 
 const useStyles = makeStyles((theme) => ({
