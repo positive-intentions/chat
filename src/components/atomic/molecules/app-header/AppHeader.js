@@ -48,6 +48,7 @@ import ViewInArIcon from "@mui/icons-material/ViewInAr";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import { useTranslation } from "react-i18next";
 import { ColorModeContext } from "../../../../App.tsx";
@@ -127,6 +128,7 @@ const presetIcons = {
   verse: <ViewInArIcon />,
   callContact: <ContactPhoneIcon />,
   help: <QuestionMarkIcon />,
+  privacy: <PrivacyTipIcon />,
 };
 
 function HideOnScroll(props) {
@@ -218,6 +220,11 @@ const CustomDropdown = ({ menuItems }) => {
           text: t("components.menuItems.terms"),
           icon: "document",
           onClick: () => navigate("/terms"),
+        },
+        {
+          text: t("components.menuItems.privacy"),
+          icon: "privacy",
+          onClick: () => navigate("/terms/privacy"),
         },
         {
           text: t("components.menuItems.docs"),

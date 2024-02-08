@@ -217,7 +217,7 @@ export default function Profile() {
         title: podDetails.name,
         backButton: `/pod/${podId}`,
         avatarProps: {
-          src: "https://source.unsplash.com/random/400x200?login",
+          // src: "https://source.unsplash.com/random/400x200?login",
           alt: "random",
         },
       }}
@@ -225,7 +225,7 @@ export default function Profile() {
       {/* add an imagae at the top */}
       <Avatar
         alt={"Remy Sharp"}
-        src={"https://source.unsplash.com/random/400x200?login"}
+        // src={"https://source.unsplash.com/random/400x200?login"}
         sx={{ height: "70vw", width: "70vw", margin: "auto" }}
       />
 

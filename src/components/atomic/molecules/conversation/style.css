@@ -1,3 +1,4 @@
 .swipeable-list-item__content {
     background-color: transparent;
+    height: auto;
 }

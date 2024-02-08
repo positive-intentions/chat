@@ -466,4 +466,64 @@ const TermsAndConditions = ({ padding }) => {
   );
 };
 
+export const PrivacyPolicy = ({ padding }) => {
+  return (
+    <div style={{ padding }}>
+      <h2>Privacy Policy</h2>
+      <p>
+        <ol>
+          <li>
+            Data Storage: The app saves user and app data locally on the storage
+            provided by the user's browser. Users are responsible for ensuring
+            the security of their devices and browsers, and for following
+            security best practices to protect their stored data. The company
+            does not collect user data, apart from what is needed for monitoring
+            tools to ensure the app's stability and to make improvements.
+          </li>
+          <li>
+            Third-Party Services: The app uses PeerJS for establishing peer
+            connections and the official PeerJS server as the connection broker.
+            We are not affiliated with PeerJS and are not responsible for the
+            management of the PeerJS server. We may also use Sentry.io for error
+            monitoring and NLevel Software for analytics. We retain the right to
+            add analytics tools to help manage the stability of the app and make
+            improvements.
+          </li>
+          <li>
+            Data Access and User Rights: Users can access their data through the
+            app's user interface or their browser's inspect tools. The app may
+            provide functionality to export data for backup purposes. Users have
+            the right to delete any or all data stored within the app, subject
+            to the limitations of the app's design and the nature of
+            peer-to-peer communication.
+          </li>
+          <li>
+            Data Retention: User data is retained for as long as the user and
+            browser allow. Users are responsible for backing up their data and
+            managing the data stored within the app.
+          </li>
+          <li>
+            Reporting and Investigations: The app may include functionality to
+            report users, and we reserve the right for this functionality to
+            send necessary details for any investigation.
+          </li>
+          <li>
+            Compliance with Laws: Users of the positive-intentions are
+            responsible for complying with the laws in their place of residence.
+            Users should be aware of and adhere to any applicable privacy laws
+            and regulations. It is the user's responsibility to understand and
+            comply with any specific laws that apply to their use of the app.
+          </li>
+        </ol>
+      </p>
+      <p>
+        By using the app, you acknowledge and agree to these data privacy and
+        security guidelines. If you have any concerns or questions about how
+        your data is used or stored within the app, please contact the app's
+        developers for further information.
+      </p>
+    </div>
+  );
+};
+
 export default TermsAndConditions;
