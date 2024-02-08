@@ -42,7 +42,7 @@ import {
 } from "../../blockchain/chains/profileChain";
 import ConectToPeer from "../../atomic/molecules/connect-to-peer/ConnectToPeer";
 import SignatureCanvas from "../../atomic/atom/signatureCanvas/SignatureCanvas";
-import { useCryptography } from "../../cryptography/Cryptography";
+import { useCryptography } from "cryptography/Cryptography";
 import { logToNLevelAnalytics } from "../../utils/analytics";
 
 const useStyles = makeStyles((theme) => ({

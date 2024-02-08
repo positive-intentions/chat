@@ -1,5 +1,5 @@
 import React from "react";
-import { CryptographyProvider } from "./Cryptography";
+import { CryptographyProvider } from "cryptography/Cryptography";
 import { useSelector } from "react-redux";
 import { compiler as profileCompiler } from "../blockchain/chains/profileChain";
 import { useBlockchain } from "../blockchain/Blockchain";

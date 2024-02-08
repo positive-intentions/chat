@@ -122,8 +122,10 @@ module.exports = {
       remotes: {
         "pi-base":
           "frontendBase@https://example-staging.positive-intentions.com/remoteEntry.js",
+        "cryptography": "cryptography@https://cryptography.positive-intentions.com/remoteEntry.js"
+        // "cryptography": "cryptography@http://localhost:3000/remoteEntry.js"
       },
-      // shared: {react: {singleton: true}, "react-dom": {singleton: true}}
+      shared: {react: {singleton: true}, "react-dom": {singleton: true}}
     }),
   ],
   devServer: {

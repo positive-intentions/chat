@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import { useCryptography } from "../../../cryptography/Cryptography";
+import { useCryptography } from "cryptography/Cryptography";
 import { useNotification } from "../../../notifications/notificationManager";
 import { makeStyles } from "@mui/styles";
 import { red } from "@mui/material/colors";
