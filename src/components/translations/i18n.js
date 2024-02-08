@@ -55,6 +55,7 @@ i18n
                 "👎 Autoinstall failed. You might be able to install through your browser.",
               profile: "Profile",
               terms: "Terms",
+              privacy: "Privacy",
             },
           },
           loginPage: {
@@ -64,6 +65,7 @@ i18n
             inAppNotification: "In-app Notifications",
             browserNotification: "Browser Notifications",
             goToTermsAndConditions: "Read Terms and Conditions",
+            goToPrivacyPolicy: "Read Privacy Policy",
             termsAgreement:
               " I agree to these Terms and Conditions and privacy policy, and I acknowledge that this app is currently in a testing phase. I understand that features and functionalities are subject to change.",
             connect: "Connect",

@@ -32,6 +32,7 @@ import {
 } from "../blockchain/chains/profileChain";
 import TermsAndConditions from "../../components/atomic/atom/termsAndConditions";
 import TermsAndConditionsComponent from "../pages/termsAndConditions/TermsAndConditions";
+import PrivacyPolicyComponent from "../pages/privacyPolicy/PrivacyPolicy";
 import Map from "../pages/map/Map";
 import AI from "../pages/ai/AI";
 import SplitPane from "react-split-pane";
@@ -78,6 +79,10 @@ export default () => {
           {
             path: "/terms",
             element: <TermsAndConditionsComponent />,
+          },
+          {
+            path: "/terms/privacy",
+            element: <PrivacyPolicyComponent />,
           },
           {
             path: "/login",
@@ -127,6 +132,10 @@ export default () => {
           {
             path: "/terms",
             element: <TermsAndConditionsComponent />,
+          },
+          {
+            path: "/terms/privacy",
+            element: <PrivacyPolicyComponent />,
           },
           {
             path: "/login/:contactId/:contactName",

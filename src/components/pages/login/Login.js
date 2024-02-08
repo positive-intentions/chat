@@ -1052,6 +1052,19 @@ export default function LoginPage() {
                     {t("loginPage.goToTermsAndConditions")}
                   </Button>
                 </Typography>
+                <br />
+                <Typography>
+                  {/* <TermsAndConditions /> */}
+                  <Button
+                    type="button"
+                    fullWidth
+                    variant="contained"
+                    color="primary"
+                    onClick={() => navigate("/terms/privacy")}
+                  >
+                    {t("loginPage.goToPrivacyPolicy")}
+                  </Button>
+                </Typography>
                 {/* <Checkbox {...tacCheckbox} /><span style={{ color: 'red'}}>*</span>{t('loginPage.termsAgreement')} */}
               </AccordionDetails>
             </Accordion>
