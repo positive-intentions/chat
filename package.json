@@ -17,6 +17,7 @@
     "build:storybook": "storybook build && rm -rf ./Frontend && mkdir ./Frontend && mv storybook-static/* ./Frontend",
     "build:webpack": "webpack --mode production",
     "build:coverage": "jest --coverage && mv coverage/lcov-report ./Frontend/coverage-report",
+    "build:zip": "zip -r positive-intentions.zip Frontend && mv positive-intentions.zip ./Frontend",
     "serve:storybook": "serve storybook-static",
     "serve:webpack": "serve dist",
     "serve": "serve Frontend",
