@@ -1302,11 +1302,11 @@ export default function Pod() {
           icon: "more",
           items: headerActions,
         },
-        // customButtons: (isOnline && !activeCalls.length) ? [
-        //   !isGroup && !isMobile && { icon: 'screen', onClick: () => makeCall({ screen: true, video: true, audio: true }) },
-        //   !isGroup && { icon: 'camera', onClick: () => makeCall({ video: true, audio: true }) },
-        //   !isGroup && { icon: 'call', onClick: () => makeCall({ audio: true }) },
-        // ].filter(i => !!i) : undefined
+        customButtons: (isOnline && !activeCalls.length) ? [
+          // !isGroup && !isMobile && { icon: 'screen', onClick: () => makeCall({ screen: true, video: true, audio: true }) },
+          !isGroup && { icon: 'camera', onClick: () => makeCall({ video: true, audio: true }) },
+          !isGroup && { icon: 'call', onClick: () => makeCall({ audio: true }) },
+        ].filter(i => !!i) : undefined
       }}
       className={classes.conversation}
     >
