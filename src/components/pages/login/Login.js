@@ -186,34 +186,51 @@ import { useTranslation } from "react-i18next";
 import { useCryptography } from "cryptography/Cryptography";
 import { CoachMark } from "react-coach-mark";
 import hipaintImage from "../../../../public/logo512.png";
+import decentralisedImage from "../../../../public/home-icons/decentralized.png";
+import agnosticImage from "../../../../public/home-icons/agnostic.png";
+import dataImportExportImage from "../../../../public/home-icons/data-export-import.png";
+import noRegistration from "../../../../public/home-icons/no-registration.png";
+import pushNotifications from "../../../../public/home-icons/push-notifications.png";
+import videoCalls from "../../../../public/home-icons/video-calls.png";
+
+import avatar1 from "../../../../public/avatars/1.jpg";
+import avatar2 from "../../../../public/avatars/2.jpg";
+import avatar3 from "../../../../public/avatars/3.jpg";
+import avatar4 from "../../../../public/avatars/4.jpg";
+import avatar5 from "../../../../public/avatars/5.jpg";
+import avatar6 from "../../../../public/avatars/6.jpg";
+import avatar7 from "../../../../public/avatars/7.jpg";
+import avatar8 from "../../../../public/avatars/8.jpg";
+import avatar9 from "../../../../public/avatars/9.jpg";
+
 
 const avatars = [
   {
-    src: "/avatars/1.jpg",
+    src: avatar1,
   },
   {
-    src: "/avatars/2.jpg",
+    src: avatar2,
   },
   {
-    src: "/avatars/3.jpg",
+    src: avatar3,
   },
   {
-    src: "/avatars/4.jpg",
+    src: avatar4,
   },
   {
-    src: "/avatars/5.jpg",
+    src: avatar5,
   },
   {
-    src: "/avatars/6.jpg",
+    src: avatar6,
   },
   {
-    src: "/avatars/7.jpg",
+    src: avatar7,
   },
   {
-    src: "/avatars/8.jpg",
+    src: avatar8,
   },
   {
-    src: "/avatars/9.jpg",
+    src: avatar9,
   },
 ];
 
@@ -225,6 +242,9 @@ const SimpleSlider = ({ onSelect }) => {
     centerPadding: "30px",
     slidesToShow: 2,
     speed: 500,
+    style: {
+      height: '108px'
+    }
   };
   // heading with artist link dark mode adjusted color based on the default from material ui for text
   return (
@@ -362,6 +382,7 @@ export default function LoginPage() {
         reader.readAsDataURL(blob);
         reader.onloadend = function () {
           setAvatarBase64(reader.result);
+          console.log({ avatar: reader.result })
         };
       });
   };
@@ -870,15 +891,53 @@ export default function LoginPage() {
           src={hipaintImage}
           style={{ minHeight: "300px", minWidth: "300px", margin: "auto" }}
         />
-        {/* i want a typography sentence with some text followed by bulletpoints */}
-        <Typography variant="p" gutterBottom>
-          {t("Temporarily unavailable. Apologies for the inconvenience.")}
-        </Typography>
         {!false && (
           <>
             <br />
             <Typography variant="p" gutterBottom>
               {t("loginPage.welcome")}
+              <br />
+              <br />
+              <Avatar
+                src={decentralisedImage}
+                style={{ minHeight: "300px", minWidth: "300px", margin: "auto" }}
+              />
+              {t("loginPage.decentralized")}
+              <br />
+              <br />
+              <Avatar
+                src={agnosticImage}
+                style={{ minHeight: "300px", minWidth: "300px", margin: "auto" }}
+              />
+              {t("loginPage.agnostic")}
+              <br />
+              <br />
+              <Avatar
+                src={dataImportExportImage}
+                style={{ minHeight: "300px", minWidth: "300px", margin: "auto" }}
+              />
+              {t("loginPage.dataImportExport")}
+              <br />
+              <br />
+              <Avatar
+                src={noRegistration}
+                style={{ minHeight: "300px", minWidth: "300px", margin: "auto" }}
+              />
+              {t("loginPage.noInstall")}
+              <br />
+              <br />
+              <Avatar
+                src={pushNotifications}
+                style={{ minHeight: "300px", minWidth: "300px", margin: "auto" }}
+              />
+              {t("loginPage.pushNotifications")}
+              <br />
+              <br />
+              <Avatar
+                src={videoCalls}
+                style={{ minHeight: "300px", minWidth: "300px", margin: "auto" }}
+              />
+              {t("loginPage.p2pCalls")}
               <br />
               <br />
               <Typography variant="body1" gutterBottom>

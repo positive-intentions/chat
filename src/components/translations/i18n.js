@@ -44,6 +44,7 @@ i18n
               exitFullscreen: "Exit fullscreen",
               install: "Install app",
               labs: "Labs",
+              contact: "Contact",
               requestingToInstall: "Requesting browser to install app",
               installPossible:
                 "👍 Install possible. Try from your browser settings.",
@@ -59,7 +60,7 @@ i18n
             },
           },
           loginPage: {
-            pageTitle: "Create profile",
+            pageTitle: "Welcome",
             setProfile: "Set Profile",
             setPreference: "Set Preferences",
             inAppNotification: "In-app Notifications",
@@ -73,6 +74,12 @@ i18n
             setAvatar: "Set Avatar",
             displayName: "Display Name",
             cryptoSignature: "Crypto Signature",
+            decentralized: "Decentralized - Experience true privacy with our P2P chat app. No centralized servers, no hidden data storage—just secure, direct conversations.",
+            noInstall: "No Install/Registration - Start communicating right away without worrying about lengthy sign-up processes. Jump in and connect instantly.",
+            p2pCalls: "Video Calls - More than just a chat app, our platform facilitates face-to-face conversations. Enjoy clear, efficient video calls wherever you are.",
+            pushNotifications: "Push Notifications - Stay informed and never miss important updates. Our push notifications ensure you're always up-to-date with your conversations.",
+            dataImportExport: "Data Import/Export - Control your data like never before. With our easy export and import feature, your data is always portable, always yours.",
+            agnostic: "OS Agnostic - Freedom to use your preferred platform. Whether you're on Windows, MacOS, Linux, or prefer a specific browser, we've got you covered.",
             welcome:
               "positive-intentions is a decentralised, browser-agnostic and no-registration-required P2P chat application providing secure messaging, video calls and data ownership with push notifications and effortless data export/import. All encapsulated within a JavaScript-based Progressive Web App.",
             featuresInclude:

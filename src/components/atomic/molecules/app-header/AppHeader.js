@@ -37,6 +37,7 @@ import ListItemText from "@mui/material/ListItemText";
 import CssBaseline from "@mui/material/CssBaseline";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import PermMediaIcon from "@mui/icons-material/PermMedia";
+import SupportIcon from '@mui/icons-material/Support';
 import DescriptionIcon from "@mui/icons-material/Description";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import ScienceIcon from "@mui/icons-material/Science";
@@ -129,6 +130,7 @@ const presetIcons = {
   callContact: <ContactPhoneIcon />,
   help: <QuestionMarkIcon />,
   privacy: <PrivacyTipIcon />,
+  support: <SupportIcon />,
 };
 
 function HideOnScroll(props) {
@@ -248,6 +250,12 @@ const CustomDropdown = ({ menuItems }) => {
           icon: "youtube",
           onClick: () =>
             window.open("https://www.youtube.com/@positive_intentions"),
+        },
+        {
+          text: t("components.menuItems.contact"),
+          icon: "support",
+          onClick: () =>
+            window.open("https://www.reddit.com/user/Accurate-Screen8774"),
         },
       ],
     },
