@@ -71,7 +71,7 @@ i18n
               " I agree to these Terms and Conditions and privacy policy, and I acknowledge that this app is currently in a testing phase. I understand that features and functionalities are subject to change.",
             connect: "Connect",
             loadProfileFromFile: "Load Profile from File",
-            setAvatar: "Set Avatar",
+            setAvatar: "Set Avatar from file",
             displayName: "Display Name",
             cryptoSignature: "Crypto Signature",
             decentralized: "Decentralized - Experience true privacy with our P2P chat app. No centralized servers, no hidden data storage—just secure, direct conversations.",

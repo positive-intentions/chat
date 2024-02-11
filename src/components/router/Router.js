@@ -126,6 +126,10 @@ export default () => {
             element: <Navigate to="/pods" />,
           },
           {
+            path: "/login",
+            element: <Login />,
+          },
+          {
             path: "/login/:contactId",
             element: <Login />,
           },
