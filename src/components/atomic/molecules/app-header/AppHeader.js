@@ -48,6 +48,7 @@ import CollectionsIcon from "@mui/icons-material/Collections";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
+import Download from "@mui/icons-material/DownloadForOffline";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
@@ -131,6 +132,7 @@ const presetIcons = {
   help: <QuestionMarkIcon />,
   privacy: <PrivacyTipIcon />,
   support: <SupportIcon />,
+  download: <Download />,
 };
 
 function HideOnScroll(props) {
@@ -327,6 +329,11 @@ const CustomDropdown = ({ menuItems }) => {
               },
             }
           : null,
+        {
+          text: t("components.menuItems.downloadZip"),
+          icon: "download",
+          onClick: () => window.open("/positive-intentions.zip"),
+        },
       ],
     },
     {

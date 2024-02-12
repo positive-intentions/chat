@@ -43,6 +43,7 @@ i18n
               fullscreen: "Fullscreen",
               exitFullscreen: "Exit fullscreen",
               install: "Install app",
+              downloadZip: "Download .zip",
               labs: "Labs",
               contact: "Contact",
               requestingToInstall: "Requesting browser to install app",
