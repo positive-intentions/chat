@@ -129,6 +129,7 @@ import { ColorModeContext } from "../../../App.tsx";
 import { useTranslation } from "react-i18next";
 import { logToNLevelAnalytics } from "../../../components/utils/analytics";
 import { CoachMark } from "react-coach-mark";
+import hipaintImage from "../../../../public/logo512.png";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -421,7 +422,7 @@ export default function ContactsListPage() {
       )}
       <CoachMark {...coach} />
       <Avatar
-        src={"/logo-large.png"}
+          src={hipaintImage}
         style={{ minHeight: "300px", minWidth: "300px", margin: "auto" }}
       />
 

@@ -226,7 +226,7 @@ export default function Profile() {
       <Avatar
         alt={"Remy Sharp"}
         // src={"https://source.unsplash.com/random/400x200?login"}
-        sx={{ height: "70vw", width: "70vw", margin: "auto" }}
+        style={{ minHeight: "300px", minWidth: "300px", margin: "auto" }}
       />
 
       <form noValidate className={classes.form}>
