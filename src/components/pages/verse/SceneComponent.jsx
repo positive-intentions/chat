@@ -1,4 +1,4 @@
-import { useEffect, useRef, useMemo, useState } from "react";
+import React, { useEffect, useRef, useMemo, useState } from "react";
 import { Engine, Scene } from "@babylonjs/core";
 import { useTheme } from "@mui/styles";
 import usePeer from "../../p2p/usePeer";
@@ -252,7 +252,7 @@ export default ({
 
   return (
     <>
-      <canvas ref={reactCanvas} {...rest} />;
+      <canvas ref={reactCanvas} {...rest} />
       {calls.length > 0 &&
         calls.map((call) => {
           return (

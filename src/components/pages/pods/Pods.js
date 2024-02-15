@@ -157,21 +157,21 @@ function GroupsListPage() {
           //   .filter(pod => pod.isSomeOnline).length,
           isContacts: true,
         },
-        {
-          onClick: () => navigate("/feed"),
-          name: t("podsPage.gram"),
-          avatarUrl: "-",
-          // isOnline: pod.users
-          //   .filter(c => c !== storedPersonalId)
-          //   .every(c => activeConnections.includes(c)),
-          // isSomeOnline: pod.users
-          //   .filter(c => c !== storedPersonalId)
-          //   .some(c => activeConnections.includes(c)),
-          // unreadCount,
-          // unreadCount: podsList.filter(pod => pod.isClone)
-          //   .filter(pod => pod.isSomeOnline).length,
-          isGram: true,
-        },
+        // {
+        //   onClick: () => navigate("/feed"),
+        //   name: t("podsPage.gram"),
+        //   avatarUrl: "-",
+        //   // isOnline: pod.users
+        //   //   .filter(c => c !== storedPersonalId)
+        //   //   .every(c => activeConnections.includes(c)),
+        //   // isSomeOnline: pod.users
+        //   //   .filter(c => c !== storedPersonalId)
+        //   //   .some(c => activeConnections.includes(c)),
+        //   // unreadCount,
+        //   // unreadCount: podsList.filter(pod => pod.isClone)
+        //   //   .filter(pod => pod.isSomeOnline).length,
+        //   isGram: true,
+        // },
         {
           onClick: () => navigate("/verse"), // sendNotification(t('podsPage.commingSoon'), { variant: 'info' }),
           name: t("podsPage.verse"),

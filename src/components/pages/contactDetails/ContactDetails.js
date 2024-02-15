@@ -468,7 +468,7 @@ export default function Profile() {
       <Avatar
         alt={contact ? contact.displayName : "requesting..."}
         src={contact ? contact.avatar : ""}
-        sx={{ height: "70vw", width: "70vw", margin: "auto" }}
+        style={{ minHeight: "300px", minWidth: "300px", margin: "auto" }}
       />
 
       <form noValidate className={classes.form}>
