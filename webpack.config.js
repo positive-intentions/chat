@@ -15,12 +15,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     publicPath: "",
   },
-  devServer: {
-    static: path.resolve(__dirname, "/dist"),
-    watchContentBase: true,
-    hot: true,
-    historyApiFallback: true,
-  },
   resolve: {
     extensions: ['.ts', '.js', '.json']
   },
@@ -133,5 +127,9 @@ module.exports = {
     headers: {
       "Access-Control-Allow-Origin": "*",
     },
+    static: path.resolve(__dirname, "/dist"),
+    // watchContentBase: true,
+    hot: true,
+    historyApiFallback: true,
   },
 };

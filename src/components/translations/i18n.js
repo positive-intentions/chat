@@ -140,6 +140,7 @@ i18n
             podDetails: "Pod Details",
             files: "Files",
             screenshare: "Screenshare",
+            cast: "Cast",
             videoCall: "Video Call",
             call: "Call",
             replyingTo: "Replying to {{displayName}}:",

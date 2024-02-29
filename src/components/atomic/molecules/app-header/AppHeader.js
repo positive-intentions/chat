@@ -47,6 +47,7 @@ import RedditIcon from "@mui/icons-material/Reddit";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import LiveTvIcon from '@mui/icons-material/LiveTv';
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import Download from "@mui/icons-material/DownloadForOffline";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
@@ -133,6 +134,7 @@ const presetIcons = {
   privacy: <PrivacyTipIcon />,
   support: <SupportIcon />,
   download: <Download />,
+  cast: <LiveTvIcon />,
 };
 
 function HideOnScroll(props) {
