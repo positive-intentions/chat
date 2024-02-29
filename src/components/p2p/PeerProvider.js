@@ -650,13 +650,16 @@ export default function PeerProvider({
     }
   };
 
-  const makeCall = async ({ peerId, video, audio, screen }) => {
+  const makeCall = async ({ peerId, video, audio, screen, cast }) => {
     if (peerId) {
       const stream = await navigator.mediaDevices[
         screen ? "getDisplayMedia" : "getUserMedia"
-      ]({ video: video ? true : false, audio: audio ? true : false });
+      ]({
+        video: cast ? { facingMode: "environment" } : !!video,
+        audio: audio ? true : false
+      });
 
-      const call = peer.call(peerId, stream);
+      const call = peer.call(peerId, stream, { metadata: { cast } });
       call.on("stream", function (stream) {
         // B
         // window.remoteAudio.srcObject = stream; // C

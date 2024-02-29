@@ -1116,15 +1116,16 @@ export default function Pod() {
 
     activeCalls
       .filter((call) => call._remoteStream)
-      .map((call) => ({ remote: call._remoteStream, local: call._localStream }))
-      .forEach(async ({ remote, local }, index) => {
-        if (remote) {
-          document.getElementById(`remote-video-${index}`).srcObject = remote;
+      .map((call) => ({ remote: call._remoteStream, local: call._localStream, metadata: call.metadata}))
+      .forEach(async ({ remote, local, metadata }, index) => {
+        const isCasting = metadata?.cast;
+        if (isCasting || remote) {
+          document.getElementById(`remote-video-${index}`).srcObject = isCasting ? local : remote;
           await document.getElementById(`remote-video-${index}`).play();
           setCallActive(true);
         }
 
-        if (local) {
+        if (!isCasting && local) {
           document.getElementById(`local-video-${index}`).srcObject = local;
           await document.getElementById(`local-video-${index}`).play();
         }
@@ -1132,13 +1133,23 @@ export default function Pod() {
   }, [remoteStreamCount]);
 
   const handleAnswerCall = async (call) => {
-    const hasVideo = call._remoteStream?.getVideoTracks().length > 0;
-    const newMediaStream = await navigator.mediaDevices.getUserMedia({
-      video: hasVideo ? true : true,
-      audio: true,
-    });
-    call.answer(newMediaStream);
-    setMediaStream(newMediaStream);
+    if (call?.metadata?.cast) {
+      const hasVideo = call._remoteStream?.getVideoTracks().length > 0;
+      const newMediaStream = await navigator.mediaDevices.getUserMedia({
+        video: hasVideo ? true : true,
+        audio: true,
+      });
+      call.answer(newMediaStream);
+      setMediaStream(newMediaStream);
+    } else {
+      const hasVideo = call._remoteStream?.getVideoTracks().length > 0;
+      const newMediaStream = await navigator.mediaDevices.getUserMedia({
+        video: hasVideo ? true : true,
+        audio: true,
+      });
+      call.answer(newMediaStream);
+      setMediaStream(newMediaStream);
+    }
   };
 
   const contactDetails = storedContacts.find((contact) => {
@@ -1217,6 +1228,11 @@ export default function Pod() {
               text: t("podPage.call"),
               icon: "call",
               onClick: () => makeCall({ audio: true }),
+            },
+            !isGroup && {
+              text: t("podPage.cast"),
+              icon: "cast",
+              onClick: () => makeCall({ audio: true, video: true, cast: true }),
             },
             {
               text: t("podsPage.verse"),
@@ -1557,6 +1573,8 @@ export default function Pod() {
                 .map((call, index) => {
                   const stream = call._remoteStream;
                   const localStream = call._localStream;
+                  const isCasting = call.metadata?.cast;
+                  console.log({ call, stream, localStream, isCasting })
                   // option to answer call
                   if (localStream && !callActive) handleAnswerCall(call);
                   // // autsswerCall(call)
@@ -1577,7 +1595,7 @@ export default function Pod() {
 
                   return (
                     <div className={classes.form}>
-                      {stream && (
+                      {(stream) && (
                         <>
                           <video
                             id={`remote-video-${index}`}
@@ -1617,7 +1635,7 @@ export default function Pod() {
                           <br />
                         </>
                       )}
-                      {localStream && stream && (
+                      {!isCasting && localStream && stream && (
                         <>
                           <Button
                             type="button"
