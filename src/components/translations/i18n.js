@@ -121,6 +121,7 @@ i18n
             gram: "Gram",
             verse: "Verse",
             ai: "AI",
+            qr: "QR",
             vinnc: "Vinn-C",
             map: "Map",
             commingSoon: "Coming Soon",
