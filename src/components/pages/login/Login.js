@@ -834,6 +834,11 @@ export default function LoginPage() {
                   icon: "verse",
                   onClick: () => navigate("/verse"),
                 },
+                {
+                  text: t("podsPage.qr"),
+                  icon: "qr",
+                  onClick: () => navigate("/qr"),
+                },
               ],
             },
             // { text: t('components.menuItems.about'), icon: 'info', onClick: () => window.location = 'https://positive-intentions.com' },

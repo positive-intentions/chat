@@ -16,6 +16,7 @@ import Menu from "@mui/material/Menu";
 import Avatar from "@mui/material/Avatar";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import VideocamIcon from "@mui/icons-material/Videocam";
+import QrCode2Icon from '@mui/icons-material/QrCode2';
 import { useNavigate } from "react-router-dom";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import SettingsIcon from "@mui/icons-material/Settings";
@@ -135,6 +136,7 @@ const presetIcons = {
   support: <SupportIcon />,
   download: <Download />,
   cast: <LiveTvIcon />,
+  qr: <QrCode2Icon />,
 };
 
 function HideOnScroll(props) {
