@@ -54,6 +54,7 @@ import Download from "@mui/icons-material/DownloadForOffline";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
+import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import { useTranslation } from "react-i18next";
 import { ColorModeContext } from "../../../../App.tsx";
 import { useTheme } from "@mui/material/styles";
@@ -137,6 +138,7 @@ const presetIcons = {
   download: <Download />,
   cast: <LiveTvIcon />,
   qr: <QrCode2Icon />,
+  connect: <ConnectWithoutContactIcon />,
 };
 
 function HideOnScroll(props) {

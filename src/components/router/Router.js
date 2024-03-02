@@ -36,6 +36,7 @@ import TermsAndConditionsComponent from "../pages/termsAndConditions/TermsAndCon
 import PrivacyPolicyComponent from "../pages/privacyPolicy/PrivacyPolicy";
 import Map from "../pages/map/Map";
 import AI from "../pages/ai/AI";
+import WebRTC from "../pages/webrtc/WebRTC";
 import SplitPane from "react-split-pane";
 
 const Verse = lazy(() => import("../pages/verse/Verse"));
@@ -120,6 +121,10 @@ export default () => {
           {
             path: "/qr",
             element: <ShareQR />,
+          },
+          {
+            path: "/webrtc",
+            element: <WebRTC />,
           },
         ]),
       );
@@ -223,6 +228,10 @@ export default () => {
           {
             path: "/qr",
             element: <ShareQR />,
+          },
+          {
+            path: "/webrtc",
+            element: <WebRTC />,
           },
         ]),
       );
