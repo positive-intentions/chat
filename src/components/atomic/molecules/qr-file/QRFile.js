@@ -130,7 +130,7 @@ const QRFile = () => {
 
   return (
     <div>
-      <TextField
+      {/* <TextField
               variant="outlined"
               margin="normal"
               fullWidth
@@ -154,7 +154,7 @@ const QRFile = () => {
                   </InputAdornment>
                 ),
               }}
-            />
+            /> */}
             <Button
               id='load-file-button'
               variant="contained"
@@ -168,7 +168,7 @@ const QRFile = () => {
                 onChange={handleFileSelect}
               />
             </Button>
-            <Button
+            {/* <Button
               id='load-file-button'
               variant="contained"
               component="label"
@@ -176,7 +176,7 @@ const QRFile = () => {
               onClick={handleDownloadFile}
             >
               Download File
-            </Button>
+            </Button> */}
             
             <br />
             <br />

@@ -122,6 +122,7 @@ i18n
             verse: "Verse",
             ai: "AI",
             qr: "QR",
+            webrtc: "WebRTC",
             vinnc: "Vinn-C",
             map: "Map",
             commingSoon: "Coming Soon",

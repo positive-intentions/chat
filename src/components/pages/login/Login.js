@@ -839,6 +839,11 @@ export default function LoginPage() {
                   icon: "qr",
                   onClick: () => navigate("/qr"),
                 },
+                {
+                  text: t("podsPage.webrtc"),
+                  icon: "connect",
+                  onClick: () => navigate("/webrtc"),
+                }
               ],
             },
             // { text: t('components.menuItems.about'), icon: 'info', onClick: () => window.location = 'https://positive-intentions.com' },
