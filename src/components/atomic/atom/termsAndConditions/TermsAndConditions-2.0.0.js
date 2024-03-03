@@ -487,7 +487,7 @@ export const PrivacyPolicy = ({ padding }) => {
             management of the PeerJS server. We may also use Sentry.io for error
             monitoring and NLevel Software for analytics. We retain the right to
             add analytics tools to help manage the stability of the app and make
-            improvements.
+            improvements. The app uses data from openstreetmap.org for the map.
           </li>
           <li>
             Data Access and User Rights: Users can access their data through the

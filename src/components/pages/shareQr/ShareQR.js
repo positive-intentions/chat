@@ -59,7 +59,7 @@ export default function Maintainance() {
   const navigate = useNavigate();
   const contacts = useSelector((state) => state.contacts) || [];
   const theme = useTheme();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(1);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
