@@ -172,22 +172,11 @@ export default function ContactsListPage() {
   const classes = useStyles();
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
-  const detectedFullscreen = document.fullscreenElement;
-  const [isFullScreen, setIsFullScreen] = useState(detectedFullscreen);
   const sendNotification = useNotification();
 
   useEffect(() => {
     logToNLevelAnalytics("contactsPageLoaded");
   }, []);
-
-  useEffect(() => {
-    if (!isFullScreen && document?.exitFullscreen) {
-      document?.exitFullscreen?.().catch(console.log);
-    } else if (isFullScreen && document?.documentElement?.requestFullscreen) {
-      document &&
-        document?.documentElement?.requestFullscreen?.().catch(console.log);
-    }
-  }, [isFullScreen]);
 
   const navigate = useNavigate();
   const contacts = useSelector((state) => state.contacts) || [];
@@ -230,8 +219,6 @@ export default function ContactsListPage() {
     onClick: () => navigate(`/contact/${contact.connectionId}`),
     isOnline: activeConnections.includes(contact.connectionId),
   }));
-
-  console.log("contactsList", contactsList);
 
   const handleScan = (data) => {
     if (!data?.text) return;

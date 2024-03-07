@@ -75,26 +75,6 @@ function GroupsListPage() {
       // get unreadCount from redux
       const unreadCount =
         storedPods.find((p) => p.id === pod.id)?.unreadCount || 0;
-      console.log({
-        compiled: storedPods.find((p) => p.id === pod.id),
-        pod,
-        storedPods,
-        unreadCount,
-      });
-
-      console.log({
-        pod,
-        name:
-          pod.users.length > 2
-            ? pod.name
-            : storedContacts.find(
-                (contact) =>
-                  contact.connectionId ===
-                  pod.users.filter(
-                    (memberId) => memberId !== storedPersonalId,
-                  )[0],
-              )?.displayName ?? "Please wait",
-      });
 
       return {
         ...pod,
@@ -262,7 +242,6 @@ export default function Pods() {
   const theme = useTheme();
   const { t } = useTranslation();
   const colorMode = React.useContext(ColorModeContext);
-  const [isFullScreen, setIsFullScreen] = useState(false);
 
   const [activatedNumber, setActivateNumber] = useState(null);
   const NextButton = (
@@ -319,15 +298,6 @@ export default function Pods() {
   useEffect(() => {
     logToNLevelAnalytics("podsPageLoaded");
   }, []);
-
-  useEffect(() => {
-    if (!isFullScreen && document?.exitFullscreen) {
-      document?.exitFullscreen?.().catch(console.log);
-    } else if (isFullScreen && document?.documentElement?.requestFullscreen) {
-      document &&
-        document?.documentElement?.requestFullscreen?.().catch(console.log);
-    }
-  }, [isFullScreen]);
 
   // make it so the form submits and updates the username in redux and navigates to the conversations page
   // const [username, setUsername] = useState("");

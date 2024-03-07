@@ -175,24 +175,33 @@ const CustomDropdown = ({ menuItems }) => {
   }, []);
 
   useEffect(() => {
-    if (
-      (document.fullscreenElement ||
-        document.webkitFullscreenElement ||
-        document.mozFullScreenElement) &&
-      !isFullScreen &&
-      document?.exitFullscreen
-    ) {
-      document?.exitFullscreen?.().catch(console.log);
-    } else if (isFullScreen && document?.documentElement?.requestFullscreen) {
-      document &&
-        document?.documentElement?.requestFullscreen?.().catch(console.log);
-    }
+    const handleFullscreenChange = async () => {
+      const isInFullscreen = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement;
+      
+      if (!isInFullscreen && isFullScreen && document.documentElement.requestFullscreen) {
+        // Attempt to enter fullscreen
+        try {
+          await document.documentElement.requestFullscreen();
+        } catch (error) {
+          console.log(error);
+        }
+      } else if (isInFullscreen && !isFullScreen && document.exitFullscreen) {
+        // Attempt to exit fullscreen
+        try {
+          await document.exitFullscreen();
+        } catch (error) {
+          console.log(error);
+        }
+      }
+    };
+  
+    handleFullscreenChange();
   }, [isFullScreen]);
+  
 
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   useEffect(() => {
     const handleBeforeInstallPromptEvent = (e) => {
-      console.log("setting defferedPrompt");
       e.preventDefault();
       setDeferredPrompt(e);
     };
