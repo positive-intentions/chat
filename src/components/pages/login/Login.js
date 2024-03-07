@@ -307,7 +307,6 @@ export default function LoginPage() {
   const classes = useStyles();
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
-  const [isFullScreen, setIsFullScreen] = useState(false);
   const store = useStore();
   const dispatch = useDispatch();
 
@@ -403,15 +402,6 @@ export default function LoginPage() {
       document.referrer.includes("android-app://")
     );
   }, []);
-
-  useEffect(() => {
-    if (!isFullScreen && document?.exitFullscreen) {
-      document?.exitFullscreen?.().catch(console.log);
-    } else if (isFullScreen && document?.documentElement?.requestFullscreen) {
-      document &&
-        document?.documentElement?.requestFullscreen?.().catch(console.log);
-    }
-  }, [isFullScreen]);
 
   const fromUser = storedId || randomString();
 
