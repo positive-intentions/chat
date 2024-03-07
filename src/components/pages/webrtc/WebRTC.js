@@ -9,6 +9,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import IconButton from "@mui/material/IconButton";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import Button from "@mui/material/Button";
+import usePeer from '../../p2p/usePeer';
 
 const useStyles = makeStyles((theme) => ({
   padding: {
@@ -20,8 +21,9 @@ export default function Maintainance() {
   const classes = useStyles();
   const navigate = useNavigate();
   const contacts = useSelector((state) => state.contacts) || [];
+  const { peer } = usePeer();
 
-  const [rtc, setRtc] = useState(new RTCPeerConnection());
+  const [rtc, setRtc] = useState(null);
   const [dc, setDc] = useState(null);
   const [rtcIceCandidate, setRtcIceCandidate] = useState(null);
   const [rtcRemoteIceCandidate, setRtcRemoteIceCandidate] = useState(null);
@@ -30,6 +32,12 @@ export default function Maintainance() {
   const [rtcAnswer, setRtcAnswer] = useState(null);
   const [rtcRemoteAnswer, setRtcRemoteAnswer] = useState(null);
   const [message, setMessage] = useState(null);
+
+  useEffect(() => {
+    if (peer) {
+      setRtc(peer.connect().peerConnection);
+    }
+  }, [peer]);
 
   useEffect(() => {
     if (rtc) {
