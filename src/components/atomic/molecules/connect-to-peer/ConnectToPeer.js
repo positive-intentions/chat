@@ -126,7 +126,7 @@ const ConnectToPeer = ({ qr, open, link, collapse }) => {
     if (collapse) {
       setExpanded([]);
     } else {
-      navigate(`/#/login/${extractIDFromLink(peerLink)}`);
+      navigate(`/login/${extractIDFromLink(peerLink)}`);
     }
   };
 
@@ -139,11 +139,11 @@ const ConnectToPeer = ({ qr, open, link, collapse }) => {
   const handleScan = (data) => {
     if (!data?.text) return;
     data && setResult(data);
+    const peerLink = new URL(data.text)?.hash?.split?.('/')[2];
+    peerLink && navigate(`/login/${peerLink}`);
 
     if (collapse) {
       setExpanded([]);
-    } else {
-      data && navigate(data.text.replace(window.location.origin, ""));
     }
   };
   const handleError = (err) => {
