@@ -119,7 +119,7 @@ module.exports = {
         "cryptography": "cryptography@https://cryptography.positive-intentions.com/remoteEntry.js"
         // "cryptography": "cryptography@http://localhost:3000/remoteEntry.js"
       },
-      shared: {react: {singleton: true}, "react-dom": {singleton: true}}
+      // shared: {react: {singleton: true}, "react-dom": {singleton: true}}
     }),
   ],
   devServer: {
@@ -127,9 +127,9 @@ module.exports = {
     headers: {
       "Access-Control-Allow-Origin": "*",
     },
-    // static: path.resolve(__dirname, "/public"),
-    // // watchContentBase: true,
-    // hot: true,
-    // historyApiFallback: true,
+    static: path.resolve(__dirname, "/public"),
+    // watchContentBase: true,
+    hot: true,
+    historyApiFallback: true,
   },
 };

@@ -31,6 +31,7 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "react/display-name": "off",
     },
     "ignorePatterns": [
         "**/*.test.*",

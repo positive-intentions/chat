@@ -109,6 +109,7 @@ export default function usePeer(peersToConnect) {
   // }, [peerId, groupId, handlers]);
 
   return {
+    peer: context.peer,
     sendMessage,
     makeCall,
     endCall,
