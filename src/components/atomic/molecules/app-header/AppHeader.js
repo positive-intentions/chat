@@ -442,6 +442,7 @@ const CustomDropdown = ({ menuItems }) => {
 
 export default function AppHeader(
   {
+    disabled,
     title,
     leftIcon,
     rightIcon,
@@ -454,6 +455,7 @@ export default function AppHeader(
   },
   ...props
 ) {
+  if (disabled) return null;
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [subMenuAnchorEl, setSubMenuAnchorEl] = React.useState(null);
@@ -489,9 +491,10 @@ export default function AppHeader(
             color="inherit"
             aria-label="menu"
             // sx={{ mr: 2 }}
-            onClick={() =>
+            onClick={() => {
+              if (typeof backButton === 'function') backButton();
               navigate(typeof backButton === "string" ? backButton : -1)
-            }
+            }}
           >
             <Badge color="info" badgeContent={backCount}>
               {presetIcons.arrowBack}

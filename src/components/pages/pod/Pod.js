@@ -1159,14 +1159,14 @@ export default function Pod() {
     );
   });
   const pageTitle =
-    podBlockchain?.users.length > 2
+    podBlockchain?.users?.length > 2
       ? podBlockchain?.name ?? "Pod"
       : contactDetails?.displayName ?? "Contact";
 
-  const isOnline = podBlockchain.users
+  const isOnline = (podBlockchain.users ?? [])
     .filter((c) => c !== storedConnectionId)
     .every((c) => activeConnections.includes(c));
-  const isSomeOnline = podBlockchain.users
+  const isSomeOnline = (podBlockchain.users ?? [])
     .filter((c) => c !== storedConnectionId)
     .some((user) => activeConnections.includes(user));
 

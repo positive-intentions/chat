@@ -37,7 +37,7 @@ import PrivacyPolicyComponent from "../pages/privacyPolicy/PrivacyPolicy";
 import Map from "../pages/map/Map";
 import AI from "../pages/ai/AI";
 import WebRTC from "../pages/webrtc/WebRTC";
-import SplitPane from "react-split-pane";
+import Layout from "../pages/layout/Layout";
 
 const Verse = lazy(() => import("../pages/verse/Verse"));
 
@@ -126,6 +126,10 @@ export default () => {
             path: "/webrtc",
             element: <WebRTC />,
           },
+          {
+            path: "/layout",
+            element: <Layout />,
+          },
         ]),
       );
     } else {
@@ -158,23 +162,23 @@ export default () => {
           {
             path: "/contacts",
             exact: true,
-            element: <Contacts />,
+            element: <Layout />,
           },
           {
             path: "/contact/:contactId",
-            element: <ContactDetails />,
+            element: <Layout />,
           },
           {
             path: "/pods",
-            element: <Pods />,
+            element: <Layout />,
           },
           {
             path: "/pod/:podId",
-            element: <Pod />,
+            element: <Layout />,
           },
           {
             path: "/pod/:podId/details",
-            element: <PodDetails />,
+            element: <Layout />,
           },
           {
             path: "/pod/:podId/files",
@@ -194,11 +198,11 @@ export default () => {
           },
           {
             path: "/profile",
-            element: <Profile />,
+            element: <Layout />,
           },
           {
             path: "/profile/qr",
-            element: <Profile qr />,
+            element: <Layout />,
           },
           {
             path: "/feed",
@@ -232,6 +236,10 @@ export default () => {
           {
             path: "/webrtc",
             element: <WebRTC />,
+          },
+          {
+            path: "/layout",
+            element: <Layout />,
           },
         ]),
       );

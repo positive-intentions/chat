@@ -127,9 +127,9 @@ module.exports = {
     headers: {
       "Access-Control-Allow-Origin": "*",
     },
-    static: path.resolve(__dirname, "/public"),
-    // watchContentBase: true,
-    hot: true,
-    historyApiFallback: true,
+    // static: path.resolve(__dirname, "/public"),
+    // // watchContentBase: true,
+    // hot: true,
+    // historyApiFallback: true,
   },
 };
