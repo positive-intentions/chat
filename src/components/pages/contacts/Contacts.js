@@ -167,7 +167,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ContactsListPage() {
+export default function ContactsListPage({ headerOverride }) {
   const { t } = useTranslation();
   const classes = useStyles();
   const theme = useTheme();
@@ -357,6 +357,7 @@ export default function ContactsListPage() {
             // { text: 'About', icon: 'info', onClick: () => window.location = 'https://positive-intentions.com' },
           ],
         },
+        ...headerOverride,
       }}
       // speedDialProps={{
       //     actions: [

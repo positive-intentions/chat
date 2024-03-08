@@ -125,7 +125,7 @@ export default function PageContainer(props) {
             height: "100%",
             width: "100%",
             opacity: 0.05,
-            zIndex: -1,
+            zIndex: 0,
           }}
         ></Box>
       )}
