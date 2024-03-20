@@ -833,6 +833,11 @@ export default function LoginPage() {
                   text: t("podsPage.webrtc"),
                   icon: "connect",
                   onClick: () => navigate("/webrtc"),
+                },
+                {
+                  text: t("podsPage.hands"),
+                  icon: "hand",
+                  onClick: () => navigate("/hands"),
                 }
               ],
             },

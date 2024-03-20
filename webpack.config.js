@@ -127,6 +127,7 @@ module.exports = {
     headers: {
       "Access-Control-Allow-Origin": "*",
     },
+    server: 'https',
     // static: path.resolve(__dirname, "/public"),
     // // watchContentBase: true,
     // hot: true,

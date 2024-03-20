@@ -53,6 +53,7 @@ import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import Download from "@mui/icons-material/DownloadForOffline";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
+import WavingHandIcon from '@mui/icons-material/WavingHand';
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import { useTranslation } from "react-i18next";
@@ -139,6 +140,7 @@ const presetIcons = {
   cast: <LiveTvIcon />,
   qr: <QrCode2Icon />,
   connect: <ConnectWithoutContactIcon />,
+  hand: <WavingHandIcon />,
 };
 
 function HideOnScroll(props) {

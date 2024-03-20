@@ -323,9 +323,9 @@ export default function Pods() {
     () => profileBlockchain.compile(),
     [profileBlockchain],
   );
-  const storedInAppNotification = compiledProfile.settings.inAppNotification;
+  // const storedInAppNotification = compiledProfile.settings.inAppNotification;
   const storedBrowserNotification =
-    compiledProfile.settings.browserNotification;
+    compiledProfile.settings?.browserNotification;
 
   // const dispatch = useDispatch();
   // const updateUsernameDispatch = (username) => dispatch(updateUsername(username));
