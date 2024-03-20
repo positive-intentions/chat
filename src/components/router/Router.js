@@ -24,6 +24,7 @@ import Files from "../pages/files/Files";
 import File from "../pages/file/File";
 import Feed from "../pages/feed/Feed";
 import Maintainance from "../pages/maintainance/Maintainance";
+import Hands from "../pages/hands/Hands";
 import ShareQR from "../pages/shareQr/ShareQR";
 // import Verse from '../pages/verse/Verse'
 import Blockchain, { useBlockchain } from "../blockchain/Blockchain";
@@ -130,6 +131,10 @@ export default () => {
             path: "/layout",
             element: <Layout />,
           },
+          {
+            path: "/hands",
+            element: <Hands />,
+          }
         ]),
       );
     } else {
@@ -241,6 +246,10 @@ export default () => {
             path: "/layout",
             element: <Layout />,
           },
+          {
+            path: "/hands",
+            element: <Hands />,
+          }
         ]),
       );
     }

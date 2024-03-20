@@ -107,7 +107,14 @@
     "redux-persist-indexeddb-storage": "^1.0.4",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.8",
-    "use-long-press": "^3.2.0"
+    "use-long-press": "^3.2.0",
+    "@mediapipe/hands": "~0.4.0",
+    "@tensorflow-models/hand-pose-detection": "file:./public/models/handpose-estimation",
+    "@tensorflow/tfjs-backend-wasm": "^4.9.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.9.0",
+    "@tensorflow/tfjs-converter": "^4.9.0",
+    "@tensorflow/tfjs-core": "^4.9.0",
+    "scatter-gl": "0.0.8"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.2.0",
