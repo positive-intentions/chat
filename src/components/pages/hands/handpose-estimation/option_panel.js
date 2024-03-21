@@ -14,6 +14,7 @@
  * limitations under the License.
  * =============================================================================
  */
+import dat from 'dat.gui';
 import * as handdetection from '@tensorflow-models/hand-pose-detection';
 import * as tf from '@tensorflow/tfjs-core';
 
@@ -30,6 +31,7 @@ const stringValueMap = {};
 export async function setupDatGui(urlParams) {
   const gui = new dat.GUI({width: 300});
   gui.domElement.id = 'gui';
+  gui.domElement.style.display = 'none';
 
   // The camera folder contains options for video settings.
   const cameraFolder = gui.addFolder('Camera');
@@ -56,11 +58,11 @@ export async function setupDatGui(urlParams) {
       params.STATE.model = handdetection.SupportedModels.MediaPipeHands;
       if (type !== 'full' && type !== 'lite') {
         // Nulify invalid value.
-        type = null;
+        type = 'lite';
       }
       if (maxNumHands == null || maxNumHands < 1 ) {
         // Nulify invalid value.
-        maxNumHands = 2;
+        maxNumHands = 1;
       }
       break;
     default:

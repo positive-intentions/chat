@@ -238,8 +238,6 @@ import Chance from "chance";
 
 import cryptography from "cryptography/Cryptography";
 
-console.log("cryptography", cryptography);
-
 // Create Context
 const CryptographyContext = createContext(null);
 
