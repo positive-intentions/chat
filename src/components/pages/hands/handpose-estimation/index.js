@@ -16,13 +16,11 @@
  */
 
 import '@tensorflow/tfjs-backend-webgl';
-import * as mpHands from '@mediapipe/hands';
+// import * as mpHands from '@mediapipe/hands';
 
 import * as tfjsWasm from '@tensorflow/tfjs-backend-wasm';
 
-tfjsWasm.setWasmPaths(
-    `https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@${
-        tfjsWasm.version_wasm}/dist/`);
+tfjsWasm.setWasmPaths(`https://chat.positive-intentions.com/wasm`);
 
 import * as handdetection from '@tensorflow-models/hand-pose-detection';
 
@@ -46,7 +44,7 @@ async function createDetector() {
           runtime,
           modelType: STATE.modelConfig.type,
           maxHands: STATE.modelConfig.maxNumHands,
-          solutionPath: `https://cdn.jsdelivr.net/npm/@mediapipe/hands@${mpHands.VERSION}`
+          solutionPath: `https://chat.positive-intentions.com/wasm`
         });
       } else if (runtime === 'tfjs') {
         return handdetection.createDetector(STATE.model, {
