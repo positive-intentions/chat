@@ -105,8 +105,8 @@ function endEstimateHandsStats() {
     const averageInferenceTime = inferenceTimeSum / numInferences;
     inferenceTimeSum = 0;
     numInferences = 0;
-    stats.customFpsPanel.update(
-        1000.0 / averageInferenceTime, 120 /* maxValue */);
+    // stats.customFpsPanel.update(
+    //     1000.0 / averageInferenceTime, 120 /* maxValue */);
     lastPanelUpdate = endInferenceTime;
   }
 }
@@ -173,7 +173,7 @@ async function app() {
 
   await setupDatGui(urlParams);
 
-  stats = setupStats();
+  // stats = setupStats();
 
   camera = await Camera.setupCamera(STATE.camera);
 

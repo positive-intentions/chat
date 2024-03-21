@@ -77,12 +77,13 @@ export class Camera {
     const videoConfig = {
       'audio': false,
       'video': {
-        facingMode: 'user',
+        // back camera
+        facingMode: 'environment',
         // Only setting the video to a specified size for large screen, on
         // mobile devices accept the default size.
-        width: isMobile() ? params.VIDEO_SIZE['360 X 270'].width : $size.width,
-        height: isMobile() ? params.VIDEO_SIZE['360 X 270'].height :
-                             $size.height,
+        // width: isMobile() ? params.VIDEO_SIZE['360 X 270'].width : $size.width,
+        // height: isMobile() ? params.VIDEO_SIZE['360 X 270'].height :
+                            //  $size.height,
         frameRate: {
           ideal: targetFPS,
         }
@@ -96,6 +97,14 @@ export class Camera {
 
     await new Promise((resolve) => {
       camera.video.onloadedmetadata = () => {
+        // Ensure the canvas matches the video's intrinsic size
+        camera.canvas.width = camera.video.videoWidth;
+        camera.canvas.height = camera.video.videoHeight;
+
+        // Update the container's style if necessary, can be handled with CSS
+        const canvasContainer = document.querySelector('.canvas-wrapper');
+        canvasContainer.style.width = '100%'; // Make the container responsive
+        canvasContainer.style.height = 'auto'; // Adjust height based on the content
         resolve(video);
       };
     });
@@ -105,17 +114,19 @@ export class Camera {
     const videoWidth = camera.video.videoWidth;
     const videoHeight = camera.video.videoHeight;
     // Must set below two lines, otherwise video element doesn't show.
-    camera.video.width = videoWidth;
-    camera.video.height = videoHeight;
+    // camera.video.width = videoWidth;
+    // camera.video.height = videoHeight;
 
-    camera.canvas.width = videoWidth;
-    camera.canvas.height = videoHeight;
-    const canvasContainer = document.querySelector('.canvas-wrapper');
-    canvasContainer.style = `width: ${videoWidth}px; height: ${videoHeight}px`;
+    // camera.canvas.width = videoWidth;
+    // camera.canvas.height = videoHeight;
+    // const canvasContainer = document.querySelector('.canvas-wrapper');
+    // canvasContainer.style = `width: ${videoWidth}px; height: ${videoHeight}px`;
 
     // Because the image from camera is mirrored, need to flip horizontally.
-    camera.ctx.translate(camera.video.videoWidth, 0);
-    camera.ctx.scale(-1, 1);
+    if(videoConfig.video.facingMode === 'user') {
+      camera.ctx.translate(camera.video.videoWidth, 0);
+      camera.ctx.scale(-1, 1);
+    }
 
     for (const ctxt of [scatterGLCtxtLeftHand, scatterGLCtxtRightHand]) {
       ctxt.scatterGLEl.style =

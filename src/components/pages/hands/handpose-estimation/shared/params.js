@@ -17,7 +17,7 @@
 import * as handdetection from '@tensorflow-models/hand-pose-detection';
 
 export const DEFAULT_LINE_WIDTH = 2;
-export const DEFAULT_RADIUS = 4;
+export const DEFAULT_RADIUS = 2;
 
 export const VIDEO_SIZE = {
   '640 X 480': {width: 640, height: 480},
@@ -25,14 +25,14 @@ export const VIDEO_SIZE = {
   '360 X 270': {width: 360, height: 270}
 };
 export const STATE = {
-  camera: {targetFPS: 60, sizeOption: '640 X 480'},
+  camera: {targetFPS: 60, sizeOption: '360 X 270'},
   backend: '',
   flags: {},
   modelConfig: {}
 };
 export const MEDIAPIPE_HANDS_CONFIG = {
   type: 'full',
-  render3D: true
+  render3D: false
 };
 /**
  * This map descripes tunable flags and theior corresponding types.

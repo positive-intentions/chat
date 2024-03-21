@@ -20,9 +20,6 @@ export default function Maintainance() {
   // mount handpose after component is mounted
   useEffect(() => {
     import('./handpose-estimation')
-      .then(({ init }) => {
-        init();
-      })
       .catch((err) => {
         console.error(err);
       });
@@ -46,7 +43,6 @@ export default function Maintainance() {
       }}
     >
       <div style={{ textAlign: "center", padding: 20 }}>
-                <div id="stats"></div>
                 <div id="main">
                   <div class="container">
                     <div class="canvas-wrapper">
@@ -54,8 +50,11 @@ export default function Maintainance() {
                       <video id="video" playsinline>
                       </video>
                     </div>
-                    <div id="scatter-gl-container-left"></div>
-                    <div id="scatter-gl-container-right"></div>
+                    <div id="stats"></div>
+                    <div class="scatter-container">
+                      <div id="scatter-gl-container-left"></div>
+                      <div id="scatter-gl-container-right"></div>
+                    </div>
                   </div>
                 </div>
       </div>
