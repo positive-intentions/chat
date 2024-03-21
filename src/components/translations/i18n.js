@@ -123,6 +123,7 @@ i18n
             ai: "AI",
             qr: "QR",
             webrtc: "WebRTC",
+            hands: "VR hand",
             vinnc: "Vinn-C",
             map: "Map",
             commingSoon: "Coming Soon",
