@@ -1,0 +1,26 @@
+#main {
+  position: relative;
+  margin: 0;
+}
+.container, .canvas-wrapper {
+  width: 100%;
+  /* Other styling as needed */
+}
+
+video, canvas {
+  width: 100% !important;
+  height: auto !important;
+  display:
+   block; /* To prevent default margin/padding issues */
+}
+
+video {
+  display: none;
+}
+.scatter-container {
+  display: none;
+}
+#scatter-gl-container-left, #scatter-gl-container-right {
+  position: relative;
+  float: left;
+}
