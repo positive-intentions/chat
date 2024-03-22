@@ -810,37 +810,42 @@ export default function LoginPage() {
           icon: "more",
           ref: ref1,
           items: [
-            {
-              text: t("components.menuItems.labs"),
-              icon: "labs",
-              subMenuItems: [
-                {
-                  text: t("podsPage.gram"),
-                  icon: "gram",
-                  onClick: () => navigate("/feed"),
-                },
-                {
-                  text: t("podsPage.verse"),
-                  icon: "verse",
-                  onClick: () => navigate("/verse"),
-                },
-                {
-                  text: t("podsPage.qr"),
-                  icon: "qr",
-                  onClick: () => navigate("/qr"),
-                },
-                {
-                  text: t("podsPage.webrtc"),
-                  icon: "connect",
-                  onClick: () => navigate("/webrtc"),
-                },
-                {
-                  text: t("podsPage.hands"),
-                  icon: "hand",
-                  onClick: () => navigate("/hands"),
-                }
-              ],
-            },
+            // {
+            //   text: t("components.menuItems.labs"),
+            //   icon: "labs",
+            //   subMenuItems: [
+            //     {
+            //       text: t("podsPage.gram"),
+            //       icon: "gram",
+            //       onClick: () => navigate("/feed"),
+            //     },
+            //     {
+            //       text: t("podsPage.verse"),
+            //       icon: "verse",
+            //       onClick: () => navigate("/verse"),
+            //     },
+            //     {
+            //       text: t("podsPage.map"),
+            //       icon: "map",
+            //       onClick: () => navigate("/map"),
+            //     },
+            //     {
+            //       text: t("podsPage.qr"),
+            //       icon: "qr",
+            //       onClick: () => navigate("/qr"),
+            //     },
+            //     {
+            //       text: t("podsPage.webrtc"),
+            //       icon: "connect",
+            //       onClick: () => navigate("/webrtc"),
+            //     },
+            //     {
+            //       text: t("podsPage.hands"),
+            //       icon: "hand",
+            //       onClick: () => navigate("/hands"),
+            //     }
+            //   ],
+            // },
             // { text: t('components.menuItems.about'), icon: 'info', onClick: () => window.location = 'https://positive-intentions.com' },
             // {
             //   text: t('components.menuItems.options'),
