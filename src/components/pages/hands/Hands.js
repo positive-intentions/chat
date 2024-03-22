@@ -28,7 +28,7 @@ export default function Maintainance() {
   return (
     <PageContainer
       headerProps={{
-        title: "Hands",
+        title: "Hand",
         backButton: true,
         menuProps: {
           icon: "more",

@@ -52,6 +52,7 @@ import LiveTvIcon from '@mui/icons-material/LiveTv';
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import Download from "@mui/icons-material/DownloadForOffline";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import NavigationIcon from "@mui/icons-material/Navigation";
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 import WavingHandIcon from '@mui/icons-material/WavingHand';
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
@@ -141,6 +142,7 @@ const presetIcons = {
   qr: <QrCode2Icon />,
   connect: <ConnectWithoutContactIcon />,
   hand: <WavingHandIcon />,
+  map: <NavigationIcon />,
 };
 
 function HideOnScroll(props) {
@@ -233,6 +235,42 @@ const CustomDropdown = ({ menuItems }) => {
   }, []);
 
   const defaultMenuItems = [
+    {
+      text: t("components.menuItems.labs"),
+      icon: "labs",
+      subMenuItems: [
+        {
+          text: t("podsPage.gram"),
+          icon: "gram",
+          onClick: () => navigate("/feed"),
+        },
+        {
+          text: t("podsPage.verse"),
+          icon: "verse",
+          onClick: () => navigate("/verse"),
+        },
+        {
+          text: t("podsPage.map"),
+          icon: "map",
+          onClick: () => navigate("/map"),
+        },
+        {
+          text: t("podsPage.qr"),
+          icon: "qr",
+          onClick: () => navigate("/qr"),
+        },
+        {
+          text: t("podsPage.webrtc"),
+          icon: "connect",
+          onClick: () => navigate("/webrtc"),
+        },
+        {
+          text: t("podsPage.hands"),
+          icon: "hand",
+          onClick: () => navigate("/hands"),
+        }
+      ],
+    },
     {
       text: t("components.menuItems.about"),
       icon: "info",
