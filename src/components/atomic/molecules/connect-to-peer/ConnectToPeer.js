@@ -30,6 +30,7 @@ import {
   blockBuilders,
 } from "../../../blockchain/chains/profileChain";
 import { useTranslation } from "react-i18next";
+import WebRTCWizard from "../webrtc-wizard/WebRTCWizard";
 
 import QRReader from "react-qr-scanner";
 
@@ -317,6 +318,23 @@ const ConnectToPeer = ({ qr, open, link, collapse }) => {
             </Button>
           </AccordionDetails>
         </Accordion>
+        {!!false && (<Accordion
+          expanded={expanded.includes("panel5")}
+          onChange={handleChange("panel5")}
+        >
+          <AccordionSummary
+            expandIcon={qr ? undefined : <ExpandMoreIcon />}
+            aria-controls="panel4bh-content"
+            id="panel4bh-header"
+          >
+            <Typography sx={{ flexShrink: 0 }}>
+              {t("components.connectToPeer.shareWebRtcQr")}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <WebRTCWizard />
+          </AccordionDetails>
+        </Accordion>)}
       </AccordionDetails>
     </Accordion>
   );

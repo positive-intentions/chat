@@ -163,6 +163,10 @@ import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
 import {
   // useSnackbar,
   useNotification,
@@ -403,7 +407,42 @@ export default function LoginPage() {
     );
   }, []);
 
-  const fromUser = storedId || randomString();
+  // list of random groups from chancejs
+  const randomGroups = [
+    'Random String',
+    'Animals',
+    'Countries',
+    'Months',
+  ]
+
+  const [idType, setIdType] = useState(randomGroups[0]);
+  const [fromUser, setFromUser] = useState(storedId || randomString());
+
+  const removeAllNonAlphaNumeric = (str) => {
+    // except hyphen
+    return str.replace(/[^a-zA-Z0-9-]/g, '');
+  }
+
+  const setNewId = () => {
+    if (idType === 'Random String') {
+      setFromUser(randomString());
+    } else if (idType === 'Animals') {
+      // create list of 6 animals as a hyphen separated string
+      const animals = Array.from({ length: 6 }, () => chance.animal()).map((a) => a.toLowerCase().replace(/\s/g, '-')).join('-');
+
+      setFromUser(removeAllNonAlphaNumeric(animals));
+    } else if (idType === 'Countries') {
+      const countries = Array.from({ length: 6 }, () => chance.country({ full: true })).map((a) => a.toLowerCase().replace(/\s/g, '-')).join('-');
+      setFromUser(removeAllNonAlphaNumeric(countries));
+    } else if (idType === 'Months') {
+      const months = Array.from({ length: 6 }, () => chance.month()).map((a) => a.toLowerCase().replace(/\s/g, '-')).join('-');
+      setFromUser(months);
+    }
+  }
+
+  useEffect(() => {
+    setNewId();
+  }, [idType]);
 
   // const storedUsername = compiledProfile.displayName;
   // const storedConnectionId = compiledProfile.connectionId;
@@ -1062,6 +1101,51 @@ export default function LoginPage() {
                         heading={t("loginPage.cryptoSignature")}
                         onChange={handleEncryptionSignatureChange}
                       />
+
+                      <FormControl fullWidth>
+                        <InputLabel id="demo-simple-select-label">Connection ID Type</InputLabel>
+                        <Select
+                          labelId="demo-simple-select-label"
+                          id="demo-simple-select"
+                          value={idType}
+                          label="Connection ID Type"
+                          onChange={(e) => setIdType(e.target.value)}
+                        >
+                          <MenuItem value={'Random String'}>Random String</MenuItem>
+                          <MenuItem value={'Animals'}>Animals</MenuItem>
+                          <MenuItem value={'Countries'}>Countries</MenuItem>
+                          <MenuItem value={'Months'}>Months</MenuItem>
+
+
+                        </Select>
+                      </FormControl>
+
+                      <TextField
+                        variant="outlined"
+                        margin="normal"
+                        required
+                        fullWidth
+                        id="username"
+                        label={t("loginPage.connectionId")}
+                        name="username"
+                        autoFocus
+                        value={fromUser}
+                        autoComplete="off"
+                        InputProps={{
+                          endAdornment: (
+                            <InputAdornment position="end">
+                              <IconButton
+                                aria-label="toggle password visibility"
+                                onClick={() => setNewId()}
+                                edge="end"
+                              >
+                                <RefreshIcon />
+                              </IconButton>
+                            </InputAdornment>
+                          ),
+                        }}
+                      />
+
                     </AccordionDetails>
                   </Accordion>
 

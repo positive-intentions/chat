@@ -9,7 +9,8 @@ import InputAdornment from "@mui/material/InputAdornment";
 import IconButton from "@mui/material/IconButton";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import Button from "@mui/material/Button";
-import usePeer from '../../p2p/usePeer';
+import usePeer from "../../p2p/usePeer";
+import QRInput from "../../atomic/atom/qrInput/QRInput";
 
 const useStyles = makeStyles((theme) => ({
   padding: {
@@ -75,13 +76,12 @@ export default function Maintainance() {
   };
 
   const handleRemoteOffer = async (rtcRemoteOffer) => {
-    const offer = JSON.parse((rtcRemoteOffer.replace(/(\r\n|\n|\r)/gm, "")));
+    const offer = JSON.parse(rtcRemoteOffer.replace(/(\r\n|\n|\r)/gm, ""));
     // RTCSessionDescriptionInit
     const offerDescption = new RTCSessionDescription(offer);
-    await rtc.setRemoteDescription(offerDescption)
-      .catch((e) => {
-        console.error("rtc1: setRemoteDescription", e);
-      });
+    await rtc.setRemoteDescription(offerDescption).catch((e) => {
+      console.error("rtc1: setRemoteDescription", e);
+    });
 
     await handleAnswer();
   };
@@ -99,7 +99,7 @@ export default function Maintainance() {
   };
 
   const handleRemoteAnswer = async (rtcRemoteAnswer) => {
-    const answer = JSON.parse((rtcRemoteAnswer.replace(/(\r\n|\n|\r)/gm, "")));
+    const answer = JSON.parse(rtcRemoteAnswer.replace(/(\r\n|\n|\r)/gm, ""));
     // RTCSessionDescriptionInit
     const answerDescption = new RTCSessionDescription(answer);
     await rtc.setRemoteDescription(answerDescption);
@@ -115,9 +115,11 @@ export default function Maintainance() {
   }, [rtcRemoteAnswer]);
 
   const handleIceCandidate = async (rtcIceCandidate) => {
-    const iceCandidate = JSON.parse((rtcIceCandidate.replace(/(\r\n|\n|\r)/gm, "")));
+    const iceCandidate = JSON.parse(
+      rtcIceCandidate.replace(/(\r\n|\n|\r)/gm, "")
+    );
     await rtc.addIceCandidate(iceCandidate);
-  }
+  };
 
   useEffect(() => {
     if (rtcRemoteIceCandidate) {
@@ -240,77 +242,77 @@ export default function Maintainance() {
           }}
         />
         <TextField
-            variant="outlined"
-            margin="normal"
-            fullWidth
-            id="connectionId"
-            label={"WebRTC ice candidate"}
-            name="webRTC"
-            value={rtcIceCandidate}
-            onChange={(e) => setRtcIceCandidate(e.target.value || "")}
-            autoComplete="off"
-            InputProps={{
-              endAdornment: (
-                <InputAdornment position="end">
-                  <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={handleCreateOffer}
-                    edge="end"
-                  >
-                    <RefreshIcon />
-                  </IconButton>
-                </InputAdornment>
-              ),
-            }}
-          />
-          <TextField
-            variant="outlined"
-            margin="normal"
-            fullWidth
-            id="connectionId"
-            label={"WebRTC remote ice candidate"}
-            name="webRTC"
-            value={rtcRemoteIceCandidate}
-            onChange={(e) => setRtcRemoteIceCandidate(e.target.value || "")}
-            autoComplete="off"
-            InputProps={{
-              endAdornment: (
-                <InputAdornment position="end">
-                  <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={handleCreateOffer}
-                    edge="end"
-                  >
-                    <RefreshIcon />
-                  </IconButton>
-                </InputAdornment>
-              ),
-            }}
-          />
-          <TextField
-            variant="outlined"
-            margin="normal"
-            fullWidth
-            id="connectionId"
-            label={"message"}
-            name="webRTC"
-            value={message}
-            onChange={(e) => setMessage(e.target.value || "")}
-            autoComplete="off"
-            InputProps={{
-              endAdornment: (
-                <InputAdornment position="end">
-                  <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={handleCreateOffer}
-                    edge="end"
-                  >
-                    <RefreshIcon />
-                  </IconButton>
-                </InputAdornment>
-              ),
-            }}
-          />
+          variant="outlined"
+          margin="normal"
+          fullWidth
+          id="connectionId"
+          label={"WebRTC ice candidate"}
+          name="webRTC"
+          value={rtcIceCandidate}
+          onChange={(e) => setRtcIceCandidate(e.target.value || "")}
+          autoComplete="off"
+          InputProps={{
+            endAdornment: (
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={handleCreateOffer}
+                  edge="end"
+                >
+                  <RefreshIcon />
+                </IconButton>
+              </InputAdornment>
+            ),
+          }}
+        />
+        <TextField
+          variant="outlined"
+          margin="normal"
+          fullWidth
+          id="connectionId"
+          label={"WebRTC remote ice candidate"}
+          name="webRTC"
+          value={rtcRemoteIceCandidate}
+          onChange={(e) => setRtcRemoteIceCandidate(e.target.value || "")}
+          autoComplete="off"
+          InputProps={{
+            endAdornment: (
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={handleCreateOffer}
+                  edge="end"
+                >
+                  <RefreshIcon />
+                </IconButton>
+              </InputAdornment>
+            ),
+          }}
+        />
+        <TextField
+          variant="outlined"
+          margin="normal"
+          fullWidth
+          id="connectionId"
+          label={"message"}
+          name="webRTC"
+          value={message}
+          onChange={(e) => setMessage(e.target.value || "")}
+          autoComplete="off"
+          InputProps={{
+            endAdornment: (
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={handleCreateOffer}
+                  edge="end"
+                >
+                  <RefreshIcon />
+                </IconButton>
+              </InputAdornment>
+            ),
+          }}
+        />
         <Button
           variant="contained"
           component="label"
@@ -319,8 +321,10 @@ export default function Maintainance() {
             dc.send(message);
           }}
         >
-send        
-</Button>
+          send
+        </Button>
+
+        {!!false && (<QRInput defaultValue="hello world" />)}
       </div>
     </PageContainer>
   );
