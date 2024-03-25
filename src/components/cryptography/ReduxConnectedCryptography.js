@@ -1,5 +1,5 @@
 import React from "react";
-import { CryptographyProvider } from "cryptography/Cryptography";
+import { CryptographyProvider, randomString } from "cryptography/Cryptography";
 import { useSelector } from "react-redux";
 import { compiler as profileCompiler } from "../blockchain/chains/profileChain";
 import { useBlockchain } from "../blockchain/Blockchain";
@@ -14,7 +14,7 @@ const ReduxConnectedCryptography = ({ children }) => {
   });
 
   return (
-    <CryptographyProvider entropy={userProfile.encryptionSignature}>
+    <CryptographyProvider entropy={userProfile.encryptionSignature + randomString()}>
       {children}
     </CryptographyProvider>
   );
