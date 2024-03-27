@@ -946,7 +946,7 @@ export default function LoginPage() {
           <>
             <br />
             <Typography variant="p" gutterBottom>
-              {t("loginPage.welcome")}
+              {/* {t("loginPage.welcome")}
               <br />
               <br />
               <Avatar
@@ -990,7 +990,7 @@ export default function LoginPage() {
               />
               {t("loginPage.p2pCalls")}
               <br />
-              <br />
+              <br /> */}
               <Typography variant="body1" gutterBottom>
                 {t("loginPage.featuresInclude")}
                 <ul>

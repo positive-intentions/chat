@@ -102,7 +102,7 @@ module.exports = {
       ],
       start_url: ".",
       display: "standalone",
-      theme_color: "#44b700",
+      theme_color: "#1565c0",
       background_color: "#ffffff",
       // crossorigin: 'use-credentials', // can be null, use-credentials or anonymous
       inject: true,

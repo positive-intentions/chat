@@ -63,8 +63,8 @@ i18n
           },
           loginPage: {
             pageTitle: "Welcome",
-            setProfile: "Set Profile",
-            setPreference: "Set Preferences",
+            setProfile: "Set Profile (optional)",
+            setPreference: "Set Preferences (optional)",
             inAppNotification: "In-app Notifications",
             browserNotification: "Browser Notifications",
             goToTermsAndConditions: "Read Terms and Conditions",

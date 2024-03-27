@@ -42,6 +42,6 @@
   "display": "standalone",
   "start_url": ".",
   "description": "positive-intentions",
-  "theme_color": "#44b700",
+  "theme_color": "#1565c0",
   "background_color": "#ffffff"
 }
