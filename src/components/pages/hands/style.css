@@ -7,14 +7,14 @@
   /* Other styling as needed */
 }
 
-video, canvas {
+#video, #output {
   width: 100% !important;
   height: auto !important;
   display:
    block; /* To prevent default margin/padding issues */
 }
 
-video {
+#video {
   display: none;
 }
 .scatter-container {
