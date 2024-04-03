@@ -1,6 +1,6 @@
 # Chat
 
-> ⚠️ **WARNING:** This project is an unstable experimental proof-of-concept and may contain bugs and/or incomplete features. Use it at your own risk.
+> ⚠️ **WARNING:** This project is not production-ready. It is an unstable experimental proof-of-concept and may contain bugs and/or incomplete features. Use it at your own risk.
 
 
 ![App Logo](public/logo192.png)
@@ -61,5 +61,5 @@ Pushing the boundaries of what's possible with current web technologies to creat
 - **Feedback**: Your insights are invaluable. Share your thoughts on current features, suggest new ones, or report any bugs you encounter.
 - **Development**: Interested in contributing code? [Let's talk!](https://www.reddit.com/r/positive_intentions) While the app isn't fully open-source yet, parts of it are, and I'm keen on opening more in the future.
 - **Spread the Word**: Help us grow by sharing the app with others who value privacy and control over their digital communication.
-- **Stars**: If you like the project, consider starring the repository. It helps others discover it and boosts my motivation.
+- **Github Stars**: If you like the project, consider starring the repository. It helps others discover it and boosts my motivation.
 - **Financial Support**: Development is fueled by passion and coffee. Your sponsorship helps keep both flowing.
