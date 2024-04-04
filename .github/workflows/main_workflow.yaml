@@ -1,4 +1,4 @@
-name: 'Workflow of Parent REPO'
+name: 'Deploy to Staging'
 
 on:
   push:

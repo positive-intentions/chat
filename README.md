@@ -2,8 +2,15 @@
 
 > ⚠️ **WARNING:** This project is not production-ready. It is an unstable experimental proof-of-concept and may contain bugs and/or incomplete features. Use it at your own risk.
 
-
 ![App Logo](public/logo192.png)
+
+![GitHub stars](https://img.shields.io/github/stars/positive-intentions/chat?style=social) 
+![GitHub forks](https://img.shields.io/github/forks/positive-intentions/chat?style=social) 
+![GitHub issues](https://img.shields.io/github/issues/positive-intentions/chat) 
+![GitHub license](https://img.shields.io/github/license/positive-intentions/chat) 
+![Staging](https://github.com/positive-intentions/chat/actions/workflows/main_workflow.yaml/badge.svg) 
+![Code size](https://img.shields.io/github/languages/code-size/positive-intentions/chat) 
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 Discover **Positive Intentions Chat**: A secure, browser-based chat application leveraging WebRTC for decentralized messaging, file sharing, and virtual reality experiences. Prioritizing privacy and user control, it's redefining the way we think about online communication. Join us in shaping the future of chat.
 
