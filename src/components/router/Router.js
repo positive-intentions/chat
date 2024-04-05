@@ -166,7 +166,6 @@ export default () => {
           },
           {
             path: "/contacts",
-            exact: true,
             element: <Layout />,
           },
           {
