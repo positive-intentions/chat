@@ -52,6 +52,7 @@ import LiveTvIcon from '@mui/icons-material/LiveTv';
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import Download from "@mui/icons-material/DownloadForOffline";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import NavigationIcon from "@mui/icons-material/Navigation";
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 import WavingHandIcon from '@mui/icons-material/WavingHand';
@@ -143,6 +144,7 @@ const presetIcons = {
   connect: <ConnectWithoutContactIcon />,
   hand: <WavingHandIcon />,
   map: <NavigationIcon />,
+  donate: <VolunteerActivismIcon />,
 };
 
 function HideOnScroll(props) {
@@ -407,6 +409,11 @@ const CustomDropdown = ({ menuItems }) => {
         }),
       ],
     },
+    {
+      text: t("components.menuItems.sponsor"),
+      icon: "donate",
+      onClick: () => window.open("https://github.com/sponsors/positive-intentions"),
+    }
   ];
 
   return (

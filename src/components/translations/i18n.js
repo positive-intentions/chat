@@ -46,6 +46,7 @@ i18n
               install: "Install app",
               downloadZip: "Download .zip",
               labs: "Labs",
+              sponsor: "Sponsor",
               contact: "Contact",
               requestingToInstall: "Requesting browser to install app",
               installPossible:
