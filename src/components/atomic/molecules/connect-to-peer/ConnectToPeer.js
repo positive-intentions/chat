@@ -127,7 +127,7 @@ const ConnectToPeer = ({ qr, open, link, collapse }) => {
     if (collapse) {
       setExpanded([]);
     } else {
-      navigate(`/login/${extractIDFromLink(peerLink)}`);
+      navigate(`/contact/${extractIDFromLink(peerLink)}`);
     }
   };
 
