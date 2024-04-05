@@ -38,7 +38,7 @@ npm install --force
 npm start
 ```
 
-This will start the development server and open the app in your default browser. If it doesn't open automatically, you can navigate to [http://localhost:3000](http://localhost:3000) to view the app.
+This will start the development server and open the app in your default browser. If it doesn't open automatically, you can navigate to [http://localhost:8080](http://localhost:8080) to view the app.
 
 > See the [package.json](package.json) file for more scripts.
 
