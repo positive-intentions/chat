@@ -397,10 +397,6 @@ const CustomDropdown = ({ menuItems }) => {
       text: t("components.menuItems.language"),
       icon: "translate",
       subMenuItems: [
-        // { text: 'English', onClick: () => i18n.changeLanguage('en') },
-        // { text: 'Spanish', onClick: () => i18n.changeLanguage('es') },
-        // { text: 'Mandarin', onClick: () => i18n.changeLanguage('zh') },
-        // { text: 'Gujrati', onClick: () => i18n.changeLanguage('gu') },
         ...languages.map((language) => {
           return {
             text: language.name,
