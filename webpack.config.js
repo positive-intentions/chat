@@ -5,15 +5,20 @@ const { ModuleFederationPlugin } = require("webpack").container;
 const WebpackPwaManifest = require("webpack-pwa-manifest");
 const path = require("path");
 
-const isDevelopment = process.env.NODE_ENV !== "production";
+// const isDevelopment = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  mode: isDevelopment ? "development" : "production",
+  // mode: isDevelopment ? "development" : "production",
   entry: "./src/index.js",
+  mode: 'development',
+  devtool: 'source-map',
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     publicPath: "",
+  },
+  optimization: {
+    minimize: false,
   },
   resolve: {
     extensions: ['.ts', '.js', '.json']
