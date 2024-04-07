@@ -121,7 +121,7 @@
     "react-swipeable-views": "^0.14.0",
     "redux-persist": "^6.0.0",
     "redux-persist-indexeddb-storage": "^1.0.4",
-    "scatter-gl": "0.0.8",
+    "scatter-gl": "0.0.13",
     "slick-carousel": "^1.8.1",
     "stats-js": "^1.0.1",
     "styled-components": "^6.1.8",
