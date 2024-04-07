@@ -1,1 +1,1028 @@
-'use strict';var a9_0x1ec424=a9_0x2f60;(function(_0x55193b,_0x4c9f98){var _0x3086bc=a9_0x2f60,_0xab341f=_0x55193b();while(!![]){try{var _0xd8c641=parseInt(_0x3086bc(0x15f))/0x1+-parseInt(_0x3086bc(0x1e3))/0x2*(parseInt(_0x3086bc(0x1f6))/0x3)+parseInt(_0x3086bc(0x146))/0x4*(-parseInt(_0x3086bc(0x236))/0x5)+-parseInt(_0x3086bc(0x1ac))/0x6+-parseInt(_0x3086bc(0x16d))/0x7+parseInt(_0x3086bc(0x1b1))/0x8+parseInt(_0x3086bc(0x22d))/0x9;if(_0xd8c641===_0x4c9f98)break;else _0xab341f['push'](_0xab341f['shift']());}catch(_0x2168e0){_0xab341f['push'](_0xab341f['shift']());}}}(a9_0x4379,0xa4070));(self['webpackChunkchat']=self[a9_0x1ec424(0x158)]||[])['push']([[0x128],{0x89e0:(_0x5aa0a0,_0x2c6b92,_0x40b74e)=>{var _0x8f2755=a9_0x1ec424;_0x40b74e['r'](_0x2c6b92),_0x40b74e['d'](_0x2c6b92,{'default':()=>_0x2d9135});var _0x5da0a0=_0x40b74e(0x1428),_0x2d2483=_0x40b74e['n'](_0x5da0a0),_0x486cf4=_0x40b74e(0x10cf9),_0x1aaf20=_0x40b74e(0xfb4c),_0x41b076=_0x40b74e(0xcd78),_0x3b0ee4=(_0x40b74e(0x165d8),_0x40b74e(0x14894)),_0x5b2ec3=(_0x40b74e(0x51ec),_0x40b74e(0xf218),_0x40b74e(0x1998)),_0x20027b=_0x40b74e(0x16450),_0x579e44=(_0x40b74e(0x41e0),_0x40b74e(0x12ca8)),_0x151a70=_0x40b74e(0x17c8),_0x2444aa=_0x40b74e(0xcf14),_0x5baa20=(_0x40b74e(0x111d4),_0x40b74e(0x921e),_0x40b74e(0x8bf0),_0x40b74e(0x11d5c)),_0x23d12f=_0x40b74e(0x14554),_0x389158=_0x40b74e(0xcc68),_0x29093b=_0x40b74e(0x8320);function _0x2512c6(_0x5179fb){var _0x55e531=a9_0x2f60;return _0x2512c6='function'==typeof Symbol&&_0x55e531(0x178)==typeof Symbol[_0x55e531(0x1b8)]?function(_0xfddfff){return typeof _0xfddfff;}:function(_0x1639e9){var _0x289c51=_0x55e531;return _0x1639e9&&_0x289c51(0x1ee)==typeof Symbol&&_0x1639e9['constructor']===Symbol&&_0x1639e9!==Symbol[_0x289c51(0x161)]?'symbol':typeof _0x1639e9;},_0x2512c6(_0x5179fb);}var _0x159e98=[_0x8f2755(0x1f5),_0x8f2755(0x18e),_0x8f2755(0x183),_0x8f2755(0x1b3),_0x8f2755(0x14f),_0x8f2755(0x17d)];function _0x11283b(){var _0x42e4c4=_0x8f2755;return _0x11283b=Object[_0x42e4c4(0x225)]?Object[_0x42e4c4(0x225)][_0x42e4c4(0x180)]():function(_0x4c8dec){var _0x481885=_0x42e4c4;for(var _0x4150f3=0x1;_0x4150f3<arguments[_0x481885(0x15c)];_0x4150f3++){var _0x57605e=arguments[_0x4150f3];for(var _0x2a7a8e in _0x57605e)Object[_0x481885(0x161)][_0x481885(0x215)][_0x481885(0x1c5)](_0x57605e,_0x2a7a8e)&&(_0x4c8dec[_0x2a7a8e]=_0x57605e[_0x2a7a8e]);}return _0x4c8dec;},_0x11283b[_0x42e4c4(0x21b)](this,arguments);}function _0x4757a7(){var _0x1ae9c1=_0x8f2755;_0x4757a7=function(){return _0x5b377b;};var _0x50e839,_0x5b377b={},_0x36c53f=Object[_0x1ae9c1(0x161)],_0x5b3f23=_0x36c53f[_0x1ae9c1(0x215)],_0x8bd65f=Object[_0x1ae9c1(0x18b)]||function(_0x4c5ffc,_0x2a2f2c,_0x527b43){var _0x4c1f9d=_0x1ae9c1;_0x4c5ffc[_0x2a2f2c]=_0x527b43[_0x4c1f9d(0x1a7)];},_0x2fed1e='function'==typeof Symbol?Symbol:{},_0x45a0cd=_0x2fed1e[_0x1ae9c1(0x1b8)]||_0x1ae9c1(0x1d4),_0x1e9a0c=_0x2fed1e[_0x1ae9c1(0x227)]||'@@asyncIterator',_0xbdccef=_0x2fed1e[_0x1ae9c1(0x1cc)]||_0x1ae9c1(0x22a);function _0x1894bb(_0x169cf8,_0x534af3,_0x52eba8){var _0xb894c2=_0x1ae9c1;return Object[_0xb894c2(0x18b)](_0x169cf8,_0x534af3,{'value':_0x52eba8,'enumerable':!0x0,'configurable':!0x0,'writable':!0x0}),_0x169cf8[_0x534af3];}try{_0x1894bb({},'');}catch(_0x52cdd8){_0x1894bb=function(_0x4fde40,_0x492d16,_0x102109){return _0x4fde40[_0x492d16]=_0x102109;};}function _0x3f6ffb(_0x36d338,_0x1ea9ea,_0x49b730,_0x4ba369){var _0x541246=_0x1ae9c1,_0x3a5242=_0x1ea9ea&&_0x1ea9ea[_0x541246(0x161)]instanceof _0x57f409?_0x1ea9ea:_0x57f409,_0x2ee377=Object[_0x541246(0x15e)](_0x3a5242[_0x541246(0x161)]),_0xbc9899=new _0x1aa3a8(_0x4ba369||[]);return _0x8bd65f(_0x2ee377,_0x541246(0x1e1),{'value':_0x27ccaa(_0x36d338,_0x49b730,_0xbc9899)}),_0x2ee377;}function _0x47e7a9(_0x340acf,_0x3fc203,_0x4fe453){var _0xe388b3=_0x1ae9c1;try{return{'type':_0xe388b3(0x14b),'arg':_0x340acf[_0xe388b3(0x1c5)](_0x3fc203,_0x4fe453)};}catch(_0x339d5d){return{'type':_0xe388b3(0x1f4),'arg':_0x339d5d};}}_0x5b377b['wrap']=_0x3f6ffb;var _0xfe9949='suspendedStart',_0x4041f7=_0x1ae9c1(0x195),_0x30da2e=_0x1ae9c1(0x1a6),_0x1a52c9=_0x1ae9c1(0x1ec),_0x75f51b={};function _0x57f409(){}function _0x278602(){}function _0x5cecee(){}var _0x5374bf={};_0x1894bb(_0x5374bf,_0x45a0cd,function(){return this;});var _0x371fb5=Object[_0x1ae9c1(0x22f)],_0x1e5c7d=_0x371fb5&&_0x371fb5(_0x371fb5(_0x2ced6e([])));_0x1e5c7d&&_0x1e5c7d!==_0x36c53f&&_0x5b3f23[_0x1ae9c1(0x1c5)](_0x1e5c7d,_0x45a0cd)&&(_0x5374bf=_0x1e5c7d);var _0x5c70b0=_0x5cecee['prototype']=_0x57f409['prototype']=Object[_0x1ae9c1(0x15e)](_0x5374bf);function _0x31d825(_0x3045a7){var _0xa54906=_0x1ae9c1;['next',_0xa54906(0x1f4),_0xa54906(0x1fc)]['forEach'](function(_0x522063){_0x1894bb(_0x3045a7,_0x522063,function(_0x54b011){return this['_invoke'](_0x522063,_0x54b011);});});}function _0x3c81aa(_0x30e85c,_0x29ccdb){function _0x434e3f(_0x57c2fa,_0x4ff27e,_0x339fff,_0x57d2c8){var _0x4188da=a9_0x2f60,_0x4f4e97=_0x47e7a9(_0x30e85c[_0x57c2fa],_0x30e85c,_0x4ff27e);if(_0x4188da(0x1f4)!==_0x4f4e97[_0x4188da(0x1c0)]){var _0x59b899=_0x4f4e97[_0x4188da(0x155)],_0x203b76=_0x59b899[_0x4188da(0x1a7)];return _0x203b76&&_0x4188da(0x191)==_0x2512c6(_0x203b76)&&_0x5b3f23[_0x4188da(0x1c5)](_0x203b76,_0x4188da(0x153))?_0x29ccdb[_0x4188da(0x14a)](_0x203b76['__await'])[_0x4188da(0x203)](function(_0x418650){_0x434e3f('next',_0x418650,_0x339fff,_0x57d2c8);},function(_0xa8c52){var _0x431277=_0x4188da;_0x434e3f(_0x431277(0x1f4),_0xa8c52,_0x339fff,_0x57d2c8);}):_0x29ccdb[_0x4188da(0x14a)](_0x203b76)[_0x4188da(0x203)](function(_0x1e8af5){_0x59b899['value']=_0x1e8af5,_0x339fff(_0x59b899);},function(_0x2f9928){var _0x172651=_0x4188da;return _0x434e3f(_0x172651(0x1f4),_0x2f9928,_0x339fff,_0x57d2c8);});}_0x57d2c8(_0x4f4e97[_0x4188da(0x155)]);}var _0x58a9b7;_0x8bd65f(this,'_invoke',{'value':function(_0x2bde81,_0x45fc5a){var _0x44d181=a9_0x2f60;function _0x40f4dc(){return new _0x29ccdb(function(_0x3534df,_0x376a52){_0x434e3f(_0x2bde81,_0x45fc5a,_0x3534df,_0x376a52);});}return _0x58a9b7=_0x58a9b7?_0x58a9b7[_0x44d181(0x203)](_0x40f4dc,_0x40f4dc):_0x40f4dc();}});}function _0x27ccaa(_0x33ea69,_0x53f1fa,_0x417c59){var _0x26b1dd=_0xfe9949;return function(_0x420a97,_0x417f58){var _0x1432b4=a9_0x2f60;if(_0x26b1dd===_0x30da2e)throw new Error(_0x1432b4(0x1b4));if(_0x26b1dd===_0x1a52c9){if(_0x1432b4(0x1f4)===_0x420a97)throw _0x417f58;return{'value':_0x50e839,'done':!0x0};}for(_0x417c59['method']=_0x420a97,_0x417c59['arg']=_0x417f58;;){var _0x453fa5=_0x417c59[_0x1432b4(0x235)];if(_0x453fa5){var _0x181a2a=_0x58bf09(_0x453fa5,_0x417c59);if(_0x181a2a){if(_0x181a2a===_0x75f51b)continue;return _0x181a2a;}}if(_0x1432b4(0x1ef)===_0x417c59[_0x1432b4(0x1f9)])_0x417c59[_0x1432b4(0x148)]=_0x417c59[_0x1432b4(0x177)]=_0x417c59[_0x1432b4(0x155)];else{if(_0x1432b4(0x1f4)===_0x417c59['method']){if(_0x26b1dd===_0xfe9949)throw _0x26b1dd=_0x1a52c9,_0x417c59[_0x1432b4(0x155)];_0x417c59[_0x1432b4(0x1c9)](_0x417c59[_0x1432b4(0x155)]);}else'return'===_0x417c59[_0x1432b4(0x1f9)]&&_0x417c59[_0x1432b4(0x1b7)](_0x1432b4(0x1fc),_0x417c59[_0x1432b4(0x155)]);}_0x26b1dd=_0x30da2e;var _0xdee63f=_0x47e7a9(_0x33ea69,_0x53f1fa,_0x417c59);if(_0x1432b4(0x14b)===_0xdee63f[_0x1432b4(0x1c0)]){if(_0x26b1dd=_0x417c59[_0x1432b4(0x14c)]?_0x1a52c9:_0x4041f7,_0xdee63f[_0x1432b4(0x155)]===_0x75f51b)continue;return{'value':_0xdee63f[_0x1432b4(0x155)],'done':_0x417c59[_0x1432b4(0x14c)]};}_0x1432b4(0x1f4)===_0xdee63f[_0x1432b4(0x1c0)]&&(_0x26b1dd=_0x1a52c9,_0x417c59[_0x1432b4(0x1f9)]='throw',_0x417c59[_0x1432b4(0x155)]=_0xdee63f[_0x1432b4(0x155)]);}};}function _0x58bf09(_0x1fa90c,_0x3d0ed9){var _0x438bbc=_0x1ae9c1,_0x55a9fd=_0x3d0ed9[_0x438bbc(0x1f9)],_0x5c64e2=_0x1fa90c[_0x438bbc(0x1b8)][_0x55a9fd];if(_0x5c64e2===_0x50e839)return _0x3d0ed9[_0x438bbc(0x235)]=null,_0x438bbc(0x1f4)===_0x55a9fd&&_0x1fa90c[_0x438bbc(0x1b8)][_0x438bbc(0x1fc)]&&(_0x3d0ed9[_0x438bbc(0x1f9)]=_0x438bbc(0x1fc),_0x3d0ed9['arg']=_0x50e839,_0x58bf09(_0x1fa90c,_0x3d0ed9),_0x438bbc(0x1f4)===_0x3d0ed9[_0x438bbc(0x1f9)])||'return'!==_0x55a9fd&&(_0x3d0ed9[_0x438bbc(0x1f9)]=_0x438bbc(0x1f4),_0x3d0ed9['arg']=new TypeError(_0x438bbc(0x230)+_0x55a9fd+_0x438bbc(0x1bb))),_0x75f51b;var _0x239f8d=_0x47e7a9(_0x5c64e2,_0x1fa90c['iterator'],_0x3d0ed9['arg']);if(_0x438bbc(0x1f4)===_0x239f8d['type'])return _0x3d0ed9[_0x438bbc(0x1f9)]=_0x438bbc(0x1f4),_0x3d0ed9['arg']=_0x239f8d[_0x438bbc(0x155)],_0x3d0ed9[_0x438bbc(0x235)]=null,_0x75f51b;var _0x21d8d7=_0x239f8d['arg'];return _0x21d8d7?_0x21d8d7[_0x438bbc(0x14c)]?(_0x3d0ed9[_0x1fa90c['resultName']]=_0x21d8d7['value'],_0x3d0ed9['next']=_0x1fa90c[_0x438bbc(0x20a)],_0x438bbc(0x1fc)!==_0x3d0ed9[_0x438bbc(0x1f9)]&&(_0x3d0ed9['method']=_0x438bbc(0x1ef),_0x3d0ed9[_0x438bbc(0x155)]=_0x50e839),_0x3d0ed9[_0x438bbc(0x235)]=null,_0x75f51b):_0x21d8d7:(_0x3d0ed9[_0x438bbc(0x1f9)]=_0x438bbc(0x1f4),_0x3d0ed9[_0x438bbc(0x155)]=new TypeError('iterator\x20result\x20is\x20not\x20an\x20object'),_0x3d0ed9[_0x438bbc(0x235)]=null,_0x75f51b);}function _0x419334(_0x334cc9){var _0x275d44=_0x1ae9c1,_0x330769={'tryLoc':_0x334cc9[0x0]};0x1 in _0x334cc9&&(_0x330769[_0x275d44(0x1a4)]=_0x334cc9[0x1]),0x2 in _0x334cc9&&(_0x330769['finallyLoc']=_0x334cc9[0x2],_0x330769[_0x275d44(0x1ff)]=_0x334cc9[0x3]),this[_0x275d44(0x1b0)]['push'](_0x330769);}function _0x5b55c4(_0x51003b){var _0x5d8c0a=_0x1ae9c1,_0x23688f=_0x51003b[_0x5d8c0a(0x160)]||{};_0x23688f[_0x5d8c0a(0x1c0)]=_0x5d8c0a(0x14b),delete _0x23688f[_0x5d8c0a(0x155)],_0x51003b['completion']=_0x23688f;}function _0x1aa3a8(_0x1b0a9a){var _0x5cddb6=_0x1ae9c1;this[_0x5cddb6(0x1b0)]=[{'tryLoc':_0x5cddb6(0x202)}],_0x1b0a9a[_0x5cddb6(0x23c)](_0x419334,this),this[_0x5cddb6(0x18d)](!0x0);}function _0x2ced6e(_0x373e4f){var _0x229096=_0x1ae9c1;if(_0x373e4f||''===_0x373e4f){var _0x5c688e=_0x373e4f[_0x45a0cd];if(_0x5c688e)return _0x5c688e[_0x229096(0x1c5)](_0x373e4f);if(_0x229096(0x1ee)==typeof _0x373e4f[_0x229096(0x1ef)])return _0x373e4f;if(!isNaN(_0x373e4f['length'])){var _0x2eef74=-0x1,_0x58822d=function _0x142693(){var _0x46ca61=_0x229096;for(;++_0x2eef74<_0x373e4f['length'];)if(_0x5b3f23['call'](_0x373e4f,_0x2eef74))return _0x142693['value']=_0x373e4f[_0x2eef74],_0x142693[_0x46ca61(0x14c)]=!0x1,_0x142693;return _0x142693['value']=_0x50e839,_0x142693[_0x46ca61(0x14c)]=!0x0,_0x142693;};return _0x58822d['next']=_0x58822d;}}throw new TypeError(_0x2512c6(_0x373e4f)+_0x229096(0x193));}return _0x278602[_0x1ae9c1(0x161)]=_0x5cecee,_0x8bd65f(_0x5c70b0,'constructor',{'value':_0x5cecee,'configurable':!0x0}),_0x8bd65f(_0x5cecee,_0x1ae9c1(0x1b6),{'value':_0x278602,'configurable':!0x0}),_0x278602['displayName']=_0x1894bb(_0x5cecee,_0xbdccef,_0x1ae9c1(0x1d0)),_0x5b377b[_0x1ae9c1(0x1a0)]=function(_0x496e64){var _0x292419=_0x1ae9c1,_0x342fc9=_0x292419(0x1ee)==typeof _0x496e64&&_0x496e64[_0x292419(0x1b6)];return!!_0x342fc9&&(_0x342fc9===_0x278602||_0x292419(0x1d0)===(_0x342fc9[_0x292419(0x16c)]||_0x342fc9['name']));},_0x5b377b[_0x1ae9c1(0x211)]=function(_0x2aab91){var _0x53db8e=_0x1ae9c1;return Object[_0x53db8e(0x172)]?Object[_0x53db8e(0x172)](_0x2aab91,_0x5cecee):(_0x2aab91[_0x53db8e(0x1bf)]=_0x5cecee,_0x1894bb(_0x2aab91,_0xbdccef,'GeneratorFunction')),_0x2aab91[_0x53db8e(0x161)]=Object[_0x53db8e(0x15e)](_0x5c70b0),_0x2aab91;},_0x5b377b[_0x1ae9c1(0x1ab)]=function(_0x13c733){return{'__await':_0x13c733};},_0x31d825(_0x3c81aa[_0x1ae9c1(0x161)]),_0x1894bb(_0x3c81aa[_0x1ae9c1(0x161)],_0x1e9a0c,function(){return this;}),_0x5b377b[_0x1ae9c1(0x145)]=_0x3c81aa,_0x5b377b[_0x1ae9c1(0x226)]=function(_0x172906,_0x2fc57d,_0x3b096a,_0x21e9e8,_0x2fd832){void 0x0===_0x2fd832&&(_0x2fd832=Promise);var _0x150eab=new _0x3c81aa(_0x3f6ffb(_0x172906,_0x2fc57d,_0x3b096a,_0x21e9e8),_0x2fd832);return _0x5b377b['isGeneratorFunction'](_0x2fc57d)?_0x150eab:_0x150eab['next']()['then'](function(_0x5eb122){var _0x1fefb0=a9_0x2f60;return _0x5eb122[_0x1fefb0(0x14c)]?_0x5eb122['value']:_0x150eab[_0x1fefb0(0x1ef)]();});},_0x31d825(_0x5c70b0),_0x1894bb(_0x5c70b0,_0xbdccef,'Generator'),_0x1894bb(_0x5c70b0,_0x45a0cd,function(){return this;}),_0x1894bb(_0x5c70b0,'toString',function(){return'[object\x20Generator]';}),_0x5b377b[_0x1ae9c1(0x22e)]=function(_0x562370){var _0x321bfc=Object(_0x562370),_0x8ca12e=[];for(var _0x58734c in _0x321bfc)_0x8ca12e['push'](_0x58734c);return _0x8ca12e['reverse'](),function _0x1e0180(){var _0x6d82ac=a9_0x2f60;for(;_0x8ca12e['length'];){var _0x579ba9=_0x8ca12e[_0x6d82ac(0x23a)]();if(_0x579ba9 in _0x321bfc)return _0x1e0180[_0x6d82ac(0x1a7)]=_0x579ba9,_0x1e0180['done']=!0x1,_0x1e0180;}return _0x1e0180[_0x6d82ac(0x14c)]=!0x0,_0x1e0180;};},_0x5b377b[_0x1ae9c1(0x1df)]=_0x2ced6e,_0x1aa3a8[_0x1ae9c1(0x161)]={'constructor':_0x1aa3a8,'reset':function(_0x356f9a){var _0x3330c7=_0x1ae9c1;if(this[_0x3330c7(0x21f)]=0x0,this[_0x3330c7(0x1ef)]=0x0,this['sent']=this[_0x3330c7(0x177)]=_0x50e839,this[_0x3330c7(0x14c)]=!0x1,this[_0x3330c7(0x235)]=null,this[_0x3330c7(0x1f9)]=_0x3330c7(0x1ef),this[_0x3330c7(0x155)]=_0x50e839,this[_0x3330c7(0x1b0)]['forEach'](_0x5b55c4),!_0x356f9a){for(var _0x415563 in this)'t'===_0x415563[_0x3330c7(0x17c)](0x0)&&_0x5b3f23['call'](this,_0x415563)&&!isNaN(+_0x415563[_0x3330c7(0x1c3)](0x1))&&(this[_0x415563]=_0x50e839);}},'stop':function(){var _0x51c301=_0x1ae9c1;this[_0x51c301(0x14c)]=!0x0;var _0x37b7a3=this[_0x51c301(0x1b0)][0x0][_0x51c301(0x160)];if(_0x51c301(0x1f4)===_0x37b7a3[_0x51c301(0x1c0)])throw _0x37b7a3[_0x51c301(0x155)];return this[_0x51c301(0x22c)];},'dispatchException':function(_0x3b79bc){var _0x35edd1=_0x1ae9c1;if(this[_0x35edd1(0x14c)])throw _0x3b79bc;var _0x7066c8=this;function _0x589410(_0xfb6f7,_0xa4aa8a){var _0x444915=_0x35edd1;return _0x3b1fe4[_0x444915(0x1c0)]=_0x444915(0x1f4),_0x3b1fe4['arg']=_0x3b79bc,_0x7066c8[_0x444915(0x1ef)]=_0xfb6f7,_0xa4aa8a&&(_0x7066c8['method']=_0x444915(0x1ef),_0x7066c8[_0x444915(0x155)]=_0x50e839),!!_0xa4aa8a;}for(var _0x221a5b=this[_0x35edd1(0x1b0)][_0x35edd1(0x15c)]-0x1;_0x221a5b>=0x0;--_0x221a5b){var _0x1eedad=this[_0x35edd1(0x1b0)][_0x221a5b],_0x3b1fe4=_0x1eedad['completion'];if(_0x35edd1(0x202)===_0x1eedad['tryLoc'])return _0x589410('end');if(_0x1eedad[_0x35edd1(0x1a9)]<=this[_0x35edd1(0x21f)]){var _0x5002d4=_0x5b3f23[_0x35edd1(0x1c5)](_0x1eedad,'catchLoc'),_0x205dbb=_0x5b3f23[_0x35edd1(0x1c5)](_0x1eedad,_0x35edd1(0x214));if(_0x5002d4&&_0x205dbb){if(this[_0x35edd1(0x21f)]<_0x1eedad[_0x35edd1(0x1a4)])return _0x589410(_0x1eedad[_0x35edd1(0x1a4)],!0x0);if(this['prev']<_0x1eedad[_0x35edd1(0x214)])return _0x589410(_0x1eedad[_0x35edd1(0x214)]);}else{if(_0x5002d4){if(this[_0x35edd1(0x21f)]<_0x1eedad[_0x35edd1(0x1a4)])return _0x589410(_0x1eedad['catchLoc'],!0x0);}else{if(!_0x205dbb)throw new Error(_0x35edd1(0x1bd));if(this[_0x35edd1(0x21f)]<_0x1eedad['finallyLoc'])return _0x589410(_0x1eedad['finallyLoc']);}}}}},'abrupt':function(_0x4d1995,_0x5b9899){var _0x95870a=_0x1ae9c1;for(var _0x34adc5=this[_0x95870a(0x1b0)][_0x95870a(0x15c)]-0x1;_0x34adc5>=0x0;--_0x34adc5){var _0x47289c=this[_0x95870a(0x1b0)][_0x34adc5];if(_0x47289c[_0x95870a(0x1a9)]<=this['prev']&&_0x5b3f23['call'](_0x47289c,'finallyLoc')&&this['prev']<_0x47289c[_0x95870a(0x214)]){var _0x3d61ff=_0x47289c;break;}}_0x3d61ff&&('break'===_0x4d1995||_0x95870a(0x150)===_0x4d1995)&&_0x3d61ff[_0x95870a(0x1a9)]<=_0x5b9899&&_0x5b9899<=_0x3d61ff[_0x95870a(0x214)]&&(_0x3d61ff=null);var _0x1177c2=_0x3d61ff?_0x3d61ff['completion']:{};return _0x1177c2[_0x95870a(0x1c0)]=_0x4d1995,_0x1177c2['arg']=_0x5b9899,_0x3d61ff?(this[_0x95870a(0x1f9)]=_0x95870a(0x1ef),this[_0x95870a(0x1ef)]=_0x3d61ff['finallyLoc'],_0x75f51b):this[_0x95870a(0x1fb)](_0x1177c2);},'complete':function(_0x46a874,_0x471f28){var _0x1573f6=_0x1ae9c1;if(_0x1573f6(0x1f4)===_0x46a874[_0x1573f6(0x1c0)])throw _0x46a874[_0x1573f6(0x155)];return _0x1573f6(0x165)===_0x46a874[_0x1573f6(0x1c0)]||_0x1573f6(0x150)===_0x46a874[_0x1573f6(0x1c0)]?this[_0x1573f6(0x1ef)]=_0x46a874[_0x1573f6(0x155)]:_0x1573f6(0x1fc)===_0x46a874['type']?(this['rval']=this[_0x1573f6(0x155)]=_0x46a874['arg'],this[_0x1573f6(0x1f9)]='return',this[_0x1573f6(0x1ef)]='end'):_0x1573f6(0x14b)===_0x46a874[_0x1573f6(0x1c0)]&&_0x471f28&&(this[_0x1573f6(0x1ef)]=_0x471f28),_0x75f51b;},'finish':function(_0x451225){var _0x3db4d8=_0x1ae9c1;for(var _0x544659=this[_0x3db4d8(0x1b0)]['length']-0x1;_0x544659>=0x0;--_0x544659){var _0x2c7bfa=this[_0x3db4d8(0x1b0)][_0x544659];if(_0x2c7bfa[_0x3db4d8(0x214)]===_0x451225)return this['complete'](_0x2c7bfa[_0x3db4d8(0x160)],_0x2c7bfa[_0x3db4d8(0x1ff)]),_0x5b55c4(_0x2c7bfa),_0x75f51b;}},'catch':function(_0x2a9dac){var _0x48d5c2=_0x1ae9c1;for(var _0x11d956=this[_0x48d5c2(0x1b0)]['length']-0x1;_0x11d956>=0x0;--_0x11d956){var _0x55e889=this['tryEntries'][_0x11d956];if(_0x55e889['tryLoc']===_0x2a9dac){var _0x2659a1=_0x55e889['completion'];if('throw'===_0x2659a1['type']){var _0x5ded5c=_0x2659a1[_0x48d5c2(0x155)];_0x5b55c4(_0x55e889);}return _0x5ded5c;}}throw new Error(_0x48d5c2(0x205));},'delegateYield':function(_0x5b60e0,_0xac4051,_0x1b2e38){var _0x3e2117=_0x1ae9c1;return this['delegate']={'iterator':_0x2ced6e(_0x5b60e0),'resultName':_0xac4051,'nextLoc':_0x1b2e38},_0x3e2117(0x1ef)===this[_0x3e2117(0x1f9)]&&(this[_0x3e2117(0x155)]=_0x50e839),_0x75f51b;}},_0x5b377b;}function _0xce4edd(_0x18dc92,_0x5081aa,_0x3e0f48,_0x3dd32d,_0x49ddca,_0x49658c,_0x455fbb){var _0x4b49fa=_0x8f2755;try{var _0x289fad=_0x18dc92[_0x49658c](_0x455fbb),_0x38197f=_0x289fad[_0x4b49fa(0x1a7)];}catch(_0x13cbcf){return void _0x3e0f48(_0x13cbcf);}_0x289fad['done']?_0x5081aa(_0x38197f):Promise[_0x4b49fa(0x14a)](_0x38197f)[_0x4b49fa(0x203)](_0x3dd32d,_0x49ddca);}function _0x213400(_0xf41ad3,_0x1bbd06){return function(_0x1dcc13){var _0x80b95f=a9_0x2f60;if(Array[_0x80b95f(0x181)](_0x1dcc13))return _0x1dcc13;}(_0xf41ad3)||function(_0xc2f70a,_0x4062f0){var _0x33b924=a9_0x2f60,_0x3fd418=null==_0xc2f70a?null:_0x33b924(0x1d3)!=typeof Symbol&&_0xc2f70a[Symbol['iterator']]||_0xc2f70a[_0x33b924(0x1d4)];if(null!=_0x3fd418){var _0x1b15b5,_0x21f993,_0x1d5c02,_0x34c9f6,_0x43af06=[],_0xbae394=!0x0,_0xb1e8cb=!0x1;try{if(_0x1d5c02=(_0x3fd418=_0x3fd418[_0x33b924(0x1c5)](_0xc2f70a))[_0x33b924(0x1ef)],0x0===_0x4062f0){if(Object(_0x3fd418)!==_0x3fd418)return;_0xbae394=!0x1;}else{for(;!(_0xbae394=(_0x1b15b5=_0x1d5c02['call'](_0x3fd418))[_0x33b924(0x14c)])&&(_0x43af06['push'](_0x1b15b5[_0x33b924(0x1a7)]),_0x43af06[_0x33b924(0x15c)]!==_0x4062f0);_0xbae394=!0x0);}}catch(_0x2565d9){_0xb1e8cb=!0x0,_0x21f993=_0x2565d9;}finally{try{if(!_0xbae394&&null!=_0x3fd418[_0x33b924(0x1fc)]&&(_0x34c9f6=_0x3fd418[_0x33b924(0x1fc)](),Object(_0x34c9f6)!==_0x34c9f6))return;}finally{if(_0xb1e8cb)throw _0x21f993;}}return _0x43af06;}}(_0xf41ad3,_0x1bbd06)||function(_0x1cb0c2,_0x4f66cb){var _0x42d8f7=a9_0x2f60;if(_0x1cb0c2){if(_0x42d8f7(0x1de)==typeof _0x1cb0c2)return _0x5e82cf(_0x1cb0c2,_0x4f66cb);var _0x1deb02=Object[_0x42d8f7(0x161)][_0x42d8f7(0x163)][_0x42d8f7(0x1c5)](_0x1cb0c2)[_0x42d8f7(0x1c3)](0x8,-0x1);return _0x42d8f7(0x167)===_0x1deb02&&_0x1cb0c2[_0x42d8f7(0x1b6)]&&(_0x1deb02=_0x1cb0c2[_0x42d8f7(0x1b6)][_0x42d8f7(0x21e)]),'Map'===_0x1deb02||'Set'===_0x1deb02?Array[_0x42d8f7(0x149)](_0x1cb0c2):'Arguments'===_0x1deb02||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/[_0x42d8f7(0x239)](_0x1deb02)?_0x5e82cf(_0x1cb0c2,_0x4f66cb):void 0x0;}}(_0xf41ad3,_0x1bbd06)||(function(){throw new TypeError('Invalid\x20attempt\x20to\x20destructure\x20non-iterable\x20instance.\x0aIn\x20order\x20to\x20be\x20iterable,\x20non-array\x20objects\x20must\x20have\x20a\x20[Symbol.iterator]()\x20method.');}());}function _0x5e82cf(_0x47e2bd,_0x254f69){(null==_0x254f69||_0x254f69>_0x47e2bd['length'])&&(_0x254f69=_0x47e2bd['length']);for(var _0x7a8a4a=0x0,_0x317823=new Array(_0x254f69);_0x7a8a4a<_0x254f69;_0x7a8a4a++)_0x317823[_0x7a8a4a]=_0x47e2bd[_0x7a8a4a];return _0x317823;}/iPhone|iPad|iPod|Android/i[_0x8f2755(0x239)](navigator['userAgent']);const _0x316264=function(_0x19fdbf){var _0x5bf6ff=_0x8f2755,_0x46556b,_0x42d0dc=_0x19fdbf[_0x5bf6ff(0x1f5)],_0x513b4f=_0x19fdbf[_0x5bf6ff(0x18e)],_0x43812b=_0x19fdbf[_0x5bf6ff(0x183)],_0x10a7f1=_0x19fdbf[_0x5bf6ff(0x1b3)],_0x4b6f70=_0x19fdbf['onRender'],_0x238d66=_0x19fdbf['onSceneReady'],_0x33f076=function(_0x71a4dc,_0x205896){var _0x377423=_0x5bf6ff;if(null==_0x71a4dc)return{};var _0x2b6f31,_0x508e6f,_0x389d1b=function(_0x53e356,_0x4b9eef){var _0x9539eb=a9_0x2f60;if(null==_0x53e356)return{};var _0x545e07,_0x15a50b,_0x56a4d8={},_0x3c9854=Object[_0x9539eb(0x22e)](_0x53e356);for(_0x15a50b=0x0;_0x15a50b<_0x3c9854[_0x9539eb(0x15c)];_0x15a50b++)_0x545e07=_0x3c9854[_0x15a50b],_0x4b9eef[_0x9539eb(0x1d6)](_0x545e07)>=0x0||(_0x56a4d8[_0x545e07]=_0x53e356[_0x545e07]);return _0x56a4d8;}(_0x71a4dc,_0x205896);if(Object[_0x377423(0x164)]){var _0x3971e9=Object[_0x377423(0x164)](_0x71a4dc);for(_0x508e6f=0x0;_0x508e6f<_0x3971e9[_0x377423(0x15c)];_0x508e6f++)_0x2b6f31=_0x3971e9[_0x508e6f],_0x205896[_0x377423(0x1d6)](_0x2b6f31)>=0x0||Object[_0x377423(0x161)][_0x377423(0x1fa)]['call'](_0x71a4dc,_0x2b6f31)&&(_0x389d1b[_0x2b6f31]=_0x71a4dc[_0x2b6f31]);}return _0x389d1b;}(_0x19fdbf,_0x159e98),_0x4b0286=(0x0,_0x5da0a0[_0x5bf6ff(0x1d1)])(null),_0x122046=_0x5bf6ff(0x21a)===(0x0,_0x41b076['c'])()['palette'][_0x5bf6ff(0x185)],_0x541664=_0x213400((0x0,_0x5da0a0[_0x5bf6ff(0x232)])(null),0x2),_0x3ad646=_0x541664[0x0],_0x4c459c=_0x541664[0x1],_0x1eb1f1=_0x213400((0x0,_0x5da0a0[_0x5bf6ff(0x232)])(null),0x2),_0x450fee=_0x1eb1f1[0x0],_0x4e7f73=_0x1eb1f1[0x1],_0x55cb8c=(0x0,_0x23d12f['W4'])()[_0x5bf6ff(0x240)],_0x5d4546=(0x0,_0x389158['OY'])(),_0x567726=(0x0,_0x389158['w1'])(function(_0x518518){var _0x2eb716=_0x5bf6ff;return _0x518518[_0x2eb716(0x19f)]['blockchain'];}),_0x491bc4=((0x0,_0x579e44['e'])({'compiler':_0x151a70['G'],'blockchain':_0x567726})[_0x5bf6ff(0x1b2)][_0x5bf6ff(0x1e0)],(0x0,_0x389158['w1'])(function(_0x53656a){var _0xd2a7b8=_0x5bf6ff;return _0x53656a[_0xd2a7b8(0x1f1)];})[_0x5bf6ff(0x20b)](function(_0x49dbf6){return _0x49dbf6['id']===_0x55cb8c;})),_0x2df299=(0x0,_0x579e44['e'])({'compiler':_0x2444aa['Gm'],'blockchain':null==_0x491bc4?void 0x0:_0x491bc4['blockchain'],'dispatch':function(_0x476394){var _0x566182=_0x5bf6ff,_0x5212cd=_0x476394[_0x566182(0x184)],_0x566e6f=_0x476394[_0x566182(0x1f2)],_0x45f1e4=_0x476394[_0x566182(0x14d)];return _0x5d4546((0x0,_0x5b2ec3['Sk'])({'podId':_0x55cb8c,'block':_0x5212cd,'blocks':_0x566e6f,'storage':_0x45f1e4}));}}),_0x2ed934=_0x2df299[_0x5bf6ff(0x1b2)],_0x310526=(_0x2df299[_0x5bf6ff(0x1ba)],(0x0,_0x20027b['c'])((null==_0x2ed934?void 0x0:_0x2ed934[_0x5bf6ff(0x190)])||[])),_0x209339=_0x310526['sendMessage'],_0x23bb4f=(_0x310526[_0x5bf6ff(0x238)],_0x310526['endCall'],_0x310526[_0x5bf6ff(0x179)]),_0x209acb=(_0x310526['callsHash'],_0x310526[_0x5bf6ff(0x229)]),_0x312218=((0x0,_0x389158['w1'])(function(_0xd0d60b){var _0x33de3a=_0x5bf6ff;return _0xd0d60b[_0x33de3a(0x1f1)]['find'](function(_0x40383a){return _0x40383a['id']===_0x55cb8c;});})||{})[_0x5bf6ff(0x1c7)],_0x308e88=_0x213400((0x0,_0x5da0a0[_0x5bf6ff(0x232)])(null),0x2),_0x23b5c6=(_0x308e88[0x0],_0x308e88[0x1],_0x213400((0x0,_0x5da0a0['useState'])(!0x1),0x2)),_0x74e328=(_0x23b5c6[0x0],_0x23b5c6[0x1],(function(){var _0x324a41=_0x5bf6ff,_0x22e074,_0x2092a4=(_0x22e074=_0x4757a7()[_0x324a41(0x211)](function _0x4dd5f4(_0x1fc4a6){var _0x5232a2=_0x324a41,_0x214b1b,_0x382b83;return _0x4757a7()[_0x5232a2(0x1a3)](function(_0x325a6b){var _0x20fba0=_0x5232a2;for(;;)switch(_0x325a6b[_0x20fba0(0x21f)]=_0x325a6b[_0x20fba0(0x1ef)]){case 0x0:return null===(_0x214b1b=_0x1fc4a6['_remoteStream'])||void 0x0===_0x214b1b||_0x214b1b[_0x20fba0(0x1ae)]()[_0x20fba0(0x15c)],_0x325a6b[_0x20fba0(0x1ef)]=0x3,navigator[_0x20fba0(0x1d7)]['getUserMedia']({'video':!0x0,'audio':!0x0});case 0x3:_0x382b83=_0x325a6b[_0x20fba0(0x148)],_0x1fc4a6[_0x20fba0(0x15b)](_0x382b83);case 0x5:case _0x20fba0(0x173):return _0x325a6b[_0x20fba0(0x16b)]();}},_0x4dd5f4);}),function(){var _0x53bdbb=this,_0x3e7770=arguments;return new Promise(function(_0x28a4e0,_0x57c5be){var _0x46535f=a9_0x2f60,_0x4d8a85=_0x22e074[_0x46535f(0x21b)](_0x53bdbb,_0x3e7770);function _0x5a03da(_0x37288b){var _0x48958b=_0x46535f;_0xce4edd(_0x4d8a85,_0x28a4e0,_0x57c5be,_0x5a03da,_0x3e941b,_0x48958b(0x1ef),_0x37288b);}function _0x3e941b(_0x57c19f){var _0x1ff2af=_0x46535f;_0xce4edd(_0x4d8a85,_0x28a4e0,_0x57c5be,_0x5a03da,_0x3e941b,_0x1ff2af(0x1f4),_0x57c19f);}_0x5a03da(void 0x0);});});return function(_0x418e4a){return _0x2092a4['apply'](this,arguments);};}()));(0x0,_0x5da0a0['useEffect'])(function(){var _0x11d6be=_0x5bf6ff;console[_0x11d6be(0x175)]({'calls':_0x23bb4f}),_0x23bb4f[_0x11d6be(0x23c)](function(_0x5422d9){var _0x3a3072=_0x11d6be;_0x5422d9[_0x3a3072(0x17a)]||_0x74e328(_0x5422d9);});},[_0x23bb4f]);var _0x12009a=function(_0x1fff85){var _0x45193c=_0x5bf6ff;console['log']('sending\x20position:\x20',{'position':_0x1fff85}),_0x209339({'type':_0x45193c(0x1e5),'callback':!0x1,'payload':{'podId':_0x55cb8c,'ephemeralStorage':{'verse':{'position':_0x1fff85}}}});},_0x46972f=(0x0,_0x389158['w1'])(function(_0x41b74f){var _0x27c9bf=_0x5bf6ff;return _0x41b74f[_0x27c9bf(0x1c6)];}),_0x4bea20=((null==_0x2ed934?void 0x0:_0x2ed934[_0x5bf6ff(0x190)])||[])[_0x5bf6ff(0x1af)](function(_0xa34c14){var _0x375313=_0x5bf6ff;return _0x209acb[_0x375313(0x213)](_0xa34c14);})[_0x5bf6ff(0x1be)](function(_0x5f206d){return _0x46972f['find'](function(_0x12492e){var _0x14b231=a9_0x2f60;return _0x12492e[_0x14b231(0x1e0)]===_0x5f206d;});}),_0x6b48ef=null==_0x4bea20||null===(_0x46556b=_0x4bea20[0x0])||void 0x0===_0x46556b?void 0x0:_0x46556b[_0x5bf6ff(0x1dd)],_0x4bec5a=((0x0,_0x29093b['debounce'])(_0x12009a,0x3e8),(0x0,_0x29093b[_0x5bf6ff(0x1c8)])(_0x12009a,0x5)),_0x10ac07=(0x0,_0x5da0a0[_0x5bf6ff(0x1bc)])(function(){return _0x4b6f70({'calls':_0x23bb4f,'ephemeralStorage':_0x312218,'onMove':_0x4bec5a});},[_0x23bb4f,_0x312218,_0x6b48ef]);(0x0,_0x5da0a0[_0x5bf6ff(0x231)])(function(){var _0x403dfb=function(){var _0x538a38=a9_0x2f60;_0x450fee[_0x538a38(0x1d2)]()['resize']();};return(function(){var _0x5f0676=a9_0x2f60,_0x5aa960=_0x4b0286['current'];if(_0x5aa960){var _0x2fc171=new _0x5baa20[(_0x5f0676(0x166))](_0x5aa960,_0x42d0dc,_0x513b4f,_0x43812b);_0x4c459c(_0x2fc171);var _0x10ee5b=new _0x5baa20[(_0x5f0676(0x221))](_0x2fc171,_0x10a7f1);_0x4e7f73(_0x10ee5b),_0x10ee5b[_0x5f0676(0x19c)]()?_0x238d66(_0x10ee5b,{'isDarkTheme':_0x122046,'calls':_0x23bb4f,'isInPod':!!_0x55cb8c,'peerAvatar':_0x6b48ef}):_0x10ee5b[_0x5f0676(0x228)]['addOnce'](function(_0x140f81){return _0x238d66(_0x140f81,{'isDarkTheme':_0x122046,'calls':_0x23bb4f,'isInPod':!!_0x55cb8c,'peerAvatar':_0x6b48ef});}),_0x2fc171['runRenderLoop'](function(){var _0x4d4239=_0x5f0676;_0x4d4239(0x1ee)==typeof _0x10ac07&&_0x10ac07(_0x10ee5b),_0x10ee5b[_0x4d4239(0x206)]();}),window&&window[_0x5f0676(0x174)]('resize',_0x403dfb);}}()),function(){var _0x5d0505=a9_0x2f60;null==_0x450fee||_0x450fee['getEngine']()['dispose'](),window&&window['removeEventListener'](_0x5d0505(0x1ad),_0x403dfb);};},[_0x42d0dc,_0x513b4f,_0x43812b,_0x10a7f1,_0x4b6f70,_0x238d66,_0x122046]);var _0x5ccc8d=(0x0,_0x29093b[_0x5bf6ff(0x1c8)])(function(){_0x3ad646&&(_0x3ad646['stopRenderLoop'](),_0x3ad646['runRenderLoop'](function(){var _0x4072a3=a9_0x2f60;_0x4072a3(0x1ee)==typeof _0x10ac07&&_0x10ac07(_0x450fee),_0x450fee&&_0x450fee[_0x4072a3(0x206)]();}));},0x5);return(0x0,_0x5da0a0[_0x5bf6ff(0x231)])(function(){_0x5ccc8d();},[_0x10ac07]),_0x2d2483()[_0x5bf6ff(0x200)](_0x2d2483()[_0x5bf6ff(0x234)],null,_0x2d2483()[_0x5bf6ff(0x200)](_0x5bf6ff(0x1fd),_0x11283b({'ref':_0x4b0286},_0x33f076)),_0x23bb4f['length']>0x0&&_0x23bb4f['map'](function(_0x222a65){var _0x2e889c=_0x5bf6ff;return _0x2d2483()[_0x2e889c(0x200)](_0x2e889c(0x1cd),{'key':_0x222a65[_0x2e889c(0x224)],'src':_0x222a65['_remoteStream'],'autoPlay':!0x0,'playsInline':!0x0,'style':{'position':_0x2e889c(0x187),'top':0x0,'left':0x0,'width':0x0,'height':0x0,'zIndex':-0x1}});}));};function _0x25c92e(_0x5e13fb){var _0x3b19e9=_0x8f2755;return _0x25c92e=_0x3b19e9(0x1ee)==typeof Symbol&&_0x3b19e9(0x178)==typeof Symbol['iterator']?function(_0x4649f8){return typeof _0x4649f8;}:function(_0x129ec3){var _0x5ba0a6=_0x3b19e9;return _0x129ec3&&_0x5ba0a6(0x1ee)==typeof Symbol&&_0x129ec3['constructor']===Symbol&&_0x129ec3!==Symbol[_0x5ba0a6(0x161)]?'symbol':typeof _0x129ec3;},_0x25c92e(_0x5e13fb);}function _0x4457a1(){var _0x2ea350=_0x8f2755;_0x4457a1=function(){return _0x356790;};var _0x283f60,_0x356790={},_0x357ad7=Object[_0x2ea350(0x161)],_0xbedb4b=_0x357ad7['hasOwnProperty'],_0x497b45=Object['defineProperty']||function(_0x555da0,_0x116b1d,_0x391910){var _0x1a45df=_0x2ea350;_0x555da0[_0x116b1d]=_0x391910[_0x1a45df(0x1a7)];},_0x1e2b0a=_0x2ea350(0x1ee)==typeof Symbol?Symbol:{},_0x996fb3=_0x1e2b0a[_0x2ea350(0x1b8)]||_0x2ea350(0x1d4),_0x192295=_0x1e2b0a[_0x2ea350(0x227)]||_0x2ea350(0x1b9),_0x49af58=_0x1e2b0a[_0x2ea350(0x1cc)]||_0x2ea350(0x22a);function _0x335a9a(_0x18917b,_0x3d1197,_0xd2f079){var _0x3acc03=_0x2ea350;return Object[_0x3acc03(0x18b)](_0x18917b,_0x3d1197,{'value':_0xd2f079,'enumerable':!0x0,'configurable':!0x0,'writable':!0x0}),_0x18917b[_0x3d1197];}try{_0x335a9a({},'');}catch(_0x5ad8fb){_0x335a9a=function(_0xec14e5,_0x3ff7db,_0x59a31b){return _0xec14e5[_0x3ff7db]=_0x59a31b;};}function _0x2c2e42(_0x2f5e26,_0x25db2f,_0x4e0a65,_0x4e7ac7){var _0x1f1bcf=_0x2ea350,_0x3e378e=_0x25db2f&&_0x25db2f[_0x1f1bcf(0x161)]instanceof _0x596887?_0x25db2f:_0x596887,_0x5cd560=Object[_0x1f1bcf(0x15e)](_0x3e378e['prototype']),_0x4d8d82=new _0x1e8281(_0x4e7ac7||[]);return _0x497b45(_0x5cd560,_0x1f1bcf(0x1e1),{'value':_0x299896(_0x2f5e26,_0x4e0a65,_0x4d8d82)}),_0x5cd560;}function _0x50105c(_0x29ee37,_0x23a4e2,_0x4f5a1){var _0x2ff53b=_0x2ea350;try{return{'type':'normal','arg':_0x29ee37[_0x2ff53b(0x1c5)](_0x23a4e2,_0x4f5a1)};}catch(_0x596d91){return{'type':'throw','arg':_0x596d91};}}_0x356790[_0x2ea350(0x1a3)]=_0x2c2e42;var _0x3a1baa=_0x2ea350(0x1d9),_0x41a31a=_0x2ea350(0x195),_0xdd7221=_0x2ea350(0x1a6),_0x6d6fbd=_0x2ea350(0x1ec),_0x4e9789={};function _0x596887(){}function _0x842204(){}function _0x431719(){}var _0x577f69={};_0x335a9a(_0x577f69,_0x996fb3,function(){return this;});var _0x3dde16=Object[_0x2ea350(0x22f)],_0x1433cd=_0x3dde16&&_0x3dde16(_0x3dde16(_0x28c4d4([])));_0x1433cd&&_0x1433cd!==_0x357ad7&&_0xbedb4b[_0x2ea350(0x1c5)](_0x1433cd,_0x996fb3)&&(_0x577f69=_0x1433cd);var _0x46c22c=_0x431719[_0x2ea350(0x161)]=_0x596887['prototype']=Object[_0x2ea350(0x15e)](_0x577f69);function _0x5440ea(_0x10eaa3){var _0x40ef7c=_0x2ea350;[_0x40ef7c(0x1ef),_0x40ef7c(0x1f4),_0x40ef7c(0x1fc)][_0x40ef7c(0x23c)](function(_0x4e5a18){_0x335a9a(_0x10eaa3,_0x4e5a18,function(_0x4dfb7d){var _0x976e63=a9_0x2f60;return this[_0x976e63(0x1e1)](_0x4e5a18,_0x4dfb7d);});});}function _0x448e01(_0x45d87e,_0x390d11){var _0x58aaf0=_0x2ea350;function _0x5609ef(_0x4811a6,_0x349fee,_0x281dcf,_0x3537ed){var _0x61e5d3=a9_0x2f60,_0x4f899d=_0x50105c(_0x45d87e[_0x4811a6],_0x45d87e,_0x349fee);if(_0x61e5d3(0x1f4)!==_0x4f899d[_0x61e5d3(0x1c0)]){var _0x33cc7b=_0x4f899d[_0x61e5d3(0x155)],_0x18028b=_0x33cc7b[_0x61e5d3(0x1a7)];return _0x18028b&&_0x61e5d3(0x191)==_0x25c92e(_0x18028b)&&_0xbedb4b[_0x61e5d3(0x1c5)](_0x18028b,'__await')?_0x390d11[_0x61e5d3(0x14a)](_0x18028b[_0x61e5d3(0x153)])[_0x61e5d3(0x203)](function(_0x3d9bfa){_0x5609ef('next',_0x3d9bfa,_0x281dcf,_0x3537ed);},function(_0x613e0c){var _0x284281=_0x61e5d3;_0x5609ef(_0x284281(0x1f4),_0x613e0c,_0x281dcf,_0x3537ed);}):_0x390d11[_0x61e5d3(0x14a)](_0x18028b)[_0x61e5d3(0x203)](function(_0xa16298){var _0x2a5826=_0x61e5d3;_0x33cc7b[_0x2a5826(0x1a7)]=_0xa16298,_0x281dcf(_0x33cc7b);},function(_0x4960be){var _0x45a7c1=_0x61e5d3;return _0x5609ef(_0x45a7c1(0x1f4),_0x4960be,_0x281dcf,_0x3537ed);});}_0x3537ed(_0x4f899d[_0x61e5d3(0x155)]);}var _0x481bf9;_0x497b45(this,_0x58aaf0(0x1e1),{'value':function(_0x1b6a41,_0x1a5261){function _0x4c1b49(){return new _0x390d11(function(_0x5cae29,_0x1fc4c8){_0x5609ef(_0x1b6a41,_0x1a5261,_0x5cae29,_0x1fc4c8);});}return _0x481bf9=_0x481bf9?_0x481bf9['then'](_0x4c1b49,_0x4c1b49):_0x4c1b49();}});}function _0x299896(_0x40934,_0x309549,_0x487961){var _0x201f2c=_0x3a1baa;return function(_0x2914b6,_0x4636f1){var _0x22697e=a9_0x2f60;if(_0x201f2c===_0xdd7221)throw new Error(_0x22697e(0x1b4));if(_0x201f2c===_0x6d6fbd){if('throw'===_0x2914b6)throw _0x4636f1;return{'value':_0x283f60,'done':!0x0};}for(_0x487961[_0x22697e(0x1f9)]=_0x2914b6,_0x487961[_0x22697e(0x155)]=_0x4636f1;;){var _0x496c61=_0x487961[_0x22697e(0x235)];if(_0x496c61){var _0x807107=_0x4ef156(_0x496c61,_0x487961);if(_0x807107){if(_0x807107===_0x4e9789)continue;return _0x807107;}}if('next'===_0x487961[_0x22697e(0x1f9)])_0x487961['sent']=_0x487961[_0x22697e(0x177)]=_0x487961['arg'];else{if(_0x22697e(0x1f4)===_0x487961['method']){if(_0x201f2c===_0x3a1baa)throw _0x201f2c=_0x6d6fbd,_0x487961['arg'];_0x487961[_0x22697e(0x1c9)](_0x487961[_0x22697e(0x155)]);}else _0x22697e(0x1fc)===_0x487961[_0x22697e(0x1f9)]&&_0x487961[_0x22697e(0x1b7)](_0x22697e(0x1fc),_0x487961[_0x22697e(0x155)]);}_0x201f2c=_0xdd7221;var _0x44b4d6=_0x50105c(_0x40934,_0x309549,_0x487961);if(_0x22697e(0x14b)===_0x44b4d6['type']){if(_0x201f2c=_0x487961[_0x22697e(0x14c)]?_0x6d6fbd:_0x41a31a,_0x44b4d6['arg']===_0x4e9789)continue;return{'value':_0x44b4d6['arg'],'done':_0x487961['done']};}_0x22697e(0x1f4)===_0x44b4d6[_0x22697e(0x1c0)]&&(_0x201f2c=_0x6d6fbd,_0x487961[_0x22697e(0x1f9)]=_0x22697e(0x1f4),_0x487961[_0x22697e(0x155)]=_0x44b4d6[_0x22697e(0x155)]);}};}function _0x4ef156(_0x5a5488,_0x3feb15){var _0x31ac4c=_0x2ea350,_0x56cd83=_0x3feb15[_0x31ac4c(0x1f9)],_0x228f91=_0x5a5488[_0x31ac4c(0x1b8)][_0x56cd83];if(_0x228f91===_0x283f60)return _0x3feb15[_0x31ac4c(0x235)]=null,_0x31ac4c(0x1f4)===_0x56cd83&&_0x5a5488[_0x31ac4c(0x1b8)][_0x31ac4c(0x1fc)]&&(_0x3feb15[_0x31ac4c(0x1f9)]=_0x31ac4c(0x1fc),_0x3feb15[_0x31ac4c(0x155)]=_0x283f60,_0x4ef156(_0x5a5488,_0x3feb15),'throw'===_0x3feb15['method'])||'return'!==_0x56cd83&&(_0x3feb15[_0x31ac4c(0x1f9)]=_0x31ac4c(0x1f4),_0x3feb15[_0x31ac4c(0x155)]=new TypeError(_0x31ac4c(0x230)+_0x56cd83+_0x31ac4c(0x1bb))),_0x4e9789;var _0x318c09=_0x50105c(_0x228f91,_0x5a5488[_0x31ac4c(0x1b8)],_0x3feb15[_0x31ac4c(0x155)]);if(_0x31ac4c(0x1f4)===_0x318c09[_0x31ac4c(0x1c0)])return _0x3feb15[_0x31ac4c(0x1f9)]=_0x31ac4c(0x1f4),_0x3feb15[_0x31ac4c(0x155)]=_0x318c09[_0x31ac4c(0x155)],_0x3feb15[_0x31ac4c(0x235)]=null,_0x4e9789;var _0x74fa85=_0x318c09[_0x31ac4c(0x155)];return _0x74fa85?_0x74fa85[_0x31ac4c(0x14c)]?(_0x3feb15[_0x5a5488['resultName']]=_0x74fa85['value'],_0x3feb15[_0x31ac4c(0x1ef)]=_0x5a5488['nextLoc'],_0x31ac4c(0x1fc)!==_0x3feb15['method']&&(_0x3feb15['method']=_0x31ac4c(0x1ef),_0x3feb15[_0x31ac4c(0x155)]=_0x283f60),_0x3feb15[_0x31ac4c(0x235)]=null,_0x4e9789):_0x74fa85:(_0x3feb15[_0x31ac4c(0x1f9)]=_0x31ac4c(0x1f4),_0x3feb15[_0x31ac4c(0x155)]=new TypeError('iterator\x20result\x20is\x20not\x20an\x20object'),_0x3feb15['delegate']=null,_0x4e9789);}function _0x2012a2(_0x4cfe06){var _0x3d0cb6=_0x2ea350,_0x5cd958={'tryLoc':_0x4cfe06[0x0]};0x1 in _0x4cfe06&&(_0x5cd958[_0x3d0cb6(0x1a4)]=_0x4cfe06[0x1]),0x2 in _0x4cfe06&&(_0x5cd958[_0x3d0cb6(0x214)]=_0x4cfe06[0x2],_0x5cd958[_0x3d0cb6(0x1ff)]=_0x4cfe06[0x3]),this[_0x3d0cb6(0x1b0)]['push'](_0x5cd958);}function _0x38279d(_0x3c1397){var _0x2f3666=_0x2ea350,_0x5c8f3c=_0x3c1397[_0x2f3666(0x160)]||{};_0x5c8f3c[_0x2f3666(0x1c0)]=_0x2f3666(0x14b),delete _0x5c8f3c[_0x2f3666(0x155)],_0x3c1397[_0x2f3666(0x160)]=_0x5c8f3c;}function _0x1e8281(_0x804fc3){var _0x486bed=_0x2ea350;this[_0x486bed(0x1b0)]=[{'tryLoc':'root'}],_0x804fc3[_0x486bed(0x23c)](_0x2012a2,this),this[_0x486bed(0x18d)](!0x0);}function _0x28c4d4(_0x39772b){var _0x4833b7=_0x2ea350;if(_0x39772b||''===_0x39772b){var _0x2f326b=_0x39772b[_0x996fb3];if(_0x2f326b)return _0x2f326b[_0x4833b7(0x1c5)](_0x39772b);if(_0x4833b7(0x1ee)==typeof _0x39772b['next'])return _0x39772b;if(!isNaN(_0x39772b['length'])){var _0x53af0c=-0x1,_0x5c3291=function _0x499cf8(){var _0x2523b1=_0x4833b7;for(;++_0x53af0c<_0x39772b[_0x2523b1(0x15c)];)if(_0xbedb4b['call'](_0x39772b,_0x53af0c))return _0x499cf8['value']=_0x39772b[_0x53af0c],_0x499cf8[_0x2523b1(0x14c)]=!0x1,_0x499cf8;return _0x499cf8['value']=_0x283f60,_0x499cf8[_0x2523b1(0x14c)]=!0x0,_0x499cf8;};return _0x5c3291[_0x4833b7(0x1ef)]=_0x5c3291;}}throw new TypeError(_0x25c92e(_0x39772b)+_0x4833b7(0x193));}return _0x842204[_0x2ea350(0x161)]=_0x431719,_0x497b45(_0x46c22c,'constructor',{'value':_0x431719,'configurable':!0x0}),_0x497b45(_0x431719,_0x2ea350(0x1b6),{'value':_0x842204,'configurable':!0x0}),_0x842204[_0x2ea350(0x16c)]=_0x335a9a(_0x431719,_0x49af58,'GeneratorFunction'),_0x356790['isGeneratorFunction']=function(_0x40ed49){var _0x4f6a8e=_0x2ea350,_0x128945=_0x4f6a8e(0x1ee)==typeof _0x40ed49&&_0x40ed49[_0x4f6a8e(0x1b6)];return!!_0x128945&&(_0x128945===_0x842204||_0x4f6a8e(0x1d0)===(_0x128945[_0x4f6a8e(0x16c)]||_0x128945[_0x4f6a8e(0x21e)]));},_0x356790[_0x2ea350(0x211)]=function(_0x1a87a0){var _0x13568b=_0x2ea350;return Object[_0x13568b(0x172)]?Object[_0x13568b(0x172)](_0x1a87a0,_0x431719):(_0x1a87a0[_0x13568b(0x1bf)]=_0x431719,_0x335a9a(_0x1a87a0,_0x49af58,_0x13568b(0x1d0))),_0x1a87a0[_0x13568b(0x161)]=Object[_0x13568b(0x15e)](_0x46c22c),_0x1a87a0;},_0x356790[_0x2ea350(0x1ab)]=function(_0x562ac8){return{'__await':_0x562ac8};},_0x5440ea(_0x448e01[_0x2ea350(0x161)]),_0x335a9a(_0x448e01[_0x2ea350(0x161)],_0x192295,function(){return this;}),_0x356790['AsyncIterator']=_0x448e01,_0x356790[_0x2ea350(0x226)]=function(_0x257a94,_0x4b6ecb,_0x28ef82,_0x2b84a6,_0x11a4fc){var _0x5ce606=_0x2ea350;void 0x0===_0x11a4fc&&(_0x11a4fc=Promise);var _0x4d3d8e=new _0x448e01(_0x2c2e42(_0x257a94,_0x4b6ecb,_0x28ef82,_0x2b84a6),_0x11a4fc);return _0x356790[_0x5ce606(0x1a0)](_0x4b6ecb)?_0x4d3d8e:_0x4d3d8e[_0x5ce606(0x1ef)]()[_0x5ce606(0x203)](function(_0x5dcbe0){var _0xe49e9e=_0x5ce606;return _0x5dcbe0[_0xe49e9e(0x14c)]?_0x5dcbe0[_0xe49e9e(0x1a7)]:_0x4d3d8e[_0xe49e9e(0x1ef)]();});},_0x5440ea(_0x46c22c),_0x335a9a(_0x46c22c,_0x49af58,_0x2ea350(0x1da)),_0x335a9a(_0x46c22c,_0x996fb3,function(){return this;}),_0x335a9a(_0x46c22c,_0x2ea350(0x163),function(){return'[object\x20Generator]';}),_0x356790[_0x2ea350(0x22e)]=function(_0x15ccc5){var _0x5208fa=_0x2ea350,_0x5d4b68=Object(_0x15ccc5),_0x1917c5=[];for(var _0x27c173 in _0x5d4b68)_0x1917c5[_0x5208fa(0x17b)](_0x27c173);return _0x1917c5[_0x5208fa(0x198)](),function _0x262dbb(){var _0x1a6f88=_0x5208fa;for(;_0x1917c5[_0x1a6f88(0x15c)];){var _0x4d610c=_0x1917c5[_0x1a6f88(0x23a)]();if(_0x4d610c in _0x5d4b68)return _0x262dbb['value']=_0x4d610c,_0x262dbb['done']=!0x1,_0x262dbb;}return _0x262dbb[_0x1a6f88(0x14c)]=!0x0,_0x262dbb;};},_0x356790['values']=_0x28c4d4,_0x1e8281[_0x2ea350(0x161)]={'constructor':_0x1e8281,'reset':function(_0x163be1){var _0x386ccd=_0x2ea350;if(this[_0x386ccd(0x21f)]=0x0,this[_0x386ccd(0x1ef)]=0x0,this[_0x386ccd(0x148)]=this[_0x386ccd(0x177)]=_0x283f60,this[_0x386ccd(0x14c)]=!0x1,this[_0x386ccd(0x235)]=null,this['method']='next',this[_0x386ccd(0x155)]=_0x283f60,this['tryEntries']['forEach'](_0x38279d),!_0x163be1){for(var _0x19fe30 in this)'t'===_0x19fe30['charAt'](0x0)&&_0xbedb4b[_0x386ccd(0x1c5)](this,_0x19fe30)&&!isNaN(+_0x19fe30[_0x386ccd(0x1c3)](0x1))&&(this[_0x19fe30]=_0x283f60);}},'stop':function(){var _0x35559c=_0x2ea350;this[_0x35559c(0x14c)]=!0x0;var _0x1a26d8=this[_0x35559c(0x1b0)][0x0]['completion'];if(_0x35559c(0x1f4)===_0x1a26d8[_0x35559c(0x1c0)])throw _0x1a26d8[_0x35559c(0x155)];return this[_0x35559c(0x22c)];},'dispatchException':function(_0x30f2f2){var _0x50bf03=_0x2ea350;if(this[_0x50bf03(0x14c)])throw _0x30f2f2;var _0x55ab0a=this;function _0x55f9bb(_0x24db5d,_0x46662f){var _0x424814=_0x50bf03;return _0x4e192e[_0x424814(0x1c0)]=_0x424814(0x1f4),_0x4e192e[_0x424814(0x155)]=_0x30f2f2,_0x55ab0a[_0x424814(0x1ef)]=_0x24db5d,_0x46662f&&(_0x55ab0a[_0x424814(0x1f9)]=_0x424814(0x1ef),_0x55ab0a[_0x424814(0x155)]=_0x283f60),!!_0x46662f;}for(var _0x2d343b=this[_0x50bf03(0x1b0)][_0x50bf03(0x15c)]-0x1;_0x2d343b>=0x0;--_0x2d343b){var _0x9feb13=this[_0x50bf03(0x1b0)][_0x2d343b],_0x4e192e=_0x9feb13[_0x50bf03(0x160)];if(_0x50bf03(0x202)===_0x9feb13[_0x50bf03(0x1a9)])return _0x55f9bb(_0x50bf03(0x173));if(_0x9feb13[_0x50bf03(0x1a9)]<=this[_0x50bf03(0x21f)]){var _0x2f3244=_0xbedb4b[_0x50bf03(0x1c5)](_0x9feb13,_0x50bf03(0x1a4)),_0x1e2970=_0xbedb4b[_0x50bf03(0x1c5)](_0x9feb13,_0x50bf03(0x214));if(_0x2f3244&&_0x1e2970){if(this[_0x50bf03(0x21f)]<_0x9feb13[_0x50bf03(0x1a4)])return _0x55f9bb(_0x9feb13[_0x50bf03(0x1a4)],!0x0);if(this['prev']<_0x9feb13[_0x50bf03(0x214)])return _0x55f9bb(_0x9feb13[_0x50bf03(0x214)]);}else{if(_0x2f3244){if(this[_0x50bf03(0x21f)]<_0x9feb13[_0x50bf03(0x1a4)])return _0x55f9bb(_0x9feb13['catchLoc'],!0x0);}else{if(!_0x1e2970)throw new Error(_0x50bf03(0x1bd));if(this[_0x50bf03(0x21f)]<_0x9feb13[_0x50bf03(0x214)])return _0x55f9bb(_0x9feb13[_0x50bf03(0x214)]);}}}}},'abrupt':function(_0x2bd50d,_0x58585c){var _0x154c3d=_0x2ea350;for(var _0x59e5ca=this['tryEntries'][_0x154c3d(0x15c)]-0x1;_0x59e5ca>=0x0;--_0x59e5ca){var _0x4ed656=this[_0x154c3d(0x1b0)][_0x59e5ca];if(_0x4ed656[_0x154c3d(0x1a9)]<=this[_0x154c3d(0x21f)]&&_0xbedb4b[_0x154c3d(0x1c5)](_0x4ed656,_0x154c3d(0x214))&&this[_0x154c3d(0x21f)]<_0x4ed656['finallyLoc']){var _0x59c3df=_0x4ed656;break;}}_0x59c3df&&(_0x154c3d(0x165)===_0x2bd50d||_0x154c3d(0x150)===_0x2bd50d)&&_0x59c3df['tryLoc']<=_0x58585c&&_0x58585c<=_0x59c3df[_0x154c3d(0x214)]&&(_0x59c3df=null);var _0x24ae85=_0x59c3df?_0x59c3df[_0x154c3d(0x160)]:{};return _0x24ae85['type']=_0x2bd50d,_0x24ae85[_0x154c3d(0x155)]=_0x58585c,_0x59c3df?(this[_0x154c3d(0x1f9)]=_0x154c3d(0x1ef),this[_0x154c3d(0x1ef)]=_0x59c3df['finallyLoc'],_0x4e9789):this[_0x154c3d(0x1fb)](_0x24ae85);},'complete':function(_0x1e3495,_0x108d21){var _0x1df71d=_0x2ea350;if(_0x1df71d(0x1f4)===_0x1e3495[_0x1df71d(0x1c0)])throw _0x1e3495[_0x1df71d(0x155)];return'break'===_0x1e3495[_0x1df71d(0x1c0)]||_0x1df71d(0x150)===_0x1e3495[_0x1df71d(0x1c0)]?this[_0x1df71d(0x1ef)]=_0x1e3495[_0x1df71d(0x155)]:_0x1df71d(0x1fc)===_0x1e3495[_0x1df71d(0x1c0)]?(this['rval']=this[_0x1df71d(0x155)]=_0x1e3495[_0x1df71d(0x155)],this['method']='return',this[_0x1df71d(0x1ef)]=_0x1df71d(0x173)):_0x1df71d(0x14b)===_0x1e3495[_0x1df71d(0x1c0)]&&_0x108d21&&(this[_0x1df71d(0x1ef)]=_0x108d21),_0x4e9789;},'finish':function(_0xc12eb7){var _0x482bc7=_0x2ea350;for(var _0x453044=this['tryEntries']['length']-0x1;_0x453044>=0x0;--_0x453044){var _0x51505c=this[_0x482bc7(0x1b0)][_0x453044];if(_0x51505c[_0x482bc7(0x214)]===_0xc12eb7)return this[_0x482bc7(0x1fb)](_0x51505c[_0x482bc7(0x160)],_0x51505c[_0x482bc7(0x1ff)]),_0x38279d(_0x51505c),_0x4e9789;}},'catch':function(_0x1b4345){var _0x264e8d=_0x2ea350;for(var _0x21a250=this[_0x264e8d(0x1b0)][_0x264e8d(0x15c)]-0x1;_0x21a250>=0x0;--_0x21a250){var _0x40a0ec=this[_0x264e8d(0x1b0)][_0x21a250];if(_0x40a0ec[_0x264e8d(0x1a9)]===_0x1b4345){var _0x278a72=_0x40a0ec['completion'];if(_0x264e8d(0x1f4)===_0x278a72['type']){var _0x39bde3=_0x278a72['arg'];_0x38279d(_0x40a0ec);}return _0x39bde3;}}throw new Error(_0x264e8d(0x205));},'delegateYield':function(_0x4c7cba,_0x3e223a,_0x19cc81){var _0x4b556a=_0x2ea350;return this[_0x4b556a(0x235)]={'iterator':_0x28c4d4(_0x4c7cba),'resultName':_0x3e223a,'nextLoc':_0x19cc81},_0x4b556a(0x1ef)===this['method']&&(this[_0x4b556a(0x155)]=_0x283f60),_0x4e9789;}},_0x356790;}function _0xb0bb56(_0x561ac8,_0x4e1ba9,_0x416a2b,_0x545867,_0x174aa3,_0x523126,_0x5313e8){var _0x4d2b88=_0x8f2755;try{var _0x361711=_0x561ac8[_0x523126](_0x5313e8),_0x25b749=_0x361711[_0x4d2b88(0x1a7)];}catch(_0x3ebd83){return void _0x416a2b(_0x3ebd83);}_0x361711['done']?_0x4e1ba9(_0x25b749):Promise[_0x4d2b88(0x14a)](_0x25b749)[_0x4d2b88(0x203)](_0x545867,_0x174aa3);}function _0x834a89(_0x3b986b){return function(){var _0x10a737=this,_0x2d27b4=arguments;return new Promise(function(_0x25a717,_0x2dd88c){var _0x4843e7=a9_0x2f60,_0x2a4dce=_0x3b986b[_0x4843e7(0x21b)](_0x10a737,_0x2d27b4);function _0x1991ed(_0x2b972b){var _0x496a4a=_0x4843e7;_0xb0bb56(_0x2a4dce,_0x25a717,_0x2dd88c,_0x1991ed,_0x3968bd,_0x496a4a(0x1ef),_0x2b972b);}function _0x3968bd(_0x868dce){_0xb0bb56(_0x2a4dce,_0x25a717,_0x2dd88c,_0x1991ed,_0x3968bd,'throw',_0x868dce);}_0x1991ed(void 0x0);});};}var _0x6d907e,_0x83ccf0,_0xaf0ea7,_0x442dae,_0x3072c1,_0x38b7da,_0x41e1ef,_0x381e9e,_0x51390,_0x9a10b,_0x11b641,_0x465e70,_0x3a0eeb,_0x2bfe22,_0x50894a={'x':0x0,'y':0x0,'z':0x0},_0x5941b8=null,_0x3fa527=/iPhone|iPad|iPod|Android/i[_0x8f2755(0x239)](navigator['userAgent']),_0x4477a5=(function(){var _0x59a369=_0x8f2755,_0x211363=_0x834a89(_0x4457a1()[_0x59a369(0x211)](function _0x253d98(_0x194f99,_0x3b3376){var _0x22ce63,_0x110c01,_0x479729,_0x201587,_0x2b8c86,_0x84767f,_0x266fae,_0x1ab34d,_0x5a9689,_0xcdd82d,_0x460c66,_0x2b3ca4,_0x360a15,_0x231b2a,_0x12cce3,_0x53821f,_0x39653b,_0x5dbf7c,_0x4da5ef,_0x4a21ab,_0x593b4e,_0x2eebb1,_0x133e0b,_0x40a1e0,_0x1ee1af,_0x34216a,_0x29401b,_0x48fe74;return _0x4457a1()['wrap'](function(_0x24b1df){var _0x4f9a3d=a9_0x2f60;for(;;)switch(_0x24b1df[_0x4f9a3d(0x21f)]=_0x24b1df[_0x4f9a3d(0x1ef)]){case 0x0:return _0x360a15=function(_0x4e641d,_0xa1a568,_0x12d115){var _0x353f8f=_0x4f9a3d;return Math['max'](Math[_0x353f8f(0x1e2)](_0x4e641d,_0x12d115),_0xa1a568);},_0x110c01=_0x3b3376['isDarkTheme'],_0x479729=_0x3b3376[_0x4f9a3d(0x179)],_0x201587=_0x3b3376[_0x4f9a3d(0x1fe)],_0x2b8c86=_0x3b3376[_0x4f9a3d(0x151)],_0x84767f=new _0x5baa20[(_0x4f9a3d(0x218))](_0x4f9a3d(0x1dc),new _0x5baa20[(_0x4f9a3d(0x188))](0x0,0x2,-0x6),_0x194f99),(_0x266fae=_0x194f99['getEngine']()[_0x4f9a3d(0x207)]())[_0x4f9a3d(0x1c4)][_0x4f9a3d(0x196)]=_0x4f9a3d(0x18f),_0x84767f[_0x4f9a3d(0x1b5)]=0.1,_0x84767f[_0x4f9a3d(0x1cf)]=0xbb8,_0x84767f['attachControl'](_0x266fae,!0x0),_0x84767f['keysUp']['push'](0x57),_0x84767f[_0x4f9a3d(0x212)]['push'](0x53),_0x84767f[_0x4f9a3d(0x17f)][_0x4f9a3d(0x17b)](0x41),_0x84767f['keysRight'][_0x4f9a3d(0x17b)](0x44),_0x84767f['keysUpward'][_0x4f9a3d(0x17b)](0x20),_0x84767f[_0x4f9a3d(0x17e)][_0x4f9a3d(0x17b)](0x10),_0x1ab34d=new _0x5baa20['Qxc'](),_0x5a9689=0x0,_0xcdd82d=0x0,_0x460c66=0x0,_0x2b3ca4=0x0,_0x194f99['onPointerMove']=function(_0x7d0639){var _0x3023df=_0x4f9a3d,_0x102b0a=_0x7d0639[_0x3023df(0x20e)],_0x85d674=_0x7d0639[_0x3023df(0x16e)];_0x5a9689+=0x1*(_0x102b0a-_0x460c66),_0xcdd82d=_0x360a15(_0xcdd82d+=0x1*(_0x85d674-_0x2b3ca4),-0x23,0x2d),_0x460c66=_0x102b0a,_0x2b3ca4=_0x85d674,_0x1ab34d[_0x3023df(0x1aa)]=new _0x5baa20[(_0x3023df(0x188))](_0x5baa20[_0x3023df(0x1ea)][_0x3023df(0x21d)](_0xcdd82d)%0x168,_0x5baa20[_0x3023df(0x1ea)][_0x3023df(0x21d)](_0x5a9689)%0x168,0x0);},_0x266fae[_0x4f9a3d(0x21c)]=function(){var _0x258717=_0x4f9a3d;_0x266fae[_0x258717(0x1e9)]();},new _0x5baa20[(_0x4f9a3d(0x19a))](_0x4f9a3d(0x1d8),new _0x5baa20[(_0x4f9a3d(0x188))](0x0,0x1,0x0),_0x194f99)[_0x4f9a3d(0x222)]=0.7,_0x6d907e=_0x5baa20[_0x4f9a3d(0x1c1)][_0x4f9a3d(0x223)](_0x4f9a3d(0x144),{'size':0.5},_0x194f99),(_0x231b2a=new _0x5baa20[(_0x4f9a3d(0x19e))](_0x4f9a3d(0x19b),_0x194f99))[_0x4f9a3d(0x237)]=new _0x5baa20['wlS']('/avatars/1.jpg',_0x194f99),_0x6d907e[_0x4f9a3d(0x19b)]=_0x231b2a,_0x6d907e[_0x4f9a3d(0x169)]['y']=0x1,_0x6d907e['position']['z']=-0x3,(_0x83ccf0=_0x5baa20[_0x4f9a3d(0x1c1)][_0x4f9a3d(0x223)]('box2',{'size':0.5},_0x194f99))[_0x4f9a3d(0x169)]['y']=1.7,_0x83ccf0[_0x4f9a3d(0x169)]['z']=-0x3,(_0x12cce3=new _0x5baa20[(_0x4f9a3d(0x19e))]('material2',_0x194f99))['diffuseTexture']=new _0x5baa20['wlS']('/avatars/2.jpg',_0x194f99),_0x12cce3[_0x4f9a3d(0x204)]=new _0x5baa20['gVi'](0.212,0.596,0.941),_0x83ccf0['material']=_0x12cce3,(_0xaf0ea7=_0x5baa20[_0x4f9a3d(0x1c1)][_0x4f9a3d(0x223)](_0x4f9a3d(0x194),{'size':0.5},_0x194f99))[_0x4f9a3d(0x169)]['y']=2.4,_0xaf0ea7[_0x4f9a3d(0x169)]['z']=-0x3,(_0x53821f=new _0x5baa20[(_0x4f9a3d(0x19e))](_0x4f9a3d(0x18a),_0x194f99))[_0x4f9a3d(0x237)]=new _0x5baa20[(_0x4f9a3d(0x1a8))](_0x4f9a3d(0x170),_0x194f99),_0xaf0ea7[_0x4f9a3d(0x19b)]=_0x53821f,(_0x442dae=_0x5baa20[_0x4f9a3d(0x1c1)]['CreateBox']('box4',{'size':0.5},_0x194f99))[_0x4f9a3d(0x169)]['y']=0x1,_0x442dae[_0x4f9a3d(0x169)]['x']=0.9,_0x442dae[_0x4f9a3d(0x169)]['z']=-0x3,(_0x39653b=new _0x5baa20[(_0x4f9a3d(0x19e))](_0x4f9a3d(0x1f8),_0x194f99))[_0x4f9a3d(0x237)]=new _0x5baa20[(_0x4f9a3d(0x1a8))](_0x4f9a3d(0x1eb),_0x194f99),_0x39653b['diffuseColor']=new _0x5baa20['gVi'](0.212,0.596,0.941),_0x442dae[_0x4f9a3d(0x19b)]=_0x39653b,(_0x3072c1=_0x5baa20[_0x4f9a3d(0x1c1)][_0x4f9a3d(0x223)](_0x4f9a3d(0x147),{'size':0.5},_0x194f99))[_0x4f9a3d(0x169)]['y']=1.7,_0x3072c1['position']['x']=0.9,_0x3072c1['position']['z']=-0x3,(_0x5dbf7c=new _0x5baa20[(_0x4f9a3d(0x19e))](_0x4f9a3d(0x1ca),_0x194f99))['diffuseTexture']=new _0x5baa20['wlS']('/avatars/5.jpg',_0x194f99),_0x3072c1[_0x4f9a3d(0x19b)]=_0x5dbf7c,(_0x38b7da=_0x5baa20[_0x4f9a3d(0x1c1)][_0x4f9a3d(0x223)](_0x4f9a3d(0x157),{'size':0.5},_0x194f99))['position']['y']=2.4,_0x38b7da[_0x4f9a3d(0x169)]['x']=0.9,_0x38b7da[_0x4f9a3d(0x169)]['z']=-0x3,(_0x4da5ef=new _0x5baa20[(_0x4f9a3d(0x19e))](_0x4f9a3d(0x208),_0x194f99))[_0x4f9a3d(0x237)]=new _0x5baa20['wlS'](_0x4f9a3d(0x171),_0x194f99),_0x4da5ef[_0x4f9a3d(0x204)]=new _0x5baa20[(_0x4f9a3d(0x1ce))](0.212,0.596,0.941),_0x38b7da[_0x4f9a3d(0x19b)]=_0x4da5ef,(_0x41e1ef=_0x5baa20[_0x4f9a3d(0x1c1)][_0x4f9a3d(0x223)]('box7',{'size':0.5},_0x194f99))[_0x4f9a3d(0x169)]['y']=0x1,_0x41e1ef[_0x4f9a3d(0x169)]['x']=-0.9,_0x41e1ef[_0x4f9a3d(0x169)]['z']=-0x3,(_0x4a21ab=new _0x5baa20[(_0x4f9a3d(0x19e))](_0x4f9a3d(0x186),_0x194f99))[_0x4f9a3d(0x237)]=new _0x5baa20[(_0x4f9a3d(0x1a8))]('/avatars/7.jpg',_0x194f99),_0x4a21ab[_0x4f9a3d(0x204)]=new _0x5baa20[(_0x4f9a3d(0x1ce))](0.212,0.596,0.941),_0x41e1ef[_0x4f9a3d(0x19b)]=_0x4a21ab,(_0x381e9e=_0x5baa20[_0x4f9a3d(0x1c1)][_0x4f9a3d(0x223)]('box8',{'size':0.5},_0x194f99))[_0x4f9a3d(0x169)]['y']=1.7,_0x381e9e[_0x4f9a3d(0x169)]['x']=-0.9,_0x381e9e[_0x4f9a3d(0x169)]['z']=-0x3,(_0x593b4e=new _0x5baa20[(_0x4f9a3d(0x19e))]('material8',_0x194f99))['diffuseTexture']=new _0x5baa20[(_0x4f9a3d(0x1a8))](_0x4f9a3d(0x1db),_0x194f99),_0x381e9e[_0x4f9a3d(0x19b)]=_0x593b4e,(_0x51390=_0x5baa20['OG0'][_0x4f9a3d(0x223)]('box9',{'size':0.5},_0x194f99))[_0x4f9a3d(0x169)]['y']=2.4,_0x51390[_0x4f9a3d(0x169)]['x']=-0.9,_0x51390[_0x4f9a3d(0x169)]['z']=-0x3,(_0x2eebb1=new _0x5baa20[(_0x4f9a3d(0x19e))](_0x4f9a3d(0x159),_0x194f99))[_0x4f9a3d(0x237)]=new _0x5baa20[(_0x4f9a3d(0x1a8))](_0x4f9a3d(0x23d),_0x194f99),_0x2eebb1['diffuseColor']=new _0x5baa20[(_0x4f9a3d(0x1ce))](0.212,0.596,0.941),_0x51390['material']=_0x2eebb1,_0x24b1df['next']=0x5c,_0x5baa20['iAn']['ImportMeshAsync'](null,_0x4f9a3d(0x201),'',_0x194f99);case 0x5c:return _0x133e0b=_0x24b1df[_0x4f9a3d(0x148)],(_0x40a1e0=_0x133e0b[_0x4f9a3d(0x1f7)][0x1])[_0x4f9a3d(0x169)]['y']=0x1,_0x40a1e0[_0x4f9a3d(0x169)]['z']=0x0,_0x40a1e0[_0x4f9a3d(0x169)]['x']=0x0,_0x40a1e0[_0x4f9a3d(0x20f)](new _0x5baa20['O4c'](0x1,0x0,0x0),Math['PI']/0x2),_0x40a1e0[_0x4f9a3d(0x20f)](new _0x5baa20[(_0x4f9a3d(0x188))](0x0,0x0,0x1),Math['PI']),_0x40a1e0[_0x4f9a3d(0x20f)](new _0x5baa20[(_0x4f9a3d(0x188))](0x0,0x1,0x0),Math['PI']),_0x5baa20[_0x4f9a3d(0x23f)]['CreateFromWebCam'](_0x194f99,function(_0x1a04a4){var _0x16a738=_0x4f9a3d;(_0x9a10b=_0x5baa20[_0x16a738(0x1c1)][_0x16a738(0x223)](_0x16a738(0x162),{'width':0x1,'height':0x1},_0x194f99))[_0x16a738(0x169)]['y']=0x1,_0x9a10b[_0x16a738(0x169)]['z']=0x3,_0x9a10b[_0x16a738(0x1aa)]['z']=Math['PI'];var _0x140cec=new _0x5baa20[(_0x16a738(0x19e))](_0x16a738(0x197),_0x194f99);_0x140cec['diffuseTexture']=_0x1a04a4,_0x9a10b[_0x16a738(0x19b)]=_0x140cec;},{'maxWidth':0x100,'maxHeight':0x100}),(_0x465e70=_0x5baa20[_0x4f9a3d(0x1c1)][_0x4f9a3d(0x223)]('peerAvatar',{'size':0.3},_0x194f99))[_0x4f9a3d(0x169)]['y']=0x1,_0x465e70['position']['z']=0x3,_0x465e70[_0x4f9a3d(0x169)]['x']=0x0,_0x1ee1af=new _0x5baa20['uGc'](_0x4f9a3d(0x219),_0x194f99),_0x34216a=_0x2b8c86||_0x4f9a3d(0x20d),_0x1ee1af[_0x4f9a3d(0x237)]=new _0x5baa20[(_0x4f9a3d(0x1a8))](_0x34216a,_0x194f99),_0x465e70[_0x4f9a3d(0x19b)]=_0x1ee1af,_0x465e70['material'][_0x4f9a3d(0x204)]=new _0x5baa20['gVi'](0.212,0.941,0.596),_0x465e70[_0x4f9a3d(0x1aa)]=_0x84767f[_0x4f9a3d(0x1aa)],_0x479729['length']>0x0&&_0x5baa20[_0x4f9a3d(0x23f)][_0x4f9a3d(0x19d)](_0x194f99,_0x479729[0x0][_0x4f9a3d(0x17a)],!0x0)[_0x4f9a3d(0x203)](function(_0x3935a0){var _0x5e92a7=_0x4f9a3d;(_0x11b641=_0x5baa20[_0x5e92a7(0x1c1)][_0x5e92a7(0x1a2)](_0x5e92a7(0x176),{'width':0x1,'height':0x1},_0x194f99))['position']['y']=0x2,_0x11b641['position']['z']=0x3,_0x11b641[_0x5e92a7(0x1aa)]['z']=Math['PI'];var _0x280e12=new _0x5baa20['uGc'](_0x5e92a7(0x197),_0x194f99);_0x280e12[_0x5e92a7(0x237)]=_0x3935a0,_0x465e70[_0x5e92a7(0x19b)]['diffuseColor']=new _0x5baa20[(_0x5e92a7(0x1ce))](0.941,0.941,0.941),_0x11b641['material']=_0x280e12,_0x11b641[_0x5e92a7(0x209)](_0x84767f[_0x5e92a7(0x169)]),_0x1ee1af[_0x5e92a7(0x237)]=_0x3935a0;}),_0x29401b=_0x5baa20['OG0'][_0x4f9a3d(0x1ed)](_0x4f9a3d(0x23e),{'width':0x6,'height':0x6},_0x194f99),(_0x48fe74=new _0x5baa20['uGc'](_0x4f9a3d(0x192),_0x194f99))['diffuseTexture']=new _0x5baa20[(_0x4f9a3d(0x1a8))](_0x110c01?'/backgrounds/light-leaves.png':_0x4f9a3d(0x168),_0x194f99),_0x29401b['material']=_0x48fe74,_0x29401b[_0x4f9a3d(0x169)]['y']=0.01,_0x24b1df[_0x4f9a3d(0x1ef)]=0x77,null===(_0x22ce63=_0x3a0eeb)||void 0x0===_0x22ce63?void 0x0:_0x22ce63['then'](function(_0x2731ce){var _0x45ca1a=_0x4f9a3d;return _0x2731ce['baseExperience']['state'][_0x45ca1a(0x1e6)];});case 0x77:_0x24b1df[_0x4f9a3d(0x148)]||((_0x5941b8=_0x5baa20[_0x4f9a3d(0x1c1)][_0x4f9a3d(0x223)](_0x4f9a3d(0x217),{'size':0x3e8,'sideOrientation':_0x5baa20[_0x4f9a3d(0x143)][_0x4f9a3d(0x16a)]},_0x194f99))[_0x4f9a3d(0x169)]['y']=0x1f4,_0x5941b8[_0x4f9a3d(0x1f0)]=!0x1,_0x5941b8[_0x4f9a3d(0x15d)]=!0x0),_0x194f99[_0x4f9a3d(0x1d5)]=_0x110c01?new _0x5baa20[(_0x4f9a3d(0x1ce))](0x0,0x0,0x0):new _0x5baa20[(_0x4f9a3d(0x1ce))](0x1,0x1,0x1),_0x201587?_0x3fa527&&((_0x2bfe22=new _0x5baa20[(_0x4f9a3d(0x1e8))](_0x4f9a3d(0x16f),_0x194f99[_0x4f9a3d(0x156)][_0x4f9a3d(0x169)],_0x194f99))['rotation']=_0x194f99['activeCamera'][_0x4f9a3d(0x1aa)],_0x2bfe22[_0x4f9a3d(0x154)]=_0x194f99['activeCamera'][_0x4f9a3d(0x154)],_0x2bfe22[_0x4f9a3d(0x1a5)]=_0x194f99[_0x4f9a3d(0x156)]['applyGravity'],_0x2bfe22[_0x4f9a3d(0x1b5)]=0.5,_0x2bfe22[_0x4f9a3d(0x1cf)]=0x14,_0x2bfe22[_0x4f9a3d(0x1c2)]=0.5,_0x194f99['executeWhenReady'](function(){var _0x563bff=_0x4f9a3d;_0x194f99['activeCamera']=_0x2bfe22,_0x194f99[_0x563bff(0x156)][_0x563bff(0x20c)](_0x266fae);})):_0x3a0eeb=_0x194f99[_0x4f9a3d(0x199)]({'uiOptions':{'sessionMode':'immersive-ar'},'optionalFeatures':!0x0});case 0x7b:case _0x4f9a3d(0x173):return _0x24b1df[_0x4f9a3d(0x16b)]();}},_0x253d98);}));return function(_0x3ce154,_0x9629e8){return _0x211363['apply'](this,arguments);};}()),_0x5a450d=function(_0x10fa19){var _0x51cb4a=_0x8f2755;_0x10fa19[_0x51cb4a(0x179)];var _0x294755=_0x10fa19[_0x51cb4a(0x1c7)],_0xb4ce85=_0x10fa19[_0x51cb4a(0x1a1)];return(function(){var _0x2d5e7f=_0x51cb4a,_0x4ebc55=_0x834a89(_0x4457a1()[_0x2d5e7f(0x211)](function _0x514024(_0x5cbeb7){var _0x2bd9ab=_0x2d5e7f,_0x3db5bb,_0x5dd7e6,_0x42d8ae,_0x352a08,_0xb7e31a,_0x4a324e,_0xd1a0cc,_0x176535,_0x47d17c,_0x3559ac,_0x548a1c,_0x59ed38,_0x343956,_0x421de8,_0x38f36a,_0x3ee09f,_0x47bb5b,_0x23052b,_0x39c851,_0x535929,_0x4913eb,_0x16d08e,_0xeb9ac0,_0x9ac445,_0x29d5e8,_0x3ff595,_0x48d91e,_0x569dc9,_0x5e2af8;return _0x4457a1()[_0x2bd9ab(0x1a3)](function(_0xeb4d4a){var _0x1bcc01=_0x2bd9ab;for(;;)switch(_0xeb4d4a['prev']=_0xeb4d4a[_0x1bcc01(0x1ef)]){case 0x0:if(void 0x0!==_0x6d907e&&(_0x3db5bb=_0x5cbeb7['getEngine']()[_0x1bcc01(0x15a)](),_0x6d907e['rotation']['y']+=0xa/0x3c*Math['PI']*0x2*(_0x3db5bb/0x3e8)),void 0x0!==_0x83ccf0&&(_0x5dd7e6=_0x5cbeb7['getEngine']()[_0x1bcc01(0x15a)](),_0x83ccf0[_0x1bcc01(0x1aa)]['y']-=0xa/0x3c*Math['PI']*0x2*(_0x5dd7e6/0x3e8)),void 0x0!==_0xaf0ea7&&(_0x42d8ae=_0x5cbeb7[_0x1bcc01(0x1d2)]()['getDeltaTime'](),_0xaf0ea7['rotation']['y']+=0xa/0x3c*Math['PI']*0x2*(_0x42d8ae/0x3e8)),void 0x0!==_0x442dae&&(_0x352a08=_0x5cbeb7['getEngine']()[_0x1bcc01(0x15a)](),_0x442dae[_0x1bcc01(0x1aa)]['y']-=0xa/0x3c*Math['PI']*0x2*(_0x352a08/0x3e8)),void 0x0!==_0x3072c1&&(_0xb7e31a=_0x5cbeb7[_0x1bcc01(0x1d2)]()[_0x1bcc01(0x15a)](),_0x3072c1[_0x1bcc01(0x1aa)]['y']+=0xa/0x3c*Math['PI']*0x2*(_0xb7e31a/0x3e8)),void 0x0!==_0x38b7da&&(_0x4a324e=_0x5cbeb7['getEngine']()['getDeltaTime'](),_0x38b7da[_0x1bcc01(0x1aa)]['y']-=0xa/0x3c*Math['PI']*0x2*(_0x4a324e/0x3e8)),void 0x0!==_0x41e1ef&&(_0xd1a0cc=_0x5cbeb7['getEngine']()[_0x1bcc01(0x15a)](),_0x41e1ef[_0x1bcc01(0x1aa)]['y']-=0xa/0x3c*Math['PI']*0x2*(_0xd1a0cc/0x3e8)),void 0x0!==_0x381e9e&&(_0x176535=_0x5cbeb7[_0x1bcc01(0x1d2)]()[_0x1bcc01(0x15a)](),_0x381e9e[_0x1bcc01(0x1aa)]['y']+=0xa/0x3c*Math['PI']*0x2*(_0x176535/0x3e8)),void 0x0!==_0x51390&&(_0x47d17c=_0x5cbeb7[_0x1bcc01(0x1d2)]()[_0x1bcc01(0x15a)](),_0x51390[_0x1bcc01(0x1aa)]['y']-=0xa/0x3c*Math['PI']*0x2*(_0x47d17c/0x3e8)),_0x3559ac=_0x5cbeb7[_0x1bcc01(0x156)]['position'],_0x548a1c=_0x3559ac['_x'],_0x59ed38=_0x3559ac['_y'],_0x343956=_0x3559ac['_z'],_0x421de8={'x':_0x548a1c,'y':_0x59ed38,'z':_0x343956},_0x548a1c===_0x50894a['x']&&_0x59ed38===_0x50894a['y']&&_0x343956===_0x50894a['z']){_0xeb4d4a[_0x1bcc01(0x1ef)]=0x1b;break;}if(_0x50894a=_0x421de8,_0x3ee09f=null===(_0x38f36a=_0x3a0eeb)||void 0x0===_0x38f36a?void 0x0:_0x38f36a[_0x1bcc01(0x203)](function(_0x308658){var _0x5e151b=_0x1bcc01;return _0x308658[_0x5e151b(0x216)][_0x5e151b(0x1e4)];}),!_0x3ee09f){_0xeb4d4a[_0x1bcc01(0x1ef)]=0x1a;break;}return _0xeb4d4a['next']=0x11,_0x3ee09f['then'](function(_0x4e0007){var _0x37f321=_0x1bcc01;return _0x4e0007[_0x37f321(0x169)];});case 0x11:return _0x47bb5b=_0xeb4d4a[_0x1bcc01(0x148)],console[_0x1bcc01(0x175)]({'xrCameraPosition':_0x47bb5b}),_0xeb4d4a[_0x1bcc01(0x1ef)]=0x15,_0x3a0eeb['then'](function(_0x4cee89){var _0xf9b5e8=_0x1bcc01;return _0x4cee89[_0xf9b5e8(0x216)][_0xf9b5e8(0x233)][_0xf9b5e8(0x1e6)];});case 0x15:_0x23052b=_0xeb4d4a[_0x1bcc01(0x148)],_0xb4ce85(_0x23052b?_0x47bb5b:_0x50894a),_0x5941b8&&(_0x5941b8['dispose'](),_0x5941b8=null),_0xeb4d4a[_0x1bcc01(0x1ef)]=0x1b;break;case 0x1a:_0xb4ce85(_0x50894a);case 0x1b:_0x39c851=_0x5cbeb7[_0x1bcc01(0x156)],_0x11b641&&(_0x4913eb=(null==_0x294755||null===(_0x535929=_0x294755[_0x1bcc01(0x14e)])||void 0x0===_0x535929?void 0x0:_0x535929['position'])||{},_0x16d08e=_0x4913eb['x'],_0xeb9ac0=_0x4913eb['y'],_0x9ac445=_0x4913eb['z'],_0x11b641[_0x1bcc01(0x169)]['x']=_0x16d08e||0x0,_0x11b641[_0x1bcc01(0x169)]['y']=_0xeb9ac0||0x2,_0x11b641[_0x1bcc01(0x169)]['z']=_0x9ac445||0x3,_0x11b641['rotation']['z']=Math['PI'],_0x11b641[_0x1bcc01(0x209)](_0x39c851[_0x1bcc01(0x169)])),_0x465e70&&(_0x3ff595=(null==_0x294755||null===(_0x29d5e8=_0x294755[_0x1bcc01(0x14e)])||void 0x0===_0x29d5e8?void 0x0:_0x29d5e8[_0x1bcc01(0x169)])||{},_0x48d91e=_0x3ff595['x'],_0x569dc9=_0x3ff595['y'],_0x5e2af8=_0x3ff595['z'],_0x465e70[_0x1bcc01(0x169)]['x']=_0x48d91e||0x0,_0x465e70['position']['y']=_0x569dc9||0x1,_0x465e70['position']['z']=_0x5e2af8||0x3,_0x465e70['rotation']=_0x39c851[_0x1bcc01(0x1aa)]);case 0x1e:case _0x1bcc01(0x173):return _0xeb4d4a[_0x1bcc01(0x16b)]();}},_0x514024);}));return function(_0x27a15e){return _0x4ebc55['apply'](this,arguments);};}());},_0x42533d=(0x0,_0x1aaf20['c'])(function(_0x289ad8){var _0x21fd15=_0x8f2755;return{'root':{'flexGrow':0x1,'paddingBottom':_0x289ad8[_0x21fd15(0x220)](0x8)},'appBar':{'height':_0x289ad8[_0x21fd15(0x220)](0x8)},'title':{'fontWeight':_0x21fd15(0x18c),'textAlign':_0x21fd15(0x152),'display':_0x21fd15(0x210),'alignItems':_0x21fd15(0x23b),'height':_0x21fd15(0x182),'padding':'0\x20'[_0x21fd15(0x189)](_0x289ad8[_0x21fd15(0x220)](0x3))}};});function _0x2d9135(){var _0x5ff2e3=_0x8f2755;(0x0,_0x41b076['c'])();var _0x5aa293=_0x42533d();return(0x0,_0x5da0a0[_0x5ff2e3(0x1d1)])(null),_0x2d2483()[_0x5ff2e3(0x200)](_0x3b0ee4['c'],{'backgroundImage':'','headerProps':{'title':_0x2d2483()[_0x5ff2e3(0x200)](_0x5ff2e3(0x1f3),null,_0x2d2483()[_0x5ff2e3(0x200)](_0x486cf4['c'],{'variant':'h6','component':_0x5ff2e3(0x1f3),'sx':{'flexGrow':0x1}},_0x5ff2e3(0x22b)),_0x2d2483()[_0x5ff2e3(0x200)](_0x486cf4['c'],{'variant':_0x5ff2e3(0x1cb),'component':'div','sx':{'flexGrow':0x1}})),'backButton':!0x0,'menuProps':{'icon':'more'}},'className':_0x5aa293['conversation']},_0x2d2483()['createElement'](_0x316264,{'antialias':!0x0,'onSceneReady':_0x4477a5,'onRender':_0x5a450d,'id':_0x5ff2e3(0x1e7),'style':{'height':'100%','width':_0x5ff2e3(0x182)}}));}}}]);function a9_0x2f60(_0x2f9d06,_0x95ee94){var _0x43795b=a9_0x4379();return a9_0x2f60=function(_0x2f6031,_0x212ed9){_0x2f6031=_0x2f6031-0x143;var _0x5226d2=_0x43795b[_0x2f6031];return _0x5226d2;},a9_0x2f60(_0x2f9d06,_0x95ee94);}function a9_0x4379(){var _0x2521c8=['box6','webpackChunkchat','material9','getDeltaTime','answer','length','receiveShadows','create','5837gqrhqF','completion','prototype','mirror','toString','getOwnPropertySymbols','break','Qz9','Object','/backgrounds/dark-leaves.png','position','BACKSIDE','stop','displayName','9223543HfNfre','clientY','VJC','/avatars/3.jpg','/avatars/6.jpg','setPrototypeOf','end','addEventListener','log','plane','_sent','symbol','calls','_remoteStream','push','charAt','onSceneReady','keysDownward','keysLeft','bind','isArray','100%','adaptToDeviceRatio','block','mode','material7','absolute','O4c','concat','material3','defineProperty','bold','reset','engineOptions','none','users','object','groundMaterial','\x20is\x20not\x20iterable','box3','suspendedYield','cursor','materialPlane','reverse','createDefaultXRExperienceAsync','EVu','material','isReady','CreateFromStreamAsync','uGc','userProfile','isGeneratorFunction','onMove','CreatePlane','wrap','catchLoc','applyGravity','executing','value','wlS','tryLoc','rotation','awrap','3174162wfKbPh','resize','getVideoTracks','filter','tryEntries','9712184WINxxv','compiledBlockchain','sceneOptions','Generator\x20is\x20already\x20running','speed','constructor','abrupt','iterator','@@asyncIterator','addBlocks','\x27\x20method','useMemo','try\x20statement\x20without\x20catch\x20or\x20finally','map','__proto__','type','OG0','inertia','slice','style','call','contacts','ephemeralStorage','throttle','dispatchException','material5','subtitle2','toStringTag','video','gVi','angularSensibility','GeneratorFunction','useRef','getEngine','undefined','@@iterator','clearColor','indexOf','mediaDevices','light','suspendedStart','Generator','/avatars/8.jpg','camera1','avatar','string','values','connectionId','_invoke','min','88492HQZgRD','camera','updateEphemeralStorage','inXR','my-canvas','Ww6','requestPointerLock','sbU','/avatars/4.jpg','completed','CreateGround','function','next','isPickable','pods','blocks','div','throw','antialias','9LOVDND','meshes','material4','method','propertyIsEnumerable','complete','return','canvas','isInPod','afterLoc','createElement','/models/cat.glb','root','then','diffuseColor','illegal\x20catch\x20attempt','render','getRenderingCanvas','material6','lookAt','nextLoc','find','attachControl','/avatars/1.jpg','clientX','rotate','flex','mark','keysDown','includes','finallyLoc','hasOwnProperty','baseExperience','sky','khM','materialPeerAvatar','dark','apply','onclick','ToRadians','name','prev','spacing','KAh','intensity','CreateBox','peer','assign','async','asyncIterator','onReadyObservable','activeConnections','@@toStringTag','Verse','rval','15124563LrNjOl','keys','getPrototypeOf','The\x20iterator\x20does\x20not\x20provide\x20a\x20\x27','useEffect','useState','state','Fragment','delegate','1245485liXpiG','diffuseTexture','makeCall','test','pop','center','forEach','/avatars/9.jpg','ground','iGO','podId','Ss9','box','AsyncIterator','4miTMou','box5','sent','from','resolve','normal','done','storage','verse','onRender','continue','peerAvatar','left','__await','checkCollisions','arg','activeCamera'];a9_0x4379=function(){return _0x2521c8;};return a9_0x4379();}
+"use strict";
+(self["webpackChunkchat"] = self["webpackChunkchat"] || []).push([[296],{
+
+/***/ 35296:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ Verse)
+});
+
+// EXTERNAL MODULE: consume shared module (default) react@^17.0.0 || ^18.2.0 (singleton) (fallback: ./node_modules/react/index.js)
+var index_js_ = __webpack_require__(5160);
+var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Typography/Typography.js + 1 modules
+var Typography = __webpack_require__(68857);
+// EXTERNAL MODULE: ./node_modules/@mui/styles/makeStyles/makeStyles.js + 6 modules
+var makeStyles = __webpack_require__(64332);
+// EXTERNAL MODULE: ./node_modules/@mui/styles/useTheme/index.js
+var useTheme = __webpack_require__(52600);
+// EXTERNAL MODULE: ./src/components/redux/slices/userProfileSlice.js
+var userProfileSlice = __webpack_require__(91608);
+// EXTERNAL MODULE: ./src/components/atomic/organism/page-container/PageContainer.js + 1 modules
+var PageContainer = __webpack_require__(84116);
+// EXTERNAL MODULE: ./src/components/atomic/molecules/thread/Thread.js + 3 modules
+var Thread = __webpack_require__(20972);
+// EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.js + 3 modules
+var Message = __webpack_require__(61976);
+// EXTERNAL MODULE: ./src/components/redux/slices/podsSlice.js
+var podsSlice = __webpack_require__(6552);
+// EXTERNAL MODULE: ./src/components/p2p/usePeer.js
+var usePeer = __webpack_require__(91216);
+// EXTERNAL MODULE: ./src/components/redux/slices/storageSlice.js
+var storageSlice = __webpack_require__(16864);
+// EXTERNAL MODULE: ./src/components/blockchain/Blockchain.js + 1 modules
+var Blockchain = __webpack_require__(76968);
+// EXTERNAL MODULE: ./src/components/blockchain/chains/profileChain.js
+var profileChain = __webpack_require__(6088);
+// EXTERNAL MODULE: ./src/components/blockchain/chains/podChain.js
+var podChain = __webpack_require__(53012);
+// EXTERNAL MODULE: ./node_modules/react-i18next/dist/es/index.js + 15 modules
+var es = __webpack_require__(70100);
+// EXTERNAL MODULE: ./node_modules/@babylonjs/loaders/glTF/index.js + 50 modules
+var glTF = __webpack_require__(37406);
+// EXTERNAL MODULE: ./node_modules/@babylonjs/loaders/OBJ/index.js + 4 modules
+var OBJ = __webpack_require__(35824);
+// EXTERNAL MODULE: ./node_modules/@babylonjs/core/index.js + 996 modules
+var core = __webpack_require__(73052);
+// EXTERNAL MODULE: ./node_modules/react-router/dist/index.js
+var dist = __webpack_require__(83284);
+// EXTERNAL MODULE: ./node_modules/react-redux/dist/react-redux.mjs
+var react_redux = __webpack_require__(52328);
+// EXTERNAL MODULE: ./node_modules/lodash/lodash.js
+var lodash = __webpack_require__(33568);
+;// CONCATENATED MODULE: ./src/components/pages/verse/SceneComponent.jsx
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+var _excluded = ["antialias", "engineOptions", "adaptToDeviceRatio", "sceneOptions", "onRender", "onSceneReady"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw new Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw new Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
+
+
+
+
+
+
+
+
+
+
+// detect if mobile device
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+/* harmony default export */ const SceneComponent = (function (_ref) {
+  var _onlineUsersFromPod$;
+  var antialias = _ref.antialias,
+    engineOptions = _ref.engineOptions,
+    adaptToDeviceRatio = _ref.adaptToDeviceRatio,
+    sceneOptions = _ref.sceneOptions,
+    onRender = _ref.onRender,
+    onSceneReady = _ref.onSceneReady,
+    rest = _objectWithoutProperties(_ref, _excluded);
+  var reactCanvas = (0,index_js_.useRef)(null);
+  var theme = (0,useTheme/* default */.c)();
+  var isDarkTheme = theme.palette.mode === "dark";
+  var _useState = (0,index_js_.useState)(null),
+    _useState2 = _slicedToArray(_useState, 2),
+    engine = _useState2[0],
+    setEngine = _useState2[1];
+  var _useState3 = (0,index_js_.useState)(null),
+    _useState4 = _slicedToArray(_useState3, 2),
+    scene = _useState4[0],
+    setScene = _useState4[1];
+  var _useParams = (0,dist/* useParams */.W4)(),
+    podId = _useParams.podId;
+  var dispatch = (0,react_redux/* useDispatch */.OY)();
+  var userProfileBlockchain = (0,react_redux/* useSelector */.w1)(function (state) {
+    return state.userProfile.blockchain;
+  });
+  //   const addToBlockchainDispatch = ({block, blocks, storage}) => dispatch(addToBlockchain({ podId, block,blocks, storage }));
+  var _useBlockchain = (0,Blockchain/* useBlockchain */.e)({
+      compiler: profileChain/* compiler */.G,
+      blockchain: userProfileBlockchain
+      //   dispatch: addToBlockchainDispatch,
+    }),
+    userProfile = _useBlockchain.compiledBlockchain;
+  var storedConnectionId = userProfile.connectionId;
+  var storedPods = (0,react_redux/* useSelector */.w1)(function (state) {
+    return state.pods;
+  });
+  var addToBlockchainDispatch = function addToBlockchainDispatch(_ref2) {
+    var block = _ref2.block,
+      blocks = _ref2.blocks,
+      storage = _ref2.storage;
+    return dispatch((0,podsSlice/* addToBlockchain */.Sk)({
+      podId: podId,
+      block: block,
+      blocks: blocks,
+      storage: storage
+    }));
+  };
+  var conversation = storedPods.find(function (pod) {
+    return pod.id === podId;
+  });
+  var _useBlockchain2 = (0,Blockchain/* useBlockchain */.e)({
+      compiler: podChain/* compiler */.Gm,
+      blockchain: conversation === null || conversation === void 0 ? void 0 : conversation.blockchain,
+      dispatch: addToBlockchainDispatch
+    }),
+    podBlockchain = _useBlockchain2.compiledBlockchain,
+    addBlocksToPod = _useBlockchain2.addBlocks;
+  var _usePeer = (0,usePeer/* default */.c)((podBlockchain === null || podBlockchain === void 0 ? void 0 : podBlockchain.users) || []),
+    sendMessage = _usePeer.sendMessage,
+    makeCall = _usePeer.makeCall,
+    endCall = _usePeer.endCall,
+    calls = _usePeer.calls,
+    callsHash = _usePeer.callsHash,
+    activeConnections = _usePeer.activeConnections;
+  var _ref3 = (0,react_redux/* useSelector */.w1)(function (state) {
+      return state.pods.find(function (pod) {
+        return pod.id === podId;
+      });
+    }) || {},
+    ephemeralStorage = _ref3.ephemeralStorage;
+  var _useState5 = (0,index_js_.useState)(null),
+    _useState6 = _slicedToArray(_useState5, 2),
+    mediaStream = _useState6[0],
+    setMediaStream = _useState6[1];
+  var _useState7 = (0,index_js_.useState)(false),
+    _useState8 = _slicedToArray(_useState7, 2),
+    calledContacts = _useState8[0],
+    setCalledContacts = _useState8[1];
+
+  // useEffect(() => {
+  //     podBlockchain.users
+  //         .filter(user => activeConnections)
+  //         .forEach((user) => {
+  //         // if (!calls.includes(c => c.peer === user) && activeConnections.includes(user)) {
+  //         //     makeCall({ video: true, audio: true });
+  //         // }
+
+  //         // callsUnanswered.forEach((call) => {
+  //             //     makeCall({ video: true, audio: true });
+  //             //     setCalledContacts([...calledContacts, user]);
+  //             // });
+
+  //         // const callUnanswered = calls.filter((call) => !call._remoteStream && call.peer === user);
+  //         // console.log({ callUnanswered, calls, user })
+  //         // setCalledContacts([...calledContacts, user]);
+
+  //             makeCall({ video: true, audio: true });
+  //             setCalledContacts(true);
+  //     });
+  //     // if (calledContacts === false){
+  //     // }
+  // }, [calledContacts])
+
+  var handleAnswerCall = /*#__PURE__*/function () {
+    var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(call) {
+      var _call$_remoteStream;
+      var hasVideo, newMediaStream;
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            hasVideo = ((_call$_remoteStream = call._remoteStream) === null || _call$_remoteStream === void 0 ? void 0 : _call$_remoteStream.getVideoTracks().length) > 0;
+            _context.next = 3;
+            return navigator.mediaDevices.getUserMedia({
+              video: hasVideo ? true : true,
+              audio: true
+            });
+          case 3:
+            newMediaStream = _context.sent;
+            call.answer(newMediaStream);
+            // setMediaStream(newMediaStream)
+          case 5:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee);
+    }));
+    return function handleAnswerCall(_x) {
+      return _ref4.apply(this, arguments);
+    };
+  }();
+  (0,index_js_.useEffect)(function () {
+    console.log({
+      calls: calls
+    });
+    calls.forEach(function (call) {
+      // is this a new call?
+      if (!call._remoteStream) {
+        handleAnswerCall(call);
+      }
+    });
+  }, [calls]);
+
+  // console.log(">>>> isDarkTheme: ", isDarkTheme, theme.palette, calls, ephemeralStorage, ephemeralStorage?.verse?.position)
+
+  var onMove = function onMove(position) {
+    console.log("sending position: ", {
+      position: position
+    });
+    sendMessage({
+      type: "updateEphemeralStorage",
+      callback: false,
+      payload: {
+        podId: podId,
+        ephemeralStorage: {
+          verse: {
+            position: position
+          }
+        }
+      }
+    });
+  };
+  var storedContacts = (0,react_redux/* useSelector */.w1)(function (state) {
+    return state.contacts;
+  });
+  var onlineUsersFromPod = ((podBlockchain === null || podBlockchain === void 0 ? void 0 : podBlockchain.users) || []).filter(function (user) {
+    return activeConnections.includes(user);
+  }).map(function (user) {
+    var contact = storedContacts.find(function (contact) {
+      return contact.connectionId === user;
+    });
+    return contact;
+  });
+  var peerAvatar = onlineUsersFromPod === null || onlineUsersFromPod === void 0 || (_onlineUsersFromPod$ = onlineUsersFromPod[0]) === null || _onlineUsersFromPod$ === void 0 ? void 0 : _onlineUsersFromPod$.avatar;
+  var debouncedOnMove = (0,lodash.debounce)(onMove, 1000);
+  var throttledOnMove = (0,lodash.throttle)(onMove, 5);
+  var onReduxConnectedRender = (0,index_js_.useMemo)(function () {
+    return onRender({
+      calls: calls,
+      ephemeralStorage: ephemeralStorage,
+      onMove: throttledOnMove
+    });
+  }, [calls, ephemeralStorage, peerAvatar]);
+
+  // set up basic engine and scene
+  (0,index_js_.useEffect)(function () {
+    var resize = function resize() {
+      scene.getEngine().resize();
+    };
+    var initCanvas = function initCanvas() {
+      var canvas = reactCanvas.current;
+      if (!canvas) return;
+      var engine = new core/* Engine */.Qz9(canvas, antialias, engineOptions, adaptToDeviceRatio);
+      setEngine(engine);
+      var scene = new core/* Scene */.KAh(engine, sceneOptions);
+      setScene(scene);
+      // const xr = scene.createDefaultXRExperienceAsync({
+      //     // ask for an ar-session
+      //     uiOptions: {
+      //       sessionMode: "immersive-ar",
+      //     },
+      //   });
+
+      if (scene.isReady()) {
+        onSceneReady(scene, {
+          isDarkTheme: isDarkTheme,
+          calls: calls,
+          isInPod: !!podId,
+          peerAvatar: peerAvatar
+        });
+      } else {
+        scene.onReadyObservable.addOnce(function (scene) {
+          return onSceneReady(scene, {
+            isDarkTheme: isDarkTheme,
+            calls: calls,
+            isInPod: !!podId,
+            peerAvatar: peerAvatar
+          });
+        });
+      }
+      engine.runRenderLoop(function () {
+        if (typeof onReduxConnectedRender === "function") onReduxConnectedRender(scene);
+        scene.render();
+      });
+      if (window) {
+        window.addEventListener("resize", resize);
+      }
+    };
+    initCanvas();
+    return function () {
+      scene === null || scene === void 0 || scene.getEngine().dispose();
+      if (window) {
+        window.removeEventListener("resize", resize);
+      }
+    };
+  }, [antialias, engineOptions, adaptToDeviceRatio, sceneOptions, onRender, onSceneReady, isDarkTheme]);
+  var throttledEngineReset = (0,lodash.throttle)(function () {
+    if (engine) {
+      engine.stopRenderLoop();
+      engine.runRenderLoop(function () {
+        if (typeof onReduxConnectedRender === "function") onReduxConnectedRender(scene);
+        scene && scene.render();
+      });
+    }
+  }, 5);
+  (0,index_js_.useEffect)(function () {
+    throttledEngineReset();
+  }, [onReduxConnectedRender]);
+  return /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement("canvas", _extends({
+    ref: reactCanvas
+  }, rest)), calls.length > 0 && calls.map(function (call) {
+    return /*#__PURE__*/index_js_default().createElement("video", {
+      key: call.peer,
+      src: call._remoteStream,
+      autoPlay: true,
+      playsInline: true
+      // hidden from view
+      ,
+      style: {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: 0,
+        height: 0,
+        zIndex: -1
+      }
+    });
+  }));
+});
+;// CONCATENATED MODULE: ./src/components/pages/verse/Verse.js
+function Verse_typeof(o) { "@babel/helpers - typeof"; return Verse_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Verse_typeof(o); }
+function Verse_regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ Verse_regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == Verse_typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw new Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(Verse_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw new Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function Verse_asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function Verse_asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { Verse_asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { Verse_asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // uses above component in same directory
+// import SceneComponent from 'babylonjs-hook'; // if you install 'babylonjs-hook' NPM.
+// import "./App.css";
+
+var lightBackground = "/backgrounds/light-leaves.png";
+var darkBackground = "/backgrounds/dark-leaves.png";
+var box;
+var box2;
+var box3;
+var box4;
+var box5;
+var box6;
+var box7;
+var box8;
+var box9;
+var cameraPosition = {
+  x: 0,
+  y: 0,
+  z: 0
+};
+var cameraRotation = {
+  x: 0,
+  y: 0,
+  z: 0
+};
+var mirror;
+var peerPlane;
+var peerAvatar;
+var xr;
+var VJC;
+var skydome = null;
+var catModel;
+var catModelPath = "/models/cat.glb";
+
+// detect if mobile device
+var Verse_isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+var onSceneReady = /*#__PURE__*/function () {
+  var _ref2 = Verse_asyncToGenerator( /*#__PURE__*/Verse_regeneratorRuntime().mark(function _callee(scene, _ref) {
+    var _xr;
+    var isDarkTheme, calls, isInPod, peerAvatarBase64, camera, canvas, target, currentState, speed, rotation, mouseSpeed, mouseX, mouseY, lmx, lmy, clamp, light, material, material2, material3, material4, material5, material6, material7, material8, material9, result, catModel, materialPeerAvatar, peerAvatarBase64String, ground, groundMaterial, isInXr;
+    return Verse_regeneratorRuntime().wrap(function _callee$(_context) {
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          clamp = function _clamp(value, min, max) {
+            return Math.max(Math.min(value, max), min);
+          };
+          isDarkTheme = _ref.isDarkTheme, calls = _ref.calls, isInPod = _ref.isInPod, peerAvatarBase64 = _ref.peerAvatar;
+          // This creates and positions a free camera (non-mesh)
+          camera = new core/* FreeCamera */.khM("camera1", new core/* Vector3 */.O4c(0, 2, -6), scene); // This targets the camera to scene origin
+          // camera.setTarget(Vector3.Zero());
+          canvas = scene.getEngine().getRenderingCanvas();
+          canvas.style.cursor = "none";
+
+          // This attaches the camera to the canvas with slower movement speed.
+          // camera.attachControl(canvas, true);
+          camera.speed = 0.1;
+          camera.angularSensibility = 3000;
+          camera.attachControl(canvas, true);
+
+          // wasd controls and up/down with spacebar and shift
+          camera.keysUp.push(87); // W
+          camera.keysDown.push(83); // S
+          camera.keysLeft.push(65); // A
+          camera.keysRight.push(68); // D
+          camera.keysUpward.push(32); // Spacebar
+          camera.keysDownward.push(16); // Shift
+
+          //in-game changed variables
+          target = new core/* TransformNode */.Qxc();
+          currentState = "idle";
+          speed = 0;
+          rotation = 0;
+          mouseSpeed = 1.0;
+          mouseX = 0, mouseY = 0;
+          lmx = 0, lmy = 0;
+          scene.onPointerMove = function (evt) {
+            var mx = evt.clientX;
+            var my = evt.clientY;
+            mouseX += (mx - lmx) * mouseSpeed;
+            mouseY += (my - lmy) * mouseSpeed;
+            mouseY = clamp(mouseY, -35, 45);
+            lmx = mx;
+            lmy = my;
+            target.rotation = new core/* Vector3 */.O4c(core/* Tools */.sbU.ToRadians(mouseY) % 360, core/* Tools */.sbU.ToRadians(mouseX) % 360, 0);
+          };
+          //mouse lock
+          canvas.onclick = function () {
+            canvas.requestPointerLock();
+          };
+          // This creates a light, aiming 0,1,0 - to the sky (non-mesh)
+          light = new core/* HemisphericLight */.EVu("light", new core/* Vector3 */.O4c(0, 1, 0), scene); // Default intensity is 1. Let's dim the light a small amount
+          light.intensity = 0.7;
+
+          // Our built-in 'box' shape. make it light blue #1565c0
+          box = core/* MeshBuilder */.OG0.CreateBox("box", {
+            size: 0.5
+          }, scene);
+          material = new core/* StandardMaterial */.uGc("material", scene);
+          material.diffuseTexture = new core/* Texture */.wlS("/avatars/1.jpg", scene);
+          box.material = material;
+          // Move the box upward 1/2 its height
+          box.position.y = 1;
+          box.position.z = -3;
+
+          // create another box above with different colored sides
+          box2 = core/* MeshBuilder */.OG0.CreateBox("box2", {
+            size: 0.5
+          }, scene);
+          box2.position.y = 1.7;
+          box2.position.z = -3;
+          material2 = new core/* StandardMaterial */.uGc("material2", scene);
+          material2.diffuseTexture = new core/* Texture */.wlS("/avatars/2.jpg", scene);
+          material2.diffuseColor = new core/* Color3 */.gVi(0.212, 0.596, 0.941);
+          box2.material = material2;
+
+          // create another box above with different colored sides
+          box3 = core/* MeshBuilder */.OG0.CreateBox("box3", {
+            size: 0.5
+          }, scene);
+          box3.position.y = 2.4;
+          box3.position.z = -3;
+          material3 = new core/* StandardMaterial */.uGc("material3", scene);
+          material3.diffuseTexture = new core/* Texture */.wlS("/avatars/3.jpg", scene);
+          box3.material = material3;
+
+          // create another box above with different colored sides
+          box4 = core/* MeshBuilder */.OG0.CreateBox("box4", {
+            size: 0.5
+          }, scene);
+          box4.position.y = 1;
+          box4.position.x = 0.9;
+          box4.position.z = -3;
+          material4 = new core/* StandardMaterial */.uGc("material4", scene);
+          material4.diffuseTexture = new core/* Texture */.wlS("/avatars/4.jpg", scene);
+          material4.diffuseColor = new core/* Color3 */.gVi(0.212, 0.596, 0.941);
+          box4.material = material4;
+
+          // create another box above with different colored sides
+          box5 = core/* MeshBuilder */.OG0.CreateBox("box5", {
+            size: 0.5
+          }, scene);
+          box5.position.y = 1.7;
+          box5.position.x = 0.9;
+          box5.position.z = -3;
+          material5 = new core/* StandardMaterial */.uGc("material5", scene);
+          material5.diffuseTexture = new core/* Texture */.wlS("/avatars/5.jpg", scene);
+          box5.material = material5;
+
+          // create another box above with different colored sides
+          box6 = core/* MeshBuilder */.OG0.CreateBox("box6", {
+            size: 0.5
+          }, scene);
+          box6.position.y = 2.4;
+          box6.position.x = 0.9;
+          box6.position.z = -3;
+          material6 = new core/* StandardMaterial */.uGc("material6", scene);
+          material6.diffuseTexture = new core/* Texture */.wlS("/avatars/6.jpg", scene);
+          material6.diffuseColor = new core/* Color3 */.gVi(0.212, 0.596, 0.941);
+          box6.material = material6;
+
+          // create another box above with different colored sides
+          box7 = core/* MeshBuilder */.OG0.CreateBox("box7", {
+            size: 0.5
+          }, scene);
+          box7.position.y = 1;
+          box7.position.x = -0.9;
+          box7.position.z = -3;
+          material7 = new core/* StandardMaterial */.uGc("material7", scene);
+          material7.diffuseTexture = new core/* Texture */.wlS("/avatars/7.jpg", scene);
+          material7.diffuseColor = new core/* Color3 */.gVi(0.212, 0.596, 0.941);
+          box7.material = material7;
+
+          // create another box above with different colored sides
+          box8 = core/* MeshBuilder */.OG0.CreateBox("box8", {
+            size: 0.5
+          }, scene);
+          box8.position.y = 1.7;
+          box8.position.x = -0.9;
+          box8.position.z = -3;
+          material8 = new core/* StandardMaterial */.uGc("material8", scene);
+          material8.diffuseTexture = new core/* Texture */.wlS("/avatars/8.jpg", scene);
+          box8.material = material8;
+
+          // create another box above with different colored sides
+          box9 = core/* MeshBuilder */.OG0.CreateBox("box9", {
+            size: 0.5
+          }, scene);
+          box9.position.y = 2.4;
+          box9.position.x = -0.9;
+          box9.position.z = -3;
+          material9 = new core/* StandardMaterial */.uGc("material9", scene);
+          material9.diffuseTexture = new core/* Texture */.wlS("/avatars/9.jpg", scene);
+          material9.diffuseColor = new core/* Color3 */.gVi(0.212, 0.596, 0.941);
+          box9.material = material9;
+
+          // // the cat model
+          _context.next = 92;
+          return core/* SceneLoader */.iAn.ImportMeshAsync(null, catModelPath, "", scene);
+        case 92:
+          result = _context.sent;
+          catModel = result.meshes[1]; // scene.getMeshByName('cat');
+          catModel.position.y = 1;
+          catModel.position.z = 0;
+          catModel.position.x = 0;
+          catModel.rotate(new core/* Vector3 */.O4c(1, 0, 0), Math.PI / 2);
+          catModel.rotate(new core/* Vector3 */.O4c(0, 0, 1), Math.PI);
+          catModel.rotate(new core/* Vector3 */.O4c(0, 1, 0), Math.PI);
+
+          // add video texture to plane
+          // const videoStream = await navigator.mediaDevices.getUserMedia({ video: true });
+
+          core/* VideoTexture */.iGO.CreateFromWebCam(scene, function (videoTexture) {
+            // const videoTexture = new VideoTexture("video", videoStream, scene, true);
+            mirror = core/* MeshBuilder */.OG0.CreateBox("mirror", {
+              width: 1,
+              height: 1
+            }, scene);
+            mirror.position.y = 1;
+            mirror.position.z = 3;
+            // turn upside down
+            mirror.rotation.z = Math.PI;
+            var materialPlane = new core/* StandardMaterial */.uGc("materialPlane", scene);
+            materialPlane.diffuseTexture = videoTexture;
+            mirror.material = materialPlane;
+          }, {
+            maxWidth: 256,
+            maxHeight: 256
+          });
+
+          // if (calls.length > 0) {
+          //   // add video texture to plane
+          //   const videoStream = calls[0]._remoteStream;
+          //   const videoTexture = new VideoTexture("video", videoStream, scene, true);
+          //   const plane = MeshBuilder.CreatePlane("plane", { width: 1, height: 1 }, scene);
+          //   plane.position.y = 2;
+          //   plane.position.z = 3;
+          //   plane.rotation.z = Math.PI;
+          //   const materialPlane = new StandardMaterial("materialPlane", scene);
+          //   materialPlane.diffuseTexture = videoTexture;
+          //   plane.material = materialPlane;
+          // }
+
+          peerAvatar = core/* MeshBuilder */.OG0.CreateBox("peerAvatar", {
+            size: 0.3
+          }, scene);
+          peerAvatar.position.y = 1;
+          peerAvatar.position.z = 3;
+          peerAvatar.position.x = 0;
+          materialPeerAvatar = new core/* StandardMaterial */.uGc("materialPeerAvatar", scene);
+          peerAvatarBase64String = peerAvatarBase64 || "/avatars/1.jpg";
+          materialPeerAvatar.diffuseTexture = new core/* Texture */.wlS(peerAvatarBase64String, scene);
+          peerAvatar.material = materialPeerAvatar;
+          // green
+          peerAvatar.material.diffuseColor = new core/* Color3 */.gVi(0.212, 0.941, 0.596);
+          peerAvatar.rotation = camera.rotation;
+          if (calls.length > 0) {
+            core/* VideoTexture */.iGO.CreateFromStreamAsync(scene, calls[0]._remoteStream, true).then(function (videoTexture) {
+              peerPlane = core/* MeshBuilder */.OG0.CreatePlane("plane", {
+                width: 1,
+                height: 1
+              }, scene);
+              peerPlane.position.y = 2;
+              peerPlane.position.z = 3;
+              peerPlane.rotation.z = Math.PI;
+              var materialPlane = new core/* StandardMaterial */.uGc("materialPlane", scene);
+              materialPlane.diffuseTexture = videoTexture;
+              // white
+              peerAvatar.material.diffuseColor = new core/* Color3 */.gVi(0.941, 0.941, 0.941);
+              peerPlane.material = materialPlane;
+              peerPlane.lookAt(camera.position);
+              // peerAvatar text ture to video texture
+              materialPeerAvatar.diffuseTexture = videoTexture;
+            });
+          }
+
+          // Our built-in 'ground' shape.
+          ground = core/* MeshBuilder */.OG0.CreateGround("ground", {
+            width: 6,
+            height: 6
+          }, scene);
+          groundMaterial = new core/* StandardMaterial */.uGc("groundMaterial", scene);
+          groundMaterial.diffuseTexture = new core/* Texture */.wlS(!isDarkTheme ? darkBackground : lightBackground, scene);
+          ground.material = groundMaterial;
+          ground.position.y = 0.01;
+          _context.next = 119;
+          return (_xr = xr) === null || _xr === void 0 ? void 0 : _xr.then(function (xr) {
+            return xr.baseExperience.state.inXR;
+          });
+        case 119:
+          isInXr = _context.sent;
+          if (!isInXr) {
+            skydome = core/* MeshBuilder */.OG0.CreateBox("sky", {
+              size: 1000,
+              sideOrientation: core/* Mesh */.Ss9.BACKSIDE
+            }, scene);
+            skydome.position.y = 500;
+            skydome.isPickable = false;
+            skydome.receiveShadows = true;
+          }
+
+          // const sky = new BackgroundMaterial("skyMaterial", scene);
+          //   sky.reflectionTexture = scene.environmentTexture.clone();
+          //   sky.reflectionTexture.coordinatesMode = Texture.SKYBOX_MODE;
+          //   sky.enableGroundProjection = true;
+          //   sky.projectedGroundRadius = 20;
+          //   sky.projectedGroundHeight = 3;
+          //   skydome.material = sky;
+
+          // backgroud color is black or whit ebased on theme
+          if (isDarkTheme) {
+            scene.clearColor = new core/* Color3 */.gVi(0, 0, 0);
+          } else {
+            scene.clearColor = new core/* Color3 */.gVi(1, 1, 1);
+          }
+          if (!isInPod) {
+            xr = scene.createDefaultXRExperienceAsync({
+              // ask for an ar-session
+              uiOptions: {
+                sessionMode: "immersive-ar"
+              },
+              optionalFeatures: true
+            });
+          } else if (Verse_isMobile) {
+            VJC = new core/* VirtualJoysticksCamera */.Ww6("VJC", scene.activeCamera.position, scene);
+            VJC.rotation = scene.activeCamera.rotation;
+            VJC.checkCollisions = scene.activeCamera.checkCollisions;
+            VJC.applyGravity = scene.activeCamera.applyGravity;
+            // speed
+            VJC.speed = 0.5;
+            VJC.angularSensibility = 20;
+            VJC.inertia = 0.5;
+            scene.executeWhenReady(function () {
+              scene.activeCamera = VJC;
+              scene.activeCamera.attachControl(canvas);
+            });
+          }
+        case 123:
+        case "end":
+          return _context.stop();
+      }
+    }, _callee);
+  }));
+  return function onSceneReady(_x, _x2) {
+    return _ref2.apply(this, arguments);
+  };
+}();
+
+/**
+ * Will run on every frame render.  We are spinning the box on y-axis.
+ */
+var onRender = function onRender(_ref3) {
+  var calls = _ref3.calls,
+    ephemeralStorage = _ref3.ephemeralStorage,
+    onMove = _ref3.onMove;
+  return /*#__PURE__*/function () {
+    var _ref4 = Verse_asyncToGenerator( /*#__PURE__*/Verse_regeneratorRuntime().mark(function _callee2(scene) {
+      var deltaTimeInMillis, rpm, _deltaTimeInMillis, _rpm, _deltaTimeInMillis2, _rpm2, _deltaTimeInMillis3, _rpm3, _deltaTimeInMillis4, _rpm4, _deltaTimeInMillis5, _rpm5, _deltaTimeInMillis6, _rpm6, _deltaTimeInMillis7, _rpm7, _deltaTimeInMillis8, _rpm8, _scene$activeCamera$p, x, y, z, newCameraPosition, _xr2, xrCamera, xrCameraPosition, isInXr, camera, _ephemeralStorage$ver, _ref5, _x4, _y, _z, _ephemeralStorage$ver2, _ref6, _x5, _y2, _z2;
+      return Verse_regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) switch (_context2.prev = _context2.next) {
+          case 0:
+            if (box !== undefined) {
+              deltaTimeInMillis = scene.getEngine().getDeltaTime();
+              rpm = 10;
+              box.rotation.y += rpm / 60 * Math.PI * 2 * (deltaTimeInMillis / 1000);
+            }
+            if (box2 !== undefined) {
+              _deltaTimeInMillis = scene.getEngine().getDeltaTime();
+              _rpm = 10;
+              box2.rotation.y -= _rpm / 60 * Math.PI * 2 * (_deltaTimeInMillis / 1000);
+            }
+            if (box3 !== undefined) {
+              _deltaTimeInMillis2 = scene.getEngine().getDeltaTime();
+              _rpm2 = 10;
+              box3.rotation.y += _rpm2 / 60 * Math.PI * 2 * (_deltaTimeInMillis2 / 1000);
+            }
+            if (box4 !== undefined) {
+              _deltaTimeInMillis3 = scene.getEngine().getDeltaTime();
+              _rpm3 = 10;
+              box4.rotation.y -= _rpm3 / 60 * Math.PI * 2 * (_deltaTimeInMillis3 / 1000);
+            }
+            if (box5 !== undefined) {
+              _deltaTimeInMillis4 = scene.getEngine().getDeltaTime();
+              _rpm4 = 10;
+              box5.rotation.y += _rpm4 / 60 * Math.PI * 2 * (_deltaTimeInMillis4 / 1000);
+            }
+            if (box6 !== undefined) {
+              _deltaTimeInMillis5 = scene.getEngine().getDeltaTime();
+              _rpm5 = 10;
+              box6.rotation.y -= _rpm5 / 60 * Math.PI * 2 * (_deltaTimeInMillis5 / 1000);
+            }
+            if (box7 !== undefined) {
+              _deltaTimeInMillis6 = scene.getEngine().getDeltaTime();
+              _rpm6 = 10;
+              box7.rotation.y -= _rpm6 / 60 * Math.PI * 2 * (_deltaTimeInMillis6 / 1000);
+            }
+            if (box8 !== undefined) {
+              _deltaTimeInMillis7 = scene.getEngine().getDeltaTime();
+              _rpm7 = 10;
+              box8.rotation.y += _rpm7 / 60 * Math.PI * 2 * (_deltaTimeInMillis7 / 1000);
+            }
+            if (box9 !== undefined) {
+              _deltaTimeInMillis8 = scene.getEngine().getDeltaTime();
+              _rpm8 = 10;
+              box9.rotation.y -= _rpm8 / 60 * Math.PI * 2 * (_deltaTimeInMillis8 / 1000);
+            }
+
+            // the camera position is different position, log the xyz position
+            _scene$activeCamera$p = scene.activeCamera.position, x = _scene$activeCamera$p._x, y = _scene$activeCamera$p._y, z = _scene$activeCamera$p._z;
+            newCameraPosition = {
+              x: x,
+              y: y,
+              z: z
+            };
+            if (!(x !== cameraPosition.x || y !== cameraPosition.y || z !== cameraPosition.z)) {
+              _context2.next = 27;
+              break;
+            }
+            cameraPosition = newCameraPosition;
+            xrCamera = (_xr2 = xr) === null || _xr2 === void 0 ? void 0 : _xr2.then(function (xr) {
+              return xr.baseExperience.camera;
+            });
+            if (!xrCamera) {
+              _context2.next = 26;
+              break;
+            }
+            _context2.next = 17;
+            return xrCamera.then(function (xrCamera) {
+              return xrCamera.position;
+            });
+          case 17:
+            xrCameraPosition = _context2.sent;
+            console.log({
+              xrCameraPosition: xrCameraPosition
+            });
+            _context2.next = 21;
+            return xr.then(function (xr) {
+              return xr.baseExperience.state.inXR;
+            });
+          case 21:
+            isInXr = _context2.sent;
+            onMove(isInXr ? xrCameraPosition : cameraPosition);
+
+            // /remove skydome
+            if (skydome) {
+              skydome.dispose();
+              skydome = null;
+            }
+            _context2.next = 27;
+            break;
+          case 26:
+            onMove(cameraPosition);
+          case 27:
+            // console.log({ cameraPosition, newCameraPosition });
+            camera = scene.activeCamera;
+            if (peerPlane) {
+              // add video texture to plane
+              // calls.forEach((call, i) => {
+              //   // const videoStream = call._remoteStream;
+              //   // const videoTexture = new VideoTexture("video", videoStream, scene, true);
+              //   // const plane = MeshBuilder.CreatePlane("plane", { width: 1, height: 1 }, scene);
+              //   // const {
+              //   //   x,
+              //   //   y,
+              //   //   z
+              //   // } = ephemeralStorage?.verse?.position || {};
+              //   // plane.position.x = x || 0;
+              //   // plane.position.y = y || 2;
+              //   // plane.position.z = z || 3;
+              //   // const materialPlane = new StandardMaterial("materialPlane", scene);
+              //   // materialPlane.diffuseTexture = videoTexture;
+              //   // plane.material = materialPlane;
+              //   // VideoTexture.CreateFromStreamAsync(scene, call._remoteStream, true).then((videoTexture) => {
+              //   //   const plane = MeshBuilder.CreatePlane("plane", { width: 1, height: 1 }, scene);
+              //   //   plane.position.x = x || 0;
+              //   //   plane.position.y = y || 2;
+              //   //   plane.rotation.z = Math.PI;
+              //   //   const materialPlane = new StandardMaterial("materialPlane", scene);
+              //   //   materialPlane.diffuseTexture = videoTexture;
+              //   //   plane.material = materialPlane;
+              //   // });
+              // });
+              _ref5 = (ephemeralStorage === null || ephemeralStorage === void 0 || (_ephemeralStorage$ver = ephemeralStorage.verse) === null || _ephemeralStorage$ver === void 0 ? void 0 : _ephemeralStorage$ver.position) || {}, _x4 = _ref5.x, _y = _ref5.y, _z = _ref5.z; // console.log({ x, y, z });
+              peerPlane.position.x = _x4 || 0;
+              peerPlane.position.y = _y || 2;
+              peerPlane.position.z = _z || 3;
+              peerPlane.rotation.z = Math.PI;
+              peerPlane.lookAt(camera.position);
+            }
+            if (peerAvatar) {
+              _ref6 = (ephemeralStorage === null || ephemeralStorage === void 0 || (_ephemeralStorage$ver2 = ephemeralStorage.verse) === null || _ephemeralStorage$ver2 === void 0 ? void 0 : _ephemeralStorage$ver2.position) || {}, _x5 = _ref6.x, _y2 = _ref6.y, _z2 = _ref6.z;
+              peerAvatar.position.x = _x5 || 0;
+              peerAvatar.position.y = _y2 || 1;
+              peerAvatar.position.z = _z2 || 3;
+              peerAvatar.rotation = camera.rotation;
+            }
+          case 30:
+          case "end":
+            return _context2.stop();
+        }
+      }, _callee2);
+    }));
+    return function (_x3) {
+      return _ref4.apply(this, arguments);
+    };
+  }();
+};
+var useStyles = (0,makeStyles/* default */.c)(function (theme) {
+  return {
+    root: {
+      flexGrow: 1,
+      paddingBottom: theme.spacing(8)
+    },
+    appBar: {
+      height: theme.spacing(8)
+    },
+    title: {
+      fontWeight: "bold",
+      textAlign: "left",
+      display: "flex",
+      alignItems: "center",
+      height: "100%",
+      padding: "0 ".concat(theme.spacing(3))
+    }
+  };
+});
+function Verse() {
+  var theme = (0,useTheme/* default */.c)();
+  var classes = useStyles();
+  var pageTitle = "Verse";
+  var verseRef = (0,index_js_.useRef)(null);
+
+  // useEffect(() => {
+  //   const createScene = async () => {
+  //     // initialize babylon scene and engine
+  //     // var engine = new Engine(canvas, true);
+  //     // var scene = new Scene(engine);
+
+  //     var engine = new Engine(verseRef.current, true);
+  //     const createScene = async () => {
+
+  //       var scene = new Scene(engine);
+
+  //       var camera = new FreeCamera("camera1", new Vector3(0, 5, -10), scene);
+  //       camera.setTarget(Vector3.Zero());
+  //       camera.attachControl(verseRef.current, true);
+  //       var light1 = new HemisphericLight("light1", new Vector3(1, 1, 0), scene);
+  //       var sphere = MeshBuilder.CreateSphere("sphere1", 16, 2, scene);
+  //       sphere.position.y = 2;
+  //       sphere.position.z = 5;
+
+  //       // hide/show the Inspector
+  //       window.addEventListener("keydown", (ev) => {
+  //           // Shift+Ctrl+Alt+I
+  //           if (ev.shiftKey && ev.ctrlKey && ev.altKey && ev.key === 'i') {
+  //               if (scene.debugLayer.isVisible()) {
+  //                   scene.debugLayer.hide();
+  //               } else {
+  //                   scene.debugLayer.show();
+  //               }
+  //           }
+  //       });
+
+  //       const xr = await scene.createDefaultXRExperienceAsync({
+  //         // ask for an ar-session
+  //         uiOptions: {
+  //           sessionMode: "immersive-ar",
+  //         },
+  //       });
+
+  //       return scene;
+  //     }
+
+  //     const scene = await createScene();
+
+  //     // run the main render loop
+  //     engine.runRenderLoop(() => {
+  //         scene.render();
+  //     });
+  //   }
+  //   createScene();
+  // }, []);
+
+  return /*#__PURE__*/index_js_default().createElement(PageContainer/* default */.c, {
+    backgroundImage: "",
+    headerProps: {
+      // title: pageTitle,
+      title: /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Typography/* default */.c, {
+        variant: "h6",
+        component: "div",
+        sx: {
+          flexGrow: 1
+        }
+      }, pageTitle), /*#__PURE__*/index_js_default().createElement(Typography/* default */.c, {
+        variant: "subtitle2",
+        component: "div",
+        sx: {
+          flexGrow: 1
+        }
+      })),
+      backButton: true,
+      // avatarProps: {
+      //   src: isGroup ? conversation?.avatarUrl : contactDetails?.avatar,
+      //   alt: pageTitle[0],
+      //   isOnline,
+      //   isSomeOnline
+      // },
+      menuProps: {
+        icon: "more"
+        // items: headerActions
+      }
+      // customButtons: (isOnline && !activeCalls.length) ? [
+      //   !isGroup && !isMobile && { icon: 'screen', onClick: () => makeCall({ screen: true, video: true, audio: true }) },
+      //   !isGroup && { icon: 'camera', onClick: () => makeCall({ video: true, audio: true }) },
+      //   !isGroup && { icon: 'call', onClick: () => makeCall({ audio: true }) },
+      // ].filter(i => !!i) : undefined
+    },
+    className: classes.conversation
+  }, /*#__PURE__*/index_js_default().createElement(SceneComponent, {
+    antialias: true,
+    onSceneReady: onSceneReady,
+    onRender: onRender,
+    id: "my-canvas",
+    style: {
+      height: "100%",
+      width: "100%"
+    }
+  }));
+}
+
+/***/ })
+
+}]);
+//# sourceMappingURL=296.main.js.map
