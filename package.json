@@ -17,7 +17,7 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "build:obfuscate": "javascript-obfuscator ./dist/ --output ./dist/",
-    "build": "npm run build:webpack && rm -rf ./Frontend && mkdir ./Frontend && npm run build:obfuscate && cp dist/* ./Frontend  && cp -r public/* ./Frontend && npm run build:zip && npm run build:capacitor:sync",
+    "build": "npm run build:webpack && rm -rf ./Frontend && mkdir ./Frontend && cp dist/* ./Frontend  && cp -r public/* ./Frontend && npm run build:zip && npm run build:capacitor:sync",
     "build:storybook": "storybook build && rm -rf ./Frontend && mkdir ./Frontend && mv storybook-static/* ./Frontend",
     "build:webpack": "webpack --mode production",
     "build:capacitor:sync": "cap sync",
