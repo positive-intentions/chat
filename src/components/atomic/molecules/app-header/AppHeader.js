@@ -41,6 +41,7 @@ import PermMediaIcon from "@mui/icons-material/PermMedia";
 import SupportIcon from '@mui/icons-material/Support';
 import DescriptionIcon from "@mui/icons-material/Description";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+import KeyIcon from '@mui/icons-material/Key';
 import ScienceIcon from "@mui/icons-material/Science";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
@@ -145,6 +146,7 @@ const presetIcons = {
   hand: <WavingHandIcon />,
   map: <NavigationIcon />,
   donate: <VolunteerActivismIcon />,
+  key: <KeyIcon />,
 };
 
 function HideOnScroll(props) {
@@ -270,6 +272,11 @@ const CustomDropdown = ({ menuItems }) => {
           text: t("podsPage.hands"),
           icon: "hand",
           onClick: () => navigate("/hands"),
+        },
+        {
+          text: t("podsPage.encrypt"),
+          icon: "key",
+          onClick: () => navigate("/encrypt"),
         }
       ],
     },
