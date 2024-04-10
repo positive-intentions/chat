@@ -9155,14 +9155,12 @@ var Hashing_QRText = function QRText() {
     variant: "fullWidth",
     "aria-label": "full width tabs example"
   }, /*#__PURE__*/index_js_default().createElement(Tab/* default */.c, Hashing_extends({
-    label: "MD5"
-  }, Hashing_a11yProps(0))), /*#__PURE__*/index_js_default().createElement(Tab/* default */.c, Hashing_extends({
     label: "SHA-256"
-  }, Hashing_a11yProps(1))), /*#__PURE__*/index_js_default().createElement(Tab/* default */.c, Hashing_extends({
+  }, Hashing_a11yProps(0))), /*#__PURE__*/index_js_default().createElement(Tab/* default */.c, Hashing_extends({
     label: "SHA-512"
-  }, Hashing_a11yProps(2))), /*#__PURE__*/index_js_default().createElement(Tab/* default */.c, Hashing_extends({
+  }, Hashing_a11yProps(1))), /*#__PURE__*/index_js_default().createElement(Tab/* default */.c, Hashing_extends({
     label: "SHA3-512"
-  }, Hashing_a11yProps(3))))), /*#__PURE__*/index_js_default().createElement(react_swipeable_views_lib/* default */.cp, {
+  }, Hashing_a11yProps(2))))), /*#__PURE__*/index_js_default().createElement(react_swipeable_views_lib/* default */.cp, {
     axis: theme.direction === 'rtl' ? 'x-reverse' : 'x',
     index: value,
     onChangeIndex: handleChangeIndex
@@ -9177,10 +9175,6 @@ var Hashing_QRText = function QRText() {
   }, /*#__PURE__*/index_js_default().createElement(HashInputs, null)), /*#__PURE__*/index_js_default().createElement(Hashing_TabPanel, {
     value: value,
     index: 2,
-    dir: theme.direction
-  }, /*#__PURE__*/index_js_default().createElement(HashInputs, null)), /*#__PURE__*/index_js_default().createElement(Hashing_TabPanel, {
-    value: value,
-    index: 3,
     dir: theme.direction
   }, /*#__PURE__*/index_js_default().createElement(HashInputs, null)))));
 };

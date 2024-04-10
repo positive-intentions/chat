@@ -86,10 +86,10 @@ const QRText = () => {
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="MD5" {...a11yProps(0)} />
-          <Tab label="SHA-256" {...a11yProps(1)} />
-          <Tab label="SHA-512" {...a11yProps(2)} />
-          <Tab label="SHA3-512" {...a11yProps(3)} />
+          {/* <Tab label="MD5" {...a11yProps(0)} /> */}
+          <Tab label="SHA-256" {...a11yProps(0)} />
+          <Tab label="SHA-512" {...a11yProps(1)} />
+          <Tab label="SHA3-512" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -97,16 +97,16 @@ const QRText = () => {
         index={value}
         onChangeIndex={handleChangeIndex}
       >
-        <TabPanel value={value} index={0} dir={theme.direction}>
+        {/* <TabPanel value={value} index={0} dir={theme.direction}>
           <HashInputs />
+        </TabPanel> */}
+        <TabPanel value={value} index={0} dir={theme.direction}>
+        <HashInputs />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
         <HashInputs />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-        <HashInputs />
-        </TabPanel>
-        <TabPanel value={value} index={3} dir={theme.direction}>
         <HashInputs />
         </TabPanel>
       </SwipeableViews>
