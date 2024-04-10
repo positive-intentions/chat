@@ -1,7 +1,7 @@
 "use strict";
 (self["webpackChunkchat"] = self["webpackChunkchat"] || []).push([[877],{
 
-/***/ 89984:
+/***/ 48160:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -8585,6 +8585,743 @@ function ShareQR_Maintainance() {
     dir: theme.direction
   }, /*#__PURE__*/index_js_default().createElement(qr_file_QRFile, null))))));
 }
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Download.js
+var Download = __webpack_require__(13376);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Upload.js
+var Upload = __webpack_require__(54500);
+;// CONCATENATED MODULE: ./src/components/pages/encryption/RSA.js
+function RSA_slicedToArray(arr, i) { return RSA_arrayWithHoles(arr) || RSA_iterableToArrayLimit(arr, i) || RSA_unsupportedIterableToArray(arr, i) || RSA_nonIterableRest(); }
+function RSA_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function RSA_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return RSA_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return RSA_arrayLikeToArray(o, minLen); }
+function RSA_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function RSA_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function RSA_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+
+
+var RSA_useStyles = (0,makeStyles/* default */.c)(function (theme) {
+  return {
+    qrcodeReader: {
+      // height: '100vh',
+      width: "100%",
+      // top: 0,
+      // left: 0,
+      // position: 'absolute',
+      zIndex: 10000
+    }
+  };
+});
+var RSA_QRText = function QRText() {
+  var _useTranslation = (0,es/* useTranslation */.Gy)(),
+    t = _useTranslation.t;
+  var classes = RSA_useStyles();
+  var _useState = (0,index_js_.useState)(""),
+    _useState2 = RSA_slicedToArray(_useState, 2),
+    text = _useState2[0],
+    setText = _useState2[1];
+  var _useState3 = (0,index_js_.useState)(""),
+    _useState4 = RSA_slicedToArray(_useState3, 2),
+    contactNamePreset = _useState4[0],
+    setContactNamePreset = _useState4[1];
+  var storedConnectionId = (0,index_js_.useState)("");
+  var _useState5 = (0,index_js_.useState)(false),
+    _useState6 = RSA_slicedToArray(_useState5, 2),
+    scanning = _useState6[0],
+    setScanning = _useState6[1];
+  var handleCopyConnectionIdToClipboard = function handleCopyConnectionIdToClipboard() {
+    navigator.clipboard.writeText("".concat(window.location.origin, "/#/login/").concat(storedConnectionId).concat(contactNamePreset ? "/".concat(contactNamePreset) : ""));
+  };
+  var handleScan = function handleScan(data) {
+    if (!(data !== null && data !== void 0 && data.text)) return;
+    setText(data === null || data === void 0 ? void 0 : data.text);
+  };
+  var handleError = function handleError(err) {
+    console.error(err);
+  };
+  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+    variant: "contained",
+    color: "primary",
+    onClick: console.log,
+    fullWidth: true
+  }, "Generate key pair"), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+    variant: "outlined",
+    margin: "normal",
+    fullWidth: true,
+    id: "connectionId",
+    label: "Private Key (do not share)",
+    name: "Text",
+    value: text,
+    onChange: function onChange(e) {
+      return setText(e.target.value || "");
+    },
+    autoComplete: "off",
+    InputProps: {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
+    }
+  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+    variant: "outlined",
+    margin: "normal",
+    fullWidth: true,
+    id: "connectionId",
+    label: "Your Public Key",
+    name: "Text",
+    value: text,
+    onChange: function onChange(e) {
+      return setText(e.target.value || "");
+    },
+    autoComplete: "off",
+    InputProps: {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
+    }
+  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+    variant: "outlined",
+    margin: "normal",
+    fullWidth: true,
+    id: "connectionId",
+    label: "Remote Public Key",
+    name: "Text",
+    value: text,
+    onChange: function onChange(e) {
+      return setText(e.target.value || "");
+    },
+    autoComplete: "off",
+    InputProps: {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
+    }
+  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+    variant: "outlined",
+    margin: "normal",
+    fullWidth: true,
+    id: "connectionId",
+    label: "Message to encrypt",
+    name: "Text",
+    value: text,
+    onChange: function onChange(e) {
+      return setText(e.target.value || "");
+    },
+    autoComplete: "off",
+    InputProps: {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
+    }
+  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+    variant: "outlined",
+    margin: "normal",
+    fullWidth: true,
+    id: "connectionId",
+    label: "Encrypted message",
+    name: "Text",
+    value: text,
+    onChange: function onChange(e) {
+      return setText(e.target.value || "");
+    },
+    autoComplete: "off",
+    InputProps: {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
+    }
+  }));
+};
+/* harmony default export */ const RSA = (RSA_QRText);
+;// CONCATENATED MODULE: ./src/components/pages/encryption/Symmetric.js
+function Symmetric_slicedToArray(arr, i) { return Symmetric_arrayWithHoles(arr) || Symmetric_iterableToArrayLimit(arr, i) || Symmetric_unsupportedIterableToArray(arr, i) || Symmetric_nonIterableRest(); }
+function Symmetric_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function Symmetric_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Symmetric_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Symmetric_arrayLikeToArray(o, minLen); }
+function Symmetric_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function Symmetric_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function Symmetric_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+
+
+var Symmetric_useStyles = (0,makeStyles/* default */.c)(function (theme) {
+  return {
+    qrcodeReader: {
+      // height: '100vh',
+      width: "100%",
+      // top: 0,
+      // left: 0,
+      // position: 'absolute',
+      zIndex: 10000
+    }
+  };
+});
+var Symmetric_QRText = function QRText() {
+  var _useTranslation = (0,es/* useTranslation */.Gy)(),
+    t = _useTranslation.t;
+  var classes = Symmetric_useStyles();
+  var _useState = (0,index_js_.useState)(""),
+    _useState2 = Symmetric_slicedToArray(_useState, 2),
+    text = _useState2[0],
+    setText = _useState2[1];
+  var _useState3 = (0,index_js_.useState)(""),
+    _useState4 = Symmetric_slicedToArray(_useState3, 2),
+    contactNamePreset = _useState4[0],
+    setContactNamePreset = _useState4[1];
+  var storedConnectionId = (0,index_js_.useState)("");
+  var _useState5 = (0,index_js_.useState)(false),
+    _useState6 = Symmetric_slicedToArray(_useState5, 2),
+    scanning = _useState6[0],
+    setScanning = _useState6[1];
+  var handleCopyConnectionIdToClipboard = function handleCopyConnectionIdToClipboard() {
+    navigator.clipboard.writeText("".concat(window.location.origin, "/#/login/").concat(storedConnectionId).concat(contactNamePreset ? "/".concat(contactNamePreset) : ""));
+  };
+  var handleScan = function handleScan(data) {
+    if (!(data !== null && data !== void 0 && data.text)) return;
+    setText(data === null || data === void 0 ? void 0 : data.text);
+  };
+  var handleError = function handleError(err) {
+    console.error(err);
+  };
+  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+    variant: "contained",
+    color: "primary",
+    onClick: console.log,
+    fullWidth: true
+  }, "Generate Symmetric key"), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+    variant: "outlined",
+    margin: "normal",
+    fullWidth: true,
+    id: "connectionId",
+    label: "Symmetric Key",
+    name: "Text",
+    value: text,
+    onChange: function onChange(e) {
+      return setText(e.target.value || "");
+    },
+    autoComplete: "off",
+    InputProps: {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
+    }
+  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+    variant: "outlined",
+    margin: "normal",
+    fullWidth: true,
+    id: "connectionId",
+    label: "Message to encrypt",
+    name: "Text",
+    value: text,
+    onChange: function onChange(e) {
+      return setText(e.target.value || "");
+    },
+    autoComplete: "off",
+    InputProps: {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
+    }
+  }), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+    variant: "contained",
+    color: "primary",
+    onClick: console.log,
+    fullWidth: true
+  }, "Encrypt file"), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+    variant: "outlined",
+    margin: "normal",
+    fullWidth: true,
+    id: "connectionId",
+    label: "Encrypted message",
+    name: "Text",
+    value: text,
+    onChange: function onChange(e) {
+      return setText(e.target.value || "");
+    },
+    autoComplete: "off",
+    InputProps: {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
+    }
+  }), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+    variant: "contained",
+    color: "primary",
+    onClick: console.log,
+    fullWidth: true
+  }, "Decrypt file"));
+};
+/* harmony default export */ const Symmetric = (Symmetric_QRText);
+;// CONCATENATED MODULE: ./src/components/pages/encryption/HashInputs.js
+function HashInputs_slicedToArray(arr, i) { return HashInputs_arrayWithHoles(arr) || HashInputs_iterableToArrayLimit(arr, i) || HashInputs_unsupportedIterableToArray(arr, i) || HashInputs_nonIterableRest(); }
+function HashInputs_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function HashInputs_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return HashInputs_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return HashInputs_arrayLikeToArray(o, minLen); }
+function HashInputs_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function HashInputs_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function HashInputs_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+
+
+var HashInputs_useStyles = (0,makeStyles/* default */.c)(function (theme) {
+  return {
+    qrcodeReader: {
+      // height: '100vh',
+      width: "100%",
+      // top: 0,
+      // left: 0,
+      // position: 'absolute',
+      zIndex: 10000
+    }
+  };
+});
+var HashInputs_QRText = function QRText() {
+  var _useTranslation = (0,es/* useTranslation */.Gy)(),
+    t = _useTranslation.t;
+  var classes = HashInputs_useStyles();
+  var _useState = (0,index_js_.useState)(""),
+    _useState2 = HashInputs_slicedToArray(_useState, 2),
+    text = _useState2[0],
+    setText = _useState2[1];
+  var _useState3 = (0,index_js_.useState)(""),
+    _useState4 = HashInputs_slicedToArray(_useState3, 2),
+    contactNamePreset = _useState4[0],
+    setContactNamePreset = _useState4[1];
+  var storedConnectionId = (0,index_js_.useState)("");
+  var _useState5 = (0,index_js_.useState)(false),
+    _useState6 = HashInputs_slicedToArray(_useState5, 2),
+    scanning = _useState6[0],
+    setScanning = _useState6[1];
+  var handleCopyConnectionIdToClipboard = function handleCopyConnectionIdToClipboard() {
+    navigator.clipboard.writeText("".concat(window.location.origin, "/#/login/").concat(storedConnectionId).concat(contactNamePreset ? "/".concat(contactNamePreset) : ""));
+  };
+  var handleScan = function handleScan(data) {
+    if (!(data !== null && data !== void 0 && data.text)) return;
+    setText(data === null || data === void 0 ? void 0 : data.text);
+  };
+  var handleError = function handleError(err) {
+    console.error(err);
+  };
+  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+    variant: "outlined",
+    margin: "normal",
+    fullWidth: true,
+    id: "connectionId",
+    label: "Hashed Value",
+    name: "Text",
+    value: text,
+    onChange: function onChange(e) {
+      return setText(e.target.value || "");
+    },
+    autoComplete: "off",
+    InputProps: {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
+    }
+  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+    variant: "outlined",
+    margin: "normal",
+    fullWidth: true,
+    id: "connectionId",
+    label: "Input",
+    name: "Text",
+    value: text,
+    onChange: function onChange(e) {
+      return setText(e.target.value || "");
+    },
+    autoComplete: "off",
+    InputProps: {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: handleCopyConnectionIdToClipboard,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
+    }
+  }));
+};
+/* harmony default export */ const HashInputs = (HashInputs_QRText);
+;// CONCATENATED MODULE: ./src/components/pages/encryption/Hashing.js
+var Hashing_excluded = ["children", "value", "index"];
+function Hashing_slicedToArray(arr, i) { return Hashing_arrayWithHoles(arr) || Hashing_iterableToArrayLimit(arr, i) || Hashing_unsupportedIterableToArray(arr, i) || Hashing_nonIterableRest(); }
+function Hashing_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function Hashing_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Hashing_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Hashing_arrayLikeToArray(o, minLen); }
+function Hashing_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function Hashing_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function Hashing_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+function Hashing_extends() { Hashing_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Hashing_extends.apply(this, arguments); }
+function Hashing_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = Hashing_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function Hashing_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Hashing_TabPanel(props) {
+  var children = props.children,
+    value = props.value,
+    index = props.index,
+    other = Hashing_objectWithoutProperties(props, Hashing_excluded);
+  return /*#__PURE__*/index_js_default().createElement("div", Hashing_extends({
+    role: "tabpanel",
+    hidden: value !== index,
+    id: "full-width-tabpanel-".concat(index),
+    "aria-labelledby": "full-width-tab-".concat(index)
+  }, other), value === index && /*#__PURE__*/index_js_default().createElement(Box/* default */.c, {
+    sx: {
+      p: 3
+    }
+  }, /*#__PURE__*/index_js_default().createElement(Typography_Typography/* default */.c, null, children)));
+}
+Hashing_TabPanel.propTypes = {
+  children: (prop_types_default()).node,
+  index: (prop_types_default()).number.isRequired,
+  value: (prop_types_default()).number.isRequired
+};
+function Hashing_a11yProps(index) {
+  return {
+    id: "full-width-tab-".concat(index),
+    'aria-controls': "full-width-tabpanel-".concat(index)
+  };
+}
+var Hashing_useStyles = (0,makeStyles/* default */.c)(function (theme) {
+  return {
+    padding: {
+      padding: 10
+    }
+  };
+});
+var Hashing_QRText = function QRText() {
+  var classes = Hashing_useStyles();
+  var theme = (0,styles_useTheme/* default */.c)();
+  var _React$useState = index_js_default().useState(0),
+    _React$useState2 = Hashing_slicedToArray(_React$useState, 2),
+    value = _React$useState2[0],
+    setValue = _React$useState2[1];
+  var handleChange = function handleChange(event, newValue) {
+    setValue(newValue);
+  };
+  var handleChangeIndex = function handleChangeIndex(index) {
+    setValue(index);
+  };
+  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Box/* default */.c, {
+    sx: {
+      bgcolor: 'background.paper'
+    }
+  }, /*#__PURE__*/index_js_default().createElement(AppBar/* default */.c, {
+    position: "static"
+  }, /*#__PURE__*/index_js_default().createElement(Tabs/* default */.c, {
+    value: value,
+    onChange: handleChange,
+    indicatorColor: "primary",
+    textColor: "inherit",
+    variant: "fullWidth",
+    "aria-label": "full width tabs example"
+  }, /*#__PURE__*/index_js_default().createElement(Tab/* default */.c, Hashing_extends({
+    label: "MD5"
+  }, Hashing_a11yProps(0))), /*#__PURE__*/index_js_default().createElement(Tab/* default */.c, Hashing_extends({
+    label: "SHA-256"
+  }, Hashing_a11yProps(1))), /*#__PURE__*/index_js_default().createElement(Tab/* default */.c, Hashing_extends({
+    label: "SHA-512"
+  }, Hashing_a11yProps(2))), /*#__PURE__*/index_js_default().createElement(Tab/* default */.c, Hashing_extends({
+    label: "SHA3-512"
+  }, Hashing_a11yProps(3))))), /*#__PURE__*/index_js_default().createElement(react_swipeable_views_lib/* default */.cp, {
+    axis: theme.direction === 'rtl' ? 'x-reverse' : 'x',
+    index: value,
+    onChangeIndex: handleChangeIndex
+  }, /*#__PURE__*/index_js_default().createElement(Hashing_TabPanel, {
+    value: value,
+    index: 0,
+    dir: theme.direction
+  }, /*#__PURE__*/index_js_default().createElement(HashInputs, null)), /*#__PURE__*/index_js_default().createElement(Hashing_TabPanel, {
+    value: value,
+    index: 1,
+    dir: theme.direction
+  }, /*#__PURE__*/index_js_default().createElement(HashInputs, null)), /*#__PURE__*/index_js_default().createElement(Hashing_TabPanel, {
+    value: value,
+    index: 2,
+    dir: theme.direction
+  }, /*#__PURE__*/index_js_default().createElement(HashInputs, null)), /*#__PURE__*/index_js_default().createElement(Hashing_TabPanel, {
+    value: value,
+    index: 3,
+    dir: theme.direction
+  }, /*#__PURE__*/index_js_default().createElement(HashInputs, null)))));
+};
+/* harmony default export */ const Hashing = (Hashing_QRText);
+;// CONCATENATED MODULE: ./src/components/pages/encryption/Encryption.js
+var Encryption_excluded = ["children", "value", "index"];
+function Encryption_slicedToArray(arr, i) { return Encryption_arrayWithHoles(arr) || Encryption_iterableToArrayLimit(arr, i) || Encryption_unsupportedIterableToArray(arr, i) || Encryption_nonIterableRest(); }
+function Encryption_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function Encryption_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Encryption_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Encryption_arrayLikeToArray(o, minLen); }
+function Encryption_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function Encryption_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function Encryption_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+function Encryption_extends() { Encryption_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Encryption_extends.apply(this, arguments); }
+function Encryption_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = Encryption_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function Encryption_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Encryption_TabPanel(props) {
+  var children = props.children,
+    value = props.value,
+    index = props.index,
+    other = Encryption_objectWithoutProperties(props, Encryption_excluded);
+  return /*#__PURE__*/index_js_default().createElement("div", Encryption_extends({
+    role: "tabpanel",
+    hidden: value !== index,
+    id: "full-width-tabpanel-".concat(index),
+    "aria-labelledby": "full-width-tab-".concat(index)
+  }, other), value === index && /*#__PURE__*/index_js_default().createElement(Box/* default */.c, {
+    sx: {
+      p: 3
+    }
+  }, /*#__PURE__*/index_js_default().createElement(Typography_Typography/* default */.c, null, children)));
+}
+Encryption_TabPanel.propTypes = {
+  children: (prop_types_default()).node,
+  index: (prop_types_default()).number.isRequired,
+  value: (prop_types_default()).number.isRequired
+};
+function Encryption_a11yProps(index) {
+  return {
+    id: "full-width-tab-".concat(index),
+    'aria-controls': "full-width-tabpanel-".concat(index)
+  };
+}
+var Encryption_useStyles = (0,makeStyles/* default */.c)(function (theme) {
+  return {
+    padding: {
+      padding: 10
+    }
+  };
+});
+function Encryption_Maintainance() {
+  var classes = Encryption_useStyles();
+  var navigate = (0,react_router_dist/* useNavigate */.i6)();
+  var contacts = (0,react_redux/* useSelector */.w1)(function (state) {
+    return state.contacts;
+  }) || [];
+  var theme = (0,styles_useTheme/* default */.c)();
+  var _React$useState = index_js_default().useState(0),
+    _React$useState2 = Encryption_slicedToArray(_React$useState, 2),
+    value = _React$useState2[0],
+    setValue = _React$useState2[1];
+  var handleChange = function handleChange(event, newValue) {
+    setValue(newValue);
+  };
+  var handleChangeIndex = function handleChangeIndex(index) {
+    setValue(index);
+  };
+  return /*#__PURE__*/index_js_default().createElement(page_container_PageContainer/* default */.c, {
+    headerProps: {
+      title: "Encrypt",
+      backButton: true,
+      menuProps: {
+        icon: "more",
+        items: [{
+          text: "Profile",
+          icon: "account",
+          onClick: function onClick() {
+            return navigate("/profile");
+          }
+        }]
+      }
+    }
+  }, /*#__PURE__*/index_js_default().createElement("div", {
+    style: {
+      textAlign: "center",
+      padding: 20
+    }
+  }, /*#__PURE__*/index_js_default().createElement(Box/* default */.c, {
+    sx: {
+      bgcolor: 'background.paper'
+    }
+  }, /*#__PURE__*/index_js_default().createElement(AppBar/* default */.c, {
+    position: "static"
+  }, /*#__PURE__*/index_js_default().createElement(Tabs/* default */.c, {
+    value: value,
+    onChange: handleChange,
+    indicatorColor: "primary",
+    textColor: "inherit",
+    variant: "fullWidth",
+    "aria-label": "full width tabs example"
+  }, /*#__PURE__*/index_js_default().createElement(Tab/* default */.c, Encryption_extends({
+    label: "RSA"
+  }, Encryption_a11yProps(0))), /*#__PURE__*/index_js_default().createElement(Tab/* default */.c, Encryption_extends({
+    label: "Symmetric"
+  }, Encryption_a11yProps(1))), /*#__PURE__*/index_js_default().createElement(Tab/* default */.c, Encryption_extends({
+    label: "Hashing"
+  }, Encryption_a11yProps(2))))), /*#__PURE__*/index_js_default().createElement(react_swipeable_views_lib/* default */.cp, {
+    axis: theme.direction === 'rtl' ? 'x-reverse' : 'x',
+    index: value,
+    onChangeIndex: handleChangeIndex
+  }, /*#__PURE__*/index_js_default().createElement(Encryption_TabPanel, {
+    value: value,
+    index: 0,
+    dir: theme.direction
+  }, /*#__PURE__*/index_js_default().createElement(RSA, null)), /*#__PURE__*/index_js_default().createElement(Encryption_TabPanel, {
+    value: value,
+    index: 1,
+    dir: theme.direction
+  }, /*#__PURE__*/index_js_default().createElement(Symmetric, null)), /*#__PURE__*/index_js_default().createElement(Encryption_TabPanel, {
+    value: value,
+    index: 2,
+    dir: theme.direction
+  }, /*#__PURE__*/index_js_default().createElement(Hashing, null))))));
+}
 ;// CONCATENATED MODULE: ./src/components/pages/termsAndConditions/TermsAndConditions.js
 function TermsAndConditions_slicedToArray(arr, i) { return TermsAndConditions_arrayWithHoles(arr) || TermsAndConditions_iterableToArrayLimit(arr, i) || TermsAndConditions_unsupportedIterableToArray(arr, i) || TermsAndConditions_nonIterableRest(); }
 function TermsAndConditions_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -10283,6 +11020,7 @@ function Router_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 // import Verse from '../pages/verse/Verse'
 
 
@@ -10376,6 +11114,9 @@ var Verse = /*#__PURE__*/(0,index_js_.lazy)(function () {
       }, {
         path: "/hands",
         element: /*#__PURE__*/index_js_default().createElement(Hands_Maintainance, null)
+      }, {
+        path: "/encrypt",
+        element: /*#__PURE__*/index_js_default().createElement(Encryption_Maintainance, null)
       }]));
     } else {
       setRouter((0,dist/* createHashRouter */.Up)([{
@@ -10461,6 +11202,9 @@ var Verse = /*#__PURE__*/(0,index_js_.lazy)(function () {
       }, {
         path: "/hands",
         element: /*#__PURE__*/index_js_default().createElement(Hands_Maintainance, null)
+      }, {
+        path: "/encrypt",
+        element: /*#__PURE__*/index_js_default().createElement(Encryption_Maintainance, null)
       }]));
     }
   }, [storedUsername]);
@@ -11776,8 +12520,8 @@ var Button = function Button(_ref) {
   return /*#__PURE__*/React.createElement("button", rest);
 };
 /* harmony default export */ const Example = ((/* unused pure expression or super */ null && (Button)));
-// EXTERNAL MODULE: ./src/App.tsx + 64 modules
-var src_App = __webpack_require__(89984);
+// EXTERNAL MODULE: ./src/App.tsx + 69 modules
+var src_App = __webpack_require__(48160);
 ;// CONCATENATED MODULE: ./src/bootstrap.tsx
 
 
@@ -13489,6 +14233,8 @@ var PermMedia = __webpack_require__(36324);
 var Support = __webpack_require__(5456);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Description.js
 var Description = __webpack_require__(10068);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Key.js
+var Key = __webpack_require__(46280);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Science.js
 var Science = __webpack_require__(31576);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/GitHub.js
@@ -13523,8 +14269,8 @@ var QuestionMark = __webpack_require__(71544);
 var ConnectWithoutContact = __webpack_require__(64248);
 // EXTERNAL MODULE: ./node_modules/react-i18next/dist/es/index.js + 15 modules
 var es = __webpack_require__(70100);
-// EXTERNAL MODULE: ./src/App.tsx + 64 modules
-var App = __webpack_require__(89984);
+// EXTERNAL MODULE: ./src/App.tsx + 69 modules
+var App = __webpack_require__(48160);
 // EXTERNAL MODULE: ./node_modules/@mui/material/styles/useTheme.js
 var useTheme = __webpack_require__(42592);
 // EXTERNAL MODULE: ./src/components/notifications/notificationManager.js
@@ -13548,6 +14294,7 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -13689,7 +14436,8 @@ var presetIcons = {
   connect: /*#__PURE__*/index_js_default().createElement(ConnectWithoutContact/* default */.c, null),
   hand: /*#__PURE__*/index_js_default().createElement(WavingHand/* default */.c, null),
   map: /*#__PURE__*/index_js_default().createElement(Navigation/* default */.c, null),
-  donate: /*#__PURE__*/index_js_default().createElement(VolunteerActivism/* default */.c, null)
+  donate: /*#__PURE__*/index_js_default().createElement(VolunteerActivism/* default */.c, null),
+  key: /*#__PURE__*/index_js_default().createElement(Key/* default */.c, null)
 };
 function HideOnScroll(props) {
   var children = props.children,
@@ -13841,6 +14589,12 @@ var CustomDropdown = function CustomDropdown(_ref2) {
       icon: "hand",
       onClick: function onClick() {
         return navigate("/hands");
+      }
+    }, {
+      text: t("podsPage.encrypt"),
+      icon: "key",
+      onClick: function onClick() {
+        return navigate("/encrypt");
       }
     }]
   }, {
@@ -18779,6 +19533,7 @@ i18next__WEBPACK_IMPORTED_MODULE_0__/* ["default"].use */ .cp.use(i18next_browse
           hands: "Hand",
           vinnc: "Vinn-C",
           map: "Map",
+          encrypt: "Encrypt",
           commingSoon: "Coming Soon"
         },
         contactDetailsPage: {

@@ -129,6 +129,7 @@ i18n
             hands: "Hand",
             vinnc: "Vinn-C",
             map: "Map",
+            encrypt: "Encrypt",
             commingSoon: "Coming Soon",
           },
           contactDetailsPage: {

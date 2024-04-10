@@ -26,6 +26,7 @@ import Feed from "../pages/feed/Feed";
 import Maintainance from "../pages/maintainance/Maintainance";
 import Hands from "../pages/hands/Hands";
 import ShareQR from "../pages/shareQr/ShareQR";
+import Encryption from "../pages/encryption/Encryption";
 // import Verse from '../pages/verse/Verse'
 import Blockchain, { useBlockchain } from "../blockchain/Blockchain";
 import {
@@ -134,6 +135,10 @@ export default () => {
           {
             path: "/hands",
             element: <Hands />,
+          },
+          {
+            path: "/encrypt",
+            element: <Encryption />,
           }
         ]),
       );
@@ -248,6 +253,10 @@ export default () => {
           {
             path: "/hands",
             element: <Hands />,
+          },
+          {
+            path: "/encrypt",
+            element: <Encryption />,
           }
         ]),
       );
