@@ -533,6 +533,21 @@ export default function AppHeader(
 
   const AppBarRender = () => (
     <AppBar>
+      <Toolbar
+        style={{
+          backgroundColor: "#d32f2f",
+          color: "white",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "0 20px",
+          minHeight: "20px",
+        }}
+      >
+        <Typography component="div">
+          For testing purposes only
+        </Typography>
+      </Toolbar>
       <Toolbar>
         {backButton && (
           <IconButton

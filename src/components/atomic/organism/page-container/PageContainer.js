@@ -132,7 +132,7 @@ export default function PageContainer(props) {
       <Container
         disableGutters
         className="page-container"
-        style={{ flexGrow: 1 }}
+        style={{ flexGrow: 1, marginTop: 20 }}
       >
         {children}
       </Container>
