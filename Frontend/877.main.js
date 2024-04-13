@@ -14785,7 +14785,19 @@ function AppHeader(_ref4) {
     setSubMenuOpen = _React$useState8[1];
   var AppBarRender = function AppBarRender() {
     var _avatarProps$src, _avatarProps$alt;
-    return /*#__PURE__*/index_js_default().createElement(AppBar/* default */.c, null, /*#__PURE__*/index_js_default().createElement(Toolbar/* default */.c, null, backButton && /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
+    return /*#__PURE__*/index_js_default().createElement(AppBar/* default */.c, null, /*#__PURE__*/index_js_default().createElement(Toolbar/* default */.c, {
+      style: {
+        backgroundColor: "#d32f2f",
+        color: "white",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "0 20px",
+        minHeight: "20px"
+      }
+    }, /*#__PURE__*/index_js_default().createElement(Typography/* default */.c, {
+      component: "div"
+    }, "For testing purposes only")), /*#__PURE__*/index_js_default().createElement(Toolbar/* default */.c, null, backButton && /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
       size: "large",
       edge: "start",
       color: "inherit",
@@ -14984,7 +14996,8 @@ function PageContainer(props) {
     disableGutters: true,
     className: "page-container",
     style: {
-      flexGrow: 1
+      flexGrow: 1,
+      marginTop: 20
     }
   }, children), Object.keys(fabProps).length > 0 && /*#__PURE__*/index_js_.createElement(Fab/* default */.c, {
     color: "primary",
