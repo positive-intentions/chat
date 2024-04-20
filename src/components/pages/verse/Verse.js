@@ -58,6 +58,7 @@ import {
   VirtualJoysticksCamera,
   SceneLoader,
   PhysicsImpostor,
+  Quaternion
 } from "@babylonjs/core";
 import SceneComponent from "./SceneComponent.jsx"; // uses above component in same directory
 // import SceneComponent from 'babylonjs-hook'; // if you install 'babylonjs-hook' NPM.
@@ -85,6 +86,8 @@ let VJC;
 let skydome = null;
 let catModel;
 const catModelPath = "/models/cat.glb";
+let handModel;
+const handModelPath = "/models/l_hand_rhs.glb";
 
 // detect if mobile device
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -345,6 +348,35 @@ const onSceneReady = async (
   ground.material = groundMaterial;
   ground.position.y = 0.01;
 
+  //hand
+  const handModelUrl = handModelPath;
+
+  // Load the hand model
+  SceneLoader.ImportMeshAsync("", handModelUrl, "", scene).then((result) => {
+
+    const handMesh = result.meshes[0];
+    handMesh.position = new Vector3(0, 2, 0); // Adjust position as needed
+    handMesh.scaling.scaleInPlace(4); // Scale if necessary
+
+    // const skeleton = result.skeletons[0];
+    // console.log(skeleton.bones);
+    // const thumbMetacarpal = skeleton.bones.find(bone => bone.name.includes("thumb_metacarpal"));
+    // const thumbProximal = skeleton.bones.find(bone => bone.name.includes("thumb-phalanx-proximal"));
+    // const thumbDistal = skeleton.bones.find(bone => bone.name.includes("thumb-phalanx-distal"));
+
+    // if (thumbMetacarpal && thumbProximal && thumbDistal) {
+    //   thumbMetacarpal.setRotationQuaternion(Quaternion.FromEulerAngles(0, 0, Math.PI / 4));
+    //   thumbProximal.setRotationQuaternion(Quaternion.FromEulerAngles(0, 0, Math.PI / 8));
+    //   thumbDistal.setRotationQuaternion(Quaternion.FromEulerAngles(0, 0, Math.PI / 8));
+    // }
+
+
+    // Optionally set the orientation of the hand
+    handMesh.rotation = new Vector3(0, Tools.ToRadians(180), 0);
+
+    handModel = handMesh;
+  });
+
   const isInXr = await xr?.then((xr) => xr.baseExperience.state.inXR);
   if (!isInXr) {
     skydome = MeshBuilder.CreateBox(
@@ -541,6 +573,18 @@ const onRender =
       peerAvatar.position.z = z || 3;
       peerAvatar.rotation = camera.rotation;
     }
+
+    // position the hand infront of the camera facing
+
+    // if (handModel) {
+    //   const newPosition = {
+    //     x: camera.position.x,
+    //     y: camera.position.y,
+    //     z: camera.position.z + camera.getFrontPosition(4).z,
+    //   };
+    //   handModel.position = newPosition;
+    //   handModel.rotation = camera.rotation;
+    // }
   };
 
 const useStyles = makeStyles((theme) => ({

@@ -426,13 +426,15 @@ var VJC;
 var skydome = null;
 var catModel;
 var catModelPath = "/models/cat.glb";
+var handModel;
+var handModelPath = "/models/l_hand_rhs.glb";
 
 // detect if mobile device
 var Verse_isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 var onSceneReady = /*#__PURE__*/function () {
   var _ref2 = Verse_asyncToGenerator( /*#__PURE__*/Verse_regeneratorRuntime().mark(function _callee(scene, _ref) {
     var _xr;
-    var isDarkTheme, calls, isInPod, peerAvatarBase64, camera, canvas, target, currentState, speed, rotation, mouseSpeed, mouseX, mouseY, lmx, lmy, clamp, light, material, material2, material3, material4, material5, material6, material7, material8, material9, result, catModel, materialPeerAvatar, peerAvatarBase64String, ground, groundMaterial, isInXr;
+    var isDarkTheme, calls, isInPod, peerAvatarBase64, camera, canvas, target, currentState, speed, rotation, mouseSpeed, mouseX, mouseY, lmx, lmy, clamp, light, material, material2, material3, material4, material5, material6, material7, material8, material9, result, catModel, materialPeerAvatar, peerAvatarBase64String, ground, groundMaterial, handModelUrl, isInXr;
     return Verse_regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
@@ -677,11 +679,35 @@ var onSceneReady = /*#__PURE__*/function () {
           groundMaterial.diffuseTexture = new core/* Texture */.wlS(!isDarkTheme ? darkBackground : lightBackground, scene);
           ground.material = groundMaterial;
           ground.position.y = 0.01;
-          _context.next = 119;
+
+          //hand
+          handModelUrl = handModelPath; // Load the hand model
+          core/* SceneLoader */.iAn.ImportMeshAsync("", handModelUrl, "", scene).then(function (result) {
+            var handMesh = result.meshes[0];
+            handMesh.position = new core/* Vector3 */.O4c(0, 2, 0); // Adjust position as needed
+            handMesh.scaling.scaleInPlace(4); // Scale if necessary
+
+            // const skeleton = result.skeletons[0];
+            // console.log(skeleton.bones);
+            // const thumbMetacarpal = skeleton.bones.find(bone => bone.name.includes("thumb_metacarpal"));
+            // const thumbProximal = skeleton.bones.find(bone => bone.name.includes("thumb-phalanx-proximal"));
+            // const thumbDistal = skeleton.bones.find(bone => bone.name.includes("thumb-phalanx-distal"));
+
+            // if (thumbMetacarpal && thumbProximal && thumbDistal) {
+            //   thumbMetacarpal.setRotationQuaternion(Quaternion.FromEulerAngles(0, 0, Math.PI / 4));
+            //   thumbProximal.setRotationQuaternion(Quaternion.FromEulerAngles(0, 0, Math.PI / 8));
+            //   thumbDistal.setRotationQuaternion(Quaternion.FromEulerAngles(0, 0, Math.PI / 8));
+            // }
+
+            // Optionally set the orientation of the hand
+            handMesh.rotation = new core/* Vector3 */.O4c(0, core/* Tools */.sbU.ToRadians(180), 0);
+            handModel = handMesh;
+          });
+          _context.next = 121;
           return (_xr = xr) === null || _xr === void 0 ? void 0 : _xr.then(function (xr) {
             return xr.baseExperience.state.inXR;
           });
-        case 119:
+        case 121:
           isInXr = _context.sent;
           if (!isInXr) {
             skydome = core/* MeshBuilder */.OG0.CreateBox("sky", {
@@ -729,7 +755,7 @@ var onSceneReady = /*#__PURE__*/function () {
               scene.activeCamera.attachControl(canvas);
             });
           }
-        case 123:
+        case 125:
         case "end":
           return _context.stop();
       }
@@ -888,6 +914,18 @@ var onRender = function onRender(_ref3) {
               peerAvatar.position.z = _z2 || 3;
               peerAvatar.rotation = camera.rotation;
             }
+
+            // position the hand infront of the camera facing
+
+            // if (handModel) {
+            //   const newPosition = {
+            //     x: camera.position.x,
+            //     y: camera.position.y,
+            //     z: camera.position.z + camera.getFrontPosition(4).z,
+            //   };
+            //   handModel.position = newPosition;
+            //   handModel.rotation = camera.rotation;
+            // }
           case 30:
           case "end":
             return _context2.stop();
