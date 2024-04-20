@@ -8,6 +8,8 @@ import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
 import IconButton from "@mui/material/IconButton";
 import RefreshIcon from "@mui/icons-material/Refresh";
+import DownloadIcon from "@mui/icons-material/Download";
+import UploadIcon from "@mui/icons-material/Upload";
 import Button from "@mui/material/Button";
 import usePeer from "../../p2p/usePeer";
 import QRInput from "../../atomic/atom/qrInput/QRInput";
@@ -157,15 +159,35 @@ export default function Maintainance() {
           autoComplete="off"
           InputProps={{
             endAdornment: (
-              <InputAdornment position="end">
-                <IconButton
-                  aria-label="toggle password visibility"
-                  onClick={handleCreateOffer}
-                  edge="end"
-                >
-                  <RefreshIcon />
-                </IconButton>
-              </InputAdornment>
+              <>
+                <InputAdornment position="end">
+                              <IconButton
+                              aria-label="toggle password visibility"
+                              onClick={console.log}
+                              edge="end"
+                              >
+                              <UploadIcon />
+                              </IconButton>
+                          </InputAdornment>
+                          <InputAdornment position="end">
+                              <IconButton
+                              aria-label="toggle password visibility"
+                              onClick={console.log}
+                              edge="end"
+                              >
+                              <DownloadIcon />
+                              </IconButton>
+                          </InputAdornment>
+                <InputAdornment position="end">
+                  <IconButton
+                    aria-label="toggle password visibility"
+                    onClick={handleCreateOffer}
+                    edge="end"
+                  >
+                    <RefreshIcon />
+                  </IconButton>
+                </InputAdornment>
+              </>
             ),
           }}
         />
@@ -324,7 +346,7 @@ export default function Maintainance() {
           send
         </Button>
 
-        {!!false && (<QRInput defaultValue="hello world" />)}
+        {!false && (<QRInput defaultValue="hello world" />)}
       </div>
     </PageContainer>
   );
