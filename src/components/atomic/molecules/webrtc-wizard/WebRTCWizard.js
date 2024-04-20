@@ -297,7 +297,7 @@ export default ({
                     scan
                     onScan={(data) => {
                         setRemotePublicKey(data)
-                        setMode('shareSymmetricKey')
+                        setMode('sharePublicKeyAndSymmetricKey')
                     }}
                     back={() => setMode('createAnswer')}
                 />
@@ -318,7 +318,7 @@ export default ({
                 />
             )}
 
-            {mode === "sharePUblicKeyAndSymmetricKey" && (
+            {mode === "sharePublicKeyAndSymmetricKey" && (
                 <QRInput
                     value={JSON.stringify({publicKey, symmetricKey})}
                     qr
