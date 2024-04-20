@@ -80,9 +80,9 @@ var react_router_dist = __webpack_require__(83284);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Avatar/Avatar.js + 2 modules
 var Avatar = __webpack_require__(96032);
 // EXTERNAL MODULE: ./node_modules/@mui/material/TextField/TextField.js + 3 modules
-var TextField_TextField = __webpack_require__(55984);
+var TextField = __webpack_require__(55984);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Button/Button.js + 3 modules
-var Button_Button = __webpack_require__(20192);
+var Button = __webpack_require__(20192);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Typography/Typography.js + 1 modules
 var Typography_Typography = __webpack_require__(68857);
 // EXTERNAL MODULE: ./node_modules/@mui/styles/makeStyles/makeStyles.js + 6 modules
@@ -214,11 +214,11 @@ var _encryptionSlice$acti = encryptionSlice.actions,
 // EXTERNAL MODULE: ./src/components/atomic/organism/page-container/PageContainer.js + 1 modules
 var page_container_PageContainer = __webpack_require__(84116);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Accordion/Accordion.js + 4 modules
-var Accordion_Accordion = __webpack_require__(56212);
+var Accordion = __webpack_require__(56212);
 // EXTERNAL MODULE: ./node_modules/@mui/material/AccordionDetails/AccordionDetails.js + 1 modules
-var AccordionDetails_AccordionDetails = __webpack_require__(79592);
+var AccordionDetails = __webpack_require__(79592);
 // EXTERNAL MODULE: ./node_modules/@mui/material/AccordionSummary/AccordionSummary.js + 1 modules
-var AccordionSummary_AccordionSummary = __webpack_require__(61562);
+var AccordionSummary = __webpack_require__(61562);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/ExpandMore.js
 var ExpandMore = __webpack_require__(4632);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Checkbox/Checkbox.js + 4 modules
@@ -269,9 +269,9 @@ var PrivacyPolicy = function PrivacyPolicy(_ref2) {
   privacyPolicy: PrivacyPolicy
 }]);
 // EXTERNAL MODULE: ./node_modules/@mui/material/InputAdornment/InputAdornment.js + 1 modules
-var InputAdornment_InputAdornment = __webpack_require__(93184);
+var InputAdornment = __webpack_require__(93184);
 // EXTERNAL MODULE: ./node_modules/@mui/material/IconButton/IconButton.js + 1 modules
-var IconButton_IconButton = __webpack_require__(23562);
+var IconButton = __webpack_require__(23562);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Refresh.js
 var Refresh = __webpack_require__(71852);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/ContentCopy.js
@@ -497,7 +497,332 @@ var react_coach_mark_dist = __webpack_require__(85272);
 var react_qr_code_lib = __webpack_require__(75512);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/ConnectWithoutContact.js
 var ConnectWithoutContact = __webpack_require__(64248);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/QrCode2.js
+var QrCode2 = __webpack_require__(86656);
+// EXTERNAL MODULE: ./node_modules/react-qr-scanner/dist/react-qr-scanner.umd.js
+var react_qr_scanner_umd = __webpack_require__(21472);
+var react_qr_scanner_umd_default = /*#__PURE__*/__webpack_require__.n(react_qr_scanner_umd);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/SkipNext.js
+var SkipNext = __webpack_require__(49676);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/SkipPrevious.js
+var SkipPrevious = __webpack_require__(55608);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/PlayArrow.js
+var PlayArrow = __webpack_require__(99792);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Pause.js
+var Pause = __webpack_require__(31872);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Slider/Slider.js + 6 modules
+var Slider = __webpack_require__(19388);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Download.js
+var Download = __webpack_require__(13376);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Upload.js
+var Upload = __webpack_require__(54500);
+;// CONCATENATED MODULE: ./src/components/atomic/atom/qrInput/QRInput.js
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || QRInput_unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return QRInput_arrayLikeToArray(arr); }
+function QRInput_slicedToArray(arr, i) { return QRInput_arrayWithHoles(arr) || QRInput_iterableToArrayLimit(arr, i) || QRInput_unsupportedIterableToArray(arr, i) || QRInput_nonIterableRest(); }
+function QRInput_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function QRInput_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return QRInput_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return QRInput_arrayLikeToArray(o, minLen); }
+function QRInput_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function QRInput_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function QRInput_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var QRInput_useStyles = (0,makeStyles/* default */.c)(function (theme) {
+  return {
+    qrcodeReader: {
+      display: 'block',
+      // height: '100vh',
+      width: "100%",
+      // top: 0,
+      // left: 0,
+      // position: 'absolute',
+      zIndex: 10000
+    }
+  };
+});
+/* harmony default export */ const QRInput = (function (_ref) {
+  var controlledValue = _ref.value,
+    defaultValue = _ref.defaultValue,
+    qr = _ref.qr,
+    scan = _ref.scan,
+    back = _ref.back,
+    next = _ref.next,
+    onScan = _ref.onScan;
+  var classes = QRInput_useStyles();
+  var _useState = (0,index_js_.useState)(qr),
+    _useState2 = QRInput_slicedToArray(_useState, 2),
+    isQRMode = _useState2[0],
+    setIsQRMode = _useState2[1];
+  var _useState3 = (0,index_js_.useState)(scan),
+    _useState4 = QRInput_slicedToArray(_useState3, 2),
+    scanning = _useState4[0],
+    setScanning = _useState4[1];
+  var _useState5 = (0,index_js_.useState)([]),
+    _useState6 = QRInput_slicedToArray(_useState5, 2),
+    fileParts = _useState6[0],
+    setFileParts = _useState6[1];
+  var _useState7 = (0,index_js_.useState)(0),
+    _useState8 = QRInput_slicedToArray(_useState7, 2),
+    selectedPart = _useState8[0],
+    setSelectedPart = _useState8[1];
+  var _useState9 = (0,index_js_.useState)(100),
+    _useState10 = QRInput_slicedToArray(_useState9, 2),
+    partDensity = _useState10[0],
+    setPartDensity = _useState10[1];
+  var _useState11 = (0,index_js_.useState)(false),
+    _useState12 = QRInput_slicedToArray(_useState11, 2),
+    isPlaying = _useState12[0],
+    setIsPlaying = _useState12[1];
+  var _useState13 = (0,index_js_.useState)(controlledValue || defaultValue || ""),
+    _useState14 = QRInput_slicedToArray(_useState13, 2),
+    value = _useState14[0],
+    setValue = _useState14[1];
+  (0,index_js_.useEffect)(function () {
+    if (controlledValue) setValue(controlledValue);
+  }, [controlledValue]);
+  (0,index_js_.useEffect)(function () {
+    var partSize = partDensity;
+    var numberOfParts = Math.ceil(value.length / partSize);
+    var parts = [];
+    for (var i = 0; i < value.length; i += partSize) {
+      var part = value.substr(i, partSize);
+      var partNumber = Math.ceil(i / partSize);
+      var partData = {
+        part: partNumber + 1,
+        total: numberOfParts,
+        data: part
+      };
+      parts.push(partData);
+    }
+    setFileParts(parts);
+  }, [value]);
+  var handleScan = function handleScan(data) {
+    var scannedData = JSON.parse(data);
+    var hasPartBeenScanned = fileParts.some(function (part) {
+      return (part === null || part === void 0 ? void 0 : part.part) === (scannedData === null || scannedData === void 0 ? void 0 : scannedData.part);
+    });
+    if (hasPartBeenScanned) return;
+    var newFileParts = [].concat(_toConsumableArray(fileParts), [scannedData]);
+    console.log("newFileParts", newFileParts.length);
+    setFileParts(newFileParts);
+  };
+  (0,index_js_.useEffect)(function () {
+    var _fileParts$;
+    var areAllPartsScanned = fileParts.length === ((_fileParts$ = fileParts[0]) === null || _fileParts$ === void 0 ? void 0 : _fileParts$.total);
+    if (areAllPartsScanned && scanning) {
+      var content = fileParts.reduce(function (acc, part) {
+        return acc + part.data;
+      }, "");
+      setValue(content);
+      if (onScan) onScan(content);
+      if (!scan) setScanning(false);
+      setFileParts([]);
+    }
+  }, [fileParts]);
+  var handleError = function handleError(err) {
+    console.error(err);
+  };
+  (0,index_js_.useEffect)(function () {
+    setTimeout(function () {
+      if (isPlaying) {
+        setSelectedPart(selectedPart + 1);
+      }
+    }, 1000);
+  }, [isPlaying, selectedPart]);
+  var handleCopyToClipboard = function handleCopyToClipboard() {
+    navigator.clipboard.writeText(value);
+  };
+  console.log({
+    value: value
+  });
+  return /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, ( true) && /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
+    expanded: isQRMode || scanning
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
+    "aria-controls": "panel4bh-content",
+    id: "panel4bh-header"
+  }, /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
+    variant: "outlined",
+    margin: "normal",
+    fullWidth: true,
+    label: "WebRTC offer",
+    name: "webRTC",
+    value: scanning ? 'Scanning...' : value,
+    onChange: function onChange(e) {
+      return !scanning && setValue(e.target.value || "");
+    },
+    autoComplete: "off",
+    InputProps: {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, !!value && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: console.log,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: console.log,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: function onClick() {
+          return handleCopyToClipboard();
+        },
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(ContentCopy/* default */.c, null)))), !qr && !scan && /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: function onClick() {
+          setIsQRMode(!isQRMode);
+          if (isQRMode) {
+            setScanning(false);
+          }
+        },
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(QrCode2/* default */.c, null))))
+    }
+  })), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, !scanning && fileParts.length > 0 && /*#__PURE__*/index_js_default().createElement("div", {
+    style: {
+      background: "white",
+      padding: 20
+    }
+  }, /*#__PURE__*/index_js_default().createElement(react_qr_code_lib/* default */.cp, {
+    size: 256,
+    style: {
+      height: "auto",
+      maxWidth: "100%",
+      width: "100%"
+    },
+    value: JSON.stringify(fileParts === null || fileParts === void 0 ? void 0 : fileParts[selectedPart]) || "",
+    viewBox: "0 0 256 256"
+  })), scanning && /*#__PURE__*/index_js_default().createElement((react_qr_scanner_umd_default()), {
+    id: "qrcode-reader-".concat(fileParts === null || fileParts === void 0 ? void 0 : fileParts.length),
+    key: "qrcode-reader-".concat(fileParts === null || fileParts === void 0 ? void 0 : fileParts.length),
+    className: classes.qrcodeReader,
+    onError: handleError,
+    onScan: function onScan(data) {
+      data && handleScan(data.text);
+    },
+    constraints: {
+      video: {
+        facingMode: "environment"
+      }
+    }
+  }), !qr && !scan && /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
+    type: "button",
+    fullWidth: true,
+    variant: "contained",
+    onClick: function onClick() {
+      setFileParts([]);
+      setScanning(!scanning);
+    },
+    color: scanning ? "error" : "primary"
+  }, scanning ? "Stop Scanning" : "Scan QR"), !!back && /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
+    type: "button",
+    fullWidth: true,
+    variant: "contained",
+    onClick: function onClick() {
+      back();
+    },
+    color: scanning ? "error" : "primary"
+  }, "cancel"), !scanning && fileParts.length > 1 && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Typography_Typography/* default */.c, {
+    gutterBottom: true
+  }, "Seek Part"), /*#__PURE__*/index_js_default().createElement(Slider/* default */.cp, {
+    "aria-label": "select part",
+    defaultValue: 0,
+    step: 1,
+    marks: true,
+    min: 0,
+    max: fileParts.length - 1,
+    value: selectedPart,
+    valueLabelDisplay: "auto",
+    onChange: function onChange(e, value) {
+      setIsPlaying(false);
+      setSelectedPart(value);
+    }
+  }), /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
+    "aria-label": "delete",
+    size: "large",
+    onClick: function onClick() {
+      setIsPlaying(false);
+      setSelectedPart(selectedPart - 1);
+    }
+  }, /*#__PURE__*/index_js_default().createElement(SkipPrevious/* default */.c, {
+    fontSize: "inherit"
+  })), /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
+    "aria-label": "delete",
+    size: "large"
+    // primary
+    ,
+    color: "primary",
+    onClick: function onClick() {
+      return setIsPlaying(!isPlaying);
+    }
+  }, isPlaying ? /*#__PURE__*/index_js_default().createElement(Pause/* default */.c, {
+    fontSize: "inherit"
+  }) : /*#__PURE__*/index_js_default().createElement(PlayArrow/* default */.c, {
+    fontSize: "inherit"
+  })), /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
+    "aria-label": "delete",
+    size: "large",
+    onClick: function onClick() {
+      setIsPlaying(false);
+      setSelectedPart(selectedPart + 1);
+    }
+  }, /*#__PURE__*/index_js_default().createElement(SkipNext/* default */.c, {
+    fontSize: "inherit"
+  })), !!next && /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
+    type: "button",
+    fullWidth: true,
+    variant: "contained",
+    onClick: function onClick() {
+      next();
+    },
+    color: scanning ? "error" : "primary"
+  }, "next stage")))));
+});
+// EXTERNAL MODULE: ./src/components/p2p/usePeer.js
+var usePeer = __webpack_require__(91216);
 ;// CONCATENATED MODULE: ./src/components/atomic/molecules/webrtc-wizard/WebRTCWizard.js
+function WebRTCWizard_typeof(o) { "@babel/helpers - typeof"; return WebRTCWizard_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, WebRTCWizard_typeof(o); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == WebRTCWizard_typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw new Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(WebRTCWizard_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw new Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+function WebRTCWizard_slicedToArray(arr, i) { return WebRTCWizard_arrayWithHoles(arr) || WebRTCWizard_iterableToArrayLimit(arr, i) || WebRTCWizard_unsupportedIterableToArray(arr, i) || WebRTCWizard_nonIterableRest(); }
+function WebRTCWizard_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function WebRTCWizard_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return WebRTCWizard_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return WebRTCWizard_arrayLikeToArray(o, minLen); }
+function WebRTCWizard_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function WebRTCWizard_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function WebRTCWizard_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
 
 
 // steps:
@@ -509,20 +834,423 @@ var ConnectWithoutContact = __webpack_require__(64248);
 /* harmony default export */ const WebRTCWizard = (function (_ref) {
   var onConnect = _ref.onConnect,
     onReceive = _ref.onReceive;
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("button", {
-    onClick: onConnect
-  }, "Connect"), /*#__PURE__*/React.createElement("button", {
-    onClick: onReceive
-  }, "Receive"));
+  var _useCryptography = (0,Cryptography.useCryptography)(),
+    generateKeyPair = _useCryptography.generateKeyPair,
+    deserializePublicKey = _useCryptography.deserializePublicKey,
+    encrypt = _useCryptography.encrypt,
+    decrypt = _useCryptography.decrypt,
+    generateSymmetricKey = _useCryptography.generateSymmetricKey,
+    deserializeSymmetricKey = _useCryptography.deserializeSymmetricKey,
+    encryptWithSymmetricKey = _useCryptography.encryptWithSymmetricKey,
+    decryptWithSymmetricKey = _useCryptography.decryptWithSymmetricKey;
+  var _useState = (0,index_js_.useState)(""),
+    _useState2 = WebRTCWizard_slicedToArray(_useState, 2),
+    mode = _useState2[0],
+    setMode = _useState2[1];
+  var _usePeer = (0,usePeer/* default */.c)(),
+    peer = _usePeer.peer;
+  var _useState3 = (0,index_js_.useState)(null),
+    _useState4 = WebRTCWizard_slicedToArray(_useState3, 2),
+    rtc = _useState4[0],
+    setRtc = _useState4[1];
+  var _useState5 = (0,index_js_.useState)(null),
+    _useState6 = WebRTCWizard_slicedToArray(_useState5, 2),
+    dc = _useState6[0],
+    setDc = _useState6[1];
+  var _useState7 = (0,index_js_.useState)(null),
+    _useState8 = WebRTCWizard_slicedToArray(_useState7, 2),
+    rtcIceCandidate = _useState8[0],
+    setRtcIceCandidate = _useState8[1];
+  var _useState9 = (0,index_js_.useState)(null),
+    _useState10 = WebRTCWizard_slicedToArray(_useState9, 2),
+    rtcRemoteIceCandidate = _useState10[0],
+    setRtcRemoteIceCandidate = _useState10[1];
+  var _useState11 = (0,index_js_.useState)(null),
+    _useState12 = WebRTCWizard_slicedToArray(_useState11, 2),
+    rtcOffer = _useState12[0],
+    setRtcOffer = _useState12[1];
+  var _useState13 = (0,index_js_.useState)(null),
+    _useState14 = WebRTCWizard_slicedToArray(_useState13, 2),
+    rtcRemoteOffer = _useState14[0],
+    setRtcRemoteOffer = _useState14[1];
+  var _useState15 = (0,index_js_.useState)(null),
+    _useState16 = WebRTCWizard_slicedToArray(_useState15, 2),
+    rtcAnswer = _useState16[0],
+    setRtcAnswer = _useState16[1];
+  var _useState17 = (0,index_js_.useState)(null),
+    _useState18 = WebRTCWizard_slicedToArray(_useState17, 2),
+    rtcRemoteAnswer = _useState18[0],
+    setRtcRemoteAnswer = _useState18[1];
+  var _useState19 = (0,index_js_.useState)(null),
+    _useState20 = WebRTCWizard_slicedToArray(_useState19, 2),
+    publicKey = _useState20[0],
+    setPublicKey = _useState20[1];
+  var _useState21 = (0,index_js_.useState)(null),
+    _useState22 = WebRTCWizard_slicedToArray(_useState21, 2),
+    serializedPublicKey = _useState22[0],
+    setSerializedPublicKey = _useState22[1];
+  var _useState23 = (0,index_js_.useState)(null),
+    _useState24 = WebRTCWizard_slicedToArray(_useState23, 2),
+    privateKey = _useState24[0],
+    setPrivateKey = _useState24[1];
+  var _useState25 = (0,index_js_.useState)(null),
+    _useState26 = WebRTCWizard_slicedToArray(_useState25, 2),
+    remotePublicKey = _useState26[0],
+    setRemotePublicKey = _useState26[1];
+  var _useState27 = (0,index_js_.useState)(null),
+    _useState28 = WebRTCWizard_slicedToArray(_useState27, 2),
+    symmetricKey = _useState28[0],
+    setSymmetricKey = _useState28[1];
+  var _useState29 = (0,index_js_.useState)(null),
+    _useState30 = WebRTCWizard_slicedToArray(_useState29, 2),
+    contactDetails = _useState30[0],
+    setContactDetails = _useState30[1];
+  (0,index_js_.useEffect)(function () {
+    var generateKeys = /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+        var keyPair, serializedPublicKey;
+        return _regeneratorRuntime().wrap(function _callee$(_context) {
+          while (1) switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return generateKeyPair();
+            case 2:
+              keyPair = _context.sent;
+              setPublicKey(keyPair.publicKey);
+              setPrivateKey(keyPair.privateKey);
+              _context.next = 7;
+              return window.crypto.subtle.exportKey("jwk", publicKey);
+            case 7:
+              serializedPublicKey = _context.sent;
+              setSerializedPublicKey(serializedPublicKey);
+            case 9:
+            case "end":
+              return _context.stop();
+          }
+        }, _callee);
+      }));
+      return function generateKeys() {
+        return _ref2.apply(this, arguments);
+      };
+    }();
+    generateKeys();
+  }, []);
+  (0,index_js_.useEffect)(function () {
+    if (peer) {
+      setRtc(peer.connect().peerConnection);
+    }
+  }, [peer]);
+  (0,index_js_.useEffect)(function () {
+    if (rtc) {
+      rtc.onicecandidate = function (event) {
+        if (event.candidate) {
+          var serialisedIceCandidate = JSON.stringify(event.candidate);
+          setRtcIceCandidate(serialisedIceCandidate);
+        }
+      };
+      rtc.ondatachannel = function (event) {
+        event.channel.onopen = function () {
+          event.channel.send({
+            type: "publicKey",
+            publicKey: publicKey
+          });
+          event.channel.send({
+            type: "symmetricKey",
+            symmetricKey: symmetricKey
+          });
+        };
+        event.channel.onmessage = function (event) {
+          console.info("rtc1: received message:", event.data);
+          var parsedData = JSON.parse(event.data);
+          switch (event.data.type) {
+            case "publicKey":
+              setRemotePublicKey(parsedData.publicKey);
+              break;
+            case "symmetricKey":
+              setSymmetricKey(parsedData.symmetricKey);
+              break;
+            default:
+              break;
+          }
+        };
+      };
+      var _dc = rtc.createDataChannel("channel1");
+      _dc.onopen = function () {
+        _dc.send({
+          type: "publicKey",
+          publicKey: publicKey
+        });
+        _dc.send({
+          type: "symmetricKey",
+          symmetricKey: symmetricKey
+        });
+      };
+      _dc.onmessage = function (event) {
+        console.info("rtc2: received message:", event.data);
+        var parsedData = JSON.parse(event.data);
+        switch (event.data.type) {
+          case "publicKey":
+            setRemotePublicKey(parsedData.publicKey);
+            break;
+          case "symmetricKey":
+            setSymmetricKey(parsedData.symmetricKey);
+            break;
+          default:
+            break;
+        }
+      };
+      setDc(_dc);
+    }
+  }, [rtc]);
+  var handleCreateOffer = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+      var offer;
+      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.next = 2;
+            return rtc.createOffer();
+          case 2:
+            offer = _context2.sent;
+            _context2.next = 5;
+            return rtc.setLocalDescription(offer);
+          case 5:
+            setRtcOffer(JSON.stringify(offer));
+            console.log("rtc1: offer", offer);
+          case 7:
+          case "end":
+            return _context2.stop();
+        }
+      }, _callee2);
+    }));
+    return function handleCreateOffer() {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+  var handleRemoteOffer = /*#__PURE__*/function () {
+    var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(rtcRemoteOffer) {
+      var offer, offerDescption;
+      return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+        while (1) switch (_context3.prev = _context3.next) {
+          case 0:
+            offer = JSON.parse(rtcRemoteOffer.replace(/(\r\n|\n|\r)/gm, "")); // RTCSessionDescriptionInit
+            offerDescption = new RTCSessionDescription(offer);
+            _context3.next = 4;
+            return rtc.setRemoteDescription(offerDescption)["catch"](function (e) {
+              console.error("rtc1: setRemoteDescription", e);
+            });
+          case 4:
+            _context3.next = 6;
+            return handleAnswer();
+          case 6:
+          case "end":
+            return _context3.stop();
+        }
+      }, _callee3);
+    }));
+    return function handleRemoteOffer(_x) {
+      return _ref4.apply(this, arguments);
+    };
+  }();
+  (0,index_js_.useEffect)(function () {
+    if (rtcRemoteOffer) {
+      handleRemoteOffer(rtcRemoteOffer);
+    }
+  }, [rtcRemoteOffer]);
+  var handleAnswer = /*#__PURE__*/function () {
+    var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
+      var answer;
+      return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+        while (1) switch (_context4.prev = _context4.next) {
+          case 0:
+            _context4.next = 2;
+            return rtc.createAnswer();
+          case 2:
+            answer = _context4.sent;
+            _context4.next = 5;
+            return rtc.setLocalDescription(answer);
+          case 5:
+            setRtcAnswer(JSON.stringify(answer));
+          case 6:
+          case "end":
+            return _context4.stop();
+        }
+      }, _callee4);
+    }));
+    return function handleAnswer() {
+      return _ref5.apply(this, arguments);
+    };
+  }();
+  var handleRemoteAnswer = /*#__PURE__*/function () {
+    var _ref6 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5(rtcRemoteAnswer) {
+      var answer, answerDescption;
+      return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+        while (1) switch (_context5.prev = _context5.next) {
+          case 0:
+            answer = JSON.parse(rtcRemoteAnswer.replace(/(\r\n|\n|\r)/gm, "")); // RTCSessionDescriptionInit
+            answerDescption = new RTCSessionDescription(answer);
+            _context5.next = 4;
+            return rtc.setRemoteDescription(answerDescption);
+          case 4:
+          case "end":
+            return _context5.stop();
+        }
+      }, _callee5);
+    }));
+    return function handleRemoteAnswer(_x2) {
+      return _ref6.apply(this, arguments);
+    };
+  }();
+  (0,index_js_.useEffect)(function () {
+    if (rtcRemoteAnswer) {
+      handleRemoteAnswer(rtcRemoteAnswer);
+    }
+  }, [rtcRemoteAnswer]);
+  var handleIceCandidate = /*#__PURE__*/function () {
+    var _ref7 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(rtcIceCandidate) {
+      var iceCandidate;
+      return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+        while (1) switch (_context6.prev = _context6.next) {
+          case 0:
+            iceCandidate = JSON.parse(rtcIceCandidate.replace(/(\r\n|\n|\r)/gm, ""));
+            _context6.next = 3;
+            return rtc.addIceCandidate(iceCandidate);
+          case 3:
+          case "end":
+            return _context6.stop();
+        }
+      }, _callee6);
+    }));
+    return function handleIceCandidate(_x3) {
+      return _ref7.apply(this, arguments);
+    };
+  }();
+  (0,index_js_.useEffect)(function () {
+    if (rtcRemoteIceCandidate) {
+      handleIceCandidate(rtcRemoteIceCandidate);
+    }
+  }, [rtcRemoteIceCandidate]);
+  console.log({
+    publicKey: publicKey,
+    privateKey: privateKey,
+    remotePublicKey: remotePublicKey,
+    symmetricKey: symmetricKey
+  });
+  return /*#__PURE__*/index_js_default().createElement("div", null, !mode && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
+    type: "button",
+    fullWidth: true,
+    variant: "contained",
+    onClick: function onClick() {
+      setMode("createOffer");
+      handleCreateOffer();
+    }
+  }, "create offer"), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
+    type: "button",
+    fullWidth: true,
+    variant: "contained",
+    onClick: function onClick() {
+      return setMode("scanOffer");
+    }
+  }, "scan offer")), mode === "createOffer" && /*#__PURE__*/index_js_default().createElement(QRInput, {
+    value: JSON.stringify({
+      rtcOffer: rtcOffer,
+      rtcIceCandidate: rtcIceCandidate
+    }),
+    qr: true,
+    back: function back() {
+      return setMode('');
+    },
+    next: function next() {
+      return setMode('scanAnswer');
+    }
+  }), mode === "scanOffer" && /*#__PURE__*/index_js_default().createElement(QRInput, {
+    scan: true,
+    onScan: function onScan(data) {
+      var _JSON$parse = JSON.parse(data),
+        rtcIceCandidate = _JSON$parse.rtcIceCandidate,
+        rtcOffer = _JSON$parse.rtcOffer;
+      setRtcRemoteOffer(rtcOffer);
+      setRtcRemoteIceCandidate(rtcIceCandidate);
+      setMode('createAnswer');
+    },
+    back: function back() {
+      return setMode('');
+    }
+  }), mode === "scanAnswer" && /*#__PURE__*/index_js_default().createElement(QRInput, {
+    scan: true,
+    onScan: function onScan(data) {
+      var _JSON$parse2 = JSON.parse(data),
+        rtcAnswer = _JSON$parse2.rtcAnswer,
+        rtcIceCandidate = _JSON$parse2.rtcIceCandidate;
+      setRtcRemoteAnswer(rtcAnswer);
+      setRtcRemoteIceCandidate(rtcIceCandidate);
+      setMode('sharePublicKey');
+    },
+    back: function back() {
+      return setMode('createOffer');
+    }
+  }), mode === "createAnswer" && /*#__PURE__*/index_js_default().createElement(QRInput, {
+    value: JSON.stringify({
+      rtcAnswer: rtcAnswer,
+      rtcIceCandidate: rtcIceCandidate
+    }),
+    qr: true,
+    back: function back() {
+      return setMode('scanOffer');
+    },
+    next: function next() {
+      return setMode('scanPublicKey');
+    }
+  }), mode === "sharePublicKey" && /*#__PURE__*/index_js_default().createElement(QRInput, {
+    value: serializedPublicKey,
+    qr: true,
+    back: function back() {
+      return setMode('scanAnswer');
+    },
+    next: function next() {
+      return setMode('scanRemotePublicKey');
+    }
+  }), mode === "scanPublicKey" && /*#__PURE__*/index_js_default().createElement(QRInput, {
+    scan: true,
+    onScan: function onScan(data) {
+      setRemotePublicKey(data);
+      setMode('shareSymmetricKey');
+    },
+    back: function back() {
+      return setMode('createAnswer');
+    }
+  }), mode === "scanRemotePublicKeyAndSymmetricKey" && /*#__PURE__*/index_js_default().createElement(QRInput, {
+    scan: true,
+    onScan: function onScan(data) {
+      var _JSON$parse3 = JSON.parse(data),
+        remotePublicKey = _JSON$parse3.remotePublicKey,
+        symmetricKey = _JSON$parse3.symmetricKey;
+      setRemotePublicKey(remotePublicKey);
+      setSymmetricKey(symmetricKey);
+      setMode('connected');
+    },
+    back: function back() {
+      return setMode('scanPublicKey');
+    }
+  }), mode === "sharePUblicKeyAndSymmetricKey" && /*#__PURE__*/index_js_default().createElement(QRInput, {
+    value: JSON.stringify({
+      publicKey: publicKey,
+      symmetricKey: symmetricKey
+    }),
+    qr: true,
+    back: function back() {
+      return setMode('scanPublicKey');
+    },
+    next: function next() {
+      return setMode('connected');
+    }
+  }));
 });
-// EXTERNAL MODULE: ./node_modules/react-qr-scanner/dist/react-qr-scanner.umd.js
-var react_qr_scanner_umd = __webpack_require__(21472);
-var react_qr_scanner_umd_default = /*#__PURE__*/__webpack_require__.n(react_qr_scanner_umd);
 ;// CONCATENATED MODULE: ./src/components/atomic/molecules/connect-to-peer/ConnectToPeer.js
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || ConnectToPeer_unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return ConnectToPeer_arrayLikeToArray(arr); }
+function ConnectToPeer_toConsumableArray(arr) { return ConnectToPeer_arrayWithoutHoles(arr) || ConnectToPeer_iterableToArray(arr) || ConnectToPeer_unsupportedIterableToArray(arr) || ConnectToPeer_nonIterableSpread(); }
+function ConnectToPeer_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function ConnectToPeer_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function ConnectToPeer_arrayWithoutHoles(arr) { if (Array.isArray(arr)) return ConnectToPeer_arrayLikeToArray(arr); }
 function ConnectToPeer_slicedToArray(arr, i) { return ConnectToPeer_arrayWithHoles(arr) || ConnectToPeer_iterableToArrayLimit(arr, i) || ConnectToPeer_unsupportedIterableToArray(arr, i) || ConnectToPeer_nonIterableRest(); }
 function ConnectToPeer_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function ConnectToPeer_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return ConnectToPeer_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return ConnectToPeer_arrayLikeToArray(o, minLen); }
@@ -592,7 +1320,7 @@ var ConnectToPeer = function ConnectToPeer(_ref) {
     return function (event, isExpanded) {
       if (isExpanded) {
         setExpanded(function (prevExpanded) {
-          return [].concat(_toConsumableArray(prevExpanded), [panel]);
+          return [].concat(ConnectToPeer_toConsumableArray(prevExpanded), [panel]);
         });
       } else {
         setExpanded(function (prevExpanded) {
@@ -685,10 +1413,10 @@ var ConnectToPeer = function ConnectToPeer(_ref) {
   var handleError = function handleError(err) {
     console.error(err);
   };
-  return /*#__PURE__*/index_js_default().createElement(Accordion_Accordion/* default */.c, {
+  return /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
     expanded: expanded.includes("share-panel") || qr || open || link,
     onChange: qr || open || link ? undefined : handleChange("share-panel")
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary_AccordionSummary/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
     expandIcon: !!qr || open || link ? undefined : /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
     "aria-controls": "panel4bh-content",
     id: "panel4bh-header"
@@ -696,10 +1424,10 @@ var ConnectToPeer = function ConnectToPeer(_ref) {
     sx: {
       flexShrink: 0
     }
-  }, t("components.connectToPeer.connectToPeer"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails_AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(Accordion_Accordion/* default */.c, {
+  }, t("components.connectToPeer.connectToPeer"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
     expanded: expanded.includes("share-link") || link,
     onChange: handleChange("share-link")
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary_AccordionSummary/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
     expandIcon: link ? undefined : /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
     "aria-controls": "panel4bh-content",
     id: "panel4bh-header"
@@ -708,7 +1436,7 @@ var ConnectToPeer = function ConnectToPeer(_ref) {
     sx: {
       flexShrink: 0
     }
-  }, t("components.connectToPeer.shareLink"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails_AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }, t("components.connectToPeer.shareLink"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -719,15 +1447,15 @@ var ConnectToPeer = function ConnectToPeer(_ref) {
     onChange: handleConnectionIdChange,
     InputProps: {
       readOnly: true,
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(ContentCopy/* default */.c, null)))
     }
-  }), !contactId && /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), !contactId && /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -745,9 +1473,9 @@ var ConnectToPeer = function ConnectToPeer(_ref) {
       }
     },
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handlePeerLinkConnect,
         edge: "end",
@@ -755,10 +1483,10 @@ var ConnectToPeer = function ConnectToPeer(_ref) {
         color: peerLink ? extractIDFromLink(peerLink) && extractIDFromLink(peerLink) !== storedConnectionId ? "primary" : "error" : "default"
       }, /*#__PURE__*/index_js_default().createElement(ConnectWithoutContact/* default */.c, null)))
     }
-  }))), /*#__PURE__*/index_js_default().createElement(Accordion_Accordion/* default */.c, {
+  }))), /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
     expanded: expanded.includes("panel4") || qr,
     onChange: handleChange("panel4")
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary_AccordionSummary/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
     expandIcon: qr ? undefined : /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
     "aria-controls": "panel4bh-content",
     id: "panel4bh-header"
@@ -766,7 +1494,7 @@ var ConnectToPeer = function ConnectToPeer(_ref) {
     sx: {
       flexShrink: 0
     }
-  }, t("components.connectToPeer.shareQr"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails_AccordionDetails/* default */.c, {
+  }, t("components.connectToPeer.shareQr"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, {
     style: {
       background: "white"
     }
@@ -790,7 +1518,7 @@ var ConnectToPeer = function ConnectToPeer(_ref) {
         facingMode: "environment"
       }
     }
-  }), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     type: "button",
     fullWidth: true,
     variant: "contained",
@@ -798,7 +1526,18 @@ var ConnectToPeer = function ConnectToPeer(_ref) {
       return setScanning(!scanning);
     },
     color: scanning ? "error" : "primary"
-  }, scanning ? t("components.connectToPeer.stopScanning") : t("components.connectToPeer.scanQr")))),  false && /*#__PURE__*/0));
+  }, scanning ? t("components.connectToPeer.stopScanning") : t("components.connectToPeer.scanQr")))),  true && /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
+    expanded: expanded.includes("panel5"),
+    onChange: handleChange("panel5")
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
+    expandIcon: qr ? undefined : /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
+    "aria-controls": "panel4bh-content",
+    id: "panel4bh-header"
+  }, /*#__PURE__*/index_js_default().createElement(Typography_Typography/* default */.c, {
+    sx: {
+      flexShrink: 0
+    }
+  }, t("components.connectToPeer.shareWebRtcQr"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(WebRTCWizard, null)))));
 };
 /* harmony default export */ const connect_to_peer_ConnectToPeer = (ConnectToPeer);
 ;// CONCATENATED MODULE: ./public/logo512.png
@@ -835,9 +1574,9 @@ const _8_namespaceObject = __webpack_require__.p + "034d9e19326659d69234.jpg";
 const _9_namespaceObject = __webpack_require__.p + "fb2fef1d328a84f4fefe.jpg";
 ;// CONCATENATED MODULE: ./src/components/pages/login/Login.js
 function Login_typeof(o) { "@babel/helpers - typeof"; return Login_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Login_typeof(o); }
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == Login_typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw new Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(Login_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw new Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+function Login_regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ Login_regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == Login_typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw new Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(Login_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw new Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function Login_asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function Login_asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { Login_asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { Login_asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 function Login_toConsumableArray(arr) { return Login_arrayWithoutHoles(arr) || Login_iterableToArray(arr) || Login_unsupportedIterableToArray(arr) || Login_nonIterableSpread(); }
 function Login_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function Login_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
@@ -1082,7 +1821,7 @@ var SimpleSlider = function SimpleSlider(_ref) {
   }, /*#__PURE__*/index_js_default().createElement(lib/* default */.c, settings, avatars.map(function (avatar, index) {
     return /*#__PURE__*/index_js_default().createElement("div", {
       key: index
-    }, /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+    }, /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
       onClick: function onClick() {
         return onSelect(avatar.src);
       }
@@ -1463,9 +2202,9 @@ function LoginPage() {
     return _handleFile.apply(this, arguments);
   }
   function _handleFile() {
-    _handleFile = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(_ref3) {
+    _handleFile = Login_asyncToGenerator( /*#__PURE__*/Login_regeneratorRuntime().mark(function _callee2(_ref3) {
       var files, f, zip;
-      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      return Login_regeneratorRuntime().wrap(function _callee2$(_context2) {
         while (1) switch (_context2.prev = _context2.next) {
           case 0:
             files = _ref3.target.files;
@@ -1478,9 +2217,9 @@ function LoginPage() {
             // Use await here
 
             zip.forEach( /*#__PURE__*/function () {
-              var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(relativePath, zipEntry) {
+              var _ref5 = Login_asyncToGenerator( /*#__PURE__*/Login_regeneratorRuntime().mark(function _callee(relativePath, zipEntry) {
                 var content, _JSON$parse, pods, contacts, encryption, userProfile;
-                return _regeneratorRuntime().wrap(function _callee$(_context) {
+                return Login_regeneratorRuntime().wrap(function _callee$(_context) {
                   while (1) switch (_context.prev = _context.next) {
                     case 0:
                       _context.next = 2;
@@ -1577,14 +2316,14 @@ function LoginPage() {
     _useState20 = Login_slicedToArray(_useState19, 2),
     activatedNumber = _useState20[0],
     setActivateNumber = _useState20[1];
-  var NextButton = /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  var NextButton = /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: "primary",
     onClick: function onClick() {
       return setActivateNumber(activatedNumber + 1);
     }
   }, "Next");
-  var PrevButton = /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  var PrevButton = /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: "primary",
     onClick: function onClick() {
@@ -1678,7 +2417,7 @@ function LoginPage() {
     }, /*#__PURE__*/index_js_default().createElement("form", {
       noValidate: true,
       className: classes.form
-    }, /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+    }, /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
       variant: "outlined",
       margin: "normal",
       required: true,
@@ -1689,9 +2428,9 @@ function LoginPage() {
       defaultValue: "".concat(window.location.origin, "/#/login/").concat(storedConnectionId),
       readOnly: true,
       InputProps: {
-        endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+        endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
           position: "end"
-        }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+        }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
           "aria-label": "toggle password visibility",
           onClick: handleCopyConnectionIdToClipboard,
           edge: "end"
@@ -1819,11 +2558,11 @@ function LoginPage() {
   }, /*#__PURE__*/index_js_default().createElement(connect_to_peer_ConnectToPeer, {
     open: !contacts.length,
     link: !contacts.length
-  })) : /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Accordion_Accordion/* default */.c, {
+  })) : /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
     ref: ref2,
     expanded: expanded === "profile",
     onChange: handleChange("profile")
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary_AccordionSummary/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
     expandIcon: /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
     "aria-controls": "panel4bh-content",
     id: "panel4bh-header"
@@ -1831,7 +2570,7 @@ function LoginPage() {
     sx: {
       flexShrink: 0
     }
-  }, t("loginPage.setProfile"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails_AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(SimpleSlider, {
+  }, t("loginPage.setProfile"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(SimpleSlider, {
     onSelect: setAvatar
   }), /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Avatar/* default */.c, {
     src: avatarBase64 !== null && avatarBase64 !== void 0 ? avatarBase64 : logo512_namespaceObject,
@@ -1840,7 +2579,7 @@ function LoginPage() {
       minWidth: "300px",
       margin: "auto"
     }
-  }), /*#__PURE__*/index_js_default().createElement("br", null)), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement("br", null)), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     type: "button",
     fullWidth: true,
     variant: "contained",
@@ -1856,7 +2595,7 @@ function LoginPage() {
     className: classes.hidden,
     accept: "image/*",
     onChange: handleAvatar
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     required: true,
@@ -1869,9 +2608,9 @@ function LoginPage() {
     value: username,
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: function onClick() {
           return setUsername("".concat(chance.animal()));
@@ -1902,7 +2641,7 @@ function LoginPage() {
     value: 'Countries'
   }, "Countries"), /*#__PURE__*/index_js_default().createElement(MenuItem/* default */.c, {
     value: 'Months'
-  }, "Months"))), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }, "Months"))), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     required: true,
@@ -1914,9 +2653,9 @@ function LoginPage() {
     value: fromUser,
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: function onClick() {
           return setNewId();
@@ -1924,11 +2663,11 @@ function LoginPage() {
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Refresh/* default */.c, null)))
     }
-  }))), /*#__PURE__*/index_js_default().createElement(Accordion_Accordion/* default */.c, {
+  }))), /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
     ref: ref3,
     expanded: expanded === "notifications",
     onChange: handleChange("notifications")
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary_AccordionSummary/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
     expandIcon: /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
     "aria-controls": "panel4bh-content",
     id: "panel4bh-header"
@@ -1936,13 +2675,13 @@ function LoginPage() {
     sx: {
       flexShrink: 0
     }
-  }, t("loginPage.setPreference"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails_AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(FormGroup/* default */.c, null, /*#__PURE__*/index_js_default().createElement(FormControlLabel/* default */.c, {
+  }, t("loginPage.setPreference"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(FormGroup/* default */.c, null, /*#__PURE__*/index_js_default().createElement(FormControlLabel/* default */.c, {
     control: /*#__PURE__*/index_js_default().createElement(Switch/* default */.c, inAppNotifications),
     label: t("loginPage.inAppNotification")
   }), /*#__PURE__*/index_js_default().createElement(FormControlLabel/* default */.c, {
     control: /*#__PURE__*/index_js_default().createElement(Switch/* default */.c, browserNotification),
     label: t("loginPage.browserNotification")
-  })), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  })), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -1953,11 +2692,11 @@ function LoginPage() {
     value: peerjsServer,
     placeholder: "https: 0.peerjs.com",
     autoComplete: "off"
-  }))), /*#__PURE__*/index_js_default().createElement(Accordion_Accordion/* default */.c, {
+  }))), /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
     ref: ref4,
     expanded: expanded === "panel4",
     onChange: handleChange("panel4")
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary_AccordionSummary/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
     expandIcon: /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
     "aria-controls": "panel4bh-content",
     id: "panel4bh-header"
@@ -1970,7 +2709,7 @@ function LoginPage() {
     style: {
       color: "red"
     }
-  }, "*"), t("loginPage.termsAgreement"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails_AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(Typography_Typography/* default */.c, null, /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }, "*"), t("loginPage.termsAgreement"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(Typography_Typography/* default */.c, null, /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     type: "button",
     fullWidth: true,
     variant: "contained",
@@ -1978,7 +2717,7 @@ function LoginPage() {
     onClick: function onClick() {
       return navigate("/terms");
     }
-  }, t("loginPage.goToTermsAndConditions"))), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement(Typography_Typography/* default */.c, null, /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }, t("loginPage.goToTermsAndConditions"))), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement(Typography_Typography/* default */.c, null, /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     type: "button",
     fullWidth: true,
     variant: "contained",
@@ -1986,7 +2725,7 @@ function LoginPage() {
     onClick: function onClick() {
       return navigate("/terms/privacy");
     }
-  }, t("loginPage.goToPrivacyPolicy"))))), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }, t("loginPage.goToPrivacyPolicy"))))), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     ref: ref5,
     type: "button",
     fullWidth: true,
@@ -1994,7 +2733,7 @@ function LoginPage() {
     color: "success",
     disabled: isSubmitDisabled,
     onClick: handleSubmit
-  }, t("loginPage.connect")), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }, t("loginPage.connect")), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     ref: ref6,
     type: "button",
     fullWidth: true,
@@ -2301,8 +3040,6 @@ function ListComponent(_ref3) {
     );
   }),  false && /*#__PURE__*/0,  false && /*#__PURE__*/0)));
 }
-// EXTERNAL MODULE: ./src/components/p2p/usePeer.js
-var usePeer = __webpack_require__(91216);
 // EXTERNAL MODULE: ./src/components/blockchain/chains/podChain.js
 var podChain = __webpack_require__(53012);
 // EXTERNAL MODULE: ./node_modules/i18next/dist/esm/i18next.js
@@ -2624,14 +3361,14 @@ function Pods() {
     _useState2 = Pods_slicedToArray(_useState, 2),
     activatedNumber = _useState2[0],
     setActivateNumber = _useState2[1];
-  var NextButton = /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  var NextButton = /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: "primary",
     onClick: function onClick() {
       return setActivateNumber(activatedNumber + 1);
     }
   }, "Next");
-  var PrevButton = /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  var PrevButton = /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: "primary",
     onClick: function onClick() {
@@ -2934,12 +3671,12 @@ var VoiceRecorderButton = function VoiceRecorderButton(_ref) {
     style: {
       width: "100%"
     }
-  })), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  })), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: recording ? "error" : "primary",
     onClick: recording ? stopRecording : startRecording,
     fullWidth: true
-  }, recording ? "Stop Recording" : "New Recording"), audioUrl && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }, recording ? "Stop Recording" : "New Recording"), audioUrl && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: "success",
     onClick: function onClick() {
@@ -4476,7 +5213,7 @@ function Pod() {
     ,
     timestamp: (0,Conversation/* formatDate */._)((_replyMessage$timesta = replyMessage.timestamp) === null || _replyMessage$timesta === void 0 ? void 0 : _replyMessage$timesta.created),
     avatar: replyMessage.avatar
-  }), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     onClick: function onClick() {
       return setReplyMessage(null);
     }
@@ -4484,9 +5221,9 @@ function Pod() {
     disableGutters: true
   }, /*#__PURE__*/index_js_default().createElement(OutlinedInput/* default */.c, {
     id: "outlined-adornment-weight",
-    endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+    endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
       position: "start"
-    }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+    }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
       "aria-label": "send location",
       onClick: handleAttachLocation
       // icon is green when there is text in the input field
@@ -4497,9 +5234,9 @@ function Pod() {
     }, /*#__PURE__*/index_js_default().createElement(Badge/* default */.c, {
       badgeContent: null,
       color: "info"
-    }, /*#__PURE__*/index_js_default().createElement(Place/* default */.c, null)))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+    }, /*#__PURE__*/index_js_default().createElement(Place/* default */.c, null)))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
       position: "start"
-    }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+    }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
       "aria-label": "send message",
       onClick: handleAttachFile
       // icon is green when there is text in the input field
@@ -4519,9 +5256,9 @@ function Pod() {
         display: "none"
       },
       onChange: attachFile
-    }), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+    }), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
       position: "start"
-    }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+    }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
       "aria-label": "send message",
       onClick: handleAttachImage
       // icon is green when there is text in the input field
@@ -4541,9 +5278,9 @@ function Pod() {
         display: "none"
       },
       onChange: attachImage
-    }), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+    }), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
       position: "end"
-    }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+    }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
       "aria-label": "send voice memo",
       onClick: handleClickOpen,
       color: "primary",
@@ -4552,9 +5289,9 @@ function Pod() {
     }, /*#__PURE__*/index_js_default().createElement(Badge/* default */.c, {
       badgeContent: null,
       color: "info"
-    }, /*#__PURE__*/index_js_default().createElement(Mic/* default */.c, null)))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+    }, /*#__PURE__*/index_js_default().createElement(Mic/* default */.c, null)))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
       position: "end"
-    }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+    }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
       "aria-label": "send message",
       onClick: handleSendMessage
       // icon is green when there is text in the input field
@@ -4601,7 +5338,7 @@ function Pod() {
       p: 2
     },
     id: "customized-dialog-title"
-  }, "Voice message"), /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+  }, "Voice message"), /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
     "aria-label": "close",
     onClick: handleClose,
     sx: {
@@ -4668,7 +5405,7 @@ function Pod() {
         top: 90,
         left: 10
       }
-    }), !localStream && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+    }), !localStream && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
       type: "button",
       sx: {
         mb: 2
@@ -4679,7 +5416,7 @@ function Pod() {
       onClick: function onClick() {
         return handleAnswerCall(call);
       }
-    }, "answer call"), /*#__PURE__*/index_js_default().createElement("br", null)), !isCasting && localStream && stream && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+    }, "answer call"), /*#__PURE__*/index_js_default().createElement("br", null)), !isCasting && localStream && stream && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
       type: "button",
       sx: {
         mb: 2
@@ -4690,14 +5427,14 @@ function Pod() {
       onClick: function onClick() {
         return navigate("/pod/".concat(podId, "/verse"));
       }
-    }, "go to verse"), /*#__PURE__*/index_js_default().createElement("br", null)), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+    }, "go to verse"), /*#__PURE__*/index_js_default().createElement("br", null)), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
       type: "button",
       variant: "contained",
       fullWidth: true,
       color: "error",
       onClick: handleEndCall
     }, "hang up"));
-  })), /*#__PURE__*/index_js_default().createElement(DialogActions/* default */.c, null, /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  })), /*#__PURE__*/index_js_default().createElement(DialogActions/* default */.c, null, /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     autoFocus: true,
     onClick: handleClose
   }, "close")))));
@@ -4979,7 +5716,7 @@ function Profile() {
   }), /*#__PURE__*/index_js_default().createElement("form", {
     noValidate: true,
     className: classes.form
-  }, /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     required: true,
@@ -4991,10 +5728,10 @@ function Profile() {
     onChange: handlePodNameChange
   }), /*#__PURE__*/index_js_default().createElement(ListComponent, {
     list: PodDetails_toConsumableArray(membersList)
-  }), contactsThatCanBeAdded.length > 0 && /*#__PURE__*/index_js_default().createElement(Accordion_Accordion/* default */.c, {
+  }), contactsThatCanBeAdded.length > 0 && /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
     expanded: expanded === "addpeer",
     onChange: handleChange("addpeer")
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary_AccordionSummary/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
     expandIcon: /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
     "aria-controls": "panel4bh-content",
     id: "panel4bh-header",
@@ -5018,15 +5755,15 @@ function Profile() {
       whiteSpace: "nowrap",
       marginRight: "8px" // Providing space between the text and the icon
     }
-  }, t("podDetailsPage.addExistingPeerToPod"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails_AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(ListComponent, {
+  }, t("podDetailsPage.addExistingPeerToPod"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(ListComponent, {
     chevronOverride: /*#__PURE__*/index_js_default().createElement(Add/* default */.c, null),
     list: PodDetails_toConsumableArray(contactsThatCanBeAdded)
   }))), /*#__PURE__*/index_js_default().createElement(connect_to_peer_ConnectToPeer, {
     collapse: true
-  }), /*#__PURE__*/index_js_default().createElement(Accordion_Accordion/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
     expanded: expanded === "advanced",
     onChange: handleChange("advanced")
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary_AccordionSummary/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
     expandIcon: /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
     "aria-controls": "panel4bh-content",
     id: "panel4bh-header"
@@ -5034,7 +5771,7 @@ function Profile() {
     sx: {
       flexShrink: 0
     }
-  }, t("common.more"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails_AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }, t("common.more"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -5320,14 +6057,14 @@ function ContactsListPage(_ref) {
     _useState6 = Contacts_slicedToArray(_useState5, 2),
     activatedNumber = _useState6[0],
     setActivateNumber = _useState6[1];
-  var NextButton = /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  var NextButton = /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: "primary",
     onClick: function onClick() {
       return setActivateNumber(activatedNumber + 1);
     }
   }, "Next");
-  var PrevButton = /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  var PrevButton = /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: "primary",
     onClick: function onClick() {
@@ -5860,14 +6597,14 @@ function ContactDetails_Profile() {
     _useState4 = ContactDetails_slicedToArray(_useState3, 2),
     activatedNumber = _useState4[0],
     setActivateNumber = _useState4[1];
-  var NextButton = /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  var NextButton = /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: "primary",
     onClick: function onClick() {
       return setActivateNumber(activatedNumber + 1);
     }
   }, "Next");
-  var PrevButton = /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  var PrevButton = /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: "primary",
     onClick: function onClick() {
@@ -5941,7 +6678,7 @@ function ContactDetails_Profile() {
     className: classes.form
   }, !contact && /*#__PURE__*/index_js_default().createElement(connect_to_peer_ConnectToPeer, {
     link: true
-  }), !!contact && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), !!contact && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     ref: ref1,
     variant: "outlined",
     margin: "normal",
@@ -5965,11 +6702,11 @@ function ContactDetails_Profile() {
       isOnline: isOnline,
       unreadCount: (podWithPeer === null || podWithPeer === void 0 ? void 0 : podWithPeer.unreadCount) || 0
     }]
-  }), !podWithPeer && /*#__PURE__*/index_js_default().createElement(Accordion_Accordion/* default */.c, {
+  }), !podWithPeer && /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
     ref: ref2,
     expanded: expanded === "panel4",
     onChange: handleChange("panel4")
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary_AccordionSummary/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
     expandIcon: /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
     "aria-controls": "panel4bh-content",
     id: "panel4bh-header"
@@ -5979,7 +6716,7 @@ function ContactDetails_Profile() {
     }
   }, t("contactDetailsPage.createNewPodWith", {
     displayName: contact ? contact.displayName : ""
-  }))), /*#__PURE__*/index_js_default().createElement(AccordionDetails_AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     required: true,
@@ -5992,9 +6729,9 @@ function ContactDetails_Profile() {
       return setChatName(e.target.value);
     },
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: function onClick() {
           return setChatName("".concat(chance.country({
@@ -6004,7 +6741,7 @@ function ContactDetails_Profile() {
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Refresh/* default */.c, null)))
     }
-  }), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     type: "button",
     className: classes.button,
     fullWidth: true,
@@ -6017,11 +6754,11 @@ function ContactDetails_Profile() {
       // navigate(-2);
       handleCreateNewPod();
     }
-  }, t("contactDetailsPage.createPod")))), /*#__PURE__*/index_js_default().createElement(Accordion_Accordion/* default */.c, {
+  }, t("contactDetailsPage.createPod")))), /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
     ref: ref3,
     expanded: expanded === "advanced",
     onChange: handleChange("advanced")
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary_AccordionSummary/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
     expandIcon: /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
     "aria-controls": "panel4bh-content",
     id: "panel4bh-header"
@@ -6029,12 +6766,12 @@ function ContactDetails_Profile() {
     sx: {
       flexShrink: 0
     }
-  }, t("common.more"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails_AccordionDetails/* default */.c, null, !anyPodWithPeer && /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }, t("common.more"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, !anyPodWithPeer && /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     type: "button",
     fullWidth: true,
     variant: "contained",
     onClick: handleRegisterNewDevice
-  }, t("contactDetailsPage.registerNewDevice")), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }, t("contactDetailsPage.registerNewDevice")), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -6045,7 +6782,7 @@ function ContactDetails_Profile() {
     InputProps: {
       readOnly: true
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -6349,7 +7086,7 @@ function Profile_Profile(_ref) {
   }), /*#__PURE__*/index_js_default().createElement("form", {
     noValidate: true,
     className: classes.form
-  }, /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     type: "button",
     fullWidth: true,
     variant: "contained",
@@ -6364,7 +7101,7 @@ function Profile_Profile(_ref) {
     name: "picture",
     accept: "image/*",
     onChange: handleAvatar
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     required: true,
@@ -6376,10 +7113,10 @@ function Profile_Profile(_ref) {
     onChange: handleUsernameChange
   }), /*#__PURE__*/index_js_default().createElement(connect_to_peer_ConnectToPeer, {
     qr: qr
-  }), /*#__PURE__*/index_js_default().createElement(Accordion_Accordion/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
     expanded: expanded.includes("admin"),
     onChange: handleChange("admin")
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary_AccordionSummary/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
     expandIcon: qr ? undefined : /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
     "aria-controls": "panel4bh-content",
     id: "panel4bh-header"
@@ -6387,7 +7124,7 @@ function Profile_Profile(_ref) {
     sx: {
       flexShrink: 0
     }
-  }, t("profilePage.more"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails_AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }, t("profilePage.more"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     required: true,
@@ -6399,9 +7136,9 @@ function Profile_Profile(_ref) {
     onChange: handleConnectionIdChange,
     InputProps: {
       readOnly: true,
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: function onClick() {
           return handleConnectionIdChange({
@@ -6413,10 +7150,10 @@ function Profile_Profile(_ref) {
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Sync/* default */.c, null)))
     }
-  }), /*#__PURE__*/index_js_default().createElement(Accordion_Accordion/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
     expanded: expanded.includes("notifications"),
     onChange: handleChange("notifications")
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary_AccordionSummary/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
     expandIcon: /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
     "aria-controls": "panel4bh-content",
     id: "panel4bh-header"
@@ -6424,7 +7161,7 @@ function Profile_Profile(_ref) {
     sx: {
       flexShrink: 0
     }
-  }, t("profilePage.preferences"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails_AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(FormGroup/* default */.c, null, /*#__PURE__*/index_js_default().createElement(FormControlLabel/* default */.c, {
+  }, t("profilePage.preferences"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(FormGroup/* default */.c, null, /*#__PURE__*/index_js_default().createElement(FormControlLabel/* default */.c, {
     control: /*#__PURE__*/index_js_default().createElement(Switch/* default */.c, inAppNotifications),
     label: t("common.inAppNotification")
   }), /*#__PURE__*/index_js_default().createElement(FormControlLabel/* default */.c, {
@@ -6434,7 +7171,7 @@ function Profile_Profile(_ref) {
     heading: t("components.cryptoSignature"),
     defaultValue: storedEncryptionSignature,
     onChange: addEncryptionSignatureBlock
-  }), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     type: "button",
     fullWidth: true,
     variant: "contained",
@@ -6851,7 +7588,7 @@ function File() {
   }), /*#__PURE__*/index_js_default().createElement("form", {
     noValidate: true,
     className: classes.form
-  }, /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     required: true,
@@ -6863,7 +7600,7 @@ function File() {
     InputProps: {
       readOnly: true
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     required: true,
@@ -6875,10 +7612,10 @@ function File() {
     InputProps: {
       readOnly: true
     }
-  }), /*#__PURE__*/index_js_default().createElement(Accordion_Accordion/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Accordion/* default */.c, {
     expanded: expanded === "advanced",
     onChange: handleChange("advanced")
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary_AccordionSummary/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.c, {
     expandIcon: /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.c, null),
     "aria-controls": "panel4bh-content",
     id: "panel4bh-header"
@@ -6886,7 +7623,7 @@ function File() {
     sx: {
       flexShrink: 0
     }
-  }, "Advanced")), /*#__PURE__*/index_js_default().createElement(AccordionDetails_AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }, "Advanced")), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -6897,7 +7634,7 @@ function File() {
     InputProps: {
       readOnly: true
     }
-  }), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     type: "button",
     fullWidth: true,
     variant: "contained",
@@ -6908,7 +7645,7 @@ function File() {
       removeFileFromPodDispatch();
       // updateUsernameDispatch("");
     }
-  }, "Delete file"))), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }, "Delete file"))), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     type: "button",
     fullWidth: true,
     variant: "contained",
@@ -7829,7 +8566,7 @@ function Feed() {
         top: 90,
         left: 10
       }
-    }), !localStream && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+    }), !localStream && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
       type: "button",
       sx: {
         mb: 2
@@ -7840,7 +8577,7 @@ function Feed() {
       onClick: function onClick() {
         return handleAnswerCall(call);
       }
-    }, "answer call"), /*#__PURE__*/index_js_default().createElement("br", null)), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+    }, "answer call"), /*#__PURE__*/index_js_default().createElement("br", null)), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
       type: "button",
       variant: "contained",
       fullWidth: true,
@@ -7886,7 +8623,7 @@ function Feed() {
     ,
     timestamp: (0,Thread/* formatDate */._)((_replyMessage$timesta = replyMessage.timestamp) === null || _replyMessage$timesta === void 0 ? void 0 : _replyMessage$timesta.created),
     avatar: replyMessage.avatar
-  }), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     onClick: function onClick() {
       return setReplyMessage(null);
     }
@@ -8109,7 +8846,7 @@ var QRText = function QRText() {
   var handleError = function handleError(err) {
     console.error(err);
   };
-  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -8122,9 +8859,9 @@ var QRText = function QRText() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
@@ -8156,7 +8893,7 @@ var QRText = function QRText() {
         facingMode: "environment"
       }
     }
-  }), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     type: "button",
     fullWidth: true,
     variant: "contained",
@@ -8167,16 +8904,6 @@ var QRText = function QRText() {
   }, scanning ? t("components.connectToPeer.stopScanning") : 'Scan QR'));
 };
 /* harmony default export */ const qr_text_QRText = (QRText);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Slider/Slider.js + 6 modules
-var Slider_Slider = __webpack_require__(19388);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/SkipNext.js
-var SkipNext = __webpack_require__(49676);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/SkipPrevious.js
-var SkipPrevious = __webpack_require__(55608);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/PlayArrow.js
-var PlayArrow = __webpack_require__(99792);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Pause.js
-var Pause = __webpack_require__(31872);
 ;// CONCATENATED MODULE: ./src/components/atomic/molecules/qr-file/QRFile.js
 function QRFile_toConsumableArray(arr) { return QRFile_arrayWithoutHoles(arr) || QRFile_iterableToArray(arr) || QRFile_unsupportedIterableToArray(arr) || QRFile_nonIterableSpread(); }
 function QRFile_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -8363,7 +9090,7 @@ var QRFile = function QRFile() {
       }
     }, 1000);
   }, [isPlaying, selectedPart]);
-  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     id: "load-file-button",
     variant: "contained",
     component: "label",
@@ -8399,7 +9126,7 @@ var QRFile = function QRFile() {
         facingMode: "environment"
       }
     }
-  }), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     type: "button",
     fullWidth: true,
     variant: "contained",
@@ -8409,7 +9136,7 @@ var QRFile = function QRFile() {
     color: scanning ? "error" : "primary"
   }, scanning ? t("components.connectToPeer.stopScanning") : "Scan File QR"), /*#__PURE__*/index_js_default().createElement("br", null), /*#__PURE__*/index_js_default().createElement("br", null), !scanning && fileParts.length > 0 && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Typography_Typography/* default */.c, {
     gutterBottom: true
-  }, "Seek File Part"), /*#__PURE__*/index_js_default().createElement(Slider_Slider/* default */.cp, {
+  }, "Seek File Part"), /*#__PURE__*/index_js_default().createElement(Slider/* default */.cp, {
     "aria-label": "select part",
     defaultValue: 0,
     getAriaValueText: valuetext,
@@ -8423,7 +9150,7 @@ var QRFile = function QRFile() {
       setIsPlaying(false);
       setSelectedPart(value);
     }
-  }), /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
     "aria-label": "delete",
     size: "large",
     onClick: function onClick() {
@@ -8432,7 +9159,7 @@ var QRFile = function QRFile() {
     }
   }, /*#__PURE__*/index_js_default().createElement(SkipPrevious/* default */.c, {
     fontSize: "inherit"
-  })), /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+  })), /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
     "aria-label": "delete",
     size: "large"
     // primary
@@ -8445,7 +9172,7 @@ var QRFile = function QRFile() {
     fontSize: "inherit"
   }) : /*#__PURE__*/index_js_default().createElement(PlayArrow/* default */.c, {
     fontSize: "inherit"
-  })), /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+  })), /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
     "aria-label": "delete",
     size: "large",
     onClick: function onClick() {
@@ -8585,10 +9312,6 @@ function ShareQR_Maintainance() {
     dir: theme.direction
   }, /*#__PURE__*/index_js_default().createElement(qr_file_QRFile, null))))));
 }
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Download.js
-var Download = __webpack_require__(13376);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Upload.js
-var Upload = __webpack_require__(54500);
 ;// CONCATENATED MODULE: ./src/components/pages/encryption/RSA.js
 function RSA_slicedToArray(arr, i) { return RSA_arrayWithHoles(arr) || RSA_iterableToArrayLimit(arr, i) || RSA_unsupportedIterableToArray(arr, i) || RSA_nonIterableRest(); }
 function RSA_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -8647,12 +9370,12 @@ var RSA_QRText = function QRText() {
   var handleError = function handleError(err) {
     console.error(err);
   };
-  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: "primary",
     onClick: console.log,
     fullWidth: true
-  }, "Generate key pair"), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }, "Generate key pair"), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -8665,21 +9388,21 @@ var RSA_QRText = function QRText() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
-      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -8692,21 +9415,21 @@ var RSA_QRText = function QRText() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
-      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -8719,21 +9442,21 @@ var RSA_QRText = function QRText() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
-      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -8746,21 +9469,21 @@ var RSA_QRText = function QRText() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
-      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -8773,15 +9496,15 @@ var RSA_QRText = function QRText() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
-      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
@@ -8848,12 +9571,12 @@ var Symmetric_QRText = function QRText() {
   var handleError = function handleError(err) {
     console.error(err);
   };
-  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: "primary",
     onClick: console.log,
     fullWidth: true
-  }, "Generate Symmetric key"), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }, "Generate Symmetric key"), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -8866,21 +9589,21 @@ var Symmetric_QRText = function QRText() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
-      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -8893,26 +9616,26 @@ var Symmetric_QRText = function QRText() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
-      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
     }
-  }), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: "primary",
     onClick: console.log,
     fullWidth: true
-  }, "Encrypt file"), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }, "Encrypt file"), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -8925,21 +9648,21 @@ var Symmetric_QRText = function QRText() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
-      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
     }
-  }), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     color: "primary",
     onClick: console.log,
@@ -9005,7 +9728,7 @@ var HashInputs_QRText = function QRText() {
   var handleError = function handleError(err) {
     console.error(err);
   };
-  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -9018,21 +9741,21 @@ var HashInputs_QRText = function QRText() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
-      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))))
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -9045,15 +9768,15 @@ var HashInputs_QRText = function QRText() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
-      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCopyConnectionIdToClipboard,
         edge: "end"
@@ -10142,253 +10865,6 @@ function AI_Map() {
     value: 25
   })));
 }
-;// CONCATENATED MODULE: ./src/components/atomic/atom/qrInput/QRInput.js
-function QRInput_toConsumableArray(arr) { return QRInput_arrayWithoutHoles(arr) || QRInput_iterableToArray(arr) || QRInput_unsupportedIterableToArray(arr) || QRInput_nonIterableSpread(); }
-function QRInput_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function QRInput_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function QRInput_arrayWithoutHoles(arr) { if (Array.isArray(arr)) return QRInput_arrayLikeToArray(arr); }
-function QRInput_slicedToArray(arr, i) { return QRInput_arrayWithHoles(arr) || QRInput_iterableToArrayLimit(arr, i) || QRInput_unsupportedIterableToArray(arr, i) || QRInput_nonIterableRest(); }
-function QRInput_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function QRInput_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return QRInput_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return QRInput_arrayLikeToArray(o, minLen); }
-function QRInput_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function QRInput_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function QRInput_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var QRInput_useStyles = (0,makeStyles/* default */.c)(function (theme) {
-  return {
-    qrcodeReader: {
-      display: 'block',
-      // height: '100vh',
-      width: "100%",
-      // top: 0,
-      // left: 0,
-      // position: 'absolute',
-      zIndex: 10000
-    }
-  };
-});
-/* harmony default export */ const QRInput = (function (_ref) {
-  var defaultValue = _ref.defaultValue;
-  var classes = QRInput_useStyles();
-  var _useState = useState(false),
-    _useState2 = QRInput_slicedToArray(_useState, 2),
-    isQRMode = _useState2[0],
-    setIsQRMode = _useState2[1];
-  var _useState3 = useState(false),
-    _useState4 = QRInput_slicedToArray(_useState3, 2),
-    scanning = _useState4[0],
-    setScanning = _useState4[1];
-  var _useState5 = useState([]),
-    _useState6 = QRInput_slicedToArray(_useState5, 2),
-    fileParts = _useState6[0],
-    setFileParts = _useState6[1];
-  var _useState7 = useState(0),
-    _useState8 = QRInput_slicedToArray(_useState7, 2),
-    selectedPart = _useState8[0],
-    setSelectedPart = _useState8[1];
-  var _useState9 = useState(100),
-    _useState10 = QRInput_slicedToArray(_useState9, 2),
-    partDensity = _useState10[0],
-    setPartDensity = _useState10[1];
-  var _useState11 = useState(false),
-    _useState12 = QRInput_slicedToArray(_useState11, 2),
-    isPlaying = _useState12[0],
-    setIsPlaying = _useState12[1];
-  var _useState13 = useState(defaultValue || ""),
-    _useState14 = QRInput_slicedToArray(_useState13, 2),
-    value = _useState14[0],
-    setValue = _useState14[1];
-  useEffect(function () {
-    var partSize = partDensity;
-    var numberOfParts = Math.ceil(value.length / partSize);
-    var parts = [];
-    for (var i = 0; i < value.length; i += partSize) {
-      var part = value.substr(i, partSize);
-      var partNumber = Math.ceil(i / partSize);
-      var partData = {
-        part: partNumber + 1,
-        total: numberOfParts,
-        data: part
-      };
-      parts.push(partData);
-    }
-    setFileParts(parts);
-  }, [value]);
-  var handleScan = function handleScan(data) {
-    var scannedData = JSON.parse(data);
-    var hasPartBeenScanned = fileParts.some(function (part) {
-      return (part === null || part === void 0 ? void 0 : part.part) === (scannedData === null || scannedData === void 0 ? void 0 : scannedData.part);
-    });
-    if (hasPartBeenScanned) return;
-    var newFileParts = [].concat(QRInput_toConsumableArray(fileParts), [scannedData]);
-    console.log("newFileParts", newFileParts.length);
-    setFileParts(newFileParts);
-  };
-  useEffect(function () {
-    var _fileParts$;
-    var areAllPartsScanned = fileParts.length === ((_fileParts$ = fileParts[0]) === null || _fileParts$ === void 0 ? void 0 : _fileParts$.total);
-    if (areAllPartsScanned && scanning) {
-      var content = fileParts.reduce(function (acc, part) {
-        return acc + part.data;
-      }, "");
-      setValue(content);
-      setScanning(false);
-      setFileParts([]);
-    }
-  }, [fileParts]);
-  var handleError = function handleError(err) {
-    console.error(err);
-  };
-  useEffect(function () {
-    setTimeout(function () {
-      if (isPlaying) {
-        setSelectedPart(selectedPart + 1);
-      }
-    }, 1000);
-  }, [isPlaying, selectedPart]);
-  var handleCopyToClipboard = function handleCopyToClipboard() {
-    navigator.clipboard.writeText(value);
-  };
-  return /*#__PURE__*/React.createElement(React.Fragment, null, ( true) && /*#__PURE__*/React.createElement(Accordion, {
-    expanded: isQRMode
-  }, /*#__PURE__*/React.createElement(AccordionSummary, {
-    "aria-controls": "panel4bh-content",
-    id: "panel4bh-header"
-  }, /*#__PURE__*/React.createElement(TextField, {
-    variant: "outlined",
-    margin: "normal",
-    fullWidth: true,
-    label: "WebRTC offer",
-    name: "webRTC",
-    value: scanning ? 'Scanning...' : value,
-    onChange: function onChange(e) {
-      return !scanning && setValue(e.target.value || "");
-    },
-    autoComplete: "off",
-    InputProps: {
-      endAdornment: /*#__PURE__*/React.createElement(React.Fragment, null, !!value && /*#__PURE__*/React.createElement(InputAdornment, {
-        position: "end"
-      }, /*#__PURE__*/React.createElement(IconButton, {
-        "aria-label": "toggle password visibility",
-        onClick: function onClick() {
-          return handleCopyToClipboard();
-        },
-        edge: "end"
-      }, /*#__PURE__*/React.createElement(ContentCopyIcon, null))), /*#__PURE__*/React.createElement(InputAdornment, {
-        position: "end"
-      }, /*#__PURE__*/React.createElement(IconButton, {
-        "aria-label": "toggle password visibility",
-        onClick: function onClick() {
-          setIsQRMode(!isQRMode);
-          if (isQRMode) {
-            setScanning(false);
-          }
-        },
-        edge: "end"
-      }, /*#__PURE__*/React.createElement(QrCode2Icon, null))))
-    }
-  })), /*#__PURE__*/React.createElement(AccordionDetails, null, !scanning && fileParts.length > 0 && /*#__PURE__*/React.createElement("div", {
-    style: {
-      background: "white",
-      padding: 20
-    }
-  }, /*#__PURE__*/React.createElement(QRCode, {
-    size: 256,
-    style: {
-      height: "auto",
-      maxWidth: "100%",
-      width: "100%"
-    },
-    value: JSON.stringify(fileParts === null || fileParts === void 0 ? void 0 : fileParts[selectedPart]) || "",
-    viewBox: "0 0 256 256"
-  })), scanning && /*#__PURE__*/React.createElement(QRReader, {
-    id: "qrcode-reader-".concat(fileParts === null || fileParts === void 0 ? void 0 : fileParts.length),
-    key: "qrcode-reader-".concat(fileParts === null || fileParts === void 0 ? void 0 : fileParts.length),
-    className: classes.qrcodeReader,
-    onError: handleError,
-    onScan: function onScan(data) {
-      data && handleScan(data.text);
-    },
-    constraints: {
-      video: {
-        facingMode: "environment"
-      }
-    }
-  }), /*#__PURE__*/React.createElement(Button, {
-    type: "button",
-    fullWidth: true,
-    variant: "contained",
-    onClick: function onClick() {
-      setFileParts([]);
-      setScanning(!scanning);
-    },
-    color: scanning ? "error" : "primary"
-  }, scanning ? "Stop Scanning" : "Scan QR"), !scanning && fileParts.length > 1 && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Typography, {
-    gutterBottom: true
-  }, "Seek Part"), /*#__PURE__*/React.createElement(Slider, {
-    "aria-label": "select part",
-    defaultValue: 0,
-    step: 1,
-    marks: true,
-    min: 0,
-    max: fileParts.length - 1,
-    value: selectedPart,
-    valueLabelDisplay: "auto",
-    onChange: function onChange(e, value) {
-      setIsPlaying(false);
-      setSelectedPart(value);
-    }
-  }), /*#__PURE__*/React.createElement(IconButton, {
-    "aria-label": "delete",
-    size: "large",
-    onClick: function onClick() {
-      setIsPlaying(false);
-      setSelectedPart(selectedPart - 1);
-    }
-  }, /*#__PURE__*/React.createElement(SkipPreviousIcon, {
-    fontSize: "inherit"
-  })), /*#__PURE__*/React.createElement(IconButton, {
-    "aria-label": "delete",
-    size: "large"
-    // primary
-    ,
-    color: "primary",
-    onClick: function onClick() {
-      return setIsPlaying(!isPlaying);
-    }
-  }, isPlaying ? /*#__PURE__*/React.createElement(PauseIcon, {
-    fontSize: "inherit"
-  }) : /*#__PURE__*/React.createElement(PlayArrowIcon, {
-    fontSize: "inherit"
-  })), /*#__PURE__*/React.createElement(IconButton, {
-    "aria-label": "delete",
-    size: "large",
-    onClick: function onClick() {
-      setIsPlaying(false);
-      setSelectedPart(selectedPart + 1);
-    }
-  }, /*#__PURE__*/React.createElement(SkipNextIcon, {
-    fontSize: "inherit"
-  }))))));
-});
 ;// CONCATENATED MODULE: ./src/components/pages/webrtc/WebRTC.js
 function WebRTC_typeof(o) { "@babel/helpers - typeof"; return WebRTC_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, WebRTC_typeof(o); }
 function WebRTC_regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ WebRTC_regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == WebRTC_typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw new Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(WebRTC_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw new Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
@@ -10400,6 +10876,8 @@ function WebRTC_unsupportedIterableToArray(o, minLen) { if (!o) return; if (type
 function WebRTC_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function WebRTC_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function WebRTC_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
 
 
 
@@ -10642,7 +11120,7 @@ function WebRTC_Maintainance() {
       textAlign: "center",
       padding: 20
     }
-  }, /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }, /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -10655,15 +11133,27 @@ function WebRTC_Maintainance() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: console.log,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Upload/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
+        "aria-label": "toggle password visibility",
+        onClick: console.log,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Download/* default */.c, null))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCreateOffer,
         edge: "end"
-      }, /*#__PURE__*/index_js_default().createElement(Refresh/* default */.c, null)))
+      }, /*#__PURE__*/index_js_default().createElement(Refresh/* default */.c, null))))
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -10676,15 +11166,15 @@ function WebRTC_Maintainance() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCreateOffer,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Refresh/* default */.c, null)))
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -10697,15 +11187,15 @@ function WebRTC_Maintainance() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleAnswer,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Refresh/* default */.c, null)))
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -10718,15 +11208,15 @@ function WebRTC_Maintainance() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleRemoteAnswer,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Refresh/* default */.c, null)))
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -10739,15 +11229,15 @@ function WebRTC_Maintainance() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCreateOffer,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Refresh/* default */.c, null)))
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -10760,15 +11250,15 @@ function WebRTC_Maintainance() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCreateOffer,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Refresh/* default */.c, null)))
     }
-  }), /*#__PURE__*/index_js_default().createElement(TextField_TextField/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(TextField/* default */.c, {
     variant: "outlined",
     margin: "normal",
     fullWidth: true,
@@ -10781,22 +11271,24 @@ function WebRTC_Maintainance() {
     },
     autoComplete: "off",
     InputProps: {
-      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment_InputAdornment/* default */.c, {
+      endAdornment: /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.c, {
         position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton_IconButton/* default */.c, {
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         "aria-label": "toggle password visibility",
         onClick: handleCreateOffer,
         edge: "end"
       }, /*#__PURE__*/index_js_default().createElement(Refresh/* default */.c, null)))
     }
-  }), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+  }), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
     variant: "contained",
     component: "label",
     fullWidth: true,
     onClick: function onClick() {
       dc.send(message);
     }
-  }, "send"),  false && /*#__PURE__*/0));
+  }, "send"),  true && /*#__PURE__*/index_js_default().createElement(QRInput, {
+    defaultValue: "hello world"
+  })));
 }
 ;// CONCATENATED MODULE: ./src/components/pages/layout/Layout.js
 function Layout_slicedToArray(arr, i) { return Layout_arrayWithHoles(arr) || Layout_iterableToArrayLimit(arr, i) || Layout_unsupportedIterableToArray(arr, i) || Layout_nonIterableRest(); }
@@ -12308,7 +12800,7 @@ function ErrorBoundary(props) {
   try {
     if (hasError) {
       // You can customize the error message and UI here
-      return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement("h1", null, "Something went wrong!"), /*#__PURE__*/index_js_default().createElement("p", null, error.toString()), /*#__PURE__*/index_js_default().createElement(Button_Button/* default */.c, {
+      return /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement("h1", null, "Something went wrong!"), /*#__PURE__*/index_js_default().createElement("p", null, error.toString()), /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
         type: "button",
         fullWidth: true,
         variant: "contained",
@@ -19444,10 +19936,10 @@ i18next__WEBPACK_IMPORTED_MODULE_0__/* ["default"].use */ .cp.use(i18next_browse
             shareLink: "Share link to connect",
             shareToConnect: "Share to connect",
             enterLink: "Enter link from peer to connect",
-            shareQr: "Connect by QR",
+            shareQr: "Connect by online QR",
             scanQr: "Scan QR code from peer to connect",
             stopScanning: "Stop Scanning",
-            shareWebRtcQr: "Connect by WebRTC"
+            shareWebRtcQr: "Connect by offline QR"
           },
           menuItems: {
             info: "Info",
