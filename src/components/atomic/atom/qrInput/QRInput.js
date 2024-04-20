@@ -17,6 +17,8 @@ import PauseIcon from "@mui/icons-material/Pause";
 import Slider from "@mui/material/Slider";
 import Typography from "@mui/material/Typography";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import DownloadIcon from "@mui/icons-material/Download";
+import UploadIcon from "@mui/icons-material/Upload";
 
 const useStyles = makeStyles((theme) => ({
   qrcodeReader: {
@@ -30,15 +32,19 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default ({ defaultValue }) => {
+export default ({ value: controlledValue, defaultValue, qr, scan, back, next, onScan }) => {
     const classes = useStyles();
-  const [isQRMode, setIsQRMode] = useState(false);
-  const [scanning, setScanning] = useState(false);
+  const [isQRMode, setIsQRMode] = useState(qr);
+  const [scanning, setScanning] = useState(scan);
   const [fileParts, setFileParts] = useState([]);
   const [selectedPart, setSelectedPart] = useState(0);
   const [partDensity, setPartDensity] = useState(100);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [value, setValue] = useState(defaultValue || "");
+  const [value, setValue] = useState(controlledValue || defaultValue || "");
+
+  useEffect(() => {
+    if (controlledValue) setValue(controlledValue);
+  }, [controlledValue]);
 
   useEffect(() => {
     const partSize = partDensity;
@@ -74,7 +80,8 @@ export default ({ defaultValue }) => {
       const content = fileParts.reduce((acc, part) => acc + part.data, "");
 
       setValue(content);
-      setScanning(false);
+      if (onScan) onScan(content);
+      if (!scan) setScanning(false);
       setFileParts([]);
     }
   }, [fileParts]);
@@ -97,11 +104,13 @@ export default ({ defaultValue }) => {
     );
   };
 
+  console.log({ value })
+
   return (
     <>
       {(!!true || !isQRMode) && (
         <Accordion
-        expanded={isQRMode}
+        expanded={isQRMode || scanning}
       >
         <AccordionSummary
         aria-controls="panel4bh-content"
@@ -119,17 +128,39 @@ export default ({ defaultValue }) => {
           InputProps={{
             endAdornment: (
                 <>
-                {!!value && (<InputAdornment position="end">
-                  <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={() => handleCopyToClipboard()}
-                    edge="end"
-                  >
-                    <ContentCopyIcon />
-                  </IconButton>
-                </InputAdornment>)}
+                {!!value && (
+                  <>
+                  <InputAdornment position="end">
+                            <IconButton
+                            aria-label="toggle password visibility"
+                            onClick={console.log}
+                            edge="end"
+                            >
+                            <UploadIcon />
+                            </IconButton>
+                        </InputAdornment>
+                        <InputAdornment position="end">
+                            <IconButton
+                            aria-label="toggle password visibility"
+                            onClick={console.log}
+                            edge="end"
+                            >
+                            <DownloadIcon />
+                            </IconButton>
+                        </InputAdornment>
+                  <InputAdornment position="end">
+                    <IconButton
+                      aria-label="toggle password visibility"
+                      onClick={() => handleCopyToClipboard()}
+                      edge="end"
+                    >
+                      <ContentCopyIcon />
+                    </IconButton>
+                  </InputAdornment>
+                  </>
+              )}
 
-              <InputAdornment position="end">
+              {!qr && !scan && (<InputAdornment position="end">
                 <IconButton
                   aria-label="toggle password visibility"
                   onClick={() => {
@@ -142,7 +173,7 @@ export default ({ defaultValue }) => {
                 >
                   <QrCode2Icon />
                 </IconButton>
-              </InputAdornment>
+              </InputAdornment>)}
                 </>
             ),
           }}
@@ -176,18 +207,31 @@ export default ({ defaultValue }) => {
               }}
             />
           )}
-          <Button
-        type="button"
-        fullWidth
-        variant="contained"
-        onClick={() => {
-            setFileParts([]);
-            setScanning(!scanning)
-        }}
-        color={scanning ? "error" : "primary"}
-      >
-        {scanning ? ("Stop Scanning") : "Scan QR"}
-      </Button>
+          {!qr && !scan && (<Button
+            type="button"
+            fullWidth
+            variant="contained"
+            onClick={() => {
+                setFileParts([]);
+                setScanning(!scanning)
+            }}
+            color={scanning ? "error" : "primary"}
+          >
+            {scanning ? ("Stop Scanning") : "Scan QR"}
+          </Button>)}
+
+          {!!back && (<Button
+            type="button"
+            fullWidth
+            variant="contained"
+            onClick={() => {
+                back()
+            }}
+            color={scanning ? "error" : "primary"}
+          >
+            cancel
+          </Button>)}
+
       {(!scanning && fileParts.length > 1) && (
               <>
                 <Typography gutterBottom>Seek Part</Typography>
@@ -239,6 +283,18 @@ export default ({ defaultValue }) => {
                 >
                   <SkipNextIcon fontSize="inherit" />
                 </IconButton>
+
+                {!!next && (<Button
+                  type="button"
+                  fullWidth
+                  variant="contained"
+                  onClick={() => {
+                      next()
+                  }}
+                  color={scanning ? "error" : "primary"}
+                >
+                  next stage
+                </Button>)}
               </>
             )}
       </AccordionDetails>
