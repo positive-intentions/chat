@@ -1214,7 +1214,7 @@ function WebRTCWizard_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; 
     scan: true,
     onScan: function onScan(data) {
       setRemotePublicKey(data);
-      setMode('shareSymmetricKey');
+      setMode('sharePublicKeyAndSymmetricKey');
     },
     back: function back() {
       return setMode('createAnswer');
@@ -1232,7 +1232,7 @@ function WebRTCWizard_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; 
     back: function back() {
       return setMode('scanPublicKey');
     }
-  }), mode === "sharePUblicKeyAndSymmetricKey" && /*#__PURE__*/index_js_default().createElement(QRInput, {
+  }), mode === "sharePublicKeyAndSymmetricKey" && /*#__PURE__*/index_js_default().createElement(QRInput, {
     value: JSON.stringify({
       publicKey: publicKey,
       symmetricKey: symmetricKey
