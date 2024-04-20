@@ -25,10 +25,10 @@ i18n
               shareLink: "Share link to connect",
               shareToConnect: "Share to connect",
               enterLink: "Enter link from peer to connect",
-              shareQr: "Connect by QR",
+              shareQr: "Connect by online QR",
               scanQr: "Scan QR code from peer to connect",
               stopScanning: "Stop Scanning",
-              shareWebRtcQr: "Connect by WebRTC",
+              shareWebRtcQr: "Connect by offline QR",
             },
             menuItems: {
               info: "Info",
