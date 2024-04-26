@@ -197,6 +197,7 @@ import dataImportExportImage from "../../../../public/home-icons/data-export-imp
 import noRegistration from "../../../../public/home-icons/no-registration.png";
 import pushNotifications from "../../../../public/home-icons/push-notifications.png";
 import videoCalls from "../../../../public/home-icons/video-calls.png";
+import DocLink from "../../atomic/atom/docLink/DocLink";
 
 import avatar1 from "../../../../public/avatars/1.jpg";
 import avatar2 from "../../../../public/avatars/2.jpg";
@@ -844,6 +845,7 @@ export default function LoginPage() {
           //   icon: 'help',
           //   onClick: () => setActivateNumber(0)
           // }
+          <DocLink key="doc-link" />,
         ],
         menuProps: {
           icon: "more",
