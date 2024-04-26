@@ -53,7 +53,7 @@ export default ({
 
             const serializedPublicKey = await window.crypto.subtle.exportKey(
                 "jwk",
-                publicKey,
+                keyPair.publicKey,
               );
             setSerializedPublicKey(serializedPublicKey);
         }

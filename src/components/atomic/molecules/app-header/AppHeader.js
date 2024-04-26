@@ -597,20 +597,22 @@ export default function AppHeader(
         </Typography>
 
         {customButtons.map((button, index) => {
-          return (
-            <IconButton
-              key={index}
-              ref={menuRef}
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={button.onClick}
-              color="inherit"
-            >
-              {presetIcons[button.icon]}
-            </IconButton>
-          );
+          return button.onClick
+            ? (
+              <IconButton
+                key={index}
+                ref={menuRef}
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={button.onClick}
+                color="inherit"
+              >
+                {presetIcons[button.icon]}
+              </IconButton>
+            )
+            : button;
         })}
 
         <CustomDropdown menuItems={menuProps} />

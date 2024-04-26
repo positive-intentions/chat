@@ -1,7 +1,7 @@
 "use strict";
 (self["webpackChunkchat"] = self["webpackChunkchat"] || []).push([[877],{
 
-/***/ 48160:
+/***/ 2972:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -919,7 +919,7 @@ function WebRTCWizard_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; 
               setPublicKey(keyPair.publicKey);
               setPrivateKey(keyPair.privateKey);
               _context.next = 7;
-              return window.crypto.subtle.exportKey("jwk", publicKey);
+              return window.crypto.subtle.exportKey("jwk", keyPair.publicKey);
             case 7:
               serializedPublicKey = _context.sent;
               setSerializedPublicKey(serializedPublicKey);
@@ -1554,6 +1554,131 @@ const no_registration_namespaceObject = __webpack_require__.p + "369f792976bcd39
 const push_notifications_namespaceObject = __webpack_require__.p + "fdae8135df8aa32c56bf.png";
 ;// CONCATENATED MODULE: ./public/home-icons/video-calls.png
 const video_calls_namespaceObject = __webpack_require__.p + "9dc5be91906bd2de56fa.png";
+// EXTERNAL MODULE: ./node_modules/@mui/material/styles/styled.js
+var styled = __webpack_require__(6940);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Slide/Slide.js
+var Slide = __webpack_require__(29821);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/QuestionMark.js
+var QuestionMark = __webpack_require__(71544);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Close.js
+var Close = __webpack_require__(47440);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Dialog/Dialog.js + 1 modules
+var Dialog = __webpack_require__(58872);
+// EXTERNAL MODULE: ./node_modules/@mui/material/DialogTitle/DialogTitle.js
+var DialogTitle = __webpack_require__(17729);
+// EXTERNAL MODULE: ./node_modules/@mui/material/DialogContent/DialogContent.js + 1 modules
+var DialogContent = __webpack_require__(12576);
+// EXTERNAL MODULE: ./node_modules/@mui/material/DialogActions/DialogActions.js + 1 modules
+var DialogActions = __webpack_require__(53328);
+;// CONCATENATED MODULE: ./src/components/atomic/atom/docLink/DocLink.js
+function DocLink_slicedToArray(arr, i) { return DocLink_arrayWithHoles(arr) || DocLink_iterableToArrayLimit(arr, i) || DocLink_unsupportedIterableToArray(arr, i) || DocLink_nonIterableRest(); }
+function DocLink_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function DocLink_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return DocLink_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return DocLink_arrayLikeToArray(o, minLen); }
+function DocLink_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function DocLink_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function DocLink_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+
+
+
+
+
+
+
+
+var BootstrapDialog = (0,styled/* default */.cp)(Dialog/* default */.c)(function (_ref) {
+  var theme = _ref.theme;
+  return {
+    "& .MuiDialogContent-root": {
+      padding: theme.spacing(2),
+      minHeight: '70vh',
+      maxHeight: '70vh',
+      display: 'flex',
+      flexDirection: 'column'
+    },
+    "& .MuiDialogActions-root": {
+      padding: theme.spacing(1)
+    },
+    "iframe": {
+      width: "100%",
+      height: "100%",
+      backgroundColor: "white",
+      // flex-grow: 1; border: none; margin: 0; padding: 0;
+      flexGrow: 1,
+      border: 'none',
+      margin: 0
+    }
+  };
+});
+var Transition = /*#__PURE__*/index_js_default().forwardRef(function Transition(props, ref) {
+  return /*#__PURE__*/index_js_default().createElement(Slide/* default */.c, _extends({
+    direction: "up",
+    ref: ref
+  }, props));
+});
+/* harmony default export */ const DocLink = (function (_ref2) {
+  var _ref2$size = _ref2.size,
+    size = _ref2$size === void 0 ? 'large' : _ref2$size,
+    _ref2$docLink = _ref2.docLink,
+    docLink = _ref2$docLink === void 0 ? 'https://positive-intentions.com/docs/basics/getting-started/' : _ref2$docLink;
+  var _useState = (0,index_js_.useState)(false),
+    _useState2 = DocLink_slicedToArray(_useState, 2),
+    open = _useState2[0],
+    setOpen = _useState2[1];
+  var handleClose = function handleClose() {
+    return setOpen(false);
+  };
+  var handleOpen = function handleOpen() {
+    return setOpen(true);
+  };
+  return /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
+    size: size,
+    "aria-label": "account of current user",
+    "aria-controls": "menu-appbar",
+    "aria-haspopup": "true",
+    color: "inherit",
+    onClick: handleOpen
+  }, /*#__PURE__*/index_js_default().createElement(QuestionMark/* default */.c, null)), /*#__PURE__*/index_js_default().createElement(BootstrapDialog, {
+    onClose: handleClose,
+    "aria-labelledby": "customized-dialog-title",
+    open: open,
+    TransitionComponent: Transition,
+    disablePortal: true,
+    fullWidth: true,
+    fullHeight: true
+  }, /*#__PURE__*/index_js_default().createElement(DialogTitle/* default */.c, {
+    sx: {
+      m: 0,
+      p: 2
+    },
+    id: "customized-dialog-title"
+  }, "Docs"), /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
+    "aria-label": "close",
+    onClick: handleClose,
+    sx: {
+      position: "absolute",
+      right: 8,
+      top: 8,
+      color: function color(theme) {
+        return theme.palette.grey[500];
+      }
+    }
+  }, /*#__PURE__*/index_js_default().createElement(Close/* default */.c, null)), /*#__PURE__*/index_js_default().createElement(DialogContent/* default */.c, {
+    dividers: true
+  }, /*#__PURE__*/index_js_default().createElement("iframe", {
+    src: docLink,
+    width: "80vw",
+    height: "100%",
+    frameBorder: "0",
+    title: "Docs"
+  })), /*#__PURE__*/index_js_default().createElement(DialogActions/* default */.c, null, /*#__PURE__*/index_js_default().createElement(Button/* default */.c, {
+    autoFocus: true,
+    onClick: handleClose
+  }, "close"))));
+});
 ;// CONCATENATED MODULE: ./public/avatars/1.jpg
 const _1_namespaceObject = __webpack_require__.p + "9ea0e16afc9516dcea53.jpg";
 ;// CONCATENATED MODULE: ./public/avatars/2.jpg
@@ -1757,6 +1882,7 @@ function Login_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 // import {Adsense} from '@ctrl/react-adsense';
+
 
 
 
@@ -2445,11 +2571,14 @@ function LoginPage() {
     headerProps: {
       title: pageTitle,
       customButtons: [
-        // {
-        //   icon: 'help',
-        //   onClick: () => setActivateNumber(0)
-        // }
-      ],
+      /*#__PURE__*/
+      // {
+      //   icon: 'help',
+      //   onClick: () => setActivateNumber(0)
+      // }
+      index_js_default().createElement(DocLink, {
+        key: "doc-link"
+      })],
       menuProps: {
         icon: "more",
         ref: ref1,
@@ -2758,8 +2887,6 @@ var List = __webpack_require__(35800);
 var ListItem = __webpack_require__(11448);
 // EXTERNAL MODULE: ./node_modules/@mui/material/ListItemText/ListItemText.js
 var ListItemText = __webpack_require__(39760);
-// EXTERNAL MODULE: ./node_modules/@mui/material/styles/styled.js
-var styled = __webpack_require__(6940);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Badge/Badge.js + 3 modules
 var Badge = __webpack_require__(12056);
 // EXTERNAL MODULE: ./node_modules/@mui/material/ListItemIcon/ListItemIcon.js
@@ -3599,18 +3726,6 @@ var calculateSha256 = __webpack_require__(49360);
 var storageSlice = __webpack_require__(16864);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Mic.js
 var Mic = __webpack_require__(64260);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Slide/Slide.js
-var Slide = __webpack_require__(29821);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Dialog/Dialog.js + 1 modules
-var Dialog = __webpack_require__(58872);
-// EXTERNAL MODULE: ./node_modules/@mui/material/DialogTitle/DialogTitle.js
-var DialogTitle = __webpack_require__(17729);
-// EXTERNAL MODULE: ./node_modules/@mui/material/DialogContent/DialogContent.js + 1 modules
-var DialogContent = __webpack_require__(12576);
-// EXTERNAL MODULE: ./node_modules/@mui/material/DialogActions/DialogActions.js + 1 modules
-var DialogActions = __webpack_require__(53328);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Close.js
-var Close = __webpack_require__(47440);
 ;// CONCATENATED MODULE: ./src/components/atomic/atom/voiceRecorder/VoiceRecorder.js
 function VoiceRecorder_slicedToArray(arr, i) { return VoiceRecorder_arrayWithHoles(arr) || VoiceRecorder_iterableToArrayLimit(arr, i) || VoiceRecorder_unsupportedIterableToArray(arr, i) || VoiceRecorder_nonIterableRest(); }
 function VoiceRecorder_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -3706,7 +3821,7 @@ function Pod_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof 
 function Pod_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function Pod_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function Pod_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function Pod_extends() { Pod_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Pod_extends.apply(this, arguments); }
 // import React, { useEffect, useState } from "react";
 // // import {
 // //     Avatar,
@@ -4421,7 +4536,7 @@ var Pod_useStyles = (0,makeStyles/* default */.c)(function (theme) {
     }
   };
 });
-var BootstrapDialog = (0,styled/* default */.cp)(Dialog/* default */.c)(function (_ref) {
+var Pod_BootstrapDialog = (0,styled/* default */.cp)(Dialog/* default */.c)(function (_ref) {
   var theme = _ref.theme;
   return {
     "& .MuiDialogContent-root": {
@@ -4433,8 +4548,8 @@ var BootstrapDialog = (0,styled/* default */.cp)(Dialog/* default */.c)(function
     }
   };
 });
-var Transition = /*#__PURE__*/index_js_default().forwardRef(function Transition(props, ref) {
-  return /*#__PURE__*/index_js_default().createElement(Slide/* default */.c, _extends({
+var Pod_Transition = /*#__PURE__*/index_js_default().forwardRef(function Transition(props, ref) {
+  return /*#__PURE__*/index_js_default().createElement(Slide/* default */.c, Pod_extends({
     direction: "up",
     ref: ref
   }, props));
@@ -5327,11 +5442,11 @@ function Pod() {
     inputProps: {
       "aria-label": "weight"
     }
-  }))), /*#__PURE__*/index_js_default().createElement(BootstrapDialog, {
+  }))), /*#__PURE__*/index_js_default().createElement(Pod_BootstrapDialog, {
     onClose: handleClose,
     "aria-labelledby": "customized-dialog-title",
     open: open || activeCalls.length > 0,
-    TransitionComponent: Transition
+    TransitionComponent: Pod_Transition
   }, /*#__PURE__*/index_js_default().createElement(DialogTitle/* default */.c, {
     sx: {
       m: 0,
@@ -13006,8 +13121,8 @@ var Button = function Button(_ref) {
   return /*#__PURE__*/React.createElement("button", rest);
 };
 /* harmony default export */ const Example = ((/* unused pure expression or super */ null && (Button)));
-// EXTERNAL MODULE: ./src/App.tsx + 69 modules
-var src_App = __webpack_require__(48160);
+// EXTERNAL MODULE: ./src/App.tsx + 70 modules
+var src_App = __webpack_require__(2972);
 ;// CONCATENATED MODULE: ./src/bootstrap.tsx
 
 
@@ -14755,8 +14870,8 @@ var QuestionMark = __webpack_require__(71544);
 var ConnectWithoutContact = __webpack_require__(64248);
 // EXTERNAL MODULE: ./node_modules/react-i18next/dist/es/index.js + 15 modules
 var es = __webpack_require__(70100);
-// EXTERNAL MODULE: ./src/App.tsx + 69 modules
-var App = __webpack_require__(48160);
+// EXTERNAL MODULE: ./src/App.tsx + 70 modules
+var App = __webpack_require__(2972);
 // EXTERNAL MODULE: ./node_modules/@mui/material/styles/useTheme.js
 var useTheme = __webpack_require__(42592);
 // EXTERNAL MODULE: ./src/components/notifications/notificationManager.js
@@ -15328,7 +15443,7 @@ function AppHeader(_ref4) {
         textOverflow: "ellipsis"
       }
     }, title), customButtons.map(function (button, index) {
-      return /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
+      return button.onClick ? /*#__PURE__*/index_js_default().createElement(IconButton/* default */.c, {
         key: index,
         ref: menuRef,
         size: "large",
@@ -15337,7 +15452,7 @@ function AppHeader(_ref4) {
         "aria-haspopup": "true",
         onClick: button.onClick,
         color: "inherit"
-      }, presetIcons[button.icon]);
+      }, presetIcons[button.icon]) : button;
     }), /*#__PURE__*/index_js_default().createElement(CustomDropdown, {
       menuItems: menuProps
     })));
