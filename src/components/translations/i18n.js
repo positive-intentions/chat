@@ -35,6 +35,9 @@ i18n
               about: "About",
               docs: "Docs",
               github: "Github",
+              kofi: "Ko-fi",
+              openCollective: "Open Collective",
+              patreon: "Patreon",
               reddit: "Reddit",
               youtube: "Youtube",
               options: "Options",
@@ -46,7 +49,7 @@ i18n
               install: "Install app",
               downloadZip: "Download .zip",
               labs: "Labs",
-              sponsor: "Sponsor",
+              sponsor: "Donate",
               contact: "Contact",
               requestingToInstall: "Requesting browser to install app",
               installPossible:

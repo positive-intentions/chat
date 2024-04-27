@@ -4,7 +4,7 @@
 /***/ 79628:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.all(/* import() */[__webpack_require__.e(32), __webpack_require__.e(877)]).then(__webpack_require__.bind(__webpack_require__, 4840));
+Promise.all(/* import() */[__webpack_require__.e(12), __webpack_require__.e(877)]).then(__webpack_require__.bind(__webpack_require__, 4840));
 
 /***/ }),
 

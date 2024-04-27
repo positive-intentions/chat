@@ -52,8 +52,11 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import Download from "@mui/icons-material/DownloadForOffline";
+import DataSaverOffIcon from '@mui/icons-material/DataSaverOff';
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import CoffeeIcon from '@mui/icons-material/Coffee';
+import LocalParkingIcon from '@mui/icons-material/LocalParking';
 import NavigationIcon from "@mui/icons-material/Navigation";
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 import WavingHandIcon from '@mui/icons-material/WavingHand';
@@ -108,6 +111,14 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   },
 }));
 
+const OpenCollectiveIcon = () => (
+  <DataSaverOffIcon
+    style={{
+      transform: "rotate(30deg)",
+    }}
+  />
+);
+
 const presetIcons = {
   account: <AccountCircle />,
   arrowBack: <ArrowBackIcon />,
@@ -147,6 +158,9 @@ const presetIcons = {
   map: <NavigationIcon />,
   donate: <VolunteerActivismIcon />,
   key: <KeyIcon />,
+  coffee: <CoffeeIcon />,
+  openCollective: <OpenCollectiveIcon />,
+  patreon: <LocalParkingIcon />,
 };
 
 function HideOnScroll(props) {
@@ -415,7 +429,28 @@ const CustomDropdown = ({ menuItems }) => {
     {
       text: t("components.menuItems.sponsor"),
       icon: "donate",
-      onClick: () => window.open("https://github.com/sponsors/positive-intentions"),
+      subMenuItems: [
+        {
+            text: t("components.menuItems.github"),
+            icon: "github",
+            onClick: () => window.open("https://github.com/sponsors/positive-intentions"),
+        },
+        {
+            text: t("components.menuItems.kofi"),
+            icon: "coffee",
+            onClick: () => window.open("https://ko-fi.com/positive_intentions"),
+        },
+        {
+            text: t("components.menuItems.openCollective"),
+            icon: "openCollective",
+            onClick: () => window.open("https://opencollective.com/positive-intentions"),
+        },
+        {
+            text: t("components.menuItems.patreon"),
+            icon: "patreon",
+            onClick: () => window.open("https://www.patreon.com/positive_intentions"),
+        }
+      ],
     }
   ];
 
