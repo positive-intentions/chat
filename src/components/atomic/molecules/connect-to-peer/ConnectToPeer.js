@@ -332,7 +332,7 @@ const ConnectToPeer = ({ qr, open, link, collapse }) => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <WebRTCWizard />
+            {expanded.includes("panel5") && (<WebRTCWizard />)}
           </AccordionDetails>
         </Accordion>)}
       </AccordionDetails>
