@@ -1537,7 +1537,7 @@ var ConnectToPeer = function ConnectToPeer(_ref) {
     sx: {
       flexShrink: 0
     }
-  }, t("components.connectToPeer.shareWebRtcQr"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, /*#__PURE__*/index_js_default().createElement(WebRTCWizard, null)))));
+  }, t("components.connectToPeer.shareWebRtcQr"))), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.c, null, expanded.includes("panel5") && /*#__PURE__*/index_js_default().createElement(WebRTCWizard, null)))));
 };
 /* harmony default export */ const connect_to_peer_ConnectToPeer = (ConnectToPeer);
 ;// CONCATENATED MODULE: ./public/logo512.png
@@ -14856,8 +14856,14 @@ var LiveTv = __webpack_require__(68664);
 var ContactPhone = __webpack_require__(51424);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/DownloadForOffline.js
 var DownloadForOffline = __webpack_require__(28411);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/DataSaverOff.js
+var DataSaverOff = __webpack_require__(76076);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/VolunteerActivism.js
 var VolunteerActivism = __webpack_require__(40628);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Coffee.js
+var Coffee = __webpack_require__(39920);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/LocalParking.js
+var LocalParking = __webpack_require__(79128);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Navigation.js
 var Navigation = __webpack_require__(12520);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/PrivacyTip.js
@@ -14963,6 +14969,9 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
+
 var StyledBadge = (0,styled/* default */.cp)(Badge/* default */.c)(function (_ref) {
   var theme = _ref.theme;
   return {
@@ -15000,6 +15009,13 @@ var StyledBadge = (0,styled/* default */.cp)(Badge/* default */.c)(function (_re
     }
   };
 });
+var OpenCollectiveIcon = function OpenCollectiveIcon() {
+  return /*#__PURE__*/index_js_default().createElement(DataSaverOff/* default */.c, {
+    style: {
+      transform: "rotate(30deg)"
+    }
+  });
+};
 var presetIcons = {
   account: /*#__PURE__*/index_js_default().createElement(AccountCircle/* default */.c, null),
   arrowBack: /*#__PURE__*/index_js_default().createElement(ArrowBack/* default */.c, null),
@@ -15038,7 +15054,10 @@ var presetIcons = {
   hand: /*#__PURE__*/index_js_default().createElement(WavingHand/* default */.c, null),
   map: /*#__PURE__*/index_js_default().createElement(Navigation/* default */.c, null),
   donate: /*#__PURE__*/index_js_default().createElement(VolunteerActivism/* default */.c, null),
-  key: /*#__PURE__*/index_js_default().createElement(Key/* default */.c, null)
+  key: /*#__PURE__*/index_js_default().createElement(Key/* default */.c, null),
+  coffee: /*#__PURE__*/index_js_default().createElement(Coffee/* default */.c, null),
+  openCollective: /*#__PURE__*/index_js_default().createElement(OpenCollectiveIcon, null),
+  patreon: /*#__PURE__*/index_js_default().createElement(LocalParking/* default */.c, null)
 };
 function HideOnScroll(props) {
   var children = props.children,
@@ -15311,9 +15330,31 @@ var CustomDropdown = function CustomDropdown(_ref2) {
   }, {
     text: t("components.menuItems.sponsor"),
     icon: "donate",
-    onClick: function onClick() {
-      return window.open("https://github.com/sponsors/positive-intentions");
-    }
+    subMenuItems: [{
+      text: t("components.menuItems.github"),
+      icon: "github",
+      onClick: function onClick() {
+        return window.open("https://github.com/sponsors/positive-intentions");
+      }
+    }, {
+      text: t("components.menuItems.kofi"),
+      icon: "coffee",
+      onClick: function onClick() {
+        return window.open("https://ko-fi.com/positive_intentions");
+      }
+    }, {
+      text: t("components.menuItems.openCollective"),
+      icon: "openCollective",
+      onClick: function onClick() {
+        return window.open("https://opencollective.com/positive-intentions");
+      }
+    }, {
+      text: t("components.menuItems.patreon"),
+      icon: "patreon",
+      onClick: function onClick() {
+        return window.open("https://www.patreon.com/positive_intentions");
+      }
+    }]
   }];
   return /*#__PURE__*/index_js_default().createElement(Dropdown/* Dropdown */.cS, {
     keepOpen: true,
@@ -20061,6 +20102,9 @@ i18next__WEBPACK_IMPORTED_MODULE_0__/* ["default"].use */ .cp.use(i18next_browse
             about: "About",
             docs: "Docs",
             github: "Github",
+            kofi: "Ko-fi",
+            openCollective: "Open Collective",
+            patreon: "Patreon",
             reddit: "Reddit",
             youtube: "Youtube",
             options: "Options",
@@ -20072,7 +20116,7 @@ i18next__WEBPACK_IMPORTED_MODULE_0__/* ["default"].use */ .cp.use(i18next_browse
             install: "Install app",
             downloadZip: "Download .zip",
             labs: "Labs",
-            sponsor: "Sponsor",
+            sponsor: "Donate",
             contact: "Contact",
             requestingToInstall: "Requesting browser to install app",
             installPossible: "👍 Install possible. Try from your browser settings.",

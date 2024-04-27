@@ -115,7 +115,6 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 const OpenCollectiveIcon = () => (
   <DataSaverOffIcon
     style={{
-      //rotate 45 degrees
       transform: "rotate(30deg)",
     }}
   />

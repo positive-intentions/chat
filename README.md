@@ -59,47 +59,6 @@ This will start the development server and open the app in your default browser.
 
 👾 **Tech for the Future**: Beyond chat, we're exploring virtual reality, enabling users to share 3D positions and live video streams within VR environments. Imagine socializing in a virtual space that's as easy to access as opening your browser.
 
-### Architecture
-
-```mermaid
-graph TD;
-    S3[AWS S3 - Static Content Hosting] -->|Serves HTML, CSS, JS| UA[User's Browser - PWA]
-    UA -->|Initiates Connection| PS[PeerJS Server - Connection Orchestration]
-    UA -->|Logs Events| NA[nLevel Analytics - Logging & Monitoring]
-    UA -->|Fetches Map Data| OSM[openstreetmap.org - Map Service]
-    PS -->|Establishes WebRTC Connections| UA
-    UA -->|Direct P2P Communication| UA
-    style S3 fill:#f9f,stroke:#333,stroke-width:2px,color:black
-    style PS fill:#ccf,stroke:#333,stroke-width:2px,color:black
-    style NA fill:#cfc,stroke:#333,stroke-width:2px,color:black
-    style OSM fill:#fcf,stroke:#333,stroke-width:2px,color:black
-    style UA fill:#ff9,stroke:#333,stroke-width:2px,color:black
-
-```
-
-### Authentication sequence
-
-```mermaid
-sequenceDiagram
-    participant U1 as User 1 (Peer1)
-    participant PS as PeerJS Server
-    participant U2 as User 2 (Peer2)
-    U1->>PS: Connects & Generates random Peer ID
-    PS->>U1: Acknowledges Connection
-    U1->>U2: Connects using Peer ID of User 2
-    U1->>U1: Generates Public-Private Key Pair
-    U2->>U2: Generates Public-Private Key Pair
-    U1->>U2: Sends Public Key to User 2
-    U2->>U2: Generates Symmetric Key
-    U2->>U1: Sends Symmetric Key & Public Key (encrypted with User 1's Public Key)
-    U1->>U1: Decrypts received keys using Private Key
-    U1->>U1: Stores Symmetric Key & Peer Public Key in Browser Storage
-    U2->>U2: Stores Symmetric Key & Peer Public Key in Browser Storage
-    U1->>U2: Sends Encrypted Message (using Symmetric Key)
-    U2->>U2: Receives and Decrypts Message
-
-```
-
 ### Join Us on This Journey
 
 Pushing the boundaries of what's possible with current web technologies to create a chat app that prioritizes user empowerment and privacy. But this is just the beginning. With your support, we can explore new features, refine the user experience, and expand the app's capabilities.
