@@ -75,7 +75,6 @@ import {
   DropdownMenuItem,
   DropdownNestedMenuItem,
 } from "../../../atomic/atom/dropdown/Dropdown";
-import { icon } from "leaflet";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
