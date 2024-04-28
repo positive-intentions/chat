@@ -1,6 +1,5 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-// import Example from "./stories/components/Example.tsx";
 import MainApp from "./App.tsx";
 
 export const App = () => {
