@@ -22,6 +22,7 @@ import { ColorModeContext } from "../../../App.tsx";
 import { t } from "i18next";
 import { logToNLevelAnalytics } from "../../utils/analytics";
 import { CoachMark } from "react-coach-mark";
+import DocLink from "../../atomic/atom/docLink/DocLink";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -406,10 +407,11 @@ export default function Pods() {
         //   alt: "random"
         // },
         customButtons: [
-          {
-            icon: "help",
-            onClick: () => setActivateNumber(0),
-          },
+          // {
+          //   icon: "help",
+          //   onClick: () => setActivateNumber(0),
+          // },
+          <DocLink key="docs" docLink="https://positive-intentions.com/docs/basics/pods" />,
         ],
         menuProps: {
           icon: "more",

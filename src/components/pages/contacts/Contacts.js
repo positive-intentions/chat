@@ -129,6 +129,7 @@ import { ColorModeContext } from "../../../App.tsx";
 import { useTranslation } from "react-i18next";
 import { logToNLevelAnalytics } from "../../../components/utils/analytics";
 import { CoachMark } from "react-coach-mark";
+import DocLink from "../../atomic/atom/docLink/DocLink";
 import hipaintImage from "../../../../public/logo512.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -306,10 +307,11 @@ export default function ContactsListPage({ headerOverride }) {
         //   ]
         // }
         customButtons: [
-          {
-            icon: "help",
-            onClick: () => setActivateNumber(0),
-          },
+          // {
+          //   icon: "help",
+          //   onClick: () => setActivateNumber(0),
+          // },
+          <DocLink key="docLink" docLink="https://positive-intentions.com/docs/basics/peers" />,
         ],
         menuProps: {
           icon: "more",
