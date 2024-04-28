@@ -9,6 +9,9 @@ jobs:
   trigger_workflow:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Echo Workflow name
         shell: bash
         run: |
