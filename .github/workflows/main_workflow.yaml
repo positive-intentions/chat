@@ -9,20 +9,32 @@ jobs:
   trigger_workflow:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo Workflow name
-        shell: bash
-        run: |
-          echo "I am Workflow of Parent REPO"
-      - name: Trigger child repo workflow
-        uses: convictional/trigger-workflow-and-wait@v1.6.1
+      # - name: Echo Workflow name
+      #   shell: bash
+      #   run: |
+      #     echo "I am Workflow of Parent REPO"
+
+      - uses: actions/upload-artifact@v4
         with:
-          owner: positive-intentions
-          repo: chat-app
-          github_token: ${{ secrets.ACTIONS_KEY }}
-          workflow_file_name: child_workflow.yml
-          ref: staging
-          wait_interval: 10
-          propagate_failure: true
-          trigger_workflow: true
-          wait_workflow: true
+          # A file, directory or wildcard pattern that describes what to upload
+          # Required.
+          path: ./Frontend
+      
+          # If true, an artifact with a matching name will be deleted before a new one is uploaded.
+          # If false, the action will fail if an artifact for the given name already exists.
+          # Does not fail if the artifact does not exist.
+          # Optional. Default is 'false'
+          overwrite: true
+      # - name: Trigger deployment repo workflow
+      #   uses: convictional/trigger-workflow-and-wait@v1.6.1
+      #   with:
+      #     owner: positive-intentions
+      #     repo: chat-app
+      #     github_token: ${{ secrets.ACTIONS_KEY }}
+      #     workflow_file_name: child_workflow.yml
+      #     ref: staging
+      #     wait_interval: 10
+      #     propagate_failure: true
+      #     trigger_workflow: true
+      #     wait_workflow: true
           
