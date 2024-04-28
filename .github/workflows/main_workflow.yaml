@@ -9,10 +9,11 @@ jobs:
   trigger_workflow:
     runs-on: ubuntu-latest
     steps:
-      # - name: Echo Workflow name
-      #   shell: bash
-      #   run: |
-      #     echo "I am Workflow of Parent REPO"
+      - name: Echo Workflow name
+        shell: bash
+        run: |
+          echo "I am Workflow of Parent REPO"
+          ls -la
 
       - uses: actions/upload-artifact@v4
         with:
