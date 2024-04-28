@@ -687,6 +687,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import CloseIcon from "@mui/icons-material/Close";
 import VoiceRecorderButton from "../../atomic/atom/voiceRecorder/VoiceRecorder";
+import DocLink from "../../atomic/atom/docLink/DocLink";
 
 const lightBackground = "/backgrounds/light-leaves.png";
 const darkBackground = "/backgrounds/dark-leaves.png";

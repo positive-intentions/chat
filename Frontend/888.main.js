@@ -3256,6 +3256,7 @@ function Pods_toPrimitive(t, r) { if ("object" != Pods_typeof(t) || !t) return t
 
 
 
+
 var Pods_useStyles = (0,makeStyles/* default */.c)(function (theme) {
   return {
     root: {
@@ -3627,12 +3628,16 @@ function Pods() {
       //   src: "https://source.unsplash.com/random/400x200?login",
       //   alt: "random"
       // },
-      customButtons: [{
-        icon: "help",
-        onClick: function onClick() {
-          return setActivateNumber(0);
-        }
-      }],
+      customButtons: [
+      /*#__PURE__*/
+      // {
+      //   icon: "help",
+      //   onClick: () => setActivateNumber(0),
+      // },
+      index_js_default().createElement(DocLink, {
+        key: "docs",
+        docLink: "https://positive-intentions.com/docs/basics/pods"
+      })],
       menuProps: {
         icon: "more",
         ref: ref1,
@@ -4456,6 +4461,7 @@ function Pod_extends() { Pod_extends = Object.assign ? Object.assign.bind() : fu
 //     </>
 //   )
 // }
+
 
 
 
@@ -6045,6 +6051,7 @@ function Contacts_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 var Contacts_useStyles = (0,makeStyles/* default */.c)(function (theme) {
   return {
     appBar: {
@@ -6218,12 +6225,16 @@ function ContactsListPage(_ref) {
       //     { text: 'Profile', icon: 'account', onClick: () => navigate('/profile') },
       //   ]
       // }
-      customButtons: [{
-        icon: "help",
-        onClick: function onClick() {
-          return setActivateNumber(0);
-        }
-      }],
+      customButtons: [
+      /*#__PURE__*/
+      // {
+      //   icon: "help",
+      //   onClick: () => setActivateNumber(0),
+      // },
+      index_js_default().createElement(DocLink, {
+        key: "docLink",
+        docLink: "https://positive-intentions.com/docs/basics/peers"
+      })],
       menuProps: {
         icon: "more",
         items: [{
@@ -13109,7 +13120,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _App_tsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2972);
 
 
-// import Example from "./stories/components/Example.tsx";
 
 var App = function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_App_tsx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .c, null));
