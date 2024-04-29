@@ -29,7 +29,12 @@
     "serve:https": "serve -s Frontend --listen 4433 --ssl-cert ./local-ssl-keys/cert.pem --ssl-key ./local-ssl-keys/key.pem",
     "serve:ssl": "http-server -S -C ./local-ssl-keys/cert.pem -K ./local-ssl-keys/key.pem Frontend",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "docker:build": "sudo docker build -t chat -f docker/Chat.Dockerfile . --no-cache",
+    "docker:run": "sudo docker run --name chat-container -p 1234:80 chat",
+    "docker:stop": "sudo docker stop chat-container",
+    "docker:rm": "sudo docker rm -f chat-container",
+    "docker:exec": "sudo docker exec -it chat-container /bin/sh"
   },
   "author": "",
   "license": "GPL-3.0",
