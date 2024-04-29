@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { HotModuleReplacementPlugin } = require("webpack");
 const { ModuleFederationPlugin } = require("webpack").container;
 const WebpackPwaManifest = require("webpack-pwa-manifest");
+var OfflinePlugin = require('@lcdp/offline-plugin');
+
 const path = require("path");
 
 // const isDevelopment = process.env.NODE_ENV !== "production";
@@ -126,6 +128,7 @@ module.exports = {
       },
       shared: {react: {singleton: true}, "react-dom": {singleton: true}}
     }),
+    new OfflinePlugin()
   ],
   devServer: {
     // Add this configuration to serve the CSS file with the correct MIME type

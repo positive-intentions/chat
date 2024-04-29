@@ -13118,24 +13118,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28352);
 /* harmony import */ var _App_tsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2972);
+/* harmony import */ var _lcdp_offline_plugin_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(64736);
 
 
 
+
+_lcdp_offline_plugin_runtime__WEBPACK_IMPORTED_MODULE_3__/* .install */ .kf();
 var App = function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_App_tsx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .c, null));
 };
 var container = document.getElementById("app");
 var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__/* .createRoot */ .C)(container); // createRoot(container!) if you use TypeScript
 root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(App, null));
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function () {
-    navigator.serviceWorker.register("/service-worker.js").then(function (registration) {
-      console.log("SW registered: ", registration);
-    })["catch"](function (registrationError) {
-      console.log("SW registration failed: ", registrationError);
-    });
-  });
-}
+
+// if ("serviceWorker" in navigator) {
+//   window.addEventListener("load", () => {
+//     navigator.serviceWorker
+//       .register("/service-worker.js")
+//       .then((registration) => {
+//         console.log("SW registered: ", registration);
+//       })
+//       .catch((registrationError) => {
+//         console.log("SW registration failed: ", registrationError);
+//       });
+//   });
+// }
 
 /***/ }),
 
