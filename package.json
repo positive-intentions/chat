@@ -84,9 +84,9 @@
     "workbox-webpack-plugin": "^7.0.0"
   },
   "dependencies": {
-    "@capacitor/android": "^5.7.4",
-    "@capacitor/core": "^5.7.4",
-    "@capacitor/ios": "^5.7.4",
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@fontsource/material-icons": "^5.0.11",
