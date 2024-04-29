@@ -4,6 +4,7 @@ const { HotModuleReplacementPlugin } = require("webpack");
 const { ModuleFederationPlugin } = require("webpack").container;
 const WebpackPwaManifest = require("webpack-pwa-manifest");
 var OfflinePlugin = require('@lcdp/offline-plugin');
+var deps = require('./package.json').dependencies;
 
 const path = require("path");
 
@@ -126,7 +127,16 @@ module.exports = {
         "cryptography": "cryptography@https://cryptography.positive-intentions.com/remoteEntry.js"
         // "cryptography": "cryptography@http://localhost:3000/remoteEntry.js"
       },
-      shared: {react: {singleton: true}, "react-dom": {singleton: true}}
+      shared: {
+        react: {
+          singleton: true,
+          requiredVersion: deps.react,
+        },
+        "react-dom": {
+          singleton: true,
+          requiredVersion: deps["react-dom"],
+        }
+      }
     }),
     new OfflinePlugin()
   ],

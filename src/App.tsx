@@ -135,8 +135,8 @@ const App = () => {
     <React.StrictMode>
       <SnackbarProvider>
         <Redux>
-          <I18nextProvider i18n={i18n}>
             <ReduxConnectedCryptography>
+          <I18nextProvider i18n={i18n}>
               <ReduxConnectedPeerProvider>
                 <ColorModeContext.Provider value={colorMode}>
                   <ThemeProvider theme={theme}>
@@ -148,8 +148,8 @@ const App = () => {
                   </ThemeProvider>
                 </ColorModeContext.Provider>
               </ReduxConnectedPeerProvider>
-            </ReduxConnectedCryptography>
           </I18nextProvider>
+            </ReduxConnectedCryptography>
         </Redux>
       </SnackbarProvider>
     </React.StrictMode>

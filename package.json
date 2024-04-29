@@ -31,7 +31,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "docker:build": "sudo docker build -t chat -f docker/Chat.Dockerfile . --no-cache",
-    "docker:run": "sudo docker run --name chat-container -p 1234:80 chat",
+    "docker:run": "sudo docker run --name chat-container -p 8080:80 chat",
     "docker:stop": "sudo docker stop chat-container",
     "docker:rm": "sudo docker rm -f chat-container",
     "docker:exec": "sudo docker exec -it chat-container /bin/sh"
@@ -45,15 +45,16 @@
     "@babylonjs/inspector": "^6.41.0",
     "@capacitor/cli": "^5.7.4",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
-    "@storybook/addon-essentials": "^7.6.10",
-    "@storybook/addon-interactions": "^7.6.10",
-    "@storybook/addon-links": "^7.6.10",
-    "@storybook/addon-onboarding": "^1.0.11",
-    "@storybook/addon-themes": "^7.6.10",
-    "@storybook/blocks": "^7.6.10",
-    "@storybook/react": "^7.6.10",
-    "@storybook/react-webpack5": "^7.6.10",
-    "@storybook/test": "^7.6.10",
+    "@storybook/addon-essentials": "^8.0.9",
+    "@storybook/addon-interactions": "^8.0.9",
+    "@storybook/addon-links": "^8.0.9",
+    "@storybook/addon-onboarding": "^8.0.9",
+    "@storybook/addon-themes": "^8.0.9",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
+    "@storybook/blocks": "^8.0.9",
+    "@storybook/react": "^8.0.9",
+    "@storybook/react-webpack5": "^8.0.9",
+    "@storybook/test": "^8.0.9",
     "@testing-library/jest-dom": "^6.3.0",
     "@testing-library/react": "^14.1.2",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
@@ -70,10 +71,10 @@
     "jest-environment-jsdom": "^29.7.0",
     "prettier": "3.2.4",
     "react-refresh": "^0.14.0",
-    "react-test-renderer": "^18.2.0",
+    "react-test-renderer": "^18.3.1",
     "serve": "^14.2.1",
-    "storybook": "^7.6.10",
-    "storybook-dark-mode": "^3.0.3",
+    "storybook": "^8.0.9",
+    "storybook-dark-mode": "^4.0.1",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
     "webpack": "^5.90.1",
@@ -115,7 +116,9 @@
     "leaflet": "^1.9.4",
     "notistack": "^3.0.1",
     "peerjs": "^1.5.2",
+    "react": "^18.3.1",
     "react-coach-mark": "^1.0.4",
+    "react-dom": "^18.3.1",
     "react-i18next": "^14.0.1",
     "react-leaflet": "^4.2.1",
     "react-qr-code": "^2.0.12",
@@ -133,8 +136,26 @@
     "styled-components": "^6.1.8",
     "use-long-press": "^3.2.0"
   },
-  "peerDependencies": {
-    "react": "^17.0.0 || ^18.2.0",
-    "react-dom": "^17.0.0 || ^18.2.0"
+  "overrides": {
+    "@mui/styles": {
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1"
+    },
+    "@emotion/styled": {
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1"
+    },
+    "react-coach-mark": {
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1"
+    },
+    "react-split-pane": {
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1"
+    },
+    "react-swipeable-views": {
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1"
+    }
   }
 }

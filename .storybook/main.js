@@ -6,13 +6,12 @@ const config = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     'storybook-dark-mode',
+    "@storybook/addon-webpack5-compiler-swc"
   ],
   framework: {
     name: "@storybook/react-webpack5",
     options: {
-      builder: {
-        useSWC: true,
-      },
+      builder: {},
     },
   },
   docs: {

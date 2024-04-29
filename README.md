@@ -34,8 +34,15 @@ You need to have Node.js installed on your system to run the app. If you don't h
 First, clone the repository to your local machine. Then, navigate to the project directory and install the dependencies.
 
 ```bash
-npm install --force
+npm install
 npm start
+```
+
+For docker users, you can run the app using the following commands:
+
+```bash
+npm run docker:build # docker build -t chat -f docker/Chat.Dockerfile . --no-cache
+npm run docker:run # docker run --name chat-container -p 8080:80 chat
 ```
 
 This will start the development server and open the app in your default browser. If it doesn't open automatically, you can navigate to [http://localhost:8080](http://localhost:8080) to view the app.
