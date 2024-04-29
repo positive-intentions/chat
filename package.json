@@ -85,6 +85,7 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/material-icons": "^5.0.11",
     "@fontsource/roboto": "^5.0.8",
+    "@lcdp/offline-plugin": "^5.1.1",
     "@mediapipe/hands": "~0.4.0",
     "@mui/icons-material": "^5.15.6",
     "@mui/material": "^5.15.6",
