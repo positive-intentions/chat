@@ -27,20 +27,24 @@ Join the conversation: [r/positive_intentions](https://www.reddit.com/r/positive
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+### Prerequisites for development
 
 You need to have Node.js installed on your system to run the app. If you don't have Node.js installed, you can download it from [here](https://nodejs.org/).
 
-### Installing
+### Running the app
 
-First, clone the repository to your local machine. Then, navigate to the project directory and install the dependencies.
+First, clone the repository to your local machine.
+
+For users that dont want to install anything and just want to try the app locally, you can open the file found at `<root>/Frontend/index.html` in a browser of your choice. 
+
+For NPM users:
 
 ```bash
 npm install
 npm start
 ```
 
-For docker users, you can run the app using the following commands:
+For docker users:
 
 ```bash
 npm run docker:build # docker build -t chat -f docker/Chat.Dockerfile . --no-cache
