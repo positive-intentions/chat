@@ -9,6 +9,8 @@
 ![GitHub issues](https://img.shields.io/github/issues/positive-intentions/chat) 
 ![GitHub license](https://img.shields.io/github/license/positive-intentions/chat) 
 ![Staging](https://github.com/positive-intentions/chat/actions/workflows/main_workflow.yaml/badge.svg) 
+[![gh-pages-build-deployment](https://github.com/positive-intentions/chat/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/positive-intentions/chat/actions/workflows/pages/pages-build-deployment)
+[![CodeQL](https://github.com/positive-intentions/chat/actions/workflows/codeql.yml/badge.svg)](https://github.com/positive-intentions/chat/actions/workflows/codeql.yml)
 ![Code size](https://img.shields.io/github/languages/code-size/positive-intentions/chat) 
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
