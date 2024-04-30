@@ -43,7 +43,7 @@
     "@babel/preset-env": "^7.23.9",
     "@babel/preset-react": "^7.23.3",
     "@babylonjs/inspector": "^6.41.0",
-    "@capacitor/cli": "^5.7.4",
+    "@capacitor/cli": "^6.0.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "@storybook/addon-essentials": "^8.0.9",
     "@storybook/addon-interactions": "^8.0.9",
