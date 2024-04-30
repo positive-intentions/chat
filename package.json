@@ -42,7 +42,7 @@
     "@babel/core": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
     "@babel/preset-react": "^7.23.3",
-    "@babylonjs/inspector": "^6.41.0",
+    "@babylonjs/inspector": "^7.4.0",
     "@capacitor/cli": "^6.0.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "@storybook/addon-essentials": "^8.0.9",
