@@ -7696,6 +7696,17 @@ function File() {
     })) === null || _state$pods$find === void 0 || (_state$pods$find = _state$pods$find.blockchain) === null || _state$pods$find === void 0 ? void 0 : _state$pods$find.storage[fileId];
   });
   if (!attachment) return "no file found";
+  var santizedAttachmentSrc = function santizedAttachmentSrc(attachment) {
+    var urlRegex = new RegExp("^(http|https)://[a-zA-Z0-9-.]+.[a-zA-Z]{2,3}(/S*)?$");
+    var base64Regex = new RegExp("data:image/([a-zA-Z]*);base64,([a-zA-Z0-9+/=]*)");
+    if (urlRegex.test(attachment)) {
+      return attachment;
+    } else if (base64Regex.test(attachment)) {
+      return attachment;
+    } else {
+      return "";
+    }
+  };
   return /*#__PURE__*/index_js_default().createElement(page_container_PageContainer/* default */.A, {
     headerProps: {
       title: attachment === null || attachment === void 0 ? void 0 : attachment.name,
@@ -7707,7 +7718,7 @@ function File() {
     }
   }, (attachment === null || attachment === void 0 ? void 0 : attachment.type) === "image" && /*#__PURE__*/index_js_default().createElement("img", {
     alt: "Remy Sharp",
-    src: attachment === null || attachment === void 0 ? void 0 : attachment.data,
+    src: santizedAttachmentSrc(attachment === null || attachment === void 0 ? void 0 : attachment.data),
     style: {
       width: "100vw"
     }
@@ -7779,7 +7790,8 @@ function File() {
     onClick: function onClick() {
       console.log("downloading file");
       var element = document.createElement("a");
-      element.href = attachment === null || attachment === void 0 ? void 0 : attachment.data; // URL.createObjectURL(file);
+      var isBase64 = attachment === null || attachment === void 0 ? void 0 : attachment.data.startsWith("data:");
+      element.href = isBase64 && (attachment === null || attachment === void 0 ? void 0 : attachment.data); // URL.createObjectURL(file);
       element.download = attachment === null || attachment === void 0 ? void 0 : attachment.name;
       document.body.appendChild(element);
       element.click();
@@ -11644,7 +11656,7 @@ function Router_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var Verse = /*#__PURE__*/(0,index_js_.lazy)(function () {
-  return Promise.all(/* import() */[__webpack_require__.e(999), __webpack_require__.e(450)]).then(__webpack_require__.bind(__webpack_require__, 74450));
+  return Promise.all(/* import() */[__webpack_require__.e(373), __webpack_require__.e(450)]).then(__webpack_require__.bind(__webpack_require__, 74450));
 });
 /* harmony default export */ const Router = (function () {
   var _TermsAndConditions;

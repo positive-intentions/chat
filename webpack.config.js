@@ -10,6 +10,44 @@ const path = require("path");
 
 // const isDevelopment = process.env.NODE_ENV !== "production";
 
+const moduleRedundency = ({
+  moduleName,
+  urls
+}) => (`promise new Promise(resolve => {
+
+  function getRandomNumber(min, max) {
+    if (min > max) {
+        throw new Error("Minimum value must be less than or equal to the maximum value.");
+    }
+    // Generate and return a random integer between min and max, inclusive
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+  const urls = ${JSON.stringify(urls)}
+
+  const remoteUrlWithVersion = urls[getRandomNumber(0, urls.length - 1)]
+  const script = document.createElement('script')
+  script.src = remoteUrlWithVersion
+  script.onload = () => {
+    // the injected script has loaded and is available on window
+    // we can now resolve this Promise
+    const proxy = {
+      get: (request) => window.${moduleName}.get(request),
+      init: (arg) => {
+        try {
+          return window.${moduleName}.init(arg)
+        } catch(e) {
+          console.log('remote container already initialized')
+        }
+      }
+    }
+    resolve(proxy)
+  }
+  // inject this script with the src set to the versioned remoteEntry.js
+  document.head.appendChild(script);
+})
+`);
+
 module.exports = {
   // mode: isDevelopment ? "development" : "production",
   entry: "./src/index.js",
@@ -83,25 +121,10 @@ module.exports = {
       short_name: "PI",
       description: "positive-intentions",
       icons: [
-        // {
-        //   "src": "favicon.ico",
-        //   "sizes": "64x64 32x32 24x24 16x16",
-        //   "type": "image/x-icon"
-        // },
         {
           src: path.resolve("./public/favicon.ico"),
           sizes: [96], // multiple sizes
         },
-        // {
-        //   "src": "logo192.png",
-        //   "type": "image/png",
-        //   "sizes": "192x192"
-        // },
-        // {
-        //   "src": "logo512.png",
-        //   "type": "image/png",
-        //   "sizes": "512x512"
-        // }
         {
           src: path.resolve("./public/logo512.png"),
           sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
@@ -118,14 +141,15 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "chatApp",
       filename: "remoteEntry.js",
-      // exposes: {
-      //     './Example': './src/stories/components/Example.tsx',
-      // },
       remotes: {
-        "pi-base":
-          "frontendBase@https://example-staging.positive-intentions.com/remoteEntry.js",
-        "cryptography": "cryptography@https://cryptography.positive-intentions.com/remoteEntry.js"
-        // "cryptography": "cryptography@http://localhost:3000/remoteEntry.js"
+        "cryptography": moduleRedundency({
+          moduleName: 'cryptography',
+          urls: [
+            // 'http://localhost:3000/remoteEntry.js', // local for testing
+            'https://positive-intentions.github.io/cryptography/remoteEntry.js',
+            'https://cryptography.positive-intentions.com/remoteEntry.js'
+          ]
+        }),
       },
       shared: {
         react: {
