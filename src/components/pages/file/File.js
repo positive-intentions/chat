@@ -191,6 +191,24 @@ export default function File() {
 
   if (!attachment) return "no file found";
 
+  const santizedAttachmentSrc = (attachment) => {
+    const urlRegex = new RegExp(
+      "^(http|https)://[a-zA-Z0-9-.]+.[a-zA-Z]{2,3}(/S*)?$",
+    );
+    const base64Regex = new RegExp(
+      "data:image/([a-zA-Z]*);base64,([a-zA-Z0-9+/=]*)",
+    );
+
+    if (urlRegex.test(attachment)) {
+      return attachment;
+    } else if (base64Regex.test(attachment)) {
+      return attachment;
+    } else {
+      return "";
+    }
+  }
+
+
   return (
     <PageContainer
       headerProps={{
@@ -206,7 +224,7 @@ export default function File() {
       {attachment?.type === "image" && (
         <img
           alt={"Remy Sharp"}
-          src={attachment?.data}
+          src={santizedAttachmentSrc(attachment?.data)}
           style={{ width: "100vw" }}
         />
       )}
@@ -290,7 +308,8 @@ export default function File() {
             console.log("downloading file");
             const element = document.createElement("a");
 
-            element.href = attachment?.data; // URL.createObjectURL(file);
+            const isBase64 = attachment?.data.startsWith("data:");
+            element.href = isBase64 && attachment?.data; // URL.createObjectURL(file);
             element.download = attachment?.name;
             document.body.appendChild(element);
             element.click();

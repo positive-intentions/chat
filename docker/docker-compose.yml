@@ -1,0 +1,19 @@
+# docker compose is not working
+# see readme in this directory
+version: '3.8'
+
+services:
+  peerjs-server:
+    image: peerjs/peerjs-server
+    ports:
+      - "443:443"
+      - "9000:9000"
+    restart: always
+
+  chat:
+    build:
+      context: ..
+      dockerfile: ./docker/Chat.Dockerfile
+    ports:
+      - "8080:80"
+    restart: always

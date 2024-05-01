@@ -43,12 +43,12 @@ var profileChain = __webpack_require__(85026);
 var podChain = __webpack_require__(53288);
 // EXTERNAL MODULE: ./node_modules/react-i18next/dist/es/index.js + 15 modules
 var es = __webpack_require__(32389);
-// EXTERNAL MODULE: ./node_modules/@babylonjs/loaders/glTF/index.js + 50 modules
-var glTF = __webpack_require__(37176);
+// EXTERNAL MODULE: ./node_modules/@babylonjs/loaders/glTF/index.js + 51 modules
+var glTF = __webpack_require__(38242);
 // EXTERNAL MODULE: ./node_modules/@babylonjs/loaders/OBJ/index.js + 4 modules
 var OBJ = __webpack_require__(27799);
-// EXTERNAL MODULE: ./node_modules/@babylonjs/core/index.js + 1014 modules
-var core = __webpack_require__(81110);
+// EXTERNAL MODULE: ./node_modules/@babylonjs/core/index.js + 1019 modules
+var core = __webpack_require__(65742);
 // EXTERNAL MODULE: ./node_modules/react-router/dist/index.js
 var dist = __webpack_require__(47767);
 // EXTERNAL MODULE: ./node_modules/react-redux/dist/react-redux.mjs

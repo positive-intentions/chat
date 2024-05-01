@@ -40,7 +40,7 @@ For users that dont want to install anything and just want to try the app locall
 For NPM users:
 
 ```bash
-npm install
+npm install --force
 npm start
 ```
 
