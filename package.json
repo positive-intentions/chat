@@ -36,7 +36,8 @@
     "docker:rm": "sudo docker rm -f chat-container",
     "docker:exec": "sudo docker exec -it chat-container /bin/sh",
     "docker:up": "sudo docker-compose --file docker/docker-compose.yml up --build",
-    "docker:down": "sudo docker-compose --file docker/docker-compose.yml down"
+    "docker:down": "sudo docker-compose --file docker/docker-compose.yml down",
+    "appflow:build": "npm ci --quiet --force"
   },
   "author": "",
   "license": "GPL-3.0",
