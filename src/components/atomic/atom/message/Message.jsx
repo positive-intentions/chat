@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => {
       // marginBottom: theme.spacing(2),
       width: "fit-content",
       alignSelf: "flex-end",
-      backgroundColor: "#e6ffe6",
+      // backgroundColor: "#e6ffe6",
     },
     messageContent: {
       padding: theme.spacing(2),

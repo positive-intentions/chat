@@ -175,4 +175,7 @@ module.exports = {
     // hot: true,
     // historyApiFallback: true,
   },
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+  },
 };

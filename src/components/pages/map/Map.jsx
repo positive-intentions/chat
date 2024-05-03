@@ -107,7 +107,7 @@ import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
 import ListComponent from "../../atomic/molecules/list/List";
 import PageContainer from "../../atomic/organism/page-container/PageContainer";
-import usePeer from "../../p2p/usePeer.js";
+import usePeer from "../../p2p/usePeer";
 import FileCopyIcon from "@mui/icons-material/FileCopyOutlined";
 import SaveIcon from "@mui/icons-material/Save";
 import PrintIcon from "@mui/icons-material/Print";
