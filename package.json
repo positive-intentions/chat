@@ -83,7 +83,7 @@
     "webpack": "^5.90.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4",
-    "webpack-pwa-manifest": "^4.3.0",
+    "webpack-pwa-manifest": "^4.0.0",
     "workbox-webpack-plugin": "^7.0.0"
   },
   "dependencies": {
@@ -150,7 +150,8 @@
     },
     "react-coach-mark": {
       "react": "^18.3.1",
-      "react-dom": "^18.3.1"
+      "react-dom": "^18.3.1",
+      "eslint": "^9.1.1"
     },
     "react-split-pane": {
       "react": "^18.3.1",
@@ -159,6 +160,27 @@
     "react-swipeable-views": {
       "react": "^18.3.1",
       "react-dom": "^18.3.1"
+    },
+    "@typescript-eslint/experimental-utils": {
+      "eslint": "^9.1.1"
+    },
+    "@eslint/eslint": {
+      "eslint": "^9.1.1"
+    },
+    "@eslint-community/eslint-utils": {
+      "eslint": "^9.1.1"
+    },
+    "eslint-plugin-react": {
+      "eslint": "^9.1.1"
+    },
+    "@typescript-eslint/eslint-plugin": {
+      "eslint": "^9.1.1"
+    },
+    "@typescript-eslint/parser": {
+      "eslint": "^9.1.1"
+    },
+    "react-event-listener": {
+      "react": "^18.3.1"
     }
   }
 }
