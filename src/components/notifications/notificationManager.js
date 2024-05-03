@@ -62,6 +62,13 @@ export const useNotification = () => {
       message,
       props,
     });
+
+    // return if the window has focus so no notification are
+    // displayed while the app is open in focus
+    if (!document.hidden) {
+      return;
+    }
+
     try {
       if (
         (storedBrowserNotification && !("Notification" in window)) ||
