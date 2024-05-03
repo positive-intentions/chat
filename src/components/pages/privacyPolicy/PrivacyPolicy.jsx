@@ -107,7 +107,7 @@ import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
 import ListComponent from "../../atomic/molecules/list/List";
 import PageContainer from "../../atomic/organism/page-container/PageContainer";
-import usePeer from "../../p2p/usePeer.js";
+import usePeer from "../../p2p/usePeer";
 import FileCopyIcon from "@mui/icons-material/FileCopyOutlined";
 import SaveIcon from "@mui/icons-material/Save";
 import PrintIcon from "@mui/icons-material/Print";
@@ -151,13 +151,13 @@ export default function ContactsListPage() {
   const [scanning, setScanning] = useState(false);
   const [result, setResult] = useState("No result");
   // getlatest TermsAndConditions
-  const LatestTermsAndConditions =
-    TermsAndConditions[TermsAndConditions.length - 1]?.terms;
+  const LatestPrivacyPolicy =
+    TermsAndConditions[TermsAndConditions.length - 1]?.privacyPolicy;
 
   return (
     <PageContainer
       headerProps={{
-        title: "Terms and Conditions",
+        title: "Privacy Policy",
         backButton: true,
         menuProps: {
           icon: "more",
@@ -177,7 +177,7 @@ export default function ContactsListPage() {
         },
       }}
     >
-      <LatestTermsAndConditions padding={20} />
+      <LatestPrivacyPolicy padding={20} />
     </PageContainer>
   );
 }

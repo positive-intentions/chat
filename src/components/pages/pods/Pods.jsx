@@ -5,7 +5,6 @@ import AppBar from "@mui/material/AppBar";
 import Typography from "@mui/material/Typography";
 import { makeStyles, useTheme } from "@mui/styles";
 import { useSelector, useDispatch } from "react-redux";
-import { updateUsername } from "../../redux/slices/podsSlice";
 import { useNavigate } from "react-router-dom";
 import PageContainer from "../../atomic/organism/page-container/PageContainer";
 import List from "@mui/material/List";
@@ -81,7 +80,7 @@ function GroupsListPage() {
         ...pod,
         onClick: () => navigate(`/pod/${pod.id}`),
         name:
-          pod.users?.length > 2 ?? false
+          (pod.users?.length > 2)
             ? pod.name
             : storedContacts.find(
                 (contact) =>
@@ -91,7 +90,7 @@ function GroupsListPage() {
                   )[0],
               )?.displayName ?? "Please wait",
         avatarUrl:
-          pod.users?.length > 2 ?? false
+          (pod.users?.length > 2)
             ? pod.avatar
             : storedContacts.find(
                 (contact) =>

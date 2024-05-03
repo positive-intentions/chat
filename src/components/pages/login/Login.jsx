@@ -189,7 +189,7 @@ import JSZip from "jszip";
 import { useTranslation } from "react-i18next";
 import { useCryptography } from "cryptography/Cryptography";
 import { CoachMark } from "react-coach-mark";
-import ConnectToPeer from "../../atomic/molecules/connect-to-peer/ConnectToPeer.js";
+import ConnectToPeer from "../../atomic/molecules/connect-to-peer/ConnectToPeer";
 import hipaintImage from "../../../../public/logo512.png";
 import decentralisedImage from "../../../../public/home-icons/decentralized.png";
 import agnosticImage from "../../../../public/home-icons/agnostic.png";
