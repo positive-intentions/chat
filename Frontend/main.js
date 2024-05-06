@@ -4,15 +4,15 @@
 /***/ 75619:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.all(/* import() */[__webpack_require__.e(152), __webpack_require__.e(318), __webpack_require__.e(713)]).then(__webpack_require__.bind(__webpack_require__, 94097));
+Promise.all(/* import() */[__webpack_require__.e(13), __webpack_require__.e(318), __webpack_require__.e(713)]).then(__webpack_require__.bind(__webpack_require__, 94097));
 
 /***/ }),
 
-/***/ 94431:
+/***/ 86455:
 /***/ ((module) => {
 
 "use strict";
-module.exports = new Promise(resolve => {
+module.exports = new Promise(async (resolve) => {
 
   function getRandomNumber(min, max) {
     if (min > max) {
@@ -23,6 +23,29 @@ module.exports = new Promise(resolve => {
   }
 
   const urls = ["https://positive-intentions.github.io/cryptography/remoteEntry.js","https://cryptography.positive-intentions.com/remoteEntry.js"]
+
+
+  // function checkUrl(url) {
+  //   return fetch(url, {
+  //     method: "HEAD",
+  //     mode: 'no-cors'
+  //   })
+  //     .then(res => {
+  //       if (res.ok) {
+  //         return url; // Return the URL if the resource is available
+  //       }
+  //       throw new Error(`Resource not available at ${url}`); // Throw if resource is not available
+  //     });
+  // }
+
+  // const availabilityPromises = urls.map(url => checkUrl(url));
+
+  // // Use Promise.race to find the first URL that responds with an available resource
+  // const firstAvailableUrl = await Promise.race(availabilityPromises)
+  //   .catch(error => {
+  //     // Handle the case where none of the URLs are available
+  //     reject(new Error('None of the URLs responded positively: ' + error.message));
+  //   });
 
   const remoteUrlWithVersion = urls[getRandomNumber(0, urls.length - 1)]
   const script = document.createElement('script')
@@ -267,7 +290,7 @@ module.exports = new Promise(resolve => {
 /******/ 			"79218": [
 /******/ 				"default",
 /******/ 				"./Cryptography",
-/******/ 				94431
+/******/ 				86455
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.remotes = (chunkId, promises) => {
@@ -358,7 +381,7 @@ module.exports = new Promise(resolve => {
 /******/ 				case "default": {
 /******/ 					register("react-dom", "18.3.1", () => (Promise.all([__webpack_require__.e(961), __webpack_require__.e(318)]).then(() => (() => (__webpack_require__(40961))))));
 /******/ 					register("react", "18.3.1", () => (__webpack_require__.e(540).then(() => (() => (__webpack_require__(96540))))));
-/******/ 					initExternal(94431);
+/******/ 					initExternal(86455);
 /******/ 				}
 /******/ 				break;
 /******/ 			}
