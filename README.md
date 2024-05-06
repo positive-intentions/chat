@@ -1,8 +1,11 @@
-# Chat
 
 > ⚠️ **WARNING:** This project is not production-ready. It is an unstable experimental proof-of-concept and may contain bugs and/or incomplete features. Use it at your own risk.
 
-![App Logo](public/logo192.png)
+<p align="center">
+  <img src="public/logo192.png" alt="App Logo" />
+</p>
+
+# Chat
 
 ![GitHub stars](https://img.shields.io/github/stars/positive-intentions/chat?style=social) 
 ![GitHub forks](https://img.shields.io/github/forks/positive-intentions/chat?style=social) 
@@ -21,6 +24,22 @@ Live app: [chat.positive-intentions.com](https://chat.positive-intentions.com)
 Learn more: [positive-intentions.com](https://positive-intentions.com)
 
 Join the conversation: [r/positive_intentions](https://www.reddit.com/r/positive_intentions)
+
+
+🚀 **Introducing a groundbreaking chat application that redefines online communication.** Built with a focus on privacy, security, and user control, this app offers a pioneering approach to chatting, file sharing, and exploring virtual spaces—all from within your browser.
+
+🔒 **Privacy by Design**: Leveraging WebRTC for peer-to-peer connections, our app ensures your conversations and files stay between you and your contacts—no middlemen involved. With encryption technologies built into modern browsers, we enable users to manage their encryption keys, ensuring unmatched privacy and security.
+
+🌍 **Decentralized and Empowering**: Say goodbye to the constraints of traditional server-based apps. Our technology allows for decentralized authentication, encrypted messaging, and even decentralized file transfers. Your data, your rules.
+
+🔥 **Feature-Rich Experience**:
+- **Secure Messaging**: End-to-end encryption for all messages.
+- **File Sharing**: Seamlessly share files with peers using cutting-edge WebRTC technology.
+- **Voice and Video Calls**: Connect more personally with high-quality calls.
+- **Mixed-Reality Spaces**: Dive into shared virtual environments for a new way of interaction.
+- **Image Board**: Share and discover images in a community-driven space.
+
+👾 **Tech for the Future**: Beyond chat, we're exploring virtual reality, enabling users to share 3D positions and live video streams within VR environments. Imagine socializing in a virtual space that's as easy to access as opening your browser.
 
 
 ## Getting Started
@@ -55,22 +74,18 @@ This will start the development server and open the app in your default browser.
 
 > See the [package.json](package.json) file for more scripts.
 
-#
+## iOS, Android and Desktop
 
-🚀 **Introducing a groundbreaking chat application that redefines online communication.** Built with a focus on privacy, security, and user control, this app offers a pioneering approach to chatting, file sharing, and exploring virtual spaces—all from within your browser.
+The app can be installed on iOS, Android and Desktop. while the project is not mature enough to be published on the app stores, this repository has the necessary files to build the app for these platforms. This should be done by someone with experience in building apps for these platforms. support for it is not good enough to be published on the app stores.
 
-🔒 **Privacy by Design**: Leveraging WebRTC for peer-to-peer connections, our app ensures your conversations and files stay between you and your contacts—no middlemen involved. With encryption technologies built into modern browsers, we enable users to manage their encryption keys, ensuring unmatched privacy and security.
+### iOS and Android
 
-🌍 **Decentralized and Empowering**: Say goodbye to the constraints of traditional server-based apps. Our technology allows for decentralized authentication, encrypted messaging, and even decentralized file transfers. Your data, your rules.
+To build for mobile, you need to have respective build tools installed on your computer (xcode/android studio) installed on your system. the build is created with capacitorjs found [here](https://capacitorjs.com/).
 
-🔥 **Feature-Rich Experience**:
-- **Secure Messaging**: End-to-end encryption for all messages.
-- **File Sharing**: Seamlessly share files with peers using cutting-edge WebRTC technology.
-- **Voice and Video Calls**: Connect more personally with high-quality calls.
-- **Mixed-Reality Spaces**: Dive into shared virtual environments for a new way of interaction.
-- **Image Board**: Share and discover images in a community-driven space.
+### Desktop
 
-👾 **Tech for the Future**: Beyond chat, we're exploring virtual reality, enabling users to share 3D positions and live video streams within VR environments. Imagine socializing in a virtual space that's as easy to access as opening your browser.
+To build for desktop, you have everything you need from the `npm i` command. the desktop build is based on Tauri found [here](https://tauri.app/). You can create a build by running `npm run tauri build`. the build will be found in the `tauri/target/release/bundle` folder (you may need to add executable permissions `chomod +x <filename>`).
+
 
 ### Join Us on This Journey
 

@@ -36,7 +36,8 @@
     "docker:rm": "sudo docker rm -f chat-container",
     "docker:exec": "sudo docker exec -it chat-container /bin/sh",
     "docker:up": "sudo docker-compose --file docker/docker-compose.yml up --build",
-    "docker:down": "sudo docker-compose --file docker/docker-compose.yml down"
+    "docker:down": "sudo docker-compose --file docker/docker-compose.yml down",
+    "tauri": "tauri"
   },
   "author": "",
   "license": "GPL-3.0",
@@ -58,6 +59,7 @@
     "@storybook/react": "^8.0.9",
     "@storybook/react-webpack5": "^8.0.9",
     "@storybook/test": "^8.0.9",
+    "@tauri-apps/cli": "^1.5.12",
     "@testing-library/jest-dom": "^6.3.0",
     "@testing-library/react": "^15.0.5",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
