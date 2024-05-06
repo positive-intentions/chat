@@ -13,7 +13,7 @@ const path = require("path");
 const moduleRedundency = ({
   moduleName,
   urls
-}) => (`promise new Promise(resolve => {
+}) => (`promise new Promise(async (resolve) => {
 
   function getRandomNumber(min, max) {
     if (min > max) {
@@ -24,6 +24,29 @@ const moduleRedundency = ({
   }
 
   const urls = ${JSON.stringify(urls)}
+
+
+  // function checkUrl(url) {
+  //   return fetch(url, {
+  //     method: "HEAD",
+  //     mode: 'no-cors'
+  //   })
+  //     .then(res => {
+  //       if (res.ok) {
+  //         return url; // Return the URL if the resource is available
+  //       }
+  //       throw new Error(\`Resource not available at \${url}\`); // Throw if resource is not available
+  //     });
+  // }
+
+  // const availabilityPromises = urls.map(url => checkUrl(url));
+
+  // // Use Promise.race to find the first URL that responds with an available resource
+  // const firstAvailableUrl = await Promise.race(availabilityPromises)
+  //   .catch(error => {
+  //     // Handle the case where none of the URLs are available
+  //     reject(new Error('None of the URLs responded positively: ' + error.message));
+  //   });
 
   const remoteUrlWithVersion = urls[getRandomNumber(0, urls.length - 1)]
   const script = document.createElement('script')
