@@ -8,24 +8,44 @@ Promise.all(/* import() */[__webpack_require__.e(152), __webpack_require__.e(318
 
 /***/ }),
 
-/***/ 86252:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 94431:
+/***/ ((module) => {
 
 "use strict";
-var __webpack_error__ = new Error();
-module.exports = new Promise((resolve, reject) => {
-	if(typeof cryptography !== "undefined") return resolve();
-	__webpack_require__.l("https://cryptography.positive-intentions.com/remoteEntry.js", (event) => {
-		if(typeof cryptography !== "undefined") return resolve();
-		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
-		var realSrc = event && event.target && event.target.src;
-		__webpack_error__.message = 'Loading script failed.\n(' + errorType + ': ' + realSrc + ')';
-		__webpack_error__.name = 'ScriptExternalLoadError';
-		__webpack_error__.type = errorType;
-		__webpack_error__.request = realSrc;
-		reject(__webpack_error__);
-	}, "cryptography");
-}).then(() => (cryptography));
+module.exports = new Promise(resolve => {
+
+  function getRandomNumber(min, max) {
+    if (min > max) {
+        throw new Error("Minimum value must be less than or equal to the maximum value.");
+    }
+    // Generate and return a random integer between min and max, inclusive
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+  const urls = ["https://positive-intentions.github.io/cryptography/remoteEntry.js","https://cryptography.positive-intentions.com/remoteEntry.js"]
+
+  const remoteUrlWithVersion = urls[getRandomNumber(0, urls.length - 1)]
+  const script = document.createElement('script')
+  script.src = remoteUrlWithVersion
+  script.onload = () => {
+    // the injected script has loaded and is available on window
+    // we can now resolve this Promise
+    const proxy = {
+      get: (request) => window.cryptography.get(request),
+      init: (arg) => {
+        try {
+          return window.cryptography.init(arg)
+        } catch(e) {
+          console.log('remote container already initialized')
+        }
+      }
+    }
+    resolve(proxy)
+  }
+  // inject this script with the src set to the versioned remoteEntry.js
+  document.head.appendChild(script);
+})
+;
 
 /***/ })
 
@@ -247,7 +267,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 			"79218": [
 /******/ 				"default",
 /******/ 				"./Cryptography",
-/******/ 				86252
+/******/ 				94431
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.remotes = (chunkId, promises) => {
@@ -338,7 +358,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 				case "default": {
 /******/ 					register("react-dom", "18.3.1", () => (Promise.all([__webpack_require__.e(961), __webpack_require__.e(318)]).then(() => (() => (__webpack_require__(40961))))));
 /******/ 					register("react", "18.3.1", () => (__webpack_require__.e(540).then(() => (() => (__webpack_require__(96540))))));
-/******/ 					initExternal(86252);
+/******/ 					initExternal(94431);
 /******/ 				}
 /******/ 				break;
 /******/ 			}

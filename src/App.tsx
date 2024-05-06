@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./index.css";
 // import './components/utils/bigIntPolyfill';
 // import App from './components/pages/app/App';
@@ -20,12 +20,11 @@ import { StylesProvider, jssPreset } from "@mui/styles";
 import { SnackbarProvider } from "./components/notifications/notificationManager";
 import ErrorBoundary from "./components/atomic/atom/errorBoundary/ErrorBoundary";
 import { I18nextProvider } from "react-i18next";
-import i18n from "./components/translations/i18n";
 import { create } from "jss";
 import rtl from "jss-rtl";
 import { useTranslation } from "react-i18next";
-import { logToNLevelAnalytics } from "./components/utils/analytics";
-// import { PaletteMode } from "@mui/material";
+// import { PaletteMode } from "@mui/material/index.d.ts";
+// type PaletteMode = 'light' | 'dark';
 
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
@@ -78,10 +77,10 @@ const App = () => {
   // }, []);
 
   const userPreferredTheme =
-    window.matchMedia &&
+    (window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
-      : "light";
+      : "light");
 
   const [mode, setMode] = React.useState(userPreferredTheme);
   const colorMode = React.useMemo(
