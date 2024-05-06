@@ -1,7 +1,7 @@
 "use strict";
 (self["webpackChunkchat"] = self["webpackChunkchat"] || []).push([[713],{
 
-/***/ 85756:
+/***/ 96936:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -211,8 +211,8 @@ var _encryptionSlice$acti = encryptionSlice.actions,
   setEncryption = _encryptionSlice$acti.setEncryption;
 
 /* harmony default export */ const slices_encryptionSlice = (encryptionSlice.reducer);
-// EXTERNAL MODULE: ./src/components/atomic/organism/page-container/PageContainer.js + 1 modules
-var page_container_PageContainer = __webpack_require__(20181);
+// EXTERNAL MODULE: ./src/components/atomic/organism/page-container/PageContainer.jsx + 2 modules
+var page_container_PageContainer = __webpack_require__(11037);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Accordion/Accordion.js + 3 modules
 var Accordion = __webpack_require__(1710);
 // EXTERNAL MODULE: ./node_modules/@mui/material/AccordionDetails/AccordionDetails.js + 1 modules
@@ -223,7 +223,7 @@ var AccordionSummary = __webpack_require__(48719);
 var ExpandMore = __webpack_require__(72048);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Checkbox/Checkbox.js + 4 modules
 var Checkbox = __webpack_require__(27558);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/termsAndConditions/TermsAndConditions-1.0.0.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/termsAndConditions/TermsAndConditions-1.0.0.jsx
 
 var TermsAndConditions = function TermsAndConditions(_ref) {
   var padding = _ref.padding;
@@ -236,7 +236,7 @@ var TermsAndConditions = function TermsAndConditions(_ref) {
   }, "Reddit"), " user profile. We will make every effort to respond to your inquiries in a timely manner."));
 };
 /* harmony default export */ const TermsAndConditions_1_0_0 = (TermsAndConditions);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/termsAndConditions/TermsAndConditions-2.0.0.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/termsAndConditions/TermsAndConditions-2.0.0.jsx
 
 var TermsAndConditions_2_0_0_TermsAndConditions = function TermsAndConditions(_ref) {
   var padding = _ref.padding;
@@ -284,8 +284,8 @@ var InputLabel = __webpack_require__(54433);
 var Select = __webpack_require__(65460);
 // EXTERNAL MODULE: ./node_modules/@mui/material/MenuItem/MenuItem.js + 1 modules
 var MenuItem = __webpack_require__(73896);
-// EXTERNAL MODULE: ./src/components/notifications/notificationManager.js
-var notificationManager = __webpack_require__(34541);
+// EXTERNAL MODULE: ./src/components/notifications/notificationManager.jsx
+var notificationManager = __webpack_require__(29535);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Switch/Switch.js + 1 modules
 var Switch = __webpack_require__(1405);
 // EXTERNAL MODULE: ./node_modules/@mui/material/FormGroup/FormGroup.js + 1 modules
@@ -300,7 +300,7 @@ var profileChain = __webpack_require__(85026);
 var Paper = __webpack_require__(60538);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Clear.js
 var Clear = __webpack_require__(12092);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/signatureCanvas/SignatureCanvas.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/signatureCanvas/SignatureCanvas.jsx
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -516,7 +516,7 @@ var Slider = __webpack_require__(66);
 var Download = __webpack_require__(10609);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Upload.js
 var Upload = __webpack_require__(69104);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/qrInput/QRInput.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/qrInput/QRInput.jsx
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || QRInput_unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
@@ -808,7 +808,7 @@ var QRInput_useStyles = (0,makeStyles/* default */.A)(function (theme) {
 });
 // EXTERNAL MODULE: ./src/components/p2p/usePeer.js
 var usePeer = __webpack_require__(76538);
-;// CONCATENATED MODULE: ./src/components/atomic/molecules/webrtc-wizard/WebRTCWizard.js
+;// CONCATENATED MODULE: ./src/components/atomic/molecules/webrtc-wizard/WebRTCWizard.jsx
 function WebRTCWizard_typeof(o) { "@babel/helpers - typeof"; return WebRTCWizard_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, WebRTCWizard_typeof(o); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == WebRTCWizard_typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(WebRTCWizard_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -1246,7 +1246,7 @@ function WebRTCWizard_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; 
     }
   }));
 });
-;// CONCATENATED MODULE: ./src/components/atomic/molecules/connect-to-peer/ConnectToPeer.js
+;// CONCATENATED MODULE: ./src/components/atomic/molecules/connect-to-peer/ConnectToPeer.jsx
 function ConnectToPeer_toConsumableArray(arr) { return ConnectToPeer_arrayWithoutHoles(arr) || ConnectToPeer_iterableToArray(arr) || ConnectToPeer_unsupportedIterableToArray(arr) || ConnectToPeer_nonIterableSpread(); }
 function ConnectToPeer_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function ConnectToPeer_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
@@ -1570,7 +1570,7 @@ var DialogTitle = __webpack_require__(46831);
 var DialogContent = __webpack_require__(22477);
 // EXTERNAL MODULE: ./node_modules/@mui/material/DialogActions/DialogActions.js + 1 modules
 var DialogActions = __webpack_require__(58763);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/docLink/DocLink.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/docLink/DocLink.jsx
 function DocLink_slicedToArray(arr, i) { return DocLink_arrayWithHoles(arr) || DocLink_iterableToArrayLimit(arr, i) || DocLink_unsupportedIterableToArray(arr, i) || DocLink_nonIterableRest(); }
 function DocLink_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function DocLink_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return DocLink_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return DocLink_arrayLikeToArray(o, minLen); }
@@ -1697,7 +1697,7 @@ const _7_namespaceObject = __webpack_require__.p + "01d46372957497dd8f3b.jpg";
 const _8_namespaceObject = __webpack_require__.p + "034d9e19326659d69234.jpg";
 ;// CONCATENATED MODULE: ./public/avatars/9.jpg
 const _9_namespaceObject = __webpack_require__.p + "fb2fef1d328a84f4fefe.jpg";
-;// CONCATENATED MODULE: ./src/components/pages/login/Login.js
+;// CONCATENATED MODULE: ./src/components/pages/login/Login.jsx
 function Login_typeof(o) { "@babel/helpers - typeof"; return Login_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Login_typeof(o); }
 function Login_regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ Login_regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == Login_typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(Login_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
 function Login_asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -2921,7 +2921,7 @@ var Brush = __webpack_require__(17473);
 var Groups = __webpack_require__(77649);
 // EXTERNAL MODULE: ./node_modules/@sandstreamdev/react-swipeable-list/dist/styles.css
 var styles = __webpack_require__(50647);
-;// CONCATENATED MODULE: ./src/components/atomic/molecules/list/List.js
+;// CONCATENATED MODULE: ./src/components/atomic/molecules/list/List.jsx
 function List_typeof(o) { "@babel/helpers - typeof"; return List_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, List_typeof(o); }
 function List_slicedToArray(arr, i) { return List_arrayWithHoles(arr) || List_iterableToArrayLimit(arr, i) || List_unsupportedIterableToArray(arr, i) || List_nonIterableRest(); }
 function List_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -3219,7 +3219,7 @@ var logToNLevelAnalytics = /*#__PURE__*/function () {
     return _ref.apply(this, arguments);
   };
 }();
-;// CONCATENATED MODULE: ./src/components/pages/pods/Pods.js
+;// CONCATENATED MODULE: ./src/components/pages/pods/Pods.jsx
 function Pods_typeof(o) { "@babel/helpers - typeof"; return Pods_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Pods_typeof(o); }
 function Pods_slicedToArray(arr, i) { return Pods_arrayWithHoles(arr) || Pods_iterableToArrayLimit(arr, i) || Pods_unsupportedIterableToArray(arr, i) || Pods_nonIterableRest(); }
 function Pods_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -3232,7 +3232,6 @@ function Pods_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var
 function Pods_defineProperty(obj, key, value) { key = Pods_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 function Pods_toPropertyKey(t) { var i = Pods_toPrimitive(t, "string"); return "symbol" == Pods_typeof(i) ? i : i + ""; }
 function Pods_toPrimitive(t, r) { if ("object" != Pods_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != Pods_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-
 
 
 
@@ -3313,7 +3312,7 @@ function GroupsListPage() {
   var podsList = compiledPods.filter(function (pod) {
     return pod && pod.id;
   }).map(function (pod) {
-    var _storedPods$find, _ref, _pod$users, _storedContacts$find$, _storedContacts$find, _ref2, _pod$users3, _storedContacts$find$2, _storedContacts$find2;
+    var _storedPods$find, _pod$users, _storedContacts$find$, _storedContacts$find, _pod$users3, _storedContacts$find$2, _storedContacts$find2;
     // get unreadCount from redux
     var unreadCount = ((_storedPods$find = storedPods.find(function (p) {
       return p.id === pod.id;
@@ -3322,13 +3321,13 @@ function GroupsListPage() {
       onClick: function onClick() {
         return navigate("/pod/".concat(pod.id));
       },
-      name: ((_ref = ((_pod$users = pod.users) === null || _pod$users === void 0 ? void 0 : _pod$users.length) > 2) !== null && _ref !== void 0 ? _ref : false) ? pod.name : (_storedContacts$find$ = (_storedContacts$find = storedContacts.find(function (contact) {
+      name: ((_pod$users = pod.users) === null || _pod$users === void 0 ? void 0 : _pod$users.length) > 2 ? pod.name : (_storedContacts$find$ = (_storedContacts$find = storedContacts.find(function (contact) {
         var _pod$users2;
         return contact.connectionId === ((_pod$users2 = pod.users) === null || _pod$users2 === void 0 ? void 0 : _pod$users2.filter(function (memberId) {
           return memberId !== storedPersonalId;
         })[0]);
       })) === null || _storedContacts$find === void 0 ? void 0 : _storedContacts$find.displayName) !== null && _storedContacts$find$ !== void 0 ? _storedContacts$find$ : "Please wait",
-      avatarUrl: ((_ref2 = ((_pod$users3 = pod.users) === null || _pod$users3 === void 0 ? void 0 : _pod$users3.length) > 2) !== null && _ref2 !== void 0 ? _ref2 : false) ? pod.avatar : (_storedContacts$find$2 = (_storedContacts$find2 = storedContacts.find(function (contact) {
+      avatarUrl: ((_pod$users3 = pod.users) === null || _pod$users3 === void 0 ? void 0 : _pod$users3.length) > 2 ? pod.avatar : (_storedContacts$find$2 = (_storedContacts$find2 = storedContacts.find(function (contact) {
         var _pod$users4;
         return contact.connectionId === ((_pod$users4 = pod.users) === null || _pod$users4 === void 0 ? void 0 : _pod$users4.filter(function (memberId) {
           return memberId !== storedPersonalId;
@@ -3717,10 +3716,10 @@ var AttachFile = __webpack_require__(40530);
 var Toolbar = __webpack_require__(8532);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Container/Container.js + 1 modules
 var Container = __webpack_require__(97834);
-// EXTERNAL MODULE: ./src/components/atomic/molecules/conversation/Conversation.js + 1 modules
-var Conversation = __webpack_require__(61545);
-// EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.js + 3 modules
-var Message = __webpack_require__(69178);
+// EXTERNAL MODULE: ./src/components/atomic/molecules/conversation/Conversation.jsx + 1 modules
+var Conversation = __webpack_require__(60269);
+// EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.jsx + 3 modules
+var Message = __webpack_require__(94068);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Image.js
 var icons_material_Image = __webpack_require__(55072);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Place.js
@@ -3731,7 +3730,7 @@ var calculateSha256 = __webpack_require__(59701);
 var storageSlice = __webpack_require__(42040);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Mic.js
 var Mic = __webpack_require__(2250);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/voiceRecorder/VoiceRecorder.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/voiceRecorder/VoiceRecorder.jsx
 function VoiceRecorder_slicedToArray(arr, i) { return VoiceRecorder_arrayWithHoles(arr) || VoiceRecorder_iterableToArrayLimit(arr, i) || VoiceRecorder_unsupportedIterableToArray(arr, i) || VoiceRecorder_nonIterableRest(); }
 function VoiceRecorder_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function VoiceRecorder_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return VoiceRecorder_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return VoiceRecorder_arrayLikeToArray(o, minLen); }
@@ -3806,7 +3805,7 @@ var VoiceRecorderButton = function VoiceRecorderButton(_ref) {
   }, "send")));
 };
 /* harmony default export */ const VoiceRecorder = (VoiceRecorderButton);
-;// CONCATENATED MODULE: ./src/components/pages/pod/Pod.js
+;// CONCATENATED MODULE: ./src/components/pages/pod/Pod.jsx
 function Pod_typeof(o) { "@babel/helpers - typeof"; return Pod_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Pod_typeof(o); }
 function Pod_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function Pod_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? Pod_ownKeys(Object(t), !0).forEach(function (r) { Pod_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Pod_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
@@ -5562,7 +5561,7 @@ function Pod() {
 }
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Add.js
 var Add = __webpack_require__(16718);
-;// CONCATENATED MODULE: ./src/components/pages/podDetails/PodDetails.js
+;// CONCATENATED MODULE: ./src/components/pages/podDetails/PodDetails.jsx
 function PodDetails_typeof(o) { "@babel/helpers - typeof"; return PodDetails_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, PodDetails_typeof(o); }
 function PodDetails_toConsumableArray(arr) { return PodDetails_arrayWithoutHoles(arr) || PodDetails_iterableToArray(arr) || PodDetails_unsupportedIterableToArray(arr) || PodDetails_nonIterableSpread(); }
 function PodDetails_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -5905,7 +5904,7 @@ function Profile() {
     }
   }),  false && /*#__PURE__*/0))));
 }
-;// CONCATENATED MODULE: ./src/components/pages/contacts/Contacts.js
+;// CONCATENATED MODULE: ./src/components/pages/contacts/Contacts.jsx
 function Contacts_typeof(o) { "@babel/helpers - typeof"; return Contacts_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Contacts_typeof(o); }
 function Contacts_toConsumableArray(arr) { return Contacts_arrayWithoutHoles(arr) || Contacts_iterableToArray(arr) || Contacts_unsupportedIterableToArray(arr) || Contacts_nonIterableSpread(); }
 function Contacts_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -6323,7 +6322,7 @@ function ContactsListPage(_ref) {
     }
   }));
 }
-;// CONCATENATED MODULE: ./src/components/pages/contactDetails/ContactDetails.js
+;// CONCATENATED MODULE: ./src/components/pages/contactDetails/ContactDetails.jsx
 function ContactDetails_typeof(o) { "@babel/helpers - typeof"; return ContactDetails_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, ContactDetails_typeof(o); }
 function ContactDetails_toConsumableArray(arr) { return ContactDetails_arrayWithoutHoles(arr) || ContactDetails_iterableToArray(arr) || ContactDetails_unsupportedIterableToArray(arr) || ContactDetails_nonIterableSpread(); }
 function ContactDetails_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -6926,7 +6925,7 @@ var FileSaver_min = __webpack_require__(4213);
 var FileSaver_min_default = /*#__PURE__*/__webpack_require__.n(FileSaver_min);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Sync.js
 var Sync = __webpack_require__(34606);
-;// CONCATENATED MODULE: ./src/components/pages/profile/Profile.js
+;// CONCATENATED MODULE: ./src/components/pages/profile/Profile.jsx
 function Profile_toConsumableArray(arr) { return Profile_arrayWithoutHoles(arr) || Profile_iterableToArray(arr) || Profile_unsupportedIterableToArray(arr) || Profile_nonIterableSpread(); }
 function Profile_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function Profile_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
@@ -7312,7 +7311,7 @@ function Profile_Profile(_ref) {
     }
   }, t("profilePage.backupProfile"))))));
 }
-;// CONCATENATED MODULE: ./src/components/pages/files/Files.js
+;// CONCATENATED MODULE: ./src/components/pages/files/Files.jsx
 function Files_typeof(o) { "@babel/helpers - typeof"; return Files_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Files_typeof(o); }
 function Files_slicedToArray(arr, i) { return Files_arrayWithHoles(arr) || Files_iterableToArrayLimit(arr, i) || Files_unsupportedIterableToArray(arr, i) || Files_nonIterableRest(); }
 function Files_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -7479,7 +7478,7 @@ function Files_ContactsListPage() {
     list: fileList
   }));
 }
-;// CONCATENATED MODULE: ./src/components/pages/file/File.js
+;// CONCATENATED MODULE: ./src/components/pages/file/File.jsx
 function File_typeof(o) { "@babel/helpers - typeof"; return File_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, File_typeof(o); }
 function File_toConsumableArray(arr) { return File_arrayWithoutHoles(arr) || File_iterableToArray(arr) || File_unsupportedIterableToArray(arr) || File_nonIterableSpread(); }
 function File_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -7696,6 +7695,17 @@ function File() {
     })) === null || _state$pods$find === void 0 || (_state$pods$find = _state$pods$find.blockchain) === null || _state$pods$find === void 0 ? void 0 : _state$pods$find.storage[fileId];
   });
   if (!attachment) return "no file found";
+  var santizedAttachmentSrc = function santizedAttachmentSrc(attachment) {
+    var urlRegex = new RegExp("^(http|https)://[a-zA-Z0-9-.]+.[a-zA-Z]{2,3}(/S*)?$");
+    var base64Regex = new RegExp("data:image/([a-zA-Z]*);base64,([a-zA-Z0-9+/=]*)");
+    if (urlRegex.test(attachment)) {
+      return attachment;
+    } else if (base64Regex.test(attachment)) {
+      return attachment;
+    } else {
+      return "";
+    }
+  };
   return /*#__PURE__*/index_js_default().createElement(page_container_PageContainer/* default */.A, {
     headerProps: {
       title: attachment === null || attachment === void 0 ? void 0 : attachment.name,
@@ -7707,7 +7717,7 @@ function File() {
     }
   }, (attachment === null || attachment === void 0 ? void 0 : attachment.type) === "image" && /*#__PURE__*/index_js_default().createElement("img", {
     alt: "Remy Sharp",
-    src: attachment === null || attachment === void 0 ? void 0 : attachment.data,
+    src: santizedAttachmentSrc(attachment === null || attachment === void 0 ? void 0 : attachment.data),
     style: {
       width: "100vw"
     }
@@ -7779,15 +7789,16 @@ function File() {
     onClick: function onClick() {
       console.log("downloading file");
       var element = document.createElement("a");
-      element.href = attachment === null || attachment === void 0 ? void 0 : attachment.data; // URL.createObjectURL(file);
+      var isBase64 = attachment === null || attachment === void 0 ? void 0 : attachment.data.startsWith("data:");
+      element.href = isBase64 && (attachment === null || attachment === void 0 ? void 0 : attachment.data); // URL.createObjectURL(file);
       element.download = attachment === null || attachment === void 0 ? void 0 : attachment.name;
       document.body.appendChild(element);
       element.click();
     }
   }, "Download")));
 }
-// EXTERNAL MODULE: ./src/components/atomic/molecules/thread/Thread.js + 3 modules
-var Thread = __webpack_require__(48622);
+// EXTERNAL MODULE: ./src/components/atomic/molecules/thread/Thread.jsx + 3 modules
+var Thread = __webpack_require__(30223);
 ;// CONCATENATED MODULE: ./src/components/utils/calculateMd5.js
 function calculateMD5(str) {
   var rotateLeft = function rotateLeft(value, shift) {
@@ -7942,7 +7953,7 @@ var splitpanestyle_update = injectStylesIntoStyleTag_default()(splitpanestyle/* 
 
        /* harmony default export */ const feed_splitpanestyle = (splitpanestyle/* default */.A && splitpanestyle/* default */.A.locals ? splitpanestyle/* default */.A.locals : undefined);
 
-;// CONCATENATED MODULE: ./src/components/pages/feed/Feed.js
+;// CONCATENATED MODULE: ./src/components/pages/feed/Feed.jsx
 function Feed_typeof(o) { "@babel/helpers - typeof"; return Feed_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Feed_typeof(o); }
 function Feed_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function Feed_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? Feed_ownKeys(Object(t), !0).forEach(function (r) { Feed_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Feed_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
@@ -8755,7 +8766,7 @@ function Feed() {
     }
   }, t("podPage.cancelReply"))))));
 }
-;// CONCATENATED MODULE: ./src/components/pages/maintainance/Maintainance.js
+;// CONCATENATED MODULE: ./src/components/pages/maintainance/Maintainance.jsx
 
 
 
@@ -8834,7 +8845,7 @@ var style_update = injectStylesIntoStyleTag_default()(style/* default */.A, styl
 
        /* harmony default export */ const hands_style = (style/* default */.A && style/* default */.A.locals ? style/* default */.A.locals : undefined);
 
-;// CONCATENATED MODULE: ./src/components/pages/hands/Hands.js
+;// CONCATENATED MODULE: ./src/components/pages/hands/Hands.jsx
 
 
 
@@ -8916,7 +8927,7 @@ var Tabs = __webpack_require__(81968);
 var Tab = __webpack_require__(10423);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Box/Box.js + 2 modules
 var Box = __webpack_require__(69067);
-;// CONCATENATED MODULE: ./src/components/atomic/molecules/qr-text/QRText.js
+;// CONCATENATED MODULE: ./src/components/atomic/molecules/qr-text/QRText.jsx
 function QRText_slicedToArray(arr, i) { return QRText_arrayWithHoles(arr) || QRText_iterableToArrayLimit(arr, i) || QRText_unsupportedIterableToArray(arr, i) || QRText_nonIterableRest(); }
 function QRText_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function QRText_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return QRText_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return QRText_arrayLikeToArray(o, minLen); }
@@ -9030,7 +9041,7 @@ var QRText = function QRText() {
   }, scanning ? t("components.connectToPeer.stopScanning") : 'Scan QR'));
 };
 /* harmony default export */ const qr_text_QRText = (QRText);
-;// CONCATENATED MODULE: ./src/components/atomic/molecules/qr-file/QRFile.js
+;// CONCATENATED MODULE: ./src/components/atomic/molecules/qr-file/QRFile.jsx
 function QRFile_toConsumableArray(arr) { return QRFile_arrayWithoutHoles(arr) || QRFile_iterableToArray(arr) || QRFile_unsupportedIterableToArray(arr) || QRFile_nonIterableSpread(); }
 function QRFile_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function QRFile_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
@@ -9310,7 +9321,7 @@ var QRFile = function QRFile() {
   }))));
 };
 /* harmony default export */ const qr_file_QRFile = (QRFile);
-;// CONCATENATED MODULE: ./src/components/pages/shareQr/ShareQR.js
+;// CONCATENATED MODULE: ./src/components/pages/shareQr/ShareQR.jsx
 var _excluded = ["children", "value", "index"];
 function ShareQR_slicedToArray(arr, i) { return ShareQR_arrayWithHoles(arr) || ShareQR_iterableToArrayLimit(arr, i) || ShareQR_unsupportedIterableToArray(arr, i) || ShareQR_nonIterableRest(); }
 function ShareQR_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -9320,7 +9331,7 @@ function ShareQR_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefi
 function ShareQR_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function ShareQR_extends() { ShareQR_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return ShareQR_extends.apply(this, arguments); }
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } } return target; }
 
 
 
@@ -9438,7 +9449,7 @@ function ShareQR_Maintainance() {
     dir: theme.direction
   }, /*#__PURE__*/index_js_default().createElement(qr_file_QRFile, null))))));
 }
-;// CONCATENATED MODULE: ./src/components/pages/encryption/RSA.js
+;// CONCATENATED MODULE: ./src/components/pages/encryption/RSA.jsx
 function RSA_slicedToArray(arr, i) { return RSA_arrayWithHoles(arr) || RSA_iterableToArrayLimit(arr, i) || RSA_unsupportedIterableToArray(arr, i) || RSA_nonIterableRest(); }
 function RSA_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function RSA_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return RSA_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return RSA_arrayLikeToArray(o, minLen); }
@@ -9639,7 +9650,7 @@ var RSA_QRText = function QRText() {
   }));
 };
 /* harmony default export */ const RSA = (RSA_QRText);
-;// CONCATENATED MODULE: ./src/components/pages/encryption/Symmetric.js
+;// CONCATENATED MODULE: ./src/components/pages/encryption/Symmetric.jsx
 function Symmetric_slicedToArray(arr, i) { return Symmetric_arrayWithHoles(arr) || Symmetric_iterableToArrayLimit(arr, i) || Symmetric_unsupportedIterableToArray(arr, i) || Symmetric_nonIterableRest(); }
 function Symmetric_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function Symmetric_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Symmetric_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Symmetric_arrayLikeToArray(o, minLen); }
@@ -9796,7 +9807,7 @@ var Symmetric_QRText = function QRText() {
   }, "Decrypt file"));
 };
 /* harmony default export */ const Symmetric = (Symmetric_QRText);
-;// CONCATENATED MODULE: ./src/components/pages/encryption/HashInputs.js
+;// CONCATENATED MODULE: ./src/components/pages/encryption/HashInputs.jsx
 function HashInputs_slicedToArray(arr, i) { return HashInputs_arrayWithHoles(arr) || HashInputs_iterableToArrayLimit(arr, i) || HashInputs_unsupportedIterableToArray(arr, i) || HashInputs_nonIterableRest(); }
 function HashInputs_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function HashInputs_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return HashInputs_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return HashInputs_arrayLikeToArray(o, minLen); }
@@ -9911,7 +9922,7 @@ var HashInputs_QRText = function QRText() {
   }));
 };
 /* harmony default export */ const HashInputs = (HashInputs_QRText);
-;// CONCATENATED MODULE: ./src/components/pages/encryption/Hashing.js
+;// CONCATENATED MODULE: ./src/components/pages/encryption/Hashing.jsx
 var Hashing_excluded = ["children", "value", "index"];
 function Hashing_slicedToArray(arr, i) { return Hashing_arrayWithHoles(arr) || Hashing_iterableToArrayLimit(arr, i) || Hashing_unsupportedIterableToArray(arr, i) || Hashing_nonIterableRest(); }
 function Hashing_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -9921,7 +9932,7 @@ function Hashing_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefi
 function Hashing_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function Hashing_extends() { Hashing_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Hashing_extends.apply(this, arguments); }
 function Hashing_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = Hashing_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-function Hashing_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function Hashing_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } } return target; }
 
 
 
@@ -10028,7 +10039,7 @@ var Hashing_QRText = function QRText() {
   }, /*#__PURE__*/index_js_default().createElement(HashInputs, null)))));
 };
 /* harmony default export */ const Hashing = (Hashing_QRText);
-;// CONCATENATED MODULE: ./src/components/pages/encryption/Encryption.js
+;// CONCATENATED MODULE: ./src/components/pages/encryption/Encryption.jsx
 var Encryption_excluded = ["children", "value", "index"];
 function Encryption_slicedToArray(arr, i) { return Encryption_arrayWithHoles(arr) || Encryption_iterableToArrayLimit(arr, i) || Encryption_unsupportedIterableToArray(arr, i) || Encryption_nonIterableRest(); }
 function Encryption_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -10038,7 +10049,7 @@ function Encryption_iterableToArrayLimit(r, l) { var t = null == r ? null : "und
 function Encryption_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function Encryption_extends() { Encryption_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Encryption_extends.apply(this, arguments); }
 function Encryption_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = Encryption_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-function Encryption_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function Encryption_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } } return target; }
 
 
 
@@ -10165,7 +10176,7 @@ function Encryption_Maintainance() {
     dir: theme.direction
   }, /*#__PURE__*/index_js_default().createElement(Hashing, null))))));
 }
-;// CONCATENATED MODULE: ./src/components/pages/termsAndConditions/TermsAndConditions.js
+;// CONCATENATED MODULE: ./src/components/pages/termsAndConditions/TermsAndConditions.jsx
 function TermsAndConditions_slicedToArray(arr, i) { return TermsAndConditions_arrayWithHoles(arr) || TermsAndConditions_iterableToArrayLimit(arr, i) || TermsAndConditions_unsupportedIterableToArray(arr, i) || TermsAndConditions_nonIterableRest(); }
 function TermsAndConditions_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function TermsAndConditions_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return TermsAndConditions_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return TermsAndConditions_arrayLikeToArray(o, minLen); }
@@ -10360,7 +10371,7 @@ function TermsAndConditions_ContactsListPage() {
     padding: 20
   }));
 }
-;// CONCATENATED MODULE: ./src/components/pages/privacyPolicy/PrivacyPolicy.js
+;// CONCATENATED MODULE: ./src/components/pages/privacyPolicy/PrivacyPolicy.jsx
 function PrivacyPolicy_slicedToArray(arr, i) { return PrivacyPolicy_arrayWithHoles(arr) || PrivacyPolicy_iterableToArrayLimit(arr, i) || PrivacyPolicy_unsupportedIterableToArray(arr, i) || PrivacyPolicy_nonIterableRest(); }
 function PrivacyPolicy_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function PrivacyPolicy_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return PrivacyPolicy_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return PrivacyPolicy_arrayLikeToArray(o, minLen); }
@@ -10570,7 +10581,7 @@ var leaflet_src = __webpack_require__(53481);
 var leaflet_src_default = /*#__PURE__*/__webpack_require__.n(leaflet_src);
 // EXTERNAL MODULE: ./node_modules/leaflet/dist/images/marker-icon.png
 var marker_icon = __webpack_require__(19927);
-;// CONCATENATED MODULE: ./src/components/pages/map/Map.js
+;// CONCATENATED MODULE: ./src/components/pages/map/Map.jsx
 function Map_slicedToArray(arr, i) { return Map_arrayWithHoles(arr) || Map_iterableToArrayLimit(arr, i) || Map_unsupportedIterableToArray(arr, i) || Map_nonIterableRest(); }
 function Map_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function Map_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Map_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Map_arrayLikeToArray(o, minLen); }
@@ -10817,7 +10828,7 @@ function Map() {
 }
 // EXTERNAL MODULE: ./node_modules/@mui/material/LinearProgress/LinearProgress.js + 1 modules
 var LinearProgress = __webpack_require__(87458);
-;// CONCATENATED MODULE: ./src/components/pages/ai/AI.js
+;// CONCATENATED MODULE: ./src/components/pages/ai/AI.jsx
 function AI_extends() { AI_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return AI_extends.apply(this, arguments); }
 
 // import List from "@mui/material/List";
@@ -10991,7 +11002,7 @@ function AI_Map() {
     value: 25
   })));
 }
-;// CONCATENATED MODULE: ./src/components/pages/webrtc/WebRTC.js
+;// CONCATENATED MODULE: ./src/components/pages/webrtc/WebRTC.jsx
 function WebRTC_typeof(o) { "@babel/helpers - typeof"; return WebRTC_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, WebRTC_typeof(o); }
 function WebRTC_regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ WebRTC_regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == WebRTC_typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(WebRTC_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
 function WebRTC_asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -11416,7 +11427,7 @@ function WebRTC_Maintainance() {
     defaultValue: "hello world"
   })));
 }
-;// CONCATENATED MODULE: ./src/components/pages/layout/Layout.js
+;// CONCATENATED MODULE: ./src/components/pages/layout/Layout.jsx
 function Layout_slicedToArray(arr, i) { return Layout_arrayWithHoles(arr) || Layout_iterableToArrayLimit(arr, i) || Layout_unsupportedIterableToArray(arr, i) || Layout_nonIterableRest(); }
 function Layout_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function Layout_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Layout_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Layout_arrayLikeToArray(o, minLen); }
@@ -11604,7 +11615,7 @@ function Layout_Maintainance() {
 
   return /*#__PURE__*/index_js_default().createElement(FullScreenDialog, null);
 }
-;// CONCATENATED MODULE: ./src/components/router/Router.js
+;// CONCATENATED MODULE: ./src/components/router/Router.jsx
 function Router_slicedToArray(arr, i) { return Router_arrayWithHoles(arr) || Router_iterableToArrayLimit(arr, i) || Router_unsupportedIterableToArray(arr, i) || Router_nonIterableRest(); }
 function Router_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function Router_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Router_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Router_arrayLikeToArray(o, minLen); }
@@ -11644,7 +11655,7 @@ function Router_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var Verse = /*#__PURE__*/(0,index_js_.lazy)(function () {
-  return Promise.all(/* import() */[__webpack_require__.e(999), __webpack_require__.e(450)]).then(__webpack_require__.bind(__webpack_require__, 74450));
+  return Promise.all(/* import() */[__webpack_require__.e(373), __webpack_require__.e(654)]).then(__webpack_require__.bind(__webpack_require__, 48654));
 });
 /* harmony default export */ const Router = (function () {
   var _TermsAndConditions;
@@ -11879,7 +11890,7 @@ var persistedReducer = (0,redux_persist_es/* persistReducer */.rL)(persistConfig
 //     conversations: conversationsReducer,
 //   },
 // })
-;// CONCATENATED MODULE: ./src/components/redux/Redux.js
+;// CONCATENATED MODULE: ./src/components/redux/Redux.jsx
 
 
 
@@ -11896,8 +11907,8 @@ var _reduxPersistConfig = store(),
     persistor: persistor
   }, children));
 });
-// EXTERNAL MODULE: ./src/components/p2p/PeerProvider.js
-var PeerProvider = __webpack_require__(44188);
+// EXTERNAL MODULE: ./src/components/p2p/PeerProvider.jsx
+var PeerProvider = __webpack_require__(7212);
 // EXTERNAL MODULE: ./src/components/encryption/Encryption.js
 var Encryption = __webpack_require__(89091);
 ;// CONCATENATED MODULE: ./src/components/p2p/appi/encryptionMiddleware.js
@@ -12488,7 +12499,7 @@ var appiSchema = function appiSchema(_ref, sendNotification) {
   }, sendNotification));
 };
 /* harmony default export */ const appi_appiSchema = (appiSchema);
-;// CONCATENATED MODULE: ./src/components/p2p/ReduxConnectedPeerProvider.js
+;// CONCATENATED MODULE: ./src/components/p2p/ReduxConnectedPeerProvider.jsx
 function ReduxConnectedPeerProvider_typeof(o) { "@babel/helpers - typeof"; return ReduxConnectedPeerProvider_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, ReduxConnectedPeerProvider_typeof(o); }
 function ReduxConnectedPeerProvider_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function ReduxConnectedPeerProvider_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ReduxConnectedPeerProvider_ownKeys(Object(t), !0).forEach(function (r) { ReduxConnectedPeerProvider_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ReduxConnectedPeerProvider_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
@@ -12867,7 +12878,7 @@ function ReduxConnectedPeerProvider_asyncToGenerator(fn) { return function () { 
     onConnection: onConnection
   }, children);
 });
-;// CONCATENATED MODULE: ./src/components/cryptography/ReduxConnectedCryptography.js
+;// CONCATENATED MODULE: ./src/components/cryptography/ReduxConnectedCryptography.jsx
 
 
 
@@ -12896,7 +12907,7 @@ var ThemeProvider = __webpack_require__(80201);
 var jssPreset = __webpack_require__(83642);
 // EXTERNAL MODULE: ./node_modules/@mui/styles/StylesProvider/StylesProvider.js + 1 modules
 var StylesProvider = __webpack_require__(10117);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/errorBoundary/ErrorBoundary.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/errorBoundary/ErrorBoundary.jsx
 function ErrorBoundary_slicedToArray(arr, i) { return ErrorBoundary_arrayWithHoles(arr) || ErrorBoundary_iterableToArrayLimit(arr, i) || ErrorBoundary_unsupportedIterableToArray(arr, i) || ErrorBoundary_nonIterableRest(); }
 function ErrorBoundary_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function ErrorBoundary_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return ErrorBoundary_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return ErrorBoundary_arrayLikeToArray(o, minLen); }
@@ -12945,8 +12956,6 @@ function ErrorBoundary(props) {
   }
 }
 /* harmony default export */ const errorBoundary_ErrorBoundary = (ErrorBoundary);
-// EXTERNAL MODULE: ./src/components/translations/i18n.js
-var i18n = __webpack_require__(63141);
 // EXTERNAL MODULE: ./node_modules/jss/dist/jss.esm.js
 var jss_esm = __webpack_require__(73317);
 // EXTERNAL MODULE: ./node_modules/jss-rtl/lib/main.js
@@ -12987,9 +12996,8 @@ function App_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) l
 
 
 
-
-
-// import { PaletteMode } from "@mui/material";
+// import { PaletteMode } from "@mui/material/index.d.ts";
+// type PaletteMode = 'light' | 'dark';
 
 var jss = (0,jss_esm/* create */.vt)({
   plugins: [].concat(App_toConsumableArray((0,jssPreset/* default */.A)().plugins), [(0,main/* default */.A)()])
@@ -13117,8 +13125,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50318);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5338);
-/* harmony import */ var _App_tsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(85756);
+/* harmony import */ var _App_tsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(96936);
 /* harmony import */ var _lcdp_offline_plugin_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(59918);
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 
 
 
@@ -13146,7 +13155,7 @@ root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createEle
 
 /***/ }),
 
-/***/ 74283:
+/***/ 1310:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -13165,7 +13174,7 @@ var emotion_styled_browser_esm = __webpack_require__(71479);
 var Menu = __webpack_require__(19741);
 // EXTERNAL MODULE: ./node_modules/@mui/material/MenuItem/MenuItem.js + 1 modules
 var MenuItem = __webpack_require__(73896);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/dropdown/NestedMenuItem.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/dropdown/NestedMenuItem.jsx
 var _excluded = ["parentMenuOpen", "label", "rightIcon", "leftIcon", "keepOpen", "children", "customTheme", "className", "tabIndex", "ContainerProps", "rightAnchored"],
   _excluded2 = ["ref"];
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -13177,7 +13186,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } } return target; }
 
 
 
@@ -13322,7 +13331,7 @@ var NestedMenuItem = /*#__PURE__*/index_js_.forwardRef(function (props, ref) {
   }, children)));
 });
 /* harmony default export */ const dropdown_NestedMenuItem = (NestedMenuItem);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/dropdown/Dropdown.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/dropdown/Dropdown.jsx
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 var _templateObject, _templateObject2;
 var Dropdown_excluded = ["keepOpen"];
@@ -13333,7 +13342,7 @@ function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key i
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function Dropdown_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = Dropdown_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-function Dropdown_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function Dropdown_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } } return target; }
 function Dropdown_slicedToArray(arr, i) { return Dropdown_arrayWithHoles(arr) || Dropdown_iterableToArrayLimit(arr, i) || Dropdown_unsupportedIterableToArray(arr, i) || Dropdown_nonIterableRest(); }
 function Dropdown_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function Dropdown_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Dropdown_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Dropdown_arrayLikeToArray(o, minLen); }
@@ -13432,7 +13441,7 @@ var DropdownNestedMenuItem = (0,emotion_styled_browser_esm/* default */.A)(dropd
 
 /***/ }),
 
-/***/ 69178:
+/***/ 94068:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -13466,7 +13475,7 @@ var react_redux = __webpack_require__(71468);
 var dist = __webpack_require__(47767);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Button/Button.js + 3 modules
 var Button = __webpack_require__(86990);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/message/Attachment.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/message/Attachment.jsx
 // use selector to get attachment data by the sha. you can use the router podId to get the attachment by pod from the redux store.
 
 
@@ -13501,8 +13510,8 @@ var Button = __webpack_require__(86990);
     alt: "random"
   }));
 });
-// EXTERNAL MODULE: ./src/components/atomic/molecules/conversation/Conversation.js + 1 modules
-var Conversation = __webpack_require__(61545);
+// EXTERNAL MODULE: ./src/components/atomic/molecules/conversation/Conversation.jsx + 1 modules
+var Conversation = __webpack_require__(60269);
 // EXTERNAL MODULE: ./node_modules/react-leaflet/lib/MapContainer.js
 var MapContainer = __webpack_require__(66162);
 // EXTERNAL MODULE: ./node_modules/react-leaflet/lib/TileLayer.js + 1 modules
@@ -13518,7 +13527,7 @@ var leaflet_src = __webpack_require__(53481);
 var leaflet_src_default = /*#__PURE__*/__webpack_require__.n(leaflet_src);
 // EXTERNAL MODULE: ./node_modules/leaflet/dist/images/marker-icon.png
 var marker_icon = __webpack_require__(19927);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/message/Location.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/message/Location.jsx
 
 
 // maps styles and market icon
@@ -13552,7 +13561,7 @@ var MapComponent = function MapComponent(_ref) {
   }, /*#__PURE__*/index_js_default().createElement(Popup/* Popup */.z, null, "You are here")));
 };
 /* harmony default export */ const Location = (MapComponent);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/message/Payload.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/message/Payload.jsx
 // use selector to get attachment data by the sha. you can use the router podId to get the attachment by pod from the redux store.
 
 
@@ -13615,11 +13624,7 @@ var MapComponent = function MapComponent(_ref) {
     }
   }, "Go to replied message"), (!!((_payload$file2 = payload.file) !== null && _payload$file2 !== void 0 && _payload$file2.name) || !!((_payload$image2 = payload.image) !== null && _payload$image2 !== void 0 && _payload$image2.data) || !!((_payload$reply3 = payload.reply) !== null && _payload$reply3 !== void 0 && _payload$reply3.id)) && /*#__PURE__*/index_js_default().createElement("br", null), (_payload$content = payload.content) !== null && _payload$content !== void 0 ? _payload$content : "");
 });
-;// CONCATENATED MODULE: ./src/components/atomic/atom/message/Message.js
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+;// CONCATENATED MODULE: ./src/components/atomic/atom/message/Message.jsx
 
 
 
@@ -13633,14 +13638,15 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
 
 var useStyles = (0,makeStyles/* default */.A)(function (theme) {
   return {
-    sentMessage: _defineProperty({
+    sentMessage: {
       // backgroundColor: theme.palette.primary.light,
       backgroundColor: theme.palette.type === "dark" ? "#004D00 !important" : "#0080ff !important",
       color: theme.palette.mode === "dark" ? theme.palette.primary.contrastText : theme.palette.primary.main,
       // marginBottom: theme.spacing(2),
       width: "fit-content",
       alignSelf: "flex-end"
-    }, "backgroundColor", "#e6ffe6"),
+      // backgroundColor: "#e6ffe6",
+    },
     messageContent: {
       padding: theme.spacing(2)
       // color: theme.palette.primary.contrastText,
@@ -13790,7 +13796,7 @@ function Message(_ref2) {
 
 /***/ }),
 
-/***/ 61545:
+/***/ 60269:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -13811,8 +13817,8 @@ var ListItem = __webpack_require__(12794);
 var makeStyles = __webpack_require__(80284);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/KeyboardDoubleArrowDown.js
 var KeyboardDoubleArrowDown = __webpack_require__(82964);
-// EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.js + 3 modules
-var Message = __webpack_require__(69178);
+// EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.jsx + 3 modules
+var Message = __webpack_require__(94068);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Delete.js
 var Delete = __webpack_require__(67034);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Reply.js
@@ -13882,7 +13888,7 @@ var update = injectStylesIntoStyleTag_default()(style/* default */.A, options);
 
        /* harmony default export */ const conversation_style = (style/* default */.A && style/* default */.A.locals ? style/* default */.A.locals : undefined);
 
-;// CONCATENATED MODULE: ./src/components/atomic/molecules/conversation/Conversation.js
+;// CONCATENATED MODULE: ./src/components/atomic/molecules/conversation/Conversation.jsx
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -14083,7 +14089,7 @@ function Conversation(_ref) {
 
 /***/ }),
 
-/***/ 48622:
+/***/ 30223:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -14102,8 +14108,8 @@ var List = __webpack_require__(49799);
 var makeStyles = __webpack_require__(80284);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/KeyboardDoubleArrowUp.js
 var KeyboardDoubleArrowUp = __webpack_require__(86113);
-// EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.js + 3 modules
-var Message = __webpack_require__(69178);
+// EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.jsx + 3 modules
+var Message = __webpack_require__(94068);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Fab/Fab.js + 1 modules
 var Fab = __webpack_require__(87992);
 // EXTERNAL MODULE: ./node_modules/use-long-press/index.mjs
@@ -14173,8 +14179,8 @@ var Container = __webpack_require__(97834);
 var dist = __webpack_require__(47767);
 // EXTERNAL MODULE: remote cryptography/Cryptography
 var Cryptography = __webpack_require__(79218);
-// EXTERNAL MODULE: ./src/components/notifications/notificationManager.js
-var notificationManager = __webpack_require__(34541);
+// EXTERNAL MODULE: ./src/components/notifications/notificationManager.jsx
+var notificationManager = __webpack_require__(29535);
 // EXTERNAL MODULE: ./node_modules/@mui/material/colors/red.js
 var red = __webpack_require__(41338);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Avatar/Avatar.js + 2 modules
@@ -14203,8 +14209,8 @@ var InputAdornment = __webpack_require__(25239);
 var Send = __webpack_require__(40443);
 // EXTERNAL MODULE: ./node_modules/@mui/material/CardContent/CardContent.js + 1 modules
 var CardContent = __webpack_require__(37636);
-// EXTERNAL MODULE: ./src/components/atomic/atom/dropdown/Dropdown.js + 1 modules
-var Dropdown = __webpack_require__(74283);
+// EXTERNAL MODULE: ./src/components/atomic/atom/dropdown/Dropdown.jsx + 1 modules
+var Dropdown = __webpack_require__(1310);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Accordion/Accordion.js + 3 modules
 var Accordion = __webpack_require__(1710);
 // EXTERNAL MODULE: ./node_modules/@mui/material/AccordionSummary/AccordionSummary.js + 1 modules
@@ -14215,7 +14221,7 @@ var AccordionDetails = __webpack_require__(16576);
 var Comment = __webpack_require__(15256);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/ExpandMore.js
 var ExpandMore = __webpack_require__(72048);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/customAccordion/CustomAccordion.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/customAccordion/CustomAccordion.jsx
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -14294,7 +14300,7 @@ var CustomAccordion = function CustomAccordion(_ref) {
   }, title), customButtons), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.A, null, children));
 };
 /* harmony default export */ const customAccordion_CustomAccordion = (CustomAccordion);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/post/Post.js
+;// CONCATENATED MODULE: ./src/components/atomic/atom/post/Post.jsx
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || Post_unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
@@ -14575,7 +14581,7 @@ var Post = function Post(_ref) {
   }, randomLongSentence), /*#__PURE__*/index_js_default().createElement(InputComponent, null)), /*#__PURE__*/index_js_default().createElement(InputComponent, null)));
 };
 /* harmony default export */ const post_Post = (Post);
-;// CONCATENATED MODULE: ./src/components/atomic/molecules/thread/Thread.js
+;// CONCATENATED MODULE: ./src/components/atomic/molecules/thread/Thread.jsx
 function Thread_toConsumableArray(arr) { return Thread_arrayWithoutHoles(arr) || Thread_iterableToArray(arr) || Thread_unsupportedIterableToArray(arr) || Thread_nonIterableSpread(); }
 function Thread_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function Thread_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
@@ -14747,7 +14753,7 @@ function Thread(_ref) {
 
 /***/ }),
 
-/***/ 20181:
+/***/ 11037:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -14877,5201 +14883,23 @@ var ConnectWithoutContact = __webpack_require__(50027);
 // EXTERNAL MODULE: ./node_modules/react-i18next/dist/es/index.js + 15 modules
 var es = __webpack_require__(32389);
 // EXTERNAL MODULE: ./src/App.tsx + 70 modules
-var App = __webpack_require__(85756);
+var App = __webpack_require__(96936);
 // EXTERNAL MODULE: ./node_modules/@mui/material/styles/useTheme.js
 var useTheme = __webpack_require__(44675);
-// EXTERNAL MODULE: ./src/components/notifications/notificationManager.js
-var notificationManager = __webpack_require__(34541);
-// EXTERNAL MODULE: ./src/components/translations/i18n.js
-var translations_i18n = __webpack_require__(63141);
-// EXTERNAL MODULE: ./src/components/atomic/atom/dropdown/Dropdown.js + 1 modules
-var Dropdown = __webpack_require__(74283);
-;// CONCATENATED MODULE: ./src/components/atomic/molecules/app-header/AppHeader.js
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+// EXTERNAL MODULE: ./src/components/notifications/notificationManager.jsx
+var notificationManager = __webpack_require__(29535);
+// EXTERNAL MODULE: ./node_modules/i18next/dist/esm/i18next.js
+var i18next = __webpack_require__(72635);
+// EXTERNAL MODULE: ./node_modules/i18next-browser-languagedetector/dist/esm/i18nextBrowserLanguageDetector.js + 1 modules
+var i18nextBrowserLanguageDetector = __webpack_require__(90796);
+// EXTERNAL MODULE: ./node_modules/i18next-http-backend/esm/index.js + 2 modules
+var esm = __webpack_require__(1347);
+;// CONCATENATED MODULE: ./src/components/translations/i18n.js
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var StyledBadge = (0,styled/* default */.Ay)(Badge/* default */.A)(function (_ref) {
-  var theme = _ref.theme;
-  return {
-    "& .MuiBadge-badge": {
-      boxShadow: "0 0 0 2px ".concat(theme.palette.background.paper),
-      "&::after": {
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        borderRadius: "50%",
-        animation: "ripple 1.2s infinite ease-in-out",
-        border: "1px solid currentColor",
-        content: '""'
-      }
-    },
-    "&.green .MuiBadge-badge": {
-      backgroundColor: "#44b700",
-      color: "#44b700"
-    },
-    "&.amber .MuiBadge-badge": {
-      backgroundColor: "#FFA500",
-      color: "#FFA500"
-    },
-    "@keyframes ripple": {
-      "0%": {
-        transform: "scale(.8)",
-        opacity: 1
-      },
-      "100%": {
-        transform: "scale(2.4)",
-        opacity: 0
-      }
-    }
-  };
-});
-var OpenCollectiveIcon = function OpenCollectiveIcon() {
-  return /*#__PURE__*/index_js_default().createElement(DataSaverOff/* default */.A, {
-    style: {
-      transform: "rotate(30deg)"
-    }
-  });
-};
-var presetIcons = {
-  account: /*#__PURE__*/index_js_default().createElement(AccountCircle/* default */.A, null),
-  arrowBack: /*#__PURE__*/index_js_default().createElement(ArrowBack/* default */.A, null),
-  camera: /*#__PURE__*/index_js_default().createElement(Videocam/* default */.A, null),
-  settings: /*#__PURE__*/index_js_default().createElement(Settings/* default */.A, null),
-  more: /*#__PURE__*/index_js_default().createElement(MoreVert/* default */.A, null),
-  logout: /*#__PURE__*/index_js_default().createElement(Logout/* default */.A, null),
-  info: /*#__PURE__*/index_js_default().createElement(Info/* default */.A, null),
-  folder: /*#__PURE__*/index_js_default().createElement(PermMedia/* default */.A, null),
-  document: /*#__PURE__*/index_js_default().createElement(Description/* default */.A, null),
-  screen: /*#__PURE__*/index_js_default().createElement(ScreenShare/* default */.A, null),
-  call: /*#__PURE__*/index_js_default().createElement(Call/* default */.A, null),
-  fullscreen: /*#__PURE__*/index_js_default().createElement(Fullscreen/* default */.A, null),
-  fullscreenExit: /*#__PURE__*/index_js_default().createElement(FullscreenExit/* default */.A, null),
-  lightMode: /*#__PURE__*/index_js_default().createElement(LightMode/* default */.A, null),
-  darkMode: /*#__PURE__*/index_js_default().createElement(DarkMode/* default */.A, null),
-  translate: /*#__PURE__*/index_js_default().createElement(Translate/* default */.A, null),
-  install: /*#__PURE__*/index_js_default().createElement(InstallMobile/* default */.A, null),
-  docs: /*#__PURE__*/index_js_default().createElement(MenuBook/* default */.A, null),
-  github: /*#__PURE__*/index_js_default().createElement(GitHub/* default */.A, null),
-  reddit: /*#__PURE__*/index_js_default().createElement(Reddit/* default */.A, null),
-  youtube: /*#__PURE__*/index_js_default().createElement(YouTube/* default */.A, null),
-  navigate: /*#__PURE__*/index_js_default().createElement(AssistantDirection/* default */.A, null),
-  "delete": /*#__PURE__*/index_js_default().createElement(Delete/* default */.A, null),
-  labs: /*#__PURE__*/index_js_default().createElement(Science/* default */.A, null),
-  gram: /*#__PURE__*/index_js_default().createElement(Collections/* default */.A, null),
-  verse: /*#__PURE__*/index_js_default().createElement(ViewInAr/* default */.A, null),
-  callContact: /*#__PURE__*/index_js_default().createElement(ContactPhone/* default */.A, null),
-  help: /*#__PURE__*/index_js_default().createElement(QuestionMark/* default */.A, null),
-  privacy: /*#__PURE__*/index_js_default().createElement(PrivacyTip/* default */.A, null),
-  support: /*#__PURE__*/index_js_default().createElement(Support/* default */.A, null),
-  download: /*#__PURE__*/index_js_default().createElement(DownloadForOffline/* default */.A, null),
-  cast: /*#__PURE__*/index_js_default().createElement(LiveTv/* default */.A, null),
-  qr: /*#__PURE__*/index_js_default().createElement(QrCode2/* default */.A, null),
-  connect: /*#__PURE__*/index_js_default().createElement(ConnectWithoutContact/* default */.A, null),
-  hand: /*#__PURE__*/index_js_default().createElement(WavingHand/* default */.A, null),
-  map: /*#__PURE__*/index_js_default().createElement(Navigation/* default */.A, null),
-  donate: /*#__PURE__*/index_js_default().createElement(VolunteerActivism/* default */.A, null),
-  key: /*#__PURE__*/index_js_default().createElement(Key/* default */.A, null),
-  coffee: /*#__PURE__*/index_js_default().createElement(Coffee/* default */.A, null),
-  openCollective: /*#__PURE__*/index_js_default().createElement(OpenCollectiveIcon, null),
-  patreon: /*#__PURE__*/index_js_default().createElement(LocalParking/* default */.A, null)
-};
-function HideOnScroll(props) {
-  var children = props.children,
-    window = props.window;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
-  var trigger = (0,useScrollTrigger/* default */.A)({
-    target: window ? window() : undefined
-  });
-  return /*#__PURE__*/index_js_default().createElement(Slide/* default */.A, {
-    appear: false,
-    direction: "down",
-    "in": !trigger
-  }, children);
-}
-var CustomDropdown = function CustomDropdown(_ref2) {
-  var _menuItems$icon, _menuItems$items;
-  var menuItems = _ref2.menuItems;
-  var _useTranslation = (0,es/* useTranslation */.Bd)(),
-    t = _useTranslation.t,
-    i18n = _useTranslation.i18n;
-  var theme = (0,useTheme/* default */.A)();
-  var _useState = (0,index_js_.useState)(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    isFullScreen = _useState2[0],
-    setIsFullScreen = _useState2[1];
-  var colorMode = index_js_default().useContext(App/* ColorModeContext */.I);
-  var sendNotification = (0,notificationManager/* useNotification */.hN)();
-  var navigate = (0,dist/* useNavigate */.Zp)();
-  var isInstalledPwa = (0,index_js_.useMemo)(function () {
-    return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone || document.referrer.includes("android-app://");
-  }, []);
-  (0,index_js_.useEffect)(function () {
-    var handleFullscreenChange = /*#__PURE__*/function () {
-      var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-        var isInFullscreen;
-        return _regeneratorRuntime().wrap(function _callee$(_context) {
-          while (1) switch (_context.prev = _context.next) {
-            case 0:
-              isInFullscreen = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement;
-              if (!(!isInFullscreen && isFullScreen && document.documentElement.requestFullscreen)) {
-                _context.next = 12;
-                break;
-              }
-              _context.prev = 2;
-              _context.next = 5;
-              return document.documentElement.requestFullscreen();
-            case 5:
-              _context.next = 10;
-              break;
-            case 7:
-              _context.prev = 7;
-              _context.t0 = _context["catch"](2);
-              console.log(_context.t0);
-            case 10:
-              _context.next = 21;
-              break;
-            case 12:
-              if (!(isInFullscreen && !isFullScreen && document.exitFullscreen)) {
-                _context.next = 21;
-                break;
-              }
-              _context.prev = 13;
-              _context.next = 16;
-              return document.exitFullscreen();
-            case 16:
-              _context.next = 21;
-              break;
-            case 18:
-              _context.prev = 18;
-              _context.t1 = _context["catch"](13);
-              console.log(_context.t1);
-            case 21:
-            case "end":
-              return _context.stop();
-          }
-        }, _callee, null, [[2, 7], [13, 18]]);
-      }));
-      return function handleFullscreenChange() {
-        return _ref3.apply(this, arguments);
-      };
-    }();
-    handleFullscreenChange();
-  }, [isFullScreen]);
-  var _useState3 = (0,index_js_.useState)(null),
-    _useState4 = _slicedToArray(_useState3, 2),
-    deferredPrompt = _useState4[0],
-    setDeferredPrompt = _useState4[1];
-  (0,index_js_.useEffect)(function () {
-    var handleBeforeInstallPromptEvent = function handleBeforeInstallPromptEvent(e) {
-      e.preventDefault();
-      setDeferredPrompt(e);
-    };
-    window.addEventListener("beforeinstallprompt", handleBeforeInstallPromptEvent);
-    var bipEvent = new Event("beforeinstallprompt");
-
-    // Define the prompt method on the event object
-    bipEvent.prompt = function () {
-      return new Promise(function (resolve) {
-        // Simulate user accepting the prompt
-        resolve({
-          outcome: "accepted"
-        }); // or 'dismissed' to simulate user dismissing the prompt
-      });
-    };
-
-    // Dispatch the custom event to trigger your event handler
-    window.dispatchEvent(bipEvent);
-    return function () {
-      window.removeEventListener("beforeinstallprompt", handleBeforeInstallPromptEvent);
-    };
-  }, []);
-  var defaultMenuItems = [{
-    text: t("components.menuItems.labs"),
-    icon: "labs",
-    subMenuItems: [{
-      text: t("podsPage.gram"),
-      icon: "gram",
-      onClick: function onClick() {
-        return navigate("/feed");
-      }
-    }, {
-      text: t("podsPage.verse"),
-      icon: "verse",
-      onClick: function onClick() {
-        return navigate("/verse");
-      }
-    }, {
-      text: t("podsPage.map"),
-      icon: "map",
-      onClick: function onClick() {
-        return navigate("/map");
-      }
-    }, {
-      text: t("podsPage.qr"),
-      icon: "qr",
-      onClick: function onClick() {
-        return navigate("/qr");
-      }
-    }, {
-      text: t("podsPage.webrtc"),
-      icon: "connect",
-      onClick: function onClick() {
-        return navigate("/webrtc");
-      }
-    }, {
-      text: t("podsPage.hands"),
-      icon: "hand",
-      onClick: function onClick() {
-        return navigate("/hands");
-      }
-    }, {
-      text: t("podsPage.encrypt"),
-      icon: "key",
-      onClick: function onClick() {
-        return navigate("/encrypt");
-      }
-    }]
-  }, {
-    text: t("components.menuItems.about"),
-    icon: "info",
-    subMenuItems: [{
-      text: t("components.menuItems.terms"),
-      icon: "document",
-      onClick: function onClick() {
-        return navigate("/terms");
-      }
-    }, {
-      text: t("components.menuItems.privacy"),
-      icon: "privacy",
-      onClick: function onClick() {
-        return navigate("/terms/privacy");
-      }
-    }, {
-      text: t("components.menuItems.docs"),
-      icon: "docs",
-      onClick: function onClick() {
-        return window.open("https://positive-intentions.com/docs/intro");
-      }
-    }, {
-      text: t("components.menuItems.github"),
-      icon: "github",
-      onClick: function onClick() {
-        return window.open("https://github.com/positive-intentions");
-      }
-    }, {
-      text: t("components.menuItems.reddit"),
-      icon: "reddit",
-      onClick: function onClick() {
-        return window.open("https://www.reddit.com/r/positive_intentions/");
-      }
-    }, {
-      text: t("components.menuItems.youtube"),
-      icon: "youtube",
-      onClick: function onClick() {
-        return window.open("https://www.youtube.com/@positive_intentions");
-      }
-    }, {
-      text: t("components.menuItems.contact"),
-      icon: "support",
-      onClick: function onClick() {
-        return window.open("https://www.reddit.com/user/Accurate-Screen8774");
-      }
-    }]
-  }, {
-    text: t("components.menuItems.options"),
-    icon: "settings",
-    subMenuItems: [{
-      text: theme.palette.mode === "dark" ? t("components.menuItems.lightMode") : t("components.menuItems.darkMode"),
-      icon: theme.palette.mode === "dark" ? "lightMode" : "darkMode",
-      onClick: colorMode.toggleColorMode
-    }, !isInstalledPwa ? {
-      text: isFullScreen ? t("components.menuItems.exitFullscreen") : t("components.menuItems.fullscreen"),
-      icon: isFullScreen ? "fullscreenExit" : "fullscreen",
-      onClick: function onClick() {
-        return setIsFullScreen(!isFullScreen);
-      }
-    } : null, !isInstalledPwa ? {
-      text: t("components.menuItems.install"),
-      icon: "install",
-      onClick: function onClick() {
-        sendNotification === null || sendNotification === void 0 || sendNotification(t("components.menuItems.requestingToInstall"), {
-          variant: "info"
-        });
-        if (deferredPrompt) {
-          deferredPrompt === null || deferredPrompt === void 0 || deferredPrompt.prompt().then(function (result) {
-            if (result.outcome === "accepted") {
-              console.log("Installation accepted");
-              sendNotification === null || sendNotification === void 0 || sendNotification(t("components.menuItems.installPossible"), {
-                variant: "success"
-              });
-            } else {
-              console.log("Installation dismissed");
-              sendNotification === null || sendNotification === void 0 || sendNotification(t("components.menuItems.installDismissed"), {
-                variant: "warning"
-              });
-            }
-          })["catch"](function (error) {
-            console.error("Installation prompt error:", error);
-            sendNotification === null || sendNotification === void 0 || sendNotification(t("components.menuItems.installFailed"), {
-              variant: "warning"
-            });
-          });
-        } else {
-          console.error("The beforeinstallprompt event has not been fired.");
-          sendNotification === null || sendNotification === void 0 || sendNotification(t("components.menuItems.installNotSupported"), {
-            variant: "warning"
-          });
-        }
-      }
-    } : null, {
-      text: t("components.menuItems.downloadZip"),
-      icon: "download",
-      onClick: function onClick() {
-        return window.open("/positive-intentions.zip");
-      }
-    }]
-  }, {
-    text: t("components.menuItems.language"),
-    icon: "translate",
-    subMenuItems: _toConsumableArray(translations_i18n/* languages */.e.map(function (language) {
-      return {
-        text: language.name,
-        onClick: function onClick() {
-          return i18n.changeLanguage(language.id);
-        }
-      };
-    }))
-  }, {
-    text: t("components.menuItems.sponsor"),
-    icon: "donate",
-    subMenuItems: [{
-      text: t("components.menuItems.github"),
-      icon: "github",
-      onClick: function onClick() {
-        return window.open("https://github.com/sponsors/positive-intentions");
-      }
-    }, {
-      text: t("components.menuItems.kofi"),
-      icon: "coffee",
-      onClick: function onClick() {
-        return window.open("https://ko-fi.com/positive_intentions");
-      }
-    }, {
-      text: t("components.menuItems.openCollective"),
-      icon: "openCollective",
-      onClick: function onClick() {
-        return window.open("https://opencollective.com/positive-intentions");
-      }
-    }, {
-      text: t("components.menuItems.patreon"),
-      icon: "patreon",
-      onClick: function onClick() {
-        return window.open("https://www.patreon.com/positive_intentions");
-      }
-    }]
-  }];
-  return /*#__PURE__*/index_js_default().createElement(Dropdown/* Dropdown */.ms, {
-    keepOpen: true,
-    trigger: /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
-      ref: menuItems.ref,
-      size: "large",
-      "aria-label": "account of current user",
-      "aria-controls": "menu-appbar",
-      "aria-haspopup": "true",
-      color: "inherit"
-    }, presetIcons[(_menuItems$icon = menuItems.icon) !== null && _menuItems$icon !== void 0 ? _menuItems$icon : "more"]),
-    menu: _toConsumableArray(((_menuItems$items = menuItems === null || menuItems === void 0 ? void 0 : menuItems.items) !== null && _menuItems$items !== void 0 ? _menuItems$items : []).concat(defaultMenuItems).filter(function (i) {
-      return !!i;
-    }).map(function (item, index) {
-      var _item$subMenuItems, _item$subMenuItems2;
-      return !((item === null || item === void 0 || (_item$subMenuItems = item.subMenuItems) === null || _item$subMenuItems === void 0 ? void 0 : _item$subMenuItems.length) > 0) ? /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownMenuItem */._2, {
-        onClick: item.onClick
-      }, /*#__PURE__*/index_js_default().createElement(ListItemIcon/* default */.A, null, presetIcons[item.icon]), /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, item.text))) : /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownNestedMenuItem */.Zn, {
-        label: item.text,
-        leftIcon: /*#__PURE__*/index_js_default().createElement(ListItemIcon/* default */.A, null, presetIcons[item.icon]),
-        rightAnchored: true,
-        menu: _toConsumableArray(((_item$subMenuItems2 = item.subMenuItems) !== null && _item$subMenuItems2 !== void 0 ? _item$subMenuItems2 : []).map(function (subItem, index) {
-          return !!subItem && /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownMenuItem */._2, {
-            onClick: subItem.onClick
-          }, subItem.icon && /*#__PURE__*/index_js_default().createElement(ListItemIcon/* default */.A, null, presetIcons[subItem.icon]), /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, subItem.text));
-        }))
-      }, /*#__PURE__*/index_js_default().createElement(ListItemIcon/* default */.A, null, presetIcons[item.icon]), /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, item.text));
-    }))
-  });
-};
-function AppHeader(_ref4) {
-  var disabled = _ref4.disabled,
-    title = _ref4.title,
-    leftIcon = _ref4.leftIcon,
-    rightIcon = _ref4.rightIcon,
-    backButton = _ref4.backButton,
-    backCount = _ref4.backCount,
-    _ref4$avatarProps = _ref4.avatarProps,
-    avatarProps = _ref4$avatarProps === void 0 ? {} : _ref4$avatarProps,
-    _ref4$menuProps = _ref4.menuProps,
-    menuProps = _ref4$menuProps === void 0 ? {} : _ref4$menuProps,
-    _ref4$customButtons = _ref4.customButtons,
-    customButtons = _ref4$customButtons === void 0 ? [] : _ref4$customButtons,
-    hideOnScroll = _ref4.hideOnScroll;
-  if (disabled) return null;
-  var _React$useState = index_js_default().useState(true),
-    _React$useState2 = _slicedToArray(_React$useState, 2),
-    auth = _React$useState2[0],
-    setAuth = _React$useState2[1];
-  var _React$useState3 = index_js_default().useState(null),
-    _React$useState4 = _slicedToArray(_React$useState3, 2),
-    anchorEl = _React$useState4[0],
-    setAnchorEl = _React$useState4[1];
-  var _React$useState5 = index_js_default().useState(null),
-    _React$useState6 = _slicedToArray(_React$useState5, 2),
-    subMenuAnchorEl = _React$useState6[0],
-    setSubMenuAnchorEl = _React$useState6[1];
-  var menuRef = index_js_default().useRef(null);
-  var subMenuRef = index_js_default().useRef(null);
-  var navigate = (0,dist/* useNavigate */.Zp)();
-  var handleMenu = function handleMenu(event) {
-    setAnchorEl(menuRef);
-  };
-  var handleSubMenuMenu = function handleSubMenuMenu(event) {
-    setSubMenuAnchorEl(subMenuRef);
-  };
-  var handleClose = function handleClose() {
-    setAnchorEl(null);
-  };
-  var handleSubMenuClose = function handleSubMenuClose() {
-    setSubMenuAnchorEl(null);
-  };
-  var _React$useState7 = index_js_default().useState(false),
-    _React$useState8 = _slicedToArray(_React$useState7, 2),
-    subMenuOpen = _React$useState8[0],
-    setSubMenuOpen = _React$useState8[1];
-  var AppBarRender = function AppBarRender() {
-    var _avatarProps$src, _avatarProps$alt;
-    return /*#__PURE__*/index_js_default().createElement(AppBar/* default */.A, null, /*#__PURE__*/index_js_default().createElement(Toolbar/* default */.A, {
-      style: {
-        backgroundColor: "#d32f2f",
-        color: "white",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "0 20px",
-        minHeight: "20px"
-      }
-    }, /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
-      component: "div"
-    }, "For testing purposes only")), /*#__PURE__*/index_js_default().createElement(Toolbar/* default */.A, null, backButton && /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
-      size: "large",
-      edge: "start",
-      color: "inherit",
-      "aria-label": "menu"
-      // sx={{ mr: 2 }}
-      ,
-      onClick: function onClick() {
-        if (typeof backButton === 'function') backButton();
-        navigate(typeof backButton === "string" ? backButton : -1);
-      }
-    }, /*#__PURE__*/index_js_default().createElement(Badge/* default */.A, {
-      color: "info",
-      badgeContent: backCount
-    }, presetIcons.arrowBack)), Object.keys(avatarProps).length > 0 && /*#__PURE__*/index_js_default().createElement(StyledBadge, {
-      className: avatarProps !== null && avatarProps !== void 0 && avatarProps.isOnline ? "green" : "amber",
-      overlap: "circular",
-      anchorOrigin: {
-        vertical: "bottom",
-        horizontal: "right"
-      },
-      variant: "dot",
-      invisible: !(avatarProps !== null && avatarProps !== void 0 && avatarProps.isOnline) && !(avatarProps !== null && avatarProps !== void 0 && avatarProps.isSomeOnline),
-      sx: {
-        mr: 2
-      }
-    }, /*#__PURE__*/index_js_default().createElement(Avatar/* default */.A, {
-      src: (_avatarProps$src = avatarProps === null || avatarProps === void 0 ? void 0 : avatarProps.src) !== null && _avatarProps$src !== void 0 ? _avatarProps$src : "",
-      alt: (_avatarProps$alt = avatarProps === null || avatarProps === void 0 ? void 0 : avatarProps.alt) !== null && _avatarProps$alt !== void 0 ? _avatarProps$alt : "-"
-    })), /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
-      variant: "h6",
-      component: "div",
-      sx: {
-        flexGrow: 1,
-        overflow: "hidden",
-        whiteSpace: "nowrap",
-        textOverflow: "ellipsis"
-      }
-    }, title), customButtons.map(function (button, index) {
-      return button.onClick ? /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
-        key: index,
-        ref: menuRef,
-        size: "large",
-        "aria-label": "account of current user",
-        "aria-controls": "menu-appbar",
-        "aria-haspopup": "true",
-        onClick: button.onClick,
-        color: "inherit"
-      }, presetIcons[button.icon]) : button;
-    }), /*#__PURE__*/index_js_default().createElement(CustomDropdown, {
-      menuItems: menuProps
-    })));
-  };
-  for (var _len = arguments.length, props = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    props[_key - 1] = arguments[_key];
-  }
-  return /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(CssBaseline/* default */.Ay, null), hideOnScroll ? /*#__PURE__*/index_js_default().createElement(HideOnScroll, props, /*#__PURE__*/index_js_default().createElement(AppBarRender, null)) : /*#__PURE__*/index_js_default().createElement(AppBarRender, null));
-}
-// EXTERNAL MODULE: ./node_modules/@mui/material/Fab/Fab.js + 1 modules
-var Fab = __webpack_require__(87992);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Add.js
-var Add = __webpack_require__(16718);
-// EXTERNAL MODULE: ./node_modules/@mui/styles/makeStyles/makeStyles.js + 6 modules
-var makeStyles = __webpack_require__(80284);
-// EXTERNAL MODULE: ./node_modules/@mui/styles/useTheme/index.js
-var styles_useTheme = __webpack_require__(23668);
-// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDial/SpeedDial.js + 2 modules
-var SpeedDial = __webpack_require__(36056);
-// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDialIcon/SpeedDialIcon.js + 2 modules
-var SpeedDialIcon = __webpack_require__(10698);
-// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDialAction/SpeedDialAction.js + 63 modules
-var SpeedDialAction = __webpack_require__(749);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/FileCopyOutlined.js
-var FileCopyOutlined = __webpack_require__(47152);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Save.js
-var Save = __webpack_require__(98984);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Print.js
-var Print = __webpack_require__(45234);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Share.js
-var Share = __webpack_require__(29422);
-;// CONCATENATED MODULE: ./src/components/atomic/organism/page-container/PageContainer.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var PageContainer_presetIcons = {
-  add: /*#__PURE__*/index_js_.createElement(Add/* default */.A, null)
-};
-var actions = [{
-  icon: /*#__PURE__*/index_js_.createElement(FileCopyOutlined/* default */.A, null),
-  name: "Copy"
-}, {
-  icon: /*#__PURE__*/index_js_.createElement(Save/* default */.A, null),
-  name: "Save"
-}, {
-  icon: /*#__PURE__*/index_js_.createElement(Print/* default */.A, null),
-  name: "Print"
-}, {
-  icon: /*#__PURE__*/index_js_.createElement(Share/* default */.A, null),
-  name: "Share"
-}];
-function PageContainer_HideOnScroll(props) {
-  var children = props.children,
-    window = props.window;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
-  var trigger = (0,useScrollTrigger/* default */.A)({
-    target: window ? window() : undefined
-  });
-  return /*#__PURE__*/index_js_.createElement(Slide/* default */.A, {
-    appear: false,
-    direction: "down",
-    "in": !trigger
-  }, children);
-}
-PageContainer_HideOnScroll.propTypes = {
-  children: (prop_types_default()).element.isRequired,
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window: (prop_types_default()).func
-};
-var useStyles = (0,makeStyles/* default */.A)(function (theme) {
-  return {
-    // root: {
-    //     flexGrow: 1,
-    //     // height: "100vh",
-    //     // overflow: 'auto',
-    //     paddingTop: `${theme.spacing(8)}`
-    // },
-    // appBar: {
-    //     height: theme.spacing(8),
-    // },
-    // form: {
-    //     padding: theme.spacing(3),
-    // },
-    // title: {
-    //     fontWeight: "bold",
-    //     textAlign: "left",
-    //     display: "flex",
-    //     alignItems: "center",
-    //     height: "100%",
-    //     padding: `0 ${theme.spacing(3)}`,
-    // },
-    fab: {
-      position: "fixed !important",
-      bottom: theme.spacing(2),
-      right: theme.spacing(2)
-    }
-  };
-});
-var defaultLightBackgroundImage = "/backgrounds/light-random.png";
-var defaultDarkBackgroundImage = "/backgrounds/dark-random.png";
-function PageContainer(props) {
-  var _speedDialProps$icon;
-  var children = props.children,
-    _props$headerProps = props.headerProps,
-    headerProps = _props$headerProps === void 0 ? {} : _props$headerProps,
-    _props$fabProps = props.fabProps,
-    fabProps = _props$fabProps === void 0 ? {} : _props$fabProps,
-    _props$speedDialProps = props.speedDialProps,
-    speedDialProps = _props$speedDialProps === void 0 ? {} : _props$speedDialProps,
-    backgroundImage = props.backgroundImage;
-  var classes = useStyles();
-  var theme = (0,styles_useTheme/* default */.A)();
-  var defaultBackgroundImage = theme.palette.mode === "dark" ? defaultDarkBackgroundImage : defaultLightBackgroundImage;
-  return /*#__PURE__*/index_js_.createElement(index_js_.Fragment, null, /*#__PURE__*/index_js_.createElement(CssBaseline/* default */.Ay, null), /*#__PURE__*/index_js_.createElement(AppHeader, headerProps), /*#__PURE__*/index_js_.createElement(Toolbar/* default */.A, null), backgroundImage !== "" && /*#__PURE__*/index_js_.createElement(Box/* default */.A, {
-    sx: {
-      flexGrow: 1,
-      backgroundImage: "url(".concat(backgroundImage !== null && backgroundImage !== void 0 ? backgroundImage : defaultBackgroundImage, ")"),
-      position: "fixed",
-      height: "100%",
-      width: "100%",
-      opacity: 0.05,
-      zIndex: 0
-    }
-  }), /*#__PURE__*/index_js_.createElement(Container/* default */.A, {
-    disableGutters: true,
-    className: "page-container",
-    style: {
-      flexGrow: 1,
-      marginTop: 20
-    }
-  }, children), Object.keys(fabProps).length > 0 && /*#__PURE__*/index_js_.createElement(Fab/* default */.A, {
-    color: "primary",
-    "aria-label": "add",
-    className: classes.fab,
-    onClick: fabProps === null || fabProps === void 0 ? void 0 : fabProps.onClick
-  }, PageContainer_presetIcons[fabProps === null || fabProps === void 0 ? void 0 : fabProps.icon]), Object.keys(speedDialProps).length > 0 && /*#__PURE__*/index_js_.createElement(SpeedDial/* default */.A, {
-    ariaLabel: "SpeedDial basic example",
-    sx: {
-      position: "absolute",
-      bottom: 16,
-      right: 16
-    },
-    icon: (_speedDialProps$icon = speedDialProps.icon) !== null && _speedDialProps$icon !== void 0 ? _speedDialProps$icon : /*#__PURE__*/index_js_.createElement(SpeedDialIcon/* default */.A, null)
-  }, speedDialProps.actions.map(function (action) {
-    return /*#__PURE__*/index_js_.createElement(SpeedDialAction/* default */.A, {
-      key: action.name,
-      icon: action.icon,
-      tooltipTitle: action.name,
-      onClick: action.onClick
-    });
-  })));
-}
-
-/***/ }),
-
-/***/ 34431:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ blockchain_Blockchain),
-  o: () => (/* binding */ useBlockchain)
-});
-
-// EXTERNAL MODULE: consume shared module (default) react@^18.3.1 (singleton) (fallback: ./node_modules/react/index.js)
-var index_js_ = __webpack_require__(50318);
-;// CONCATENATED MODULE: ./src/components/utils/calculateSha3512.js
-//disable linting file
-/* eslint-disable */
-
-// Check if BigInt is not defined
-if (typeof window.BigInt === "undefined") {
-  window.BigInt = function () {
-    function BigInt(value) {
-      if (!(this instanceof window.BigInt)) {
-        return new window.BigInt(value);
-      }
-      if (typeof value !== "string" || !/^-?\d+$/.test(value)) {
-        throw new TypeError("Invalid BigInt value");
-      }
-
-      // Remove leading zeros, if any, and handle '-0' case
-      this.value = value.replace(/^0+|(?<=^-)0+/g, "") || "0";
-      if (this.value === "-0") this.value = "0";
-    }
-    window.BigInt.prototype.add = function (other) {
-      if (!(other instanceof window.BigInt)) {
-        throw new TypeError("Argument must be of type BigInt");
-      }
-      var carry = 0;
-      var result = "";
-      var maxLength = Math.max(this.value.length, other.value.length);
-      var isThisNegative = this.value[0] === "-";
-      var isOtherNegative = other.value[0] === "-";
-
-      // If both are negative, negate the result of the addition
-      if (isThisNegative && isOtherNegative) {
-        return new window.BigInt("-" + this.negate().add(other.negate()).toString());
-      }
-
-      // If one of them is negative, perform subtraction
-      if (isThisNegative) {
-        return other.subtract(this.negate());
-      }
-      if (isOtherNegative) {
-        return this.subtract(other.negate());
-      }
-      for (var i = 0; i < maxLength || carry; i++) {
-        var sum = carry;
-        if (i < this.value.length) {
-          sum += parseInt(this.value.charAt(this.value.length - 1 - i), 10);
-        }
-        if (i < other.value.length) {
-          sum += parseInt(other.value.charAt(other.value.length - 1 - i), 10);
-        }
-        result = sum % 10 + result;
-        carry = Math.floor(sum / 10);
-      }
-      return new window.BigInt(result);
-    };
-
-    // Placeholder for subtraction (not fully implemented)
-    window.BigInt.prototype.subtract = function (other) {
-      // This is a placeholder; actual subtraction logic will be more complex.
-      // For simplicity, assume the current number is larger than the 'other'.
-      return new window.BigInt("0");
-    };
-
-    // Helper method to negate a BigInt
-    window.BigInt.prototype.negate = function () {
-      if (this.value[0] === "-") {
-        return new BigInt(this.value.substring(1));
-      }
-      return new BigInt("-" + this.value);
-    };
-    window.BigInt.prototype.toString = function () {
-      return this.value;
-    };
-    return window.BigInt;
-  }();
-}
-
-// Usage
-// const a = BigInt('12345');
-// const b = BigInt('67890');
-// const c = a.add(b);
-// console.log(c.toString()); // 80135
-
-// function SHA3_512(input):
-//     input = applyPadding(input)    // Pre-processing step
-//     state = initializeState()     // State Initialization
-
-//     // Keccak Rounds
-//     for round in 1 to 24:
-//         state = applyTheta(state)
-//         state = applyRho(state)
-//         state = applyPi(state)
-//         state = applyChi(state)
-//         state = applyIota(state, round)
-
-//     output = generateOutput(state)  // Output Generation
-//     return output
-
-function applyPadding(message) {
-  var r = 576; // Rate for SHA3-512
-
-  // Convert the message to a binary representation
-  var binaryMessage = "";
-  for (var i = 0; i < message.length; i++) {
-    var bin = message.charCodeAt(i).toString(2);
-    binaryMessage += ("00000000" + bin).slice(-8); // Pad each byte to 8 bits
-  }
-
-  // Append the initial "1"
-  binaryMessage += "1";
-
-  // Add "0" bits until length % r = r-1
-  while (binaryMessage.length % r !== r - 1) {
-    binaryMessage += "0";
-  }
-
-  // Append the final "1"
-  binaryMessage += "1";
-  return binaryMessage;
-}
-
-// // Example usage:
-// let paddedMessage = applyPadding("YourInputHere");
-// console.log(paddedMessage);
-
-function initializeState() {
-  var w = 64; // word length in bits for SHA3-512
-  var state = [];
-  for (var x = 0; x < 5; x++) {
-    state[x] = [];
-    for (var y = 0; y < 5; y++) {
-      state[x][y] = window.BigInt(0); // Using window.BigInt to handle 64-bit values in JavaScript
-    }
-  }
-  return state;
-}
-
-// // Example usage:
-// let state = initializeState();
-// console.log(state);
-
-function applyTheta(state) {
-  var w = 64; // word length in bits for SHA3-512
-  var C = Array(5).fill(window.BigInt(0));
-  var D = Array(5).fill(window.BigInt(0));
-
-  // Step 1: For each x, compute C[x]
-  for (var x = 0; x < 5; x++) {
-    C[x] = state[x][0];
-    for (var y = 1; y < 5; y++) {
-      C[x] ^= state[x][y];
-    }
-  }
-
-  // Step 2: Compute D[x]
-  for (var _x = 0; _x < 5; _x++) {
-    D[_x] = C[(_x + 4) % 5] ^ (C[(_x + 1) % 5] << 1n | C[(_x + 1) % 5] >> window.BigInt(w - 1)); // Left rotation by 1, using BigInt
-  }
-
-  // Step 3: For each x, y, XOR the lane at x, y with D[x]
-  for (var _x2 = 0; _x2 < 5; _x2++) {
-    for (var _y = 0; _y < 5; _y++) {
-      state[_x2][_y] ^= D[_x2];
-    }
-  }
-  return state;
-}
-
-// // Example usage:
-// let state = initializeState();
-// state = applyTheta(state);
-// console.log(state);
-
-function applyRho(state) {
-  var rotationOffsets = [[0, 36, 3, 41, 18], [1, 44, 10, 45, 2], [62, 6, 43, 15, 61], [28, 55, 25, 21, 56], [27, 20, 39, 8, 14]];
-  for (var x = 0; x < 5; x++) {
-    for (var y = 0; y < 5; y++) {
-      var offset = window.BigInt(rotationOffsets[x][y]); // Convert to BigInt
-      state[x][y] = state[x][y] << offset | state[x][y] >> 64n - offset; // Use BigInt for 64
-    }
-  }
-  return state;
-}
-
-// // Example usage:
-// let state = initializeState();
-// state = applyRho(state);
-// console.log(state);
-
-function applyPi(state) {
-  var newState = Array(5).fill(0).map(function () {
-    return Array(5).fill(window.BigInt(0));
-  }); // Initialize a new 5x5 state with zeros
-
-  for (var x = 0; x < 5; x++) {
-    for (var y = 0; y < 5; y++) {
-      var newX = y;
-      var newY = (2 * x + 3 * y) % 5;
-      newState[newX][newY] = state[x][y];
-    }
-  }
-  return newState;
-}
-
-// Example usage:
-// let state = initializeState();
-// state = applyPi(state);
-// console.log(state);
-
-function applyChi(state) {
-  var newState = Array(5).fill(0).map(function () {
-    return Array(5).fill(window.BigInt(0));
-  }); // Initialize a new 5x5 state with zeros
-
-  for (var x = 0; x < 5; x++) {
-    for (var y = 0; y < 5; y++) {
-      var nextLane = state[(x + 1) % 5][y];
-      var twoPlacesAheadLane = state[(x + 2) % 5][y];
-      newState[x][y] = state[x][y] ^ ~nextLane & twoPlacesAheadLane;
-    }
-  }
-  return newState;
-}
-
-// // Example usage:
-// let state = initializeState();
-// state = applyChi(state);
-// console.log(state);
-
-var ROUND_CONSTANTS = (/* unused pure expression or super */ null && ([
-  // window.BigInt(0x0000000000000001),
-  // window.BigInt(0x0000000000008082),
-  // window.BigInt(0x800000000000808a),
-  // window.BigInt(0x8000000080008000),
-  // window.BigInt(0x000000000000808b),
-  // window.BigInt(0x0000000080000001),
-  // window.BigInt(0x8000000080008081),
-  // window.BigInt(0x8000000000008009),
-  // window.BigInt(0x000000000000008a),
-  // window.BigInt(0x0000000000000088),
-  // window.BigInt(0x0000000080008009),
-  // window.BigInt(0x000000008000000a),
-  // window.BigInt(0x000000008000808b),
-  // window.BigInt(0x800000000000008b),
-  // window.BigInt(0x8000000000008089),
-  // window.BigInt(0x8000000000008003),
-  // window.BigInt(0x8000000000008002),
-  // window.BigInt(0x8000000000000080),
-  // window.BigInt(0x000000000000800a),
-  // window.BigInt(0x800000008000000a),
-  // window.BigInt(0x8000000080008081),
-  // window.BigInt(0x8000000000008080),
-  // window.BigInt(0x0000000080000001),
-  // window.BigInt(0x8000000080008008),
-]));
-function applyIota(state, roundNumber) {
-  state[0][0] = state[0][0] ^ ROUND_CONSTANTS[roundNumber];
-  return state;
-}
-
-// // Example usage:
-// let state = initializeState();
-// const roundNumber = 0; // This is just an example; typically you'd be iterating through rounds in the overall Keccak function.
-// state = applyIota(state, roundNumber);
-// console.log(state);
-
-function generateOutput(state, outputLength) {
-  // Assuming state is a 2D array and each lane is a window.BigInt representing 64 bits.
-  // Convert state to a flat binary string.
-  var output = "";
-  for (var y = 0; y < 5; y++) {
-    for (var x = 0; x < 5; x++) {
-      var lane = state[x][y];
-      var binaryLane = lane.toString(2).padStart(64, "0");
-      output += binaryLane;
-    }
-  }
-
-  // Trim or pad the binary string to the desired length.
-  if (output.length > outputLength) {
-    output = output.substring(0, outputLength);
-  } else {
-    while (output.length < outputLength) {
-      // Here, we would typically reapply the Keccak permutation and continue squeezing.
-      // But for simplicity, we're padding with zeros.
-      output += "0";
-    }
-  }
-  return output;
-}
-
-// // Example usage:
-// let state = initializeState(); // Assuming state has undergone all transformations
-// const desiredOutputLength = 256; // 256 bits as an example
-// const result = generateOutput(state, desiredOutputLength);
-// console.log(result);
-
-function absorbInput(state, block) {
-  var w = 64; // word length in bits for SHA3-512
-  var x = 0,
-    y = 0;
-  for (var j = 0; j < block.length; j += w) {
-    var segment = block.slice(j, j + w);
-    state[x][y] ^= window.BigInt(parseInt(segment, 2));
-
-    // update x and y values for next cell
-    y++;
-    if (y >= 5) {
-      y = 0;
-      x++;
-    }
-  }
-  return state;
-}
-function keccakF(state) {
-  for (var i = 0; i < 24; i++) {
-    // 24 rounds in Keccak
-    state = applyTheta(state);
-    state = applyRho(state);
-    state = applyPi(state);
-    state = applyChi(state);
-    state = applyIota(state, i);
-  }
-  return state;
-}
-function calculateSHA3_512(input) {
-  var paddedInput = applyPadding(input);
-  var state = initializeState();
-
-  // Absorption phase
-  for (var i = 0; i < paddedInput.length; i += 576) {
-    var block = paddedInput.substring(i, i + 576);
-    state = absorbInput(state, block);
-    state = keccakF(state);
-  }
-
-  // Squeezing phase (just one iteration for SHA3-512)
-  var output = generateOutput(state, 1024);
-  return binaryToHex(output);
-}
-function xorStateWithBlock(state, block) {
-  for (var y = 0; y < 5; y++) {
-    for (var x = 0; x < 5; x++) {
-      if (y * 64 + x * 320 < block.length) {
-        var chunk = block.substring(y * 64 + x * 320, y * 64 + x * 320 + 64);
-        var value = window.BigInt("0b" + chunk);
-        state[x][y] ^= value;
-      }
-    }
-  }
-  return state;
-}
-
-// The functions applyPadding, initializeState, absorbInput, applyTheta, applyRho,
-// applyPi, applyChi, applyIota, and generateOutput should be defined based on our prior discussions.
-
-function binaryToHex(binaryString) {
-  var hexString = "";
-  for (var i = 0; i < binaryString.length; i += 4) {
-    var _byte = binaryString.substr(i, 4);
-    var hex = parseInt(_byte, 2).toString(16);
-    hexString += hex;
-  }
-  return hexString;
-}
-
-// console.log({
-//     newSha3_5121: calculateSHA3_512('Hello, World!'),
-//     newSha3_5122: calculateSHA3_512('Hello, World!!'),
-//     newSha3_5123: calculateSHA3_512('Hello, World!'),
-//     newSha3_5124: calculateSHA3_512('Hallo, World!'),
-//     newSha3_5125: calculateSHA3_512('Hello, World!'),
-//     newSha3_5126: calculateSHA3_512('Hello, World!'),
-//     newSha3_5127: calculateSHA3_512('Hello, World!'),
-//     newSha3_5128: calculateSHA3_512('Hello, World!'),
-//     newSha3_5129: calculateSHA3_512('Hello, World!'),
-// })
-
-/* harmony default export */ const calculateSha3512 = ((/* unused pure expression or super */ null && (calculateSHA3_512)));
-// EXTERNAL MODULE: ./src/components/utils/calculateSha256.js
-var utils_calculateSha256 = __webpack_require__(59701);
-// EXTERNAL MODULE: ./src/components/cryptography/Cryptography.js
-var Cryptography = __webpack_require__(46525);
-;// CONCATENATED MODULE: ./src/components/blockchain/Blockchain.js
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-
-
-
-var calculateHash = (/* unused pure expression or super */ null && (calculateSha256));
-// function calculateSHA256(str) {
-//     const charToCode = (char) => char.charCodeAt(0);
-//     const leftRotate = (value, shift) => (value >>> shift) | (value << (32 - shift));
-//     const rightRotate = (value, shift) => (value << shift) | (value >>> (32 - shift));
-//     const toHex = (value) => value.toString(16).padStart(8, '0');
-
-//     const addUnsigned = (x, y) => {
-//         const MAX_UINT32 = Math.pow(2, 32) - 1;
-//         return (x & MAX_UINT32) + (y & MAX_UINT32);
-//       };
-
-//     const wordsToBlocks = (words) => {
-//         const blocks = [];
-//         for (let i = 0; i < words.length; i += 16) {
-//             blocks.push(words.slice(i, i + 16));
-//         }
-//         return blocks;
-//     };
-
-//     const preprocessMessage = (message) => {
-//         const bitLength = message.length * 8;
-//         const paddingLength = message.length % 64 < 56 ? 56 - (message.length % 64) : 120 - (message.length % 64);
-
-//         const paddedMessage = new Uint8Array(message.length + paddingLength + 8);
-//         paddedMessage.set(message);
-//         paddedMessage[message.length] = 0x80;
-//         paddedMessage.set(new Uint8Array(bitLengthToArray(bitLength)), paddedMessage.length - 8);
-
-//         return paddedMessage;
-//     };
-
-//     const bitLengthToArray = (bitLength) => {
-//         const arr = new Uint8Array(8);
-//         for (let i = 7; i >= 0; i--) {
-//             arr[i] = bitLength & 0xff;
-//             bitLength >>>= 8;
-//         }
-//         return arr;
-//     };
-
-//     const computeSHA256 = (message) => {
-//         const K = new Uint32Array([
-//             0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5,
-//             0x3956c25b, 0x59f111f1, 0x923f82a4, 0xab1c5ed5,
-//             0xd807aa98, 0x12835b01, 0x243185be, 0x550c7dc3,
-//             0x72be5d74, 0x80deb1fe, 0x9bdc06a7, 0xc19bf174,
-//             0xe49b69c1, 0xefbe4786, 0x0fc19dc6, 0x240ca1cc,
-//             0x2de92c6f, 0x4a7484aa, 0x5cb0a9dc, 0x76f988da,
-//             0x983e5152, 0xa831c66d, 0xb00327c8, 0xbf597fc7,
-//             0xc6e00bf3, 0xd5a79147, 0x06ca6351, 0x14292967,
-//             0x27b70a85, 0x2e1b2138, 0x4d2c6dfc, 0x53380d13,
-//             0x650a7354, 0x766a0abb, 0x81c2c92e, 0x92722c85,
-//             0xa2bfe8a1, 0xa81a664b, 0xc24b8b70, 0xc76c51a3,
-//             0xd192e819, 0xd6990624, 0xf40e3585, 0x106aa070,
-//             0x19a4c116, 0x1e376c08, 0x2748774c, 0x34b0bcb5,
-//             0x391c0cb3, 0x4ed8aa4a, 0x5b9cca4f, 0x682e6ff3,
-//             0x748f82ee, 0x78a5636f, 0x84c87814, 0x8cc70208,
-//             0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2,
-//         ]);
-
-//         const blocks = wordsToBlocks(new Uint32Array(message.buffer));
-//         const hash = new Uint32Array([
-//             0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a,
-//             0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19,
-//         ]);
-
-//         for (const block of blocks) {
-//             const schedule = new Uint32Array(64);
-//             schedule.set(block);
-
-//             for (let t = 16; t < 64; t++) {
-//                 const s0 = rightRotate(schedule[t - 15], 7) ^ rightRotate(schedule[t - 15], 18) ^ (schedule[t - 15] >>> 3);
-//                 const s1 = rightRotate(schedule[t - 2], 17) ^ rightRotate(schedule[t - 2], 19) ^ (schedule[t - 2] >>> 10);
-//                 schedule[t] = addUnsigned(addUnsigned(addUnsigned(schedule[t - 16], s0), schedule[t - 7]), s1);
-//             }
-
-//             let a = hash[0];
-//             let b = hash[1];
-//             let c = hash[2];
-//             let d = hash[3];
-//             let e = hash[4];
-//             let f = hash[5];
-//             let g = hash[6];
-//             let h = hash[7];
-
-//             for (let t = 0; t < 64; t++) {
-//                 const S1 = rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25);
-//                 const ch = (e & f) ^ (~e & g);
-//                 const temp1 = addUnsigned(addUnsigned(addUnsigned(addUnsigned(h, S1), ch), K[t]), schedule[t]);
-//                 const S0 = rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22);
-//                 const maj = (a & b) ^ (a & c) ^ (b & c);
-//                 const temp2 = addUnsigned(S0, maj);
-
-//                 h = g;
-//                 g = f;
-//                 f = e;
-//                 e = addUnsigned(d, temp1);
-//                 d = c;
-//                 c = b;
-//                 b = a;
-//                 a = addUnsigned(temp1, temp2);
-//             }
-
-//             hash[0] = addUnsigned(hash[0], a);
-//             hash[1] = addUnsigned(hash[1], b);
-//             hash[2] = addUnsigned(hash[2], c);
-//             hash[3] = addUnsigned(hash[3], d);
-//             hash[4] = addUnsigned(hash[4], e);
-//             hash[5] = addUnsigned(hash[5], f);
-//             hash[6] = addUnsigned(hash[6], g);
-//             hash[7] = addUnsigned(hash[7], h);
-//         }
-
-//         const hashArray = new Uint8Array(hash.buffer);
-//         const hashHex = Array.from(hashArray, (byte) => byte.toString(16).padStart(2, '0')).join('');
-
-//         return hashHex;
-//     };
-
-//     const messageBytes = new TextEncoder().encode(str);
-//     const paddedMessage = preprocessMessage(messageBytes);
-//     const sha256Hash = computeSHA256(paddedMessage);
-
-//     return sha256Hash;
-// }
-var Blockchain = /*#__PURE__*/_createClass(function Blockchain(_ref) {
-  var _this = this;
-  var chain = _ref.chain,
-    compiler = _ref.compiler,
-    storage = _ref.storage,
-    onNewBlock = _ref.onNewBlock,
-    onNewChain = _ref.onNewChain;
-  _classCallCheck(this, Blockchain);
-  this.chain = chain;
-  this.compiler = compiler;
-  this.pendingBlocks = [];
-  this.pendingStorage = {};
-  this.compile = function () {
-    var _this$chain;
-    var state = {};
-    var resolveStorage = function resolveStorage() {
-      var payload = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      var type = payload.type;
-      if (["text", "image", "videos", "file", "link", "location", "audio"].includes(type)) {
-        return _objectSpread(_objectSpread({}, payload), {}, {
-          sha: payload.payload,
-          payload: type === "file" ? _objectSpread(_objectSpread({}, storage[payload.payload]), {}, {
-            data: ""
-          }) : storage[payload.payload]
-        });
-      }
-      if (["reply"].includes(type)) {
-        return _objectSpread(_objectSpread({}, payload), {}, {
-          payload: state.messages.find(function (message) {
-            return message.id === payload.payload;
-          })
-        });
-      }
-      return payload;
-    };
-    ((_this$chain = _this.chain) !== null && _this$chain !== void 0 ? _this$chain : []).forEach(function (block) {
-      state = _this.compiler(resolveStorage(block.payload), state);
-    });
-    return state;
-  };
-  this.addBlocks = function (blocks, append) {
-    blocks.forEach(function (block) {
-      _this.addBlock(block, append);
-    });
-  };
-  this.addBlock = function (block, append) {
-    var _this$chain2, _block$payload;
-    // hash of last block in chain
-    var newBlock = {
-      id: (0,utils_calculateSha256/* default */.A)(JSON.stringify(_objectSpread(_objectSpread({}, block.payload), {}, {
-        previousBlockHash: _this.chain ? (_this$chain2 = _this.chain[_this.chain.length - 1]) === null || _this$chain2 === void 0 ? void 0 : _this$chain2.id : (0,Cryptography/* randomString */.DU)()
-      }))),
-      payload: (_block$payload = block.payload) !== null && _block$payload !== void 0 && _block$payload.id ? block.payload : block
-    };
-    if (["text", "image", "videos", "file", "link", "location", "audio"].includes(block.type)) {
-      var payloadHash = append ? block.payload : (0,utils_calculateSha256/* default */.A)(JSON.stringify(block.payload));
-      _this.pendingStorage[payloadHash] = block.payload;
-      newBlock.payload.payload = payloadHash;
-    }
-    _this.chain = [].concat(_toConsumableArray(_this.chain || []), [newBlock]);
-    _this.pendingBlocks = [].concat(_toConsumableArray(_this.pendingBlocks), [newBlock]);
-  };
-  this.getUpdate = function () {
-    var pendingBlocks = _toConsumableArray(_this.pendingBlocks);
-    var pendingStorage = _objectSpread({}, _this.pendingStorage);
-    _this.pendingBlocks = [];
-    _this.pendingStorage = {};
-    return {
-      pendingBlocks: pendingBlocks,
-      pendingStorage: pendingStorage
-    };
-  };
-  this.mergeChain = function (chain) {
-    var filteredChain = chain.filter(function (block) {
-      var blockId = block.payload.id;
-      return !_this.chain.find(function (b) {
-        return b.payload.id === blockId;
-      });
-    });
-    var newChain = [].concat(_toConsumableArray(_this.chain), _toConsumableArray(filteredChain));
-    var sortedChain = newChain.sort(function (a, b) {
-      return new Date(a.payload.timestamp) - new Date(b.payload.timestamp);
-    });
-
-    // calculate blockhashes for eachblock based on the hash of the previous block
-    var chainWithUpdatedHashes = sortedChain.map(function (block, index) {
-      var previousBlock = sortedChain[index - 1];
-      var previousBlockHash = previousBlock ? previousBlock.id : "";
-      var blockHash = (0,utils_calculateSha256/* default */.A)(JSON.stringify(_objectSpread(_objectSpread({}, block.payload), {}, {
-        previousBlockHash: previousBlockHash
-      })));
-      return _objectSpread(_objectSpread({}, block), {}, {
-        id: blockHash
-      });
-    });
-    _this.chain = chainWithUpdatedHashes;
-  };
-});
-var useBlockchain = function useBlockchain(_ref2) {
-  var blockchain = _ref2.blockchain,
-    _ref2$blockchains = _ref2.blockchains,
-    blockchains = _ref2$blockchains === void 0 ? [] : _ref2$blockchains,
-    compiler = _ref2.compiler,
-    dispatch = _ref2.dispatch;
-  var blockchainInstance = (0,index_js_.useMemo)(function () {
-    var _blockchain$chain, _blockchain$storage;
-    return new Blockchain({
-      compiler: compiler,
-      chain: (_blockchain$chain = blockchain === null || blockchain === void 0 ? void 0 : blockchain.chain) !== null && _blockchain$chain !== void 0 ? _blockchain$chain : [],
-      storage: (_blockchain$storage = blockchain === null || blockchain === void 0 ? void 0 : blockchain.storage) !== null && _blockchain$storage !== void 0 ? _blockchain$storage : {}
-    });
-  }, [blockchain === null || blockchain === void 0 ? void 0 : blockchain.chain, blockchain === null || blockchain === void 0 ? void 0 : blockchain.storage]);
-  var compiledBlockchain = (0,index_js_.useMemo)(function () {
-    return blockchainInstance.compile();
-  }, [blockchainInstance]);
-  var addBlocks = function addBlocks(blocks, append) {
-    if (typeof blocks.length === "number") {
-      blockchainInstance.addBlocks(blocks, append);
-    } else {
-      blockchainInstance.addBlock(blocks, append);
-    }
-    var _blockchainInstance$g = blockchainInstance.getUpdate(),
-      pendingBlocks = _blockchainInstance$g.pendingBlocks,
-      pendingStorage = _blockchainInstance$g.pendingStorage;
-    dispatch({
-      blocks: pendingBlocks,
-      storage: pendingStorage
-    });
-    return {
-      pendingBlocks: pendingBlocks,
-      pendingStorage: pendingStorage
-    };
-  };
-  var compiledBlockchains = blockchains.map(function (blockchain) {
-    var _blockchain$chain2, _blockchain$storage2, _blockchainInstance$c;
-    var blockchainInstance = new Blockchain({
-      compiler: compiler,
-      chain: (_blockchain$chain2 = blockchain === null || blockchain === void 0 ? void 0 : blockchain.chain) !== null && _blockchain$chain2 !== void 0 ? _blockchain$chain2 : [],
-      storage: (_blockchain$storage2 = blockchain === null || blockchain === void 0 ? void 0 : blockchain.storage) !== null && _blockchain$storage2 !== void 0 ? _blockchain$storage2 : {}
-    });
-    var addBlocks = function addBlocks(blocks, append) {
-      if (typeof blocks.length === "number") {
-        blockchainInstance.addBlocks(blocks, append);
-      } else {
-        blockchainInstance.addBlock(blocks, append);
-      }
-      var _blockchainInstance$g2 = blockchainInstance.getUpdate(),
-        pendingBlocks = _blockchainInstance$g2.pendingBlocks,
-        pendingStorage = _blockchainInstance$g2.pendingStorage;
-      dispatch({
-        blocks: pendingBlocks,
-        storage: pendingStorage
-      });
-      return {
-        pendingBlocks: pendingBlocks,
-        pendingStorage: pendingStorage
-      };
-    };
-    var compiledBlockchain = blockchainInstance === null || blockchainInstance === void 0 || (_blockchainInstance$c = blockchainInstance.compile) === null || _blockchainInstance$c === void 0 ? void 0 : _blockchainInstance$c.call(blockchainInstance);
-    return _objectSpread(_objectSpread({}, compiledBlockchain), {}, {
-      addBlocks: addBlocks
-    });
-  });
-  return {
-    compiledBlockchain: compiledBlockchain,
-    compiledBlockchains: compiledBlockchains,
-    addBlocks: addBlocks
-  };
-};
-/* harmony default export */ const blockchain_Blockchain = (Blockchain);
-
-// let mutationBlocksOld = [
-//     {
-//         id: 'blockId1',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'addUser',
-//         payload: 'userId',
-//     },
-//     {
-//         id: 'blockId2',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'addUser',
-//         payload: 'userId2',
-//     },
-//     {
-//         id: 'blockId3',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'setPodName',
-//         payload: 'New Pod Name',
-//     },
-//     {
-//         id: 'blockId4',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'createMessage',
-//     },
-//     {
-//         id: 'blockId5',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'text',
-//         payload: 'contentHash',
-//     },
-//     {
-//         id: 'blockId6',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'image',
-//         payload: 'imageHash',
-//     },
-//     {
-//         id: 'blockId7',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'link',
-//         payload: 'linkHash',
-//     },
-//     {
-//         id: 'blockId8',
-//         from: 'userId2',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'recieved',
-//     },
-//     {
-//         id: 'blockId9',
-//         from: 'userId2',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'read',
-//     },
-// ]
-
-// let mutationBlocks = mutationBlocksOld.map((block) => ({
-//     id: 'some Id',
-//     payload: block,
-// }));
-
-// let messageBlockchain = new Blockchain({
-//     chain: mutationBlocks,
-//     parser: (block, state) => {
-//         const { type, payload, messageId, from, timestamp } = block;
-
-//         switch (type) {
-//             case 'addUser':
-//                 state.users.push(payload);
-//                 return state;
-//             case 'removeUser':
-//                 state.users = state.users.filter((u) => u !== payload);
-//                 return state;
-//             case 'setPodName':
-//                 state.name = payload;
-//                 return state;
-//             case 'setPodavatar':
-//                 state.avatar = payload;
-//                 return state;
-//             case 'createMessage':
-//                 state.messages.push({
-//                     id: messageId,
-//                     from: from,
-//                     timestamp: { created: timestamp },
-//                     reciept: { recievedBy: [], readBy: [] },
-//                     votes: { upvotes: [], downvotes: [] },
-//                     payload: { content: '', image: [], video: [], file: [], link: [] },
-//                 });
-//                 return state;
-//             case 'text':
-//                 state.messages = state.messages.map((m) =>
-//                     m.id === messageId ? { ...m, payload: { ...m.payload, content: payload } } : m
-//                 );
-//                 return state;
-//             case 'image':
-//                 state.messages = state.messages.map((m) =>
-//                     m.id === messageId ? { ...m, payload: { ...m.payload, image: [...m.payload.image, payload] } } : m
-//                 );
-//                 return state;
-//             case 'video':
-//                 state.messages = state.messages.map((m) =>
-//                     m.id === messageId ? { ...m, payload: { ...m.payload, video: [...m.payload.video, payload] } } : m
-//                 );
-//                 return state;
-//             case 'file':
-//                 state.messages = state.messages.map((m) =>
-//                     m.id === messageId ? { ...m, payload: { ...m.payload, file: [...m.payload.file, payload] } } : m
-//                 );
-//                 return state;
-//             case 'link':
-//                 state.messages = state.messages.map((m) =>
-//                     m.id === messageId ? { ...m, payload: { ...m.payload, link: [...m.payload.link, payload] } } : m
-//                 );
-//                 return state;
-//             case 'reply':
-//                 state.messages = state.messages.map((m) =>
-//                     m.id === messageId ? { ...m, payload: { ...m.payload, replyTo: payload } } : m
-//                 );
-//                 return state;
-//             case 'recieved':
-//                 state.messages = state.messages.map((m) =>
-//                     m.id === messageId
-//                         ? { ...m, reciept: { ...m.reciept, recievedBy: [...m.reciept.recievedBy, { userId: from, timestamp: timestamp }] } }
-//                         : m
-//                 );
-//                 return state;
-//             case 'read':
-//                 state.messages = state.messages.map((m) =>
-//                     m.id === messageId
-//                         ? { ...m, reciept: { ...m.reciept, readBy: [...m.reciept.readBy, { userId: from, timestamp: timestamp }] } }
-//                         : m
-//                 );
-//                 return state;
-//             case 'delete':
-//                 state.messages = state.messages.filter((m) => m.id !== messageId);
-//                 return state;
-//             case 'upvote':
-//                 state.votes.upvotes.push(from);
-//                 return state;
-//             case 'downvote':
-//                 state.votes.downvotes.push(from);
-//                 return state;
-//             default:
-//                 return state;
-//         }
-//     },
-//     onNewBlock: (block) => {
-//         // addBlockToPodDispatch(block)
-//     },
-//     onNewChain: (chain) => {
-//         // replaceChainOnPodDispatch(chain)
-//     },
-// })
-
-// messageBlockchain.addBlock(
-//     {
-//         id: 'blockId10',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'addUser',
-//         payload: 'userId3',
-//     },
-// )
-
-// let podData = messageBlockchain.getState();
-
-// console.log({ podData, chain: messageBlockchain.chain })
-
-// let mutationBlocksOldRemote = [
-//     {
-//         id: 'blockId1',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'addUser',
-//         payload: 'userId',
-//     },
-//     {
-//         id: 'blockId2',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'addUser',
-//         payload: 'userId2',
-//     },
-//     {
-//         id: 'blockId3',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'setPodName',
-//         payload: 'New Pod Name',
-//     },
-//     {
-//         id: 'blockId4',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'createMessage',
-//     },
-//     {
-//         id: 'blockId5',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'text',
-//         payload: 'contentHash',
-//     },
-//     {
-//         id: 'blockId6',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'image',
-//         payload: 'imageHash',
-//     },
-//     {
-//         id: 'blockId7',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'link',
-//         payload: 'linkHash',
-//     },
-//     {
-//         id: 'blockId8',
-//         from: 'userId2',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'recieved',
-//     },
-//     {
-//         id: 'blockId9',
-//         from: 'userId2',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'read',
-//     },
-//     {
-//         id: 'blockId41',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'createMessage',
-//     },
-//     {
-//         id: 'blockId52',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'text',
-//         payload: 'contentHash',
-//     },
-// ]
-
-// let mutationBlocksRemote = mutationBlocksOldRemote.map((block) => ({
-//     id: 'some Id',
-//     payload: block,
-// }));
-
-// messageBlockchain.mergeChain(mutationBlocksRemote);
-// podData = messageBlockchain.getState();
-
-// console.log({ podData, chain: messageBlockchain.chain })
-
-// messageBlockchain.addBlock(
-//     {
-//         id: 'blockId10',
-//         from: 'userId',
-//         messageId: 'messageId',
-//         timestamp: '2020-01-01 00:00:00',
-//         type: 'addUser',
-//         payload: 'userId4',
-//     },
-// )
-
-// podData = messageBlockchain.getState();
-
-// console.log({ podData, chain: messageBlockchain.chain })
-
-/***/ }),
-
-/***/ 53288:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   It: () => (/* binding */ encodeEmojisToUnicode),
-/* harmony export */   cx: () => (/* binding */ compiler),
-/* harmony export */   e3: () => (/* binding */ blockBuilders)
-/* harmony export */ });
-/* harmony import */ var _cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(46525);
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-
-function encodeEmojisToUnicode() {
-  var inputString = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
-  return inputString.replace(/[\u007F-\uFFFF]/g, function (match) {
-    return "\\u" + match.charCodeAt(0).toString(16).padStart(4, "0");
-  });
-}
-function decodeUnicodeToEmojis() {
-  var encodedString = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
-  return encodedString.replace(/\\u([\dA-Fa-f]{4})/g, function (match, group1) {
-    return String.fromCharCode(parseInt(group1, 16));
-  });
-}
-var compiler = function compiler(block, propState) {
-  var state = Object.keys(propState).length ? propState : {
-    id: "",
-    users: [],
-    name: "",
-    avatar: "",
-    messages: []
-  };
-  if (!block) return state;
-  var type = block.type,
-    payload = block.payload,
-    messageId = block.messageId,
-    from = block.from,
-    timestamp = block.timestamp,
-    sha = block.sha;
-  switch (type) {
-    case "addUser":
-      state.users.push(payload);
-      return state;
-    case "removeUser":
-      state.users = state.users.filter(function (u) {
-        return u !== payload;
-      });
-      return state;
-    case "setPodId":
-      state.id = payload;
-    case "setPodName":
-      state.name = payload;
-      return state;
-    case "setClone":
-      state.clone = payload;
-      return state;
-    case "setPodavatar":
-      state.avatar = payload;
-      return state;
-    case "createMessage":
-      var newMessage = {
-        id: messageId,
-        from: from,
-        timestamp: {
-          created: timestamp
-        },
-        reciept: {
-          recievedBy: [],
-          readBy: []
-        },
-        votes: {
-          upvotes: [],
-          downvotes: []
-        },
-        payload: {
-          content: "",
-          image: [],
-          video: [],
-          file: [],
-          link: [],
-          reply: [],
-          location: [],
-          audio: []
-        }
-      };
-      state.messages = [].concat(_toConsumableArray(state.messages), [newMessage]);
-      return state;
-    case "text":
-      state.messages = state.messages.map(function (m) {
-        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
-          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
-            content: decodeUnicodeToEmojis(payload)
-          })
-        }) : m;
-      });
-      return state;
-    case "image":
-      state.messages = state.messages.map(function (m) {
-        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
-          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
-            image: payload,
-            sha: sha
-          })
-        }) : m;
-      });
-      return state;
-    case "video":
-      state.messages = state.messages.map(function (m) {
-        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
-          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
-            video: payload,
-            sha: sha
-          })
-        }) : m;
-      });
-      return state;
-    case "file":
-      state.messages = state.messages.map(function (m) {
-        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
-          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
-            file: payload,
-            sha: sha
-          })
-        }) : m;
-      });
-      return state;
-    case "location":
-      state.messages = state.messages.map(function (m) {
-        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
-          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
-            location: payload
-          })
-        }) : m;
-      });
-      return state;
-    case "audio":
-      state.messages = state.messages.map(function (m) {
-        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
-          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
-            audio: payload
-          })
-        }) : m;
-      });
-      return state;
-    case "link":
-      state.messages = state.messages.map(function (m) {
-        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
-          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
-            link: payload
-          })
-        }) : m;
-      });
-      return state;
-    case "reply":
-      state.messages = state.messages.map(function (m) {
-        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
-          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
-            reply: payload
-          })
-        }) : m;
-      });
-      return state;
-    case "recieved":
-      state.messages = state.messages.map(function (m) {
-        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
-          reciept: _objectSpread(_objectSpread({}, m.reciept), {}, {
-            recievedBy: [].concat(_toConsumableArray(m.reciept.recievedBy), [{
-              userId: from,
-              timestamp: timestamp
-            }])
-          })
-        }) : m;
-      });
-      return state;
-    case "read":
-      state.messages = state.messages.map(function (m) {
-        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
-          reciept: _objectSpread(_objectSpread({}, m.reciept), {}, {
-            readBy: [].concat(_toConsumableArray(m.reciept.readBy), [{
-              userId: from,
-              timestamp: timestamp
-            }])
-          })
-        }) : m;
-      });
-      return state;
-    case "delete":
-      state.messages = state.messages.filter(function (m) {
-        return m.id !== messageId;
-      });
-      return state;
-    case "upvote":
-      state.messages = state.messages.map(function (m) {
-        if (m.id === messageId) {
-          return _objectSpread(_objectSpread({}, m), {}, {
-            votes: _objectSpread(_objectSpread({}, m.votes), {}, {
-              upvotes: [].concat(_toConsumableArray(m.votes.upvotes), [{
-                userId: from,
-                timestamp: timestamp
-              }]),
-              downvotes: m.votes.downvotes.filter(function (v) {
-                return v.userId !== from;
-              })
-            })
-          });
-        } else {
-          return m;
-        }
-      });
-      return state;
-    case "downvote":
-      state.messages = state.messages.map(function (m) {
-        if (m.id === messageId) {
-          if (payload) {
-            return _objectSpread(_objectSpread({}, m), {}, {
-              votes: _objectSpread(_objectSpread({}, m.votes), {}, {
-                downvotes: [].concat(_toConsumableArray(m.votes.downvotes), [{
-                  userId: from,
-                  timestamp: timestamp
-                }]),
-                upvotes: m.votes.upvotes.filter(function (v) {
-                  return v.userId !== from;
-                })
-              })
-            });
-          } else {
-            return _objectSpread({}, m);
-          }
-        } else {
-          return m;
-        }
-      });
-      return state;
-    default:
-      return state;
-  }
-};
-var blockBuilders = function blockBuilders() {
-  var salt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
-  return {
-    addMember: function addMember(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "addUser",
-        payload: payload.userId
-      }];
-    },
-    setPodId: function setPodId(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "setPodId",
-        payload: payload.id
-      }];
-    },
-    setPodName: function setPodName(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "setPodName",
-        payload: payload.name
-      }];
-    },
-    sendMessage: function sendMessage(payload) {
-      var messageId = (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt);
-      var sendMessageBlocks = [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "createMessage",
-        messageId: messageId
-      }];
-      if (payload.content) {
-        sendMessageBlocks.push({
-          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-          from: payload.from,
-          timestamp: Date.now() + sendMessageBlocks.length,
-          type: "text",
-          messageId: messageId,
-          payload: encodeEmojisToUnicode(payload.content)
-        });
-      }
-      if (payload.image) {
-        sendMessageBlocks.push({
-          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-          from: payload.from,
-          timestamp: Date.now() + sendMessageBlocks.length,
-          type: "image",
-          messageId: messageId,
-          payload: payload.image
-        });
-      }
-      if (payload.file) {
-        sendMessageBlocks.push({
-          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-          from: payload.from,
-          timestamp: Date.now() + sendMessageBlocks.length,
-          type: "file",
-          messageId: messageId,
-          payload: payload.file
-        });
-      }
-      if (payload.reply) {
-        sendMessageBlocks.push({
-          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-          from: payload.from,
-          timestamp: Date.now() + sendMessageBlocks.length,
-          type: "reply",
-          messageId: messageId,
-          payload: payload.reply.id
-        });
-      }
-      if (payload.location) {
-        sendMessageBlocks.push({
-          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-          from: payload.from,
-          timestamp: Date.now() + sendMessageBlocks.length,
-          type: "location",
-          messageId: messageId,
-          payload: payload.location
-        });
-      }
-      if (payload.audio) {
-        sendMessageBlocks.push({
-          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-          from: payload.from,
-          timestamp: Date.now() + sendMessageBlocks.length,
-          type: "audio",
-          messageId: messageId,
-          payload: payload.audio
-        });
-      }
-      // if (!!payload.upvote) {
-      //     sendMessageBlocks.push({
-      //         id: randomString(salt),
-      //         from: payload.from,
-      //         timestamp: Date.now() + sendMessageBlocks.length,
-      //         type: 'upvote',
-      //         messageId: messageId,
-      //         payload: payload.upvote,
-      //     })
-      // }
-
-      return sendMessageBlocks;
-    },
-    createPod: function createPod(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "setPodId",
-        payload: payload.id
-      }].concat(_toConsumableArray(payload.members.map(function (userId) {
-        return {
-          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-          from: payload.from,
-          timestamp: Date.now(),
-          type: "addUser",
-          payload: userId
-        };
-      })), [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "setPodName",
-        payload: payload.name
-      }, {
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "setClone",
-        payload: !!payload.clone
-      }]);
-    },
-    deleteMessage: function deleteMessage(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "delete",
-        messageId: payload.id
-      }];
-    },
-    upvoteMessage: function upvoteMessage(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "upvote",
-        messageId: payload.messageId
-      }];
-    }
-  };
-};
-
-/***/ }),
-
-/***/ 85026:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   c: () => (/* binding */ compiler),
-/* harmony export */   e: () => (/* binding */ blockBuilders)
-/* harmony export */ });
-/* harmony import */ var _cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(46525);
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-
-
-// userProfile = {
-//     id: 'abc',
-//     connectionId: 'def',
-//     pastConnections: ['def', 'ghi'],
-//     displayName: 'jkl',
-//     avatar: 'https://source.unsplash.com/random/400x200?avatar',
-//     agreedToTerms: ['2.0.0'],
-//     settings: {
-//         inAppNotification: true,
-//         browserNotification: false
-//     }
-// }
-
-var mutations = {
-  updateId: "UPDATE_ID",
-  updateConnectionId: "UPDATE_CONNECTION_ID",
-  updateDisplayName: "UPDATE_DISPLAY_NAME",
-  updateAvatar: "image",
-  // there is an explicit rule for this value to be fetched from storage as an object see blockchain.js
-  updateAgreedToTerms: "UPDATE_AGREED_TO_TERMS",
-  updateInAppNotification: "UPDATE_IN_APP_NOTIFICATION",
-  updateBrowserNotification: "UPDATE_BROWSER_NOTIFICATION",
-  updatePeerjsServer: "UPDATE_PEERJS_SERVER",
-  updateEncryptionSignature: "UPDATE_ENCRYPTION_SIGNATURE"
-};
-var compiler = function compiler(block, state) {
-  var _state$pastConnection;
-  if (!block) return state;
-  var type = block.type,
-    payload = block.payload;
-  switch (type) {
-    case mutations.updateId:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        id: payload
-      });
-    case mutations.updateConnectionId:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        connectionId: payload,
-        pastConnections: state.connectionId ? [].concat(_toConsumableArray((_state$pastConnection = state.pastConnections) !== null && _state$pastConnection !== void 0 ? _state$pastConnection : []), [state.connectionId]) : []
-      });
-    case mutations.updateDisplayName:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        displayName: payload
-      });
-    case mutations.updateAvatar:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        avatar: payload
-      });
-    case mutations.updateAgreedToTerms:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        agreedToTerms: [].concat(_toConsumableArray(state.agreedToTerms || []), [payload])
-      });
-    case mutations.updateInAppNotification:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        settings: _objectSpread(_objectSpread({}, state.settings), {}, {
-          inAppNotification: payload
-        })
-      });
-    case mutations.updateBrowserNotification:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        settings: _objectSpread(_objectSpread({}, state.settings), {}, {
-          browserNotification: payload
-        })
-      });
-    case mutations.updatePeerjsServer:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        peerjsServer: payload
-      });
-    case mutations.updateEncryptionSignature:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        encryptionSignature: payload
-      });
-    default:
-      return state;
-  }
-};
-var blockBuilders = function blockBuilders() {
-  var salt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
-  return {
-    updateId: function updateId(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "UPDATE_ID",
-        payload: payload.id
-      }];
-    },
-    updateConnectionId: function updateConnectionId(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "UPDATE_CONNECTION_ID",
-        payload: payload.connectionId
-      }];
-    },
-    updateDisplayName: function updateDisplayName(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "UPDATE_DISPLAY_NAME",
-        payload: payload.displayName
-      }];
-    },
-    updateAvatar: function updateAvatar(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "image",
-        payload: payload.avatar
-      }];
-    },
-    updateAgreedToTerms: function updateAgreedToTerms(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "UPDATE_AGREED_TO_TERMS",
-        payload: payload.agreedToTerms
-      }];
-    },
-    updateInAppNotification: function updateInAppNotification(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "UPDATE_IN_APP_NOTIFICATION",
-        payload: payload.inAppNotification
-      }];
-    },
-    updateBrowserNotification: function updateBrowserNotification(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "UPDATE_BROWSER_NOTIFICATION",
-        payload: payload.browserNotification
-      }];
-    },
-    updatePeerjsServer: function updatePeerjsServer(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "UPDATE_PEERJS_SERVER",
-        payload: payload.peerjsServer
-      }];
-    },
-    updateEncryptionSignature: function updateEncryptionSignature(payload) {
-      return [{
-        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
-        from: payload.from,
-        timestamp: Date.now(),
-        type: "UPDATE_ENCRYPTION_SIGNATURE",
-        payload: payload.encryptionSignature
-      }];
-    }
-  };
-};
-
-/***/ }),
-
-/***/ 46525:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   DU: () => (/* binding */ randomString)
-/* harmony export */ });
-/* unused harmony exports CryptographyProvider, useCryptography */
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50318);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var js_sha3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31176);
-/* harmony import */ var js_sha3__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(js_sha3__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var chance__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(97677);
-/* harmony import */ var chance__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(chance__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(79218);
-/* harmony import */ var cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_3__);
-// create me a Cryptography class for creatting things like rsa keys and methods for encrypting and decrypting messages.
-
-// it should also have cryptogrphically random String generator for creating random strings for things like salt and iv
-
-// it should also have a method for hashing a string with sha256 and sha512
-
-/*
-const entropy = 'some user input pf random string';
-<CryptographgyProvider entropy={entropy}>
-</CryptographyProvider>
-
-
-// in some component
-
-const { random, md5Hash, sha256Hash, sha3_512Hash, chance } = useCryptography('some salt');
-const randomString = random('some more salt');
-const md5Hash = md5Hash('some string'); 
-const sha256Hash = sha256Hash('some string');
-const sha3_512Hash = sha3_512Hash('some string');
-*/
-
-/* 
-
-my methods for createing rsa keys and encrypting and decrypting messages
-
-// public key encryption
-export const generateKeyPair = async () => {
-  const keyPair = await window.crypto.subtle.generateKey(
-    {
-      name: 'RSA-OAEP',
-      modulusLength: 4096,
-      publicExponent: new Uint8Array([1, 0, 1]),
-      hash: 'SHA-256',
-    },
-    true,
-    ['encrypt', 'decrypt']
-  );
-
-  return { publicKey: keyPair.publicKey, privateKey: keyPair.privateKey };
-};
-
-function setClassPropsFromJson(json, instance) {
-  for (let prop in json) {
-    if (json.hasOwnProperty(prop)) {
-      instance[prop] = json[prop];
-    }
-  }
-  return instance;
-}
-
-export const deserializePublicKey = async (key) => {
-  const deSerializedublicKey = await window.crypto.subtle.importKey(
-    'jwk',
-    {
-      ...key,
-      kty: 'RSA'
-    },
-    {
-      name: 'RSA-OAEP',
-      hash: 'SHA-256',
-    },
-    true,
-    ['encrypt']
-  );
-
-  return setClassPropsFromJson(key, deSerializedublicKey)
-}
-
-export const deserializePrivateKey = async (key) => {
-  const deSerializedPrivateKey = await window.crypto.subtle.importKey(
-    'jwk',
-    {
-
-      ...key,
-      kty: 'RSA'
-    },
-    {
-      name: 'RSA-OAEP',
-      hash: 'SHA-256',
-    },
-    true,
-    ['decrypt']
-  );
-
-  return setClassPropsFromJson(key, deSerializedPrivateKey)
-
-}
-
-export const encrypt = async (message, publicKey) => {
-  const encodedMessage = new TextEncoder().encode(message);
-  const encrypted = await window.crypto.subtle.encrypt(
-    {
-      name: 'RSA-OAEP',
-      hash: 'SHA-256',
-    },
-    publicKey,
-    encodedMessage
-  ).catch((error) => {
-    console.log('error', error);
-  });
-
-  return btoa(String.fromCharCode(...new Uint8Array(encrypted)));
-};
-
-export const decrypt = async (encryptedMessage, privateKey, passphrase) => {
-  const buffer = Uint8Array.from(atob(encryptedMessage), c => c.charCodeAt(0));
-  try {
-    const decrypted = await window.crypto.subtle.decrypt(
-      {
-        name: 'RSA-OAEP',
-        hash: 'SHA-256',
-      },
-      privateKey,
-      buffer
-    );
-    const message = new TextDecoder().decode(decrypted);
-    return message;
-  } catch (error) {
-    console.log('error', error);
-    throw new Error('Unable to decrypt message. Incorrect passphrase.', error);
-  }
-};
-
-const getEncryptionMethods = async (userId, salt) => {
-  const keyPair = await generateKeyPair(userId, salt);
-
-  return {
-    encrypt: async (message) => {
-      return await encrypt(message, keyPair.publicKey);
-    },
-    decrypt: async (encryptedMessage) => {
-      return await decrypt(encryptedMessage, keyPair.privateKey, salt);
-    },
-  };
-};
-
-// Symmetric key encryption
-
-export const generateSymmetricKey = async () => {
-  const key = await window.crypto.subtle.generateKey(
-    {
-      name: 'AES-GCM',
-      length: 256, // can be  128, 192, or 256
-    },
-    true, // whether the key is extractable (i.e. can be used in exportKey)
-    ['encrypt', 'decrypt']
-  );
-
-  return key;
-};
-
-export const deserializeSymmetricKey = async (key) => {
-  const deSerializedSymmetricKey = await window.crypto.subtle.importKey(
-    'jwk',
-    {
-      ...key,
-      kty: 'oct'
-    },
-    {
-      name: 'AES-GCM',
-    },
-    true,
-    ['encrypt', 'decrypt']
-  );
-
-  return setClassPropsFromJson(key, deSerializedSymmetricKey)
-}
-
-export const encryptWithSymmetricKey = async (message, key) => {
-  const encodedMessage = new TextEncoder().encode(message);
-  const iv = window.crypto.getRandomValues(new Uint8Array(12)); // must be 12 bytes
-
-  const encrypted = await window.crypto.subtle.encrypt(
-    {
-      name: 'AES-GCM',
-      iv: iv,
-    },
-    key,
-    encodedMessage
-  ).catch((error) => {
-    console.log('error', error);
-  });
-
-  return {
-    ciphertext: btoa(String.fromCharCode(...new Uint8Array(encrypted))),
-    iv: btoa(String.fromCharCode(...new Uint8Array(iv))),
-  };
-};
-
-export const decryptWithSymmetricKey = async (encryptedData, key) => {
-  const { ciphertext, iv } = encryptedData;
-  const buffer = Uint8Array.from(atob(ciphertext), c => c.charCodeAt(0));
-  const ivBuffer = Uint8Array.from(atob(iv), c => c.charCodeAt(0));
-
-  try {
-    const decrypted = await window.crypto.subtle.decrypt(
-      {
-        name: 'AES-GCM',
-        iv: ivBuffer,
-      },
-      key,
-      buffer
-    );
-    const message = new TextDecoder().decode(decrypted);
-    return message;
-  } catch (error) {
-    throw new Error('Unable to decrypt message. Incorrect key.');
-  }
-};
-
-const getSymmetricKeyEncryptionMethods = async () => {
-  const key = await generateSymmetricKey();
-
-  return {
-    encrypt: async (message) => {
-      return await encryptWithSymmetricKey(message, key);
-    },
-    decrypt: async (encryptedMessage) => {
-      return await decryptWithSymmetricKey(encryptedMessage, key);
-    },
-  };
-};
-
-export { getEncryptionMethods, getSymmetricKeyEncryptionMethods };
-to export an initialised instance of chance to get things like animal()
-
-
-
-
-
-i want you to start by creating me the skeleton of the component and we will further define the further method definitions after.
-the methods for the encryption should be able to take in serialized encryptions keys like you see in the way its created.
-*/
-
-
-
-
-
-
-// Create Context
-var CryptographyContext = /*#__PURE__*/(/* unused pure expression or super */ null && (createContext(null)));
-
-// Cryptographically Random String Generator
-var randomString = function randomString() {
-  var additionalSalt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
-  // Define the length of the random string
-  var randomStringLength = 16; // You can change this value to generate a longer or shorter string
-
-  // Generate a random array of uint8 values
-  var randomValues = crypto.getRandomValues(new Uint8Array(randomStringLength));
-
-  // Convert random values to hexadecimal string
-  var randomHex = Array.from(randomValues).map(function (_byte) {
-    return _byte.toString(16).padStart(2, "0");
-  }).join("");
-
-  // If additional salt is provided, concatenate it with the random string
-  var randomString = additionalSalt ? additionalSalt + randomHex : randomHex;
-  return randomString;
-};
-
-// // Usage:
-// const randomString = random('some more salt');
-// console.log(randomString);
-
-// CryptographyProvider Component
-var CryptographyProvider = (cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_3___default().CryptographyProvider);
-// export const CryptographyProvider = ({ entropy = "", children }) => {
-//   const [salt, setSalt] = useState("");
-//   const [chance, setChance] = useState(new Chance(salt));
-
-//   useEffect(() => {
-//     const updateSates = async () => {
-//       const newSalt = await sha256Hash(entropy);
-//       setSalt(newSalt);
-//       setChance(new Chance(newSalt));
-//     };
-//     updateSates();
-//   }, [entropy]);
-
-//   const random = (additionalSalt = "") => randomString(additionalSalt + salt);
-
-//   // Hashing Methods
-//   const sha256Hash = async (input) => {
-//     // // Ensure the input is a string
-//     // if (typeof inputString !== 'string') throw new Error('Input must be a string');
-
-//     const inputString = JSON.stringify(input);
-
-//     // Convert the string to an ArrayBuffer
-//     const encoder = new TextEncoder();
-//     const data = encoder.encode(inputString);
-
-//     // Hash the data
-//     const hashBuffer = await crypto.subtle.digest("SHA-256", data);
-
-//     // Convert the result to a hexadecimal string
-//     const hashArray = Array.from(new Uint8Array(hashBuffer));
-//     const hashHex = hashArray
-//       .map((byte) => byte.toString(16).padStart(2, "0"))
-//       .join("");
-
-//     return hashHex;
-//   };
-
-//   // // Usage:
-//   // sha256Hash('some string')
-//   //     .then(hash => console.log(hash))
-//   //     .catch(error => console.error(error));
-
-//   const sha512Hash = async (input) => {
-//     // // Ensure the input is a string
-//     // if (typeof inputString !== 'string') throw new Error('Input must be a string');
-//     const inputString = JSON.stringify(input);
-
-//     // Convert the string to an ArrayBuffer
-//     const encoder = new TextEncoder();
-//     const data = encoder.encode(inputString);
-
-//     // Hash the data
-//     const hashBuffer = await crypto.subtle.digest("SHA-512", data);
-
-//     // Convert the result to a hexadecimal string
-//     const hashArray = Array.from(new Uint8Array(hashBuffer));
-//     const hashHex = hashArray
-//       .map((byte) => byte.toString(16).padStart(2, "0"))
-//       .join("");
-
-//     return hashHex;
-//   };
-
-//   // // Usage:
-//   // sha512Hash('some string')
-//   //     .then(hash => console.log(hash))
-//   //     .catch(error => console.error(error));
-
-//   const sha3_512Hash = async (input) => {
-//     // // Ensure the input is a string
-//     // if (typeof inputString !== 'string') throw new Error('Input must be a string');
-//     const inputString = JSON.stringify(input);
-
-//     // Hash the data
-//     const hashHex = sha3_512(inputString);
-
-//     return hashHex;
-//   };
-
-//   // // Usage:
-//   // sha3_512Hash('some string')
-//   //     .then(hash => console.log(hash))
-//   //     .catch(error => console.error(error));
-
-//   // RSA Key Generation and Encryption/Decryption Methods
-//   const generateKeyPair = async () => {
-//     try {
-//       const keyPair = await crypto.subtle.generateKey(
-//         {
-//           name: "RSA-OAEP",
-//           modulusLength: 4096, // Can be 1024, 2048, or 4096
-//           publicExponent: new Uint8Array([1, 0, 1]), // 65537 in bytes
-//           hash: "SHA-256", // Can be "SHA-1", "SHA-256", "SHA-384", or "SHA-512"
-//         },
-//         true, // Whether the key is extractable
-//         ["encrypt", "decrypt"], // Key usages
-//       );
-
-//       return {
-//         publicKey: keyPair.publicKey,
-//         privateKey: keyPair.privateKey,
-//       };
-//     } catch (error) {
-//       console.error("Error generating key pair:", error);
-//       throw error;
-//     }
-//   };
-
-//   // // Usage:
-//   // generateKeyPair('some salt')
-//   //     .then(keyPair => {
-//   //         console.log('Public Key:', keyPair.publicKey);
-//   //         console.log('Private Key:', keyPair.privateKey);
-//   //     })
-//   //     .catch(error => console.error(error));
-
-//   function setClassPropsFromJson(json, instance) {
-//     for (let prop in json) {
-//       if (json.hasOwnProperty(prop)) {
-//         instance[prop] = json[prop];
-//       }
-//     }
-//     return instance;
-//   }
-
-//   const deserializePublicKey = async (key) => {
-//     try {
-//       const publicKey = await crypto.subtle.importKey(
-//         "jwk", // Import format
-//         key, // The key in JWK format
-//         {
-//           name: "RSA-OAEP", // Algorithm name
-//           hash: "SHA-256", // Hash algorithm
-//         },
-//         true, // Extractable flag
-//         ["encrypt"], // Key usages
-//       );
-
-//       return setClassPropsFromJson(key, publicKey);
-//     } catch (error) {
-//       console.error("Error deserializing public key:", error);
-//       throw error;
-//     }
-//   };
-
-//   // // Usage:
-//   // const jwk = {
-//   //     kty: 'RSA',
-//   //     // ... other JWK properties
-//   // };
-
-//   // deserializePublicKey(jwk)
-//   //     .then(publicKey => console.log('Public Key:', publicKey))
-//   //     .catch(error => console.error(error));
-
-//   const deserializePrivateKey = async (key) => {
-//     try {
-//       const privateKey = await crypto.subtle.importKey(
-//         "jwk", // Import format
-//         key, // The key in JWK format
-//         {
-//           name: "RSA-OAEP", // Algorithm name
-//           hash: "SHA-256", // Hash algorithm
-//         },
-//         true, // Extractable flag
-//         ["decrypt"], // Key usages
-//       );
-
-//       return setClassPropsFromJson(key, privateKey);
-//     } catch (error) {
-//       console.error("Error deserializing private key:", error);
-//       throw error;
-//     }
-//   };
-
-//   // // Usage:
-//   // const jwk = {
-//   //     kty: 'RSA',
-//   //     // ... other JWK properties
-//   // };
-
-//   // deserializePrivateKey(jwk)
-//   //     .then(privateKey => console.log('Private Key:', privateKey))
-//   //     .catch(error => console.error(error));
-
-//   const encrypt = async (message, publicKey) => {
-//     const encodedMessage = new TextEncoder().encode(message);
-//     const encrypted = await window.crypto.subtle
-//       .encrypt(
-//         {
-//           name: "RSA-OAEP",
-//           hash: "SHA-256",
-//         },
-//         publicKey,
-//         encodedMessage,
-//       )
-//       .catch((error) => {
-//         console.log("error", error);
-//       });
-
-//     return btoa(String.fromCharCode(...new Uint8Array(encrypted)));
-//   };
-
-//   //   const message = 'Hello, World!';
-//   //     const publicKey;  // Assume this is obtained from your key generation or deserialization functions
-
-//   //     encrypt(message, publicKey)
-//   //         .then(encryptedMessage => {
-//   //             console.log('Encrypted Message:', encryptedMessage);
-//   //         })
-//   //         .catch(error => {
-//   //             console.error('Encryption Error:', error);
-//   //     });
-
-//   const decrypt = async (encryptedMessage, privateKey, passphrase) => {
-//     const buffer = Uint8Array.from(atob(encryptedMessage), (c) =>
-//       c.charCodeAt(0),
-//     );
-//     try {
-//       const decrypted = await window.crypto.subtle.decrypt(
-//         {
-//           name: "RSA-OAEP",
-//           hash: "SHA-256",
-//         },
-//         privateKey,
-//         buffer,
-//       );
-//       const message = new TextDecoder().decode(decrypted);
-//       return message;
-//     } catch (error) {
-//       console.log("error", error);
-//       throw new Error(
-//         "Unable to decrypt message. Incorrect passphrase.",
-//         error,
-//       );
-//     }
-//   };
-
-//   //       const encryptedMessage;  // Assume this is obtained from your encrypt function
-//   // const privateKey;  // Assume this is obtained from your key generation or deserialization functions
-
-//   // decrypt(encryptedMessage, privateKey)
-//   //     .then(decryptedMessage => {
-//   //         console.log('Decrypted Message:', decryptedMessage);
-//   //     })
-//   //     .catch(error => {
-//   //         console.error('Decryption Error:', error);
-//   //     });
-
-//   // Symmetric Key Generation and Encryption/Decryption Methods
-//   const generateSymmetricKey = async () => {
-//     const key = await window.crypto.subtle.generateKey(
-//       {
-//         name: "AES-GCM",
-//         length: 256, // can be  128, 192, or 256
-//       },
-//       true, // whether the key is extractable (i.e. can be used in exportKey)
-//       ["encrypt", "decrypt"],
-//     );
-
-//     return key;
-//   };
-
-//   const deserializeSymmetricKey = async (key) => {
-//     const deSerializedSymmetricKey = await window.crypto.subtle.importKey(
-//       "jwk",
-//       {
-//         ...key,
-//         kty: "oct",
-//       },
-//       {
-//         name: "AES-GCM",
-//       },
-//       true,
-//       ["encrypt", "decrypt"],
-//     );
-
-//     return setClassPropsFromJson(key, deSerializedSymmetricKey);
-//   };
-
-//   const encryptWithSymmetricKey = async (message, key) => {
-//     const encodedMessage = new TextEncoder().encode(message);
-//     const iv = window.crypto.getRandomValues(new Uint8Array(12)); // must be 12 bytes
-
-//     const encrypted = await window.crypto.subtle
-//       .encrypt(
-//         {
-//           name: "AES-GCM",
-//           iv: iv,
-//         },
-//         key,
-//         encodedMessage,
-//       )
-//       .catch((error) => {
-//         console.log("error", error);
-//       });
-
-//     return {
-//       ciphertext: btoa(String.fromCharCode(...new Uint8Array(encrypted))),
-//       iv: btoa(String.fromCharCode(...new Uint8Array(iv))),
-//     };
-//   };
-
-//   const decryptWithSymmetricKey = async (encryptedData, key) => {
-//     const { ciphertext, iv } = encryptedData;
-//     const buffer = Uint8Array.from(atob(ciphertext), (c) => c.charCodeAt(0));
-//     const ivBuffer = Uint8Array.from(atob(iv), (c) => c.charCodeAt(0));
-
-//     try {
-//       const decrypted = await window.crypto.subtle.decrypt(
-//         {
-//           name: "AES-GCM",
-//           iv: ivBuffer,
-//         },
-//         key,
-//         buffer,
-//       );
-//       const message = new TextDecoder().decode(decrypted);
-//       return message;
-//     } catch (error) {
-//       throw new Error("Unable to decrypt message. Incorrect key.");
-//     }
-//   };
-
-//   // Exported Methods Bundle
-//   const cryptographyMethods = {
-//     randomString,
-//     sha256Hash,
-//     sha512Hash,
-//     sha3_512Hash,
-//     generateKeyPair,
-//     deserializePublicKey,
-//     deserializePrivateKey,
-//     encrypt,
-//     decrypt,
-//     generateSymmetricKey,
-//     deserializeSymmetricKey,
-//     encryptWithSymmetricKey,
-//     decryptWithSymmetricKey,
-//     // Add more methods as needed
-//     chance,
-//   };
-
-//   return (
-//     <CryptographyContext.Provider value={cryptographyMethods}>
-//       {children}
-//     </CryptographyContext.Provider>
-//   );
-// };
-
-// Custom Hook to use Cryptography
-var useCryptography = function useCryptography() {
-  return useContext(CryptographyContext);
-};
-
-// Usage in some component
-/*
-const { 
-  random, 
-  sha256Hash, 
-  sha512Hash, 
-  generateKeyPair,
-  deserializePublicKey,
-  deserializePrivateKey,
-  encrypt,
-  decrypt,
-  generateSymmetricKey,
-  deserializeSymmetricKey,
-  encryptWithSymmetricKey,
-  decryptWithSymmetricKey,
-  chance
-} = useCryptography();
-*/
-
-/***/ }),
-
-/***/ 89091:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   QT: () => (/* binding */ deserializePublicKey),
-/* harmony export */   TZ: () => (/* binding */ generateKeyPair),
-/* harmony export */   Yc: () => (/* binding */ _decrypt),
-/* harmony export */   aq: () => (/* binding */ decryptWithSymmetricKey),
-/* harmony export */   eB: () => (/* binding */ deserializePrivateKey),
-/* harmony export */   eE: () => (/* binding */ encryptWithSymmetricKey),
-/* harmony export */   w: () => (/* binding */ _encrypt),
-/* harmony export */   yE: () => (/* binding */ generateSymmetricKey)
-/* harmony export */ });
-/* unused harmony exports deserializeSymmetricKey, getEncryptionMethods, getSymmetricKeyEncryptionMethods */
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-// public key encryption
-var generateKeyPair = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-    var keyPair;
-    return _regeneratorRuntime().wrap(function _callee$(_context) {
-      while (1) switch (_context.prev = _context.next) {
-        case 0:
-          _context.next = 2;
-          return window.crypto.subtle.generateKey({
-            name: "RSA-OAEP",
-            modulusLength: 4096,
-            publicExponent: new Uint8Array([1, 0, 1]),
-            hash: "SHA-256"
-          }, true, ["encrypt", "decrypt"]);
-        case 2:
-          keyPair = _context.sent;
-          return _context.abrupt("return", {
-            publicKey: keyPair.publicKey,
-            privateKey: keyPair.privateKey
-          });
-        case 4:
-        case "end":
-          return _context.stop();
-      }
-    }, _callee);
-  }));
-  return function generateKeyPair() {
-    return _ref.apply(this, arguments);
-  };
-}();
-function setClassPropsFromJson(json, instance) {
-  for (var prop in json) {
-    if (json.hasOwnProperty(prop)) {
-      instance[prop] = json[prop];
-    }
-  }
-  return instance;
-}
-var deserializePublicKey = /*#__PURE__*/function () {
-  var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(key) {
-    var deSerializedublicKey;
-    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-      while (1) switch (_context2.prev = _context2.next) {
-        case 0:
-          _context2.next = 2;
-          return window.crypto.subtle.importKey("jwk", _objectSpread(_objectSpread({}, key), {}, {
-            kty: "RSA"
-          }), {
-            name: "RSA-OAEP",
-            hash: "SHA-256"
-          }, true, ["encrypt"]);
-        case 2:
-          deSerializedublicKey = _context2.sent;
-          return _context2.abrupt("return", setClassPropsFromJson(key, deSerializedublicKey));
-        case 4:
-        case "end":
-          return _context2.stop();
-      }
-    }, _callee2);
-  }));
-  return function deserializePublicKey(_x) {
-    return _ref2.apply(this, arguments);
-  };
-}();
-var deserializePrivateKey = /*#__PURE__*/function () {
-  var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(key) {
-    var deSerializedPrivateKey;
-    return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-      while (1) switch (_context3.prev = _context3.next) {
-        case 0:
-          _context3.next = 2;
-          return window.crypto.subtle.importKey("jwk", _objectSpread(_objectSpread({}, key), {}, {
-            kty: "RSA"
-          }), {
-            name: "RSA-OAEP",
-            hash: "SHA-256"
-          }, true, ["decrypt"]);
-        case 2:
-          deSerializedPrivateKey = _context3.sent;
-          return _context3.abrupt("return", setClassPropsFromJson(key, deSerializedPrivateKey));
-        case 4:
-        case "end":
-          return _context3.stop();
-      }
-    }, _callee3);
-  }));
-  return function deserializePrivateKey(_x2) {
-    return _ref3.apply(this, arguments);
-  };
-}();
-var _encrypt = /*#__PURE__*/function () {
-  var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(message, publicKey) {
-    var encodedMessage, encrypted;
-    return _regeneratorRuntime().wrap(function _callee4$(_context4) {
-      while (1) switch (_context4.prev = _context4.next) {
-        case 0:
-          encodedMessage = new TextEncoder().encode(message);
-          _context4.next = 3;
-          return window.crypto.subtle.encrypt({
-            name: "RSA-OAEP",
-            hash: "SHA-256"
-          }, publicKey, encodedMessage)["catch"](function (error) {
-            console.log("error", error);
-          });
-        case 3:
-          encrypted = _context4.sent;
-          return _context4.abrupt("return", btoa(String.fromCharCode.apply(String, _toConsumableArray(new Uint8Array(encrypted)))));
-        case 5:
-        case "end":
-          return _context4.stop();
-      }
-    }, _callee4);
-  }));
-  return function encrypt(_x3, _x4) {
-    return _ref4.apply(this, arguments);
-  };
-}();
-
-var _decrypt = /*#__PURE__*/function () {
-  var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5(encryptedMessage, privateKey, passphrase) {
-    var buffer, decrypted, message;
-    return _regeneratorRuntime().wrap(function _callee5$(_context5) {
-      while (1) switch (_context5.prev = _context5.next) {
-        case 0:
-          buffer = Uint8Array.from(atob(encryptedMessage), function (c) {
-            return c.charCodeAt(0);
-          });
-          _context5.prev = 1;
-          _context5.next = 4;
-          return window.crypto.subtle.decrypt({
-            name: "RSA-OAEP",
-            hash: "SHA-256"
-          }, privateKey, buffer);
-        case 4:
-          decrypted = _context5.sent;
-          message = new TextDecoder().decode(decrypted);
-          return _context5.abrupt("return", message);
-        case 9:
-          _context5.prev = 9;
-          _context5.t0 = _context5["catch"](1);
-          console.log("error", _context5.t0);
-          throw new Error("Unable to decrypt message. Incorrect passphrase.", _context5.t0);
-        case 13:
-        case "end":
-          return _context5.stop();
-      }
-    }, _callee5, null, [[1, 9]]);
-  }));
-  return function decrypt(_x5, _x6, _x7) {
-    return _ref5.apply(this, arguments);
-  };
-}();
-
-var getEncryptionMethods = /*#__PURE__*/(/* unused pure expression or super */ null && (function () {
-  var _ref6 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee8(userId, salt) {
-    var keyPair;
-    return _regeneratorRuntime().wrap(function _callee8$(_context8) {
-      while (1) switch (_context8.prev = _context8.next) {
-        case 0:
-          _context8.next = 2;
-          return generateKeyPair(userId, salt);
-        case 2:
-          keyPair = _context8.sent;
-          return _context8.abrupt("return", {
-            encrypt: function () {
-              var _encrypt2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(message) {
-                return _regeneratorRuntime().wrap(function _callee6$(_context6) {
-                  while (1) switch (_context6.prev = _context6.next) {
-                    case 0:
-                      _context6.next = 2;
-                      return _encrypt(message, keyPair.publicKey);
-                    case 2:
-                      return _context6.abrupt("return", _context6.sent);
-                    case 3:
-                    case "end":
-                      return _context6.stop();
-                  }
-                }, _callee6);
-              }));
-              function encrypt(_x10) {
-                return _encrypt2.apply(this, arguments);
-              }
-              return encrypt;
-            }(),
-            decrypt: function () {
-              var _decrypt2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7(encryptedMessage) {
-                return _regeneratorRuntime().wrap(function _callee7$(_context7) {
-                  while (1) switch (_context7.prev = _context7.next) {
-                    case 0:
-                      _context7.next = 2;
-                      return _decrypt(encryptedMessage, keyPair.privateKey, salt);
-                    case 2:
-                      return _context7.abrupt("return", _context7.sent);
-                    case 3:
-                    case "end":
-                      return _context7.stop();
-                  }
-                }, _callee7);
-              }));
-              function decrypt(_x11) {
-                return _decrypt2.apply(this, arguments);
-              }
-              return decrypt;
-            }()
-          });
-        case 4:
-        case "end":
-          return _context8.stop();
-      }
-    }, _callee8);
-  }));
-  return function getEncryptionMethods(_x8, _x9) {
-    return _ref6.apply(this, arguments);
-  };
-}()));
-
-// Symmetric key encryption
-
-var generateSymmetricKey = /*#__PURE__*/function () {
-  var _ref7 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9() {
-    var key;
-    return _regeneratorRuntime().wrap(function _callee9$(_context9) {
-      while (1) switch (_context9.prev = _context9.next) {
-        case 0:
-          _context9.next = 2;
-          return window.crypto.subtle.generateKey({
-            name: "AES-GCM",
-            length: 256 // can be  128, 192, or 256
-          }, true,
-          // whether the key is extractable (i.e. can be used in exportKey)
-          ["encrypt", "decrypt"]);
-        case 2:
-          key = _context9.sent;
-          return _context9.abrupt("return", key);
-        case 4:
-        case "end":
-          return _context9.stop();
-      }
-    }, _callee9);
-  }));
-  return function generateSymmetricKey() {
-    return _ref7.apply(this, arguments);
-  };
-}();
-var deserializeSymmetricKey = /*#__PURE__*/(/* unused pure expression or super */ null && (function () {
-  var _ref8 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee10(key) {
-    var deSerializedSymmetricKey;
-    return _regeneratorRuntime().wrap(function _callee10$(_context10) {
-      while (1) switch (_context10.prev = _context10.next) {
-        case 0:
-          _context10.next = 2;
-          return window.crypto.subtle.importKey("jwk", _objectSpread(_objectSpread({}, key), {}, {
-            kty: "oct"
-          }), {
-            name: "AES-GCM"
-          }, true, ["encrypt", "decrypt"]);
-        case 2:
-          deSerializedSymmetricKey = _context10.sent;
-          return _context10.abrupt("return", setClassPropsFromJson(key, deSerializedSymmetricKey));
-        case 4:
-        case "end":
-          return _context10.stop();
-      }
-    }, _callee10);
-  }));
-  return function deserializeSymmetricKey(_x12) {
-    return _ref8.apply(this, arguments);
-  };
-}()));
-var encryptWithSymmetricKey = /*#__PURE__*/function () {
-  var _ref9 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee11(message, key) {
-    var encodedMessage, iv, encrypted;
-    return _regeneratorRuntime().wrap(function _callee11$(_context11) {
-      while (1) switch (_context11.prev = _context11.next) {
-        case 0:
-          encodedMessage = new TextEncoder().encode(message);
-          iv = window.crypto.getRandomValues(new Uint8Array(12)); // must be 12 bytes
-          _context11.next = 4;
-          return window.crypto.subtle.encrypt({
-            name: "AES-GCM",
-            iv: iv
-          }, key, encodedMessage)["catch"](function (error) {
-            console.log("error", error);
-          });
-        case 4:
-          encrypted = _context11.sent;
-          return _context11.abrupt("return", {
-            ciphertext: btoa(String.fromCharCode.apply(String, _toConsumableArray(new Uint8Array(encrypted)))),
-            iv: btoa(String.fromCharCode.apply(String, _toConsumableArray(new Uint8Array(iv))))
-          });
-        case 6:
-        case "end":
-          return _context11.stop();
-      }
-    }, _callee11);
-  }));
-  return function encryptWithSymmetricKey(_x13, _x14) {
-    return _ref9.apply(this, arguments);
-  };
-}();
-var decryptWithSymmetricKey = /*#__PURE__*/function () {
-  var _ref10 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee12(encryptedData, key) {
-    var ciphertext, iv, buffer, ivBuffer, decrypted, message;
-    return _regeneratorRuntime().wrap(function _callee12$(_context12) {
-      while (1) switch (_context12.prev = _context12.next) {
-        case 0:
-          ciphertext = encryptedData.ciphertext, iv = encryptedData.iv;
-          buffer = Uint8Array.from(atob(ciphertext), function (c) {
-            return c.charCodeAt(0);
-          });
-          ivBuffer = Uint8Array.from(atob(iv), function (c) {
-            return c.charCodeAt(0);
-          });
-          _context12.prev = 3;
-          _context12.next = 6;
-          return window.crypto.subtle.decrypt({
-            name: "AES-GCM",
-            iv: ivBuffer
-          }, key, buffer);
-        case 6:
-          decrypted = _context12.sent;
-          message = new TextDecoder().decode(decrypted);
-          return _context12.abrupt("return", message);
-        case 11:
-          _context12.prev = 11;
-          _context12.t0 = _context12["catch"](3);
-          throw new Error("Unable to decrypt message. Incorrect key.");
-        case 14:
-        case "end":
-          return _context12.stop();
-      }
-    }, _callee12, null, [[3, 11]]);
-  }));
-  return function decryptWithSymmetricKey(_x15, _x16) {
-    return _ref10.apply(this, arguments);
-  };
-}();
-var getSymmetricKeyEncryptionMethods = /*#__PURE__*/(/* unused pure expression or super */ null && (function () {
-  var _ref11 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee15() {
-    var key;
-    return _regeneratorRuntime().wrap(function _callee15$(_context15) {
-      while (1) switch (_context15.prev = _context15.next) {
-        case 0:
-          _context15.next = 2;
-          return generateSymmetricKey();
-        case 2:
-          key = _context15.sent;
-          return _context15.abrupt("return", {
-            encrypt: function () {
-              var _encrypt3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee13(message) {
-                return _regeneratorRuntime().wrap(function _callee13$(_context13) {
-                  while (1) switch (_context13.prev = _context13.next) {
-                    case 0:
-                      _context13.next = 2;
-                      return encryptWithSymmetricKey(message, key);
-                    case 2:
-                      return _context13.abrupt("return", _context13.sent);
-                    case 3:
-                    case "end":
-                      return _context13.stop();
-                  }
-                }, _callee13);
-              }));
-              function encrypt(_x17) {
-                return _encrypt3.apply(this, arguments);
-              }
-              return encrypt;
-            }(),
-            decrypt: function () {
-              var _decrypt3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee14(encryptedMessage) {
-                return _regeneratorRuntime().wrap(function _callee14$(_context14) {
-                  while (1) switch (_context14.prev = _context14.next) {
-                    case 0:
-                      _context14.next = 2;
-                      return decryptWithSymmetricKey(encryptedMessage, key);
-                    case 2:
-                      return _context14.abrupt("return", _context14.sent);
-                    case 3:
-                    case "end":
-                      return _context14.stop();
-                  }
-                }, _callee14);
-              }));
-              function decrypt(_x18) {
-                return _decrypt3.apply(this, arguments);
-              }
-              return decrypt;
-            }()
-          });
-        case 4:
-        case "end":
-          return _context15.stop();
-      }
-    }, _callee15);
-  }));
-  return function getSymmetricKeyEncryptionMethods() {
-    return _ref11.apply(this, arguments);
-  };
-}()));
-
-
-/***/ }),
-
-/***/ 34541:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   hN: () => (/* binding */ useNotification),
-/* harmony export */   n: () => (/* binding */ SnackbarProvider)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50318);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7514);
-/* harmony import */ var _mui_icons_material_Close__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(39781);
-/* harmony import */ var _mui_material_IconButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(11641);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(71468);
-/* harmony import */ var _blockchain_Blockchain__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(34431);
-/* harmony import */ var _blockchain_chains_profileChain__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(85026);
-
-
-
-
-
-
-
-var SnackbarProvider = function SnackbarProvider(_ref) {
-  var children = _ref.children;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(notistack__WEBPACK_IMPORTED_MODULE_1__/* .SnackbarProvider */ .n, {
-    maxSnack: 3,
-    preventDuplicate: true,
-    anchorOrigin: {
-      vertical: "top",
-      horizontal: "center"
-    },
-    autoHideDuration: 2000,
-    action: function action(snackbarId) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A, {
-        "aria-label": "delete",
-        onClick: function onClick() {
-          return (0,notistack__WEBPACK_IMPORTED_MODULE_1__/* .closeSnackbar */ .mk)(snackbarId);
-        }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material_Close__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A, {
-        style: {
-          color: "#fff"
-        }
-      }));
-    }
-  }, children);
-};
-var useNotification = function useNotification() {
-  var _compiledProfile$sett, _compiledProfile$sett2;
-  var _useSnackbar = (0,notistack__WEBPACK_IMPORTED_MODULE_1__/* .useSnackbar */ .dh)(),
-    enqueueSnackbar = _useSnackbar.enqueueSnackbar;
-  var storedBlockchain = (0,react_redux__WEBPACK_IMPORTED_MODULE_6__/* .useSelector */ .d4)(function (state) {
-    return state.userProfile.blockchain;
-  });
-  var _useBlockchain = (0,_blockchain_Blockchain__WEBPACK_IMPORTED_MODULE_2__/* .useBlockchain */ .o)({
-      compiler: _blockchain_chains_profileChain__WEBPACK_IMPORTED_MODULE_3__/* .compiler */ .c,
-      blockchain: storedBlockchain
-    }),
-    compiledProfile = _useBlockchain.compiledBlockchain;
-  var storedInAppNotification = compiledProfile === null || compiledProfile === void 0 || (_compiledProfile$sett = compiledProfile.settings) === null || _compiledProfile$sett === void 0 ? void 0 : _compiledProfile$sett.inAppNotification;
-  var storedBrowserNotification = compiledProfile === null || compiledProfile === void 0 || (_compiledProfile$sett2 = compiledProfile.settings) === null || _compiledProfile$sett2 === void 0 ? void 0 : _compiledProfile$sett2.browserNotification;
-
-  // const storedInAppNotification = useSelector(state => state.userProfile.inAppNotification);
-  // const storedBrowserNotification = useSelector(state => state.userProfile.browserNotification);
-
-  return function (message) {
-    for (var _len = arguments.length, props = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      props[_key - 1] = arguments[_key];
-    }
-    // Check if the browser supports notifications
-    console.log({
-      storedInAppNotification: storedInAppNotification,
-      storedBrowserNotification: storedBrowserNotification,
-      Notification: window.Notification,
-      hidden: document.hidden,
-      message: message,
-      props: props
-    });
-    try {
-      var _window$Notification, _window$Notification2, _window$Notification3, _window$Notification4;
-      if (storedBrowserNotification && !("Notification" in window) || typeof window.Notification === "undefined") {
-        alert("This browser does not support desktop notification");
-      }
-
-      // Check if permission is already granted
-      else if (((_window$Notification = window.Notification) === null || _window$Notification === void 0 ? void 0 : _window$Notification.permission) === "granted") {
-        if (document.hidden) {
-          // If it's okay, let's create a notification
-          if (storedBrowserNotification) {
-            var notification = new window.Notification(message);
-          }
-        }
-      }
-
-      // Check if permission is already granted
-      else if (((_window$Notification2 = window.Notification) === null || _window$Notification2 === void 0 ? void 0 : _window$Notification2.permission) === "denied") {
-        // If it's okay, let's create a notification
-        if (storedInAppNotification) {
-          enqueueSnackbar.apply(void 0, [message].concat(props));
-        }
-      }
-
-      // Otherwise, we need to ask the user for permission
-      else if (storedBrowserNotification && (((_window$Notification3 = window.Notification) === null || _window$Notification3 === void 0 ? void 0 : _window$Notification3.permission) !== "denied" || ((_window$Notification4 = window.Notification) === null || _window$Notification4 === void 0 ? void 0 : _window$Notification4.permission) === "default")) {
-        var _window$Notification5;
-        (_window$Notification5 = window.Notification) === null || _window$Notification5 === void 0 || _window$Notification5.requestPermission(function (permission) {
-          // If the user accepts, let's create a notification
-          if (permission === "granted") {
-            var _notification = new window.Notification(message);
-          }
-        });
-      }
-      if (storedInAppNotification || props[0].insist) {
-        enqueueSnackbar.apply(void 0, [message].concat(props));
-      }
-    } catch (e) {
-      console.log(e);
-    }
-  };
-};
-
-
-/***/ }),
-
-/***/ 44188:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ PeerProvider),
-/* harmony export */   y: () => (/* binding */ PeerContext)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50318);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(71468);
-/* harmony import */ var _redux_slices_userProfileSlice__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14279);
-/* harmony import */ var _blockchain_Blockchain__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(34431);
-/* harmony import */ var _blockchain_chains_profileChain__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(85026);
-/* harmony import */ var _encryption_Encryption__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(89091);
-/* harmony import */ var peerjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(24102);
-/* harmony import */ var chance__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(97677);
-/* harmony import */ var chance__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(chance__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(46525);
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-
-var chance = new (chance__WEBPACK_IMPORTED_MODULE_4___default())();
-var PeerContext = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)();
-var peer = null;
-var setPeer = function setPeer(newState) {
-  return peer = newState;
-};
-var pendingCallbacks = [];
-var setPendingCallbacks = function setPendingCallbacks(newState) {
-  return pendingCallbacks = newState;
-};
-var connections = {};
-var setConnections = function setConnections(newState) {
-  return connections = newState;
-};
-var calls = [];
-var setCalls = function setCalls(newState) {
-  return calls = newState;
-};
-var streams = [];
-var setStreams = function setStreams(newState) {
-  return streams = newState;
-};
-function EE(fn, context, once) {
-  this.fn = fn;
-  this.context = context;
-  this.once = once || false;
-  this.push = function () {};
-}
-function PeerProvider(_ref) {
-  var _compiledProfile$agre;
-  var children = _ref.children,
-    appiSchema = _ref.appiSchema,
-    onConnection = _ref.onConnection,
-    managedState = _ref.managedState;
-  // const [peer, setPeer] = useState(null);
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(chance.hash()),
-    _useState2 = _slicedToArray(_useState, 2),
-    peerHash = _useState2[0],
-    setPeerHash = _useState2[1];
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-    _useState4 = _slicedToArray(_useState3, 2),
-    activeConnections = _useState4[0],
-    setActiveConnections = _useState4[1];
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-    _useState6 = _slicedToArray(_useState5, 2),
-    peerEncryptionKeys = _useState6[0],
-    setPeerEncryptionKeys = _useState6[1];
-  // const [connections, setConnections] = useState({});
-  // const [calls, setCalls] = useState([]);
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(chance.hash()),
-    _useState8 = _slicedToArray(_useState7, 2),
-    callsHash = _useState8[0],
-    setCallsHash = _useState8[1];
-  // const [streams, setStreams] = useState([]);
-
-  var storedBlockchain = (0,react_redux__WEBPACK_IMPORTED_MODULE_6__/* .useSelector */ .d4)(function (state) {
-    return state.userProfile.blockchain;
-  });
-  var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_6__/* .useDispatch */ .wA)();
-  var addToBlockchainDispatch = function addToBlockchainDispatch(podId, blocks, block, storage) {
-    return dispatch((0,_redux_slices_userProfileSlice__WEBPACK_IMPORTED_MODULE_1__/* .addToBlockchain */ .XE)({
-      podId: podId,
-      blocks: blocks,
-      block: block,
-      storage: storage,
-      append: true
-    }));
-  };
-  var _useBlockchain = (0,_blockchain_Blockchain__WEBPACK_IMPORTED_MODULE_2__/* .useBlockchain */ .o)({
-      compiler: _blockchain_chains_profileChain__WEBPACK_IMPORTED_MODULE_3__/* .compiler */ .c,
-      blockchain: storedBlockchain,
-      dispatch: addToBlockchainDispatch
-    }),
-    compiledProfile = _useBlockchain.compiledBlockchain,
-    addBlocksToProfile = _useBlockchain.addBlocks;
-  var storedPeerId = compiledProfile.connectionId;
-  var agreedToTerms = (_compiledProfile$agre = compiledProfile.agreedToTerms) === null || _compiledProfile$agre === void 0 ? void 0 : _compiledProfile$agre.length;
-
-  // const storedPeerId = useSelector((state) => state.userProfile.connectionId);
-  // const agreedToTerms = useSelector((state) => state.userProfile.agreedToTerms?.length);
-  // const dispatch = useDispatch();
-  // const setPeerId = (peerId) => console.log('setPeerId', peerId) && dispatch(updatePeerId(peerId));
-
-  var setPeerId = function setPeerId(peerId) {
-    var newBlocks = _toConsumableArray((0,_blockchain_chains_profileChain__WEBPACK_IMPORTED_MODULE_3__/* .blockBuilders */ .e)().updateConnectionId({
-      from: storedPeerId,
-      connectionId: peerId
-    }));
-
-    // setPeerHash(chance.hash());
-    // setTimeout(() => setPeerHash(chance.hash()), 1000);
-    addBlocksToProfile(newBlocks);
-  };
-  var encryptionKeys = (0,react_redux__WEBPACK_IMPORTED_MODULE_6__/* .useSelector */ .d4)(function (state) {
-    return state.encryption;
-  });
-  var peerOnDataHandler = function peerOnDataHandler(data, connection) {
-    return handleConnectionDataWithManagedState(connection, managedState, data);
-  };
-  var peerConnectionHandler = function peerConnectionHandler(connection) {
-    // const newListener = data => peerOnDataHandler(data, connection);
-    // const newListener = (data) => new EE(data => peerOnDataHandler(data, connection))
-    try {
-      connection.off("data");
-    } catch (err) {
-      console.log("error removing data listener", err);
-    }
-    connection.on("data", function (data) {
-      return peerOnDataHandler(data, connection);
-    });
-    if (peer) {
-      try {
-        peer.off("connection");
-      } catch (err) {
-        console.log("error peer connection data listener", err);
-      }
-      try {
-        peer.off("call");
-      } catch (err) {
-        console.log("error peer connection call listener", err);
-      }
-      peer.on("connection", function (connection) {
-        console.log("new connection");
-        connection.on("close", function (connection) {
-          var _calls$find;
-          console.log("peer closed", connection);
-          setConnections(function (connections) {
-            var newConnections = _objectSpread({}, connections);
-            delete newConnections[connection === null || connection === void 0 ? void 0 : connection.peer];
-            return newConnections;
-          });
-          setActiveConnections(Object.keys(connections).filter(function (c) {
-            return c !== (connection === null || connection === void 0 ? void 0 : connection.peer);
-          }));
-          var remoteStreamId = (_calls$find = calls.find(function (call) {
-            return call.peer !== (connection === null || connection === void 0 ? void 0 : connection.peer);
-          })) === null || _calls$find === void 0 || (_calls$find = _calls$find._remoteStream) === null || _calls$find === void 0 ? void 0 : _calls$find.id;
-          setCalls(calls.filter(function (call) {
-            return call.peer !== (connection === null || connection === void 0 ? void 0 : connection.peer);
-          }));
-          setCallsHash(chance.hash());
-          // setPeerHash(chance.hash());
-        });
-        onConnection(connection, sendMessageWithCallback, managedState, Object.keys(connections).filter(function (c) {
-          return c !== (connection === null || connection === void 0 ? void 0 : connection.peer);
-        }));
-        setConnections(_objectSpread(_objectSpread({}, connections), {}, _defineProperty({}, connection.peer, connection)));
-        setActiveConnections([].concat(_toConsumableArray(Object.keys(connections)), [connection.peer]));
-        // setPeerHash(chance.hash());
-      });
-      peer.on("call", /*#__PURE__*/function () {
-        var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(call) {
-          return _regeneratorRuntime().wrap(function _callee$(_context) {
-            while (1) switch (_context.prev = _context.next) {
-              case 0:
-                console.log("call received", call);
-                call.on("stream", function (stream) {
-                  console.log("stream received from remote", stream);
-                  // setStreams((streams) => {
-                  //     // do not add stream if it is already set
-                  //     if (streams.find((s) => s.id === stream.id)) {
-                  //         return streams;
-                  //     }
-                  //     return [...streams, stream];
-                  // });
-                });
-                call.on("close", function () {
-                  endCall(call.peer);
-                });
-                setCalls([].concat(_toConsumableArray(calls), [call]));
-                setCallsHash(chance.hash());
-              case 5:
-              case "end":
-                return _context.stop();
-            }
-          }, _callee);
-        }));
-        return function (_x) {
-          return _ref2.apply(this, arguments);
-        };
-      }());
-    }
-  };
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var activeConnectionsToManage = activeConnections.map(function (c) {
-      return connections[c];
-    });
-    activeConnectionsToManage.forEach(function (connection) {
-      // const newListener = new EE(data => peerOnDataHandler(data, connection))
-      // connection.close();
-      // connectToPeer(connection.peer)
-      // debugger;
-      // console.log('>>>>>> setting data handler')
-      // connection.off('data', data => peerOnDataHandler(data, connection));
-      // connection.on('data', data => peerOnDataHandler(data, connection));
-      // if (connection._events) {
-      //     connection._events.data = newListener;
-      // }
-
-      // const newListener = data => peerOnDataHandler(data, connection);
-      // connection.off('data', newListener);
-      // connection.on('data', newListener);
-      peerConnectionHandler(connection);
-    });
-    // // activeConnections.forEach(peerId => connectToPeer(peerId))
-  }, [managedState, activeConnections, callsHash, peerHash]);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var deserializedEncryptionKeys = /*#__PURE__*/function () {
-      var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-        var keyPairs;
-        return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-          while (1) switch (_context3.prev = _context3.next) {
-            case 0:
-              _context3.next = 2;
-              return Promise.all(Object.keys(encryptionKeys).map( /*#__PURE__*/function () {
-                var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(userId) {
-                  var _encryptionKeys$userI, privateKey, remotePublicKey, symmetricKey, established, deserializedPrivateKey, deserializedRemotePublicKey, deserializedSymmetricKey, setClassPropsFromJson;
-                  return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-                    while (1) switch (_context2.prev = _context2.next) {
-                      case 0:
-                        setClassPropsFromJson = function _setClassPropsFromJso(json, instance) {
-                          for (var prop in json) {
-                            if (json.hasOwnProperty(prop)) {
-                              instance[prop] = json[prop];
-                            }
-                          }
-                          return instance;
-                        };
-                        _encryptionKeys$userI = encryptionKeys[userId], privateKey = _encryptionKeys$userI.privateKey, remotePublicKey = _encryptionKeys$userI.remotePublicKey, symmetricKey = _encryptionKeys$userI.symmetricKey, established = _encryptionKeys$userI.established;
-                        _context2.t0 = privateKey;
-                        if (!_context2.t0) {
-                          _context2.next = 7;
-                          break;
-                        }
-                        _context2.next = 6;
-                        return window.crypto.subtle.importKey("jwk", _objectSpread(_objectSpread({}, privateKey), {}, {
-                          kty: "RSA"
-                        }), {
-                          name: "RSA-OAEP",
-                          hash: "SHA-256"
-                        }, true, ["decrypt"]);
-                      case 6:
-                        _context2.t0 = _context2.sent;
-                      case 7:
-                        deserializedPrivateKey = _context2.t0;
-                        _context2.t1 = remotePublicKey;
-                        if (!_context2.t1) {
-                          _context2.next = 13;
-                          break;
-                        }
-                        _context2.next = 12;
-                        return window.crypto.subtle.importKey("jwk", _objectSpread(_objectSpread({}, remotePublicKey), {}, {
-                          kty: "RSA"
-                        }), {
-                          name: "RSA-OAEP",
-                          hash: "SHA-256"
-                        }, true, ["encrypt"]);
-                      case 12:
-                        _context2.t1 = _context2.sent;
-                      case 13:
-                        deserializedRemotePublicKey = _context2.t1;
-                        _context2.t2 = symmetricKey;
-                        if (!_context2.t2) {
-                          _context2.next = 19;
-                          break;
-                        }
-                        _context2.next = 18;
-                        return window.crypto.subtle.importKey("jwk", _objectSpread(_objectSpread({}, symmetricKey), {}, {
-                          kty: "oct"
-                        }), {
-                          name: "AES-GCM",
-                          length: 256
-                        }, true, ["encrypt", "decrypt"]);
-                      case 18:
-                        _context2.t2 = _context2.sent;
-                      case 19:
-                        deserializedSymmetricKey = _context2.t2;
-                        return _context2.abrupt("return", {
-                          userId: userId,
-                          privateKey: setClassPropsFromJson(privateKey, deserializedPrivateKey),
-                          // {...deserializedPrivateKey, ...privateKey},
-                          remotePublicKey: setClassPropsFromJson(remotePublicKey, deserializedRemotePublicKey),
-                          // {...deserializedRemotePublicKey, ...remotePublicKey},
-                          symmetricKey: setClassPropsFromJson(symmetricKey, deserializedSymmetricKey),
-                          // {...deserializedSymmetricKey, ...symmetricKey},
-                          established: established
-                        });
-                      case 21:
-                      case "end":
-                        return _context2.stop();
-                    }
-                  }, _callee2);
-                }));
-                return function (_x2) {
-                  return _ref4.apply(this, arguments);
-                };
-              }()));
-            case 2:
-              keyPairs = _context3.sent;
-              setPeerEncryptionKeys(keyPairs);
-            case 4:
-            case "end":
-              return _context3.stop();
-          }
-        }, _callee3);
-      }));
-      return function deserializedEncryptionKeys() {
-        return _ref3.apply(this, arguments);
-      };
-    }();
-    deserializedEncryptionKeys();
-  }, [encryptionKeys]);
-  var handleConnectionData = /*#__PURE__*/function () {
-    var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5(connection, managedState, rawData) {
-      var _peerEncryptionKeys$f;
-      var state, _ref6, privateKey, remotePublicKey, established, symmetricKey, data, callback, _managedState$contact, request, response, next;
-      return _regeneratorRuntime().wrap(function _callee5$(_context5) {
-        while (1) switch (_context5.prev = _context5.next) {
-          case 0:
-            state = managedState;
-            _ref6 = (_peerEncryptionKeys$f = peerEncryptionKeys.find(function (keyPair) {
-              return keyPair.userId === connection.peer;
-            })) !== null && _peerEncryptionKeys$f !== void 0 ? _peerEncryptionKeys$f : {}, privateKey = _ref6.privateKey, remotePublicKey = _ref6.remotePublicKey, established = _ref6.established, symmetricKey = _ref6.symmetricKey;
-            data = rawData;
-            if (!symmetricKey) {
-              _context5.next = 17;
-              break;
-            }
-            _context5.prev = 4;
-            _context5.t0 = JSON;
-            _context5.next = 8;
-            return (0,_encryption_Encryption__WEBPACK_IMPORTED_MODULE_7__/* .decryptWithSymmetricKey */ .aq)(rawData, symmetricKey);
-          case 8:
-            _context5.t1 = _context5.sent;
-            data = _context5.t0.parse.call(_context5.t0, _context5.t1);
-            console.log("decrypted symmetric", data);
-            _context5.next = 17;
-            break;
-          case 13:
-            _context5.prev = 13;
-            _context5.t2 = _context5["catch"](4);
-            console.log("error decrypting symmetric", _context5.t2, rawData);
-            data = rawData;
-          case 17:
-            if (!data.callback) {
-              _context5.next = 23;
-              break;
-            }
-            callback = pendingCallbacks.find(function (cb) {
-              return cb.id === data.callback;
-            });
-            if (!callback) {
-              _context5.next = 23;
-              break;
-            }
-            callback.recieved(data.payload);
-            setPendingCallbacks(pendingCallbacks.filter(function (cb) {
-              return cb.id !== data.callback;
-            }));
-            return _context5.abrupt("return");
-          case 23:
-            if (data.type && appiSchema[data.type] && appiSchema[data.type](state).length) {
-              request = {
-                payload: data.payload,
-                // get sender from contacts by connectionId
-                sender: (_managedState$contact = managedState.contacts.find(function (contact) {
-                  return contact.connectionId === connection.peer;
-                })) === null || _managedState$contact === void 0 ? void 0 : _managedState$contact.id
-              };
-              response = {
-                send: function () {
-                  var _send = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(payload) {
-                    var payloadToSend;
-                    return _regeneratorRuntime().wrap(function _callee4$(_context4) {
-                      while (1) switch (_context4.prev = _context4.next) {
-                        case 0:
-                          payloadToSend = {
-                            payload: payload,
-                            callback: data.callback
-                          };
-                          if (!symmetricKey) {
-                            _context4.next = 5;
-                            break;
-                          }
-                          _context4.next = 4;
-                          return (0,_encryption_Encryption__WEBPACK_IMPORTED_MODULE_7__/* .encryptWithSymmetricKey */ .eE)(JSON.stringify({
-                            payload: payload,
-                            callback: data.callback
-                          }), symmetricKey)["catch"](function (err) {
-                            console.log("error encrypting", err);
-                          });
-                        case 4:
-                          payloadToSend = _context4.sent;
-                        case 5:
-                          connection.send(payloadToSend);
-                        case 6:
-                        case "end":
-                          return _context4.stop();
-                      }
-                    }, _callee4);
-                  }));
-                  function send(_x6) {
-                    return _send.apply(this, arguments);
-                  }
-                  return send;
-                }()
-              };
-              next = function next(index) {
-                if (index < appiSchema[data.type](state).length) {
-                  appiSchema[data.type](state)[index](request, response, function () {
-                    next(index + 1);
-                  });
-                }
-              };
-              next(0);
-            }
-          case 24:
-          case "end":
-            return _context5.stop();
-        }
-      }, _callee5, null, [[4, 13]]);
-    }));
-    return function handleConnectionData(_x3, _x4, _x5) {
-      return _ref5.apply(this, arguments);
-    };
-  }();
-  var handleConnectionDataWithManagedState = function handleConnectionDataWithManagedState(connection, managedState, data) {
-    return handleConnectionData(connection, managedState, data);
-  };
-  var disconnectFromPeer = function disconnectFromPeer(peerId) {
-    if (connections[peerId]) {
-      connections[peerId].close();
-      setConnections(_objectSpread(_objectSpread({}, connections), {}, _defineProperty({}, peerId, null)));
-      setActiveConnections(Object.keys(connections).filter(function (c) {
-        return c !== peerId;
-      }));
-    }
-  };
-  var connectToAllContacts = function connectToAllContacts(peer) {
-    // filter connected contacts and connect to the ones not connected.
-    var connectedContacts = Object.keys(connections).filter(function (contact) {
-      var _connections$contact;
-      return ((_connections$contact = connections[contact]) === null || _connections$contact === void 0 || (_connections$contact = _connections$contact.peerConnection) === null || _connections$contact === void 0 ? void 0 : _connections$contact.iceConnectionState) === "connected";
-    });
-    var contactsToConnect = managedState.contacts.filter(function (contact) {
-      return !connectedContacts.includes(contact.connectionId);
-    });
-    contactsToConnect.forEach(function (contact) {
-      return connectToPeer(contact.connectionId, peer);
-    });
-
-    // filter connected contacts and disconnect from the ones not in the contacts list.
-    var contactsToDisconnect = connectedContacts.filter(function (contact) {
-      return !managedState.contacts.find(function (c) {
-        return c.connectionId === contact;
-      });
-    }).map(function (contact) {
-      return contact.connectionId;
-    });
-    var disconnectedContacts = Object.keys(connections).filter(function (contact) {
-      var _connections$contact2;
-      return ((_connections$contact2 = connections[contact]) === null || _connections$contact2 === void 0 || (_connections$contact2 = _connections$contact2.peerConnection) === null || _connections$contact2 === void 0 ? void 0 : _connections$contact2.iceConnectionState) === "disconnected";
-    });
-    [].concat(_toConsumableArray(contactsToDisconnect), _toConsumableArray(disconnectedContacts)).forEach(function (contact) {
-      return disconnectFromPeer(contact);
-    });
-  };
-  var handlePeerInitialisation = function handlePeerInitialisation(newPeer) {
-    try {
-      newPeer.off("open");
-    } catch (err) {
-      console.log("error removing open listener", err);
-    }
-    try {
-      newPeer.off("disconnected");
-    } catch (err) {
-      console.log("error removing open listener", err);
-    }
-    try {
-      newPeer.off("close");
-    } catch (err) {
-      console.log("error removing open listener", err);
-    }
-    newPeer.on("open", function (id) {
-      console.log("My peer ID is: " + id);
-      // setPeerId(id);
-      setPeer(newPeer);
-      setPeerHash(chance.hash());
-
-      // setInterval(() => {
-      //     connectToAllContacts(newPeer)
-      // }, 5000);
-      connectToAllContacts(newPeer);
-    });
-    newPeer.on("disconnected", function () {
-      var _console;
-      for (var _len = arguments.length, rest = new Array(_len), _key = 0; _key < _len; _key++) {
-        rest[_key] = arguments[_key];
-      }
-      (_console = console).log.apply(_console, ["peer disconnected"].concat(rest));
-      newPeer.reconnect();
-      setPeer(null);
-      setPeerHash(chance.hash());
-    });
-    newPeer.on("close", function (connection) {
-      console.log("peer closed", connection);
-      setPeer(null);
-      setPeerHash(chance.hash());
-    });
-  };
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    if (!peer && !!storedPeerId && !!agreedToTerms) {
-      var newPeer = new peerjs__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay(storedPeerId, {
-        host: (compiledProfile === null || compiledProfile === void 0 ? void 0 : compiledProfile.peerjsServer) || "0.peerjs.com"
-      });
-      console.log("peer created");
-      handlePeerInitialisation(newPeer);
-    } else {
-      if (!storedPeerId) {
-        if (peer) {
-          peer.destroy();
-        }
-        // generate a long random string
-        var newPeerId = chance.hash();
-        setPeerId(newPeerId);
-        setPeer(null);
-        setPeerHash(chance.hash());
-      }
-    }
-  }, [storedPeerId, agreedToTerms]);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var newActiveConnections = Object.keys(connections).filter(function (c) {
-      var _connections$c;
-      return ((_connections$c = connections[c]) === null || _connections$c === void 0 || (_connections$c = _connections$c.peerConnection) === null || _connections$c === void 0 ? void 0 : _connections$c.iceConnectionState) === "connected";
-    });
-    if (newActiveConnections.length !== activeConnections.length || !newActiveConnections.every(function (c) {
-      return activeConnections.includes(c);
-    })) {
-      console.log({
-        newActiveConnections: newActiveConnections,
-        activeConnections: activeConnections
-      });
-      setActiveConnections(newActiveConnections);
-      setPeerHash(chance.hash());
-    }
-
-    // setTimeout(() => setPeerHash(chance.hash()), 5000);
-  }, [peerHash]);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    if (peer) {
-      // peer.off('connection');
-      peer.on("connection", function (connection) {
-        console.log("new connection");
-        // initConnectionListender();
-        // connection.on('data', (data) => handleConnectionDataWithManagedState(connection, managedState, data));
-
-        // setInterval(() => {
-        // const newListener = data => peerOnDataHandler(data, connection);
-        // connection.off('data', newListener);
-        // connection.on('data', newListener);
-        // }, 1000);
-
-        connection.on("close", function (connection) {
-          var _calls$find2;
-          console.log("peer closed", connection);
-
-          // setConnections({ ...connections, [connection?.peer]: null });
-          // useSetConnections to remove the key wuth the connection id from the connections object
-          setConnections(function (connections) {
-            var newConnections = _objectSpread({}, connections);
-            delete newConnections[connection === null || connection === void 0 ? void 0 : connection.peer];
-            return newConnections;
-          });
-          setActiveConnections(Object.keys(connections).filter(function (c) {
-            return c !== (connection === null || connection === void 0 ? void 0 : connection.peer);
-          }));
-          var remoteStreamId = (_calls$find2 = calls.find(function (call) {
-            return call.peer !== (connection === null || connection === void 0 ? void 0 : connection.peer);
-          })) === null || _calls$find2 === void 0 || (_calls$find2 = _calls$find2._remoteStream) === null || _calls$find2 === void 0 ? void 0 : _calls$find2.id;
-
-          // const newStreams = streams.filter((stream) => stream.id !== remoteStreamId);
-
-          setCalls(calls.filter(function (call) {
-            return call.peer !== (connection === null || connection === void 0 ? void 0 : connection.peer);
-          }));
-          setCallsHash(chance.hash());
-
-          // setStreams(newStreams);
-        });
-        onConnection(connection, sendMessageWithCallback, managedState, Object.keys(connections).filter(function (c) {
-          return c !== (connection === null || connection === void 0 ? void 0 : connection.peer);
-        }));
-        setConnections(_objectSpread(_objectSpread({}, connections), {}, _defineProperty({}, connection.peer, connection)));
-        setActiveConnections([].concat(_toConsumableArray(Object.keys(connections)), [connection.peer]));
-      });
-      peer.on("call", /*#__PURE__*/function () {
-        var _ref7 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(call) {
-          return _regeneratorRuntime().wrap(function _callee6$(_context6) {
-            while (1) switch (_context6.prev = _context6.next) {
-              case 0:
-                console.log("call received", call);
-                call.on("stream", function (stream) {
-                  console.log("stream received from remote", stream);
-                  // setStreams((streams) => {
-                  //     // do not add stream if it is already set
-                  //     if (streams.find((s) => s.id === stream.id)) {
-                  //         return streams;
-                  //     }
-                  //     return [...streams, stream];
-                  // });
-                });
-                call.on("close", function () {
-                  endCall(call.peer);
-                });
-                setCalls([].concat(_toConsumableArray(calls), [call]));
-                setCallsHash(chance.hash());
-              case 5:
-              case "end":
-                return _context6.stop();
-            }
-          }, _callee6);
-        }));
-        return function (_x7) {
-          return _ref7.apply(this, arguments);
-        };
-      }());
-    }
-  }, [peerHash, managedState, callsHash]);
-  var getManagedState = function getManagedState() {
-    return managedState;
-  };
-  var connectToPeer = function connectToPeer(peerId, peerOverride) {
-    var _ref8;
-    var connection = (_ref8 = peerOverride !== null && peerOverride !== void 0 ? peerOverride : peer) === null || _ref8 === void 0 ? void 0 : _ref8.connect(peerId);
-    if (connection) {
-      connection.on("open", function () {
-        console.log("connection opened");
-        peerConnectionHandler(connection);
-        // connection.on('data', (data) => handleConnectionDataWithManagedState(connection, managedState, data));
-
-        // setInterval(() => {
-        // const newListener = data => peerOnDataHandler(data, connection);
-        // connection.off('data', newListener);
-        // connection.on('data', newListener);
-        // }, 1000);
-
-        setConnections(_objectSpread(_objectSpread({}, connections), {}, _defineProperty({}, connection.peer, connection)));
-        setActiveConnections([].concat(_toConsumableArray(Object.keys(connections)), [connection.peer]));
-        onConnection(connection, sendMessageWithCallback, managedState, [].concat(_toConsumableArray(Object.keys(connections)), [connection.peer]));
-      });
-    }
-  };
-  var sendMessageWithCallback = /*#__PURE__*/function () {
-    var _ref9 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7(peerId, message, connection) {
-      var id;
-      return _regeneratorRuntime().wrap(function _callee7$(_context7) {
-        while (1) switch (_context7.prev = _context7.next) {
-          case 0:
-            id = Math.random().toString(36).substr(2, 9);
-            return _context7.abrupt("return", new Promise(function (resolve, reject) {
-              var timeout = setTimeout(function () {
-                reject(new Error("timeout for message:" + JSON.stringify({
-                  message: message
-                })));
-              }, 60000);
-              setPendingCallbacks([].concat(_toConsumableArray(pendingCallbacks), [{
-                id: id,
-                recieved: function recieved(response) {
-                  clearTimeout(timeout);
-                  console.log("callback recieved!");
-                  resolve(response);
-                }
-              }]));
-              sendMessage(peerId, _objectSpread(_objectSpread({}, message), {}, {
-                callback: id
-              }), connection);
-            }));
-          case 2:
-          case "end":
-            return _context7.stop();
-        }
-      }, _callee7);
-    }));
-    return function sendMessageWithCallback(_x8, _x9, _x10) {
-      return _ref9.apply(this, arguments);
-    };
-  }();
-  var sendMessage = /*#__PURE__*/function () {
-    var _ref10 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee8(peerId, message, connectionOverride) {
-      var _peerEncryptionKeys$f2;
-      var connection, _ref11, remotePublicKey, established, payloadToSend;
-      return _regeneratorRuntime().wrap(function _callee8$(_context8) {
-        while (1) switch (_context8.prev = _context8.next) {
-          case 0:
-            connection = connectionOverride !== null && connectionOverride !== void 0 ? connectionOverride : connections[peerId];
-            _ref11 = (_peerEncryptionKeys$f2 = peerEncryptionKeys.find(function (keyPair) {
-              return keyPair.userId === peerId;
-            })) !== null && _peerEncryptionKeys$f2 !== void 0 ? _peerEncryptionKeys$f2 : {}, remotePublicKey = _ref11.remotePublicKey, established = _ref11.established;
-            if (!connection) {
-              _context8.next = 9;
-              break;
-            }
-            payloadToSend = _objectSpread({}, message);
-            if (!(remotePublicKey && established)) {
-              _context8.next = 8;
-              break;
-            }
-            _context8.next = 7;
-            return (0,_encryption_Encryption__WEBPACK_IMPORTED_MODULE_7__/* .encrypt */ .w)(JSON.stringify(message), remotePublicKey);
-          case 7:
-            payloadToSend = _context8.sent;
-          case 8:
-            connection.send(payloadToSend);
-          case 9:
-          case "end":
-            return _context8.stop();
-        }
-      }, _callee8);
-    }));
-    return function sendMessage(_x11, _x12, _x13) {
-      return _ref10.apply(this, arguments);
-    };
-  }();
-  var makeCall = /*#__PURE__*/function () {
-    var _ref13 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9(_ref12) {
-      var peerId, video, audio, screen, cast, stream, call;
-      return _regeneratorRuntime().wrap(function _callee9$(_context9) {
-        while (1) switch (_context9.prev = _context9.next) {
-          case 0:
-            peerId = _ref12.peerId, video = _ref12.video, audio = _ref12.audio, screen = _ref12.screen, cast = _ref12.cast;
-            if (!peerId) {
-              _context9.next = 9;
-              break;
-            }
-            _context9.next = 4;
-            return navigator.mediaDevices[screen ? "getDisplayMedia" : "getUserMedia"]({
-              video: cast ? {
-                facingMode: "environment"
-              } : !!video,
-              audio: audio ? true : false
-            });
-          case 4:
-            stream = _context9.sent;
-            call = peer.call(peerId, stream, {
-              metadata: {
-                cast: cast
-              }
-            });
-            call.on("stream", function (stream) {
-              // B
-              // window.remoteAudio.srcObject = stream; // C
-              // window.remoteAudio.autoplay = true; // D
-              // window.peerStream = stream; //E
-              // showConnectedContent(); //F    });
-              console.log("stream received", stream);
-              // setStreams((streams) => {
-              //     // do not add stream if it is already set
-              //     if (streams.find((s) => s.id === stream.id)) {
-              //         return streams;
-              //     }
-              //     return [...streams, stream];
-              // });
-            });
-            setCalls([].concat(_toConsumableArray(calls), [call]));
-            setCallsHash(chance.hash());
-          case 9:
-          case "end":
-            return _context9.stop();
-        }
-      }, _callee9);
-    }));
-    return function makeCall(_x14) {
-      return _ref13.apply(this, arguments);
-    };
-  }();
-  var endCall = function endCall(peerId) {
-    var call = calls.find(function (call) {
-      return call.peer === peerId;
-    });
-    call.close();
-    setCalls(calls.filter(function (call) {
-      return call.peer !== peerId;
-    }));
-    setCallsHash(chance.hash());
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PeerContext.Provider, {
-    value: {
-      peer: peer,
-      activeConnections: activeConnections,
-      connections: connections,
-      connectToPeer: connectToPeer,
-      sendMessage: sendMessage,
-      sendMessageWithCallback: sendMessageWithCallback,
-      calls: calls,
-      streams: streams,
-      callsLength: calls.length,
-      makeCall: makeCall,
-      endCall: endCall,
-      peerHash: peerHash,
-      callsHash: callsHash
-    }
-  }, children);
-}
-
-/***/ }),
-
-/***/ 76538:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ usePeer)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50318);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _PeerProvider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(44188);
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-var _excluded = ["recipients"];
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-// create a react hook that uses the peer context
-// it can take a peerId and provides helper methods to send and receive messages
-// it can also take a group and provides helper methods to send and receive messages to all users in the group
-
-
-
-function usePeer(peersToConnect) {
-  var context = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_PeerProvider__WEBPACK_IMPORTED_MODULE_1__/* .PeerContext */ .y);
-  // check to see if peer is connected else connect to them
-  var activeConnections = context.activeConnections;
-  var connectedPeers = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
-    return activeConnections;
-  }, [activeConnections]);
-  var filteredPeersToConnect = Array.isArray(peersToConnect) ? peersToConnect.filter(function (peerId) {
-    var _context$peer;
-    return peerId !== ((_context$peer = context.peer) === null || _context$peer === void 0 ? void 0 : _context$peer.id);
-  }).filter(function (peerId) {
-    return !!peerId && !connectedPeers.includes(peerId);
-  }) : [peersToConnect];
-  filteredPeersToConnect.forEach(function (peerId) {
-    if (peerId) {
-      context.connectToPeer(peerId);
-    }
-  });
-
-  // a method to send a message to a peer or group depending on if peerId or group is passed in
-  var sendMessage = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(_ref) {
-      var type, recipients, payload, _ref$callback, callback, responses;
-      return _regeneratorRuntime().wrap(function _callee$(_context) {
-        while (1) switch (_context.prev = _context.next) {
-          case 0:
-            type = _ref.type, recipients = _ref.recipients, payload = _ref.payload, _ref$callback = _ref.callback, callback = _ref$callback === void 0 ? true : _ref$callback;
-            _context.next = 3;
-            return Promise.all((recipients || peersToConnect).filter(function (peerId) {
-              return peerId && context.connections[peerId];
-            }).map(function (peerId) {
-              if (!callback) {
-                return context.sendMessage(peerId, {
-                  type: type,
-                  payload: payload
-                });
-              }
-              return context.sendMessageWithCallback(peerId, {
-                type: type,
-                payload: payload
-              });
-            }));
-          case 3:
-            responses = _context.sent;
-            return _context.abrupt("return", responses);
-          case 5:
-          case "end":
-            return _context.stop();
-        }
-      }, _callee);
-    }));
-    return function sendMessage(_x) {
-      return _ref2.apply(this, arguments);
-    };
-  }();
-  var makeCall = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-      var _ref4,
-        recipients,
-        rest,
-        _args3 = arguments;
-      return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-        while (1) switch (_context3.prev = _context3.next) {
-          case 0:
-            _ref4 = _args3.length > 0 && _args3[0] !== undefined ? _args3[0] : {}, recipients = _ref4.recipients, rest = _objectWithoutProperties(_ref4, _excluded);
-            (recipients || peersToConnect).filter(function (peerId) {
-              var _context$peer2;
-              return peerId !== ((_context$peer2 = context.peer) === null || _context$peer2 === void 0 ? void 0 : _context$peer2.id);
-            }).forEach( /*#__PURE__*/function () {
-              var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(peerId) {
-                return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-                  while (1) switch (_context2.prev = _context2.next) {
-                    case 0:
-                      if (context.calls.find(function (call) {
-                        return call.peer === peerId;
-                      })) {
-                        _context2.next = 3;
-                        break;
-                      }
-                      _context2.next = 3;
-                      return context.makeCall(_objectSpread({
-                        peerId: peerId
-                      }, rest));
-                    case 3:
-                    case "end":
-                      return _context2.stop();
-                  }
-                }, _callee2);
-              }));
-              return function (_x2) {
-                return _ref5.apply(this, arguments);
-              };
-            }());
-          case 2:
-          case "end":
-            return _context3.stop();
-        }
-      }, _callee3);
-    }));
-    return function makeCall() {
-      return _ref3.apply(this, arguments);
-    };
-  }();
-  var endCall = function endCall() {
-    var _ref6 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-      recipients = _ref6.recipients;
-    (recipients || peersToConnect).filter(function (peerId) {
-      var _context$peer3;
-      return peerId !== ((_context$peer3 = context.peer) === null || _context$peer3 === void 0 ? void 0 : _context$peer3.id);
-    }).forEach( /*#__PURE__*/function () {
-      var _ref7 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(peerId) {
-        return _regeneratorRuntime().wrap(function _callee4$(_context4) {
-          while (1) switch (_context4.prev = _context4.next) {
-            case 0:
-              context.endCall(peerId);
-            case 1:
-            case "end":
-              return _context4.stop();
-          }
-        }, _callee4);
-      }));
-      return function (_x3) {
-        return _ref7.apply(this, arguments);
-      };
-    }());
-  };
-
-  // a method to make a call to a peer or a group depending on if peerId or group is passed in
-  // const makeCall = () => {
-  //     if (peerId) {
-  //         context.makeCall({peerId});
-  //     } else if (groupId) {
-  //         const group = context.groups.find((group) => group.id === groupId);
-  //         context.makeCall({groupId: group.id});
-  //     }
-  // };
-
-  // a method to end a call
-  // const endCall = () => {
-  //     if (peerId) {
-  //         context.endCall(peerId);
-  //     } else if (groupId) {
-  //         const group = context.groups.find((group) => group.id === groupId);
-  //         group.users.forEach((user) => {
-  //             context.endCall(user.id);
-  //         });
-  //     }
-  // };
-
-  // // for the peer or group specified, automatically handle incoming messages with the handler.
-  // // the handler is an array of functions like middleware function in expressjs
-  // useEffect(() => {
-  //     if (handlers) {
-
-  //     }
-  //     if (peerId) {
-  //         context.connections[peerId].on('data', (data) => {
-  //             handlers.forEach((handler) => {
-  //                 handler(data);
-  //             });
-  //         });
-  //     } else if (groupId) {
-  //         const group = context.groups.find((group) => group.id === groupId);
-  //         group.users.forEach((user) => {
-  //             context.connections[user.id].on('data', (data) => {
-  //                 handlers.forEach((handler) => {
-  //                     handler(data);
-  //                 });
-  //             });
-  //         });
-  //     }
-  // }, [peerId, groupId, handlers]);
-
-  return {
-    peer: context.peer,
-    sendMessage: sendMessage,
-    makeCall: makeCall,
-    endCall: endCall,
-    activeConnections: context.activeConnections,
-    connections: context.connections,
-    connectToPeer: context.connectToPeer,
-    calls: context.calls,
-    // streams: context.calls.length > 0 ? context.calls.map(call => call._remoteStream) : [],
-    callsLength: context.callsLength
-  };
-}
-
-/***/ }),
-
-/***/ 78179:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   AZ: () => (/* binding */ updatePodName),
-/* harmony export */   Ay: () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   E6: () => (/* binding */ removeFileFromPod),
-/* harmony export */   MD: () => (/* binding */ removeUserFromConversationFromAllPods),
-/* harmony export */   O: () => (/* binding */ createNewPod),
-/* harmony export */   QT: () => (/* binding */ setPeerIsTyping),
-/* harmony export */   XE: () => (/* binding */ addToBlockchain),
-/* harmony export */   ZH: () => (/* binding */ updatePodUnreadCount),
-/* harmony export */   d6: () => (/* binding */ setShouldHangup),
-/* harmony export */   dN: () => (/* binding */ setEphemeralStorage),
-/* harmony export */   gH: () => (/* binding */ removePod),
-/* harmony export */   tj: () => (/* binding */ addMessage),
-/* harmony export */   x7: () => (/* binding */ setPods),
-/* harmony export */   zv: () => (/* binding */ addUserToPod)
-/* harmony export */ });
-/* unused harmony export removeUserFromConversation */
-/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(85268);
-/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1932);
-/* harmony import */ var _blockchain_Blockchain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(34431);
-/* harmony import */ var _blockchain_chains_podChain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(53288);
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2543);
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_2__);
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-
-
-
-
-var initialState = [];
-var chatsSlice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_3__/* .createSlice */ .Z0)({
-  name: "chats",
-  initialState: initialState,
-  reducers: {
-    createNewPod: function createNewPod(state, action) {
-      var _action$payload = action.payload,
-        id = _action$payload.id,
-        blocks = _action$payload.pendingBlocks,
-        storage = _action$payload.pendingStorage;
-      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
-      var chat = chats.find(function (chat) {
-        return chat.id === id;
-      });
-      if (!chat) {
-        // const podBlockchain = new Blockchain({chain: action.payload.blockchain.chain});
-        // podBlockchain.addBlocks([
-        //     ...action.payload.members.map(member => blockBuilders().addMember({userId: member, from: action.payload.from})[0]),
-        //     ...blockBuilders().setPodName({name: action.payload.name, from: action.payload.from})
-        // ]);
-        // const pendingUpdates = podBlockchain.getUpdate();
-        var newChat = _objectSpread(_objectSpread(_objectSpread({}, {
-          id: "",
-          users: [],
-          name: "",
-          avatar: "",
-          messages: []
-        }), action.payload), {}, {
-          blockchain: {
-            chain: _toConsumableArray(blocks),
-            storage: _objectSpread({}, storage)
-          }
-        });
-        chats = [].concat(_toConsumableArray(chats), [newChat]);
-        return chats;
-      }
-      return chats;
-    },
-    removePod: function removePod(state, action) {
-      // const index = state.findIndex(chat => chat.id === action.payload);
-      // return state.splice(index, 1);
-      var podId = action.payload.podId;
-      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
-      chats = chats.filter(function (chat) {
-        return chat.id !== podId;
-      });
-      return chats;
-    },
-    // =====================================================================
-    addUserToPod: function addUserToPod(state, action) {
-      var _action$payload2 = action.payload,
-        podId = _action$payload2.podId,
-        userId = _action$payload2.userId;
-      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
-      var chat = chats.find(function (chat) {
-        return chat.id === podId;
-      });
-      // chat.messages = [...chat.messages, message];
-
-      chats = chats.map(function (chat) {
-        return chat.id != podId ? chat : _objectSpread(_objectSpread({}, chat), {}, {
-          members: [].concat(_toConsumableArray(chat.members.filter(function (m) {
-            return m !== userId;
-          })), [userId])
-        });
-      });
-      return chats;
-    },
-    removeUserFromConversationFromAllPods: function removeUserFromConversationFromAllPods(state, action) {
-      var userId = action.payload.userId;
-      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
-      chats = chats.map(function (chat) {
-        chat.members = chats.filter(function (member) {
-          return member !== userId;
-        });
-      });
-      return chats;
-    },
-    removeUserFromConversation: function removeUserFromConversation(state, action) {
-      var _action$payload3 = action.payload,
-        chatId = _action$payload3.chatId,
-        userId = _action$payload3.userId;
-      var chat = state.find(function (chat) {
-        return chat.id === chatId;
-      });
-      var index = chat.members.findIndex(function (member) {
-        return member === userId;
-      });
-      chat = _objectSpread(_objectSpread({}, chat), {}, {
-        members: chat.members.filter(function (member) {
-          return member !== userId;
-        })
-      });
-      return state;
-    },
-    addMessage: function addMessage(state, action) {
-      var _action$payload4 = action.payload,
-        podId = _action$payload4.podId,
-        message = _action$payload4.message;
-      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
-      // let chat = chats.find(chat => chat.id === podId);
-      // chat.messages = [...chat.messages, message];
-
-      // chats = chats
-      //     .map(chat => chat.id !== podId ? chat : { ...chat, messages: [...chat.messages, message] });
-      return chats;
-    },
-    // =====================================================================
-    updatePodName: function updatePodName(state, action) {
-      var _action$payload5 = action.payload,
-        podId = _action$payload5.podId,
-        name = _action$payload5.name;
-      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
-      var chat = chats.find(function (chat) {
-        return chat.id === podId;
-      });
-      chats = chats.filter(function (chat) {
-        return chat.id !== podId;
-      }).concat(_objectSpread(_objectSpread({}, chat), {}, {
-        name: name
-      }));
-      return chats;
-    },
-    updatePodUnreadCount: function updatePodUnreadCount(state, action) {
-      var _action$payload6 = action.payload,
-        podId = _action$payload6.podId,
-        unreadCount = _action$payload6.unreadCount;
-      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
-      // chats = chats.map(chat => chat.id !== podId ? chat : { ...chat, unreadCount: unreadCount === 0 ? 0 : chat.unreadCount + unreadCount });
-      chats = chats.map(function (chat) {
-        return chat.id !== podId ? chat : _objectSpread(_objectSpread({}, chat), {}, {
-          unreadCount: unreadCount
-        });
-      });
-      return chats;
-    },
-    setShouldHangup: function setShouldHangup(state, action) {
-      var _action$payload7 = action.payload,
-        podId = _action$payload7.podId,
-        shouldHangup = _action$payload7.shouldHangup;
-      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
-      chats = chats.map(function (chat) {
-        return chat.id !== podId ? chat : _objectSpread(_objectSpread({}, chat), {}, {
-          shouldHangup: shouldHangup
-        });
-      });
-      return chats;
-    },
-    setPods: function setPods(state, action) {
-      return action.payload;
-    },
-    setPeerIsTyping: function setPeerIsTyping(state, action) {
-      var _action$payload8 = action.payload,
-        podId = _action$payload8.podId,
-        peerDisplayName = _action$payload8.peerDisplayName,
-        isTyping = _action$payload8.isTyping;
-      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
-      chats = chats.map(function (chat) {
-        return chat.id !== podId ? chat : _objectSpread(_objectSpread({}, chat), {}, {
-          peerIsTyping: _objectSpread(_objectSpread({}, chat.peerIsTyping), {}, _defineProperty({}, peerDisplayName, isTyping))
-        });
-      });
-      return chats;
-    },
-    setEphemeralStorage: function setEphemeralStorage(state, action) {
-      var _action$payload9 = action.payload,
-        podId = _action$payload9.podId,
-        ephemeralStorage = _action$payload9.ephemeralStorage;
-      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
-      console.log("setting ephemeralStorage", ephemeralStorage);
-      chats = chats.map(function (chat) {
-        return chat.id !== podId ? chat : _objectSpread(_objectSpread({}, chat), {}, {
-          ephemeralStorage: ephemeralStorage
-        });
-      });
-      console.log({
-        "new ephemera update": chats,
-        podId: podId,
-        ephemeralStorage: ephemeralStorage
-      });
-      return chats;
-    },
-    addToBlockchain: function addToBlockchain(state, action) {
-      var _chats$find, _chat, _chat2, _chat3;
-      var _action$payload10 = action.payload,
-        podId = _action$payload10.podId,
-        blocks = _action$payload10.blocks,
-        block = _action$payload10.block,
-        _action$payload10$sto = _action$payload10.storage,
-        storage = _action$payload10$sto === void 0 ? {} : _action$payload10$sto,
-        _action$payload10$app = _action$payload10.append,
-        append = _action$payload10$app === void 0 ? false : _action$payload10$app;
-      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
-      var chat = (_chats$find = chats.find(function (chat) {
-        return chat.id === podId;
-      })) !== null && _chats$find !== void 0 ? _chats$find : {};
-      // const podBlockchain = new Blockchain({chain: chat.blockchain.chain, storage: chat.blockchain.storage});
-      // if (blocks?.length > 0) podBlockchain.addBlocks(blocks, append);
-      // if (block) podBlockchain.addBlock(block, append);
-      // const pendingUpdates = podBlockchain.getUpdate();
-
-      chat = _objectSpread(_objectSpread({}, chat), {}, {
-        blockchain: _objectSpread(_objectSpread({}, ((_chat = chat) === null || _chat === void 0 ? void 0 : _chat.blockchain) || {}), {}, {
-          chain: [].concat(_toConsumableArray(((_chat2 = chat) === null || _chat2 === void 0 || (_chat2 = _chat2.blockchain) === null || _chat2 === void 0 ? void 0 : _chat2.chain) || []), _toConsumableArray(blocks)),
-          storage: _objectSpread(_objectSpread({}, storage), (_chat3 = chat) === null || _chat3 === void 0 || (_chat3 = _chat3.blockchain) === null || _chat3 === void 0 ? void 0 : _chat3.storage)
-        })
-      });
-      chats = chats.map(function (c) {
-        return c.id !== podId ? c : chat;
-      });
-      return chats;
-    },
-    removeFileFromPod: function removeFileFromPod(state, action) {
-      var _chats$find2, _chat4, _chat5;
-      var _action$payload11 = action.payload,
-        podId = _action$payload11.podId,
-        fileId = _action$payload11.fileId;
-      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
-      var chat = (_chats$find2 = chats.find(function (chat) {
-        return chat.id === podId;
-      })) !== null && _chats$find2 !== void 0 ? _chats$find2 : {};
-      chat = _objectSpread(_objectSpread({}, chat), {}, {
-        blockchain: _objectSpread(_objectSpread({}, ((_chat4 = chat) === null || _chat4 === void 0 ? void 0 : _chat4.blockchain) || {}), {}, {
-          storage: _objectSpread(_objectSpread({}, (_chat5 = chat) === null || _chat5 === void 0 || (_chat5 = _chat5.blockchain) === null || _chat5 === void 0 ? void 0 : _chat5.storage), {}, _defineProperty({}, fileId, undefined))
-        })
-      });
-      chats = chats.map(function (c) {
-        return c.id !== podId ? c : chat;
-      });
-      return chats;
-    }
-  }
-});
-var _chatsSlice$actions = chatsSlice.actions,
-  createNewPod = _chatsSlice$actions.createNewPod,
-  removePod = _chatsSlice$actions.removePod,
-  addUserToPod = _chatsSlice$actions.addUserToPod,
-  removeUserFromConversationFromAllPods = _chatsSlice$actions.removeUserFromConversationFromAllPods,
-  removeUserFromConversation = _chatsSlice$actions.removeUserFromConversation,
-  addMessage = _chatsSlice$actions.addMessage,
-  updatePodName = _chatsSlice$actions.updatePodName,
-  updatePodUnreadCount = _chatsSlice$actions.updatePodUnreadCount,
-  setPods = _chatsSlice$actions.setPods,
-  setShouldHangup = _chatsSlice$actions.setShouldHangup,
-  setPeerIsTyping = _chatsSlice$actions.setPeerIsTyping,
-  setEphemeralStorage = _chatsSlice$actions.setEphemeralStorage,
-  addToBlockchain = _chatsSlice$actions.addToBlockchain,
-  removeFileFromPod = _chatsSlice$actions.removeFileFromPod;
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (chatsSlice.reducer);
-
-/***/ }),
-
-/***/ 42040:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   O7: () => (/* binding */ addStorageItem)
-/* harmony export */ });
-/* unused harmony exports removeStorageItem, updateStorageItem, setStorageForPod */
-/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(85268);
-
-var initialState = {};
-var storageSlice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__/* .createSlice */ .Z0)({
-  name: "storage",
-  initialState: initialState,
-  reducers: {
-    addStorageItem: function addStorageItem(state, action) {
-      var _action$payload = action.payload,
-        podId = _action$payload.podId,
-        item = _action$payload.item;
-      if (!state[podId]) {
-        state[podId] = [];
-      }
-      var existingItem = state[podId].find(function (existing) {
-        return (existing === null || existing === void 0 ? void 0 : existing.sha) === item.sha;
-      });
-      if (!existingItem) {
-        state[podId].push(item);
-      }
-    },
-    removeStorageItem: function removeStorageItem(state, action) {
-      var _action$payload2 = action.payload,
-        podId = _action$payload2.podId,
-        itemId = _action$payload2.itemId;
-      if (state[podId]) {
-        state[podId] = state[podId].filter(function (item) {
-          return item.sha !== itemId;
-        });
-        if (state[podId].length === 0) {
-          delete state[podId];
-        }
-      }
-    },
-    updateStorageItem: function updateStorageItem(state, action) {
-      var _action$payload3 = action.payload,
-        podId = _action$payload3.podId,
-        updatedItem = _action$payload3.updatedItem;
-      if (state[podId]) {
-        var index = state[podId].findIndex(function (item) {
-          return item.sha === updatedItem.sha;
-        });
-        if (index !== -1) {
-          state[podId][index] = updatedItem;
-        }
-      }
-    },
-    setStorageForPod: function setStorageForPod(state, action) {
-      var _action$payload4 = action.payload,
-        podId = _action$payload4.podId,
-        storage = _action$payload4.storage;
-      state[podId] = storage;
-    }
-  }
-});
-var _storageSlice$actions = storageSlice.actions,
-  addStorageItem = _storageSlice$actions.addStorageItem,
-  removeStorageItem = _storageSlice$actions.removeStorageItem,
-  updateStorageItem = _storageSlice$actions.updateStorageItem,
-  setStorageForPod = _storageSlice$actions.setStorageForPod;
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (storageSlice.reducer);
-
-/***/ }),
-
-/***/ 14279:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   IN: () => (/* binding */ setInAppNotification),
-/* harmony export */   XE: () => (/* binding */ addToBlockchain),
-/* harmony export */   c_: () => (/* binding */ setBrowserNotification),
-/* harmony export */   jX: () => (/* binding */ updatePeerId),
-/* harmony export */   kZ: () => (/* binding */ updateUsername),
-/* harmony export */   p: () => (/* binding */ setUserProfile),
-/* harmony export */   ri: () => (/* binding */ logout),
-/* harmony export */   u2: () => (/* binding */ updateAgreedToTerms),
-/* harmony export */   xG: () => (/* binding */ updateAvatar)
-/* harmony export */ });
-/* unused harmony exports userProfileSlice, setEncryptionSignature */
-/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(85268);
-/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1932);
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-
-var userProfileSlice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__/* .createSlice */ .Z0)({
-  name: "userProfile",
-  initialState: {
-    displayName: "",
-    id: null,
-    connectionId: null,
-    pastConnectionIds: [],
-    avatar: "https://source.unsplash.com/random/400x200?avatar",
-    agreedToTerms: [],
-    inAppNotification: true,
-    browserNotification: false,
-    blockchain: {
-      chain: [],
-      storage: {}
-    }
-  },
-  reducers: {
-    addToBlockchain: function addToBlockchain(state, action) {
-      var _profile, _profile2, _profile3;
-      var _action$payload = action.payload,
-        _action$payload$block = _action$payload.blocks,
-        blocks = _action$payload$block === void 0 ? [] : _action$payload$block,
-        block = _action$payload.block,
-        _action$payload$stora = _action$payload.storage,
-        storage = _action$payload$stora === void 0 ? {} : _action$payload$stora,
-        _action$payload$appen = _action$payload.append,
-        append = _action$payload$appen === void 0 ? false : _action$payload$appen;
-      var profile = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_1__/* .current */ .ss)(state);
-      profile = _objectSpread(_objectSpread({}, profile), {}, {
-        blockchain: _objectSpread(_objectSpread({}, ((_profile = profile) === null || _profile === void 0 ? void 0 : _profile.blockchain) || {}), {}, {
-          chain: [].concat(_toConsumableArray(((_profile2 = profile) === null || _profile2 === void 0 || (_profile2 = _profile2.blockchain) === null || _profile2 === void 0 ? void 0 : _profile2.chain) || []), _toConsumableArray(blocks), [block]).filter(function (b) {
-            return !!b;
-          }),
-          storage: _objectSpread(_objectSpread({}, storage), (_profile3 = profile) === null || _profile3 === void 0 || (_profile3 = _profile3.blockchain) === null || _profile3 === void 0 ? void 0 : _profile3.storage)
-        })
-      });
-      return profile;
-    },
-    updateUsername: function updateUsername(state, action) {
-      // Redux Toolkit allows us to write "mutating" logic in reducers. It
-      // doesn't actually mutate the state because it uses the Immer library,
-      // which detects changes to a "draft state" and produces a brand new
-      // immutable state based off those changes
-      state.displayName = action.payload;
-    },
-    updateAvatar: function updateAvatar(state, action) {
-      state.avatar = action.payload;
-    },
-    updatePeerId: function updatePeerId(state, action) {
-      var _state$pastConnection;
-      (_state$pastConnection = state.pastConnectionIds) === null || _state$pastConnection === void 0 || _state$pastConnection.push(state.id);
-      state.id = action.payload;
-      state.connectionId = action.payload;
-    },
-    updateAgreedToTerms: function updateAgreedToTerms(state, action) {
-      var newState = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_1__/* .current */ .ss)(state);
-      state.agreedToTerms = [].concat(_toConsumableArray(newState.agreedToTerms), [action.payload]);
-    },
-    setUserProfile: function setUserProfile(state, action) {
-      state.displayName = action.payload.displayName;
-      state.id = action.payload.id;
-      state.connectionId = action.payload.connectionId;
-      state.pastConnectionIds = action.payload.pastConnectionIds;
-      state.avatar = action.payload.avatar;
-      state.agreedToTerms = action.payload.agreedToTerms;
-    },
-    setInAppNotification: function setInAppNotification(state, action) {
-      state.inAppNotification = action.payload;
-    },
-    setBrowserNotification: function setBrowserNotification(state, action) {
-      state.browserNotification = action.payload;
-    },
-    setEncryptionSignature: function setEncryptionSignature(state, action) {
-      state.encryptionSignature = action.payload;
-    },
-    logout: function logout() {} // placeholder needed to generate dispatch function
-  }
-});
-
-// Action creators are generated for each case reducer function
-var _userProfileSlice$act = userProfileSlice.actions,
-  updateUsername = _userProfileSlice$act.updateUsername,
-  updatePeerId = _userProfileSlice$act.updatePeerId,
-  updateAgreedToTerms = _userProfileSlice$act.updateAgreedToTerms,
-  setUserProfile = _userProfileSlice$act.setUserProfile,
-  updateAvatar = _userProfileSlice$act.updateAvatar,
-  logout = _userProfileSlice$act.logout,
-  setInAppNotification = _userProfileSlice$act.setInAppNotification,
-  setBrowserNotification = _userProfileSlice$act.setBrowserNotification,
-  addToBlockchain = _userProfileSlice$act.addToBlockchain,
-  setEncryptionSignature = _userProfileSlice$act.setEncryptionSignature;
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (userProfileSlice.reducer);
-
-/***/ }),
-
-/***/ 63141:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   e: () => (/* binding */ languages)
-/* harmony export */ });
-/* harmony import */ var i18next__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(72635);
-/* harmony import */ var i18next_browser_languagedetector__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(90796);
-/* harmony import */ var i18next_http_backend__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1347);
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(32389);
-
-
-
-
-i18next__WEBPACK_IMPORTED_MODULE_0__/* ["default"].use */ .Ay.use(i18next_browser_languagedetector__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A).use(i18next_http_backend__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A).use(react_i18next__WEBPACK_IMPORTED_MODULE_3__/* .initReactI18next */ .r9) // passes i18n down to react-i18next
+i18next/* default.use */.Ay.use(i18nextBrowserLanguageDetector/* default */.A).use(esm/* default */.A).use(es/* initReactI18next */.r9) // passes i18n down to react-i18next
 .init({
   fallbackLng: "en",
   // use en if detected lng is not available
@@ -23240,7 +18068,5177 @@ var languages = [{
 // { id: 'ps', name: 'پښتو' },
 // { id: 'ur', name: 'اردو' },
 ];
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((/* unused pure expression or super */ null && (i18n)));
+/* harmony default export */ const translations_i18n = ((/* unused pure expression or super */ null && (i18n)));
+// EXTERNAL MODULE: ./src/components/atomic/atom/dropdown/Dropdown.jsx + 1 modules
+var Dropdown = __webpack_require__(1310);
+;// CONCATENATED MODULE: ./src/components/atomic/molecules/app-header/AppHeader.jsx
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var StyledBadge = (0,styled/* default */.Ay)(Badge/* default */.A)(function (_ref) {
+  var theme = _ref.theme;
+  return {
+    "& .MuiBadge-badge": {
+      boxShadow: "0 0 0 2px ".concat(theme.palette.background.paper),
+      "&::after": {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        borderRadius: "50%",
+        animation: "ripple 1.2s infinite ease-in-out",
+        border: "1px solid currentColor",
+        content: '""'
+      }
+    },
+    "&.green .MuiBadge-badge": {
+      backgroundColor: "#44b700",
+      color: "#44b700"
+    },
+    "&.amber .MuiBadge-badge": {
+      backgroundColor: "#FFA500",
+      color: "#FFA500"
+    },
+    "@keyframes ripple": {
+      "0%": {
+        transform: "scale(.8)",
+        opacity: 1
+      },
+      "100%": {
+        transform: "scale(2.4)",
+        opacity: 0
+      }
+    }
+  };
+});
+var OpenCollectiveIcon = function OpenCollectiveIcon() {
+  return /*#__PURE__*/index_js_default().createElement(DataSaverOff/* default */.A, {
+    style: {
+      transform: "rotate(30deg)"
+    }
+  });
+};
+var presetIcons = {
+  account: /*#__PURE__*/index_js_default().createElement(AccountCircle/* default */.A, null),
+  arrowBack: /*#__PURE__*/index_js_default().createElement(ArrowBack/* default */.A, null),
+  camera: /*#__PURE__*/index_js_default().createElement(Videocam/* default */.A, null),
+  settings: /*#__PURE__*/index_js_default().createElement(Settings/* default */.A, null),
+  more: /*#__PURE__*/index_js_default().createElement(MoreVert/* default */.A, null),
+  logout: /*#__PURE__*/index_js_default().createElement(Logout/* default */.A, null),
+  info: /*#__PURE__*/index_js_default().createElement(Info/* default */.A, null),
+  folder: /*#__PURE__*/index_js_default().createElement(PermMedia/* default */.A, null),
+  document: /*#__PURE__*/index_js_default().createElement(Description/* default */.A, null),
+  screen: /*#__PURE__*/index_js_default().createElement(ScreenShare/* default */.A, null),
+  call: /*#__PURE__*/index_js_default().createElement(Call/* default */.A, null),
+  fullscreen: /*#__PURE__*/index_js_default().createElement(Fullscreen/* default */.A, null),
+  fullscreenExit: /*#__PURE__*/index_js_default().createElement(FullscreenExit/* default */.A, null),
+  lightMode: /*#__PURE__*/index_js_default().createElement(LightMode/* default */.A, null),
+  darkMode: /*#__PURE__*/index_js_default().createElement(DarkMode/* default */.A, null),
+  translate: /*#__PURE__*/index_js_default().createElement(Translate/* default */.A, null),
+  install: /*#__PURE__*/index_js_default().createElement(InstallMobile/* default */.A, null),
+  docs: /*#__PURE__*/index_js_default().createElement(MenuBook/* default */.A, null),
+  github: /*#__PURE__*/index_js_default().createElement(GitHub/* default */.A, null),
+  reddit: /*#__PURE__*/index_js_default().createElement(Reddit/* default */.A, null),
+  youtube: /*#__PURE__*/index_js_default().createElement(YouTube/* default */.A, null),
+  navigate: /*#__PURE__*/index_js_default().createElement(AssistantDirection/* default */.A, null),
+  "delete": /*#__PURE__*/index_js_default().createElement(Delete/* default */.A, null),
+  labs: /*#__PURE__*/index_js_default().createElement(Science/* default */.A, null),
+  gram: /*#__PURE__*/index_js_default().createElement(Collections/* default */.A, null),
+  verse: /*#__PURE__*/index_js_default().createElement(ViewInAr/* default */.A, null),
+  callContact: /*#__PURE__*/index_js_default().createElement(ContactPhone/* default */.A, null),
+  help: /*#__PURE__*/index_js_default().createElement(QuestionMark/* default */.A, null),
+  privacy: /*#__PURE__*/index_js_default().createElement(PrivacyTip/* default */.A, null),
+  support: /*#__PURE__*/index_js_default().createElement(Support/* default */.A, null),
+  download: /*#__PURE__*/index_js_default().createElement(DownloadForOffline/* default */.A, null),
+  cast: /*#__PURE__*/index_js_default().createElement(LiveTv/* default */.A, null),
+  qr: /*#__PURE__*/index_js_default().createElement(QrCode2/* default */.A, null),
+  connect: /*#__PURE__*/index_js_default().createElement(ConnectWithoutContact/* default */.A, null),
+  hand: /*#__PURE__*/index_js_default().createElement(WavingHand/* default */.A, null),
+  map: /*#__PURE__*/index_js_default().createElement(Navigation/* default */.A, null),
+  donate: /*#__PURE__*/index_js_default().createElement(VolunteerActivism/* default */.A, null),
+  key: /*#__PURE__*/index_js_default().createElement(Key/* default */.A, null),
+  coffee: /*#__PURE__*/index_js_default().createElement(Coffee/* default */.A, null),
+  openCollective: /*#__PURE__*/index_js_default().createElement(OpenCollectiveIcon, null),
+  patreon: /*#__PURE__*/index_js_default().createElement(LocalParking/* default */.A, null)
+};
+function HideOnScroll(props) {
+  var children = props.children,
+    window = props.window;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  var trigger = (0,useScrollTrigger/* default */.A)({
+    target: window ? window() : undefined
+  });
+  return /*#__PURE__*/index_js_default().createElement(Slide/* default */.A, {
+    appear: false,
+    direction: "down",
+    "in": !trigger
+  }, children);
+}
+var CustomDropdown = function CustomDropdown(_ref2) {
+  var _menuItems$icon, _menuItems$items;
+  var menuItems = _ref2.menuItems;
+  var _useTranslation = (0,es/* useTranslation */.Bd)(),
+    t = _useTranslation.t,
+    i18n = _useTranslation.i18n;
+  var theme = (0,useTheme/* default */.A)();
+  var _useState = (0,index_js_.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    isFullScreen = _useState2[0],
+    setIsFullScreen = _useState2[1];
+  var colorMode = index_js_default().useContext(App/* ColorModeContext */.I);
+  var sendNotification = (0,notificationManager/* useNotification */.hN)();
+  var navigate = (0,dist/* useNavigate */.Zp)();
+  var isInstalledPwa = (0,index_js_.useMemo)(function () {
+    return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone || document.referrer.includes("android-app://");
+  }, []);
+  (0,index_js_.useEffect)(function () {
+    var handleFullscreenChange = /*#__PURE__*/function () {
+      var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+        var isInFullscreen;
+        return _regeneratorRuntime().wrap(function _callee$(_context) {
+          while (1) switch (_context.prev = _context.next) {
+            case 0:
+              isInFullscreen = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement;
+              if (!(!isInFullscreen && isFullScreen && document.documentElement.requestFullscreen)) {
+                _context.next = 12;
+                break;
+              }
+              _context.prev = 2;
+              _context.next = 5;
+              return document.documentElement.requestFullscreen();
+            case 5:
+              _context.next = 10;
+              break;
+            case 7:
+              _context.prev = 7;
+              _context.t0 = _context["catch"](2);
+              console.log(_context.t0);
+            case 10:
+              _context.next = 21;
+              break;
+            case 12:
+              if (!(isInFullscreen && !isFullScreen && document.exitFullscreen)) {
+                _context.next = 21;
+                break;
+              }
+              _context.prev = 13;
+              _context.next = 16;
+              return document.exitFullscreen();
+            case 16:
+              _context.next = 21;
+              break;
+            case 18:
+              _context.prev = 18;
+              _context.t1 = _context["catch"](13);
+              console.log(_context.t1);
+            case 21:
+            case "end":
+              return _context.stop();
+          }
+        }, _callee, null, [[2, 7], [13, 18]]);
+      }));
+      return function handleFullscreenChange() {
+        return _ref3.apply(this, arguments);
+      };
+    }();
+    handleFullscreenChange();
+  }, [isFullScreen]);
+  var _useState3 = (0,index_js_.useState)(null),
+    _useState4 = _slicedToArray(_useState3, 2),
+    deferredPrompt = _useState4[0],
+    setDeferredPrompt = _useState4[1];
+  (0,index_js_.useEffect)(function () {
+    var handleBeforeInstallPromptEvent = function handleBeforeInstallPromptEvent(e) {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    };
+    window.addEventListener("beforeinstallprompt", handleBeforeInstallPromptEvent);
+    var bipEvent = new Event("beforeinstallprompt");
+
+    // Define the prompt method on the event object
+    bipEvent.prompt = function () {
+      return new Promise(function (resolve) {
+        // Simulate user accepting the prompt
+        resolve({
+          outcome: "accepted"
+        }); // or 'dismissed' to simulate user dismissing the prompt
+      });
+    };
+
+    // Dispatch the custom event to trigger your event handler
+    window.dispatchEvent(bipEvent);
+    return function () {
+      window.removeEventListener("beforeinstallprompt", handleBeforeInstallPromptEvent);
+    };
+  }, []);
+  var defaultMenuItems = [{
+    text: t("components.menuItems.labs"),
+    icon: "labs",
+    subMenuItems: [{
+      text: t("podsPage.gram"),
+      icon: "gram",
+      onClick: function onClick() {
+        return navigate("/feed");
+      }
+    }, {
+      text: t("podsPage.verse"),
+      icon: "verse",
+      onClick: function onClick() {
+        return navigate("/verse");
+      }
+    }, {
+      text: t("podsPage.map"),
+      icon: "map",
+      onClick: function onClick() {
+        return navigate("/map");
+      }
+    }, {
+      text: t("podsPage.qr"),
+      icon: "qr",
+      onClick: function onClick() {
+        return navigate("/qr");
+      }
+    }, {
+      text: t("podsPage.webrtc"),
+      icon: "connect",
+      onClick: function onClick() {
+        return navigate("/webrtc");
+      }
+    }, {
+      text: t("podsPage.hands"),
+      icon: "hand",
+      onClick: function onClick() {
+        return navigate("/hands");
+      }
+    }, {
+      text: t("podsPage.encrypt"),
+      icon: "key",
+      onClick: function onClick() {
+        return navigate("/encrypt");
+      }
+    }]
+  }, {
+    text: t("components.menuItems.about"),
+    icon: "info",
+    subMenuItems: [{
+      text: t("components.menuItems.terms"),
+      icon: "document",
+      onClick: function onClick() {
+        return navigate("/terms");
+      }
+    }, {
+      text: t("components.menuItems.privacy"),
+      icon: "privacy",
+      onClick: function onClick() {
+        return navigate("/terms/privacy");
+      }
+    }, {
+      text: t("components.menuItems.docs"),
+      icon: "docs",
+      onClick: function onClick() {
+        return window.open("https://positive-intentions.com/docs/intro");
+      }
+    }, {
+      text: t("components.menuItems.github"),
+      icon: "github",
+      onClick: function onClick() {
+        return window.open("https://github.com/positive-intentions");
+      }
+    }, {
+      text: t("components.menuItems.reddit"),
+      icon: "reddit",
+      onClick: function onClick() {
+        return window.open("https://www.reddit.com/r/positive_intentions/");
+      }
+    }, {
+      text: t("components.menuItems.youtube"),
+      icon: "youtube",
+      onClick: function onClick() {
+        return window.open("https://www.youtube.com/@positive_intentions");
+      }
+    }, {
+      text: t("components.menuItems.contact"),
+      icon: "support",
+      onClick: function onClick() {
+        return window.open("https://www.reddit.com/user/Accurate-Screen8774");
+      }
+    }]
+  }, {
+    text: t("components.menuItems.options"),
+    icon: "settings",
+    subMenuItems: [{
+      text: theme.palette.mode === "dark" ? t("components.menuItems.lightMode") : t("components.menuItems.darkMode"),
+      icon: theme.palette.mode === "dark" ? "lightMode" : "darkMode",
+      onClick: colorMode.toggleColorMode
+    }, !isInstalledPwa ? {
+      text: isFullScreen ? t("components.menuItems.exitFullscreen") : t("components.menuItems.fullscreen"),
+      icon: isFullScreen ? "fullscreenExit" : "fullscreen",
+      onClick: function onClick() {
+        return setIsFullScreen(!isFullScreen);
+      }
+    } : null, !isInstalledPwa ? {
+      text: t("components.menuItems.install"),
+      icon: "install",
+      onClick: function onClick() {
+        sendNotification === null || sendNotification === void 0 || sendNotification(t("components.menuItems.requestingToInstall"), {
+          variant: "info"
+        });
+        if (deferredPrompt) {
+          deferredPrompt === null || deferredPrompt === void 0 || deferredPrompt.prompt().then(function (result) {
+            if (result.outcome === "accepted") {
+              console.log("Installation accepted");
+              sendNotification === null || sendNotification === void 0 || sendNotification(t("components.menuItems.installPossible"), {
+                variant: "success"
+              });
+            } else {
+              console.log("Installation dismissed");
+              sendNotification === null || sendNotification === void 0 || sendNotification(t("components.menuItems.installDismissed"), {
+                variant: "warning"
+              });
+            }
+          })["catch"](function (error) {
+            console.error("Installation prompt error:", error);
+            sendNotification === null || sendNotification === void 0 || sendNotification(t("components.menuItems.installFailed"), {
+              variant: "warning"
+            });
+          });
+        } else {
+          console.error("The beforeinstallprompt event has not been fired.");
+          sendNotification === null || sendNotification === void 0 || sendNotification(t("components.menuItems.installNotSupported"), {
+            variant: "warning"
+          });
+        }
+      }
+    } : null, {
+      text: t("components.menuItems.downloadZip"),
+      icon: "download",
+      onClick: function onClick() {
+        return window.open("/positive-intentions.zip");
+      }
+    }]
+  }, {
+    text: t("components.menuItems.language"),
+    icon: "translate",
+    subMenuItems: _toConsumableArray(languages.map(function (language) {
+      return {
+        text: language.name,
+        onClick: function onClick() {
+          return i18n.changeLanguage(language.id);
+        }
+      };
+    }))
+  }, {
+    text: t("components.menuItems.sponsor"),
+    icon: "donate",
+    subMenuItems: [{
+      text: t("components.menuItems.github"),
+      icon: "github",
+      onClick: function onClick() {
+        return window.open("https://github.com/sponsors/positive-intentions");
+      }
+    }, {
+      text: t("components.menuItems.kofi"),
+      icon: "coffee",
+      onClick: function onClick() {
+        return window.open("https://ko-fi.com/positive_intentions");
+      }
+    }, {
+      text: t("components.menuItems.openCollective"),
+      icon: "openCollective",
+      onClick: function onClick() {
+        return window.open("https://opencollective.com/positive-intentions");
+      }
+    }, {
+      text: t("components.menuItems.patreon"),
+      icon: "patreon",
+      onClick: function onClick() {
+        return window.open("https://www.patreon.com/positive_intentions");
+      }
+    }]
+  }];
+  return /*#__PURE__*/index_js_default().createElement(Dropdown/* Dropdown */.ms, {
+    keepOpen: true,
+    trigger: /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
+      ref: menuItems.ref,
+      size: "large",
+      "aria-label": "account of current user",
+      "aria-controls": "menu-appbar",
+      "aria-haspopup": "true",
+      color: "inherit"
+    }, presetIcons[(_menuItems$icon = menuItems.icon) !== null && _menuItems$icon !== void 0 ? _menuItems$icon : "more"]),
+    menu: _toConsumableArray(((_menuItems$items = menuItems === null || menuItems === void 0 ? void 0 : menuItems.items) !== null && _menuItems$items !== void 0 ? _menuItems$items : []).concat(defaultMenuItems).filter(function (i) {
+      return !!i;
+    }).map(function (item, index) {
+      var _item$subMenuItems, _item$subMenuItems2;
+      return !((item === null || item === void 0 || (_item$subMenuItems = item.subMenuItems) === null || _item$subMenuItems === void 0 ? void 0 : _item$subMenuItems.length) > 0) ? /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownMenuItem */._2, {
+        onClick: item.onClick
+      }, /*#__PURE__*/index_js_default().createElement(ListItemIcon/* default */.A, null, presetIcons[item.icon]), /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, item.text))) : /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownNestedMenuItem */.Zn, {
+        label: item.text,
+        leftIcon: /*#__PURE__*/index_js_default().createElement(ListItemIcon/* default */.A, null, presetIcons[item.icon]),
+        rightAnchored: true,
+        menu: _toConsumableArray(((_item$subMenuItems2 = item.subMenuItems) !== null && _item$subMenuItems2 !== void 0 ? _item$subMenuItems2 : []).map(function (subItem, index) {
+          return !!subItem && /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownMenuItem */._2, {
+            onClick: subItem.onClick
+          }, subItem.icon && /*#__PURE__*/index_js_default().createElement(ListItemIcon/* default */.A, null, presetIcons[subItem.icon]), /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, subItem.text));
+        }))
+      }, /*#__PURE__*/index_js_default().createElement(ListItemIcon/* default */.A, null, presetIcons[item.icon]), /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, item.text));
+    }))
+  });
+};
+function AppHeader(_ref4) {
+  var disabled = _ref4.disabled,
+    title = _ref4.title,
+    leftIcon = _ref4.leftIcon,
+    rightIcon = _ref4.rightIcon,
+    backButton = _ref4.backButton,
+    backCount = _ref4.backCount,
+    _ref4$avatarProps = _ref4.avatarProps,
+    avatarProps = _ref4$avatarProps === void 0 ? {} : _ref4$avatarProps,
+    _ref4$menuProps = _ref4.menuProps,
+    menuProps = _ref4$menuProps === void 0 ? {} : _ref4$menuProps,
+    _ref4$customButtons = _ref4.customButtons,
+    customButtons = _ref4$customButtons === void 0 ? [] : _ref4$customButtons,
+    hideOnScroll = _ref4.hideOnScroll;
+  if (disabled) return null;
+  var _React$useState = index_js_default().useState(true),
+    _React$useState2 = _slicedToArray(_React$useState, 2),
+    auth = _React$useState2[0],
+    setAuth = _React$useState2[1];
+  var _React$useState3 = index_js_default().useState(null),
+    _React$useState4 = _slicedToArray(_React$useState3, 2),
+    anchorEl = _React$useState4[0],
+    setAnchorEl = _React$useState4[1];
+  var _React$useState5 = index_js_default().useState(null),
+    _React$useState6 = _slicedToArray(_React$useState5, 2),
+    subMenuAnchorEl = _React$useState6[0],
+    setSubMenuAnchorEl = _React$useState6[1];
+  var menuRef = index_js_default().useRef(null);
+  var subMenuRef = index_js_default().useRef(null);
+  var navigate = (0,dist/* useNavigate */.Zp)();
+  var handleMenu = function handleMenu(event) {
+    setAnchorEl(menuRef);
+  };
+  var handleSubMenuMenu = function handleSubMenuMenu(event) {
+    setSubMenuAnchorEl(subMenuRef);
+  };
+  var handleClose = function handleClose() {
+    setAnchorEl(null);
+  };
+  var handleSubMenuClose = function handleSubMenuClose() {
+    setSubMenuAnchorEl(null);
+  };
+  var _React$useState7 = index_js_default().useState(false),
+    _React$useState8 = _slicedToArray(_React$useState7, 2),
+    subMenuOpen = _React$useState8[0],
+    setSubMenuOpen = _React$useState8[1];
+  var AppBarRender = function AppBarRender() {
+    var _avatarProps$src, _avatarProps$alt;
+    return /*#__PURE__*/index_js_default().createElement(AppBar/* default */.A, null, /*#__PURE__*/index_js_default().createElement(Toolbar/* default */.A, {
+      style: {
+        backgroundColor: "#d32f2f",
+        color: "white",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "0 20px",
+        minHeight: "20px"
+      }
+    }, /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
+      component: "div"
+    }, "For testing purposes only")), /*#__PURE__*/index_js_default().createElement(Toolbar/* default */.A, null, backButton && /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
+      size: "large",
+      edge: "start",
+      color: "inherit",
+      "aria-label": "menu"
+      // sx={{ mr: 2 }}
+      ,
+      onClick: function onClick() {
+        if (typeof backButton === 'function') backButton();
+        navigate(typeof backButton === "string" ? backButton : -1);
+      }
+    }, /*#__PURE__*/index_js_default().createElement(Badge/* default */.A, {
+      color: "info",
+      badgeContent: backCount
+    }, presetIcons.arrowBack)), Object.keys(avatarProps).length > 0 && /*#__PURE__*/index_js_default().createElement(StyledBadge, {
+      className: avatarProps !== null && avatarProps !== void 0 && avatarProps.isOnline ? "green" : "amber",
+      overlap: "circular",
+      anchorOrigin: {
+        vertical: "bottom",
+        horizontal: "right"
+      },
+      variant: "dot",
+      invisible: !(avatarProps !== null && avatarProps !== void 0 && avatarProps.isOnline) && !(avatarProps !== null && avatarProps !== void 0 && avatarProps.isSomeOnline),
+      sx: {
+        mr: 2
+      }
+    }, /*#__PURE__*/index_js_default().createElement(Avatar/* default */.A, {
+      src: (_avatarProps$src = avatarProps === null || avatarProps === void 0 ? void 0 : avatarProps.src) !== null && _avatarProps$src !== void 0 ? _avatarProps$src : "",
+      alt: (_avatarProps$alt = avatarProps === null || avatarProps === void 0 ? void 0 : avatarProps.alt) !== null && _avatarProps$alt !== void 0 ? _avatarProps$alt : "-"
+    })), /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
+      variant: "h6",
+      component: "div",
+      sx: {
+        flexGrow: 1,
+        overflow: "hidden",
+        whiteSpace: "nowrap",
+        textOverflow: "ellipsis"
+      }
+    }, title), customButtons.map(function (button, index) {
+      return button.onClick ? /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
+        key: index,
+        ref: menuRef,
+        size: "large",
+        "aria-label": "account of current user",
+        "aria-controls": "menu-appbar",
+        "aria-haspopup": "true",
+        onClick: button.onClick,
+        color: "inherit"
+      }, presetIcons[button.icon]) : button;
+    }), /*#__PURE__*/index_js_default().createElement(CustomDropdown, {
+      menuItems: menuProps
+    })));
+  };
+  for (var _len = arguments.length, props = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    props[_key - 1] = arguments[_key];
+  }
+  return /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(CssBaseline/* default */.Ay, null), hideOnScroll ? /*#__PURE__*/index_js_default().createElement(HideOnScroll, props, /*#__PURE__*/index_js_default().createElement(AppBarRender, null)) : /*#__PURE__*/index_js_default().createElement(AppBarRender, null));
+}
+// EXTERNAL MODULE: ./node_modules/@mui/material/Fab/Fab.js + 1 modules
+var Fab = __webpack_require__(87992);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Add.js
+var Add = __webpack_require__(16718);
+// EXTERNAL MODULE: ./node_modules/@mui/styles/makeStyles/makeStyles.js + 6 modules
+var makeStyles = __webpack_require__(80284);
+// EXTERNAL MODULE: ./node_modules/@mui/styles/useTheme/index.js
+var styles_useTheme = __webpack_require__(23668);
+// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDial/SpeedDial.js + 2 modules
+var SpeedDial = __webpack_require__(36056);
+// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDialIcon/SpeedDialIcon.js + 2 modules
+var SpeedDialIcon = __webpack_require__(10698);
+// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDialAction/SpeedDialAction.js + 63 modules
+var SpeedDialAction = __webpack_require__(749);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/FileCopyOutlined.js
+var FileCopyOutlined = __webpack_require__(47152);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Save.js
+var Save = __webpack_require__(98984);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Print.js
+var Print = __webpack_require__(45234);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Share.js
+var Share = __webpack_require__(29422);
+;// CONCATENATED MODULE: ./src/components/atomic/organism/page-container/PageContainer.jsx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var PageContainer_presetIcons = {
+  add: /*#__PURE__*/index_js_.createElement(Add/* default */.A, null)
+};
+var actions = [{
+  icon: /*#__PURE__*/index_js_.createElement(FileCopyOutlined/* default */.A, null),
+  name: "Copy"
+}, {
+  icon: /*#__PURE__*/index_js_.createElement(Save/* default */.A, null),
+  name: "Save"
+}, {
+  icon: /*#__PURE__*/index_js_.createElement(Print/* default */.A, null),
+  name: "Print"
+}, {
+  icon: /*#__PURE__*/index_js_.createElement(Share/* default */.A, null),
+  name: "Share"
+}];
+function PageContainer_HideOnScroll(props) {
+  var children = props.children,
+    window = props.window;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  var trigger = (0,useScrollTrigger/* default */.A)({
+    target: window ? window() : undefined
+  });
+  return /*#__PURE__*/index_js_.createElement(Slide/* default */.A, {
+    appear: false,
+    direction: "down",
+    "in": !trigger
+  }, children);
+}
+PageContainer_HideOnScroll.propTypes = {
+  children: (prop_types_default()).element.isRequired,
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window: (prop_types_default()).func
+};
+var useStyles = (0,makeStyles/* default */.A)(function (theme) {
+  return {
+    // root: {
+    //     flexGrow: 1,
+    //     // height: "100vh",
+    //     // overflow: 'auto',
+    //     paddingTop: `${theme.spacing(8)}`
+    // },
+    // appBar: {
+    //     height: theme.spacing(8),
+    // },
+    // form: {
+    //     padding: theme.spacing(3),
+    // },
+    // title: {
+    //     fontWeight: "bold",
+    //     textAlign: "left",
+    //     display: "flex",
+    //     alignItems: "center",
+    //     height: "100%",
+    //     padding: `0 ${theme.spacing(3)}`,
+    // },
+    fab: {
+      position: "fixed !important",
+      bottom: theme.spacing(2),
+      right: theme.spacing(2)
+    }
+  };
+});
+var defaultLightBackgroundImage = "/backgrounds/light-random.png";
+var defaultDarkBackgroundImage = "/backgrounds/dark-random.png";
+function PageContainer(props) {
+  var _speedDialProps$icon;
+  var children = props.children,
+    _props$headerProps = props.headerProps,
+    headerProps = _props$headerProps === void 0 ? {} : _props$headerProps,
+    _props$fabProps = props.fabProps,
+    fabProps = _props$fabProps === void 0 ? {} : _props$fabProps,
+    _props$speedDialProps = props.speedDialProps,
+    speedDialProps = _props$speedDialProps === void 0 ? {} : _props$speedDialProps,
+    backgroundImage = props.backgroundImage;
+  var classes = useStyles();
+  var theme = (0,styles_useTheme/* default */.A)();
+  var defaultBackgroundImage = theme.palette.mode === "dark" ? defaultDarkBackgroundImage : defaultLightBackgroundImage;
+  return /*#__PURE__*/index_js_.createElement(index_js_.Fragment, null, /*#__PURE__*/index_js_.createElement(CssBaseline/* default */.Ay, null), /*#__PURE__*/index_js_.createElement(AppHeader, headerProps), /*#__PURE__*/index_js_.createElement(Toolbar/* default */.A, null), backgroundImage !== "" && /*#__PURE__*/index_js_.createElement(Box/* default */.A, {
+    sx: {
+      flexGrow: 1,
+      backgroundImage: "url(".concat(backgroundImage !== null && backgroundImage !== void 0 ? backgroundImage : defaultBackgroundImage, ")"),
+      position: "fixed",
+      height: "100%",
+      width: "100%",
+      opacity: 0.05,
+      zIndex: 0
+    }
+  }), /*#__PURE__*/index_js_.createElement(Container/* default */.A, {
+    disableGutters: true,
+    className: "page-container",
+    style: {
+      flexGrow: 1,
+      marginTop: 20
+    }
+  }, children), Object.keys(fabProps).length > 0 && /*#__PURE__*/index_js_.createElement(Fab/* default */.A, {
+    color: "primary",
+    "aria-label": "add",
+    className: classes.fab,
+    onClick: fabProps === null || fabProps === void 0 ? void 0 : fabProps.onClick
+  }, PageContainer_presetIcons[fabProps === null || fabProps === void 0 ? void 0 : fabProps.icon]), Object.keys(speedDialProps).length > 0 && /*#__PURE__*/index_js_.createElement(SpeedDial/* default */.A, {
+    ariaLabel: "SpeedDial basic example",
+    sx: {
+      position: "absolute",
+      bottom: 16,
+      right: 16
+    },
+    icon: (_speedDialProps$icon = speedDialProps.icon) !== null && _speedDialProps$icon !== void 0 ? _speedDialProps$icon : /*#__PURE__*/index_js_.createElement(SpeedDialIcon/* default */.A, null)
+  }, speedDialProps.actions.map(function (action) {
+    return /*#__PURE__*/index_js_.createElement(SpeedDialAction/* default */.A, {
+      key: action.name,
+      icon: action.icon,
+      tooltipTitle: action.name,
+      onClick: action.onClick
+    });
+  })));
+}
+
+/***/ }),
+
+/***/ 34431:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  A: () => (/* binding */ blockchain_Blockchain),
+  o: () => (/* binding */ useBlockchain)
+});
+
+// EXTERNAL MODULE: consume shared module (default) react@^18.3.1 (singleton) (fallback: ./node_modules/react/index.js)
+var index_js_ = __webpack_require__(50318);
+;// CONCATENATED MODULE: ./src/components/utils/calculateSha3512.js
+//disable linting file
+/* eslint-disable */
+
+// Check if BigInt is not defined
+if (typeof window.BigInt === "undefined") {
+  window.BigInt = function () {
+    function BigInt(value) {
+      if (!(this instanceof window.BigInt)) {
+        return new window.BigInt(value);
+      }
+      if (typeof value !== "string" || !/^-?\d+$/.test(value)) {
+        throw new TypeError("Invalid BigInt value");
+      }
+
+      // Remove leading zeros, if any, and handle '-0' case
+      this.value = value.replace(/^0+|(?<=^-)0+/g, "") || "0";
+      if (this.value === "-0") this.value = "0";
+    }
+    window.BigInt.prototype.add = function (other) {
+      if (!(other instanceof window.BigInt)) {
+        throw new TypeError("Argument must be of type BigInt");
+      }
+      var carry = 0;
+      var result = "";
+      var maxLength = Math.max(this.value.length, other.value.length);
+      var isThisNegative = this.value[0] === "-";
+      var isOtherNegative = other.value[0] === "-";
+
+      // If both are negative, negate the result of the addition
+      if (isThisNegative && isOtherNegative) {
+        return new window.BigInt("-" + this.negate().add(other.negate()).toString());
+      }
+
+      // If one of them is negative, perform subtraction
+      if (isThisNegative) {
+        return other.subtract(this.negate());
+      }
+      if (isOtherNegative) {
+        return this.subtract(other.negate());
+      }
+      for (var i = 0; i < maxLength || carry; i++) {
+        var sum = carry;
+        if (i < this.value.length) {
+          sum += parseInt(this.value.charAt(this.value.length - 1 - i), 10);
+        }
+        if (i < other.value.length) {
+          sum += parseInt(other.value.charAt(other.value.length - 1 - i), 10);
+        }
+        result = sum % 10 + result;
+        carry = Math.floor(sum / 10);
+      }
+      return new window.BigInt(result);
+    };
+
+    // Placeholder for subtraction (not fully implemented)
+    window.BigInt.prototype.subtract = function (other) {
+      // This is a placeholder; actual subtraction logic will be more complex.
+      // For simplicity, assume the current number is larger than the 'other'.
+      return new window.BigInt("0");
+    };
+
+    // Helper method to negate a BigInt
+    window.BigInt.prototype.negate = function () {
+      if (this.value[0] === "-") {
+        return new BigInt(this.value.substring(1));
+      }
+      return new BigInt("-" + this.value);
+    };
+    window.BigInt.prototype.toString = function () {
+      return this.value;
+    };
+    return window.BigInt;
+  }();
+}
+
+// Usage
+// const a = BigInt('12345');
+// const b = BigInt('67890');
+// const c = a.add(b);
+// console.log(c.toString()); // 80135
+
+// function SHA3_512(input):
+//     input = applyPadding(input)    // Pre-processing step
+//     state = initializeState()     // State Initialization
+
+//     // Keccak Rounds
+//     for round in 1 to 24:
+//         state = applyTheta(state)
+//         state = applyRho(state)
+//         state = applyPi(state)
+//         state = applyChi(state)
+//         state = applyIota(state, round)
+
+//     output = generateOutput(state)  // Output Generation
+//     return output
+
+function applyPadding(message) {
+  var r = 576; // Rate for SHA3-512
+
+  // Convert the message to a binary representation
+  var binaryMessage = "";
+  for (var i = 0; i < message.length; i++) {
+    var bin = message.charCodeAt(i).toString(2);
+    binaryMessage += ("00000000" + bin).slice(-8); // Pad each byte to 8 bits
+  }
+
+  // Append the initial "1"
+  binaryMessage += "1";
+
+  // Add "0" bits until length % r = r-1
+  while (binaryMessage.length % r !== r - 1) {
+    binaryMessage += "0";
+  }
+
+  // Append the final "1"
+  binaryMessage += "1";
+  return binaryMessage;
+}
+
+// // Example usage:
+// let paddedMessage = applyPadding("YourInputHere");
+// console.log(paddedMessage);
+
+function initializeState() {
+  var w = 64; // word length in bits for SHA3-512
+  var state = [];
+  for (var x = 0; x < 5; x++) {
+    state[x] = [];
+    for (var y = 0; y < 5; y++) {
+      state[x][y] = window.BigInt(0); // Using window.BigInt to handle 64-bit values in JavaScript
+    }
+  }
+  return state;
+}
+
+// // Example usage:
+// let state = initializeState();
+// console.log(state);
+
+function applyTheta(state) {
+  var w = 64; // word length in bits for SHA3-512
+  var C = Array(5).fill(window.BigInt(0));
+  var D = Array(5).fill(window.BigInt(0));
+
+  // Step 1: For each x, compute C[x]
+  for (var x = 0; x < 5; x++) {
+    C[x] = state[x][0];
+    for (var y = 1; y < 5; y++) {
+      C[x] ^= state[x][y];
+    }
+  }
+
+  // Step 2: Compute D[x]
+  for (var _x = 0; _x < 5; _x++) {
+    D[_x] = C[(_x + 4) % 5] ^ (C[(_x + 1) % 5] << 1n | C[(_x + 1) % 5] >> window.BigInt(w - 1)); // Left rotation by 1, using BigInt
+  }
+
+  // Step 3: For each x, y, XOR the lane at x, y with D[x]
+  for (var _x2 = 0; _x2 < 5; _x2++) {
+    for (var _y = 0; _y < 5; _y++) {
+      state[_x2][_y] ^= D[_x2];
+    }
+  }
+  return state;
+}
+
+// // Example usage:
+// let state = initializeState();
+// state = applyTheta(state);
+// console.log(state);
+
+function applyRho(state) {
+  var rotationOffsets = [[0, 36, 3, 41, 18], [1, 44, 10, 45, 2], [62, 6, 43, 15, 61], [28, 55, 25, 21, 56], [27, 20, 39, 8, 14]];
+  for (var x = 0; x < 5; x++) {
+    for (var y = 0; y < 5; y++) {
+      var offset = window.BigInt(rotationOffsets[x][y]); // Convert to BigInt
+      state[x][y] = state[x][y] << offset | state[x][y] >> 64n - offset; // Use BigInt for 64
+    }
+  }
+  return state;
+}
+
+// // Example usage:
+// let state = initializeState();
+// state = applyRho(state);
+// console.log(state);
+
+function applyPi(state) {
+  var newState = Array(5).fill(0).map(function () {
+    return Array(5).fill(window.BigInt(0));
+  }); // Initialize a new 5x5 state with zeros
+
+  for (var x = 0; x < 5; x++) {
+    for (var y = 0; y < 5; y++) {
+      var newX = y;
+      var newY = (2 * x + 3 * y) % 5;
+      newState[newX][newY] = state[x][y];
+    }
+  }
+  return newState;
+}
+
+// Example usage:
+// let state = initializeState();
+// state = applyPi(state);
+// console.log(state);
+
+function applyChi(state) {
+  var newState = Array(5).fill(0).map(function () {
+    return Array(5).fill(window.BigInt(0));
+  }); // Initialize a new 5x5 state with zeros
+
+  for (var x = 0; x < 5; x++) {
+    for (var y = 0; y < 5; y++) {
+      var nextLane = state[(x + 1) % 5][y];
+      var twoPlacesAheadLane = state[(x + 2) % 5][y];
+      newState[x][y] = state[x][y] ^ ~nextLane & twoPlacesAheadLane;
+    }
+  }
+  return newState;
+}
+
+// // Example usage:
+// let state = initializeState();
+// state = applyChi(state);
+// console.log(state);
+
+var ROUND_CONSTANTS = (/* unused pure expression or super */ null && ([
+  // window.BigInt(0x0000000000000001),
+  // window.BigInt(0x0000000000008082),
+  // window.BigInt(0x800000000000808a),
+  // window.BigInt(0x8000000080008000),
+  // window.BigInt(0x000000000000808b),
+  // window.BigInt(0x0000000080000001),
+  // window.BigInt(0x8000000080008081),
+  // window.BigInt(0x8000000000008009),
+  // window.BigInt(0x000000000000008a),
+  // window.BigInt(0x0000000000000088),
+  // window.BigInt(0x0000000080008009),
+  // window.BigInt(0x000000008000000a),
+  // window.BigInt(0x000000008000808b),
+  // window.BigInt(0x800000000000008b),
+  // window.BigInt(0x8000000000008089),
+  // window.BigInt(0x8000000000008003),
+  // window.BigInt(0x8000000000008002),
+  // window.BigInt(0x8000000000000080),
+  // window.BigInt(0x000000000000800a),
+  // window.BigInt(0x800000008000000a),
+  // window.BigInt(0x8000000080008081),
+  // window.BigInt(0x8000000000008080),
+  // window.BigInt(0x0000000080000001),
+  // window.BigInt(0x8000000080008008),
+]));
+function applyIota(state, roundNumber) {
+  state[0][0] = state[0][0] ^ ROUND_CONSTANTS[roundNumber];
+  return state;
+}
+
+// // Example usage:
+// let state = initializeState();
+// const roundNumber = 0; // This is just an example; typically you'd be iterating through rounds in the overall Keccak function.
+// state = applyIota(state, roundNumber);
+// console.log(state);
+
+function generateOutput(state, outputLength) {
+  // Assuming state is a 2D array and each lane is a window.BigInt representing 64 bits.
+  // Convert state to a flat binary string.
+  var output = "";
+  for (var y = 0; y < 5; y++) {
+    for (var x = 0; x < 5; x++) {
+      var lane = state[x][y];
+      var binaryLane = lane.toString(2).padStart(64, "0");
+      output += binaryLane;
+    }
+  }
+
+  // Trim or pad the binary string to the desired length.
+  if (output.length > outputLength) {
+    output = output.substring(0, outputLength);
+  } else {
+    while (output.length < outputLength) {
+      // Here, we would typically reapply the Keccak permutation and continue squeezing.
+      // But for simplicity, we're padding with zeros.
+      output += "0";
+    }
+  }
+  return output;
+}
+
+// // Example usage:
+// let state = initializeState(); // Assuming state has undergone all transformations
+// const desiredOutputLength = 256; // 256 bits as an example
+// const result = generateOutput(state, desiredOutputLength);
+// console.log(result);
+
+function absorbInput(state, block) {
+  var w = 64; // word length in bits for SHA3-512
+  var x = 0,
+    y = 0;
+  for (var j = 0; j < block.length; j += w) {
+    var segment = block.slice(j, j + w);
+    state[x][y] ^= window.BigInt(parseInt(segment, 2));
+
+    // update x and y values for next cell
+    y++;
+    if (y >= 5) {
+      y = 0;
+      x++;
+    }
+  }
+  return state;
+}
+function keccakF(state) {
+  for (var i = 0; i < 24; i++) {
+    // 24 rounds in Keccak
+    state = applyTheta(state);
+    state = applyRho(state);
+    state = applyPi(state);
+    state = applyChi(state);
+    state = applyIota(state, i);
+  }
+  return state;
+}
+function calculateSHA3_512(input) {
+  var paddedInput = applyPadding(input);
+  var state = initializeState();
+
+  // Absorption phase
+  for (var i = 0; i < paddedInput.length; i += 576) {
+    var block = paddedInput.substring(i, i + 576);
+    state = absorbInput(state, block);
+    state = keccakF(state);
+  }
+
+  // Squeezing phase (just one iteration for SHA3-512)
+  var output = generateOutput(state, 1024);
+  return binaryToHex(output);
+}
+function xorStateWithBlock(state, block) {
+  for (var y = 0; y < 5; y++) {
+    for (var x = 0; x < 5; x++) {
+      if (y * 64 + x * 320 < block.length) {
+        var chunk = block.substring(y * 64 + x * 320, y * 64 + x * 320 + 64);
+        var value = window.BigInt("0b" + chunk);
+        state[x][y] ^= value;
+      }
+    }
+  }
+  return state;
+}
+
+// The functions applyPadding, initializeState, absorbInput, applyTheta, applyRho,
+// applyPi, applyChi, applyIota, and generateOutput should be defined based on our prior discussions.
+
+function binaryToHex(binaryString) {
+  var hexString = "";
+  for (var i = 0; i < binaryString.length; i += 4) {
+    var _byte = binaryString.substr(i, 4);
+    var hex = parseInt(_byte, 2).toString(16);
+    hexString += hex;
+  }
+  return hexString;
+}
+
+// console.log({
+//     newSha3_5121: calculateSHA3_512('Hello, World!'),
+//     newSha3_5122: calculateSHA3_512('Hello, World!!'),
+//     newSha3_5123: calculateSHA3_512('Hello, World!'),
+//     newSha3_5124: calculateSHA3_512('Hallo, World!'),
+//     newSha3_5125: calculateSHA3_512('Hello, World!'),
+//     newSha3_5126: calculateSHA3_512('Hello, World!'),
+//     newSha3_5127: calculateSHA3_512('Hello, World!'),
+//     newSha3_5128: calculateSHA3_512('Hello, World!'),
+//     newSha3_5129: calculateSHA3_512('Hello, World!'),
+// })
+
+/* harmony default export */ const calculateSha3512 = ((/* unused pure expression or super */ null && (calculateSHA3_512)));
+// EXTERNAL MODULE: ./src/components/utils/calculateSha256.js
+var utils_calculateSha256 = __webpack_require__(59701);
+// EXTERNAL MODULE: ./src/components/cryptography/Cryptography.jsx
+var Cryptography = __webpack_require__(94735);
+;// CONCATENATED MODULE: ./src/components/blockchain/Blockchain.js
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+
+var calculateHash = (/* unused pure expression or super */ null && (calculateSha256));
+// function calculateSHA256(str) {
+//     const charToCode = (char) => char.charCodeAt(0);
+//     const leftRotate = (value, shift) => (value >>> shift) | (value << (32 - shift));
+//     const rightRotate = (value, shift) => (value << shift) | (value >>> (32 - shift));
+//     const toHex = (value) => value.toString(16).padStart(8, '0');
+
+//     const addUnsigned = (x, y) => {
+//         const MAX_UINT32 = Math.pow(2, 32) - 1;
+//         return (x & MAX_UINT32) + (y & MAX_UINT32);
+//       };
+
+//     const wordsToBlocks = (words) => {
+//         const blocks = [];
+//         for (let i = 0; i < words.length; i += 16) {
+//             blocks.push(words.slice(i, i + 16));
+//         }
+//         return blocks;
+//     };
+
+//     const preprocessMessage = (message) => {
+//         const bitLength = message.length * 8;
+//         const paddingLength = message.length % 64 < 56 ? 56 - (message.length % 64) : 120 - (message.length % 64);
+
+//         const paddedMessage = new Uint8Array(message.length + paddingLength + 8);
+//         paddedMessage.set(message);
+//         paddedMessage[message.length] = 0x80;
+//         paddedMessage.set(new Uint8Array(bitLengthToArray(bitLength)), paddedMessage.length - 8);
+
+//         return paddedMessage;
+//     };
+
+//     const bitLengthToArray = (bitLength) => {
+//         const arr = new Uint8Array(8);
+//         for (let i = 7; i >= 0; i--) {
+//             arr[i] = bitLength & 0xff;
+//             bitLength >>>= 8;
+//         }
+//         return arr;
+//     };
+
+//     const computeSHA256 = (message) => {
+//         const K = new Uint32Array([
+//             0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5,
+//             0x3956c25b, 0x59f111f1, 0x923f82a4, 0xab1c5ed5,
+//             0xd807aa98, 0x12835b01, 0x243185be, 0x550c7dc3,
+//             0x72be5d74, 0x80deb1fe, 0x9bdc06a7, 0xc19bf174,
+//             0xe49b69c1, 0xefbe4786, 0x0fc19dc6, 0x240ca1cc,
+//             0x2de92c6f, 0x4a7484aa, 0x5cb0a9dc, 0x76f988da,
+//             0x983e5152, 0xa831c66d, 0xb00327c8, 0xbf597fc7,
+//             0xc6e00bf3, 0xd5a79147, 0x06ca6351, 0x14292967,
+//             0x27b70a85, 0x2e1b2138, 0x4d2c6dfc, 0x53380d13,
+//             0x650a7354, 0x766a0abb, 0x81c2c92e, 0x92722c85,
+//             0xa2bfe8a1, 0xa81a664b, 0xc24b8b70, 0xc76c51a3,
+//             0xd192e819, 0xd6990624, 0xf40e3585, 0x106aa070,
+//             0x19a4c116, 0x1e376c08, 0x2748774c, 0x34b0bcb5,
+//             0x391c0cb3, 0x4ed8aa4a, 0x5b9cca4f, 0x682e6ff3,
+//             0x748f82ee, 0x78a5636f, 0x84c87814, 0x8cc70208,
+//             0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2,
+//         ]);
+
+//         const blocks = wordsToBlocks(new Uint32Array(message.buffer));
+//         const hash = new Uint32Array([
+//             0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a,
+//             0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19,
+//         ]);
+
+//         for (const block of blocks) {
+//             const schedule = new Uint32Array(64);
+//             schedule.set(block);
+
+//             for (let t = 16; t < 64; t++) {
+//                 const s0 = rightRotate(schedule[t - 15], 7) ^ rightRotate(schedule[t - 15], 18) ^ (schedule[t - 15] >>> 3);
+//                 const s1 = rightRotate(schedule[t - 2], 17) ^ rightRotate(schedule[t - 2], 19) ^ (schedule[t - 2] >>> 10);
+//                 schedule[t] = addUnsigned(addUnsigned(addUnsigned(schedule[t - 16], s0), schedule[t - 7]), s1);
+//             }
+
+//             let a = hash[0];
+//             let b = hash[1];
+//             let c = hash[2];
+//             let d = hash[3];
+//             let e = hash[4];
+//             let f = hash[5];
+//             let g = hash[6];
+//             let h = hash[7];
+
+//             for (let t = 0; t < 64; t++) {
+//                 const S1 = rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25);
+//                 const ch = (e & f) ^ (~e & g);
+//                 const temp1 = addUnsigned(addUnsigned(addUnsigned(addUnsigned(h, S1), ch), K[t]), schedule[t]);
+//                 const S0 = rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22);
+//                 const maj = (a & b) ^ (a & c) ^ (b & c);
+//                 const temp2 = addUnsigned(S0, maj);
+
+//                 h = g;
+//                 g = f;
+//                 f = e;
+//                 e = addUnsigned(d, temp1);
+//                 d = c;
+//                 c = b;
+//                 b = a;
+//                 a = addUnsigned(temp1, temp2);
+//             }
+
+//             hash[0] = addUnsigned(hash[0], a);
+//             hash[1] = addUnsigned(hash[1], b);
+//             hash[2] = addUnsigned(hash[2], c);
+//             hash[3] = addUnsigned(hash[3], d);
+//             hash[4] = addUnsigned(hash[4], e);
+//             hash[5] = addUnsigned(hash[5], f);
+//             hash[6] = addUnsigned(hash[6], g);
+//             hash[7] = addUnsigned(hash[7], h);
+//         }
+
+//         const hashArray = new Uint8Array(hash.buffer);
+//         const hashHex = Array.from(hashArray, (byte) => byte.toString(16).padStart(2, '0')).join('');
+
+//         return hashHex;
+//     };
+
+//     const messageBytes = new TextEncoder().encode(str);
+//     const paddedMessage = preprocessMessage(messageBytes);
+//     const sha256Hash = computeSHA256(paddedMessage);
+
+//     return sha256Hash;
+// }
+var Blockchain = /*#__PURE__*/_createClass(function Blockchain(_ref) {
+  var _this = this;
+  var chain = _ref.chain,
+    compiler = _ref.compiler,
+    storage = _ref.storage,
+    onNewBlock = _ref.onNewBlock,
+    onNewChain = _ref.onNewChain;
+  _classCallCheck(this, Blockchain);
+  this.chain = chain;
+  this.compiler = compiler;
+  this.pendingBlocks = [];
+  this.pendingStorage = {};
+  this.compile = function () {
+    var _this$chain;
+    var state = {};
+    var resolveStorage = function resolveStorage() {
+      var payload = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var type = payload.type;
+      if (["text", "image", "videos", "file", "link", "location", "audio"].includes(type)) {
+        return _objectSpread(_objectSpread({}, payload), {}, {
+          sha: payload.payload,
+          payload: type === "file" ? _objectSpread(_objectSpread({}, storage[payload.payload]), {}, {
+            data: ""
+          }) : storage[payload.payload]
+        });
+      }
+      if (["reply"].includes(type)) {
+        return _objectSpread(_objectSpread({}, payload), {}, {
+          payload: state.messages.find(function (message) {
+            return message.id === payload.payload;
+          })
+        });
+      }
+      return payload;
+    };
+    ((_this$chain = _this.chain) !== null && _this$chain !== void 0 ? _this$chain : []).forEach(function (block) {
+      state = _this.compiler(resolveStorage(block.payload), state);
+    });
+    return state;
+  };
+  this.addBlocks = function (blocks, append) {
+    blocks.forEach(function (block) {
+      _this.addBlock(block, append);
+    });
+  };
+  this.addBlock = function (block, append) {
+    var _this$chain2, _block$payload;
+    // hash of last block in chain
+    var newBlock = {
+      id: (0,utils_calculateSha256/* default */.A)(JSON.stringify(_objectSpread(_objectSpread({}, block.payload), {}, {
+        previousBlockHash: _this.chain ? (_this$chain2 = _this.chain[_this.chain.length - 1]) === null || _this$chain2 === void 0 ? void 0 : _this$chain2.id : (0,Cryptography/* randomString */.DU)()
+      }))),
+      payload: (_block$payload = block.payload) !== null && _block$payload !== void 0 && _block$payload.id ? block.payload : block
+    };
+    if (["text", "image", "videos", "file", "link", "location", "audio"].includes(block.type)) {
+      var payloadHash = append ? block.payload : (0,utils_calculateSha256/* default */.A)(JSON.stringify(block.payload));
+      _this.pendingStorage[payloadHash] = block.payload;
+      newBlock.payload.payload = payloadHash;
+    }
+    _this.chain = [].concat(_toConsumableArray(_this.chain || []), [newBlock]);
+    _this.pendingBlocks = [].concat(_toConsumableArray(_this.pendingBlocks), [newBlock]);
+  };
+  this.getUpdate = function () {
+    var pendingBlocks = _toConsumableArray(_this.pendingBlocks);
+    var pendingStorage = _objectSpread({}, _this.pendingStorage);
+    _this.pendingBlocks = [];
+    _this.pendingStorage = {};
+    return {
+      pendingBlocks: pendingBlocks,
+      pendingStorage: pendingStorage
+    };
+  };
+  this.mergeChain = function (chain) {
+    var filteredChain = chain.filter(function (block) {
+      var blockId = block.payload.id;
+      return !_this.chain.find(function (b) {
+        return b.payload.id === blockId;
+      });
+    });
+    var newChain = [].concat(_toConsumableArray(_this.chain), _toConsumableArray(filteredChain));
+    var sortedChain = newChain.sort(function (a, b) {
+      return new Date(a.payload.timestamp) - new Date(b.payload.timestamp);
+    });
+
+    // calculate blockhashes for eachblock based on the hash of the previous block
+    var chainWithUpdatedHashes = sortedChain.map(function (block, index) {
+      var previousBlock = sortedChain[index - 1];
+      var previousBlockHash = previousBlock ? previousBlock.id : "";
+      var blockHash = (0,utils_calculateSha256/* default */.A)(JSON.stringify(_objectSpread(_objectSpread({}, block.payload), {}, {
+        previousBlockHash: previousBlockHash
+      })));
+      return _objectSpread(_objectSpread({}, block), {}, {
+        id: blockHash
+      });
+    });
+    _this.chain = chainWithUpdatedHashes;
+  };
+});
+var useBlockchain = function useBlockchain(_ref2) {
+  var blockchain = _ref2.blockchain,
+    _ref2$blockchains = _ref2.blockchains,
+    blockchains = _ref2$blockchains === void 0 ? [] : _ref2$blockchains,
+    compiler = _ref2.compiler,
+    dispatch = _ref2.dispatch;
+  var blockchainInstance = (0,index_js_.useMemo)(function () {
+    var _blockchain$chain, _blockchain$storage;
+    return new Blockchain({
+      compiler: compiler,
+      chain: (_blockchain$chain = blockchain === null || blockchain === void 0 ? void 0 : blockchain.chain) !== null && _blockchain$chain !== void 0 ? _blockchain$chain : [],
+      storage: (_blockchain$storage = blockchain === null || blockchain === void 0 ? void 0 : blockchain.storage) !== null && _blockchain$storage !== void 0 ? _blockchain$storage : {}
+    });
+  }, [blockchain === null || blockchain === void 0 ? void 0 : blockchain.chain, blockchain === null || blockchain === void 0 ? void 0 : blockchain.storage]);
+  var compiledBlockchain = (0,index_js_.useMemo)(function () {
+    return blockchainInstance.compile();
+  }, [blockchainInstance]);
+  var addBlocks = function addBlocks(blocks, append) {
+    if (typeof blocks.length === "number") {
+      blockchainInstance.addBlocks(blocks, append);
+    } else {
+      blockchainInstance.addBlock(blocks, append);
+    }
+    var _blockchainInstance$g = blockchainInstance.getUpdate(),
+      pendingBlocks = _blockchainInstance$g.pendingBlocks,
+      pendingStorage = _blockchainInstance$g.pendingStorage;
+    dispatch({
+      blocks: pendingBlocks,
+      storage: pendingStorage
+    });
+    return {
+      pendingBlocks: pendingBlocks,
+      pendingStorage: pendingStorage
+    };
+  };
+  var compiledBlockchains = blockchains.map(function (blockchain) {
+    var _blockchain$chain2, _blockchain$storage2, _blockchainInstance$c;
+    var blockchainInstance = new Blockchain({
+      compiler: compiler,
+      chain: (_blockchain$chain2 = blockchain === null || blockchain === void 0 ? void 0 : blockchain.chain) !== null && _blockchain$chain2 !== void 0 ? _blockchain$chain2 : [],
+      storage: (_blockchain$storage2 = blockchain === null || blockchain === void 0 ? void 0 : blockchain.storage) !== null && _blockchain$storage2 !== void 0 ? _blockchain$storage2 : {}
+    });
+    var addBlocks = function addBlocks(blocks, append) {
+      if (typeof blocks.length === "number") {
+        blockchainInstance.addBlocks(blocks, append);
+      } else {
+        blockchainInstance.addBlock(blocks, append);
+      }
+      var _blockchainInstance$g2 = blockchainInstance.getUpdate(),
+        pendingBlocks = _blockchainInstance$g2.pendingBlocks,
+        pendingStorage = _blockchainInstance$g2.pendingStorage;
+      dispatch({
+        blocks: pendingBlocks,
+        storage: pendingStorage
+      });
+      return {
+        pendingBlocks: pendingBlocks,
+        pendingStorage: pendingStorage
+      };
+    };
+    var compiledBlockchain = blockchainInstance === null || blockchainInstance === void 0 || (_blockchainInstance$c = blockchainInstance.compile) === null || _blockchainInstance$c === void 0 ? void 0 : _blockchainInstance$c.call(blockchainInstance);
+    return _objectSpread(_objectSpread({}, compiledBlockchain), {}, {
+      addBlocks: addBlocks
+    });
+  });
+  return {
+    compiledBlockchain: compiledBlockchain,
+    compiledBlockchains: compiledBlockchains,
+    addBlocks: addBlocks
+  };
+};
+/* harmony default export */ const blockchain_Blockchain = (Blockchain);
+
+// let mutationBlocksOld = [
+//     {
+//         id: 'blockId1',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'addUser',
+//         payload: 'userId',
+//     },
+//     {
+//         id: 'blockId2',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'addUser',
+//         payload: 'userId2',
+//     },
+//     {
+//         id: 'blockId3',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'setPodName',
+//         payload: 'New Pod Name',
+//     },
+//     {
+//         id: 'blockId4',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'createMessage',
+//     },
+//     {
+//         id: 'blockId5',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'text',
+//         payload: 'contentHash',
+//     },
+//     {
+//         id: 'blockId6',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'image',
+//         payload: 'imageHash',
+//     },
+//     {
+//         id: 'blockId7',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'link',
+//         payload: 'linkHash',
+//     },
+//     {
+//         id: 'blockId8',
+//         from: 'userId2',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'recieved',
+//     },
+//     {
+//         id: 'blockId9',
+//         from: 'userId2',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'read',
+//     },
+// ]
+
+// let mutationBlocks = mutationBlocksOld.map((block) => ({
+//     id: 'some Id',
+//     payload: block,
+// }));
+
+// let messageBlockchain = new Blockchain({
+//     chain: mutationBlocks,
+//     parser: (block, state) => {
+//         const { type, payload, messageId, from, timestamp } = block;
+
+//         switch (type) {
+//             case 'addUser':
+//                 state.users.push(payload);
+//                 return state;
+//             case 'removeUser':
+//                 state.users = state.users.filter((u) => u !== payload);
+//                 return state;
+//             case 'setPodName':
+//                 state.name = payload;
+//                 return state;
+//             case 'setPodavatar':
+//                 state.avatar = payload;
+//                 return state;
+//             case 'createMessage':
+//                 state.messages.push({
+//                     id: messageId,
+//                     from: from,
+//                     timestamp: { created: timestamp },
+//                     reciept: { recievedBy: [], readBy: [] },
+//                     votes: { upvotes: [], downvotes: [] },
+//                     payload: { content: '', image: [], video: [], file: [], link: [] },
+//                 });
+//                 return state;
+//             case 'text':
+//                 state.messages = state.messages.map((m) =>
+//                     m.id === messageId ? { ...m, payload: { ...m.payload, content: payload } } : m
+//                 );
+//                 return state;
+//             case 'image':
+//                 state.messages = state.messages.map((m) =>
+//                     m.id === messageId ? { ...m, payload: { ...m.payload, image: [...m.payload.image, payload] } } : m
+//                 );
+//                 return state;
+//             case 'video':
+//                 state.messages = state.messages.map((m) =>
+//                     m.id === messageId ? { ...m, payload: { ...m.payload, video: [...m.payload.video, payload] } } : m
+//                 );
+//                 return state;
+//             case 'file':
+//                 state.messages = state.messages.map((m) =>
+//                     m.id === messageId ? { ...m, payload: { ...m.payload, file: [...m.payload.file, payload] } } : m
+//                 );
+//                 return state;
+//             case 'link':
+//                 state.messages = state.messages.map((m) =>
+//                     m.id === messageId ? { ...m, payload: { ...m.payload, link: [...m.payload.link, payload] } } : m
+//                 );
+//                 return state;
+//             case 'reply':
+//                 state.messages = state.messages.map((m) =>
+//                     m.id === messageId ? { ...m, payload: { ...m.payload, replyTo: payload } } : m
+//                 );
+//                 return state;
+//             case 'recieved':
+//                 state.messages = state.messages.map((m) =>
+//                     m.id === messageId
+//                         ? { ...m, reciept: { ...m.reciept, recievedBy: [...m.reciept.recievedBy, { userId: from, timestamp: timestamp }] } }
+//                         : m
+//                 );
+//                 return state;
+//             case 'read':
+//                 state.messages = state.messages.map((m) =>
+//                     m.id === messageId
+//                         ? { ...m, reciept: { ...m.reciept, readBy: [...m.reciept.readBy, { userId: from, timestamp: timestamp }] } }
+//                         : m
+//                 );
+//                 return state;
+//             case 'delete':
+//                 state.messages = state.messages.filter((m) => m.id !== messageId);
+//                 return state;
+//             case 'upvote':
+//                 state.votes.upvotes.push(from);
+//                 return state;
+//             case 'downvote':
+//                 state.votes.downvotes.push(from);
+//                 return state;
+//             default:
+//                 return state;
+//         }
+//     },
+//     onNewBlock: (block) => {
+//         // addBlockToPodDispatch(block)
+//     },
+//     onNewChain: (chain) => {
+//         // replaceChainOnPodDispatch(chain)
+//     },
+// })
+
+// messageBlockchain.addBlock(
+//     {
+//         id: 'blockId10',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'addUser',
+//         payload: 'userId3',
+//     },
+// )
+
+// let podData = messageBlockchain.getState();
+
+// console.log({ podData, chain: messageBlockchain.chain })
+
+// let mutationBlocksOldRemote = [
+//     {
+//         id: 'blockId1',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'addUser',
+//         payload: 'userId',
+//     },
+//     {
+//         id: 'blockId2',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'addUser',
+//         payload: 'userId2',
+//     },
+//     {
+//         id: 'blockId3',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'setPodName',
+//         payload: 'New Pod Name',
+//     },
+//     {
+//         id: 'blockId4',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'createMessage',
+//     },
+//     {
+//         id: 'blockId5',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'text',
+//         payload: 'contentHash',
+//     },
+//     {
+//         id: 'blockId6',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'image',
+//         payload: 'imageHash',
+//     },
+//     {
+//         id: 'blockId7',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'link',
+//         payload: 'linkHash',
+//     },
+//     {
+//         id: 'blockId8',
+//         from: 'userId2',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'recieved',
+//     },
+//     {
+//         id: 'blockId9',
+//         from: 'userId2',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'read',
+//     },
+//     {
+//         id: 'blockId41',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'createMessage',
+//     },
+//     {
+//         id: 'blockId52',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'text',
+//         payload: 'contentHash',
+//     },
+// ]
+
+// let mutationBlocksRemote = mutationBlocksOldRemote.map((block) => ({
+//     id: 'some Id',
+//     payload: block,
+// }));
+
+// messageBlockchain.mergeChain(mutationBlocksRemote);
+// podData = messageBlockchain.getState();
+
+// console.log({ podData, chain: messageBlockchain.chain })
+
+// messageBlockchain.addBlock(
+//     {
+//         id: 'blockId10',
+//         from: 'userId',
+//         messageId: 'messageId',
+//         timestamp: '2020-01-01 00:00:00',
+//         type: 'addUser',
+//         payload: 'userId4',
+//     },
+// )
+
+// podData = messageBlockchain.getState();
+
+// console.log({ podData, chain: messageBlockchain.chain })
+
+/***/ }),
+
+/***/ 53288:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   It: () => (/* binding */ encodeEmojisToUnicode),
+/* harmony export */   cx: () => (/* binding */ compiler),
+/* harmony export */   e3: () => (/* binding */ blockBuilders)
+/* harmony export */ });
+/* harmony import */ var _cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(94735);
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+
+function encodeEmojisToUnicode() {
+  var inputString = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+  return inputString.replace(/[\u007F-\uFFFF]/g, function (match) {
+    return "\\u" + match.charCodeAt(0).toString(16).padStart(4, "0");
+  });
+}
+function decodeUnicodeToEmojis() {
+  var encodedString = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+  return encodedString.replace(/\\u([\dA-Fa-f]{4})/g, function (match, group1) {
+    return String.fromCharCode(parseInt(group1, 16));
+  });
+}
+var compiler = function compiler(block, propState) {
+  var state = Object.keys(propState).length ? propState : {
+    id: "",
+    users: [],
+    name: "",
+    avatar: "",
+    messages: []
+  };
+  if (!block) return state;
+  var type = block.type,
+    payload = block.payload,
+    messageId = block.messageId,
+    from = block.from,
+    timestamp = block.timestamp,
+    sha = block.sha;
+  switch (type) {
+    case "addUser":
+      state.users.push(payload);
+      return state;
+    case "removeUser":
+      state.users = state.users.filter(function (u) {
+        return u !== payload;
+      });
+      return state;
+    case "setPodId":
+      state.id = payload;
+    case "setPodName":
+      state.name = payload;
+      return state;
+    case "setClone":
+      state.clone = payload;
+      return state;
+    case "setPodavatar":
+      state.avatar = payload;
+      return state;
+    case "createMessage":
+      var newMessage = {
+        id: messageId,
+        from: from,
+        timestamp: {
+          created: timestamp
+        },
+        reciept: {
+          recievedBy: [],
+          readBy: []
+        },
+        votes: {
+          upvotes: [],
+          downvotes: []
+        },
+        payload: {
+          content: "",
+          image: [],
+          video: [],
+          file: [],
+          link: [],
+          reply: [],
+          location: [],
+          audio: []
+        }
+      };
+      state.messages = [].concat(_toConsumableArray(state.messages), [newMessage]);
+      return state;
+    case "text":
+      state.messages = state.messages.map(function (m) {
+        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
+          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
+            content: decodeUnicodeToEmojis(payload)
+          })
+        }) : m;
+      });
+      return state;
+    case "image":
+      state.messages = state.messages.map(function (m) {
+        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
+          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
+            image: payload,
+            sha: sha
+          })
+        }) : m;
+      });
+      return state;
+    case "video":
+      state.messages = state.messages.map(function (m) {
+        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
+          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
+            video: payload,
+            sha: sha
+          })
+        }) : m;
+      });
+      return state;
+    case "file":
+      state.messages = state.messages.map(function (m) {
+        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
+          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
+            file: payload,
+            sha: sha
+          })
+        }) : m;
+      });
+      return state;
+    case "location":
+      state.messages = state.messages.map(function (m) {
+        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
+          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
+            location: payload
+          })
+        }) : m;
+      });
+      return state;
+    case "audio":
+      state.messages = state.messages.map(function (m) {
+        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
+          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
+            audio: payload
+          })
+        }) : m;
+      });
+      return state;
+    case "link":
+      state.messages = state.messages.map(function (m) {
+        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
+          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
+            link: payload
+          })
+        }) : m;
+      });
+      return state;
+    case "reply":
+      state.messages = state.messages.map(function (m) {
+        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
+          payload: _objectSpread(_objectSpread({}, m.payload), {}, {
+            reply: payload
+          })
+        }) : m;
+      });
+      return state;
+    case "recieved":
+      state.messages = state.messages.map(function (m) {
+        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
+          reciept: _objectSpread(_objectSpread({}, m.reciept), {}, {
+            recievedBy: [].concat(_toConsumableArray(m.reciept.recievedBy), [{
+              userId: from,
+              timestamp: timestamp
+            }])
+          })
+        }) : m;
+      });
+      return state;
+    case "read":
+      state.messages = state.messages.map(function (m) {
+        return m.id === messageId ? _objectSpread(_objectSpread({}, m), {}, {
+          reciept: _objectSpread(_objectSpread({}, m.reciept), {}, {
+            readBy: [].concat(_toConsumableArray(m.reciept.readBy), [{
+              userId: from,
+              timestamp: timestamp
+            }])
+          })
+        }) : m;
+      });
+      return state;
+    case "delete":
+      state.messages = state.messages.filter(function (m) {
+        return m.id !== messageId;
+      });
+      return state;
+    case "upvote":
+      state.messages = state.messages.map(function (m) {
+        if (m.id === messageId) {
+          return _objectSpread(_objectSpread({}, m), {}, {
+            votes: _objectSpread(_objectSpread({}, m.votes), {}, {
+              upvotes: [].concat(_toConsumableArray(m.votes.upvotes), [{
+                userId: from,
+                timestamp: timestamp
+              }]),
+              downvotes: m.votes.downvotes.filter(function (v) {
+                return v.userId !== from;
+              })
+            })
+          });
+        } else {
+          return m;
+        }
+      });
+      return state;
+    case "downvote":
+      state.messages = state.messages.map(function (m) {
+        if (m.id === messageId) {
+          if (payload) {
+            return _objectSpread(_objectSpread({}, m), {}, {
+              votes: _objectSpread(_objectSpread({}, m.votes), {}, {
+                downvotes: [].concat(_toConsumableArray(m.votes.downvotes), [{
+                  userId: from,
+                  timestamp: timestamp
+                }]),
+                upvotes: m.votes.upvotes.filter(function (v) {
+                  return v.userId !== from;
+                })
+              })
+            });
+          } else {
+            return _objectSpread({}, m);
+          }
+        } else {
+          return m;
+        }
+      });
+      return state;
+    default:
+      return state;
+  }
+};
+var blockBuilders = function blockBuilders() {
+  var salt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+  return {
+    addMember: function addMember(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "addUser",
+        payload: payload.userId
+      }];
+    },
+    setPodId: function setPodId(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "setPodId",
+        payload: payload.id
+      }];
+    },
+    setPodName: function setPodName(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "setPodName",
+        payload: payload.name
+      }];
+    },
+    sendMessage: function sendMessage(payload) {
+      var messageId = (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt);
+      var sendMessageBlocks = [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "createMessage",
+        messageId: messageId
+      }];
+      if (payload.content) {
+        sendMessageBlocks.push({
+          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+          from: payload.from,
+          timestamp: Date.now() + sendMessageBlocks.length,
+          type: "text",
+          messageId: messageId,
+          payload: encodeEmojisToUnicode(payload.content)
+        });
+      }
+      if (payload.image) {
+        sendMessageBlocks.push({
+          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+          from: payload.from,
+          timestamp: Date.now() + sendMessageBlocks.length,
+          type: "image",
+          messageId: messageId,
+          payload: payload.image
+        });
+      }
+      if (payload.file) {
+        sendMessageBlocks.push({
+          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+          from: payload.from,
+          timestamp: Date.now() + sendMessageBlocks.length,
+          type: "file",
+          messageId: messageId,
+          payload: payload.file
+        });
+      }
+      if (payload.reply) {
+        sendMessageBlocks.push({
+          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+          from: payload.from,
+          timestamp: Date.now() + sendMessageBlocks.length,
+          type: "reply",
+          messageId: messageId,
+          payload: payload.reply.id
+        });
+      }
+      if (payload.location) {
+        sendMessageBlocks.push({
+          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+          from: payload.from,
+          timestamp: Date.now() + sendMessageBlocks.length,
+          type: "location",
+          messageId: messageId,
+          payload: payload.location
+        });
+      }
+      if (payload.audio) {
+        sendMessageBlocks.push({
+          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+          from: payload.from,
+          timestamp: Date.now() + sendMessageBlocks.length,
+          type: "audio",
+          messageId: messageId,
+          payload: payload.audio
+        });
+      }
+      // if (!!payload.upvote) {
+      //     sendMessageBlocks.push({
+      //         id: randomString(salt),
+      //         from: payload.from,
+      //         timestamp: Date.now() + sendMessageBlocks.length,
+      //         type: 'upvote',
+      //         messageId: messageId,
+      //         payload: payload.upvote,
+      //     })
+      // }
+
+      return sendMessageBlocks;
+    },
+    createPod: function createPod(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "setPodId",
+        payload: payload.id
+      }].concat(_toConsumableArray(payload.members.map(function (userId) {
+        return {
+          id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+          from: payload.from,
+          timestamp: Date.now(),
+          type: "addUser",
+          payload: userId
+        };
+      })), [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "setPodName",
+        payload: payload.name
+      }, {
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "setClone",
+        payload: !!payload.clone
+      }]);
+    },
+    deleteMessage: function deleteMessage(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "delete",
+        messageId: payload.id
+      }];
+    },
+    upvoteMessage: function upvoteMessage(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "upvote",
+        messageId: payload.messageId
+      }];
+    }
+  };
+};
+
+/***/ }),
+
+/***/ 85026:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   c: () => (/* binding */ compiler),
+/* harmony export */   e: () => (/* binding */ blockBuilders)
+/* harmony export */ });
+/* harmony import */ var _cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(94735);
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+
+// userProfile = {
+//     id: 'abc',
+//     connectionId: 'def',
+//     pastConnections: ['def', 'ghi'],
+//     displayName: 'jkl',
+//     avatar: 'https://source.unsplash.com/random/400x200?avatar',
+//     agreedToTerms: ['2.0.0'],
+//     settings: {
+//         inAppNotification: true,
+//         browserNotification: false
+//     }
+// }
+
+var mutations = {
+  updateId: "UPDATE_ID",
+  updateConnectionId: "UPDATE_CONNECTION_ID",
+  updateDisplayName: "UPDATE_DISPLAY_NAME",
+  updateAvatar: "image",
+  // there is an explicit rule for this value to be fetched from storage as an object see blockchain.js
+  updateAgreedToTerms: "UPDATE_AGREED_TO_TERMS",
+  updateInAppNotification: "UPDATE_IN_APP_NOTIFICATION",
+  updateBrowserNotification: "UPDATE_BROWSER_NOTIFICATION",
+  updatePeerjsServer: "UPDATE_PEERJS_SERVER",
+  updateEncryptionSignature: "UPDATE_ENCRYPTION_SIGNATURE"
+};
+var compiler = function compiler(block, state) {
+  var _state$pastConnection;
+  if (!block) return state;
+  var type = block.type,
+    payload = block.payload;
+  switch (type) {
+    case mutations.updateId:
+      return _objectSpread(_objectSpread({}, state), {}, {
+        id: payload
+      });
+    case mutations.updateConnectionId:
+      return _objectSpread(_objectSpread({}, state), {}, {
+        connectionId: payload,
+        pastConnections: state.connectionId ? [].concat(_toConsumableArray((_state$pastConnection = state.pastConnections) !== null && _state$pastConnection !== void 0 ? _state$pastConnection : []), [state.connectionId]) : []
+      });
+    case mutations.updateDisplayName:
+      return _objectSpread(_objectSpread({}, state), {}, {
+        displayName: payload
+      });
+    case mutations.updateAvatar:
+      return _objectSpread(_objectSpread({}, state), {}, {
+        avatar: payload
+      });
+    case mutations.updateAgreedToTerms:
+      return _objectSpread(_objectSpread({}, state), {}, {
+        agreedToTerms: [].concat(_toConsumableArray(state.agreedToTerms || []), [payload])
+      });
+    case mutations.updateInAppNotification:
+      return _objectSpread(_objectSpread({}, state), {}, {
+        settings: _objectSpread(_objectSpread({}, state.settings), {}, {
+          inAppNotification: payload
+        })
+      });
+    case mutations.updateBrowserNotification:
+      return _objectSpread(_objectSpread({}, state), {}, {
+        settings: _objectSpread(_objectSpread({}, state.settings), {}, {
+          browserNotification: payload
+        })
+      });
+    case mutations.updatePeerjsServer:
+      return _objectSpread(_objectSpread({}, state), {}, {
+        peerjsServer: payload
+      });
+    case mutations.updateEncryptionSignature:
+      return _objectSpread(_objectSpread({}, state), {}, {
+        encryptionSignature: payload
+      });
+    default:
+      return state;
+  }
+};
+var blockBuilders = function blockBuilders() {
+  var salt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+  return {
+    updateId: function updateId(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "UPDATE_ID",
+        payload: payload.id
+      }];
+    },
+    updateConnectionId: function updateConnectionId(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "UPDATE_CONNECTION_ID",
+        payload: payload.connectionId
+      }];
+    },
+    updateDisplayName: function updateDisplayName(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "UPDATE_DISPLAY_NAME",
+        payload: payload.displayName
+      }];
+    },
+    updateAvatar: function updateAvatar(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "image",
+        payload: payload.avatar
+      }];
+    },
+    updateAgreedToTerms: function updateAgreedToTerms(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "UPDATE_AGREED_TO_TERMS",
+        payload: payload.agreedToTerms
+      }];
+    },
+    updateInAppNotification: function updateInAppNotification(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "UPDATE_IN_APP_NOTIFICATION",
+        payload: payload.inAppNotification
+      }];
+    },
+    updateBrowserNotification: function updateBrowserNotification(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "UPDATE_BROWSER_NOTIFICATION",
+        payload: payload.browserNotification
+      }];
+    },
+    updatePeerjsServer: function updatePeerjsServer(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "UPDATE_PEERJS_SERVER",
+        payload: payload.peerjsServer
+      }];
+    },
+    updateEncryptionSignature: function updateEncryptionSignature(payload) {
+      return [{
+        id: (0,_cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_0__/* .randomString */ .DU)(salt),
+        from: payload.from,
+        timestamp: Date.now(),
+        type: "UPDATE_ENCRYPTION_SIGNATURE",
+        payload: payload.encryptionSignature
+      }];
+    }
+  };
+};
+
+/***/ }),
+
+/***/ 94735:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DU: () => (/* binding */ randomString)
+/* harmony export */ });
+/* unused harmony exports CryptographyProvider, useCryptography */
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50318);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var js_sha3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31176);
+/* harmony import */ var js_sha3__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(js_sha3__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var chance__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(97677);
+/* harmony import */ var chance__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(chance__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(79218);
+/* harmony import */ var cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_3__);
+// create me a Cryptography class for creatting things like rsa keys and methods for encrypting and decrypting messages.
+
+// it should also have cryptogrphically random String generator for creating random strings for things like salt and iv
+
+// it should also have a method for hashing a string with sha256 and sha512
+
+/*
+const entropy = 'some user input pf random string';
+<CryptographgyProvider entropy={entropy}>
+</CryptographyProvider>
+
+
+// in some component
+
+const { random, md5Hash, sha256Hash, sha3_512Hash, chance } = useCryptography('some salt');
+const randomString = random('some more salt');
+const md5Hash = md5Hash('some string'); 
+const sha256Hash = sha256Hash('some string');
+const sha3_512Hash = sha3_512Hash('some string');
+*/
+
+/* 
+
+my methods for createing rsa keys and encrypting and decrypting messages
+
+// public key encryption
+export const generateKeyPair = async () => {
+  const keyPair = await window.crypto.subtle.generateKey(
+    {
+      name: 'RSA-OAEP',
+      modulusLength: 4096,
+      publicExponent: new Uint8Array([1, 0, 1]),
+      hash: 'SHA-256',
+    },
+    true,
+    ['encrypt', 'decrypt']
+  );
+
+  return { publicKey: keyPair.publicKey, privateKey: keyPair.privateKey };
+};
+
+function setClassPropsFromJson(json, instance) {
+  for (let prop in json) {
+    if (json.hasOwnProperty(prop)) {
+      instance[prop] = json[prop];
+    }
+  }
+  return instance;
+}
+
+export const deserializePublicKey = async (key) => {
+  const deSerializedublicKey = await window.crypto.subtle.importKey(
+    'jwk',
+    {
+      ...key,
+      kty: 'RSA'
+    },
+    {
+      name: 'RSA-OAEP',
+      hash: 'SHA-256',
+    },
+    true,
+    ['encrypt']
+  );
+
+  return setClassPropsFromJson(key, deSerializedublicKey)
+}
+
+export const deserializePrivateKey = async (key) => {
+  const deSerializedPrivateKey = await window.crypto.subtle.importKey(
+    'jwk',
+    {
+
+      ...key,
+      kty: 'RSA'
+    },
+    {
+      name: 'RSA-OAEP',
+      hash: 'SHA-256',
+    },
+    true,
+    ['decrypt']
+  );
+
+  return setClassPropsFromJson(key, deSerializedPrivateKey)
+
+}
+
+export const encrypt = async (message, publicKey) => {
+  const encodedMessage = new TextEncoder().encode(message);
+  const encrypted = await window.crypto.subtle.encrypt(
+    {
+      name: 'RSA-OAEP',
+      hash: 'SHA-256',
+    },
+    publicKey,
+    encodedMessage
+  ).catch((error) => {
+    console.log('error', error);
+  });
+
+  return btoa(String.fromCharCode(...new Uint8Array(encrypted)));
+};
+
+export const decrypt = async (encryptedMessage, privateKey, passphrase) => {
+  const buffer = Uint8Array.from(atob(encryptedMessage), c => c.charCodeAt(0));
+  try {
+    const decrypted = await window.crypto.subtle.decrypt(
+      {
+        name: 'RSA-OAEP',
+        hash: 'SHA-256',
+      },
+      privateKey,
+      buffer
+    );
+    const message = new TextDecoder().decode(decrypted);
+    return message;
+  } catch (error) {
+    console.log('error', error);
+    throw new Error('Unable to decrypt message. Incorrect passphrase.', error);
+  }
+};
+
+const getEncryptionMethods = async (userId, salt) => {
+  const keyPair = await generateKeyPair(userId, salt);
+
+  return {
+    encrypt: async (message) => {
+      return await encrypt(message, keyPair.publicKey);
+    },
+    decrypt: async (encryptedMessage) => {
+      return await decrypt(encryptedMessage, keyPair.privateKey, salt);
+    },
+  };
+};
+
+// Symmetric key encryption
+
+export const generateSymmetricKey = async () => {
+  const key = await window.crypto.subtle.generateKey(
+    {
+      name: 'AES-GCM',
+      length: 256, // can be  128, 192, or 256
+    },
+    true, // whether the key is extractable (i.e. can be used in exportKey)
+    ['encrypt', 'decrypt']
+  );
+
+  return key;
+};
+
+export const deserializeSymmetricKey = async (key) => {
+  const deSerializedSymmetricKey = await window.crypto.subtle.importKey(
+    'jwk',
+    {
+      ...key,
+      kty: 'oct'
+    },
+    {
+      name: 'AES-GCM',
+    },
+    true,
+    ['encrypt', 'decrypt']
+  );
+
+  return setClassPropsFromJson(key, deSerializedSymmetricKey)
+}
+
+export const encryptWithSymmetricKey = async (message, key) => {
+  const encodedMessage = new TextEncoder().encode(message);
+  const iv = window.crypto.getRandomValues(new Uint8Array(12)); // must be 12 bytes
+
+  const encrypted = await window.crypto.subtle.encrypt(
+    {
+      name: 'AES-GCM',
+      iv: iv,
+    },
+    key,
+    encodedMessage
+  ).catch((error) => {
+    console.log('error', error);
+  });
+
+  return {
+    ciphertext: btoa(String.fromCharCode(...new Uint8Array(encrypted))),
+    iv: btoa(String.fromCharCode(...new Uint8Array(iv))),
+  };
+};
+
+export const decryptWithSymmetricKey = async (encryptedData, key) => {
+  const { ciphertext, iv } = encryptedData;
+  const buffer = Uint8Array.from(atob(ciphertext), c => c.charCodeAt(0));
+  const ivBuffer = Uint8Array.from(atob(iv), c => c.charCodeAt(0));
+
+  try {
+    const decrypted = await window.crypto.subtle.decrypt(
+      {
+        name: 'AES-GCM',
+        iv: ivBuffer,
+      },
+      key,
+      buffer
+    );
+    const message = new TextDecoder().decode(decrypted);
+    return message;
+  } catch (error) {
+    throw new Error('Unable to decrypt message. Incorrect key.');
+  }
+};
+
+const getSymmetricKeyEncryptionMethods = async () => {
+  const key = await generateSymmetricKey();
+
+  return {
+    encrypt: async (message) => {
+      return await encryptWithSymmetricKey(message, key);
+    },
+    decrypt: async (encryptedMessage) => {
+      return await decryptWithSymmetricKey(encryptedMessage, key);
+    },
+  };
+};
+
+export { getEncryptionMethods, getSymmetricKeyEncryptionMethods };
+to export an initialised instance of chance to get things like animal()
+
+
+
+
+
+i want you to start by creating me the skeleton of the component and we will further define the further method definitions after.
+the methods for the encryption should be able to take in serialized encryptions keys like you see in the way its created.
+*/
+
+
+
+
+
+
+// Create Context
+var CryptographyContext = /*#__PURE__*/(/* unused pure expression or super */ null && (createContext(null)));
+
+// Cryptographically Random String Generator
+var randomString = function randomString() {
+  var additionalSalt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+  // Define the length of the random string
+  var randomStringLength = 16; // You can change this value to generate a longer or shorter string
+
+  // Generate a random array of uint8 values
+  var randomValues = crypto.getRandomValues(new Uint8Array(randomStringLength));
+
+  // Convert random values to hexadecimal string
+  var randomHex = Array.from(randomValues).map(function (_byte) {
+    return _byte.toString(16).padStart(2, "0");
+  }).join("");
+
+  // If additional salt is provided, concatenate it with the random string
+  var randomString = additionalSalt ? additionalSalt + randomHex : randomHex;
+  return randomString;
+};
+
+// // Usage:
+// const randomString = random('some more salt');
+// console.log(randomString);
+
+// CryptographyProvider Component
+var CryptographyProvider = (cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_3___default().CryptographyProvider);
+// export const CryptographyProvider = ({ entropy = "", children }) => {
+//   const [salt, setSalt] = useState("");
+//   const [chance, setChance] = useState(new Chance(salt));
+
+//   useEffect(() => {
+//     const updateSates = async () => {
+//       const newSalt = await sha256Hash(entropy);
+//       setSalt(newSalt);
+//       setChance(new Chance(newSalt));
+//     };
+//     updateSates();
+//   }, [entropy]);
+
+//   const random = (additionalSalt = "") => randomString(additionalSalt + salt);
+
+//   // Hashing Methods
+//   const sha256Hash = async (input) => {
+//     // // Ensure the input is a string
+//     // if (typeof inputString !== 'string') throw new Error('Input must be a string');
+
+//     const inputString = JSON.stringify(input);
+
+//     // Convert the string to an ArrayBuffer
+//     const encoder = new TextEncoder();
+//     const data = encoder.encode(inputString);
+
+//     // Hash the data
+//     const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+
+//     // Convert the result to a hexadecimal string
+//     const hashArray = Array.from(new Uint8Array(hashBuffer));
+//     const hashHex = hashArray
+//       .map((byte) => byte.toString(16).padStart(2, "0"))
+//       .join("");
+
+//     return hashHex;
+//   };
+
+//   // // Usage:
+//   // sha256Hash('some string')
+//   //     .then(hash => console.log(hash))
+//   //     .catch(error => console.error(error));
+
+//   const sha512Hash = async (input) => {
+//     // // Ensure the input is a string
+//     // if (typeof inputString !== 'string') throw new Error('Input must be a string');
+//     const inputString = JSON.stringify(input);
+
+//     // Convert the string to an ArrayBuffer
+//     const encoder = new TextEncoder();
+//     const data = encoder.encode(inputString);
+
+//     // Hash the data
+//     const hashBuffer = await crypto.subtle.digest("SHA-512", data);
+
+//     // Convert the result to a hexadecimal string
+//     const hashArray = Array.from(new Uint8Array(hashBuffer));
+//     const hashHex = hashArray
+//       .map((byte) => byte.toString(16).padStart(2, "0"))
+//       .join("");
+
+//     return hashHex;
+//   };
+
+//   // // Usage:
+//   // sha512Hash('some string')
+//   //     .then(hash => console.log(hash))
+//   //     .catch(error => console.error(error));
+
+//   const sha3_512Hash = async (input) => {
+//     // // Ensure the input is a string
+//     // if (typeof inputString !== 'string') throw new Error('Input must be a string');
+//     const inputString = JSON.stringify(input);
+
+//     // Hash the data
+//     const hashHex = sha3_512(inputString);
+
+//     return hashHex;
+//   };
+
+//   // // Usage:
+//   // sha3_512Hash('some string')
+//   //     .then(hash => console.log(hash))
+//   //     .catch(error => console.error(error));
+
+//   // RSA Key Generation and Encryption/Decryption Methods
+//   const generateKeyPair = async () => {
+//     try {
+//       const keyPair = await crypto.subtle.generateKey(
+//         {
+//           name: "RSA-OAEP",
+//           modulusLength: 4096, // Can be 1024, 2048, or 4096
+//           publicExponent: new Uint8Array([1, 0, 1]), // 65537 in bytes
+//           hash: "SHA-256", // Can be "SHA-1", "SHA-256", "SHA-384", or "SHA-512"
+//         },
+//         true, // Whether the key is extractable
+//         ["encrypt", "decrypt"], // Key usages
+//       );
+
+//       return {
+//         publicKey: keyPair.publicKey,
+//         privateKey: keyPair.privateKey,
+//       };
+//     } catch (error) {
+//       console.error("Error generating key pair:", error);
+//       throw error;
+//     }
+//   };
+
+//   // // Usage:
+//   // generateKeyPair('some salt')
+//   //     .then(keyPair => {
+//   //         console.log('Public Key:', keyPair.publicKey);
+//   //         console.log('Private Key:', keyPair.privateKey);
+//   //     })
+//   //     .catch(error => console.error(error));
+
+//   function setClassPropsFromJson(json, instance) {
+//     for (let prop in json) {
+//       if (json.hasOwnProperty(prop)) {
+//         instance[prop] = json[prop];
+//       }
+//     }
+//     return instance;
+//   }
+
+//   const deserializePublicKey = async (key) => {
+//     try {
+//       const publicKey = await crypto.subtle.importKey(
+//         "jwk", // Import format
+//         key, // The key in JWK format
+//         {
+//           name: "RSA-OAEP", // Algorithm name
+//           hash: "SHA-256", // Hash algorithm
+//         },
+//         true, // Extractable flag
+//         ["encrypt"], // Key usages
+//       );
+
+//       return setClassPropsFromJson(key, publicKey);
+//     } catch (error) {
+//       console.error("Error deserializing public key:", error);
+//       throw error;
+//     }
+//   };
+
+//   // // Usage:
+//   // const jwk = {
+//   //     kty: 'RSA',
+//   //     // ... other JWK properties
+//   // };
+
+//   // deserializePublicKey(jwk)
+//   //     .then(publicKey => console.log('Public Key:', publicKey))
+//   //     .catch(error => console.error(error));
+
+//   const deserializePrivateKey = async (key) => {
+//     try {
+//       const privateKey = await crypto.subtle.importKey(
+//         "jwk", // Import format
+//         key, // The key in JWK format
+//         {
+//           name: "RSA-OAEP", // Algorithm name
+//           hash: "SHA-256", // Hash algorithm
+//         },
+//         true, // Extractable flag
+//         ["decrypt"], // Key usages
+//       );
+
+//       return setClassPropsFromJson(key, privateKey);
+//     } catch (error) {
+//       console.error("Error deserializing private key:", error);
+//       throw error;
+//     }
+//   };
+
+//   // // Usage:
+//   // const jwk = {
+//   //     kty: 'RSA',
+//   //     // ... other JWK properties
+//   // };
+
+//   // deserializePrivateKey(jwk)
+//   //     .then(privateKey => console.log('Private Key:', privateKey))
+//   //     .catch(error => console.error(error));
+
+//   const encrypt = async (message, publicKey) => {
+//     const encodedMessage = new TextEncoder().encode(message);
+//     const encrypted = await window.crypto.subtle
+//       .encrypt(
+//         {
+//           name: "RSA-OAEP",
+//           hash: "SHA-256",
+//         },
+//         publicKey,
+//         encodedMessage,
+//       )
+//       .catch((error) => {
+//         console.log("error", error);
+//       });
+
+//     return btoa(String.fromCharCode(...new Uint8Array(encrypted)));
+//   };
+
+//   //   const message = 'Hello, World!';
+//   //     const publicKey;  // Assume this is obtained from your key generation or deserialization functions
+
+//   //     encrypt(message, publicKey)
+//   //         .then(encryptedMessage => {
+//   //             console.log('Encrypted Message:', encryptedMessage);
+//   //         })
+//   //         .catch(error => {
+//   //             console.error('Encryption Error:', error);
+//   //     });
+
+//   const decrypt = async (encryptedMessage, privateKey, passphrase) => {
+//     const buffer = Uint8Array.from(atob(encryptedMessage), (c) =>
+//       c.charCodeAt(0),
+//     );
+//     try {
+//       const decrypted = await window.crypto.subtle.decrypt(
+//         {
+//           name: "RSA-OAEP",
+//           hash: "SHA-256",
+//         },
+//         privateKey,
+//         buffer,
+//       );
+//       const message = new TextDecoder().decode(decrypted);
+//       return message;
+//     } catch (error) {
+//       console.log("error", error);
+//       throw new Error(
+//         "Unable to decrypt message. Incorrect passphrase.",
+//         error,
+//       );
+//     }
+//   };
+
+//   //       const encryptedMessage;  // Assume this is obtained from your encrypt function
+//   // const privateKey;  // Assume this is obtained from your key generation or deserialization functions
+
+//   // decrypt(encryptedMessage, privateKey)
+//   //     .then(decryptedMessage => {
+//   //         console.log('Decrypted Message:', decryptedMessage);
+//   //     })
+//   //     .catch(error => {
+//   //         console.error('Decryption Error:', error);
+//   //     });
+
+//   // Symmetric Key Generation and Encryption/Decryption Methods
+//   const generateSymmetricKey = async () => {
+//     const key = await window.crypto.subtle.generateKey(
+//       {
+//         name: "AES-GCM",
+//         length: 256, // can be  128, 192, or 256
+//       },
+//       true, // whether the key is extractable (i.e. can be used in exportKey)
+//       ["encrypt", "decrypt"],
+//     );
+
+//     return key;
+//   };
+
+//   const deserializeSymmetricKey = async (key) => {
+//     const deSerializedSymmetricKey = await window.crypto.subtle.importKey(
+//       "jwk",
+//       {
+//         ...key,
+//         kty: "oct",
+//       },
+//       {
+//         name: "AES-GCM",
+//       },
+//       true,
+//       ["encrypt", "decrypt"],
+//     );
+
+//     return setClassPropsFromJson(key, deSerializedSymmetricKey);
+//   };
+
+//   const encryptWithSymmetricKey = async (message, key) => {
+//     const encodedMessage = new TextEncoder().encode(message);
+//     const iv = window.crypto.getRandomValues(new Uint8Array(12)); // must be 12 bytes
+
+//     const encrypted = await window.crypto.subtle
+//       .encrypt(
+//         {
+//           name: "AES-GCM",
+//           iv: iv,
+//         },
+//         key,
+//         encodedMessage,
+//       )
+//       .catch((error) => {
+//         console.log("error", error);
+//       });
+
+//     return {
+//       ciphertext: btoa(String.fromCharCode(...new Uint8Array(encrypted))),
+//       iv: btoa(String.fromCharCode(...new Uint8Array(iv))),
+//     };
+//   };
+
+//   const decryptWithSymmetricKey = async (encryptedData, key) => {
+//     const { ciphertext, iv } = encryptedData;
+//     const buffer = Uint8Array.from(atob(ciphertext), (c) => c.charCodeAt(0));
+//     const ivBuffer = Uint8Array.from(atob(iv), (c) => c.charCodeAt(0));
+
+//     try {
+//       const decrypted = await window.crypto.subtle.decrypt(
+//         {
+//           name: "AES-GCM",
+//           iv: ivBuffer,
+//         },
+//         key,
+//         buffer,
+//       );
+//       const message = new TextDecoder().decode(decrypted);
+//       return message;
+//     } catch (error) {
+//       throw new Error("Unable to decrypt message. Incorrect key.");
+//     }
+//   };
+
+//   // Exported Methods Bundle
+//   const cryptographyMethods = {
+//     randomString,
+//     sha256Hash,
+//     sha512Hash,
+//     sha3_512Hash,
+//     generateKeyPair,
+//     deserializePublicKey,
+//     deserializePrivateKey,
+//     encrypt,
+//     decrypt,
+//     generateSymmetricKey,
+//     deserializeSymmetricKey,
+//     encryptWithSymmetricKey,
+//     decryptWithSymmetricKey,
+//     // Add more methods as needed
+//     chance,
+//   };
+
+//   return (
+//     <CryptographyContext.Provider value={cryptographyMethods}>
+//       {children}
+//     </CryptographyContext.Provider>
+//   );
+// };
+
+// Custom Hook to use Cryptography
+var useCryptography = function useCryptography() {
+  return useContext(CryptographyContext);
+};
+
+// Usage in some component
+/*
+const { 
+  random, 
+  sha256Hash, 
+  sha512Hash, 
+  generateKeyPair,
+  deserializePublicKey,
+  deserializePrivateKey,
+  encrypt,
+  decrypt,
+  generateSymmetricKey,
+  deserializeSymmetricKey,
+  encryptWithSymmetricKey,
+  decryptWithSymmetricKey,
+  chance
+} = useCryptography();
+*/
+
+/***/ }),
+
+/***/ 89091:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   QT: () => (/* binding */ deserializePublicKey),
+/* harmony export */   TZ: () => (/* binding */ generateKeyPair),
+/* harmony export */   Yc: () => (/* binding */ _decrypt),
+/* harmony export */   aq: () => (/* binding */ decryptWithSymmetricKey),
+/* harmony export */   eB: () => (/* binding */ deserializePrivateKey),
+/* harmony export */   eE: () => (/* binding */ encryptWithSymmetricKey),
+/* harmony export */   w: () => (/* binding */ _encrypt),
+/* harmony export */   yE: () => (/* binding */ generateSymmetricKey)
+/* harmony export */ });
+/* unused harmony exports deserializeSymmetricKey, getEncryptionMethods, getSymmetricKeyEncryptionMethods */
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+// public key encryption
+var generateKeyPair = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+    var keyPair;
+    return _regeneratorRuntime().wrap(function _callee$(_context) {
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 2;
+          return window.crypto.subtle.generateKey({
+            name: "RSA-OAEP",
+            modulusLength: 4096,
+            publicExponent: new Uint8Array([1, 0, 1]),
+            hash: "SHA-256"
+          }, true, ["encrypt", "decrypt"]);
+        case 2:
+          keyPair = _context.sent;
+          return _context.abrupt("return", {
+            publicKey: keyPair.publicKey,
+            privateKey: keyPair.privateKey
+          });
+        case 4:
+        case "end":
+          return _context.stop();
+      }
+    }, _callee);
+  }));
+  return function generateKeyPair() {
+    return _ref.apply(this, arguments);
+  };
+}();
+function setClassPropsFromJson(json, instance) {
+  for (var prop in json) {
+    if (json.hasOwnProperty(prop)) {
+      instance[prop] = json[prop];
+    }
+  }
+  return instance;
+}
+var deserializePublicKey = /*#__PURE__*/function () {
+  var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(key) {
+    var deSerializedublicKey;
+    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
+        case 0:
+          _context2.next = 2;
+          return window.crypto.subtle.importKey("jwk", _objectSpread(_objectSpread({}, key), {}, {
+            kty: "RSA"
+          }), {
+            name: "RSA-OAEP",
+            hash: "SHA-256"
+          }, true, ["encrypt"]);
+        case 2:
+          deSerializedublicKey = _context2.sent;
+          return _context2.abrupt("return", setClassPropsFromJson(key, deSerializedublicKey));
+        case 4:
+        case "end":
+          return _context2.stop();
+      }
+    }, _callee2);
+  }));
+  return function deserializePublicKey(_x) {
+    return _ref2.apply(this, arguments);
+  };
+}();
+var deserializePrivateKey = /*#__PURE__*/function () {
+  var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(key) {
+    var deSerializedPrivateKey;
+    return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+      while (1) switch (_context3.prev = _context3.next) {
+        case 0:
+          _context3.next = 2;
+          return window.crypto.subtle.importKey("jwk", _objectSpread(_objectSpread({}, key), {}, {
+            kty: "RSA"
+          }), {
+            name: "RSA-OAEP",
+            hash: "SHA-256"
+          }, true, ["decrypt"]);
+        case 2:
+          deSerializedPrivateKey = _context3.sent;
+          return _context3.abrupt("return", setClassPropsFromJson(key, deSerializedPrivateKey));
+        case 4:
+        case "end":
+          return _context3.stop();
+      }
+    }, _callee3);
+  }));
+  return function deserializePrivateKey(_x2) {
+    return _ref3.apply(this, arguments);
+  };
+}();
+var _encrypt = /*#__PURE__*/function () {
+  var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(message, publicKey) {
+    var encodedMessage, encrypted;
+    return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+      while (1) switch (_context4.prev = _context4.next) {
+        case 0:
+          encodedMessage = new TextEncoder().encode(message);
+          _context4.next = 3;
+          return window.crypto.subtle.encrypt({
+            name: "RSA-OAEP",
+            hash: "SHA-256"
+          }, publicKey, encodedMessage)["catch"](function (error) {
+            console.log("error", error);
+          });
+        case 3:
+          encrypted = _context4.sent;
+          return _context4.abrupt("return", btoa(String.fromCharCode.apply(String, _toConsumableArray(new Uint8Array(encrypted)))));
+        case 5:
+        case "end":
+          return _context4.stop();
+      }
+    }, _callee4);
+  }));
+  return function encrypt(_x3, _x4) {
+    return _ref4.apply(this, arguments);
+  };
+}();
+
+var _decrypt = /*#__PURE__*/function () {
+  var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5(encryptedMessage, privateKey, passphrase) {
+    var buffer, decrypted, message;
+    return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+      while (1) switch (_context5.prev = _context5.next) {
+        case 0:
+          buffer = Uint8Array.from(atob(encryptedMessage), function (c) {
+            return c.charCodeAt(0);
+          });
+          _context5.prev = 1;
+          _context5.next = 4;
+          return window.crypto.subtle.decrypt({
+            name: "RSA-OAEP",
+            hash: "SHA-256"
+          }, privateKey, buffer);
+        case 4:
+          decrypted = _context5.sent;
+          message = new TextDecoder().decode(decrypted);
+          return _context5.abrupt("return", message);
+        case 9:
+          _context5.prev = 9;
+          _context5.t0 = _context5["catch"](1);
+          console.log("error", _context5.t0);
+          throw new Error("Unable to decrypt message. Incorrect passphrase.", _context5.t0);
+        case 13:
+        case "end":
+          return _context5.stop();
+      }
+    }, _callee5, null, [[1, 9]]);
+  }));
+  return function decrypt(_x5, _x6, _x7) {
+    return _ref5.apply(this, arguments);
+  };
+}();
+
+var getEncryptionMethods = /*#__PURE__*/(/* unused pure expression or super */ null && (function () {
+  var _ref6 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee8(userId, salt) {
+    var keyPair;
+    return _regeneratorRuntime().wrap(function _callee8$(_context8) {
+      while (1) switch (_context8.prev = _context8.next) {
+        case 0:
+          _context8.next = 2;
+          return generateKeyPair(userId, salt);
+        case 2:
+          keyPair = _context8.sent;
+          return _context8.abrupt("return", {
+            encrypt: function () {
+              var _encrypt2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(message) {
+                return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+                  while (1) switch (_context6.prev = _context6.next) {
+                    case 0:
+                      _context6.next = 2;
+                      return _encrypt(message, keyPair.publicKey);
+                    case 2:
+                      return _context6.abrupt("return", _context6.sent);
+                    case 3:
+                    case "end":
+                      return _context6.stop();
+                  }
+                }, _callee6);
+              }));
+              function encrypt(_x10) {
+                return _encrypt2.apply(this, arguments);
+              }
+              return encrypt;
+            }(),
+            decrypt: function () {
+              var _decrypt2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7(encryptedMessage) {
+                return _regeneratorRuntime().wrap(function _callee7$(_context7) {
+                  while (1) switch (_context7.prev = _context7.next) {
+                    case 0:
+                      _context7.next = 2;
+                      return _decrypt(encryptedMessage, keyPair.privateKey, salt);
+                    case 2:
+                      return _context7.abrupt("return", _context7.sent);
+                    case 3:
+                    case "end":
+                      return _context7.stop();
+                  }
+                }, _callee7);
+              }));
+              function decrypt(_x11) {
+                return _decrypt2.apply(this, arguments);
+              }
+              return decrypt;
+            }()
+          });
+        case 4:
+        case "end":
+          return _context8.stop();
+      }
+    }, _callee8);
+  }));
+  return function getEncryptionMethods(_x8, _x9) {
+    return _ref6.apply(this, arguments);
+  };
+}()));
+
+// Symmetric key encryption
+
+var generateSymmetricKey = /*#__PURE__*/function () {
+  var _ref7 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9() {
+    var key;
+    return _regeneratorRuntime().wrap(function _callee9$(_context9) {
+      while (1) switch (_context9.prev = _context9.next) {
+        case 0:
+          _context9.next = 2;
+          return window.crypto.subtle.generateKey({
+            name: "AES-GCM",
+            length: 256 // can be  128, 192, or 256
+          }, true,
+          // whether the key is extractable (i.e. can be used in exportKey)
+          ["encrypt", "decrypt"]);
+        case 2:
+          key = _context9.sent;
+          return _context9.abrupt("return", key);
+        case 4:
+        case "end":
+          return _context9.stop();
+      }
+    }, _callee9);
+  }));
+  return function generateSymmetricKey() {
+    return _ref7.apply(this, arguments);
+  };
+}();
+var deserializeSymmetricKey = /*#__PURE__*/(/* unused pure expression or super */ null && (function () {
+  var _ref8 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee10(key) {
+    var deSerializedSymmetricKey;
+    return _regeneratorRuntime().wrap(function _callee10$(_context10) {
+      while (1) switch (_context10.prev = _context10.next) {
+        case 0:
+          _context10.next = 2;
+          return window.crypto.subtle.importKey("jwk", _objectSpread(_objectSpread({}, key), {}, {
+            kty: "oct"
+          }), {
+            name: "AES-GCM"
+          }, true, ["encrypt", "decrypt"]);
+        case 2:
+          deSerializedSymmetricKey = _context10.sent;
+          return _context10.abrupt("return", setClassPropsFromJson(key, deSerializedSymmetricKey));
+        case 4:
+        case "end":
+          return _context10.stop();
+      }
+    }, _callee10);
+  }));
+  return function deserializeSymmetricKey(_x12) {
+    return _ref8.apply(this, arguments);
+  };
+}()));
+var encryptWithSymmetricKey = /*#__PURE__*/function () {
+  var _ref9 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee11(message, key) {
+    var encodedMessage, iv, encrypted;
+    return _regeneratorRuntime().wrap(function _callee11$(_context11) {
+      while (1) switch (_context11.prev = _context11.next) {
+        case 0:
+          encodedMessage = new TextEncoder().encode(message);
+          iv = window.crypto.getRandomValues(new Uint8Array(12)); // must be 12 bytes
+          _context11.next = 4;
+          return window.crypto.subtle.encrypt({
+            name: "AES-GCM",
+            iv: iv
+          }, key, encodedMessage)["catch"](function (error) {
+            console.log("error", error);
+          });
+        case 4:
+          encrypted = _context11.sent;
+          return _context11.abrupt("return", {
+            ciphertext: btoa(String.fromCharCode.apply(String, _toConsumableArray(new Uint8Array(encrypted)))),
+            iv: btoa(String.fromCharCode.apply(String, _toConsumableArray(new Uint8Array(iv))))
+          });
+        case 6:
+        case "end":
+          return _context11.stop();
+      }
+    }, _callee11);
+  }));
+  return function encryptWithSymmetricKey(_x13, _x14) {
+    return _ref9.apply(this, arguments);
+  };
+}();
+var decryptWithSymmetricKey = /*#__PURE__*/function () {
+  var _ref10 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee12(encryptedData, key) {
+    var ciphertext, iv, buffer, ivBuffer, decrypted, message;
+    return _regeneratorRuntime().wrap(function _callee12$(_context12) {
+      while (1) switch (_context12.prev = _context12.next) {
+        case 0:
+          ciphertext = encryptedData.ciphertext, iv = encryptedData.iv;
+          buffer = Uint8Array.from(atob(ciphertext), function (c) {
+            return c.charCodeAt(0);
+          });
+          ivBuffer = Uint8Array.from(atob(iv), function (c) {
+            return c.charCodeAt(0);
+          });
+          _context12.prev = 3;
+          _context12.next = 6;
+          return window.crypto.subtle.decrypt({
+            name: "AES-GCM",
+            iv: ivBuffer
+          }, key, buffer);
+        case 6:
+          decrypted = _context12.sent;
+          message = new TextDecoder().decode(decrypted);
+          return _context12.abrupt("return", message);
+        case 11:
+          _context12.prev = 11;
+          _context12.t0 = _context12["catch"](3);
+          throw new Error("Unable to decrypt message. Incorrect key.");
+        case 14:
+        case "end":
+          return _context12.stop();
+      }
+    }, _callee12, null, [[3, 11]]);
+  }));
+  return function decryptWithSymmetricKey(_x15, _x16) {
+    return _ref10.apply(this, arguments);
+  };
+}();
+var getSymmetricKeyEncryptionMethods = /*#__PURE__*/(/* unused pure expression or super */ null && (function () {
+  var _ref11 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee15() {
+    var key;
+    return _regeneratorRuntime().wrap(function _callee15$(_context15) {
+      while (1) switch (_context15.prev = _context15.next) {
+        case 0:
+          _context15.next = 2;
+          return generateSymmetricKey();
+        case 2:
+          key = _context15.sent;
+          return _context15.abrupt("return", {
+            encrypt: function () {
+              var _encrypt3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee13(message) {
+                return _regeneratorRuntime().wrap(function _callee13$(_context13) {
+                  while (1) switch (_context13.prev = _context13.next) {
+                    case 0:
+                      _context13.next = 2;
+                      return encryptWithSymmetricKey(message, key);
+                    case 2:
+                      return _context13.abrupt("return", _context13.sent);
+                    case 3:
+                    case "end":
+                      return _context13.stop();
+                  }
+                }, _callee13);
+              }));
+              function encrypt(_x17) {
+                return _encrypt3.apply(this, arguments);
+              }
+              return encrypt;
+            }(),
+            decrypt: function () {
+              var _decrypt3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee14(encryptedMessage) {
+                return _regeneratorRuntime().wrap(function _callee14$(_context14) {
+                  while (1) switch (_context14.prev = _context14.next) {
+                    case 0:
+                      _context14.next = 2;
+                      return decryptWithSymmetricKey(encryptedMessage, key);
+                    case 2:
+                      return _context14.abrupt("return", _context14.sent);
+                    case 3:
+                    case "end":
+                      return _context14.stop();
+                  }
+                }, _callee14);
+              }));
+              function decrypt(_x18) {
+                return _decrypt3.apply(this, arguments);
+              }
+              return decrypt;
+            }()
+          });
+        case 4:
+        case "end":
+          return _context15.stop();
+      }
+    }, _callee15);
+  }));
+  return function getSymmetricKeyEncryptionMethods() {
+    return _ref11.apply(this, arguments);
+  };
+}()));
+
+
+/***/ }),
+
+/***/ 29535:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   hN: () => (/* binding */ useNotification),
+/* harmony export */   n: () => (/* binding */ SnackbarProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50318);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7514);
+/* harmony import */ var _mui_icons_material_Close__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(39781);
+/* harmony import */ var _mui_material_IconButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(11641);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(71468);
+/* harmony import */ var _blockchain_Blockchain__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(34431);
+/* harmony import */ var _blockchain_chains_profileChain__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(85026);
+
+
+
+
+
+
+
+var SnackbarProvider = function SnackbarProvider(_ref) {
+  var children = _ref.children;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(notistack__WEBPACK_IMPORTED_MODULE_1__/* .SnackbarProvider */ .n, {
+    maxSnack: 3,
+    preventDuplicate: true,
+    anchorOrigin: {
+      vertical: "top",
+      horizontal: "center"
+    },
+    autoHideDuration: 2000,
+    action: function action(snackbarId) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A, {
+        "aria-label": "delete",
+        onClick: function onClick() {
+          return (0,notistack__WEBPACK_IMPORTED_MODULE_1__/* .closeSnackbar */ .mk)(snackbarId);
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material_Close__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A, {
+        style: {
+          color: "#fff"
+        }
+      }));
+    }
+  }, children);
+};
+var useNotification = function useNotification() {
+  var _compiledProfile$sett, _compiledProfile$sett2;
+  var _useSnackbar = (0,notistack__WEBPACK_IMPORTED_MODULE_1__/* .useSnackbar */ .dh)(),
+    enqueueSnackbar = _useSnackbar.enqueueSnackbar;
+  var storedBlockchain = (0,react_redux__WEBPACK_IMPORTED_MODULE_6__/* .useSelector */ .d4)(function (state) {
+    return state.userProfile.blockchain;
+  });
+  var _useBlockchain = (0,_blockchain_Blockchain__WEBPACK_IMPORTED_MODULE_2__/* .useBlockchain */ .o)({
+      compiler: _blockchain_chains_profileChain__WEBPACK_IMPORTED_MODULE_3__/* .compiler */ .c,
+      blockchain: storedBlockchain
+    }),
+    compiledProfile = _useBlockchain.compiledBlockchain;
+  var storedInAppNotification = compiledProfile === null || compiledProfile === void 0 || (_compiledProfile$sett = compiledProfile.settings) === null || _compiledProfile$sett === void 0 ? void 0 : _compiledProfile$sett.inAppNotification;
+  var storedBrowserNotification = compiledProfile === null || compiledProfile === void 0 || (_compiledProfile$sett2 = compiledProfile.settings) === null || _compiledProfile$sett2 === void 0 ? void 0 : _compiledProfile$sett2.browserNotification;
+
+  // const storedInAppNotification = useSelector(state => state.userProfile.inAppNotification);
+  // const storedBrowserNotification = useSelector(state => state.userProfile.browserNotification);
+
+  return function (message) {
+    for (var _len = arguments.length, props = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      props[_key - 1] = arguments[_key];
+    }
+    // Check if the browser supports notifications
+    console.log({
+      storedInAppNotification: storedInAppNotification,
+      storedBrowserNotification: storedBrowserNotification,
+      Notification: window.Notification,
+      hidden: document.hidden,
+      message: message,
+      props: props
+    });
+    try {
+      var _window$Notification, _window$Notification2, _window$Notification3, _window$Notification4;
+      if (storedBrowserNotification && !("Notification" in window) || typeof window.Notification === "undefined") {
+        alert("This browser does not support desktop notification");
+      }
+
+      // Check if permission is already granted
+      else if (((_window$Notification = window.Notification) === null || _window$Notification === void 0 ? void 0 : _window$Notification.permission) === "granted") {
+        if (document.hidden) {
+          // If it's okay, let's create a notification
+          if (storedBrowserNotification) {
+            var notification = new window.Notification(message);
+          }
+        }
+      }
+
+      // Check if permission is already granted
+      else if (((_window$Notification2 = window.Notification) === null || _window$Notification2 === void 0 ? void 0 : _window$Notification2.permission) === "denied") {
+        // If it's okay, let's create a notification
+        if (storedInAppNotification) {
+          enqueueSnackbar.apply(void 0, [message].concat(props));
+        }
+      }
+
+      // Otherwise, we need to ask the user for permission
+      else if (storedBrowserNotification && (((_window$Notification3 = window.Notification) === null || _window$Notification3 === void 0 ? void 0 : _window$Notification3.permission) !== "denied" || ((_window$Notification4 = window.Notification) === null || _window$Notification4 === void 0 ? void 0 : _window$Notification4.permission) === "default")) {
+        var _window$Notification5;
+        (_window$Notification5 = window.Notification) === null || _window$Notification5 === void 0 || _window$Notification5.requestPermission(function (permission) {
+          // If the user accepts, let's create a notification
+          if (permission === "granted") {
+            var _notification = new window.Notification(message);
+          }
+        });
+      }
+      if (storedInAppNotification || props[0].insist) {
+        enqueueSnackbar.apply(void 0, [message].concat(props));
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  };
+};
+
+
+/***/ }),
+
+/***/ 7212:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ PeerProvider),
+/* harmony export */   y: () => (/* binding */ PeerContext)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50318);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(71468);
+/* harmony import */ var _redux_slices_userProfileSlice__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14279);
+/* harmony import */ var _blockchain_Blockchain__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(34431);
+/* harmony import */ var _blockchain_chains_profileChain__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(85026);
+/* harmony import */ var _encryption_Encryption__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(89091);
+/* harmony import */ var peerjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(24102);
+/* harmony import */ var chance__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(97677);
+/* harmony import */ var chance__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(chance__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _cryptography_Cryptography__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(94735);
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+var chance = new (chance__WEBPACK_IMPORTED_MODULE_4___default())();
+var PeerContext = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)();
+var peer = null;
+var setPeer = function setPeer(newState) {
+  return peer = newState;
+};
+var pendingCallbacks = [];
+var setPendingCallbacks = function setPendingCallbacks(newState) {
+  return pendingCallbacks = newState;
+};
+var connections = {};
+var setConnections = function setConnections(newState) {
+  return connections = newState;
+};
+var calls = [];
+var setCalls = function setCalls(newState) {
+  return calls = newState;
+};
+var streams = [];
+var setStreams = function setStreams(newState) {
+  return streams = newState;
+};
+function EE(fn, context, once) {
+  this.fn = fn;
+  this.context = context;
+  this.once = once || false;
+  this.push = function () {};
+}
+function PeerProvider(_ref) {
+  var _compiledProfile$agre;
+  var children = _ref.children,
+    appiSchema = _ref.appiSchema,
+    onConnection = _ref.onConnection,
+    managedState = _ref.managedState;
+  // const [peer, setPeer] = useState(null);
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(chance.hash()),
+    _useState2 = _slicedToArray(_useState, 2),
+    peerHash = _useState2[0],
+    setPeerHash = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState4 = _slicedToArray(_useState3, 2),
+    activeConnections = _useState4[0],
+    setActiveConnections = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState6 = _slicedToArray(_useState5, 2),
+    peerEncryptionKeys = _useState6[0],
+    setPeerEncryptionKeys = _useState6[1];
+  // const [connections, setConnections] = useState({});
+  // const [calls, setCalls] = useState([]);
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(chance.hash()),
+    _useState8 = _slicedToArray(_useState7, 2),
+    callsHash = _useState8[0],
+    setCallsHash = _useState8[1];
+  // const [streams, setStreams] = useState([]);
+
+  var storedBlockchain = (0,react_redux__WEBPACK_IMPORTED_MODULE_6__/* .useSelector */ .d4)(function (state) {
+    return state.userProfile.blockchain;
+  });
+  var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_6__/* .useDispatch */ .wA)();
+  var addToBlockchainDispatch = function addToBlockchainDispatch(podId, blocks, block, storage) {
+    return dispatch((0,_redux_slices_userProfileSlice__WEBPACK_IMPORTED_MODULE_1__/* .addToBlockchain */ .XE)({
+      podId: podId,
+      blocks: blocks,
+      block: block,
+      storage: storage,
+      append: true
+    }));
+  };
+  var _useBlockchain = (0,_blockchain_Blockchain__WEBPACK_IMPORTED_MODULE_2__/* .useBlockchain */ .o)({
+      compiler: _blockchain_chains_profileChain__WEBPACK_IMPORTED_MODULE_3__/* .compiler */ .c,
+      blockchain: storedBlockchain,
+      dispatch: addToBlockchainDispatch
+    }),
+    compiledProfile = _useBlockchain.compiledBlockchain,
+    addBlocksToProfile = _useBlockchain.addBlocks;
+  var storedPeerId = compiledProfile.connectionId;
+  var agreedToTerms = (_compiledProfile$agre = compiledProfile.agreedToTerms) === null || _compiledProfile$agre === void 0 ? void 0 : _compiledProfile$agre.length;
+
+  // const storedPeerId = useSelector((state) => state.userProfile.connectionId);
+  // const agreedToTerms = useSelector((state) => state.userProfile.agreedToTerms?.length);
+  // const dispatch = useDispatch();
+  // const setPeerId = (peerId) => console.log('setPeerId', peerId) && dispatch(updatePeerId(peerId));
+
+  var setPeerId = function setPeerId(peerId) {
+    var newBlocks = _toConsumableArray((0,_blockchain_chains_profileChain__WEBPACK_IMPORTED_MODULE_3__/* .blockBuilders */ .e)().updateConnectionId({
+      from: storedPeerId,
+      connectionId: peerId
+    }));
+
+    // setPeerHash(chance.hash());
+    // setTimeout(() => setPeerHash(chance.hash()), 1000);
+    addBlocksToProfile(newBlocks);
+  };
+  var encryptionKeys = (0,react_redux__WEBPACK_IMPORTED_MODULE_6__/* .useSelector */ .d4)(function (state) {
+    return state.encryption;
+  });
+  var peerOnDataHandler = function peerOnDataHandler(data, connection) {
+    return handleConnectionDataWithManagedState(connection, managedState, data);
+  };
+  var peerConnectionHandler = function peerConnectionHandler(connection) {
+    // const newListener = data => peerOnDataHandler(data, connection);
+    // const newListener = (data) => new EE(data => peerOnDataHandler(data, connection))
+    try {
+      connection.off("data");
+    } catch (err) {
+      console.log("error removing data listener", err);
+    }
+    connection.on("data", function (data) {
+      return peerOnDataHandler(data, connection);
+    });
+    if (peer) {
+      try {
+        peer.off("connection");
+      } catch (err) {
+        console.log("error peer connection data listener", err);
+      }
+      try {
+        peer.off("call");
+      } catch (err) {
+        console.log("error peer connection call listener", err);
+      }
+      peer.on("connection", function (connection) {
+        console.log("new connection");
+        connection.on("close", function (connection) {
+          var _calls$find;
+          console.log("peer closed", connection);
+          setConnections(function (connections) {
+            var newConnections = _objectSpread({}, connections);
+            delete newConnections[connection === null || connection === void 0 ? void 0 : connection.peer];
+            return newConnections;
+          });
+          setActiveConnections(Object.keys(connections).filter(function (c) {
+            return c !== (connection === null || connection === void 0 ? void 0 : connection.peer);
+          }));
+          var remoteStreamId = (_calls$find = calls.find(function (call) {
+            return call.peer !== (connection === null || connection === void 0 ? void 0 : connection.peer);
+          })) === null || _calls$find === void 0 || (_calls$find = _calls$find._remoteStream) === null || _calls$find === void 0 ? void 0 : _calls$find.id;
+          setCalls(calls.filter(function (call) {
+            return call.peer !== (connection === null || connection === void 0 ? void 0 : connection.peer);
+          }));
+          setCallsHash(chance.hash());
+          // setPeerHash(chance.hash());
+        });
+        onConnection(connection, sendMessageWithCallback, managedState, Object.keys(connections).filter(function (c) {
+          return c !== (connection === null || connection === void 0 ? void 0 : connection.peer);
+        }));
+        setConnections(_objectSpread(_objectSpread({}, connections), {}, _defineProperty({}, connection.peer, connection)));
+        setActiveConnections([].concat(_toConsumableArray(Object.keys(connections)), [connection.peer]));
+        // setPeerHash(chance.hash());
+      });
+      peer.on("call", /*#__PURE__*/function () {
+        var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(call) {
+          return _regeneratorRuntime().wrap(function _callee$(_context) {
+            while (1) switch (_context.prev = _context.next) {
+              case 0:
+                console.log("call received", call);
+                call.on("stream", function (stream) {
+                  console.log("stream received from remote", stream);
+                  // setStreams((streams) => {
+                  //     // do not add stream if it is already set
+                  //     if (streams.find((s) => s.id === stream.id)) {
+                  //         return streams;
+                  //     }
+                  //     return [...streams, stream];
+                  // });
+                });
+                call.on("close", function () {
+                  endCall(call.peer);
+                });
+                setCalls([].concat(_toConsumableArray(calls), [call]));
+                setCallsHash(chance.hash());
+              case 5:
+              case "end":
+                return _context.stop();
+            }
+          }, _callee);
+        }));
+        return function (_x) {
+          return _ref2.apply(this, arguments);
+        };
+      }());
+    }
+  };
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var activeConnectionsToManage = activeConnections.map(function (c) {
+      return connections[c];
+    });
+    activeConnectionsToManage.forEach(function (connection) {
+      // const newListener = new EE(data => peerOnDataHandler(data, connection))
+      // connection.close();
+      // connectToPeer(connection.peer)
+      // debugger;
+      // console.log('>>>>>> setting data handler')
+      // connection.off('data', data => peerOnDataHandler(data, connection));
+      // connection.on('data', data => peerOnDataHandler(data, connection));
+      // if (connection._events) {
+      //     connection._events.data = newListener;
+      // }
+
+      // const newListener = data => peerOnDataHandler(data, connection);
+      // connection.off('data', newListener);
+      // connection.on('data', newListener);
+      peerConnectionHandler(connection);
+    });
+    // // activeConnections.forEach(peerId => connectToPeer(peerId))
+  }, [managedState, activeConnections, callsHash, peerHash]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var deserializedEncryptionKeys = /*#__PURE__*/function () {
+      var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+        var keyPairs;
+        return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+          while (1) switch (_context3.prev = _context3.next) {
+            case 0:
+              _context3.next = 2;
+              return Promise.all(Object.keys(encryptionKeys).map( /*#__PURE__*/function () {
+                var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(userId) {
+                  var _encryptionKeys$userI, privateKey, remotePublicKey, symmetricKey, established, deserializedPrivateKey, deserializedRemotePublicKey, deserializedSymmetricKey, setClassPropsFromJson;
+                  return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+                    while (1) switch (_context2.prev = _context2.next) {
+                      case 0:
+                        setClassPropsFromJson = function _setClassPropsFromJso(json, instance) {
+                          for (var prop in json) {
+                            if (json.hasOwnProperty(prop)) {
+                              instance[prop] = json[prop];
+                            }
+                          }
+                          return instance;
+                        };
+                        _encryptionKeys$userI = encryptionKeys[userId], privateKey = _encryptionKeys$userI.privateKey, remotePublicKey = _encryptionKeys$userI.remotePublicKey, symmetricKey = _encryptionKeys$userI.symmetricKey, established = _encryptionKeys$userI.established;
+                        _context2.t0 = privateKey;
+                        if (!_context2.t0) {
+                          _context2.next = 7;
+                          break;
+                        }
+                        _context2.next = 6;
+                        return window.crypto.subtle.importKey("jwk", _objectSpread(_objectSpread({}, privateKey), {}, {
+                          kty: "RSA"
+                        }), {
+                          name: "RSA-OAEP",
+                          hash: "SHA-256"
+                        }, true, ["decrypt"]);
+                      case 6:
+                        _context2.t0 = _context2.sent;
+                      case 7:
+                        deserializedPrivateKey = _context2.t0;
+                        _context2.t1 = remotePublicKey;
+                        if (!_context2.t1) {
+                          _context2.next = 13;
+                          break;
+                        }
+                        _context2.next = 12;
+                        return window.crypto.subtle.importKey("jwk", _objectSpread(_objectSpread({}, remotePublicKey), {}, {
+                          kty: "RSA"
+                        }), {
+                          name: "RSA-OAEP",
+                          hash: "SHA-256"
+                        }, true, ["encrypt"]);
+                      case 12:
+                        _context2.t1 = _context2.sent;
+                      case 13:
+                        deserializedRemotePublicKey = _context2.t1;
+                        _context2.t2 = symmetricKey;
+                        if (!_context2.t2) {
+                          _context2.next = 19;
+                          break;
+                        }
+                        _context2.next = 18;
+                        return window.crypto.subtle.importKey("jwk", _objectSpread(_objectSpread({}, symmetricKey), {}, {
+                          kty: "oct"
+                        }), {
+                          name: "AES-GCM",
+                          length: 256
+                        }, true, ["encrypt", "decrypt"]);
+                      case 18:
+                        _context2.t2 = _context2.sent;
+                      case 19:
+                        deserializedSymmetricKey = _context2.t2;
+                        return _context2.abrupt("return", {
+                          userId: userId,
+                          privateKey: setClassPropsFromJson(privateKey, deserializedPrivateKey),
+                          // {...deserializedPrivateKey, ...privateKey},
+                          remotePublicKey: setClassPropsFromJson(remotePublicKey, deserializedRemotePublicKey),
+                          // {...deserializedRemotePublicKey, ...remotePublicKey},
+                          symmetricKey: setClassPropsFromJson(symmetricKey, deserializedSymmetricKey),
+                          // {...deserializedSymmetricKey, ...symmetricKey},
+                          established: established
+                        });
+                      case 21:
+                      case "end":
+                        return _context2.stop();
+                    }
+                  }, _callee2);
+                }));
+                return function (_x2) {
+                  return _ref4.apply(this, arguments);
+                };
+              }()));
+            case 2:
+              keyPairs = _context3.sent;
+              setPeerEncryptionKeys(keyPairs);
+            case 4:
+            case "end":
+              return _context3.stop();
+          }
+        }, _callee3);
+      }));
+      return function deserializedEncryptionKeys() {
+        return _ref3.apply(this, arguments);
+      };
+    }();
+    deserializedEncryptionKeys();
+  }, [encryptionKeys]);
+  var handleConnectionData = /*#__PURE__*/function () {
+    var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5(connection, managedState, rawData) {
+      var _peerEncryptionKeys$f;
+      var state, _ref6, privateKey, remotePublicKey, established, symmetricKey, data, callback, _managedState$contact, request, response, next;
+      return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+        while (1) switch (_context5.prev = _context5.next) {
+          case 0:
+            state = managedState;
+            _ref6 = (_peerEncryptionKeys$f = peerEncryptionKeys.find(function (keyPair) {
+              return keyPair.userId === connection.peer;
+            })) !== null && _peerEncryptionKeys$f !== void 0 ? _peerEncryptionKeys$f : {}, privateKey = _ref6.privateKey, remotePublicKey = _ref6.remotePublicKey, established = _ref6.established, symmetricKey = _ref6.symmetricKey;
+            data = rawData;
+            if (!symmetricKey) {
+              _context5.next = 17;
+              break;
+            }
+            _context5.prev = 4;
+            _context5.t0 = JSON;
+            _context5.next = 8;
+            return (0,_encryption_Encryption__WEBPACK_IMPORTED_MODULE_7__/* .decryptWithSymmetricKey */ .aq)(rawData, symmetricKey);
+          case 8:
+            _context5.t1 = _context5.sent;
+            data = _context5.t0.parse.call(_context5.t0, _context5.t1);
+            console.log("decrypted symmetric", data);
+            _context5.next = 17;
+            break;
+          case 13:
+            _context5.prev = 13;
+            _context5.t2 = _context5["catch"](4);
+            console.log("error decrypting symmetric", _context5.t2, rawData);
+            data = rawData;
+          case 17:
+            if (!data.callback) {
+              _context5.next = 23;
+              break;
+            }
+            callback = pendingCallbacks.find(function (cb) {
+              return cb.id === data.callback;
+            });
+            if (!callback) {
+              _context5.next = 23;
+              break;
+            }
+            callback.recieved(data.payload);
+            setPendingCallbacks(pendingCallbacks.filter(function (cb) {
+              return cb.id !== data.callback;
+            }));
+            return _context5.abrupt("return");
+          case 23:
+            if (data.type && appiSchema[data.type] && appiSchema[data.type](state).length) {
+              request = {
+                payload: data.payload,
+                // get sender from contacts by connectionId
+                sender: (_managedState$contact = managedState.contacts.find(function (contact) {
+                  return contact.connectionId === connection.peer;
+                })) === null || _managedState$contact === void 0 ? void 0 : _managedState$contact.id
+              };
+              response = {
+                send: function () {
+                  var _send = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(payload) {
+                    var payloadToSend;
+                    return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+                      while (1) switch (_context4.prev = _context4.next) {
+                        case 0:
+                          payloadToSend = {
+                            payload: payload,
+                            callback: data.callback
+                          };
+                          if (!symmetricKey) {
+                            _context4.next = 5;
+                            break;
+                          }
+                          _context4.next = 4;
+                          return (0,_encryption_Encryption__WEBPACK_IMPORTED_MODULE_7__/* .encryptWithSymmetricKey */ .eE)(JSON.stringify({
+                            payload: payload,
+                            callback: data.callback
+                          }), symmetricKey)["catch"](function (err) {
+                            console.log("error encrypting", err);
+                          });
+                        case 4:
+                          payloadToSend = _context4.sent;
+                        case 5:
+                          connection.send(payloadToSend);
+                        case 6:
+                        case "end":
+                          return _context4.stop();
+                      }
+                    }, _callee4);
+                  }));
+                  function send(_x6) {
+                    return _send.apply(this, arguments);
+                  }
+                  return send;
+                }()
+              };
+              next = function next(index) {
+                if (index < appiSchema[data.type](state).length) {
+                  appiSchema[data.type](state)[index](request, response, function () {
+                    next(index + 1);
+                  });
+                }
+              };
+              next(0);
+            }
+          case 24:
+          case "end":
+            return _context5.stop();
+        }
+      }, _callee5, null, [[4, 13]]);
+    }));
+    return function handleConnectionData(_x3, _x4, _x5) {
+      return _ref5.apply(this, arguments);
+    };
+  }();
+  var handleConnectionDataWithManagedState = function handleConnectionDataWithManagedState(connection, managedState, data) {
+    return handleConnectionData(connection, managedState, data);
+  };
+  var disconnectFromPeer = function disconnectFromPeer(peerId) {
+    if (connections[peerId]) {
+      connections[peerId].close();
+      setConnections(_objectSpread(_objectSpread({}, connections), {}, _defineProperty({}, peerId, null)));
+      setActiveConnections(Object.keys(connections).filter(function (c) {
+        return c !== peerId;
+      }));
+    }
+  };
+  var connectToAllContacts = function connectToAllContacts(peer) {
+    // filter connected contacts and connect to the ones not connected.
+    var connectedContacts = Object.keys(connections).filter(function (contact) {
+      var _connections$contact;
+      return ((_connections$contact = connections[contact]) === null || _connections$contact === void 0 || (_connections$contact = _connections$contact.peerConnection) === null || _connections$contact === void 0 ? void 0 : _connections$contact.iceConnectionState) === "connected";
+    });
+    var contactsToConnect = managedState.contacts.filter(function (contact) {
+      return !connectedContacts.includes(contact.connectionId);
+    });
+    contactsToConnect.forEach(function (contact) {
+      return connectToPeer(contact.connectionId, peer);
+    });
+
+    // filter connected contacts and disconnect from the ones not in the contacts list.
+    var contactsToDisconnect = connectedContacts.filter(function (contact) {
+      return !managedState.contacts.find(function (c) {
+        return c.connectionId === contact;
+      });
+    }).map(function (contact) {
+      return contact.connectionId;
+    });
+    var disconnectedContacts = Object.keys(connections).filter(function (contact) {
+      var _connections$contact2;
+      return ((_connections$contact2 = connections[contact]) === null || _connections$contact2 === void 0 || (_connections$contact2 = _connections$contact2.peerConnection) === null || _connections$contact2 === void 0 ? void 0 : _connections$contact2.iceConnectionState) === "disconnected";
+    });
+    [].concat(_toConsumableArray(contactsToDisconnect), _toConsumableArray(disconnectedContacts)).forEach(function (contact) {
+      return disconnectFromPeer(contact);
+    });
+  };
+  var handlePeerInitialisation = function handlePeerInitialisation(newPeer) {
+    try {
+      newPeer.off("open");
+    } catch (err) {
+      console.log("error removing open listener", err);
+    }
+    try {
+      newPeer.off("disconnected");
+    } catch (err) {
+      console.log("error removing open listener", err);
+    }
+    try {
+      newPeer.off("close");
+    } catch (err) {
+      console.log("error removing open listener", err);
+    }
+    newPeer.on("open", function (id) {
+      console.log("My peer ID is: " + id);
+      // setPeerId(id);
+      setPeer(newPeer);
+      setPeerHash(chance.hash());
+
+      // setInterval(() => {
+      //     connectToAllContacts(newPeer)
+      // }, 5000);
+      connectToAllContacts(newPeer);
+    });
+    newPeer.on("disconnected", function () {
+      var _console;
+      for (var _len = arguments.length, rest = new Array(_len), _key = 0; _key < _len; _key++) {
+        rest[_key] = arguments[_key];
+      }
+      (_console = console).log.apply(_console, ["peer disconnected"].concat(rest));
+      newPeer.reconnect();
+      setPeer(null);
+      setPeerHash(chance.hash());
+    });
+    newPeer.on("close", function (connection) {
+      console.log("peer closed", connection);
+      setPeer(null);
+      setPeerHash(chance.hash());
+    });
+  };
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (!peer && !!storedPeerId && !!agreedToTerms) {
+      var newPeer = new peerjs__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay(storedPeerId, {
+        host: (compiledProfile === null || compiledProfile === void 0 ? void 0 : compiledProfile.peerjsServer) || "0.peerjs.com"
+      });
+      console.log("peer created");
+      handlePeerInitialisation(newPeer);
+    } else {
+      if (!storedPeerId) {
+        if (peer) {
+          peer.destroy();
+        }
+        // generate a long random string
+        var newPeerId = chance.hash();
+        setPeerId(newPeerId);
+        setPeer(null);
+        setPeerHash(chance.hash());
+      }
+    }
+  }, [storedPeerId, agreedToTerms]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var newActiveConnections = Object.keys(connections).filter(function (c) {
+      var _connections$c;
+      return ((_connections$c = connections[c]) === null || _connections$c === void 0 || (_connections$c = _connections$c.peerConnection) === null || _connections$c === void 0 ? void 0 : _connections$c.iceConnectionState) === "connected";
+    });
+    if (newActiveConnections.length !== activeConnections.length || !newActiveConnections.every(function (c) {
+      return activeConnections.includes(c);
+    })) {
+      console.log({
+        newActiveConnections: newActiveConnections,
+        activeConnections: activeConnections
+      });
+      setActiveConnections(newActiveConnections);
+      setPeerHash(chance.hash());
+    }
+
+    // setTimeout(() => setPeerHash(chance.hash()), 5000);
+  }, [peerHash]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (peer) {
+      // peer.off('connection');
+      peer.on("connection", function (connection) {
+        console.log("new connection");
+        // initConnectionListender();
+        // connection.on('data', (data) => handleConnectionDataWithManagedState(connection, managedState, data));
+
+        // setInterval(() => {
+        // const newListener = data => peerOnDataHandler(data, connection);
+        // connection.off('data', newListener);
+        // connection.on('data', newListener);
+        // }, 1000);
+
+        connection.on("close", function (connection) {
+          var _calls$find2;
+          console.log("peer closed", connection);
+
+          // setConnections({ ...connections, [connection?.peer]: null });
+          // useSetConnections to remove the key wuth the connection id from the connections object
+          setConnections(function (connections) {
+            var newConnections = _objectSpread({}, connections);
+            delete newConnections[connection === null || connection === void 0 ? void 0 : connection.peer];
+            return newConnections;
+          });
+          setActiveConnections(Object.keys(connections).filter(function (c) {
+            return c !== (connection === null || connection === void 0 ? void 0 : connection.peer);
+          }));
+          var remoteStreamId = (_calls$find2 = calls.find(function (call) {
+            return call.peer !== (connection === null || connection === void 0 ? void 0 : connection.peer);
+          })) === null || _calls$find2 === void 0 || (_calls$find2 = _calls$find2._remoteStream) === null || _calls$find2 === void 0 ? void 0 : _calls$find2.id;
+
+          // const newStreams = streams.filter((stream) => stream.id !== remoteStreamId);
+
+          setCalls(calls.filter(function (call) {
+            return call.peer !== (connection === null || connection === void 0 ? void 0 : connection.peer);
+          }));
+          setCallsHash(chance.hash());
+
+          // setStreams(newStreams);
+        });
+        onConnection(connection, sendMessageWithCallback, managedState, Object.keys(connections).filter(function (c) {
+          return c !== (connection === null || connection === void 0 ? void 0 : connection.peer);
+        }));
+        setConnections(_objectSpread(_objectSpread({}, connections), {}, _defineProperty({}, connection.peer, connection)));
+        setActiveConnections([].concat(_toConsumableArray(Object.keys(connections)), [connection.peer]));
+      });
+      peer.on("call", /*#__PURE__*/function () {
+        var _ref7 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(call) {
+          return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+            while (1) switch (_context6.prev = _context6.next) {
+              case 0:
+                console.log("call received", call);
+                call.on("stream", function (stream) {
+                  console.log("stream received from remote", stream);
+                  // setStreams((streams) => {
+                  //     // do not add stream if it is already set
+                  //     if (streams.find((s) => s.id === stream.id)) {
+                  //         return streams;
+                  //     }
+                  //     return [...streams, stream];
+                  // });
+                });
+                call.on("close", function () {
+                  endCall(call.peer);
+                });
+                setCalls([].concat(_toConsumableArray(calls), [call]));
+                setCallsHash(chance.hash());
+              case 5:
+              case "end":
+                return _context6.stop();
+            }
+          }, _callee6);
+        }));
+        return function (_x7) {
+          return _ref7.apply(this, arguments);
+        };
+      }());
+    }
+  }, [peerHash, managedState, callsHash]);
+  var getManagedState = function getManagedState() {
+    return managedState;
+  };
+  var connectToPeer = function connectToPeer(peerId, peerOverride) {
+    var _ref8;
+    var connection = (_ref8 = peerOverride !== null && peerOverride !== void 0 ? peerOverride : peer) === null || _ref8 === void 0 ? void 0 : _ref8.connect(peerId);
+    if (connection) {
+      connection.on("open", function () {
+        console.log("connection opened");
+        peerConnectionHandler(connection);
+        // connection.on('data', (data) => handleConnectionDataWithManagedState(connection, managedState, data));
+
+        // setInterval(() => {
+        // const newListener = data => peerOnDataHandler(data, connection);
+        // connection.off('data', newListener);
+        // connection.on('data', newListener);
+        // }, 1000);
+
+        setConnections(_objectSpread(_objectSpread({}, connections), {}, _defineProperty({}, connection.peer, connection)));
+        setActiveConnections([].concat(_toConsumableArray(Object.keys(connections)), [connection.peer]));
+        onConnection(connection, sendMessageWithCallback, managedState, [].concat(_toConsumableArray(Object.keys(connections)), [connection.peer]));
+      });
+    }
+  };
+  var sendMessageWithCallback = /*#__PURE__*/function () {
+    var _ref9 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7(peerId, message, connection) {
+      var id;
+      return _regeneratorRuntime().wrap(function _callee7$(_context7) {
+        while (1) switch (_context7.prev = _context7.next) {
+          case 0:
+            id = Math.random().toString(36).substr(2, 9);
+            return _context7.abrupt("return", new Promise(function (resolve, reject) {
+              var timeout = setTimeout(function () {
+                reject(new Error("timeout for message:" + JSON.stringify({
+                  message: message
+                })));
+              }, 60000);
+              setPendingCallbacks([].concat(_toConsumableArray(pendingCallbacks), [{
+                id: id,
+                recieved: function recieved(response) {
+                  clearTimeout(timeout);
+                  console.log("callback recieved!");
+                  resolve(response);
+                }
+              }]));
+              sendMessage(peerId, _objectSpread(_objectSpread({}, message), {}, {
+                callback: id
+              }), connection);
+            }));
+          case 2:
+          case "end":
+            return _context7.stop();
+        }
+      }, _callee7);
+    }));
+    return function sendMessageWithCallback(_x8, _x9, _x10) {
+      return _ref9.apply(this, arguments);
+    };
+  }();
+  var sendMessage = /*#__PURE__*/function () {
+    var _ref10 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee8(peerId, message, connectionOverride) {
+      var _peerEncryptionKeys$f2;
+      var connection, _ref11, remotePublicKey, established, payloadToSend;
+      return _regeneratorRuntime().wrap(function _callee8$(_context8) {
+        while (1) switch (_context8.prev = _context8.next) {
+          case 0:
+            connection = connectionOverride !== null && connectionOverride !== void 0 ? connectionOverride : connections[peerId];
+            _ref11 = (_peerEncryptionKeys$f2 = peerEncryptionKeys.find(function (keyPair) {
+              return keyPair.userId === peerId;
+            })) !== null && _peerEncryptionKeys$f2 !== void 0 ? _peerEncryptionKeys$f2 : {}, remotePublicKey = _ref11.remotePublicKey, established = _ref11.established;
+            if (!connection) {
+              _context8.next = 9;
+              break;
+            }
+            payloadToSend = _objectSpread({}, message);
+            if (!(remotePublicKey && established)) {
+              _context8.next = 8;
+              break;
+            }
+            _context8.next = 7;
+            return (0,_encryption_Encryption__WEBPACK_IMPORTED_MODULE_7__/* .encrypt */ .w)(JSON.stringify(message), remotePublicKey);
+          case 7:
+            payloadToSend = _context8.sent;
+          case 8:
+            connection.send(payloadToSend);
+          case 9:
+          case "end":
+            return _context8.stop();
+        }
+      }, _callee8);
+    }));
+    return function sendMessage(_x11, _x12, _x13) {
+      return _ref10.apply(this, arguments);
+    };
+  }();
+  var makeCall = /*#__PURE__*/function () {
+    var _ref13 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9(_ref12) {
+      var peerId, video, audio, screen, cast, stream, call;
+      return _regeneratorRuntime().wrap(function _callee9$(_context9) {
+        while (1) switch (_context9.prev = _context9.next) {
+          case 0:
+            peerId = _ref12.peerId, video = _ref12.video, audio = _ref12.audio, screen = _ref12.screen, cast = _ref12.cast;
+            if (!peerId) {
+              _context9.next = 9;
+              break;
+            }
+            _context9.next = 4;
+            return navigator.mediaDevices[screen ? "getDisplayMedia" : "getUserMedia"]({
+              video: cast ? {
+                facingMode: "environment"
+              } : !!video,
+              audio: audio ? true : false
+            });
+          case 4:
+            stream = _context9.sent;
+            call = peer.call(peerId, stream, {
+              metadata: {
+                cast: cast
+              }
+            });
+            call.on("stream", function (stream) {
+              // B
+              // window.remoteAudio.srcObject = stream; // C
+              // window.remoteAudio.autoplay = true; // D
+              // window.peerStream = stream; //E
+              // showConnectedContent(); //F    });
+              console.log("stream received", stream);
+              // setStreams((streams) => {
+              //     // do not add stream if it is already set
+              //     if (streams.find((s) => s.id === stream.id)) {
+              //         return streams;
+              //     }
+              //     return [...streams, stream];
+              // });
+            });
+            setCalls([].concat(_toConsumableArray(calls), [call]));
+            setCallsHash(chance.hash());
+          case 9:
+          case "end":
+            return _context9.stop();
+        }
+      }, _callee9);
+    }));
+    return function makeCall(_x14) {
+      return _ref13.apply(this, arguments);
+    };
+  }();
+  var endCall = function endCall(peerId) {
+    var call = calls.find(function (call) {
+      return call.peer === peerId;
+    });
+    call.close();
+    setCalls(calls.filter(function (call) {
+      return call.peer !== peerId;
+    }));
+    setCallsHash(chance.hash());
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PeerContext.Provider, {
+    value: {
+      peer: peer,
+      activeConnections: activeConnections,
+      connections: connections,
+      connectToPeer: connectToPeer,
+      sendMessage: sendMessage,
+      sendMessageWithCallback: sendMessageWithCallback,
+      calls: calls,
+      streams: streams,
+      callsLength: calls.length,
+      makeCall: makeCall,
+      endCall: endCall,
+      peerHash: peerHash,
+      callsHash: callsHash
+    }
+  }, children);
+}
+
+/***/ }),
+
+/***/ 76538:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ usePeer)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50318);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _PeerProvider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7212);
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+var _excluded = ["recipients"];
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } } return target; }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+// create a react hook that uses the peer context
+// it can take a peerId and provides helper methods to send and receive messages
+// it can also take a group and provides helper methods to send and receive messages to all users in the group
+
+
+
+function usePeer(peersToConnect) {
+  var context = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_PeerProvider__WEBPACK_IMPORTED_MODULE_1__/* .PeerContext */ .y);
+  // check to see if peer is connected else connect to them
+  var activeConnections = context.activeConnections;
+  var connectedPeers = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
+    return activeConnections;
+  }, [activeConnections]);
+  var filteredPeersToConnect = Array.isArray(peersToConnect) ? peersToConnect.filter(function (peerId) {
+    var _context$peer;
+    return peerId !== ((_context$peer = context.peer) === null || _context$peer === void 0 ? void 0 : _context$peer.id);
+  }).filter(function (peerId) {
+    return !!peerId && !connectedPeers.includes(peerId);
+  }) : [peersToConnect];
+  filteredPeersToConnect.forEach(function (peerId) {
+    if (peerId) {
+      context.connectToPeer(peerId);
+    }
+  });
+
+  // a method to send a message to a peer or group depending on if peerId or group is passed in
+  var sendMessage = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(_ref) {
+      var type, recipients, payload, _ref$callback, callback, responses;
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            type = _ref.type, recipients = _ref.recipients, payload = _ref.payload, _ref$callback = _ref.callback, callback = _ref$callback === void 0 ? true : _ref$callback;
+            _context.next = 3;
+            return Promise.all((recipients || peersToConnect).filter(function (peerId) {
+              return peerId && context.connections[peerId];
+            }).map(function (peerId) {
+              if (!callback) {
+                return context.sendMessage(peerId, {
+                  type: type,
+                  payload: payload
+                });
+              }
+              return context.sendMessageWithCallback(peerId, {
+                type: type,
+                payload: payload
+              });
+            }));
+          case 3:
+            responses = _context.sent;
+            return _context.abrupt("return", responses);
+          case 5:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee);
+    }));
+    return function sendMessage(_x) {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+  var makeCall = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+      var _ref4,
+        recipients,
+        rest,
+        _args3 = arguments;
+      return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+        while (1) switch (_context3.prev = _context3.next) {
+          case 0:
+            _ref4 = _args3.length > 0 && _args3[0] !== undefined ? _args3[0] : {}, recipients = _ref4.recipients, rest = _objectWithoutProperties(_ref4, _excluded);
+            (recipients || peersToConnect).filter(function (peerId) {
+              var _context$peer2;
+              return peerId !== ((_context$peer2 = context.peer) === null || _context$peer2 === void 0 ? void 0 : _context$peer2.id);
+            }).forEach( /*#__PURE__*/function () {
+              var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(peerId) {
+                return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+                  while (1) switch (_context2.prev = _context2.next) {
+                    case 0:
+                      if (context.calls.find(function (call) {
+                        return call.peer === peerId;
+                      })) {
+                        _context2.next = 3;
+                        break;
+                      }
+                      _context2.next = 3;
+                      return context.makeCall(_objectSpread({
+                        peerId: peerId
+                      }, rest));
+                    case 3:
+                    case "end":
+                      return _context2.stop();
+                  }
+                }, _callee2);
+              }));
+              return function (_x2) {
+                return _ref5.apply(this, arguments);
+              };
+            }());
+          case 2:
+          case "end":
+            return _context3.stop();
+        }
+      }, _callee3);
+    }));
+    return function makeCall() {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+  var endCall = function endCall() {
+    var _ref6 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      recipients = _ref6.recipients;
+    (recipients || peersToConnect).filter(function (peerId) {
+      var _context$peer3;
+      return peerId !== ((_context$peer3 = context.peer) === null || _context$peer3 === void 0 ? void 0 : _context$peer3.id);
+    }).forEach( /*#__PURE__*/function () {
+      var _ref7 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(peerId) {
+        return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+          while (1) switch (_context4.prev = _context4.next) {
+            case 0:
+              context.endCall(peerId);
+            case 1:
+            case "end":
+              return _context4.stop();
+          }
+        }, _callee4);
+      }));
+      return function (_x3) {
+        return _ref7.apply(this, arguments);
+      };
+    }());
+  };
+
+  // a method to make a call to a peer or a group depending on if peerId or group is passed in
+  // const makeCall = () => {
+  //     if (peerId) {
+  //         context.makeCall({peerId});
+  //     } else if (groupId) {
+  //         const group = context.groups.find((group) => group.id === groupId);
+  //         context.makeCall({groupId: group.id});
+  //     }
+  // };
+
+  // a method to end a call
+  // const endCall = () => {
+  //     if (peerId) {
+  //         context.endCall(peerId);
+  //     } else if (groupId) {
+  //         const group = context.groups.find((group) => group.id === groupId);
+  //         group.users.forEach((user) => {
+  //             context.endCall(user.id);
+  //         });
+  //     }
+  // };
+
+  // // for the peer or group specified, automatically handle incoming messages with the handler.
+  // // the handler is an array of functions like middleware function in expressjs
+  // useEffect(() => {
+  //     if (handlers) {
+
+  //     }
+  //     if (peerId) {
+  //         context.connections[peerId].on('data', (data) => {
+  //             handlers.forEach((handler) => {
+  //                 handler(data);
+  //             });
+  //         });
+  //     } else if (groupId) {
+  //         const group = context.groups.find((group) => group.id === groupId);
+  //         group.users.forEach((user) => {
+  //             context.connections[user.id].on('data', (data) => {
+  //                 handlers.forEach((handler) => {
+  //                     handler(data);
+  //                 });
+  //             });
+  //         });
+  //     }
+  // }, [peerId, groupId, handlers]);
+
+  return {
+    peer: context.peer,
+    sendMessage: sendMessage,
+    makeCall: makeCall,
+    endCall: endCall,
+    activeConnections: context.activeConnections,
+    connections: context.connections,
+    connectToPeer: context.connectToPeer,
+    calls: context.calls,
+    // streams: context.calls.length > 0 ? context.calls.map(call => call._remoteStream) : [],
+    callsLength: context.callsLength
+  };
+}
+
+/***/ }),
+
+/***/ 78179:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   AZ: () => (/* binding */ updatePodName),
+/* harmony export */   Ay: () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   E6: () => (/* binding */ removeFileFromPod),
+/* harmony export */   MD: () => (/* binding */ removeUserFromConversationFromAllPods),
+/* harmony export */   O: () => (/* binding */ createNewPod),
+/* harmony export */   QT: () => (/* binding */ setPeerIsTyping),
+/* harmony export */   XE: () => (/* binding */ addToBlockchain),
+/* harmony export */   ZH: () => (/* binding */ updatePodUnreadCount),
+/* harmony export */   d6: () => (/* binding */ setShouldHangup),
+/* harmony export */   dN: () => (/* binding */ setEphemeralStorage),
+/* harmony export */   gH: () => (/* binding */ removePod),
+/* harmony export */   tj: () => (/* binding */ addMessage),
+/* harmony export */   x7: () => (/* binding */ setPods),
+/* harmony export */   zv: () => (/* binding */ addUserToPod)
+/* harmony export */ });
+/* unused harmony export removeUserFromConversation */
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(85268);
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1932);
+/* harmony import */ var _blockchain_Blockchain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(34431);
+/* harmony import */ var _blockchain_chains_podChain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(53288);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2543);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+
+
+
+var initialState = [];
+var chatsSlice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_3__/* .createSlice */ .Z0)({
+  name: "chats",
+  initialState: initialState,
+  reducers: {
+    createNewPod: function createNewPod(state, action) {
+      var _action$payload = action.payload,
+        id = _action$payload.id,
+        blocks = _action$payload.pendingBlocks,
+        storage = _action$payload.pendingStorage;
+      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
+      var chat = chats.find(function (chat) {
+        return chat.id === id;
+      });
+      if (!chat) {
+        // const podBlockchain = new Blockchain({chain: action.payload.blockchain.chain});
+        // podBlockchain.addBlocks([
+        //     ...action.payload.members.map(member => blockBuilders().addMember({userId: member, from: action.payload.from})[0]),
+        //     ...blockBuilders().setPodName({name: action.payload.name, from: action.payload.from})
+        // ]);
+        // const pendingUpdates = podBlockchain.getUpdate();
+        var newChat = _objectSpread(_objectSpread(_objectSpread({}, {
+          id: "",
+          users: [],
+          name: "",
+          avatar: "",
+          messages: []
+        }), action.payload), {}, {
+          blockchain: {
+            chain: _toConsumableArray(blocks),
+            storage: _objectSpread({}, storage)
+          }
+        });
+        chats = [].concat(_toConsumableArray(chats), [newChat]);
+        return chats;
+      }
+      return chats;
+    },
+    removePod: function removePod(state, action) {
+      // const index = state.findIndex(chat => chat.id === action.payload);
+      // return state.splice(index, 1);
+      var podId = action.payload.podId;
+      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
+      chats = chats.filter(function (chat) {
+        return chat.id !== podId;
+      });
+      return chats;
+    },
+    // =====================================================================
+    addUserToPod: function addUserToPod(state, action) {
+      var _action$payload2 = action.payload,
+        podId = _action$payload2.podId,
+        userId = _action$payload2.userId;
+      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
+      var chat = chats.find(function (chat) {
+        return chat.id === podId;
+      });
+      // chat.messages = [...chat.messages, message];
+
+      chats = chats.map(function (chat) {
+        return chat.id != podId ? chat : _objectSpread(_objectSpread({}, chat), {}, {
+          members: [].concat(_toConsumableArray(chat.members.filter(function (m) {
+            return m !== userId;
+          })), [userId])
+        });
+      });
+      return chats;
+    },
+    removeUserFromConversationFromAllPods: function removeUserFromConversationFromAllPods(state, action) {
+      var userId = action.payload.userId;
+      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
+      chats = chats.map(function (chat) {
+        chat.members = chats.filter(function (member) {
+          return member !== userId;
+        });
+      });
+      return chats;
+    },
+    removeUserFromConversation: function removeUserFromConversation(state, action) {
+      var _action$payload3 = action.payload,
+        chatId = _action$payload3.chatId,
+        userId = _action$payload3.userId;
+      var chat = state.find(function (chat) {
+        return chat.id === chatId;
+      });
+      var index = chat.members.findIndex(function (member) {
+        return member === userId;
+      });
+      chat = _objectSpread(_objectSpread({}, chat), {}, {
+        members: chat.members.filter(function (member) {
+          return member !== userId;
+        })
+      });
+      return state;
+    },
+    addMessage: function addMessage(state, action) {
+      var _action$payload4 = action.payload,
+        podId = _action$payload4.podId,
+        message = _action$payload4.message;
+      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
+      // let chat = chats.find(chat => chat.id === podId);
+      // chat.messages = [...chat.messages, message];
+
+      // chats = chats
+      //     .map(chat => chat.id !== podId ? chat : { ...chat, messages: [...chat.messages, message] });
+      return chats;
+    },
+    // =====================================================================
+    updatePodName: function updatePodName(state, action) {
+      var _action$payload5 = action.payload,
+        podId = _action$payload5.podId,
+        name = _action$payload5.name;
+      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
+      var chat = chats.find(function (chat) {
+        return chat.id === podId;
+      });
+      chats = chats.filter(function (chat) {
+        return chat.id !== podId;
+      }).concat(_objectSpread(_objectSpread({}, chat), {}, {
+        name: name
+      }));
+      return chats;
+    },
+    updatePodUnreadCount: function updatePodUnreadCount(state, action) {
+      var _action$payload6 = action.payload,
+        podId = _action$payload6.podId,
+        unreadCount = _action$payload6.unreadCount;
+      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
+      // chats = chats.map(chat => chat.id !== podId ? chat : { ...chat, unreadCount: unreadCount === 0 ? 0 : chat.unreadCount + unreadCount });
+      chats = chats.map(function (chat) {
+        return chat.id !== podId ? chat : _objectSpread(_objectSpread({}, chat), {}, {
+          unreadCount: unreadCount
+        });
+      });
+      return chats;
+    },
+    setShouldHangup: function setShouldHangup(state, action) {
+      var _action$payload7 = action.payload,
+        podId = _action$payload7.podId,
+        shouldHangup = _action$payload7.shouldHangup;
+      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
+      chats = chats.map(function (chat) {
+        return chat.id !== podId ? chat : _objectSpread(_objectSpread({}, chat), {}, {
+          shouldHangup: shouldHangup
+        });
+      });
+      return chats;
+    },
+    setPods: function setPods(state, action) {
+      return action.payload;
+    },
+    setPeerIsTyping: function setPeerIsTyping(state, action) {
+      var _action$payload8 = action.payload,
+        podId = _action$payload8.podId,
+        peerDisplayName = _action$payload8.peerDisplayName,
+        isTyping = _action$payload8.isTyping;
+      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
+      chats = chats.map(function (chat) {
+        return chat.id !== podId ? chat : _objectSpread(_objectSpread({}, chat), {}, {
+          peerIsTyping: _objectSpread(_objectSpread({}, chat.peerIsTyping), {}, _defineProperty({}, peerDisplayName, isTyping))
+        });
+      });
+      return chats;
+    },
+    setEphemeralStorage: function setEphemeralStorage(state, action) {
+      var _action$payload9 = action.payload,
+        podId = _action$payload9.podId,
+        ephemeralStorage = _action$payload9.ephemeralStorage;
+      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
+      console.log("setting ephemeralStorage", ephemeralStorage);
+      chats = chats.map(function (chat) {
+        return chat.id !== podId ? chat : _objectSpread(_objectSpread({}, chat), {}, {
+          ephemeralStorage: ephemeralStorage
+        });
+      });
+      console.log({
+        "new ephemera update": chats,
+        podId: podId,
+        ephemeralStorage: ephemeralStorage
+      });
+      return chats;
+    },
+    addToBlockchain: function addToBlockchain(state, action) {
+      var _chats$find, _chat, _chat2, _chat3;
+      var _action$payload10 = action.payload,
+        podId = _action$payload10.podId,
+        blocks = _action$payload10.blocks,
+        block = _action$payload10.block,
+        _action$payload10$sto = _action$payload10.storage,
+        storage = _action$payload10$sto === void 0 ? {} : _action$payload10$sto,
+        _action$payload10$app = _action$payload10.append,
+        append = _action$payload10$app === void 0 ? false : _action$payload10$app;
+      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
+      var chat = (_chats$find = chats.find(function (chat) {
+        return chat.id === podId;
+      })) !== null && _chats$find !== void 0 ? _chats$find : {};
+      // const podBlockchain = new Blockchain({chain: chat.blockchain.chain, storage: chat.blockchain.storage});
+      // if (blocks?.length > 0) podBlockchain.addBlocks(blocks, append);
+      // if (block) podBlockchain.addBlock(block, append);
+      // const pendingUpdates = podBlockchain.getUpdate();
+
+      chat = _objectSpread(_objectSpread({}, chat), {}, {
+        blockchain: _objectSpread(_objectSpread({}, ((_chat = chat) === null || _chat === void 0 ? void 0 : _chat.blockchain) || {}), {}, {
+          chain: [].concat(_toConsumableArray(((_chat2 = chat) === null || _chat2 === void 0 || (_chat2 = _chat2.blockchain) === null || _chat2 === void 0 ? void 0 : _chat2.chain) || []), _toConsumableArray(blocks)),
+          storage: _objectSpread(_objectSpread({}, storage), (_chat3 = chat) === null || _chat3 === void 0 || (_chat3 = _chat3.blockchain) === null || _chat3 === void 0 ? void 0 : _chat3.storage)
+        })
+      });
+      chats = chats.map(function (c) {
+        return c.id !== podId ? c : chat;
+      });
+      return chats;
+    },
+    removeFileFromPod: function removeFileFromPod(state, action) {
+      var _chats$find2, _chat4, _chat5;
+      var _action$payload11 = action.payload,
+        podId = _action$payload11.podId,
+        fileId = _action$payload11.fileId;
+      var chats = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__/* .current */ .ss)(state);
+      var chat = (_chats$find2 = chats.find(function (chat) {
+        return chat.id === podId;
+      })) !== null && _chats$find2 !== void 0 ? _chats$find2 : {};
+      chat = _objectSpread(_objectSpread({}, chat), {}, {
+        blockchain: _objectSpread(_objectSpread({}, ((_chat4 = chat) === null || _chat4 === void 0 ? void 0 : _chat4.blockchain) || {}), {}, {
+          storage: _objectSpread(_objectSpread({}, (_chat5 = chat) === null || _chat5 === void 0 || (_chat5 = _chat5.blockchain) === null || _chat5 === void 0 ? void 0 : _chat5.storage), {}, _defineProperty({}, fileId, undefined))
+        })
+      });
+      chats = chats.map(function (c) {
+        return c.id !== podId ? c : chat;
+      });
+      return chats;
+    }
+  }
+});
+var _chatsSlice$actions = chatsSlice.actions,
+  createNewPod = _chatsSlice$actions.createNewPod,
+  removePod = _chatsSlice$actions.removePod,
+  addUserToPod = _chatsSlice$actions.addUserToPod,
+  removeUserFromConversationFromAllPods = _chatsSlice$actions.removeUserFromConversationFromAllPods,
+  removeUserFromConversation = _chatsSlice$actions.removeUserFromConversation,
+  addMessage = _chatsSlice$actions.addMessage,
+  updatePodName = _chatsSlice$actions.updatePodName,
+  updatePodUnreadCount = _chatsSlice$actions.updatePodUnreadCount,
+  setPods = _chatsSlice$actions.setPods,
+  setShouldHangup = _chatsSlice$actions.setShouldHangup,
+  setPeerIsTyping = _chatsSlice$actions.setPeerIsTyping,
+  setEphemeralStorage = _chatsSlice$actions.setEphemeralStorage,
+  addToBlockchain = _chatsSlice$actions.addToBlockchain,
+  removeFileFromPod = _chatsSlice$actions.removeFileFromPod;
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (chatsSlice.reducer);
+
+/***/ }),
+
+/***/ 42040:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   O7: () => (/* binding */ addStorageItem)
+/* harmony export */ });
+/* unused harmony exports removeStorageItem, updateStorageItem, setStorageForPod */
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(85268);
+
+var initialState = {};
+var storageSlice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__/* .createSlice */ .Z0)({
+  name: "storage",
+  initialState: initialState,
+  reducers: {
+    addStorageItem: function addStorageItem(state, action) {
+      var _action$payload = action.payload,
+        podId = _action$payload.podId,
+        item = _action$payload.item;
+      if (!state[podId]) {
+        state[podId] = [];
+      }
+      var existingItem = state[podId].find(function (existing) {
+        return (existing === null || existing === void 0 ? void 0 : existing.sha) === item.sha;
+      });
+      if (!existingItem) {
+        state[podId].push(item);
+      }
+    },
+    removeStorageItem: function removeStorageItem(state, action) {
+      var _action$payload2 = action.payload,
+        podId = _action$payload2.podId,
+        itemId = _action$payload2.itemId;
+      if (state[podId]) {
+        state[podId] = state[podId].filter(function (item) {
+          return item.sha !== itemId;
+        });
+        if (state[podId].length === 0) {
+          delete state[podId];
+        }
+      }
+    },
+    updateStorageItem: function updateStorageItem(state, action) {
+      var _action$payload3 = action.payload,
+        podId = _action$payload3.podId,
+        updatedItem = _action$payload3.updatedItem;
+      if (state[podId]) {
+        var index = state[podId].findIndex(function (item) {
+          return item.sha === updatedItem.sha;
+        });
+        if (index !== -1) {
+          state[podId][index] = updatedItem;
+        }
+      }
+    },
+    setStorageForPod: function setStorageForPod(state, action) {
+      var _action$payload4 = action.payload,
+        podId = _action$payload4.podId,
+        storage = _action$payload4.storage;
+      state[podId] = storage;
+    }
+  }
+});
+var _storageSlice$actions = storageSlice.actions,
+  addStorageItem = _storageSlice$actions.addStorageItem,
+  removeStorageItem = _storageSlice$actions.removeStorageItem,
+  updateStorageItem = _storageSlice$actions.updateStorageItem,
+  setStorageForPod = _storageSlice$actions.setStorageForPod;
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (storageSlice.reducer);
+
+/***/ }),
+
+/***/ 14279:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   IN: () => (/* binding */ setInAppNotification),
+/* harmony export */   XE: () => (/* binding */ addToBlockchain),
+/* harmony export */   c_: () => (/* binding */ setBrowserNotification),
+/* harmony export */   jX: () => (/* binding */ updatePeerId),
+/* harmony export */   kZ: () => (/* binding */ updateUsername),
+/* harmony export */   p: () => (/* binding */ setUserProfile),
+/* harmony export */   ri: () => (/* binding */ logout),
+/* harmony export */   u2: () => (/* binding */ updateAgreedToTerms),
+/* harmony export */   xG: () => (/* binding */ updateAvatar)
+/* harmony export */ });
+/* unused harmony exports userProfileSlice, setEncryptionSignature */
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(85268);
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1932);
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+var userProfileSlice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__/* .createSlice */ .Z0)({
+  name: "userProfile",
+  initialState: {
+    displayName: "",
+    id: null,
+    connectionId: null,
+    pastConnectionIds: [],
+    avatar: "https://source.unsplash.com/random/400x200?avatar",
+    agreedToTerms: [],
+    inAppNotification: true,
+    browserNotification: false,
+    blockchain: {
+      chain: [],
+      storage: {}
+    }
+  },
+  reducers: {
+    addToBlockchain: function addToBlockchain(state, action) {
+      var _profile, _profile2, _profile3;
+      var _action$payload = action.payload,
+        _action$payload$block = _action$payload.blocks,
+        blocks = _action$payload$block === void 0 ? [] : _action$payload$block,
+        block = _action$payload.block,
+        _action$payload$stora = _action$payload.storage,
+        storage = _action$payload$stora === void 0 ? {} : _action$payload$stora,
+        _action$payload$appen = _action$payload.append,
+        append = _action$payload$appen === void 0 ? false : _action$payload$appen;
+      var profile = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_1__/* .current */ .ss)(state);
+      profile = _objectSpread(_objectSpread({}, profile), {}, {
+        blockchain: _objectSpread(_objectSpread({}, ((_profile = profile) === null || _profile === void 0 ? void 0 : _profile.blockchain) || {}), {}, {
+          chain: [].concat(_toConsumableArray(((_profile2 = profile) === null || _profile2 === void 0 || (_profile2 = _profile2.blockchain) === null || _profile2 === void 0 ? void 0 : _profile2.chain) || []), _toConsumableArray(blocks), [block]).filter(function (b) {
+            return !!b;
+          }),
+          storage: _objectSpread(_objectSpread({}, storage), (_profile3 = profile) === null || _profile3 === void 0 || (_profile3 = _profile3.blockchain) === null || _profile3 === void 0 ? void 0 : _profile3.storage)
+        })
+      });
+      return profile;
+    },
+    updateUsername: function updateUsername(state, action) {
+      // Redux Toolkit allows us to write "mutating" logic in reducers. It
+      // doesn't actually mutate the state because it uses the Immer library,
+      // which detects changes to a "draft state" and produces a brand new
+      // immutable state based off those changes
+      state.displayName = action.payload;
+    },
+    updateAvatar: function updateAvatar(state, action) {
+      state.avatar = action.payload;
+    },
+    updatePeerId: function updatePeerId(state, action) {
+      var _state$pastConnection;
+      (_state$pastConnection = state.pastConnectionIds) === null || _state$pastConnection === void 0 || _state$pastConnection.push(state.id);
+      state.id = action.payload;
+      state.connectionId = action.payload;
+    },
+    updateAgreedToTerms: function updateAgreedToTerms(state, action) {
+      var newState = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_1__/* .current */ .ss)(state);
+      state.agreedToTerms = [].concat(_toConsumableArray(newState.agreedToTerms), [action.payload]);
+    },
+    setUserProfile: function setUserProfile(state, action) {
+      state.displayName = action.payload.displayName;
+      state.id = action.payload.id;
+      state.connectionId = action.payload.connectionId;
+      state.pastConnectionIds = action.payload.pastConnectionIds;
+      state.avatar = action.payload.avatar;
+      state.agreedToTerms = action.payload.agreedToTerms;
+    },
+    setInAppNotification: function setInAppNotification(state, action) {
+      state.inAppNotification = action.payload;
+    },
+    setBrowserNotification: function setBrowserNotification(state, action) {
+      state.browserNotification = action.payload;
+    },
+    setEncryptionSignature: function setEncryptionSignature(state, action) {
+      state.encryptionSignature = action.payload;
+    },
+    logout: function logout() {} // placeholder needed to generate dispatch function
+  }
+});
+
+// Action creators are generated for each case reducer function
+var _userProfileSlice$act = userProfileSlice.actions,
+  updateUsername = _userProfileSlice$act.updateUsername,
+  updatePeerId = _userProfileSlice$act.updatePeerId,
+  updateAgreedToTerms = _userProfileSlice$act.updateAgreedToTerms,
+  setUserProfile = _userProfileSlice$act.setUserProfile,
+  updateAvatar = _userProfileSlice$act.updateAvatar,
+  logout = _userProfileSlice$act.logout,
+  setInAppNotification = _userProfileSlice$act.setInAppNotification,
+  setBrowserNotification = _userProfileSlice$act.setBrowserNotification,
+  addToBlockchain = _userProfileSlice$act.addToBlockchain,
+  setEncryptionSignature = _userProfileSlice$act.setEncryptionSignature;
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (userProfileSlice.reducer);
 
 /***/ }),
 
