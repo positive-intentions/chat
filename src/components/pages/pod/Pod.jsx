@@ -831,6 +831,8 @@ export default function Pod() {
   // const peersActivelyTyping = Object.keys(peerIsTyping ?? {}) || []
   // .filter(key => !!peerIsTyping[key])
 
+  console.log({ peerIsTyping })
+
   const [peersActivelyTyping, setPeersActivelyTyping] = useState(
     Object.keys(peerIsTyping ?? {}) || [].filter((key) => !!peerIsTyping[key]),
   );
