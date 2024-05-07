@@ -76,15 +76,15 @@ This will start the development server and open the app in your default browser.
 
 ## iOS, Android and Desktop
 
-The app can be installed on iOS, Android and Desktop. while the project is not mature enough to be published on the app stores, this repository has the necessary files to build the app for these platforms. This should be done by someone with experience in building apps for these platforms. support for it is not good enough to be published on the app stores.
+The app can be installed on iOS, Android and Desktop. The project is not mature enough to be published on the app stores ([exception](https://store.app/chat-staging-positive-intentions-com)?). This repository has the necessary files to build the app for these platforms. This should be done by someone with experience in building apps for these platforms.
 
 ### iOS and Android
 
-To build for mobile, you need to have respective build tools installed on your computer (xcode/android studio) installed on your system. the build is created with capacitorjs found [here](https://capacitorjs.com/).
+To build for mobile, you need to have respective build tools installed on your computer (xcode/android studio) installed on your system. the build is created with capacitorjs found [here](https://capacitorjs.com/). See the folders `ios` and `android` in the root folder for the build files.
 
 ### Desktop
 
-To build for desktop, you have everything you need from the `npm i` command. the desktop build is based on Tauri found [here](https://tauri.app/). You can create a build by running `npm run tauri build`. the build will be found in the `tauri/target/release/bundle` folder (you may need to add executable permissions `chomod +x <filename>`).
+To build for desktop, you need to install the dependencies with the `npm i` command, then you may also need to install rust on your system as described [here](https://tauri.app/v1/guides/getting-started/prerequisites/). The desktop build is based on Tauri found [here](https://tauri.app/). You can create a build by running `npm run tauri build`. the build will be found in the `tauri/target/release/bundle` folder (you may need to add executable permissions `chomod +x <filename>`).
 
 
 ### Join Us on This Journey
