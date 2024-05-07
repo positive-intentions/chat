@@ -72,6 +72,10 @@ npm run docker:run # docker run --name chat-container -p 8080:80 chat
 
 This will start the development server and open the app in your default browser. If it doesn't open automatically, you can navigate to [http://localhost:8080](http://localhost:8080) to view the app.
 
+## Important notes for trying it out
+
+The app is using browser storage, so if you open 2 tabs of the app, they will use and update the same data. this can lead to conflict issues and should be avoided. instead if you want to try on your device, you can try between different browsers (like chrome and edge). Its also worth noting that incognito modes on all the browsers would also use a different store.
+
 > See the [package.json](package.json) file for more scripts.
 
 ## iOS, Android and Desktop
