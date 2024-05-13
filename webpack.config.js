@@ -85,7 +85,7 @@ module.exports = {
     minimize: false,
   },
   resolve: {
-    extensions: ['.ts', '.js', '.json']
+    extensions: ['.ts', '.js', '.json', '.mjs']
   },
   module: {
     rules: [
@@ -96,6 +96,14 @@ module.exports = {
         options: {
           presets: ["@babel/preset-react"],
         },
+      },
+      {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: "javascript/auto",
+        resolve: {
+          fullySpecified: false
+        }
       },
       // css and scss loader
       {
