@@ -61,6 +61,7 @@ import NavigationIcon from "@mui/icons-material/Navigation";
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 import WavingHandIcon from '@mui/icons-material/WavingHand';
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
+import { SiKofi, SiPatreon, SiOpencollective } from "rocketicons/si";
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import { useTranslation } from "react-i18next";
 import { ColorModeContext } from "../../../../App.tsx";
@@ -158,9 +159,9 @@ const presetIcons = {
   map: <NavigationIcon />,
   donate: <VolunteerActivismIcon />,
   key: <KeyIcon />,
-  coffee: <CoffeeIcon />,
-  openCollective: <OpenCollectiveIcon />,
-  patreon: <LocalParkingIcon />,
+  coffee: <SiKofi height="20" width="20" />,
+  openCollective: <SiOpencollective height="20" width="20" />,
+  patreon: <SiPatreon height="20" width="20" />
 };
 
 function HideOnScroll(props) {
