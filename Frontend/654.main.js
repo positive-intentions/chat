@@ -52,7 +52,7 @@ var core = __webpack_require__(65742);
 // EXTERNAL MODULE: ./node_modules/react-router/dist/index.js
 var dist = __webpack_require__(47767);
 // EXTERNAL MODULE: ./node_modules/react-redux/dist/react-redux.mjs
-var react_redux = __webpack_require__(71468);
+var react_redux = __webpack_require__(45135);
 // EXTERNAL MODULE: ./node_modules/lodash/lodash.js
 var lodash = __webpack_require__(2543);
 ;// CONCATENATED MODULE: ./src/components/pages/verse/SceneComponent.jsx

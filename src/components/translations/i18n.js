@@ -35,6 +35,7 @@ i18n
               about: "About",
               docs: "Docs",
               github: "Github",
+              medium: "Medium",
               kofi: "Ko-fi",
               openCollective: "Open Collective",
               patreon: "Patreon",
