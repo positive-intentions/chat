@@ -76,6 +76,10 @@ This will start the development server and open the app in your default browser.
 
 > See the [package.json](package.json) file for more scripts.
 
+## Trying it out
+
+Try it out between you phone and laptop. The app is using browser storage, so if you open 2 tabs of the app, they will use and update the same data. This can lead to conflict issues and should be avoided. instead if you want to try on your device, you can try between different browsers (like chrome and edge). Its also worth noting that incognito modes on all the browsers would also use a different store.
+
 ## iOS, Android and Desktop
 
 The app can be installed on iOS, Android and Desktop. The project is not mature enough to be published on the app stores ([exception](https://store.app/chat-staging-positive-intentions-com)?). This repository has the necessary files to build the app for these platforms. This should be done by someone with experience in building apps for these platforms.
