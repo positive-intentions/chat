@@ -61,7 +61,7 @@ import NavigationIcon from "@mui/icons-material/Navigation";
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 import WavingHandIcon from '@mui/icons-material/WavingHand';
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
-import { SiKofi, SiPatreon, SiOpencollective } from "rocketicons/si";
+import { SiKofi, SiPatreon, SiOpencollective, SiMedium } from "rocketicons/si";
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import { useTranslation } from "react-i18next";
 import { ColorModeContext } from "../../../../App.tsx";
@@ -161,7 +161,8 @@ const presetIcons = {
   key: <KeyIcon />,
   coffee: <SiKofi height="20" width="20" />,
   openCollective: <SiOpencollective height="20" width="20" />,
-  patreon: <SiPatreon height="20" width="20" />
+  patreon: <SiPatreon height="20" width="20" />,
+  medium: <SiMedium height="20" width="20" />
 };
 
 function HideOnScroll(props) {
@@ -327,6 +328,12 @@ const CustomDropdown = ({ menuItems }) => {
             window.open("https://www.reddit.com/r/positive_intentions/"),
         },
         {
+          text: t("components.menuItems.medium"),
+          icon: "medium",
+          onClick: () =>
+            window.open("https://medium.com/@positive.intentions.com"),
+        },
+        {
           text: t("components.menuItems.youtube"),
           icon: "youtube",
           onClick: () =>
@@ -444,7 +451,7 @@ const CustomDropdown = ({ menuItems }) => {
         {
             text: t("components.menuItems.openCollective"),
             icon: "openCollective",
-            onClick: () => window.open("https://opencollective.com/positive-intentions"),
+            onClick: () => window.open("https://opencollective.com/positive_intentions"),
         },
         {
             text: t("components.menuItems.patreon"),
