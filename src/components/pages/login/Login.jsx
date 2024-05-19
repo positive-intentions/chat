@@ -198,6 +198,7 @@ import noRegistration from "../../../../public/home-icons/no-registration.png";
 import pushNotifications from "../../../../public/home-icons/push-notifications.png";
 import videoCalls from "../../../../public/home-icons/video-calls.png";
 import DocLink from "../../atomic/atom/docLink/DocLink";
+import TinderCard from 'react-tinder-card'
 
 import avatar1 from "../../../../public/avatars/1.jpg";
 import avatar2 from "../../../../public/avatars/2.jpg";
@@ -836,6 +837,15 @@ export default function LoginPage() {
 
   // the hipain image to use as the default file
 
+  const onSwipe = (direction) => {
+    console.log('You swiped: ' + direction)
+  }
+  
+  const onCardLeftScreen = (myIdentifier) => {
+    console.log(myIdentifier + ' left the screen')
+  }
+  
+
   return (
     <PageContainer
       headerProps={{
@@ -946,8 +956,7 @@ export default function LoginPage() {
         />
         {!false && (
           <>
-            <br />
-            <Typography variant="p" gutterBottom>
+            {/* <Typography variant="p" gutterBottom> */}
               {/* {t("loginPage.welcome")}
               <br />
               <br />
@@ -993,7 +1002,30 @@ export default function LoginPage() {
               {t("loginPage.p2pCalls")}
               <br />
               <br /> */}
-              <Typography variant="body1" gutterBottom>
+              {/* <Typography variant="body1" gutterBottom>
+                {t("loginPage.featuresInclude")}
+                <ul>
+                  <li>{t("loginPage.noCookies")}</li>
+                  <li>{t("loginPage.noRegistration")}</li>
+                  <li>{t("loginPage.noInstalling")}</li>
+                  <li>{t("loginPage.groupMessaging")}</li>
+                  <li>{t("loginPage.textMessaging")}</li>
+                  <li>{t("loginPage.multimediaMessaging")}</li>
+                  <li>{t("loginPage.videoCalls")}</li>
+                  <li>{t("loginPage.dataOwnership")}</li>
+                  <li>{t("loginPage.screensharing")}</li>
+                  <li>{t("loginPage.fileTransfer")}</li>
+                </ul>
+                {t("loginPage.getStarted")}
+              </Typography> */}
+            {/* </Typography> */}
+            {/* some spacing */}
+            {/* <TinderCard
+              onSwipe={onSwipe}
+              onCardLeftScreen={() => onCardLeftScreen('fooBar')}
+              // preventSwipe={['right', 'left']}
+            >
+                <Typography variant="body1" gutterBottom>
                 {t("loginPage.featuresInclude")}
                 <ul>
                   <li>{t("loginPage.noCookies")}</li>
@@ -1009,9 +1041,7 @@ export default function LoginPage() {
                 </ul>
                 {t("loginPage.getStarted")}
               </Typography>
-            </Typography>
-            {/* some spacing */}
-            <br />
+            </TinderCard> */}
 
             {(storedUsername && contacts.length === 0)
               ? (
