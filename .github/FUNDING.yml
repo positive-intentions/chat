@@ -1,9 +1,9 @@
 # These are supported funding model platforms
 
-github: https://github.com/sponsors/positive-intentions
-patreon: https://www.patreon.com/positive_intentions # Replace with a single Patreon username
+github: positive-intentions
+patreon: positive_intentions # Replace with a single Patreon username
 open_collective: https://opencollective.com/positive_intentions # Replace with a single Open Collective username
-ko_fi: https://ko-fi.com/positive_intentions # Replace with a single Ko-fi username
+ko_fi: positive_intentions # Replace with a single Ko-fi username
 tidelift: # Replace with a single Tidelift platform-name/package-name e.g., npm/babel
 community_bridge: # Replace with a single Community Bridge project-name e.g., cloud-foundry
 liberapay: # Replace with a single Liberapay username
