@@ -5,6 +5,14 @@
   <img src="public/logo192.png" alt="App Logo" />
 </p>
 
+<p align="center" style="text-align: center;">
+
+[Live App](https://chat.positive-intentions.com) | [Website](https://positive-intentions.com) | [Reddit](https://www.reddit.com/r/positive_intentions) | [Medium](https://medium.com/@positive.intentions.com)
+
+
+</p>
+
+
 # Chat
 
 ![GitHub stars](https://img.shields.io/github/stars/positive-intentions/chat?style=social) 
@@ -18,12 +26,6 @@
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 Discover **Positive Intentions Chat**: A secure, browser-based chat application leveraging WebRTC for decentralized messaging, file sharing, and virtual reality experiences. Prioritizing privacy and user control, it's redefining the way we think about online communication. Join us in shaping the future of chat.
-
-Live app: [chat.positive-intentions.com](https://chat.positive-intentions.com)
-
-Learn more: [positive-intentions.com](https://positive-intentions.com)
-
-Join the conversation: [r/positive_intentions](https://www.reddit.com/r/positive_intentions)
 
 
 🚀 **Introducing a groundbreaking chat application that redefines online communication.** Built with a focus on privacy, security, and user control, this app offers a pioneering approach to chatting, file sharing, and exploring virtual spaces—all from within your browser.

@@ -103,6 +103,7 @@
     "@mui/material": "^5.15.6",
     "@mui/styled-engine-sc": "^6.0.0-alpha.13",
     "@mui/styles": "^5.15.6",
+    "@react-spring/web": "^9.5.5",
     "@reduxjs/toolkit": "^2.1.0",
     "@sandstreamdev/react-swipeable-list": "^1.0.2",
     "@tensorflow-models/hand-pose-detection": "^2.0.1",
@@ -134,6 +135,7 @@
     "react-slick": "^0.30.1",
     "react-split-pane": "^0.1.92",
     "react-swipeable-views": "^0.14.0",
+    "react-tinder-card": "^1.6.4",
     "redux-persist": "^6.0.0",
     "redux-persist-indexeddb-storage": "^1.0.4",
     "rocketicons": "^0.1.0-alpha",
@@ -177,6 +179,12 @@
     "eslint-plugin-react": {
       "eslint": "^9.1.1"
     },
+    "eslint-loader": {
+      "eslint": "^9.1.1"
+    },
+    "eslint-plugin-import": {
+      "eslint": "^9.1.1"
+    },
     "@typescript-eslint/eslint-plugin": {
       "eslint": "^9.1.1"
     },
@@ -184,6 +192,9 @@
       "eslint": "^9.1.1"
     },
     "react-event-listener": {
+      "react": "^18.3.1"
+    },
+    "react-native": {
       "react": "^18.3.1"
     },
     "rocketicons": {
