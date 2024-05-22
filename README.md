@@ -83,9 +83,7 @@ You can fork the repo and host it on Github Pages for free if the repository is 
 - Branch: "staging"
 - Select folder: "/docs"
 
-Finally click "Save" to enable Github Pages.
-> Github only allows for the root or exclusively a folder named "docs" to be used for Pages. The "docs" folder in this repo is a symlink to the "Frontend" folder.
-  
+Finally click "Save" to enable Github Pages.  
 
 ## Trying it out
 
