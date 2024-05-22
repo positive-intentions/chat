@@ -76,6 +76,17 @@ This will start the development server and open the app in your default browser.
 
 > See the [package.json](package.json) file for more scripts.
 
+For GitHub users:
+
+You can fork the repo and host it on Github Pages for free if the repository is made public. After forking the repo, you can go to Settings>Pages to set the following:
+- Source: "Deploy from a branch"
+- Branch: "staging"
+- Select folder: "/docs"
+
+Finally click "Save" to enable Github Pages.
+> Github only allows for the root or exclusively a folder named "docs" to be used for Pages. The "docs" folder in this repo is a symlink to the "Frontend" folder.
+  
+
 ## Trying it out
 
 Try it out between you phone and laptop. The app is using browser storage, so if you open 2 tabs of the app, they will use and update the same data. This can lead to conflict issues and should be avoided. instead if you want to try on your device, you can try between different browsers (like chrome and edge). Its also worth noting that incognito modes on all the browsers would also use a different store.
