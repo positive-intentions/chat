@@ -421,11 +421,11 @@ const CustomDropdown = ({ menuItems }) => {
               },
             }
           : null,
-        {
-          text: t("components.menuItems.downloadZip"),
-          icon: "download",
-          onClick: () => window.open("/positive-intentions.zip"),
-        },
+        // {
+        //   text: t("components.menuItems.downloadZip"),
+        //   icon: "download",
+        //   onClick: () => window.open("/positive-intentions.zip"),
+        // },
       ],
     },
     {
