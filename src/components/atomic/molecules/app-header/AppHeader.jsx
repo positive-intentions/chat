@@ -69,6 +69,7 @@ import { useTheme } from "@mui/material/styles";
 import { useNotification } from "../../../notifications/notificationManager";
 import { languages } from "../../../translations/i18n";
 import CellTowerIcon from '@mui/icons-material/CellTower';
+import Copyright from "@mui/icons-material/Copyright";
 import Slide from "@mui/material/Slide";
 
 import {
@@ -164,6 +165,7 @@ const presetIcons = {
   patreon: <SiPatreon height="20" width="20" />,
   medium: <SiMedium height="20" width="20" />,
   mesh: <CellTowerIcon />,
+  copyright: <Copyright />
 };
 
 function HideOnScroll(props) {

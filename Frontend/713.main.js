@@ -11622,12 +11622,47 @@ function Layout_Maintainance() {
   return /*#__PURE__*/index_js_default().createElement(FullScreenDialog, null);
 }
 ;// CONCATENATED MODULE: ./src/components/pages/meshtastic/Meshtastic.jsx
+function Meshtastic_slicedToArray(arr, i) { return Meshtastic_arrayWithHoles(arr) || Meshtastic_iterableToArrayLimit(arr, i) || Meshtastic_unsupportedIterableToArray(arr, i) || Meshtastic_nonIterableRest(); }
+function Meshtastic_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function Meshtastic_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Meshtastic_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Meshtastic_arrayLikeToArray(o, minLen); }
+function Meshtastic_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function Meshtastic_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function Meshtastic_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+function Meshtastic_extends() { Meshtastic_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Meshtastic_extends.apply(this, arguments); }
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+var Meshtastic_BootstrapDialog = (0,styled/* default */.Ay)(Dialog/* default */.A)(function (_ref) {
+  var theme = _ref.theme;
+  return {
+    "& .MuiDialogContent-root": {
+      padding: theme.spacing(2),
+      display: 'flex',
+      flexDirection: 'column'
+    },
+    "& .MuiDialogActions-root": {
+      padding: theme.spacing(1)
+    }
+  };
+});
+var Meshtastic_Transition = /*#__PURE__*/index_js_default().forwardRef(function Transition(props, ref) {
+  return /*#__PURE__*/index_js_default().createElement(Slide/* default */.A, Meshtastic_extends({
+    direction: "up",
+    ref: ref
+  }, props));
+});
 var Meshtastic_useStyles = (0,makeStyles/* default */.A)(function (theme) {
   return {
     padding: {
@@ -11641,6 +11676,16 @@ function Meshtastic_Maintainance() {
   var contacts = (0,react_redux/* useSelector */.d4)(function (state) {
     return state.contacts;
   }) || [];
+  var _useState = (0,index_js_.useState)(false),
+    _useState2 = Meshtastic_slicedToArray(_useState, 2),
+    open = _useState2[0],
+    setOpen = _useState2[1];
+  var handleClose = function handleClose() {
+    return setOpen(false);
+  };
+  var handleOpen = function handleOpen() {
+    return setOpen(true);
+  };
   return /*#__PURE__*/index_js_default().createElement(page_container_PageContainer/* default */.A, {
     backgroundImage: "",
     headerProps: {
@@ -11649,6 +11694,12 @@ function Meshtastic_Maintainance() {
       menuProps: {
         icon: "more",
         items: [{
+          text: "Meshtastic",
+          icon: "copyright",
+          onClick: function onClick() {
+            return handleOpen();
+          }
+        }, {
           text: "Profile",
           icon: "account",
           onClick: function onClick() {
@@ -11669,7 +11720,43 @@ function Meshtastic_Maintainance() {
       width: '100%',
       border: 'none'
     }
-  })));
+  })), /*#__PURE__*/index_js_default().createElement(Meshtastic_BootstrapDialog, {
+    onClose: handleClose,
+    "aria-labelledby": "customized-dialog-title",
+    open: open,
+    TransitionComponent: Meshtastic_Transition,
+    disablePortal: true,
+    fullWidth: true,
+    fullHeight: true
+  }, /*#__PURE__*/index_js_default().createElement(DialogTitle/* default */.A, {
+    sx: {
+      m: 0,
+      p: 2
+    },
+    id: "customized-dialog-title"
+  }, "Meshtastic"), /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
+    "aria-label": "close",
+    onClick: handleClose,
+    sx: {
+      position: "absolute",
+      right: 8,
+      top: 8,
+      color: function color(theme) {
+        return theme.palette.grey[500];
+      }
+    }
+  }, /*#__PURE__*/index_js_default().createElement(Close/* default */.A, null)), /*#__PURE__*/index_js_default().createElement(DialogContent/* default */.A, {
+    dividers: true
+  }, /*#__PURE__*/index_js_default().createElement(Typography_Typography/* default */.A, {
+    variant: "p"
+  }, "Meshtastic\xAE is a registered trademark of Meshtastic LLC. Meshtastic software components are released under various licenses, see GitHub for details. No warranty is provided - use at your own risk."), /*#__PURE__*/index_js_default().createElement(Button/* default */.A, {
+    onClick: function onClick() {
+      return window.open("https://github.com/meshtastic/web", "_blank");
+    }
+  }, "Meshtastic web github")), /*#__PURE__*/index_js_default().createElement(DialogActions/* default */.A, null, /*#__PURE__*/index_js_default().createElement(Button/* default */.A, {
+    autoFocus: true,
+    onClick: handleClose
+  }, "close"))));
 }
 ;// CONCATENATED MODULE: ./src/components/router/Router.jsx
 function Router_slicedToArray(arr, i) { return Router_arrayWithHoles(arr) || Router_iterableToArrayLimit(arr, i) || Router_unsupportedIterableToArray(arr, i) || Router_nonIterableRest(); }
@@ -18132,6 +18219,8 @@ var languages = [{
 /* harmony default export */ const translations_i18n = ((/* unused pure expression or super */ null && (i18n)));
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/CellTower.js
 var CellTower = __webpack_require__(94624);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Copyright.js
+var Copyright = __webpack_require__(35372);
 // EXTERNAL MODULE: ./src/components/atomic/atom/dropdown/Dropdown.jsx + 1 modules
 var Dropdown = __webpack_require__(1310);
 ;// CONCATENATED MODULE: ./src/components/atomic/molecules/app-header/AppHeader.jsx
@@ -18149,6 +18238,7 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -18321,7 +18411,8 @@ var presetIcons = {
     height: "20",
     width: "20"
   }),
-  mesh: /*#__PURE__*/index_js_default().createElement(CellTower/* default */.A, null)
+  mesh: /*#__PURE__*/index_js_default().createElement(CellTower/* default */.A, null),
+  copyright: /*#__PURE__*/index_js_default().createElement(Copyright/* default */.A, null)
 };
 function HideOnScroll(props) {
   var children = props.children,
