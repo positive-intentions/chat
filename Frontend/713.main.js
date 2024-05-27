@@ -18585,13 +18585,13 @@ var CustomDropdown = function CustomDropdown(_ref2) {
           });
         }
       }
-    } : null, {
-      text: t("components.menuItems.downloadZip"),
-      icon: "download",
-      onClick: function onClick() {
-        return window.open("/positive-intentions.zip");
-      }
-    }]
+    } : null
+    // {
+    //   text: t("components.menuItems.downloadZip"),
+    //   icon: "download",
+    //   onClick: () => window.open("/positive-intentions.zip"),
+    // },
+    ]
   }, {
     text: t("components.menuItems.language"),
     icon: "translate",
