@@ -99,10 +99,10 @@ To build for mobile, you need to have respective build tools installed on your c
 
 ### Desktop
 
-To build for desktop, you need to install the dependencies with the `npm i` command, then you may also need to install rust on your system as described [here](https://tauri.app/v1/guides/getting-started/prerequisites/). The desktop build is based on Tauri found [here](https://tauri.app/). You can create a build by running `npm run tauri build`. the build will be found in the `tauri/target/release/bundle` folder (you may need to add executable permissions `chomod +x <filename>`).
+To build for desktop, you need to install the dependencies with the `npm i` command, then you may also need to install rust on your system as described [here](https://tauri.app/v1/guides/getting-started/prerequisites/). The desktop build is based on Tauri found [here](https://tauri.app/). You can create a build by running `npm run tauri build`. the build will be found in the `tauri/target/release/bundle` folder (you may need to add executable permissions `chmod +x <filename>`).
 
 
-### Join Us on This Journey
+## Join Us on This Journey
 
 Pushing the boundaries of what's possible with current web technologies to create a chat app that prioritizes user empowerment and privacy. But this is just the beginning. With your support, we can explore new features, refine the user experience, and expand the app's capabilities.
 
