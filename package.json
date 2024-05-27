@@ -138,7 +138,7 @@
     "react-tinder-card": "^1.6.4",
     "redux-persist": "^6.0.0",
     "redux-persist-indexeddb-storage": "^1.0.4",
-    "rocketicons": "^0.1.0-alpha",
+    "rocketicons": "^0.2.0-alpha",
     "scatter-gl": "0.0.13",
     "slick-carousel": "^1.8.1",
     "stats-js": "^1.0.1",
