@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Maintainance() {
+export default function Meshtastic() {
   const classes = useStyles();
   const navigate = useNavigate();
   const contacts = useSelector((state) => state.contacts) || [];

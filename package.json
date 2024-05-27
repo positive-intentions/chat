@@ -26,6 +26,7 @@
     "serve:storybook": "serve storybook-static",
     "serve:webpack": "serve dist",
     "serve": "serve Frontend",
+    "serve:mesh": "serve Frontend/meshtastic",
     "serve:https": "serve -s Frontend --listen 4433 --ssl-cert ./local-ssl-keys/cert.pem --ssl-key ./local-ssl-keys/key.pem",
     "serve:ssl": "http-server -S -C ./local-ssl-keys/cert.pem -K ./local-ssl-keys/key.pem Frontend",
     "storybook": "storybook dev -p 6006",

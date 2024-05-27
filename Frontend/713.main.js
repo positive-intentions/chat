@@ -1,7 +1,7 @@
 "use strict";
 (self["webpackChunkchat"] = self["webpackChunkchat"] || []).push([[713],{
 
-/***/ 96936:
+/***/ 78533:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -8786,7 +8786,7 @@ var Maintainance_useStyles = (0,makeStyles/* default */.A)(function (theme) {
     }
   };
 });
-function Maintainance() {
+function Meshtastic() {
   var classes = Maintainance_useStyles();
   var navigate = useNavigate();
   var contacts = useSelector(function (state) {
@@ -8866,7 +8866,7 @@ var Hands_useStyles = (0,makeStyles/* default */.A)(function (theme) {
     }
   };
 });
-function Hands_Maintainance() {
+function Maintainance() {
   var classes = Hands_useStyles();
   var navigate = (0,react_router_dist/* useNavigate */.Zp)();
   var contacts = (0,react_redux/* useSelector */.d4)(function (state) {
@@ -11621,6 +11621,56 @@ function Layout_Maintainance() {
 
   return /*#__PURE__*/index_js_default().createElement(FullScreenDialog, null);
 }
+;// CONCATENATED MODULE: ./src/components/pages/meshtastic/Meshtastic.jsx
+
+
+
+
+
+
+var Meshtastic_useStyles = (0,makeStyles/* default */.A)(function (theme) {
+  return {
+    padding: {
+      padding: 10
+    }
+  };
+});
+function Meshtastic_Maintainance() {
+  var classes = Meshtastic_useStyles();
+  var navigate = (0,react_router_dist/* useNavigate */.Zp)();
+  var contacts = (0,react_redux/* useSelector */.d4)(function (state) {
+    return state.contacts;
+  }) || [];
+  return /*#__PURE__*/index_js_default().createElement(page_container_PageContainer/* default */.A, {
+    backgroundImage: "",
+    headerProps: {
+      title: "Meshtastic",
+      backButton: true,
+      menuProps: {
+        icon: "more",
+        items: [{
+          text: "Profile",
+          icon: "account",
+          onClick: function onClick() {
+            return navigate("/profile");
+          }
+        }]
+      }
+    }
+  }, /*#__PURE__*/index_js_default().createElement("div", {
+    style: {
+      textAlign: "center",
+      padding: 20
+    }
+  }, /*#__PURE__*/index_js_default().createElement("iframe", {
+    src: "/meshtastic/index.html",
+    style: {
+      height: "85vh",
+      width: '100%',
+      border: 'none'
+    }
+  })));
+}
 ;// CONCATENATED MODULE: ./src/components/router/Router.jsx
 function Router_slicedToArray(arr, i) { return Router_arrayWithHoles(arr) || Router_iterableToArrayLimit(arr, i) || Router_unsupportedIterableToArray(arr, i) || Router_nonIterableRest(); }
 function Router_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -11651,6 +11701,7 @@ function Router_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 // import Verse from '../pages/verse/Verse'
+
 
 
 
@@ -11742,10 +11793,13 @@ var Verse = /*#__PURE__*/(0,index_js_.lazy)(function () {
         element: /*#__PURE__*/index_js_default().createElement(Layout_Maintainance, null)
       }, {
         path: "/hands",
-        element: /*#__PURE__*/index_js_default().createElement(Hands_Maintainance, null)
+        element: /*#__PURE__*/index_js_default().createElement(Maintainance, null)
       }, {
         path: "/encrypt",
         element: /*#__PURE__*/index_js_default().createElement(Encryption_Maintainance, null)
+      }, {
+        path: "/meshtastic",
+        element: /*#__PURE__*/index_js_default().createElement(Meshtastic_Maintainance, null)
       }]));
     } else {
       setRouter((0,dist/* createHashRouter */.Ge)([{
@@ -11830,10 +11884,13 @@ var Verse = /*#__PURE__*/(0,index_js_.lazy)(function () {
         element: /*#__PURE__*/index_js_default().createElement(Layout_Maintainance, null)
       }, {
         path: "/hands",
-        element: /*#__PURE__*/index_js_default().createElement(Hands_Maintainance, null)
+        element: /*#__PURE__*/index_js_default().createElement(Maintainance, null)
       }, {
         path: "/encrypt",
         element: /*#__PURE__*/index_js_default().createElement(Encryption_Maintainance, null)
+      }, {
+        path: "/meshtastic",
+        element: /*#__PURE__*/index_js_default().createElement(Meshtastic_Maintainance, null)
       }]));
     }
   }, [storedUsername]);
@@ -12962,8 +13019,8 @@ function ErrorBoundary(props) {
   }
 }
 /* harmony default export */ const errorBoundary_ErrorBoundary = (ErrorBoundary);
-// EXTERNAL MODULE: ./node_modules/jss/dist/jss.esm.js
-var jss_esm = __webpack_require__(73317);
+// EXTERNAL MODULE: ./node_modules/jss/dist/jss.esm.js + 4 modules
+var jss_esm = __webpack_require__(89598);
 // EXTERNAL MODULE: ./node_modules/jss-rtl/lib/main.js
 var main = __webpack_require__(27571);
 ;// CONCATENATED MODULE: ./src/App.tsx
@@ -13131,7 +13188,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50318);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5338);
-/* harmony import */ var _App_tsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(96936);
+/* harmony import */ var _App_tsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(78533);
 /* harmony import */ var _lcdp_offline_plugin_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(59918);
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
@@ -14884,16 +14941,16 @@ var si = __webpack_require__(31779);
 var ConnectWithoutContact = __webpack_require__(50027);
 // EXTERNAL MODULE: ./node_modules/react-i18next/dist/es/index.js + 15 modules
 var es = __webpack_require__(32389);
-// EXTERNAL MODULE: ./src/App.tsx + 70 modules
-var App = __webpack_require__(96936);
+// EXTERNAL MODULE: ./src/App.tsx + 71 modules
+var App = __webpack_require__(78533);
 // EXTERNAL MODULE: ./node_modules/@mui/material/styles/useTheme.js
 var useTheme = __webpack_require__(44675);
 // EXTERNAL MODULE: ./src/components/notifications/notificationManager.jsx
 var notificationManager = __webpack_require__(29535);
 // EXTERNAL MODULE: ./node_modules/i18next/dist/esm/i18next.js
 var i18next = __webpack_require__(72635);
-// EXTERNAL MODULE: ./node_modules/i18next-browser-languagedetector/dist/esm/i18nextBrowserLanguageDetector.js + 1 modules
-var i18nextBrowserLanguageDetector = __webpack_require__(90796);
+// EXTERNAL MODULE: ./node_modules/i18next-browser-languagedetector/dist/esm/i18nextBrowserLanguageDetector.js
+var i18nextBrowserLanguageDetector = __webpack_require__(94997);
 // EXTERNAL MODULE: ./node_modules/i18next-http-backend/esm/index.js + 2 modules
 var esm = __webpack_require__(1347);
 ;// CONCATENATED MODULE: ./src/components/translations/i18n.js
@@ -15023,6 +15080,7 @@ i18next/* default.use */.Ay.use(i18nextBrowserLanguageDetector/* default */.A).u
           vinnc: "Vinn-C",
           map: "Map",
           encrypt: "Encrypt",
+          meshtastic: "Meshtastic",
           commingSoon: "Coming Soon"
         },
         contactDetailsPage: {
@@ -18072,6 +18130,8 @@ var languages = [{
 // { id: 'ur', name: 'اردو' },
 ];
 /* harmony default export */ const translations_i18n = ((/* unused pure expression or super */ null && (i18n)));
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/CellTower.js
+var CellTower = __webpack_require__(94624);
 // EXTERNAL MODULE: ./src/components/atomic/atom/dropdown/Dropdown.jsx + 1 modules
 var Dropdown = __webpack_require__(1310);
 ;// CONCATENATED MODULE: ./src/components/atomic/molecules/app-header/AppHeader.jsx
@@ -18089,6 +18149,7 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -18259,7 +18320,8 @@ var presetIcons = {
   medium: /*#__PURE__*/index_js_default().createElement(si/* SiMedium */.MCH, {
     height: "20",
     width: "20"
-  })
+  }),
+  mesh: /*#__PURE__*/index_js_default().createElement(CellTower/* default */.A, null)
 };
 function HideOnScroll(props) {
   var children = props.children,
@@ -18417,6 +18479,12 @@ var CustomDropdown = function CustomDropdown(_ref2) {
       icon: "key",
       onClick: function onClick() {
         return navigate("/encrypt");
+      }
+    }, {
+      text: t("podsPage.meshtastic"),
+      icon: "mesh",
+      onClick: function onClick() {
+        return navigate("/meshtastic");
       }
     }]
   }, {

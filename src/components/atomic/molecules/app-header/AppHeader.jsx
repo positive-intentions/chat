@@ -68,7 +68,7 @@ import { ColorModeContext } from "../../../../App.tsx";
 import { useTheme } from "@mui/material/styles";
 import { useNotification } from "../../../notifications/notificationManager";
 import { languages } from "../../../translations/i18n";
-
+import CellTowerIcon from '@mui/icons-material/CellTower';
 import Slide from "@mui/material/Slide";
 
 import {
@@ -162,7 +162,8 @@ const presetIcons = {
   coffee: <SiKofi height="20" width="20" />,
   openCollective: <SiOpencollective height="20" width="20" />,
   patreon: <SiPatreon height="20" width="20" />,
-  medium: <SiMedium height="20" width="20" />
+  medium: <SiMedium height="20" width="20" />,
+  mesh: <CellTowerIcon />,
 };
 
 function HideOnScroll(props) {
@@ -293,7 +294,12 @@ const CustomDropdown = ({ menuItems }) => {
           text: t("podsPage.encrypt"),
           icon: "key",
           onClick: () => navigate("/encrypt"),
-        }
+        },
+        {
+          text: t("podsPage.meshtastic"),
+          icon: "mesh",
+          onClick: () => navigate("/meshtastic"),
+        },
       ],
     },
     {

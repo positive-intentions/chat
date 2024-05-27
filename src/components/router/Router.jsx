@@ -40,6 +40,7 @@ import Map from "../pages/map/Map";
 import AI from "../pages/ai/AI";
 import WebRTC from "../pages/webrtc/WebRTC";
 import Layout from "../pages/layout/Layout";
+import Meshtastic from "../pages/meshtastic/Meshtastic";
 
 const Verse = lazy(() => import("../pages/verse/Verse"));
 
@@ -139,7 +140,11 @@ export default () => {
           {
             path: "/encrypt",
             element: <Encryption />,
-          }
+          },
+          {
+            path: "/meshtastic",
+            element: <Meshtastic />,
+          },
         ]),
       );
     } else {
@@ -257,7 +262,11 @@ export default () => {
           {
             path: "/encrypt",
             element: <Encryption />,
-          }
+          },
+          {
+            path: "/meshtastic",
+            element: <Meshtastic />,
+          },
         ]),
       );
     }

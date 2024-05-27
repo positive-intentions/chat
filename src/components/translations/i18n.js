@@ -134,6 +134,7 @@ i18n
             vinnc: "Vinn-C",
             map: "Map",
             encrypt: "Encrypt",
+            meshtastic: "Meshtastic",
             commingSoon: "Coming Soon",
           },
           contactDetailsPage: {
