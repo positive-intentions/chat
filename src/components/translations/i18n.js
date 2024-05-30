@@ -134,7 +134,8 @@ i18n
             vinnc: "Vinn-C",
             map: "Map",
             encrypt: "Encrypt",
-            meshtastic: "Meshtastic",
+            meshtastic: "BLE",
+            computer: "Desk",
             commingSoon: "Coming Soon",
           },
           contactDetailsPage: {

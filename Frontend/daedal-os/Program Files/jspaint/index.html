@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>JS Paint</title>
+
+	<link href="styles/normalize.css" rel="stylesheet" type="text/css">
+	<link href="styles/layout.css" class="flippable-layout-stylesheet" rel="stylesheet" type="text/css">
+	<link href="styles/print.css" rel="stylesheet" type="text/css" media="print">
+	<link href="lib/os-gui/layout.css" class="flippable-layout-stylesheet" rel="stylesheet" type="text/css">
+	<link href="lib/98.css/98.custom-build.css" class="flippable-layout-stylesheet not-for-modern" rel="stylesheet"
+		type="text/css">
+
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<meta name="description" content="Classic MS Paint in the browser, with extra features" />
+	<script src="src/error-handling-basic.js"></script>
+	<script src="src/theme.js"></script>
+</head>
+
+<body>
+	<div id="about-paint" style="display: none">
+		<h1 id="about-paint-header">
+			<img src="images/icons/32x32.png" width="32" height="32" id="paint-32x32" alt="" />
+			<span id="jspaint-project-name">JS Paint</span>
+		</h1>
+
+		<p>Open source under the permissive
+			<a href="https://github.com/1j01/jspaint/blob/master/LICENSE.txt" target="_blank">MIT License</a>.
+		</p>
+		<p>JS Paint is a web-based remake of MS Paint by <a href="https://isaiahodhner.io/" target="_blank">Isaiah Odhner</a>.</p>
+		<p>Read about the project and extra features on <a href="https://github.com/1j01/jspaint#readme" target="_blank">the readme</a>.
+		</p>
+		<p>Request features and report bugs <a href="https://github.com/1j01/jspaint/issues" target="_blank">on GitHub</a>
+			or <a href="mailto:isaiahodhner@gmail.com?subject=JS%20Paint" target="_blank">by email</a>.</p>
+		<p>Support the project at <a href="https://www.paypal.me/IsaiahOdhner" target="_blank">paypal.me/IsaiahOdhner</a>.</p>
+	</div>
+
+	<!-- Note: no CDNs, even with fallback, as the fallback is too complicated to handle with CSP. -->
+	<script src="lib/jquery-3.4.1.min.js"></script>
+	<script src="lib/gif.js/gif.js"></script>
+	<script src="lib/pako-2.0.3.min.js"></script> <!-- for UPNG.js and UTIF.js -->
+	<script src="lib/UPNG.js"></script>
+	<script src="lib/UTIF.js"></script>
+	<script src="lib/bmp.js"></script>
+	<script src="lib/pdf.js/build/pdf.js"></script>
+	<script src="lib/anypalette-0.6.0.js"></script>
+	<script src="lib/FileSaver.js"></script>
+	<script src="lib/font-detective.js"></script>
+	<script src="lib/libtess.min.js"></script>
+	<!-- <script src="lib/tracky-mouse/tracky-mouse.js"></script> -->
+	<script src="lib/os-gui/parse-theme.js"></script>
+	<script src="lib/os-gui/$Window.js"></script>
+	<script src="lib/os-gui/MenuBar.js"></script>
+	<script src="lib/imagetracer_v1.2.5.js"></script>
+
+	<script src="src/app-localization.js"></script>
+	<!-- must not be async/deferred, as it uses document.write(); and must come before other app code which uses localization functions -->
+	<script src="src/msgbox.js"></script>
+	<script src="src/functions.js"></script>
+	<script src="src/helpers.js"></script>
+	<script src="src/storage.js"></script>
+	<script src="src/$Component.js"></script>
+	<script src="src/$ToolWindow.js"></script>
+
+	<!-- After show_error_message, showMessageBox, make_window_supporting_scale, and localize are defined,
+	set up better global error handling. -->
+	<!-- Note: This must be in the <body> as it also handles showing a message for Internet Explorer. -->
+	<script src="src/error-handling-enhanced.js"></script>
+
+	<script src="src/$ToolBox.js"></script>
+	<script src="src/$ColorBox.js"></script>
+	<script src="src/$FontBox.js"></script>
+	<script src="src/Handles.js"></script>
+	<script src="src/OnCanvasObject.js"></script>
+	<script src="src/OnCanvasSelection.js"></script>
+	<script src="src/OnCanvasTextBox.js"></script>
+	<script src="src/OnCanvasHelperLayer.js"></script>
+	<script src="src/image-manipulation.js"></script>
+	<script src="src/tool-options.js"></script>
+	<script src="src/tools.js"></script>
+	<!--<script src="src/extra-tools.js"></script>-->
+	<script src="src/edit-colors.js"></script>
+	<script src="src/manage-storage.js"></script>
+	<script src="src/imgur.js"></script>
+	<script src="src/help.js"></script>
+	<script src="src/simulate-random-gestures.js"></script>
+	<script src="src/menus.js"></script>
+	<script src="src/speech-recognition.js"></script>
+	<script src="src/app.js"></script>
+	<script src="src/sessions.js"></script>
+	<script src="lib/konami.js"></script>
+	<script src="src/vaporwave-fun.js"></script>
+
+	<svg style="position: absolute; pointer-events: none; bottom: 100%;">
+		<defs>
+			<filter id="disabled-inset-filter" x="0" y="0" width="1px" height="1px">
+				<feColorMatrix in="SourceGraphic" type="matrix" values="
+					1 0 0 0 0
+					0 1 0 0 0
+					0 0 1 0 0
+					-1000 -1000 -1000 1 0
+				" result="black-parts-isolated" />
+				<feFlood result="shadow-color" flood-color="var(--ButtonShadow)" />
+				<feFlood result="hilight-color" flood-color="var(--ButtonHilight)" />
+				<feOffset in="black-parts-isolated" dx="1" dy="1" result="offset" />
+				<feComposite in="hilight-color" in2="offset" operator="in" result="hilight-colored-offset" />
+				<feComposite in="shadow-color" in2="black-parts-isolated" operator="in" result="shadow-colored" />
+				<feMerge>
+					<feMergeNode in="hilight-colored-offset" />
+					<feMergeNode in="shadow-colored" />
+				</feMerge>
+			</filter>
+			<filter id="disabled-inset-filter-2" x="0" y="0" width="1px" height="1px">
+				<feColorMatrix in="SourceGraphic" type="matrix" values="
+					1 0 0 0 0
+					0 1 0 0 0
+					0 0 1 0 0
+					-1 -1 -0 1 0
+				" result="black-and-blue-parts-isolated" />
+				<feFlood result="shadow-color" flood-color="var(--ButtonShadow)" />
+				<feFlood result="hilight-color" flood-color="var(--ButtonHilight)" />
+				<feOffset in="black-and-blue-parts-isolated" dx="1" dy="1" result="offset" />
+				<feComposite in="hilight-color" in2="offset" operator="in" result="hilight-colored-offset" />
+				<feComposite in="shadow-color" in2="black-and-blue-parts-isolated" operator="in"
+					result="shadow-colored" />
+				<feMerge>
+					<feMergeNode in="hilight-colored-offset" />
+					<feMergeNode in="shadow-colored" />
+				</feMerge>
+			</filter>
+		</defs>
+	</svg>
+</body>
+
+</html>

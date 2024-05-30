@@ -41,6 +41,7 @@ import AI from "../pages/ai/AI";
 import WebRTC from "../pages/webrtc/WebRTC";
 import Layout from "../pages/layout/Layout";
 import Meshtastic from "../pages/meshtastic/Meshtastic";
+import Computer from "../pages/computer/Computer";
 
 const Verse = lazy(() => import("../pages/verse/Verse"));
 
@@ -144,6 +145,10 @@ export default () => {
           {
             path: "/meshtastic",
             element: <Meshtastic />,
+          },
+          {
+            path: "/desk",
+            element: <Computer />,
           },
         ]),
       );
@@ -267,6 +272,10 @@ export default () => {
             path: "/meshtastic",
             element: <Meshtastic />,
           },
+          {
+            path: "/desk",
+            element: <Computer />,
+          }
         ]),
       );
     }

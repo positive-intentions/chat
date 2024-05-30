@@ -49,7 +49,7 @@ export default function Maintainance() {
     <PageContainer
       backgroundImage=""
       headerProps={{
-        title: "Meshtastic",
+        title: "BLE",
         backButton: true,
         menuProps: {
           icon: "more",

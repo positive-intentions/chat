@@ -71,6 +71,7 @@ import { languages } from "../../../translations/i18n";
 import CellTowerIcon from '@mui/icons-material/CellTower';
 import Copyright from "@mui/icons-material/Copyright";
 import Slide from "@mui/material/Slide";
+import { BiDesktop } from "rocketicons/bi";
 
 import {
   Dropdown,
@@ -165,7 +166,8 @@ const presetIcons = {
   patreon: <SiPatreon height="20" width="20" />,
   medium: <SiMedium height="20" width="20" />,
   mesh: <CellTowerIcon />,
-  copyright: <Copyright />
+  copyright: <Copyright />,
+  computer: <BiDesktop height="20" width="20" />,
 };
 
 function HideOnScroll(props) {
@@ -301,6 +303,11 @@ const CustomDropdown = ({ menuItems }) => {
           text: t("podsPage.meshtastic"),
           icon: "mesh",
           onClick: () => navigate("/meshtastic"),
+        },
+        {
+          text: t("podsPage.computer"),
+          icon: "computer",
+          onClick: () => navigate("/desk"),
         },
       ],
     },

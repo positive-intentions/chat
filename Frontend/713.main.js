@@ -1,7 +1,7 @@
 "use strict";
 (self["webpackChunkchat"] = self["webpackChunkchat"] || []).push([[713],{
 
-/***/ 78533:
+/***/ 96790:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -11689,7 +11689,7 @@ function Meshtastic_Maintainance() {
   return /*#__PURE__*/index_js_default().createElement(page_container_PageContainer/* default */.A, {
     backgroundImage: "",
     headerProps: {
-      title: "Meshtastic",
+      title: "BLE",
       backButton: true,
       menuProps: {
         icon: "more",
@@ -11758,6 +11758,143 @@ function Meshtastic_Maintainance() {
     onClick: handleClose
   }, "close"))));
 }
+;// CONCATENATED MODULE: ./src/components/pages/computer/Computer.jsx
+function Computer_slicedToArray(arr, i) { return Computer_arrayWithHoles(arr) || Computer_iterableToArrayLimit(arr, i) || Computer_unsupportedIterableToArray(arr, i) || Computer_nonIterableRest(); }
+function Computer_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function Computer_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Computer_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Computer_arrayLikeToArray(o, minLen); }
+function Computer_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function Computer_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function Computer_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+function Computer_extends() { Computer_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Computer_extends.apply(this, arguments); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var Computer_BootstrapDialog = (0,styled/* default */.Ay)(Dialog/* default */.A)(function (_ref) {
+  var theme = _ref.theme;
+  return {
+    "& .MuiDialogContent-root": {
+      padding: theme.spacing(2),
+      display: 'flex',
+      flexDirection: 'column'
+    },
+    "& .MuiDialogActions-root": {
+      padding: theme.spacing(1)
+    }
+  };
+});
+var Computer_Transition = /*#__PURE__*/index_js_default().forwardRef(function Transition(props, ref) {
+  return /*#__PURE__*/index_js_default().createElement(Slide/* default */.A, Computer_extends({
+    direction: "up",
+    ref: ref
+  }, props));
+});
+var Computer_useStyles = (0,makeStyles/* default */.A)(function (theme) {
+  return {
+    padding: {
+      padding: 10
+    }
+  };
+});
+function Computer_Maintainance() {
+  var classes = Computer_useStyles();
+  var navigate = (0,react_router_dist/* useNavigate */.Zp)();
+  var contacts = (0,react_redux/* useSelector */.d4)(function (state) {
+    return state.contacts;
+  }) || [];
+  var _useState = (0,index_js_.useState)(false),
+    _useState2 = Computer_slicedToArray(_useState, 2),
+    open = _useState2[0],
+    setOpen = _useState2[1];
+  var handleClose = function handleClose() {
+    return setOpen(false);
+  };
+  var handleOpen = function handleOpen() {
+    return setOpen(true);
+  };
+  return /*#__PURE__*/index_js_default().createElement(page_container_PageContainer/* default */.A, {
+    backgroundImage: "",
+    headerProps: {
+      title: "Desk",
+      backButton: true,
+      menuProps: {
+        icon: "more",
+        items: [{
+          text: "daedalOS",
+          icon: "computer",
+          onClick: function onClick() {
+            return handleOpen();
+          }
+        }, {
+          text: "Profile",
+          icon: "account",
+          onClick: function onClick() {
+            return navigate("/profile");
+          }
+        }]
+      }
+    }
+  }, /*#__PURE__*/index_js_default().createElement("div", {
+    style: {
+      textAlign: "center",
+      padding: 20
+    }
+  }, /*#__PURE__*/index_js_default().createElement("iframe", {
+    src: "/daedal-os/index.html",
+    style: {
+      height: "85vh",
+      width: '100%',
+      border: 'none'
+    }
+  })), /*#__PURE__*/index_js_default().createElement(Computer_BootstrapDialog, {
+    onClose: handleClose,
+    "aria-labelledby": "customized-dialog-title",
+    open: open,
+    TransitionComponent: Computer_Transition,
+    disablePortal: true,
+    fullWidth: true,
+    fullHeight: true
+  }, /*#__PURE__*/index_js_default().createElement(DialogTitle/* default */.A, {
+    sx: {
+      m: 0,
+      p: 2
+    },
+    id: "customized-dialog-title"
+  }, "daedalOS"), /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
+    "aria-label": "close",
+    onClick: handleClose,
+    sx: {
+      position: "absolute",
+      right: 8,
+      top: 8,
+      color: function color(theme) {
+        return theme.palette.grey[500];
+      }
+    }
+  }, /*#__PURE__*/index_js_default().createElement(Close/* default */.A, null)), /*#__PURE__*/index_js_default().createElement(DialogContent/* default */.A, {
+    dividers: true
+  }, /*#__PURE__*/index_js_default().createElement(Typography_Typography/* default */.A, {
+    variant: "p"
+  }, "Desktop environment in the browser"), /*#__PURE__*/index_js_default().createElement(Button/* default */.A, {
+    onClick: function onClick() {
+      return window.open("https://github.com/DustinBrett/daedalOS", "_blank");
+    }
+  }, "daedalOS github")), /*#__PURE__*/index_js_default().createElement(DialogActions/* default */.A, null, /*#__PURE__*/index_js_default().createElement(Button/* default */.A, {
+    autoFocus: true,
+    onClick: handleClose
+  }, "close"))));
+}
 ;// CONCATENATED MODULE: ./src/components/router/Router.jsx
 function Router_slicedToArray(arr, i) { return Router_arrayWithHoles(arr) || Router_iterableToArrayLimit(arr, i) || Router_unsupportedIterableToArray(arr, i) || Router_nonIterableRest(); }
 function Router_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -11788,6 +11925,7 @@ function Router_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 // import Verse from '../pages/verse/Verse'
+
 
 
 
@@ -11887,6 +12025,9 @@ var Verse = /*#__PURE__*/(0,index_js_.lazy)(function () {
       }, {
         path: "/meshtastic",
         element: /*#__PURE__*/index_js_default().createElement(Meshtastic_Maintainance, null)
+      }, {
+        path: "/desk",
+        element: /*#__PURE__*/index_js_default().createElement(Computer_Maintainance, null)
       }]));
     } else {
       setRouter((0,dist/* createHashRouter */.Ge)([{
@@ -11978,6 +12119,9 @@ var Verse = /*#__PURE__*/(0,index_js_.lazy)(function () {
       }, {
         path: "/meshtastic",
         element: /*#__PURE__*/index_js_default().createElement(Meshtastic_Maintainance, null)
+      }, {
+        path: "/desk",
+        element: /*#__PURE__*/index_js_default().createElement(Computer_Maintainance, null)
       }]));
     }
   }, [storedUsername]);
@@ -13275,7 +13419,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50318);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5338);
-/* harmony import */ var _App_tsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(78533);
+/* harmony import */ var _App_tsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(96790);
 /* harmony import */ var _lcdp_offline_plugin_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(59918);
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
@@ -15022,14 +15166,14 @@ var PrivacyTip = __webpack_require__(76348);
 var WavingHand = __webpack_require__(94370);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/QuestionMark.js
 var QuestionMark = __webpack_require__(20772);
-// EXTERNAL MODULE: ./node_modules/rocketicons/si/index.mjs + 1 modules
-var si = __webpack_require__(31779);
+// EXTERNAL MODULE: ./node_modules/rocketicons/si/index.mjs
+var si = __webpack_require__(3897);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/ConnectWithoutContact.js
 var ConnectWithoutContact = __webpack_require__(50027);
 // EXTERNAL MODULE: ./node_modules/react-i18next/dist/es/index.js + 15 modules
 var es = __webpack_require__(32389);
-// EXTERNAL MODULE: ./src/App.tsx + 71 modules
-var App = __webpack_require__(78533);
+// EXTERNAL MODULE: ./src/App.tsx + 72 modules
+var App = __webpack_require__(96790);
 // EXTERNAL MODULE: ./node_modules/@mui/material/styles/useTheme.js
 var useTheme = __webpack_require__(44675);
 // EXTERNAL MODULE: ./src/components/notifications/notificationManager.jsx
@@ -15167,7 +15311,8 @@ i18next/* default.use */.Ay.use(i18nextBrowserLanguageDetector/* default */.A).u
           vinnc: "Vinn-C",
           map: "Map",
           encrypt: "Encrypt",
-          meshtastic: "Meshtastic",
+          meshtastic: "BLE",
+          computer: "Desk",
           commingSoon: "Coming Soon"
         },
         contactDetailsPage: {
@@ -18221,6 +18366,8 @@ var languages = [{
 var CellTower = __webpack_require__(94624);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Copyright.js
 var Copyright = __webpack_require__(35372);
+// EXTERNAL MODULE: ./node_modules/rocketicons/bi/index.mjs
+var bi = __webpack_require__(10402);
 // EXTERNAL MODULE: ./src/components/atomic/atom/dropdown/Dropdown.jsx + 1 modules
 var Dropdown = __webpack_require__(1310);
 ;// CONCATENATED MODULE: ./src/components/atomic/molecules/app-header/AppHeader.jsx
@@ -18238,6 +18385,7 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -18412,7 +18560,11 @@ var presetIcons = {
     width: "20"
   }),
   mesh: /*#__PURE__*/index_js_default().createElement(CellTower/* default */.A, null),
-  copyright: /*#__PURE__*/index_js_default().createElement(Copyright/* default */.A, null)
+  copyright: /*#__PURE__*/index_js_default().createElement(Copyright/* default */.A, null),
+  computer: /*#__PURE__*/index_js_default().createElement(bi/* BiDesktop */.Yh, {
+    height: "20",
+    width: "20"
+  })
 };
 function HideOnScroll(props) {
   var children = props.children,
@@ -18576,6 +18728,12 @@ var CustomDropdown = function CustomDropdown(_ref2) {
       icon: "mesh",
       onClick: function onClick() {
         return navigate("/meshtastic");
+      }
+    }, {
+      text: t("podsPage.computer"),
+      icon: "computer",
+      onClick: function onClick() {
+        return navigate("/desk");
       }
     }]
   }, {
