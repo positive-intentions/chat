@@ -18678,59 +18678,65 @@ var CustomDropdown = function CustomDropdown(_ref2) {
       window.removeEventListener("beforeinstallprompt", handleBeforeInstallPromptEvent);
     };
   }, []);
-  var defaultMenuItems = [
-  // {
-  //   text: t("components.menuItems.labs"),
-  //   icon: "labs",
-  //   subMenuItems: [
-  //     {
-  //       text: t("podsPage.gram"),
-  //       icon: "gram",
-  //       onClick: () => navigate("/feed"),
-  //     },
-  //     {
-  //       text: t("podsPage.verse"),
-  //       icon: "verse",
-  //       onClick: () => navigate("/verse"),
-  //     },
-  //     {
-  //       text: t("podsPage.map"),
-  //       icon: "map",
-  //       onClick: () => navigate("/map"),
-  //     },
-  //     {
-  //       text: t("podsPage.qr"),
-  //       icon: "qr",
-  //       onClick: () => navigate("/qr"),
-  //     },
-  //     {
-  //       text: t("podsPage.webrtc"),
-  //       icon: "connect",
-  //       onClick: () => navigate("/webrtc"),
-  //     },
-  //     {
-  //       text: t("podsPage.hands"),
-  //       icon: "hand",
-  //       onClick: () => navigate("/hands"),
-  //     },
-  //     {
-  //       text: t("podsPage.encrypt"),
-  //       icon: "key",
-  //       onClick: () => navigate("/encrypt"),
-  //     },
-  //     {
-  //       text: t("podsPage.meshtastic"),
-  //       icon: "mesh",
-  //       onClick: () => navigate("/meshtastic"),
-  //     },
-  //     {
-  //       text: t("podsPage.computer"),
-  //       icon: "computer",
-  //       onClick: () => navigate("/desk"),
-  //     },
-  //   ],
-  // },
-  {
+  var defaultMenuItems = [{
+    text: t("components.menuItems.labs"),
+    icon: "labs",
+    subMenuItems: [{
+      text: t("podsPage.gram"),
+      icon: "gram",
+      onClick: function onClick() {
+        return navigate("/feed");
+      }
+    }, {
+      text: t("podsPage.verse"),
+      icon: "verse",
+      onClick: function onClick() {
+        return navigate("/verse");
+      }
+    }, {
+      text: t("podsPage.map"),
+      icon: "map",
+      onClick: function onClick() {
+        return navigate("/map");
+      }
+    }, {
+      text: t("podsPage.qr"),
+      icon: "qr",
+      onClick: function onClick() {
+        return navigate("/qr");
+      }
+    }, {
+      text: t("podsPage.webrtc"),
+      icon: "connect",
+      onClick: function onClick() {
+        return navigate("/webrtc");
+      }
+    }, {
+      text: t("podsPage.hands"),
+      icon: "hand",
+      onClick: function onClick() {
+        return navigate("/hands");
+      }
+    }, {
+      text: t("podsPage.encrypt"),
+      icon: "key",
+      onClick: function onClick() {
+        return navigate("/encrypt");
+      }
+    }, {
+      text: t("podsPage.meshtastic"),
+      icon: "mesh",
+      onClick: function onClick() {
+        return navigate("/meshtastic");
+      }
+    }, {
+      text: t("podsPage.computer"),
+      icon: "computer",
+      onClick: function onClick() {
+        return navigate("/desk");
+      }
+    }]
+  }, {
     text: t("components.menuItems.about"),
     icon: "info",
     subMenuItems: [{
