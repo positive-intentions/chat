@@ -61,7 +61,7 @@ import NavigationIcon from "@mui/icons-material/Navigation";
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 import WavingHandIcon from '@mui/icons-material/WavingHand';
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
-import { SiKofi, SiPatreon, SiOpencollective, SiMedium } from "rocketicons/si";
+import { SiKofi, SiPatreon, SiOpencollective, SiMedium, SiDiscord } from "rocketicons/si";
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import { useTranslation } from "react-i18next";
 import { ColorModeContext } from "../../../../App.tsx";
@@ -168,6 +168,7 @@ const presetIcons = {
   mesh: <CellTowerIcon />,
   copyright: <Copyright />,
   computer: <BiDesktop height="20" width="20" />,
+  discord: <SiDiscord height="20" width="20" />,
 };
 
 function HideOnScroll(props) {
@@ -341,6 +342,12 @@ const CustomDropdown = ({ menuItems }) => {
           icon: "reddit",
           onClick: () =>
             window.open("https://www.reddit.com/r/positive_intentions/"),
+        },
+        {
+          text: t("components.menuItems.discord"),
+          icon: "discord",
+          onClick: () =>
+            window.open("https://discord.gg/unnQnR67nR"),
         },
         {
           text: t("components.menuItems.medium"),

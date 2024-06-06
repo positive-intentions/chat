@@ -40,6 +40,7 @@ i18n
               openCollective: "Open Collective",
               patreon: "Patreon",
               reddit: "Reddit",
+              discord: "Discord",
               youtube: "Youtube",
               options: "Options",
               language: "Language",

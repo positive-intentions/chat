@@ -15225,6 +15225,7 @@ i18next/* default.use */.Ay.use(i18nextBrowserLanguageDetector/* default */.A).u
             openCollective: "Open Collective",
             patreon: "Patreon",
             reddit: "Reddit",
+            discord: "Discord",
             youtube: "Youtube",
             options: "Options",
             language: "Language",
@@ -18564,6 +18565,10 @@ var presetIcons = {
   computer: /*#__PURE__*/index_js_default().createElement(bi/* BiDesktop */.Yh, {
     height: "20",
     width: "20"
+  }),
+  discord: /*#__PURE__*/index_js_default().createElement(si/* SiDiscord */.Nxe, {
+    height: "20",
+    width: "20"
   })
 };
 function HideOnScroll(props) {
@@ -18768,6 +18773,12 @@ var CustomDropdown = function CustomDropdown(_ref2) {
       icon: "reddit",
       onClick: function onClick() {
         return window.open("https://www.reddit.com/r/positive_intentions/");
+      }
+    }, {
+      text: t("components.menuItems.discord"),
+      icon: "discord",
+      onClick: function onClick() {
+        return window.open("https://discord.gg/unnQnR67nR");
       }
     }, {
       text: t("components.menuItems.medium"),
