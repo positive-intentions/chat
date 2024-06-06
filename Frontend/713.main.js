@@ -13250,8 +13250,8 @@ function ErrorBoundary(props) {
   }
 }
 /* harmony default export */ const errorBoundary_ErrorBoundary = (ErrorBoundary);
-// EXTERNAL MODULE: ./node_modules/jss/dist/jss.esm.js + 4 modules
-var jss_esm = __webpack_require__(89598);
+// EXTERNAL MODULE: ./node_modules/jss/dist/jss.esm.js
+var jss_esm = __webpack_require__(73317);
 // EXTERNAL MODULE: ./node_modules/jss-rtl/lib/main.js
 var main = __webpack_require__(27571);
 ;// CONCATENATED MODULE: ./src/App.tsx
@@ -15180,8 +15180,8 @@ var useTheme = __webpack_require__(44675);
 var notificationManager = __webpack_require__(29535);
 // EXTERNAL MODULE: ./node_modules/i18next/dist/esm/i18next.js
 var i18next = __webpack_require__(72635);
-// EXTERNAL MODULE: ./node_modules/i18next-browser-languagedetector/dist/esm/i18nextBrowserLanguageDetector.js
-var i18nextBrowserLanguageDetector = __webpack_require__(94997);
+// EXTERNAL MODULE: ./node_modules/i18next-browser-languagedetector/dist/esm/i18nextBrowserLanguageDetector.js + 1 modules
+var i18nextBrowserLanguageDetector = __webpack_require__(90796);
 // EXTERNAL MODULE: ./node_modules/i18next-http-backend/esm/index.js + 2 modules
 var esm = __webpack_require__(1347);
 ;// CONCATENATED MODULE: ./src/components/translations/i18n.js
