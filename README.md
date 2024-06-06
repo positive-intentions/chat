@@ -7,7 +7,7 @@
 
 <p align="center" style="text-align: center;">
 
-[Live App](https://chat.positive-intentions.com) | [Website](https://positive-intentions.com) | [Reddit](https://www.reddit.com/r/positive_intentions) | [Medium](https://medium.com/@positive.intentions.com)
+[Live App](https://chat.positive-intentions.com) | [Website](https://positive-intentions.com) | [Reddit](https://www.reddit.com/r/positive_intentions) | [Medium](https://medium.com/@positive.intentions.com) | [Discord](https://discord.gg/unnQnR67nR)
 
 
 </p>
