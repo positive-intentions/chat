@@ -6,12 +6,11 @@
 
 <div align="center">
   
-[Live App](https://chat.positive-intentions.com) | [Website](https://positive-intentions.com) | [Reddit](https://www.reddit.com/r/positive_intentions) | [Medium](https://medium.com/@positive.intentions.com) | [Discord](https://discord.gg/unnQnR67nR)
+[Live App](https://chat.positive-intentions.com) | [Docs](https://positive-intentions.com) | [Reddit](https://www.reddit.com/r/positive_intentions) | [Medium](https://medium.com/@positive.intentions.com) | [Discord](https://discord.gg/unnQnR67nR)
 </div>
 
-
-# Chat
-
+<div align="center">
+  
 ![GitHub stars](https://img.shields.io/github/stars/positive-intentions/chat?style=social) 
 ![GitHub forks](https://img.shields.io/github/forks/positive-intentions/chat?style=social) 
 ![GitHub issues](https://img.shields.io/github/issues/positive-intentions/chat) 
@@ -20,6 +19,9 @@
 [![gh-pages-build-deployment](https://github.com/positive-intentions/chat/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/positive-intentions/chat/actions/workflows/pages/pages-build-deployment)
 [![CodeQL](https://github.com/positive-intentions/chat/actions/workflows/codeql.yml/badge.svg)](https://github.com/positive-intentions/chat/actions/workflows/codeql.yml)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+</div>
+
+# Chat
 
 > ⚠️ **WARNING:** This project is not production-ready. It is an unstable experimental proof-of-concept and may contain bugs and/or incomplete features. Use it at your own risk.
 
@@ -111,4 +113,4 @@ Pushing the boundaries of what's possible with current web technologies to creat
 - **Development**: Interested in contributing code? [Let's talk!](https://www.reddit.com/r/positive_intentions) While the app isn't fully open-source yet, parts of it are, and I'm keen on opening more in the future.
 - **Spread the Word**: Help us grow by sharing the app with others who value privacy and control over their digital communication.
 - **Github Stars**: If you like the project, consider starring the repository. It helps others discover it and boosts my motivation.
-- **Financial Support**: Development is fueled by passion and coffee. Your sponsorship helps keep both flowing.
+- **Sponsorship**: Development is fueled by passion and coffee. Your sponsorship helps keep both flowing.
