@@ -21,6 +21,7 @@ const mutations = {
   updateAgreedToTerms: "UPDATE_AGREED_TO_TERMS",
   updateInAppNotification: "UPDATE_IN_APP_NOTIFICATION",
   updateBrowserNotification: "UPDATE_BROWSER_NOTIFICATION",
+  updateExperimentalFeatures: "UPDATE_EXPERIMENTAL_FEATURES",
   updatePeerjsServer: "UPDATE_PEERJS_SERVER",
   updateEncryptionSignature: "UPDATE_ENCRYPTION_SIGNATURE",
 };
@@ -59,6 +60,11 @@ export const compiler = (block, state) => {
       return {
         ...state,
         settings: { ...state.settings, browserNotification: payload },
+      };
+    case mutations.updateExperimentalFeatures:
+      return {
+        ...state,
+        settings: { ...state.settings, experimentalFeatures: payload },
       };
     case mutations.updatePeerjsServer:
       return { ...state, peerjsServer: payload };
@@ -131,6 +137,15 @@ export const blockBuilders = (salt = "") => ({
       timestamp: Date.now(),
       type: "UPDATE_BROWSER_NOTIFICATION",
       payload: payload.browserNotification,
+    },
+  ],
+  updateExperimentalFeatures: (payload) => [
+    {
+      id: randomString(salt),
+      from: payload.from,
+      timestamp: Date.now(),
+      type: "UPDATE_EXPERIMENTAL_FEATURES",
+      payload: payload.experimentalFeatures,
     },
   ],
   updatePeerjsServer: (payload) => [

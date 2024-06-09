@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { findDOMNode } from 'react-dom';
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
@@ -92,6 +93,7 @@ export default function Conversation({
     }
 
     document.addEventListener("scroll", handleScroll);
+    // findDOMNode(this).addEventListener("scroll", handleScroll);
     return () => {
       document.removeEventListener("scroll", handleScroll);
     };
@@ -107,6 +109,7 @@ export default function Conversation({
       document.documentElement.scrollHeight -
       document.documentElement.scrollTop -
       document.documentElement.clientHeight;
+    console.log("distantFromBottom", distantFromBottom);
     setIsNearBottom(distantFromBottom > 400);
   };
 
