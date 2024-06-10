@@ -124,6 +124,13 @@ const App = () => {
         // typography: {
         //   fontFamily: isRightToLeft() ? 'Arial' : 'Roboto',
         // },
+        overrides: {
+          MuiSpeedDialAction: {
+            staticTooltipLabel: {
+              whiteSpace: "nowrap",
+            },
+          },
+        },
       }),
     [mode],
   );

@@ -210,7 +210,7 @@ export default function Conversation({
         </>
       )}
       <li ref={scrollRef} />
-      {list.length > 10 && isNearBottom && (
+      {!!false && list.length > 10 && isNearBottom && (
         <Fab
           color="primary"
           aria-label="scroll to bottom"

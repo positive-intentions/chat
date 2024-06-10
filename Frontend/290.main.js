@@ -3827,6 +3827,24 @@ var VoiceRecorderButton = function VoiceRecorderButton(_ref) {
   }, "send")));
 };
 /* harmony default export */ const VoiceRecorder = (VoiceRecorderButton);
+// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDial/SpeedDial.js + 2 modules
+var SpeedDial = __webpack_require__(36056);
+// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDialIcon/SpeedDialIcon.js + 2 modules
+var SpeedDialIcon = __webpack_require__(10698);
+// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDialAction/SpeedDialAction.js + 63 modules
+var SpeedDialAction = __webpack_require__(749);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Videocam.js
+var Videocam = __webpack_require__(26347);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Call.js
+var Call = __webpack_require__(66573);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/ScreenShare.js
+var ScreenShare = __webpack_require__(54978);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/LiveTv.js
+var LiveTv = __webpack_require__(43981);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Folder.js
+var Folder = __webpack_require__(24521);
+// EXTERNAL MODULE: ./node_modules/rocketicons/bi/index.mjs
+var bi = __webpack_require__(10402);
 ;// CONCATENATED MODULE: ./src/components/pages/pod/Pod.jsx
 function Pod_typeof(o) { "@babel/helpers - typeof"; return Pod_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Pod_typeof(o); }
 function Pod_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
@@ -4528,6 +4546,16 @@ function Pod_extends() { Pod_extends = Object.assign ? Object.assign.bind() : fu
 
 
 
+
+
+
+
+
+
+
+
+
+
 var lightBackground = "/backgrounds/light-leaves.png";
 var darkBackground = "/backgrounds/dark-leaves.png";
 var calculateHash = calculateSha256/* default */.A;
@@ -5117,13 +5145,11 @@ function Pod() {
     }
   }];
   // if (filesForPod.length > 0) {
-  headerActions.push({
-    text: t("podPage.files"),
-    icon: "folder",
-    onClick: function onClick() {
-      return navigate("/pod/".concat(podId, "/files"));
-    }
-  });
+  // headerActions.push({
+  //   text: t("podPage.files"),
+  //   icon: "folder",
+  //   onClick: () => navigate(`/pod/${podId}/files`),
+  // });
   // }
 
   // get boolean if on  if any mobile browser by user agent. like an android ios browser on mobile
@@ -5146,59 +5172,46 @@ function Pod() {
       }
     });
   };
-  var customButtons = isOnline ? [{
-    text: t("podPage.call"),
-    icon: "callContact",
-    subMenuItems: [!isGroup && !isMobile && {
-      text: t("podPage.screenshare"),
-      icon: "screen",
-      onClick: function onClick() {
-        return makeCall({
-          screen: true,
-          video: true,
-          audio: true
-        });
-      }
-    }, !isGroup && {
-      text: t("podPage.videoCall"),
-      icon: "camera",
-      onClick: function onClick() {
-        return makeCall({
-          video: true,
-          audio: true
-        });
-      }
-    }, !isGroup && {
-      text: t("podPage.call"),
-      icon: "call",
-      onClick: function onClick() {
-        return makeCall({
-          audio: true
-        });
-      }
-    }, !isGroup && {
-      text: t("podPage.cast"),
-      icon: "cast",
-      onClick: function onClick() {
-        return makeCall({
-          audio: true,
-          video: true,
-          cast: true
-        });
-      }
-    }, {
-      text: t("podsPage.verse"),
-      icon: "verse",
-      onClick: function onClick() {
-        return navigate("/pod/".concat(podId, "/verse"));
-      }
-    }].filter(function (i) {
-      return !!i;
-    })
-  }].filter(function (i) {
-    return !!i;
-  }) : [];
-  headerActions.push.apply(headerActions, Pod_toConsumableArray(customButtons));
+
+  // const customButtons = isOnline
+  //   ? [
+  //       {
+  //         text: t("podPage.call"),
+  //         icon: "callContact",
+  //         subMenuItems: [
+  //           !isGroup &&
+  //             !isMobile && {
+  //               text: t("podPage.screenshare"),
+  //               icon: "screen",
+  //               onClick: () =>
+  //                 makeCall({ screen: true, video: true, audio: true }),
+  //             },
+  //           !isGroup && {
+  //             text: t("podPage.videoCall"),
+  //             icon: "camera",
+  //             onClick: () => makeCall({ video: true, audio: true }),
+  //           },
+  //           !isGroup && {
+  //             text: t("podPage.call"),
+  //             icon: "call",
+  //             onClick: () => makeCall({ audio: true }),
+  //           },
+  //           !isGroup && {
+  //             text: t("podPage.cast"),
+  //             icon: "cast",
+  //             onClick: () => makeCall({ audio: true, video: true, cast: true }),
+  //           },
+  //           {
+  //             text: t("podsPage.verse"),
+  //             icon: "verse",
+  //             onClick: () => navigate(`/pod/${podId}/verse`),
+  //           },
+  //         ].filter((i) => !!i),
+  //       },
+  //     ].filter((i) => !!i)
+  //   : [];
+
+  // headerActions.push(...customButtons);
 
   // log which redux state is being updated in a loop
   (0,index_js_.useEffect)(function () {
@@ -5238,6 +5251,13 @@ function Pod() {
   // storedAvatar
 
   console.log("rendering pod page");
+  var _React$useState3 = index_js_default().useState(false),
+    _React$useState4 = Pod_slicedToArray(_React$useState3, 2),
+    speedDialOpen = _React$useState4[0],
+    setSpeedDialOpen = _React$useState4[1];
+  var handleSpeedDialOpen = function handleSpeedDialOpen() {
+    setSpeedDialOpen(!speedDialOpen);
+  };
   return /*#__PURE__*/index_js_default().createElement(page_container_PageContainer/* default */.A, {
     backgroundImage: theme.palette.mode === "dark" ? darkBackground : lightBackground,
     headerProps: {
@@ -5279,14 +5299,9 @@ function Pod() {
             audio: true
           });
         }
-      }, !isGroup && {
-        icon: 'call',
-        onClick: function onClick() {
-          return makeCall({
-            audio: true
-          });
-        }
-      }].filter(function (i) {
+      }
+      // !isGroup && { icon: 'call', onClick: () => makeCall({ audio: true }) },
+      ].filter(function (i) {
         return !!i;
       }) : undefined
     },
@@ -5366,33 +5381,127 @@ function Pod() {
     disableGutters: true
   }, /*#__PURE__*/index_js_default().createElement(OutlinedInput/* default */.A, {
     id: "outlined-adornment-weight",
-    endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.A, {
+    startAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.A, {
       position: "start"
-    }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
-      "aria-label": "send location",
-      onClick: handleAttachLocation
-      // icon is green when there is text in the input field
-      ,
-      color: "primary",
-      disabled: !isOnline,
-      edge: "end"
-    }, /*#__PURE__*/index_js_default().createElement(Badge/* default */.A, {
-      badgeContent: null,
-      color: "info"
-    }, /*#__PURE__*/index_js_default().createElement(Place/* default */.A, null)))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.A, {
-      position: "start"
-    }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
-      "aria-label": "send message",
+    }, /*#__PURE__*/index_js_default().createElement(SpeedDial/* default */.A, {
+      ariaLabel: "SpeedDial basic example",
+      sx: {
+        position: "absolute",
+        bottom: 64,
+        left: 8
+      },
+      icon: /*#__PURE__*/index_js_default().createElement(SpeedDialIcon/* default */.A, null),
+      onClick: handleSpeedDialOpen,
+      open: speedDialOpen
+    }, /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
+      key: "attach-file",
+      icon: /*#__PURE__*/index_js_default().createElement(AttachFile/* default */.A, null),
+      tooltipTitle: "Attach file",
+      tooltipOpen: true,
+      tooltipPlacement: "right",
       onClick: handleAttachFile
-      // icon is green when there is text in the input field
-      ,
-      color: "primary",
-      disabled: !isOnline,
-      edge: "end"
-    }, /*#__PURE__*/index_js_default().createElement(Badge/* default */.A, {
-      badgeContent: null,
-      color: "info"
-    }, /*#__PURE__*/index_js_default().createElement(AttachFile/* default */.A, null)))), /*#__PURE__*/index_js_default().createElement("input", {
+    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
+      key: "attach-image",
+      icon: /*#__PURE__*/index_js_default().createElement(icons_material_Image/* default */.A, null),
+      tooltipTitle: "Attach image",
+      tooltipOpen: true,
+      tooltipPlacement: "right",
+      onClick: handleAttachImage
+    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
+      key: "attach-location",
+      icon: /*#__PURE__*/index_js_default().createElement(Place/* default */.A, null),
+      tooltipTitle: "Attach location",
+      tooltipOpen: true,
+      tooltipPlacement: "right",
+      onClick: handleAttachLocation
+    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
+      key: "attach-audio",
+      icon: /*#__PURE__*/index_js_default().createElement(Mic/* default */.A, null),
+      tooltipTitle: "Attach voice memo",
+      tooltipOpen: true,
+      tooltipPlacement: "right",
+      onClick: handleClickOpen
+    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
+      key: "video-call",
+      icon: /*#__PURE__*/index_js_default().createElement(Videocam/* default */.A, null),
+      tooltipTitle: "Video call",
+      tooltipOpen: true,
+      tooltipPlacement: "right",
+      onClick: function onClick() {
+        return makeCall({
+          video: true,
+          audio: true
+        });
+      }
+    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
+      key: "call",
+      icon: /*#__PURE__*/index_js_default().createElement(Call/* default */.A, null),
+      tooltipTitle: "Call",
+      tooltipOpen: true,
+      tooltipPlacement: "right",
+      onClick: function onClick() {
+        return makeCall({
+          audio: true
+        });
+      }
+    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
+      key: "cast",
+      icon: /*#__PURE__*/index_js_default().createElement(LiveTv/* default */.A, null),
+      tooltipTitle: "Cast",
+      tooltipOpen: true,
+      tooltipPlacement: "right",
+      onClick: function onClick() {
+        return makeCall({
+          audio: true,
+          video: true,
+          cast: true
+        });
+      }
+    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
+      key: "verse",
+      icon: /*#__PURE__*/index_js_default().createElement(ViewInAr/* default */.A, null),
+      tooltipTitle: "Verse",
+      tooltipOpen: true,
+      tooltipPlacement: "right",
+      onClick: function onClick() {
+        return navigate("/pod/".concat(podId, "/verse"));
+      }
+    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
+      key: "screenshare",
+      icon: /*#__PURE__*/index_js_default().createElement(ScreenShare/* default */.A, null),
+      tooltipTitle: "Screenshare",
+      tooltipOpen: true,
+      tooltipPlacement: "right",
+      onClick: function onClick() {
+        return makeCall({
+          screen: true,
+          video: true,
+          audio: true
+        });
+      }
+    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
+      key: "files",
+      icon: /*#__PURE__*/index_js_default().createElement(Folder/* default */.A, null),
+      tooltipTitle: "Files",
+      tooltipOpen: true,
+      tooltipPlacement: "right",
+      onClick: function onClick() {
+        return navigate("/pod/".concat(podId, "/files"));
+      }
+    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
+      key: "desk",
+      icon: /*#__PURE__*/index_js_default().createElement(bi/* BiDesktop */.Yh, {
+        height: "24",
+        width: "24"
+      }),
+      tooltipTitle: "Desk",
+      tooltipOpen: true,
+      tooltipPlacement: "right",
+      onClick: function onClick() {
+        return navigate("/pod/".concat(podId, "/desk"));
+      }
+    })))),
+    endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement("input", {
       type: "file",
       name: "attachment",
       accept: "",
@@ -5401,20 +5510,7 @@ function Pod() {
         display: "none"
       },
       onChange: attachFile
-    }), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.A, {
-      position: "start"
-    }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
-      "aria-label": "send message",
-      onClick: handleAttachImage
-      // icon is green when there is text in the input field
-      ,
-      color: "primary",
-      disabled: !isOnline,
-      edge: "end"
-    }, /*#__PURE__*/index_js_default().createElement(Badge/* default */.A, {
-      badgeContent: imageAttachment ? "1" : null,
-      color: "info"
-    }, /*#__PURE__*/index_js_default().createElement(icons_material_Image/* default */.A, null)))), /*#__PURE__*/index_js_default().createElement("input", {
+    }), /*#__PURE__*/index_js_default().createElement("input", {
       type: "file",
       name: "attachment",
       accept: "image/*",
@@ -5424,17 +5520,6 @@ function Pod() {
       },
       onChange: attachImage
     }), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.A, {
-      position: "end"
-    }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
-      "aria-label": "send voice memo",
-      onClick: handleClickOpen,
-      color: "primary",
-      disabled: !isOnline,
-      edge: "end"
-    }, /*#__PURE__*/index_js_default().createElement(Badge/* default */.A, {
-      badgeContent: null,
-      color: "info"
-    }, /*#__PURE__*/index_js_default().createElement(Mic/* default */.A, null)))), /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.A, {
       position: "end"
     }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
       "aria-label": "send message",
@@ -12096,6 +12181,9 @@ var Verse = /*#__PURE__*/(0,index_js_.lazy)(function () {
           fallback: /*#__PURE__*/index_js_default().createElement("div", null, "Loading...")
         }, /*#__PURE__*/index_js_default().createElement(Verse, null))
       }, {
+        path: '/pod/:podId/desk',
+        element: /*#__PURE__*/index_js_default().createElement(Computer_Maintainance, null)
+      }, {
         path: "/profile",
         element: /*#__PURE__*/index_js_default().createElement(Layout_Maintainance, null)
       }, {
@@ -13404,11 +13492,18 @@ var App = function App() {
     return (0,createTheme/* default */.A)({
       palette: {
         mode: mode
-      }
+      },
       // direction: isRTL ? 'rtl' : 'ltr',
       // typography: {
       //   fontFamily: isRightToLeft() ? 'Arial' : 'Roboto',
       // },
+      overrides: {
+        MuiSpeedDialAction: {
+          staticTooltipLabel: {
+            whiteSpace: "nowrap"
+          }
+        }
+      }
     });
   }, [mode]);
 
@@ -14115,7 +14210,7 @@ function Message(_ref2) {
     style: {
       fontSize: 16,
       right: 16,
-      bottom: 16,
+      bottom: 4,
       position: 'absolute'
     }
   }))));
@@ -14144,8 +14239,6 @@ var List = __webpack_require__(49799);
 var ListItem = __webpack_require__(12794);
 // EXTERNAL MODULE: ./node_modules/@mui/styles/makeStyles/makeStyles.js + 6 modules
 var makeStyles = __webpack_require__(80284);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/KeyboardDoubleArrowDown.js
-var KeyboardDoubleArrowDown = __webpack_require__(82964);
 // EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.jsx + 3 modules
 var Message = __webpack_require__(94068);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Delete.js
@@ -14158,8 +14251,6 @@ var CircularProgress = __webpack_require__(73357);
 var Box = __webpack_require__(69067);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Button/Button.js + 3 modules
 var Button = __webpack_require__(86990);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Fab/Fab.js + 1 modules
-var Fab = __webpack_require__(87992);
 // EXTERNAL MODULE: ./node_modules/use-long-press/index.mjs
 var use_long_press = __webpack_require__(92214);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Typography/Typography.js + 1 modules
@@ -14411,12 +14502,7 @@ function Conversation(_ref) {
     gutterBottom: true
   }, "Loading file into browser. Please wait."), /*#__PURE__*/index_js_default().createElement(CircularProgress/* default */.A, null))), /*#__PURE__*/index_js_default().createElement("li", {
     ref: scrollRef
-  }), list.length > 10 && isNearBottom && /*#__PURE__*/index_js_default().createElement(Fab/* default */.A, {
-    color: "primary",
-    "aria-label": "scroll to bottom",
-    className: classes.fab,
-    onClick: handleScrollToBottom
-  }, /*#__PURE__*/index_js_default().createElement(KeyboardDoubleArrowDown/* default */.A, null)));
+  }),  false && /*#__PURE__*/0);
 }
 
 /***/ }),

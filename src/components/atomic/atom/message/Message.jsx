@@ -202,7 +202,7 @@ export default function Message({
             style={{
               fontSize: 16,
               right: 16,
-              bottom: 16,
+              bottom: 4,
               position: 'absolute'
             }}
           />
