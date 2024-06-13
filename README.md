@@ -6,12 +6,11 @@
 
 <div align="center">
   
-[Live App](https://chat.positive-intentions.com) | [Website](https://positive-intentions.com) | [Reddit](https://www.reddit.com/r/positive_intentions) | [Medium](https://medium.com/@positive.intentions.com) | [Discord](https://discord.gg/unnQnR67nR)
+[Live App](https://chat.positive-intentions.com) | [Docs](https://positive-intentions.com) | [Reddit](https://www.reddit.com/r/positive_intentions) | [Medium](https://medium.com/@positive.intentions.com) | [Discord](https://discord.gg/unnQnR67nR)
 </div>
 
-
-# Chat
-
+<div align="center">
+  
 ![GitHub stars](https://img.shields.io/github/stars/positive-intentions/chat?style=social) 
 ![GitHub forks](https://img.shields.io/github/forks/positive-intentions/chat?style=social) 
 ![GitHub issues](https://img.shields.io/github/issues/positive-intentions/chat) 
@@ -19,8 +18,10 @@
 ![Staging](https://github.com/positive-intentions/chat/actions/workflows/main_workflow.yaml/badge.svg) 
 [![gh-pages-build-deployment](https://github.com/positive-intentions/chat/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/positive-intentions/chat/actions/workflows/pages/pages-build-deployment)
 [![CodeQL](https://github.com/positive-intentions/chat/actions/workflows/codeql.yml/badge.svg)](https://github.com/positive-intentions/chat/actions/workflows/codeql.yml)
-![Code size](https://img.shields.io/github/languages/code-size/positive-intentions/chat) 
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+</div>
+
+# Chat
 
 > ⚠️ **WARNING:** This project is not production-ready. It is an unstable experimental proof-of-concept and may contain bugs and/or incomplete features. Use it at your own risk.
 
@@ -48,7 +49,11 @@ Discover **Positive Intentions Chat**: A secure, browser-based chat application 
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites for development
+## Trying it out
+
+Try it out between you phone and laptop. The app is using browser storage, so if you open 2 tabs of the app, they will use and update the same data. This can lead to conflict issues and should be avoided. instead if you want to try on your device, you can try between different browsers (like chrome and edge). Its also worth noting that incognito modes on all the browsers would also use a different store.
+
+## Prerequisites for development
 
 You need to have Node.js installed on your system to run the app. If you don't have Node.js installed, you can download it from [here](https://nodejs.org/).
 
@@ -58,14 +63,14 @@ First, clone the repository to your local machine.
 
 For users that dont want to install anything and just want to try the app locally, you can open the file found at `<root>/Frontend/index.html` in a browser of your choice. 
 
-For NPM users:
+#### For NPM users:
 
 ```bash
 npm install
 npm start
 ```
 
-For docker users:
+#### For docker users:
 
 ```bash
 npm run docker:build # docker build -t chat -f docker/Chat.Dockerfile . --no-cache
@@ -76,18 +81,14 @@ This will start the development server and open the app in your default browser.
 
 > See the [package.json](package.json) file for more scripts.
 
-For GitHub users:
+#### For GitHub users:
 
 You can fork the repo and host it on Github Pages for free if the repository is made public. After forking the repo, you can go to Settings>Pages to set the following:
 - Source: "Deploy from a branch"
 - Branch: "staging"
 - Select folder: "/docs"
 
-Finally click "Save" to enable Github Pages.  
-
-## Trying it out
-
-Try it out between you phone and laptop. The app is using browser storage, so if you open 2 tabs of the app, they will use and update the same data. This can lead to conflict issues and should be avoided. instead if you want to try on your device, you can try between different browsers (like chrome and edge). Its also worth noting that incognito modes on all the browsers would also use a different store.
+Finally click "Save" to enable Github Pages.
 
 ## iOS, Android and Desktop
 
@@ -109,7 +110,7 @@ Pushing the boundaries of what's possible with current web technologies to creat
 ### How You Can Help
 
 - **Feedback**: Your insights are invaluable. Share your thoughts on current features, suggest new ones, or report any bugs you encounter.
-- **Development**: Interested in contributing code? [Let's talk!](https://www.reddit.com/r/positive_intentions) While the app isn't fully open-source yet, parts of it are, and I'm keen on opening more in the future.
+- **Development**: Interested in contributing code? [Let's talk!](https://www.reddit.com/r/positive_intentions) While the app isn't fully open-source yet, parts of it are, and we're keen on opening more in the future.
 - **Spread the Word**: Help us grow by sharing the app with others who value privacy and control over their digital communication.
-- **Github Stars**: If you like the project, consider starring the repository. It helps others discover it and boosts my motivation.
-- **Financial Support**: Development is fueled by passion and coffee. Your sponsorship helps keep both flowing.
+- **Github Stars**: If you like the project, consider starring the repository. It helps others discover it and boosts our motivation.
+- **Sponsorship**: Development is fueled by passion and coffee. Your sponsorship helps keep both flowing.

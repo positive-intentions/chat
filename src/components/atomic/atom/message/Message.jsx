@@ -9,6 +9,8 @@ import Avatar from "@mui/material/Avatar";
 import Badge from "@mui/material/Badge";
 import Attachment from "./Attachment";
 import Payload from "./Payload";
+import DoneIcon from '@mui/icons-material/Done';
+import DoneAllIcon from '@mui/icons-material/DoneAll';
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -166,6 +168,7 @@ export default function Message({
       anchorOrigin={{ vertical: "top", horizontal: "right" }}
       badgeContent={`❤️ ${upvotes}`}
       invisible={upvotes > 0 ? false : true}
+      style={{ width: "fit-content" }}
     >
       <Card id={id} className={[classes.sentMessage, cardClass]} style={style}>
         <CardHeader
@@ -194,6 +197,15 @@ export default function Message({
           )}
 
           <Typography variant="body1">{message}</Typography>
+
+          <DoneAllIcon
+            style={{
+              fontSize: 16,
+              right: 16,
+              bottom: 4,
+              position: 'absolute'
+            }}
+          />
         </CardContent>
       </Card>
     </Badge>

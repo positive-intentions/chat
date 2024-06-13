@@ -688,6 +688,16 @@ import DialogActions from "@mui/material/DialogActions";
 import CloseIcon from "@mui/icons-material/Close";
 import VoiceRecorderButton from "../../atomic/atom/voiceRecorder/VoiceRecorder";
 import DocLink from "../../atomic/atom/docLink/DocLink";
+import SpeedDial from "@mui/material/SpeedDial";
+import SpeedDialIcon from "@mui/material/SpeedDialIcon";
+import SpeedDialAction from "@mui/material/SpeedDialAction";
+import VideocamIcon from "@mui/icons-material/Videocam";
+import CallIcon from "@mui/icons-material/Call";
+import ScreenShareIcon from "@mui/icons-material/ScreenShare";
+import LiveTvIcon from "@mui/icons-material/LiveTv";
+import ViewInArIcon from "@mui/icons-material/ViewInAr";
+import FolderIcon from "@mui/icons-material/Folder";
+import { BiDesktop } from "rocketicons/bi";
 
 const lightBackground = "/backgrounds/light-leaves.png";
 const darkBackground = "/backgrounds/dark-leaves.png";
@@ -1181,11 +1191,11 @@ export default function Pod() {
     },
   ];
   // if (filesForPod.length > 0) {
-  headerActions.push({
-    text: t("podPage.files"),
-    icon: "folder",
-    onClick: () => navigate(`/pod/${podId}/files`),
-  });
+  // headerActions.push({
+  //   text: t("podPage.files"),
+  //   icon: "folder",
+  //   onClick: () => navigate(`/pod/${podId}/files`),
+  // });
   // }
 
   // get boolean if on  if any mobile browser by user agent. like an android ios browser on mobile
@@ -1209,45 +1219,45 @@ export default function Pod() {
     });
   };
 
-  const customButtons = isOnline
-    ? [
-        {
-          text: t("podPage.call"),
-          icon: "callContact",
-          subMenuItems: [
-            !isGroup &&
-              !isMobile && {
-                text: t("podPage.screenshare"),
-                icon: "screen",
-                onClick: () =>
-                  makeCall({ screen: true, video: true, audio: true }),
-              },
-            !isGroup && {
-              text: t("podPage.videoCall"),
-              icon: "camera",
-              onClick: () => makeCall({ video: true, audio: true }),
-            },
-            !isGroup && {
-              text: t("podPage.call"),
-              icon: "call",
-              onClick: () => makeCall({ audio: true }),
-            },
-            !isGroup && {
-              text: t("podPage.cast"),
-              icon: "cast",
-              onClick: () => makeCall({ audio: true, video: true, cast: true }),
-            },
-            {
-              text: t("podsPage.verse"),
-              icon: "verse",
-              onClick: () => navigate(`/pod/${podId}/verse`),
-            },
-          ].filter((i) => !!i),
-        },
-      ].filter((i) => !!i)
-    : [];
+  // const customButtons = isOnline
+  //   ? [
+  //       {
+  //         text: t("podPage.call"),
+  //         icon: "callContact",
+  //         subMenuItems: [
+  //           !isGroup &&
+  //             !isMobile && {
+  //               text: t("podPage.screenshare"),
+  //               icon: "screen",
+  //               onClick: () =>
+  //                 makeCall({ screen: true, video: true, audio: true }),
+  //             },
+  //           !isGroup && {
+  //             text: t("podPage.videoCall"),
+  //             icon: "camera",
+  //             onClick: () => makeCall({ video: true, audio: true }),
+  //           },
+  //           !isGroup && {
+  //             text: t("podPage.call"),
+  //             icon: "call",
+  //             onClick: () => makeCall({ audio: true }),
+  //           },
+  //           !isGroup && {
+  //             text: t("podPage.cast"),
+  //             icon: "cast",
+  //             onClick: () => makeCall({ audio: true, video: true, cast: true }),
+  //           },
+  //           {
+  //             text: t("podsPage.verse"),
+  //             icon: "verse",
+  //             onClick: () => navigate(`/pod/${podId}/verse`),
+  //           },
+  //         ].filter((i) => !!i),
+  //       },
+  //     ].filter((i) => !!i)
+  //   : [];
 
-  headerActions.push(...customButtons);
+  // headerActions.push(...customButtons);
 
   // log which redux state is being updated in a loop
   useEffect(
@@ -1287,6 +1297,12 @@ export default function Pod() {
 
   console.log("rendering pod page");
 
+  const [speedDialOpen, setSpeedDialOpen] = React.useState(false);
+
+const handleSpeedDialOpen = () => {
+  setSpeedDialOpen(!speedDialOpen);
+}
+
   return (
     <PageContainer
       backgroundImage={
@@ -1324,7 +1340,7 @@ export default function Pod() {
         customButtons: (isOnline && !activeCalls.length) ? [
           // !isGroup && !isMobile && { icon: 'screen', onClick: () => makeCall({ screen: true, video: true, audio: true }) },
           !isGroup && { icon: 'camera', onClick: () => makeCall({ video: true, audio: true }) },
-          !isGroup && { icon: 'call', onClick: () => makeCall({ audio: true }) },
+          // !isGroup && { icon: 'call', onClick: () => makeCall({ audio: true }) },
         ].filter(i => !!i) : undefined
       }}
       className={classes.conversation}
@@ -1424,9 +1440,120 @@ export default function Pod() {
              */}
             <OutlinedInput
               id="outlined-adornment-weight"
+              startAdornment={
+                <>
+
+                  <InputAdornment position="start">
+                    <SpeedDial
+                      ariaLabel="SpeedDial basic example"
+                      sx={{ position: "absolute", bottom: 64, left: 8 }}
+                      icon={<SpeedDialIcon />}
+                      onClick={handleSpeedDialOpen}
+                      open={speedDialOpen}
+                    >
+                      {/* {speedDialProps.actions.map((action) => (
+                        <SpeedDialAction
+                          key={action.name}
+                          icon={action.icon}
+                          tooltipTitle={action.name}
+                          onClick={action.onClick}
+                        />
+                      ))} */}
+                      <SpeedDialAction
+                        key="attach-file"
+                        icon={<AttachFileIcon />}
+                        tooltipTitle="Attach file"
+                        tooltipOpen
+                        tooltipPlacement="right"
+                        onClick={handleAttachFile}
+                      />
+                      <SpeedDialAction
+                        key="attach-image"
+                        icon={<ImageIcon />}
+                        tooltipTitle="Attach image"
+                        tooltipOpen
+                        tooltipPlacement="right"
+                        onClick={handleAttachImage}
+                      />
+                      <SpeedDialAction
+                        key="attach-location"
+                        icon={<PlaceIcon />}
+                        tooltipTitle="Attach location"
+                        tooltipOpen
+                        tooltipPlacement="right"
+                        onClick={handleAttachLocation}
+                      />
+                      <SpeedDialAction
+                        key="attach-audio"
+                        icon={<MicIcon />}
+                        tooltipTitle="Attach voice memo"
+                        tooltipOpen
+                        tooltipPlacement="right"
+                        onClick={handleClickOpen}
+                      />
+                      <SpeedDialAction
+                        key="video-call"
+                        icon={<VideocamIcon />}
+                        tooltipTitle="Video call"
+                        tooltipOpen
+                        tooltipPlacement="right"
+                        onClick={() => makeCall({ video: true, audio: true })}
+                      />
+                      <SpeedDialAction
+                        key="call"
+                        icon={<CallIcon />}
+                        tooltipTitle="Call"
+                        tooltipOpen
+                        tooltipPlacement="right"
+                        onClick={() => makeCall({ audio: true })}
+                      />
+                      <SpeedDialAction
+                        key="cast"
+                        icon={<LiveTvIcon />}
+                        tooltipTitle="Cast"
+                        tooltipOpen
+                        tooltipPlacement="right"
+                        onClick={() => makeCall({ audio: true, video: true, cast: true })}
+                      />
+                      <SpeedDialAction
+                        key="verse"
+                        icon={<ViewInArIcon />}
+                        tooltipTitle="Verse"
+                        tooltipOpen
+                        tooltipPlacement="right"
+                        onClick={() => navigate(`/pod/${podId}/verse`)}
+                      />
+                      <SpeedDialAction
+                        key="screenshare"
+                        icon={<ScreenShareIcon />}
+                        tooltipTitle="Screenshare"
+                        tooltipOpen
+                        tooltipPlacement="right"
+                        onClick={() => makeCall({ screen: true, video: true, audio: true })}
+                      />
+                      <SpeedDialAction
+                        key="files"
+                        icon={<FolderIcon />}
+                        tooltipTitle="Files"
+                        tooltipOpen
+                        tooltipPlacement="right"
+                        onClick={() => navigate(`/pod/${podId}/files`)}
+                      />
+                      <SpeedDialAction
+                        key="desk"
+                        icon={<BiDesktop height="24" width="24" />}
+                        tooltipTitle="Desk"
+                        tooltipOpen
+                        tooltipPlacement="right"
+                        onClick={() => navigate(`/pod/${podId}/desk`)}
+                      />
+                    </SpeedDial>
+                  </InputAdornment>
+                </>
+              }
               endAdornment={
                 <>
-                  <InputAdornment position="start">
+                  {/* <InputAdornment position="start">
                     <IconButton
                       aria-label="send location"
                       onClick={handleAttachLocation}
@@ -1453,7 +1580,7 @@ export default function Pod() {
                         <AttachFileIcon />
                       </Badge>
                     </IconButton>
-                  </InputAdornment>
+                  </InputAdornment> */}
                   <input
                     type="file"
                     name="attachment"
@@ -1462,7 +1589,7 @@ export default function Pod() {
                     style={{ display: "none" }}
                     onChange={attachFile}
                   />
-                  <InputAdornment position="start">
+                  {/* <InputAdornment position="start">
                     <IconButton
                       aria-label="send message"
                       onClick={handleAttachImage}
@@ -1478,7 +1605,7 @@ export default function Pod() {
                         <ImageIcon />
                       </Badge>
                     </IconButton>
-                  </InputAdornment>
+                  </InputAdornment> */}
                   <input
                     type="file"
                     name="attachment"
@@ -1487,7 +1614,7 @@ export default function Pod() {
                     style={{ display: "none" }}
                     onChange={attachImage}
                   />
-                  <InputAdornment position="end">
+                  {/* <InputAdornment position="end">
                     <IconButton
                       aria-label="send voice memo"
                       onClick={handleClickOpen}
@@ -1499,7 +1626,7 @@ export default function Pod() {
                         <MicIcon />
                       </Badge>
                     </IconButton>
-                  </InputAdornment>
+                  </InputAdornment> */}
                   <InputAdornment position="end">
                     <IconButton
                       aria-label="send message"

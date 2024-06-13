@@ -216,6 +216,10 @@ export default () => {
             ),
           },
           {
+            path: '/pod/:podId/desk',
+            element: <Computer />
+          },
+          {
             path: "/profile",
             element: <Layout />,
           },

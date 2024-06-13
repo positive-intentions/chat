@@ -372,6 +372,8 @@ export default function LoginPage() {
   const storedInAppNotification = compiledProfile.settings?.inAppNotification;
   const storedBrowserNotification =
     compiledProfile.settings?.browserNotification;
+  const storedExperimentalFeatures =
+    compiledProfile.settings?.experimentalFeatures;
 
   const [peerjsServer, setPeerjsServer] = useState("");
   const handlePeerjsServerChange = (event) => {
@@ -489,6 +491,10 @@ export default function LoginPage() {
     storedBrowserNotification ?? false,
   );
 
+  const [experimentalFeatures, setExperimentalFeatures] = useState(
+    storedExperimentalFeatures ?? false,
+  );
+
   const handleAppNotificationChange = (event) => {
     setAppNotifications(event.target.checked);
   };
@@ -510,6 +516,13 @@ export default function LoginPage() {
     defaultChecked: browserNotifications,
     label: "Browser notifications",
     onChange: handleBrowserNotificationChange,
+  };
+
+  const enableExperimentalFeatures = {
+    fullWidth: true,
+    inputProps: { "aria-label": "Enable experimental features" },
+    defaultChecked: experimentalFeatures,
+    label: "Enable experimental features",
   };
 
   useEffect(() => {
@@ -560,6 +573,10 @@ export default function LoginPage() {
       ...blockBuilders().updateBrowserNotification({
         from: fromUser,
         browserNotification: browserNotifications,
+      }),
+      ...blockBuilders().updateExperimentalFeatures({
+        from: fromUser,
+        experimentalFeatures: experimentalFeatures,
       }),
       ...blockBuilders().updatePeerjsServer({ from: fromUser, peerjsServer }),
       ...blockBuilders().updateEncryptionSignature({
@@ -1205,6 +1222,10 @@ export default function LoginPage() {
                           control={<Switch {...browserNotification} />}
                           label={t("loginPage.browserNotification")}
                         />
+                        <FormControlLabel
+                          control={<Switch {...experimentalFeatures} />}
+                          label="Enable experimental features"
+                        />
                       </FormGroup>
 
                       <TextField
@@ -1216,7 +1237,7 @@ export default function LoginPage() {
                         name="peerjs-server"
                         onChange={handlePeerjsServerChange}
                         value={peerjsServer}
-                        placeholder="https: 0.peerjs.com"
+                        placeholder="https://0.peerjs.com"
                         autoComplete="off"
                       />
                     </AccordionDetails>

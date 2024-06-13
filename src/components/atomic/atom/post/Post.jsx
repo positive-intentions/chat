@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
   messageInput: {
     padding: 0,
-    height: "100%",
+    // height: "100%",
     width: "100%",
     backgroundColor: theme.palette.mode === "dark" ? "#303030" : "#f0f8ff",
   },
