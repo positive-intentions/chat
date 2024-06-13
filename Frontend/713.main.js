@@ -18969,19 +18969,7 @@ function AppHeader(_ref4) {
     setSubMenuOpen = _React$useState8[1];
   var AppBarRender = function AppBarRender() {
     var _avatarProps$src, _avatarProps$alt;
-    return /*#__PURE__*/index_js_default().createElement(AppBar/* default */.A, null, /*#__PURE__*/index_js_default().createElement(Toolbar/* default */.A, {
-      style: {
-        backgroundColor: "#d32f2f",
-        color: "white",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "0 20px",
-        minHeight: "20px"
-      }
-    }, /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
-      component: "div"
-    }, "For testing purposes only")), /*#__PURE__*/index_js_default().createElement(Toolbar/* default */.A, null, backButton && /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
+    return /*#__PURE__*/index_js_default().createElement(AppBar/* default */.A, null, /*#__PURE__*/index_js_default().createElement(Toolbar/* default */.A, null, backButton && /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
       size: "large",
       edge: "start",
       color: "inherit",

@@ -598,7 +598,7 @@ export default function AppHeader(
 
   const AppBarRender = () => (
     <AppBar>
-      <Toolbar
+      {/* <Toolbar
         style={{
           backgroundColor: "#d32f2f",
           color: "white",
@@ -612,7 +612,7 @@ export default function AppHeader(
         <Typography component="div">
           For testing purposes only
         </Typography>
-      </Toolbar>
+      </Toolbar> */}
       <Toolbar>
         {backButton && (
           <IconButton
