@@ -35,8 +35,6 @@ A chat app designed to work within your browser, with a focus on browser-based s
 - **Image Board**: Share and discover images in a community-driven space.
 - **Webtop Environment**: Desktop experience on the browser.
 
-👾 **Tech for the Future**: Beyond chat, we're exploring virtual reality, enabling users to share 3D positions and live video streams within VR environments. Imagine socializing in a virtual space that's as easy to access as opening your browser.
-
 ### How You Can Help
 
 - **Feedback**: Your insights are invaluable. Share your thoughts on current features, suggest new ones, or report any bugs you encounter.
