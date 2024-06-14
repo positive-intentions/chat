@@ -50,7 +50,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Trying it out
 
-Try it out between you phone and laptop. The app is using browser storage, so if you open 2 tabs of the app, they will use and update the same data. This can lead to conflict issues and should be avoided. instead if you want to try on your device, you can try between different browsers (like chrome and edge). Its also worth noting that incognito modes on all the browsers would also use a different store.
+Try it out between you phone and laptop. The app is using browser storage, so if you open 2 tabs of the app, they will use and update the same data. This can lead to conflict issues and should be avoided. instead if you want to try on a single device, you can try between different browsers (like chrome and edge). Its also worth noting that incognito modes on all the browsers would also use a different store.
+
+> Suggestions for troubleshooting
+> - Its best to start off by clearing all site data from the browser settings.
+> - Do not have multiple tabs of the app on the same device.
+> - It doesnt hurt to refresh to page.
 
 ## Prerequisites for development
 
