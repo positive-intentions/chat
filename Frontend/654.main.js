@@ -23,8 +23,8 @@ var makeStyles = __webpack_require__(80284);
 var useTheme = __webpack_require__(23668);
 // EXTERNAL MODULE: ./src/components/redux/slices/userProfileSlice.js
 var userProfileSlice = __webpack_require__(14279);
-// EXTERNAL MODULE: ./src/components/atomic/organism/page-container/PageContainer.jsx + 2 modules
-var PageContainer = __webpack_require__(11037);
+// EXTERNAL MODULE: ./src/components/atomic/organism/page-container/PageContainer.jsx
+var PageContainer = __webpack_require__(93763);
 // EXTERNAL MODULE: ./src/components/atomic/molecules/thread/Thread.jsx + 3 modules
 var Thread = __webpack_require__(30223);
 // EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.jsx + 3 modules

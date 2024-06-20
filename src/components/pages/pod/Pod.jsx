@@ -698,6 +698,15 @@ import LiveTvIcon from "@mui/icons-material/LiveTv";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
 import FolderIcon from "@mui/icons-material/Folder";
 import { BiDesktop } from "rocketicons/bi";
+import {
+  Dropdown,
+  DropdownMenuItem,
+  DropdownNestedMenuItem,
+} from "../../atomic/atom/dropdown/Dropdown";
+import ListItemText from "@mui/material/ListItemText";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import AddIcon from '@mui/icons-material/Add';
+import { presetIcons } from "../../atomic/molecules/app-header/AppHeader";
 
 const lightBackground = "/backgrounds/light-leaves.png";
 const darkBackground = "/backgrounds/dark-leaves.png";
@@ -1129,7 +1138,7 @@ export default function Pod() {
 
     activeCalls
       .filter((call) => call._remoteStream)
-      .map((call) => ({ remote: call._remoteStream, local: call._localStream, metadata: call.metadata}))
+      .map((call) => ({ remote: call._remoteStream, local: call._localStream, metadata: call.metadata }))
       .forEach(async ({ remote, local, metadata }, index) => {
         const isCasting = metadata?.cast;
         if (isCasting || remote) {
@@ -1299,9 +1308,67 @@ export default function Pod() {
 
   const [speedDialOpen, setSpeedDialOpen] = React.useState(false);
 
-const handleSpeedDialOpen = () => {
-  setSpeedDialOpen(!speedDialOpen);
-}
+  const handleSpeedDialOpen = () => {
+    setSpeedDialOpen(!speedDialOpen);
+  }
+
+  const defaultMenuItems = [
+    {
+      text: "Attach file",
+      icon: 'attachment',
+      onClick: handleAttachFile,
+    },
+    {
+      text: "Attach image",
+      icon: 'image',
+      onClick: handleAttachImage,
+    },
+    {
+      text: "Attach location",
+      icon: 'place',
+      onClick: handleAttachLocation,
+    },
+    {
+      text: "Attach audio",
+      icon: 'mic',
+      onClick: handleClickOpen,
+    },
+    {
+      text: "Video call",
+      icon: 'camera',
+      onClick: () => makeCall({ video: true, audio: true }),
+    },
+    {
+      text: "Call",
+      icon: 'call',
+      onClick: () => makeCall({ audio: true }),
+    },
+    {
+      text: "Screen share",
+      icon: 'screen',
+      onClick: () => makeCall({ screen: true, video: true, audio: true }),
+    },
+    {
+      text: "Cast",
+      icon: 'cast',
+      onClick: () => makeCall({ audio: true, video: true, cast: true }),
+    },
+    {
+      text: "Verse",
+      icon: 'verse',
+      onClick: () => navigate(`/pod/${podId}/verse`),
+    },
+    {
+      text: "Files",
+      icon: 'folder',
+      onClick: () => navigate(`/pod/${podId}/files`),
+    },
+    {
+      text: "Desk",
+      icon: 'computer',
+      onClick: () => navigate(`/pod/${podId}/desk`),
+    }
+  ];
 
   return (
     <PageContainer
@@ -1359,14 +1426,14 @@ const handleSpeedDialOpen = () => {
                 message.from === storedConnectionId
                   ? storedUsername
                   : storedContacts.find((contact) => {
-                      return contact.connectionId === message.from;
-                    })?.displayName,
+                    return contact.connectionId === message.from;
+                  })?.displayName,
               avatar:
                 message.from === storedConnectionId
                   ? storedAvatar
                   : storedContacts.find((contact) => {
-                      return contact.id === message.from;
-                    })?.avatar,
+                    return contact.id === message.from;
+                  })?.avatar,
               isOnline: activeConnections.includes(message.from),
               attachmentSha: message.payload?.sha,
               type: message.from === storedConnectionId ? "sent" : "recieved",
@@ -1442,113 +1509,62 @@ const handleSpeedDialOpen = () => {
               id="outlined-adornment-weight"
               startAdornment={
                 <>
-
-                  <InputAdornment position="start">
-                    <SpeedDial
-                      ariaLabel="SpeedDial basic example"
-                      sx={{ position: "absolute", bottom: 64, left: 8 }}
-                      icon={<SpeedDialIcon />}
-                      onClick={handleSpeedDialOpen}
-                      open={speedDialOpen}
-                    >
-                      {/* {speedDialProps.actions.map((action) => (
-                        <SpeedDialAction
-                          key={action.name}
-                          icon={action.icon}
-                          tooltipTitle={action.name}
-                          onClick={action.onClick}
-                        />
-                      ))} */}
-                      <SpeedDialAction
-                        key="attach-file"
-                        icon={<AttachFileIcon />}
-                        tooltipTitle="Attach file"
-                        tooltipOpen
-                        tooltipPlacement="right"
-                        onClick={handleAttachFile}
-                      />
-                      <SpeedDialAction
-                        key="attach-image"
-                        icon={<ImageIcon />}
-                        tooltipTitle="Attach image"
-                        tooltipOpen
-                        tooltipPlacement="right"
+                  <InputAdornment position="start"><Dropdown
+                    keepOpen
+                    trigger={
+                      <IconButton
+                        aria-label="send message"
                         onClick={handleAttachImage}
-                      />
-                      <SpeedDialAction
-                        key="attach-location"
-                        icon={<PlaceIcon />}
-                        tooltipTitle="Attach location"
-                        tooltipOpen
-                        tooltipPlacement="right"
-                        onClick={handleAttachLocation}
-                      />
-                      <SpeedDialAction
-                        key="attach-audio"
-                        icon={<MicIcon />}
-                        tooltipTitle="Attach voice memo"
-                        tooltipOpen
-                        tooltipPlacement="right"
-                        onClick={handleClickOpen}
-                      />
-                      <SpeedDialAction
-                        key="video-call"
-                        icon={<VideocamIcon />}
-                        tooltipTitle="Video call"
-                        tooltipOpen
-                        tooltipPlacement="right"
-                        onClick={() => makeCall({ video: true, audio: true })}
-                      />
-                      <SpeedDialAction
-                        key="call"
-                        icon={<CallIcon />}
-                        tooltipTitle="Call"
-                        tooltipOpen
-                        tooltipPlacement="right"
-                        onClick={() => makeCall({ audio: true })}
-                      />
-                      <SpeedDialAction
-                        key="cast"
-                        icon={<LiveTvIcon />}
-                        tooltipTitle="Cast"
-                        tooltipOpen
-                        tooltipPlacement="right"
-                        onClick={() => makeCall({ audio: true, video: true, cast: true })}
-                      />
-                      <SpeedDialAction
-                        key="verse"
-                        icon={<ViewInArIcon />}
-                        tooltipTitle="Verse"
-                        tooltipOpen
-                        tooltipPlacement="right"
-                        onClick={() => navigate(`/pod/${podId}/verse`)}
-                      />
-                      <SpeedDialAction
-                        key="screenshare"
-                        icon={<ScreenShareIcon />}
-                        tooltipTitle="Screenshare"
-                        tooltipOpen
-                        tooltipPlacement="right"
-                        onClick={() => makeCall({ screen: true, video: true, audio: true })}
-                      />
-                      <SpeedDialAction
-                        key="files"
-                        icon={<FolderIcon />}
-                        tooltipTitle="Files"
-                        tooltipOpen
-                        tooltipPlacement="right"
-                        onClick={() => navigate(`/pod/${podId}/files`)}
-                      />
-                      <SpeedDialAction
-                        key="desk"
-                        icon={<BiDesktop height="24" width="24" />}
-                        tooltipTitle="Desk"
-                        tooltipOpen
-                        tooltipPlacement="right"
-                        onClick={() => navigate(`/pod/${podId}/desk`)}
-                      />
-                    </SpeedDial>
+                        // icon is green when there is text in the input field
+                        color={"primary"}
+                        edge="end"
+                      >
+                        <Badge
+                          badgeContent={imageAttachment ? "1" : null}
+                          color="info"
+                        >
+                          <AddIcon />
+                        </Badge>
+                      </IconButton>
+                    }
+                    menu={defaultMenuItems.map((item, index) => {
+                      return !(item?.subMenuItems?.length > 0) ? (
+                        <div>
+                          <DropdownMenuItem onClick={item.onClick}>
+                          <ListItemIcon>
+                            {presetIcons[item?.icon]}
+                          </ListItemIcon>
+                            <ListItemText>{item.text}</ListItemText>
+                          </DropdownMenuItem>
+                        </div>
+                      ) : (
+                        <DropdownNestedMenuItem
+                          label={item.text}
+                          rightAnchored
+                          menu={[
+                            ...(item.subMenuItems ?? []).map((subItem, index) => {
+                              return (
+                                !!subItem && (
+                                  <DropdownMenuItem onClick={subItem.onClick}>
+                                    <ListItemIcon>
+                                      {presetIcons[subItem?.icon]}
+                                    </ListItemIcon>
+                                    <ListItemText>{subItem.text}</ListItemText>
+                                  </DropdownMenuItem>
+                                )
+                              );
+                            }),
+                          ]}
+                        >
+                          <ListItemText>{item.text}</ListItemText>
+                        </DropdownNestedMenuItem>
+                      );
+                    })}
+                  />
+
+
                   </InputAdornment>
+                  
                 </>
               }
               endAdornment={

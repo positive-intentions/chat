@@ -211,8 +211,8 @@ var _encryptionSlice$acti = encryptionSlice.actions,
   setEncryption = _encryptionSlice$acti.setEncryption;
 
 /* harmony default export */ const slices_encryptionSlice = (encryptionSlice.reducer);
-// EXTERNAL MODULE: ./src/components/atomic/organism/page-container/PageContainer.jsx + 2 modules
-var page_container_PageContainer = __webpack_require__(11037);
+// EXTERNAL MODULE: ./src/components/atomic/organism/page-container/PageContainer.jsx
+var page_container_PageContainer = __webpack_require__(93763);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Accordion/Accordion.js + 3 modules
 var Accordion = __webpack_require__(1710);
 // EXTERNAL MODULE: ./node_modules/@mui/material/AccordionDetails/AccordionDetails.js + 1 modules
@@ -3732,8 +3732,6 @@ var AppBar = __webpack_require__(89828);
 var OutlinedInput = __webpack_require__(6757);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Send.js
 var Send = __webpack_require__(40443);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/AttachFile.js
-var AttachFile = __webpack_require__(40530);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Toolbar/Toolbar.js + 1 modules
 var Toolbar = __webpack_require__(8532);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Container/Container.js + 1 modules
@@ -3742,16 +3740,10 @@ var Container = __webpack_require__(97834);
 var Conversation = __webpack_require__(60269);
 // EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.jsx + 3 modules
 var Message = __webpack_require__(94068);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Image.js
-var icons_material_Image = __webpack_require__(55072);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Place.js
-var Place = __webpack_require__(76298);
 // EXTERNAL MODULE: ./src/components/utils/calculateSha256.js
 var calculateSha256 = __webpack_require__(59701);
 // EXTERNAL MODULE: ./src/components/redux/slices/storageSlice.js
 var storageSlice = __webpack_require__(42040);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Mic.js
-var Mic = __webpack_require__(2250);
 ;// CONCATENATED MODULE: ./src/components/atomic/atom/voiceRecorder/VoiceRecorder.jsx
 function VoiceRecorder_slicedToArray(arr, i) { return VoiceRecorder_arrayWithHoles(arr) || VoiceRecorder_iterableToArrayLimit(arr, i) || VoiceRecorder_unsupportedIterableToArray(arr, i) || VoiceRecorder_nonIterableRest(); }
 function VoiceRecorder_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -3827,24 +3819,12 @@ var VoiceRecorderButton = function VoiceRecorderButton(_ref) {
   }, "send")));
 };
 /* harmony default export */ const VoiceRecorder = (VoiceRecorderButton);
-// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDial/SpeedDial.js + 2 modules
-var SpeedDial = __webpack_require__(36056);
-// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDialIcon/SpeedDialIcon.js + 2 modules
-var SpeedDialIcon = __webpack_require__(10698);
-// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDialAction/SpeedDialAction.js + 63 modules
-var SpeedDialAction = __webpack_require__(749);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Videocam.js
-var Videocam = __webpack_require__(26347);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Call.js
-var Call = __webpack_require__(66573);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/ScreenShare.js
-var ScreenShare = __webpack_require__(54978);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/LiveTv.js
-var LiveTv = __webpack_require__(43981);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Folder.js
-var Folder = __webpack_require__(24521);
-// EXTERNAL MODULE: ./node_modules/rocketicons/bi/index.mjs
-var bi = __webpack_require__(10402);
+// EXTERNAL MODULE: ./src/components/atomic/atom/dropdown/Dropdown.jsx + 1 modules
+var Dropdown = __webpack_require__(1310);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Add.js
+var Add = __webpack_require__(16718);
+// EXTERNAL MODULE: ./src/components/atomic/molecules/app-header/AppHeader.jsx + 1 modules
+var AppHeader = __webpack_require__(30471);
 ;// CONCATENATED MODULE: ./src/components/pages/pod/Pod.jsx
 function Pod_typeof(o) { "@babel/helpers - typeof"; return Pod_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Pod_typeof(o); }
 function Pod_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
@@ -4500,6 +4480,11 @@ function Pod_extends() { Pod_extends = Object.assign ? Object.assign.bind() : fu
 //     </>
 //   )
 // }
+
+
+
+
+
 
 
 
@@ -5258,6 +5243,78 @@ function Pod() {
   var handleSpeedDialOpen = function handleSpeedDialOpen() {
     setSpeedDialOpen(!speedDialOpen);
   };
+  var defaultMenuItems = [{
+    text: "Attach file",
+    icon: 'attachment',
+    onClick: handleAttachFile
+  }, {
+    text: "Attach image",
+    icon: 'image',
+    onClick: handleAttachImage
+  }, {
+    text: "Attach location",
+    icon: 'place',
+    onClick: handleAttachLocation
+  }, {
+    text: "Attach audio",
+    icon: 'mic',
+    onClick: handleClickOpen
+  }, {
+    text: "Video call",
+    icon: 'camera',
+    onClick: function onClick() {
+      return makeCall({
+        video: true,
+        audio: true
+      });
+    }
+  }, {
+    text: "Call",
+    icon: 'call',
+    onClick: function onClick() {
+      return makeCall({
+        audio: true
+      });
+    }
+  }, {
+    text: "Screen share",
+    icon: 'screen',
+    onClick: function onClick() {
+      return makeCall({
+        screen: true,
+        video: true,
+        audio: true
+      });
+    }
+  }, {
+    text: "Cast",
+    icon: 'cast',
+    onClick: function onClick() {
+      return makeCall({
+        audio: true,
+        video: true,
+        cast: true
+      });
+    }
+  }, {
+    text: "Verse",
+    icon: 'verse',
+    onClick: function onClick() {
+      return navigate("/pod/".concat(podId, "/verse"));
+    }
+  }, {
+    text: "Files",
+    icon: 'folder',
+    onClick: function onClick() {
+      return navigate("/pod/".concat(podId, "/files"));
+    }
+  }, {
+    text: "Desk",
+    icon: 'computer',
+    onClick: function onClick() {
+      return navigate("/pod/".concat(podId, "/desk"));
+    }
+  }];
   return /*#__PURE__*/index_js_default().createElement(page_container_PageContainer/* default */.A, {
     backgroundImage: theme.palette.mode === "dark" ? darkBackground : lightBackground,
     headerProps: {
@@ -5383,124 +5440,34 @@ function Pod() {
     id: "outlined-adornment-weight",
     startAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.A, {
       position: "start"
-    }, /*#__PURE__*/index_js_default().createElement(SpeedDial/* default */.A, {
-      ariaLabel: "SpeedDial basic example",
-      sx: {
-        position: "absolute",
-        bottom: 64,
-        left: 8
-      },
-      icon: /*#__PURE__*/index_js_default().createElement(SpeedDialIcon/* default */.A, null),
-      onClick: handleSpeedDialOpen,
-      open: speedDialOpen
-    }, /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
-      key: "attach-file",
-      icon: /*#__PURE__*/index_js_default().createElement(AttachFile/* default */.A, null),
-      tooltipTitle: "Attach file",
-      tooltipOpen: true,
-      tooltipPlacement: "right",
-      onClick: handleAttachFile
-    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
-      key: "attach-image",
-      icon: /*#__PURE__*/index_js_default().createElement(icons_material_Image/* default */.A, null),
-      tooltipTitle: "Attach image",
-      tooltipOpen: true,
-      tooltipPlacement: "right",
-      onClick: handleAttachImage
-    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
-      key: "attach-location",
-      icon: /*#__PURE__*/index_js_default().createElement(Place/* default */.A, null),
-      tooltipTitle: "Attach location",
-      tooltipOpen: true,
-      tooltipPlacement: "right",
-      onClick: handleAttachLocation
-    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
-      key: "attach-audio",
-      icon: /*#__PURE__*/index_js_default().createElement(Mic/* default */.A, null),
-      tooltipTitle: "Attach voice memo",
-      tooltipOpen: true,
-      tooltipPlacement: "right",
-      onClick: handleClickOpen
-    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
-      key: "video-call",
-      icon: /*#__PURE__*/index_js_default().createElement(Videocam/* default */.A, null),
-      tooltipTitle: "Video call",
-      tooltipOpen: true,
-      tooltipPlacement: "right",
-      onClick: function onClick() {
-        return makeCall({
-          video: true,
-          audio: true
-        });
-      }
-    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
-      key: "call",
-      icon: /*#__PURE__*/index_js_default().createElement(Call/* default */.A, null),
-      tooltipTitle: "Call",
-      tooltipOpen: true,
-      tooltipPlacement: "right",
-      onClick: function onClick() {
-        return makeCall({
-          audio: true
-        });
-      }
-    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
-      key: "cast",
-      icon: /*#__PURE__*/index_js_default().createElement(LiveTv/* default */.A, null),
-      tooltipTitle: "Cast",
-      tooltipOpen: true,
-      tooltipPlacement: "right",
-      onClick: function onClick() {
-        return makeCall({
-          audio: true,
-          video: true,
-          cast: true
-        });
-      }
-    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
-      key: "verse",
-      icon: /*#__PURE__*/index_js_default().createElement(ViewInAr/* default */.A, null),
-      tooltipTitle: "Verse",
-      tooltipOpen: true,
-      tooltipPlacement: "right",
-      onClick: function onClick() {
-        return navigate("/pod/".concat(podId, "/verse"));
-      }
-    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
-      key: "screenshare",
-      icon: /*#__PURE__*/index_js_default().createElement(ScreenShare/* default */.A, null),
-      tooltipTitle: "Screenshare",
-      tooltipOpen: true,
-      tooltipPlacement: "right",
-      onClick: function onClick() {
-        return makeCall({
-          screen: true,
-          video: true,
-          audio: true
-        });
-      }
-    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
-      key: "files",
-      icon: /*#__PURE__*/index_js_default().createElement(Folder/* default */.A, null),
-      tooltipTitle: "Files",
-      tooltipOpen: true,
-      tooltipPlacement: "right",
-      onClick: function onClick() {
-        return navigate("/pod/".concat(podId, "/files"));
-      }
-    }), /*#__PURE__*/index_js_default().createElement(SpeedDialAction/* default */.A, {
-      key: "desk",
-      icon: /*#__PURE__*/index_js_default().createElement(bi/* BiDesktop */.Yh, {
-        height: "24",
-        width: "24"
-      }),
-      tooltipTitle: "Desk",
-      tooltipOpen: true,
-      tooltipPlacement: "right",
-      onClick: function onClick() {
-        return navigate("/pod/".concat(podId, "/desk"));
-      }
-    })))),
+    }, /*#__PURE__*/index_js_default().createElement(Dropdown/* Dropdown */.ms, {
+      keepOpen: true,
+      trigger: /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
+        "aria-label": "send message",
+        onClick: handleAttachImage
+        // icon is green when there is text in the input field
+        ,
+        color: "primary",
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Badge/* default */.A, {
+        badgeContent: imageAttachment ? "1" : null,
+        color: "info"
+      }, /*#__PURE__*/index_js_default().createElement(Add/* default */.A, null))),
+      menu: defaultMenuItems.map(function (item, index) {
+        var _item$subMenuItems, _item$subMenuItems2;
+        return !((item === null || item === void 0 || (_item$subMenuItems = item.subMenuItems) === null || _item$subMenuItems === void 0 ? void 0 : _item$subMenuItems.length) > 0) ? /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownMenuItem */._2, {
+          onClick: item.onClick
+        }, /*#__PURE__*/index_js_default().createElement(ListItemIcon/* default */.A, null, AppHeader/* presetIcons */.O[item === null || item === void 0 ? void 0 : item.icon]), /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, item.text))) : /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownNestedMenuItem */.Zn, {
+          label: item.text,
+          rightAnchored: true,
+          menu: Pod_toConsumableArray(((_item$subMenuItems2 = item.subMenuItems) !== null && _item$subMenuItems2 !== void 0 ? _item$subMenuItems2 : []).map(function (subItem, index) {
+            return !!subItem && /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownMenuItem */._2, {
+              onClick: subItem.onClick
+            }, /*#__PURE__*/index_js_default().createElement(ListItemIcon/* default */.A, null, AppHeader/* presetIcons */.O[subItem === null || subItem === void 0 ? void 0 : subItem.icon]), /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, subItem.text));
+          }))
+        }, /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, item.text));
+      })
+    }))),
     endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement("input", {
       type: "file",
       name: "attachment",
@@ -5669,8 +5636,6 @@ function Pod() {
     onClick: handleClose
   }, "close")))));
 }
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Add.js
-var Add = __webpack_require__(16718);
 ;// CONCATENATED MODULE: ./src/components/pages/podDetails/PodDetails.jsx
 function PodDetails_typeof(o) { "@babel/helpers - typeof"; return PodDetails_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, PodDetails_typeof(o); }
 function PodDetails_toConsumableArray(arr) { return PodDetails_arrayWithoutHoles(arr) || PodDetails_iterableToArray(arr) || PodDetails_unsupportedIterableToArray(arr) || PodDetails_nonIterableSpread(); }
@@ -13357,8 +13322,8 @@ function ErrorBoundary(props) {
   }
 }
 /* harmony default export */ const errorBoundary_ErrorBoundary = (ErrorBoundary);
-// EXTERNAL MODULE: ./node_modules/jss/dist/jss.esm.js
-var jss_esm = __webpack_require__(73317);
+// EXTERNAL MODULE: ./node_modules/jss/dist/jss.esm.js + 4 modules
+var jss_esm = __webpack_require__(89598);
 // EXTERNAL MODULE: ./node_modules/jss-rtl/lib/main.js
 var main = __webpack_require__(27571);
 ;// CONCATENATED MODULE: ./src/App.tsx
@@ -13833,15 +13798,23 @@ var Dropdown = /*#__PURE__*/index_js_.forwardRef(function (_ref, ref) {
     anchorEl: isOpen,
     open: !!isOpen,
     disablePortal: true,
-    onClose: handleClose,
-    anchorOrigin: floatLeft ? {
-      vertical: "top",
-      horizontal: "left" // Set the anchor origin to left
-    } : {},
-    transformOrigin: floatLeft ? {
-      vertical: "top",
-      horizontal: "right" // Set the transform origin to right
-    } : {}
+    onClose: handleClose
+    // anchorOrigin={
+    //   floatLeft
+    //     ? {
+    //         vertical: "top",
+    //         horizontal: "left", // Set the anchor origin to left
+    //       }
+    //     : {}
+    // }
+    // transformOrigin={
+    //   floatLeft
+    //     ? {
+    //         vertical: "top",
+    //         horizontal: "right", // Set the transform origin to right
+    //       }
+    //     : {}
+    // }
   }, index_js_.Children.map(menu, renderMenu)));
 });
 var DropdownMenuItem = (0,emotion_styled_browser_esm/* default */.A)(MenuItem/* default */.A)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: space-between !important;\n\n  & > svg {\n    margin-left: 32px;\n  }\n"])));
@@ -14218,988 +14191,23 @@ function Message(_ref2) {
 
 /***/ }),
 
-/***/ 60269:
+/***/ 30471:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ Conversation),
-  Y: () => (/* binding */ formatDate)
+  A: () => (/* binding */ AppHeader),
+  O: () => (/* binding */ presetIcons)
 });
 
 // EXTERNAL MODULE: consume shared module (default) react@^18.3.1 (singleton) (fallback: ./node_modules/react/index.js)
 var index_js_ = __webpack_require__(50318);
 var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
-// EXTERNAL MODULE: consume shared module (default) react-dom@^18.3.1 (singleton) (fallback: ./node_modules/react-dom/index.js)
-var react_dom_index_js_ = __webpack_require__(80676);
-// EXTERNAL MODULE: ./node_modules/@mui/material/List/List.js + 1 modules
-var List = __webpack_require__(49799);
-// EXTERNAL MODULE: ./node_modules/@mui/material/ListItem/ListItem.js + 4 modules
-var ListItem = __webpack_require__(12794);
-// EXTERNAL MODULE: ./node_modules/@mui/styles/makeStyles/makeStyles.js + 6 modules
-var makeStyles = __webpack_require__(80284);
-// EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.jsx + 3 modules
-var Message = __webpack_require__(94068);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Delete.js
-var Delete = __webpack_require__(67034);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Reply.js
-var Reply = __webpack_require__(13669);
-// EXTERNAL MODULE: ./node_modules/@mui/material/CircularProgress/CircularProgress.js + 1 modules
-var CircularProgress = __webpack_require__(73357);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Box/Box.js + 2 modules
-var Box = __webpack_require__(69067);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Button/Button.js + 3 modules
-var Button = __webpack_require__(86990);
-// EXTERNAL MODULE: ./node_modules/use-long-press/index.mjs
-var use_long_press = __webpack_require__(92214);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Typography/Typography.js + 1 modules
-var Typography = __webpack_require__(14073);
-// EXTERNAL MODULE: ./node_modules/@sandstreamdev/react-swipeable-list/dist/react-swipeable-list.umd.js
-var react_swipeable_list_umd = __webpack_require__(48440);
-// EXTERNAL MODULE: ./node_modules/@sandstreamdev/react-swipeable-list/dist/styles.css
-var styles = __webpack_require__(50647);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
-var injectStylesIntoStyleTag = __webpack_require__(85072);
-var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleDomAPI.js
-var styleDomAPI = __webpack_require__(97825);
-var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/insertBySelector.js
-var insertBySelector = __webpack_require__(77659);
-var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
-var setAttributesWithoutAttributes = __webpack_require__(55056);
-var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/insertStyleElement.js
-var insertStyleElement = __webpack_require__(10540);
-var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleTagTransform.js
-var styleTagTransform = __webpack_require__(41113);
-var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
-// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./src/components/atomic/molecules/conversation/style.css
-var style = __webpack_require__(71077);
-;// CONCATENATED MODULE: ./src/components/atomic/molecules/conversation/style.css
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (styleTagTransform_default());
-options.setAttributes = (setAttributesWithoutAttributes_default());
-
-      options.insert = insertBySelector_default().bind(null, "head");
-    
-options.domAPI = (styleDomAPI_default());
-options.insertStyleElement = (insertStyleElement_default());
-
-var update = injectStylesIntoStyleTag_default()(style/* default */.A, options);
-
-
-
-
-       /* harmony default export */ const conversation_style = (style/* default */.A && style/* default */.A.locals ? style/* default */.A.locals : undefined);
-
-;// CONCATENATED MODULE: ./src/components/atomic/molecules/conversation/Conversation.jsx
-function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var useStyles = (0,makeStyles/* default */.A)(function (theme) {
-  return {
-    sentMessage: {
-      justifyContent: "flex-end !important"
-    },
-    list: {
-      paddingBottom: "".concat(theme.spacing(8), " !important")
-    },
-    swipeableListItem: {
-      background: "transparent !important"
-    },
-    fab: {
-      position: "fixed !important",
-      bottom: theme.spacing(9),
-      right: theme.spacing(2)
-    }
-  };
-});
-var formatDate = function formatDate(timestamp) {
-  var date = new Date(timestamp);
-  var month = ("0" + (date.getMonth() + 1)).slice(-2); // months are zero indexed
-  var day = ("0" + date.getDate()).slice(-2);
-  var year = date.getFullYear();
-  var hours = date.getHours();
-  var minutes = ("0" + date.getMinutes()).slice(-2);
-  var seconds = ("0" + date.getSeconds()).slice(-2);
-  var ampm = hours >= 12 ? "PM" : "AM";
-
-  // convert from 24-hour to 12-hour format
-  hours = hours % 12;
-  // the hour '0' should be '12'
-  hours = hours ? hours : 12;
-  var formattedTime = month + "/" + day + "/" + year + " " + hours + ":" + minutes + ":" + seconds + " " + ampm;
-  return formattedTime;
-};
-function Conversation(_ref) {
-  var list = _ref.list,
-    isGroup = _ref.isGroup,
-    deleteItem = _ref.deleteItem,
-    loading = _ref.loading,
-    onReply = _ref.onReply,
-    onUpvote = _ref.onUpvote;
-  var scrollRef = (0,index_js_.useRef)(null);
-  var classes = useStyles();
-  (0,index_js_.useEffect)(function () {
-    if (scrollRef.current) {
-      scrollRef.current.scrollIntoView({
-        behaviour: "smooth"
-      });
-    }
-    document.addEventListener("scroll", handleScroll);
-    // findDOMNode(this).addEventListener("scroll", handleScroll);
-    return function () {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  // calculate if the scroll is near the bottom of the scroll
-  // and it should update the value as the users changes the scroll position
-
-  var _React$useState = index_js_default().useState(true),
-    _React$useState2 = _slicedToArray(_React$useState, 2),
-    isNearBottom = _React$useState2[0],
-    setIsNearBottom = _React$useState2[1];
-  var handleScroll = function handleScroll() {
-    var distantFromBottom = document.documentElement.scrollHeight - document.documentElement.scrollTop - document.documentElement.clientHeight;
-    console.log("distantFromBottom", distantFromBottom);
-    setIsNearBottom(distantFromBottom > 400);
-  };
-  var handleScrollToBottom = function handleScrollToBottom() {
-    // scrollRef.current.scrollIntoView({ behaviour: "smooth" });
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: "smooth"
-    });
-  };
-  var handleDelete = function handleDelete(id) {
-    deleteItem(id);
-  };
-  var handleReply = function handleReply(message) {
-    onReply(message);
-  };
-  var handleUpvote = function handleUpvote(e) {
-    var messageId = e.target.parentNode.parentNode.parentNode.id;
-    console.log("handleUpvote", messageId);
-    onUpvote(messageId);
-  };
-  var bind = (0,use_long_press/* useLongPress */.HZ)(handleUpvote, {
-    threshold: 500,
-    cancelOnMovement: true,
-    captureEvent: true
-  });
-  return /*#__PURE__*/index_js_default().createElement(List/* default */.A, {
-    className: classes.list,
-    onSc: true
-  }, list.map(function (item) {
-    var _item$timestamp;
-    return /*#__PURE__*/index_js_default().createElement(react_swipeable_list_umd.SwipeableListItem, {
-      className: "swipeableListItem",
-      swipeLeft: {
-        content: /*#__PURE__*/index_js_default().createElement(Delete/* default */.A, {
-          color: "error",
-          style: {
-            height: "30px",
-            marginRight: 20,
-            color: ""
-          }
-        }),
-        action: function action() {
-          return handleDelete(item.id);
-        }
-      },
-      swipeRight: {
-        content: /*#__PURE__*/index_js_default().createElement(Reply/* default */.A, {
-          color: "primary",
-          style: {
-            height: "30px",
-            marginLeft: 20
-          }
-        }),
-        action: function action() {
-          return handleReply(item);
-        }
-      }
-      // onSwipeProgress={setIsSwiping}
-      // onSwipeStart={handleStartSwiping}
-      // onSwipeEnd={handleEndSwipingWithClick}
-    }, /*#__PURE__*/index_js_default().createElement(ListItem/* default */.Ay, {
-      key: item.id,
-      onClick: item.onClick,
-      className: item.type === "sent" ? classes.sentMessage : ""
-    }, /*#__PURE__*/index_js_default().createElement(Button/* default */.A, _extends({
-      id: item.id,
-      style: {
-        textTransform: "none"
-      }
-    }, bind()), /*#__PURE__*/index_js_default().createElement(Message/* default */.A, {
-      type: item.type,
-      payload: item.payload,
-      message: item.content,
-      attachmentSha: item.attachmentSha,
-      attachment: item.attachment,
-      imageAttachment: item.image,
-      username: item.name,
-      isOnline: isGroup && item.isOnline
-      // parse date from something like `Date(item.timestampSent)` to `'10/23/2023 12:00:00 AM'`
-      ,
-      timestamp: formatDate((_item$timestamp = item.timestamp) === null || _item$timestamp === void 0 ? void 0 : _item$timestamp.created),
-      avatar: item.avatar,
-      votes: item.votes
-    }))));
-  }), loading && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Box/* default */.A, {
-    sx: {
-      display: "flex",
-      justifyContent: "center",
-      flexDirection: "column",
-      alignItems: "center"
-    }
-  }, /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
-    component: "div",
-    gutterBottom: true
-  }, "Loading file into browser. Please wait."), /*#__PURE__*/index_js_default().createElement(CircularProgress/* default */.A, null))), /*#__PURE__*/index_js_default().createElement("li", {
-    ref: scrollRef
-  }),  false && /*#__PURE__*/0);
-}
-
-/***/ }),
-
-/***/ 30223:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ Thread),
-  Y: () => (/* binding */ formatDate)
-});
-
-// EXTERNAL MODULE: consume shared module (default) react@^18.3.1 (singleton) (fallback: ./node_modules/react/index.js)
-var index_js_ = __webpack_require__(50318);
-var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
-// EXTERNAL MODULE: ./node_modules/@mui/material/List/List.js + 1 modules
-var List = __webpack_require__(49799);
-// EXTERNAL MODULE: ./node_modules/@mui/styles/makeStyles/makeStyles.js + 6 modules
-var makeStyles = __webpack_require__(80284);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/KeyboardDoubleArrowUp.js
-var KeyboardDoubleArrowUp = __webpack_require__(86113);
-// EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.jsx + 3 modules
-var Message = __webpack_require__(94068);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Fab/Fab.js + 1 modules
-var Fab = __webpack_require__(87992);
-// EXTERNAL MODULE: ./node_modules/use-long-press/index.mjs
-var use_long_press = __webpack_require__(92214);
-// EXTERNAL MODULE: ./node_modules/@sandstreamdev/react-swipeable-list/dist/react-swipeable-list.umd.js
-var react_swipeable_list_umd = __webpack_require__(48440);
-// EXTERNAL MODULE: ./node_modules/@sandstreamdev/react-swipeable-list/dist/styles.css
-var styles = __webpack_require__(50647);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
-var injectStylesIntoStyleTag = __webpack_require__(85072);
-var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleDomAPI.js
-var styleDomAPI = __webpack_require__(97825);
-var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/insertBySelector.js
-var insertBySelector = __webpack_require__(77659);
-var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
-var setAttributesWithoutAttributes = __webpack_require__(55056);
-var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/insertStyleElement.js
-var insertStyleElement = __webpack_require__(10540);
-var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleTagTransform.js
-var styleTagTransform = __webpack_require__(41113);
-var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
-// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./src/components/atomic/molecules/thread/style.css
-var style = __webpack_require__(6716);
-;// CONCATENATED MODULE: ./src/components/atomic/molecules/thread/style.css
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (styleTagTransform_default());
-options.setAttributes = (setAttributesWithoutAttributes_default());
-
-      options.insert = insertBySelector_default().bind(null, "head");
-    
-options.domAPI = (styleDomAPI_default());
-options.insertStyleElement = (insertStyleElement_default());
-
-var update = injectStylesIntoStyleTag_default()(style/* default */.A, options);
-
-
-
-
-       /* harmony default export */ const thread_style = (style/* default */.A && style/* default */.A.locals ? style/* default */.A.locals : undefined);
-
-// EXTERNAL MODULE: ./node_modules/@mui/material/Divider/Divider.js
-var Divider = __webpack_require__(71543);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Chip/Chip.js + 2 modules
-var Chip = __webpack_require__(82022);
-// EXTERNAL MODULE: ./node_modules/@mui/material/styles/useTheme.js
-var useTheme = __webpack_require__(44675);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Container/Container.js + 1 modules
-var Container = __webpack_require__(97834);
-// EXTERNAL MODULE: ./node_modules/react-router/dist/index.js
-var dist = __webpack_require__(47767);
-// EXTERNAL MODULE: remote cryptography/Cryptography
-var Cryptography = __webpack_require__(79218);
-// EXTERNAL MODULE: ./src/components/notifications/notificationManager.jsx
-var notificationManager = __webpack_require__(29535);
-// EXTERNAL MODULE: ./node_modules/@mui/material/colors/red.js
-var red = __webpack_require__(41338);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Avatar/Avatar.js + 2 modules
-var Avatar = __webpack_require__(81385);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Card/Card.js + 1 modules
-var Card = __webpack_require__(14977);
-// EXTERNAL MODULE: ./node_modules/@mui/material/CardHeader/CardHeader.js + 1 modules
-var CardHeader = __webpack_require__(53650);
-// EXTERNAL MODULE: ./node_modules/@mui/material/CardMedia/CardMedia.js + 1 modules
-var CardMedia = __webpack_require__(87393);
-// EXTERNAL MODULE: ./node_modules/@mui/material/IconButton/IconButton.js + 1 modules
-var IconButton = __webpack_require__(11641);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/MoreVert.js
-var MoreVert = __webpack_require__(1795);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Favorite.js
-var Favorite = __webpack_require__(16869);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Typography/Typography.js + 1 modules
-var Typography = __webpack_require__(14073);
-// EXTERNAL MODULE: ./node_modules/@mui/material/ListItemText/ListItemText.js
-var ListItemText = __webpack_require__(82241);
-// EXTERNAL MODULE: ./node_modules/@mui/material/OutlinedInput/OutlinedInput.js + 2 modules
-var OutlinedInput = __webpack_require__(6757);
-// EXTERNAL MODULE: ./node_modules/@mui/material/InputAdornment/InputAdornment.js + 1 modules
-var InputAdornment = __webpack_require__(25239);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Send.js
-var Send = __webpack_require__(40443);
-// EXTERNAL MODULE: ./node_modules/@mui/material/CardContent/CardContent.js + 1 modules
-var CardContent = __webpack_require__(37636);
-// EXTERNAL MODULE: ./src/components/atomic/atom/dropdown/Dropdown.jsx + 1 modules
-var Dropdown = __webpack_require__(1310);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Accordion/Accordion.js + 3 modules
-var Accordion = __webpack_require__(1710);
-// EXTERNAL MODULE: ./node_modules/@mui/material/AccordionSummary/AccordionSummary.js + 1 modules
-var AccordionSummary = __webpack_require__(48719);
-// EXTERNAL MODULE: ./node_modules/@mui/material/AccordionDetails/AccordionDetails.js + 1 modules
-var AccordionDetails = __webpack_require__(16576);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Comment.js
-var Comment = __webpack_require__(15256);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/ExpandMore.js
-var ExpandMore = __webpack_require__(72048);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/customAccordion/CustomAccordion.jsx
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-
-
-var useStyles = (0,makeStyles/* default */.A)(function (theme) {
-  return {
-    root: {
-      maxWidth: 345
-    },
-    container: {
-      borderLeft: "5px solid ".concat(theme.palette.mode === "dark" ? "#99CCFF" : theme.palette.primary.main)
-      // marginRight: -16,
-    },
-    avatar: {
-      backgroundColor: red/* default */.A[500],
-      marginRight: 10
-    }
-  };
-});
-var CustomAccordion = function CustomAccordion(_ref) {
-  var title = _ref.title,
-    avatar = _ref.avatar,
-    children = _ref.children,
-    expanded = _ref.expanded,
-    onChange = _ref.onChange,
-    customButtons = _ref.customButtons,
-    _ref$showExpandIcon = _ref.showExpandIcon,
-    showExpandIcon = _ref$showExpandIcon === void 0 ? true : _ref$showExpandIcon;
-  var classes = useStyles();
-  var _useState = (0,index_js_.useState)(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    isExpanded = _useState2[0],
-    setIsExpanded = _useState2[1];
-  (0,index_js_.useEffect)(function () {
-    if (expanded !== undefined) {
-      setIsExpanded(expanded);
-    }
-  }, [expanded]);
-  var handleChange = function handleChange() {
-    if (expanded === undefined) {
-      setIsExpanded(!isExpanded);
-    } else {
-      onChange();
-    }
-  };
-  return /*#__PURE__*/index_js_default().createElement(Accordion/* default */.A, {
-    className: avatar ? classes.container : undefined,
-    expanded: expanded !== undefined ? expanded : isExpanded,
-    onChange: handleChange
-  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.A, {
-    expandIcon: showExpandIcon && /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.A, null),
-    "aria-controls": "panel1a-content",
-    id: "panel1a-header"
-  }, avatar ? /*#__PURE__*/index_js_default().createElement(Avatar/* default */.A, {
-    className: classes.avatar,
-    "aria-label": "recipe"
-  }, avatar) : /*#__PURE__*/index_js_default().createElement(Comment/* default */.A, {
-    style: {
-      marginRight: 5
-    }
-  }), /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
-    variant: "body2",
-    color: "text.secondary"
-  }, title), customButtons), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.A, null, children));
-};
-/* harmony default export */ const customAccordion_CustomAccordion = (CustomAccordion);
-;// CONCATENATED MODULE: ./src/components/atomic/atom/post/Post.jsx
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || Post_unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return Post_arrayLikeToArray(arr); }
-function Post_slicedToArray(arr, i) { return Post_arrayWithHoles(arr) || Post_iterableToArrayLimit(arr, i) || Post_unsupportedIterableToArray(arr, i) || Post_nonIterableRest(); }
-function Post_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function Post_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Post_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Post_arrayLikeToArray(o, minLen); }
-function Post_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function Post_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function Post_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-
-
-// import CardContent from '@mui/material/CardContent';
-// import CardActions from '@mui/material/CardActions';
-
-
-
-
-
-
-
-
-
-// import { useTheme } from '@mui/material/styles';
-// import useMediaQuery from '@mui/material/useMediaQuery';
-
-
-
-
-
-
-
-var Post_useStyles = (0,makeStyles/* default */.A)(function (theme) {
-  return {
-    root: {
-      maxWidth: 345
-    },
-    messageInputContainer: {
-      backgroundColor: "#f0f8ff",
-      padding: "0 10px",
-      margin: "10px 0",
-      width: "100%",
-      height: 40,
-      marginTop: "15px",
-      borderRadius: "30px !important"
-    },
-    messageInput: {
-      padding: 0,
-      // height: "100%",
-      width: "100%",
-      backgroundColor: theme.palette.mode === "dark" ? "#303030" : "#f0f8ff"
-    }
-  };
-});
-var Post = function Post(_ref) {
-  var _postDetails$payload, _postDetails$payload2;
-  var isDarkMode = _ref.isDarkMode,
-    imageId = _ref.imageId,
-    postDetails = _ref.postDetails;
-  var _useCryptography = (0,Cryptography.useCryptography)(),
-    chance = _useCryptography.chance;
-  var navigate = (0,dist/* useNavigate */.Zp)();
-  var _React$useState = index_js_default().useState(false),
-    _React$useState2 = Post_slicedToArray(_React$useState, 2),
-    dense = _React$useState2[0],
-    setDense = _React$useState2[1];
-  var _React$useState3 = index_js_default().useState(false),
-    _React$useState4 = Post_slicedToArray(_React$useState3, 2),
-    secondary = _React$useState4[0],
-    setSecondary = _React$useState4[1];
-
-  // pic a random number between  and including 1-9
-  var num = Math.floor(Math.random() * 9) + 1;
-  var randomNumber = (0,index_js_.useMemo)(function () {
-    return Math.floor(Math.random() * 9) + 1;
-  }, []);
-  var randomAnimalName = (0,index_js_.useMemo)(function () {
-    return chance.animal();
-  }, []);
-  var randomDate = (0,index_js_.useMemo)(function () {
-    return chance.date({
-      year: 2023,
-      string: true
-    });
-  }, []);
-  var randomLongSentence = (0,index_js_.useMemo)(function () {
-    return chance.sentence({
-      words: 30
-    });
-  }, []);
-  var randomShortSentence = (0,index_js_.useMemo)(function () {
-    return chance.sentence();
-  }, []);
-  var classes = Post_useStyles();
-  var _React$useState5 = index_js_default().useState([]),
-    _React$useState6 = Post_slicedToArray(_React$useState5, 2),
-    expanded = _React$useState6[0],
-    setExpanded = _React$useState6[1];
-  var handleChange = function handleChange(panel) {
-    return function (event, isExpanded) {
-      console.log("handleChange", panel, isExpanded);
-      if (isExpanded) {
-        setExpanded(function (prevExpanded) {
-          return [].concat(_toConsumableArray(prevExpanded), [panel]);
-        });
-      } else {
-        setExpanded(function (prevExpanded) {
-          return prevExpanded.filter(function (item) {
-            return item !== panel;
-          });
-        });
-      }
-    };
-  };
-  var sendNotification = (0,notificationManager/* useNotification */.hN)();
-  var defaultMenuItems = [{
-    text: "Go to message",
-    icon: "navigate",
-    onClick: function onClick() {
-      return navigate("/pods");
-    }
-  }, {
-    text: "Go to file",
-    icon: "navigate",
-    onClick: function onClick() {
-      return navigate("/pods");
-    }
-  }, {
-    text: "Delete Post",
-    icon: "navigate",
-    subMenuItems: [{
-      text: "Confirm delete",
-      onClick: function onClick() {
-        return sendNotification("Deleting post", {
-          variant: "info"
-        });
-      }
-    }]
-  }];
-  var InputComponent = function InputComponent() {
-    return /*#__PURE__*/index_js_default().createElement(OutlinedInput/* default */.A, {
-      className: classes.messageInputContainer,
-      id: "outlined-adornment-weight",
-      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.A, {
-        position: "end"
-      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
-        "aria-label": "send message"
-        //   onClick={handleSendMessage}
-        // icon is green when there is text in the input field
-        //   color={messageInputValue || imageAttachment ? "primary" : "disabled"}
-        //   disabled={(!messageInputValue && !imageAttachment) || !isOnline}
-        ,
-        edge: "end"
-      }, /*#__PURE__*/index_js_default().createElement(Send/* default */.A, null)))),
-      "aria-describedby": "outlined-weight-helper-text"
-      //   onChange={handleMessageChange}
-      // on Enter key press, send message
-      // but on on shift Enter
-      //   onKeyPress={(ev) => {
-      //     if (ev.key === 'Enter' && !ev.shiftKey) {
-      //       ev.preventDefault();
-      //       if (!!messageInputValue) handleSendMessage();
-      //     }
-      //   }}
-      //   value={messageInputValue}
-      ,
-      classes: {
-        root: classes.messageInput
-      },
-      sx: {
-        width: "100%"
-      },
-      autoComplete: "off"
-      // lightblue background
-      // style={{ backgroundColor: '#f0f8ff' }}
-      ,
-      multiline: true,
-      placeholder: "Reply...",
-      inputProps: {
-        "aria-label": "weight"
-      }
-    });
-  };
-  return /*#__PURE__*/index_js_default().createElement(Card/* default */.A, {
-    style: {
-      margin: "20px 0"
-    }
-  }, /*#__PURE__*/index_js_default().createElement(CardHeader/* default */.A, {
-    avatar: /*#__PURE__*/index_js_default().createElement(Avatar/* default */.A, {
-      sx: {
-        bgcolor: red/* default */.A[500]
-      },
-      "aria-label": "recipe",
-      src: "/avatars/".concat(randomNumber, ".jpg")
-    }, "R"),
-    action: /*#__PURE__*/index_js_default().createElement(Dropdown/* Dropdown */.ms, {
-      keepOpen: true,
-      trigger: /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
-        size: "large",
-        "aria-label": "account of current user",
-        "aria-controls": "menu-appbar",
-        "aria-haspopup": "true",
-        color: "inherit"
-      }, /*#__PURE__*/index_js_default().createElement(MoreVert/* default */.A, null)),
-      menu: defaultMenuItems.map(function (item, index) {
-        var _item$subMenuItems, _item$subMenuItems2;
-        return !((item === null || item === void 0 || (_item$subMenuItems = item.subMenuItems) === null || _item$subMenuItems === void 0 ? void 0 : _item$subMenuItems.length) > 0) ? /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownMenuItem */._2, {
-          onClick: item.onClick
-        }, /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, item.text))) : /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownNestedMenuItem */.Zn, {
-          label: item.text,
-          rightAnchored: true,
-          menu: _toConsumableArray(((_item$subMenuItems2 = item.subMenuItems) !== null && _item$subMenuItems2 !== void 0 ? _item$subMenuItems2 : []).map(function (subItem, index) {
-            return !!subItem && /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownMenuItem */._2, {
-              onClick: subItem.onClick
-            }, /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, subItem.text));
-          }))
-        }, /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, item.text));
-      })
-    }),
-    title: randomAnimalName,
-    subheader: randomDate
-  }), /*#__PURE__*/index_js_default().createElement(CardMedia/* default */.A, {
-    component: "img",
-    image: imageId ? "/feed/".concat(isDarkMode ? "dark" : "light", "/").concat(imageId, ".jpg") : postDetails === null || postDetails === void 0 || (_postDetails$payload = postDetails.payload) === null || _postDetails$payload === void 0 || (_postDetails$payload = _postDetails$payload.image) === null || _postDetails$payload === void 0 ? void 0 : _postDetails$payload.data,
-    alt: "Paella dish"
-  }), /*#__PURE__*/index_js_default().createElement(CardContent/* default */.A, null, /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
-    variant: "body2",
-    color: "text.secondary"
-  }, postDetails === null || postDetails === void 0 || (_postDetails$payload2 = postDetails.payload) === null || _postDetails$payload2 === void 0 ? void 0 : _postDetails$payload2.content)), /*#__PURE__*/index_js_default().createElement(customAccordion_CustomAccordion, {
-    title: /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
-      variant: "body",
-      color: "text.primary"
-    }, "Comments"),
-    customButtons: /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
-      "aria-label": "add to favorites",
-      style: {
-        marginLeft: "auto",
-        padding: 0
-      },
-      onClick: function onClick(e) {
-        return e.stopPropagation();
-      },
-      disableRipple: true
-    }, /*#__PURE__*/index_js_default().createElement(Favorite/* default */.A, null)),
-    showExpandIcon: false
-  }, /*#__PURE__*/index_js_default().createElement(customAccordion_CustomAccordion, {
-    title: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
-      variant: "body",
-      color: "text.primary"
-    }, randomAnimalName, " - ", randomDate), /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
-      variant: "body2",
-      color: "text.secondary"
-    }, randomShortSentence)),
-    avatar: "R",
-    customButtons: /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
-      "aria-label": "add to favorites",
-      style: {
-        marginLeft: "auto",
-        padding: 0
-      },
-      onClick: function onClick(e) {
-        return e.stopPropagation();
-      },
-      disableRipple: true
-    }, /*#__PURE__*/index_js_default().createElement(Favorite/* default */.A, null)),
-    showExpandIcon: false
-  }, /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
-    variant: "body2",
-    color: "text.secondary"
-  }, randomLongSentence), /*#__PURE__*/index_js_default().createElement(InputComponent, null)), /*#__PURE__*/index_js_default().createElement(InputComponent, null)));
-};
-/* harmony default export */ const post_Post = (Post);
-;// CONCATENATED MODULE: ./src/components/atomic/molecules/thread/Thread.jsx
-function Thread_toConsumableArray(arr) { return Thread_arrayWithoutHoles(arr) || Thread_iterableToArray(arr) || Thread_unsupportedIterableToArray(arr) || Thread_nonIterableSpread(); }
-function Thread_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function Thread_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function Thread_arrayWithoutHoles(arr) { if (Array.isArray(arr)) return Thread_arrayLikeToArray(arr); }
-function Thread_slicedToArray(arr, i) { return Thread_arrayWithHoles(arr) || Thread_iterableToArrayLimit(arr, i) || Thread_unsupportedIterableToArray(arr, i) || Thread_nonIterableRest(); }
-function Thread_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function Thread_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Thread_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Thread_arrayLikeToArray(o, minLen); }
-function Thread_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function Thread_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function Thread_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var Thread_useStyles = (0,makeStyles/* default */.A)(function (theme) {
-  return {
-    sentMessage: {
-      justifyContent: "flex-end !important"
-    },
-    list: {
-      paddingBottom: "".concat(theme.spacing(8), " !important")
-    },
-    swipeableListItem: {
-      background: "transparent !important"
-    },
-    fab: {
-      position: "fixed !important",
-      bottom: theme.spacing(2),
-      right: theme.spacing(2)
-    },
-    messageInputContainer: {
-      marginTop: "15px",
-      borderRadius: "30px !important"
-    },
-    messageInput: {
-      backgroundColor: theme.palette.mode === "dark" ? "#303030" : "#f0f8ff"
-    }
-  };
-});
-var formatDate = function formatDate(timestamp) {
-  var date = new Date(timestamp);
-  var month = ("0" + (date.getMonth() + 1)).slice(-2); // months are zero indexed
-  var day = ("0" + date.getDate()).slice(-2);
-  var year = date.getFullYear();
-  var hours = date.getHours();
-  var minutes = ("0" + date.getMinutes()).slice(-2);
-  var seconds = ("0" + date.getSeconds()).slice(-2);
-  var ampm = hours >= 12 ? "PM" : "AM";
-
-  // convert from 24-hour to 12-hour format
-  hours = hours % 12;
-  // the hour '0' should be '12'
-  hours = hours ? hours : 12;
-  var formattedTime = month + "/" + day + "/" + year + " " + hours + ":" + minutes + ":" + seconds + " " + ampm;
-  return formattedTime;
-};
-function Thread(_ref) {
-  var list = _ref.list,
-    isGroup = _ref.isGroup,
-    deleteItem = _ref.deleteItem,
-    loading = _ref.loading,
-    onReply = _ref.onReply,
-    onUpvote = _ref.onUpvote;
-  var scrollRef = (0,index_js_.useRef)(null);
-  var theme = (0,useTheme/* default */.A)();
-  var classes = Thread_useStyles();
-  (0,index_js_.useEffect)(function () {
-    // if (scrollRef.current) {
-    //     scrollRef.current.scrollIntoView({ behaviour: "smooth" });
-    // }
-
-    document.addEventListener("scroll", handleScroll);
-    return function () {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  // calculate if the scroll is near the bottom of the scroll
-  // and it should update the value as the users changes the scroll position
-
-  var _React$useState = index_js_default().useState(true),
-    _React$useState2 = Thread_slicedToArray(_React$useState, 2),
-    isNearTop = _React$useState2[0],
-    setIsNearTop = _React$useState2[1];
-  var handleScroll = function handleScroll() {
-    var distantFromTop = document.documentElement.scrollTop;
-    setIsNearTop(distantFromTop < 400);
-  };
-  var handleScrollToTop = function handleScrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
-  var handleDelete = function handleDelete(id) {
-    deleteItem(id);
-  };
-  var handleReply = function handleReply(message) {
-    onReply(message);
-  };
-  var handleUpvote = function handleUpvote(e) {
-    var messageId = e.target.parentNode.parentNode.parentNode.id;
-    console.log("handleUpvote", messageId);
-    onUpvote(messageId);
-  };
-  var bind = (0,use_long_press/* useLongPress */.HZ)(handleUpvote, {
-    threshold: 500,
-    cancelOnMovement: true,
-    captureEvent: true
-  });
-  var isDarkMode = theme.palette.mode === "dark";
-
-  // create array with number 1 to 24. the numbers are in a randomised order
-  var randomNumbers = (0,index_js_.useMemo)(function () {
-    return Thread_toConsumableArray(Array(24).keys()).map(function (i) {
-      return i + 1;
-    }).sort(function () {
-      return Math.random() - 0.5;
-    });
-  }, []);
-  //   const randomNumbers = [...Array(24).keys()].map(i => (i+1)).sort(() => Math.random() - 0.5);
-
-  return /*#__PURE__*/index_js_default().createElement(List/* default */.A, {
-    className: classes.list
-  }, /*#__PURE__*/index_js_default().createElement("li", {
-    ref: scrollRef
-  }), /*#__PURE__*/index_js_default().createElement(Container/* default */.A, null, list.map(function (item) {
-    return /*#__PURE__*/index_js_default().createElement(post_Post, {
-      isDarkMode: isDarkMode,
-      postDetails: item
-    });
-  })), /*#__PURE__*/index_js_default().createElement(Divider/* default */.A, null, /*#__PURE__*/index_js_default().createElement(Chip/* default */.A, {
-    label: "Test data:"
-  })), /*#__PURE__*/index_js_default().createElement(Container/* default */.A, null, randomNumbers.map(function (number) {
-    return /*#__PURE__*/index_js_default().createElement(post_Post, {
-      isDarkMode: isDarkMode,
-      imageId: number
-    });
-  })), !isNearTop && /*#__PURE__*/index_js_default().createElement(Fab/* default */.A, {
-    color: "primary",
-    "aria-label": "scroll to bottom",
-    className: classes.fab,
-    onClick: handleScrollToTop
-  }, /*#__PURE__*/index_js_default().createElement(KeyboardDoubleArrowUp/* default */.A, null)));
-}
-
-/***/ }),
-
-/***/ 11037:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ PageContainer)
-});
-
-// EXTERNAL MODULE: consume shared module (default) react@^18.3.1 (singleton) (fallback: ./node_modules/react/index.js)
-var index_js_ = __webpack_require__(50318);
-var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
-// EXTERNAL MODULE: ./node_modules/prop-types/index.js
-var prop_types = __webpack_require__(5556);
-var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Toolbar/Toolbar.js + 1 modules
-var Toolbar = __webpack_require__(8532);
-// EXTERNAL MODULE: ./node_modules/@mui/material/CssBaseline/CssBaseline.js
-var CssBaseline = __webpack_require__(14519);
-// EXTERNAL MODULE: ./node_modules/@mui/material/useScrollTrigger/useScrollTrigger.js
-var useScrollTrigger = __webpack_require__(59729);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Box/Box.js + 2 modules
-var Box = __webpack_require__(69067);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Container/Container.js + 1 modules
-var Container = __webpack_require__(97834);
-// EXTERNAL MODULE: ./node_modules/@mui/material/Slide/Slide.js
-var Slide = __webpack_require__(48875);
 // EXTERNAL MODULE: ./node_modules/@mui/material/AppBar/AppBar.js + 1 modules
 var AppBar = __webpack_require__(89828);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Toolbar/Toolbar.js + 1 modules
+var Toolbar = __webpack_require__(8532);
 // EXTERNAL MODULE: ./node_modules/@mui/material/Typography/Typography.js + 1 modules
 var Typography = __webpack_require__(14073);
 // EXTERNAL MODULE: ./node_modules/@mui/material/IconButton/IconButton.js + 1 modules
@@ -15252,6 +14260,10 @@ var AssistantDirection = __webpack_require__(65812);
 var Delete = __webpack_require__(67034);
 // EXTERNAL MODULE: ./node_modules/@mui/material/ListItemText/ListItemText.js
 var ListItemText = __webpack_require__(82241);
+// EXTERNAL MODULE: ./node_modules/@mui/material/CssBaseline/CssBaseline.js
+var CssBaseline = __webpack_require__(14519);
+// EXTERNAL MODULE: ./node_modules/@mui/material/useScrollTrigger/useScrollTrigger.js
+var useScrollTrigger = __webpack_require__(59729);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/PermMedia.js
 var PermMedia = __webpack_require__(82867);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Support.js
@@ -15304,8 +14316,8 @@ var useTheme = __webpack_require__(44675);
 var notificationManager = __webpack_require__(29535);
 // EXTERNAL MODULE: ./node_modules/i18next/dist/esm/i18next.js
 var i18next = __webpack_require__(72635);
-// EXTERNAL MODULE: ./node_modules/i18next-browser-languagedetector/dist/esm/i18nextBrowserLanguageDetector.js + 1 modules
-var i18nextBrowserLanguageDetector = __webpack_require__(90796);
+// EXTERNAL MODULE: ./node_modules/i18next-browser-languagedetector/dist/esm/i18nextBrowserLanguageDetector.js
+var i18nextBrowserLanguageDetector = __webpack_require__(94997);
 // EXTERNAL MODULE: ./node_modules/i18next-http-backend/esm/index.js + 2 modules
 var esm = __webpack_require__(1347);
 ;// CONCATENATED MODULE: ./src/components/translations/i18n.js
@@ -18491,8 +17503,18 @@ var languages = [{
 var CellTower = __webpack_require__(94624);
 // EXTERNAL MODULE: ./node_modules/@mui/icons-material/Copyright.js
 var Copyright = __webpack_require__(35372);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Slide/Slide.js
+var Slide = __webpack_require__(48875);
 // EXTERNAL MODULE: ./node_modules/rocketicons/bi/index.mjs
 var bi = __webpack_require__(10402);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Attachment.js
+var Attachment = __webpack_require__(98456);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Mic.js
+var Mic = __webpack_require__(2250);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Image.js
+var Image = __webpack_require__(55072);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Place.js
+var Place = __webpack_require__(76298);
 // EXTERNAL MODULE: ./src/components/atomic/atom/dropdown/Dropdown.jsx + 1 modules
 var Dropdown = __webpack_require__(1310);
 ;// CONCATENATED MODULE: ./src/components/atomic/molecules/app-header/AppHeader.jsx
@@ -18510,6 +17532,10 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
 
 
 
@@ -18693,7 +17719,11 @@ var presetIcons = {
   discord: /*#__PURE__*/index_js_default().createElement(si/* SiDiscord */.Nxe, {
     height: "20",
     width: "20"
-  })
+  }),
+  attachment: /*#__PURE__*/index_js_default().createElement(Attachment/* default */.A, null),
+  mic: /*#__PURE__*/index_js_default().createElement(Mic/* default */.A, null),
+  place: /*#__PURE__*/index_js_default().createElement(Place/* default */.A, null),
+  image: /*#__PURE__*/index_js_default().createElement(Image/* default */.A, null)
 };
 function HideOnScroll(props) {
   var children = props.children,
@@ -19151,29 +18181,107 @@ function AppHeader(_ref4) {
   }
   return /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(CssBaseline/* default */.Ay, null), hideOnScroll ? /*#__PURE__*/index_js_default().createElement(HideOnScroll, props, /*#__PURE__*/index_js_default().createElement(AppBarRender, null)) : /*#__PURE__*/index_js_default().createElement(AppBarRender, null));
 }
-// EXTERNAL MODULE: ./node_modules/@mui/material/Fab/Fab.js + 1 modules
-var Fab = __webpack_require__(87992);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Add.js
-var Add = __webpack_require__(16718);
+
+/***/ }),
+
+/***/ 60269:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  A: () => (/* binding */ Conversation),
+  Y: () => (/* binding */ formatDate)
+});
+
+// EXTERNAL MODULE: consume shared module (default) react@^18.3.1 (singleton) (fallback: ./node_modules/react/index.js)
+var index_js_ = __webpack_require__(50318);
+var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
+// EXTERNAL MODULE: consume shared module (default) react-dom@^18.3.1 (singleton) (fallback: ./node_modules/react-dom/index.js)
+var react_dom_index_js_ = __webpack_require__(80676);
+// EXTERNAL MODULE: ./node_modules/@mui/material/List/List.js + 1 modules
+var List = __webpack_require__(49799);
+// EXTERNAL MODULE: ./node_modules/@mui/material/ListItem/ListItem.js + 4 modules
+var ListItem = __webpack_require__(12794);
 // EXTERNAL MODULE: ./node_modules/@mui/styles/makeStyles/makeStyles.js + 6 modules
 var makeStyles = __webpack_require__(80284);
-// EXTERNAL MODULE: ./node_modules/@mui/styles/useTheme/index.js
-var styles_useTheme = __webpack_require__(23668);
-// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDial/SpeedDial.js + 2 modules
-var SpeedDial = __webpack_require__(36056);
-// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDialIcon/SpeedDialIcon.js + 2 modules
-var SpeedDialIcon = __webpack_require__(10698);
-// EXTERNAL MODULE: ./node_modules/@mui/material/SpeedDialAction/SpeedDialAction.js + 63 modules
-var SpeedDialAction = __webpack_require__(749);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/FileCopyOutlined.js
-var FileCopyOutlined = __webpack_require__(47152);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Save.js
-var Save = __webpack_require__(98984);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Print.js
-var Print = __webpack_require__(45234);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Share.js
-var Share = __webpack_require__(29422);
-;// CONCATENATED MODULE: ./src/components/atomic/organism/page-container/PageContainer.jsx
+// EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.jsx + 3 modules
+var Message = __webpack_require__(94068);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Delete.js
+var Delete = __webpack_require__(67034);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Reply.js
+var Reply = __webpack_require__(13669);
+// EXTERNAL MODULE: ./node_modules/@mui/material/CircularProgress/CircularProgress.js + 1 modules
+var CircularProgress = __webpack_require__(73357);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Box/Box.js + 2 modules
+var Box = __webpack_require__(69067);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Button/Button.js + 3 modules
+var Button = __webpack_require__(86990);
+// EXTERNAL MODULE: ./node_modules/use-long-press/index.mjs
+var use_long_press = __webpack_require__(92214);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Typography/Typography.js + 1 modules
+var Typography = __webpack_require__(14073);
+// EXTERNAL MODULE: ./node_modules/@sandstreamdev/react-swipeable-list/dist/react-swipeable-list.umd.js
+var react_swipeable_list_umd = __webpack_require__(48440);
+// EXTERNAL MODULE: ./node_modules/@sandstreamdev/react-swipeable-list/dist/styles.css
+var styles = __webpack_require__(50647);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
+var injectStylesIntoStyleTag = __webpack_require__(85072);
+var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleDomAPI.js
+var styleDomAPI = __webpack_require__(97825);
+var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/insertBySelector.js
+var insertBySelector = __webpack_require__(77659);
+var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
+var setAttributesWithoutAttributes = __webpack_require__(55056);
+var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/insertStyleElement.js
+var insertStyleElement = __webpack_require__(10540);
+var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleTagTransform.js
+var styleTagTransform = __webpack_require__(41113);
+var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
+// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./src/components/atomic/molecules/conversation/style.css
+var style = __webpack_require__(71077);
+;// CONCATENATED MODULE: ./src/components/atomic/molecules/conversation/style.css
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (styleTagTransform_default());
+options.setAttributes = (setAttributesWithoutAttributes_default());
+
+      options.insert = insertBySelector_default().bind(null, "head");
+    
+options.domAPI = (styleDomAPI_default());
+options.insertStyleElement = (insertStyleElement_default());
+
+var update = injectStylesIntoStyleTag_default()(style/* default */.A, options);
+
+
+
+
+       /* harmony default export */ const conversation_style = (style/* default */.A && style/* default */.A.locals ? style/* default */.A.locals : undefined);
+
+;// CONCATENATED MODULE: ./src/components/atomic/molecules/conversation/Conversation.jsx
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
@@ -19195,46 +18303,929 @@ var Share = __webpack_require__(29422);
 
 
 
-var PageContainer_presetIcons = {
-  add: /*#__PURE__*/index_js_.createElement(Add/* default */.A, null)
+
+
+var useStyles = (0,makeStyles/* default */.A)(function (theme) {
+  return {
+    sentMessage: {
+      justifyContent: "flex-end !important"
+    },
+    list: {
+      paddingBottom: "".concat(theme.spacing(8), " !important")
+    },
+    swipeableListItem: {
+      background: "transparent !important"
+    },
+    fab: {
+      position: "fixed !important",
+      bottom: theme.spacing(9),
+      right: theme.spacing(2)
+    }
+  };
+});
+var formatDate = function formatDate(timestamp) {
+  var date = new Date(timestamp);
+  var month = ("0" + (date.getMonth() + 1)).slice(-2); // months are zero indexed
+  var day = ("0" + date.getDate()).slice(-2);
+  var year = date.getFullYear();
+  var hours = date.getHours();
+  var minutes = ("0" + date.getMinutes()).slice(-2);
+  var seconds = ("0" + date.getSeconds()).slice(-2);
+  var ampm = hours >= 12 ? "PM" : "AM";
+
+  // convert from 24-hour to 12-hour format
+  hours = hours % 12;
+  // the hour '0' should be '12'
+  hours = hours ? hours : 12;
+  var formattedTime = month + "/" + day + "/" + year + " " + hours + ":" + minutes + ":" + seconds + " " + ampm;
+  return formattedTime;
+};
+function Conversation(_ref) {
+  var list = _ref.list,
+    isGroup = _ref.isGroup,
+    deleteItem = _ref.deleteItem,
+    loading = _ref.loading,
+    onReply = _ref.onReply,
+    onUpvote = _ref.onUpvote;
+  var scrollRef = (0,index_js_.useRef)(null);
+  var classes = useStyles();
+  (0,index_js_.useEffect)(function () {
+    if (scrollRef.current) {
+      scrollRef.current.scrollIntoView({
+        behaviour: "smooth"
+      });
+    }
+    document.addEventListener("scroll", handleScroll);
+    // findDOMNode(this).addEventListener("scroll", handleScroll);
+    return function () {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // calculate if the scroll is near the bottom of the scroll
+  // and it should update the value as the users changes the scroll position
+
+  var _React$useState = index_js_default().useState(true),
+    _React$useState2 = _slicedToArray(_React$useState, 2),
+    isNearBottom = _React$useState2[0],
+    setIsNearBottom = _React$useState2[1];
+  var handleScroll = function handleScroll() {
+    var distantFromBottom = document.documentElement.scrollHeight - document.documentElement.scrollTop - document.documentElement.clientHeight;
+    console.log("distantFromBottom", distantFromBottom);
+    setIsNearBottom(distantFromBottom > 400);
+  };
+  var handleScrollToBottom = function handleScrollToBottom() {
+    // scrollRef.current.scrollIntoView({ behaviour: "smooth" });
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth"
+    });
+  };
+  var handleDelete = function handleDelete(id) {
+    deleteItem(id);
+  };
+  var handleReply = function handleReply(message) {
+    onReply(message);
+  };
+  var handleUpvote = function handleUpvote(e) {
+    var messageId = e.target.parentNode.parentNode.parentNode.id;
+    console.log("handleUpvote", messageId);
+    onUpvote(messageId);
+  };
+  var bind = (0,use_long_press/* useLongPress */.HZ)(handleUpvote, {
+    threshold: 500,
+    cancelOnMovement: true,
+    captureEvent: true
+  });
+  return /*#__PURE__*/index_js_default().createElement(List/* default */.A, {
+    className: classes.list,
+    onSc: true
+  }, list.map(function (item) {
+    var _item$timestamp;
+    return /*#__PURE__*/index_js_default().createElement(react_swipeable_list_umd.SwipeableListItem, {
+      className: "swipeableListItem",
+      swipeLeft: {
+        content: /*#__PURE__*/index_js_default().createElement(Delete/* default */.A, {
+          color: "error",
+          style: {
+            height: "30px",
+            marginRight: 20,
+            color: ""
+          }
+        }),
+        action: function action() {
+          return handleDelete(item.id);
+        }
+      },
+      swipeRight: {
+        content: /*#__PURE__*/index_js_default().createElement(Reply/* default */.A, {
+          color: "primary",
+          style: {
+            height: "30px",
+            marginLeft: 20
+          }
+        }),
+        action: function action() {
+          return handleReply(item);
+        }
+      }
+      // onSwipeProgress={setIsSwiping}
+      // onSwipeStart={handleStartSwiping}
+      // onSwipeEnd={handleEndSwipingWithClick}
+    }, /*#__PURE__*/index_js_default().createElement(ListItem/* default */.Ay, {
+      key: item.id,
+      onClick: item.onClick,
+      className: item.type === "sent" ? classes.sentMessage : ""
+    }, /*#__PURE__*/index_js_default().createElement(Button/* default */.A, _extends({
+      id: item.id,
+      style: {
+        textTransform: "none"
+      }
+    }, bind()), /*#__PURE__*/index_js_default().createElement(Message/* default */.A, {
+      type: item.type,
+      payload: item.payload,
+      message: item.content,
+      attachmentSha: item.attachmentSha,
+      attachment: item.attachment,
+      imageAttachment: item.image,
+      username: item.name,
+      isOnline: isGroup && item.isOnline
+      // parse date from something like `Date(item.timestampSent)` to `'10/23/2023 12:00:00 AM'`
+      ,
+      timestamp: formatDate((_item$timestamp = item.timestamp) === null || _item$timestamp === void 0 ? void 0 : _item$timestamp.created),
+      avatar: item.avatar,
+      votes: item.votes
+    }))));
+  }), loading && /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Box/* default */.A, {
+    sx: {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column",
+      alignItems: "center"
+    }
+  }, /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
+    component: "div",
+    gutterBottom: true
+  }, "Loading file into browser. Please wait."), /*#__PURE__*/index_js_default().createElement(CircularProgress/* default */.A, null))), /*#__PURE__*/index_js_default().createElement("li", {
+    ref: scrollRef
+  }),  false && /*#__PURE__*/0);
+}
+
+/***/ }),
+
+/***/ 30223:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  A: () => (/* binding */ Thread),
+  Y: () => (/* binding */ formatDate)
+});
+
+// EXTERNAL MODULE: consume shared module (default) react@^18.3.1 (singleton) (fallback: ./node_modules/react/index.js)
+var index_js_ = __webpack_require__(50318);
+var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
+// EXTERNAL MODULE: ./node_modules/@mui/material/List/List.js + 1 modules
+var List = __webpack_require__(49799);
+// EXTERNAL MODULE: ./node_modules/@mui/styles/makeStyles/makeStyles.js + 6 modules
+var makeStyles = __webpack_require__(80284);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/KeyboardDoubleArrowUp.js
+var KeyboardDoubleArrowUp = __webpack_require__(86113);
+// EXTERNAL MODULE: ./src/components/atomic/atom/message/Message.jsx + 3 modules
+var Message = __webpack_require__(94068);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Fab/Fab.js + 1 modules
+var Fab = __webpack_require__(87992);
+// EXTERNAL MODULE: ./node_modules/use-long-press/index.mjs
+var use_long_press = __webpack_require__(92214);
+// EXTERNAL MODULE: ./node_modules/@sandstreamdev/react-swipeable-list/dist/react-swipeable-list.umd.js
+var react_swipeable_list_umd = __webpack_require__(48440);
+// EXTERNAL MODULE: ./node_modules/@sandstreamdev/react-swipeable-list/dist/styles.css
+var styles = __webpack_require__(50647);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
+var injectStylesIntoStyleTag = __webpack_require__(85072);
+var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleDomAPI.js
+var styleDomAPI = __webpack_require__(97825);
+var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/insertBySelector.js
+var insertBySelector = __webpack_require__(77659);
+var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
+var setAttributesWithoutAttributes = __webpack_require__(55056);
+var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/insertStyleElement.js
+var insertStyleElement = __webpack_require__(10540);
+var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleTagTransform.js
+var styleTagTransform = __webpack_require__(41113);
+var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
+// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./src/components/atomic/molecules/thread/style.css
+var style = __webpack_require__(6716);
+;// CONCATENATED MODULE: ./src/components/atomic/molecules/thread/style.css
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (styleTagTransform_default());
+options.setAttributes = (setAttributesWithoutAttributes_default());
+
+      options.insert = insertBySelector_default().bind(null, "head");
+    
+options.domAPI = (styleDomAPI_default());
+options.insertStyleElement = (insertStyleElement_default());
+
+var update = injectStylesIntoStyleTag_default()(style/* default */.A, options);
+
+
+
+
+       /* harmony default export */ const thread_style = (style/* default */.A && style/* default */.A.locals ? style/* default */.A.locals : undefined);
+
+// EXTERNAL MODULE: ./node_modules/@mui/material/Divider/Divider.js
+var Divider = __webpack_require__(71543);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Chip/Chip.js + 2 modules
+var Chip = __webpack_require__(82022);
+// EXTERNAL MODULE: ./node_modules/@mui/material/styles/useTheme.js
+var useTheme = __webpack_require__(44675);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Container/Container.js + 1 modules
+var Container = __webpack_require__(97834);
+// EXTERNAL MODULE: ./node_modules/react-router/dist/index.js
+var dist = __webpack_require__(47767);
+// EXTERNAL MODULE: remote cryptography/Cryptography
+var Cryptography = __webpack_require__(79218);
+// EXTERNAL MODULE: ./src/components/notifications/notificationManager.jsx
+var notificationManager = __webpack_require__(29535);
+// EXTERNAL MODULE: ./node_modules/@mui/material/colors/red.js
+var red = __webpack_require__(41338);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Avatar/Avatar.js + 2 modules
+var Avatar = __webpack_require__(81385);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Card/Card.js + 1 modules
+var Card = __webpack_require__(14977);
+// EXTERNAL MODULE: ./node_modules/@mui/material/CardHeader/CardHeader.js + 1 modules
+var CardHeader = __webpack_require__(53650);
+// EXTERNAL MODULE: ./node_modules/@mui/material/CardMedia/CardMedia.js + 1 modules
+var CardMedia = __webpack_require__(87393);
+// EXTERNAL MODULE: ./node_modules/@mui/material/IconButton/IconButton.js + 1 modules
+var IconButton = __webpack_require__(11641);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/MoreVert.js
+var MoreVert = __webpack_require__(1795);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Favorite.js
+var Favorite = __webpack_require__(16869);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Typography/Typography.js + 1 modules
+var Typography = __webpack_require__(14073);
+// EXTERNAL MODULE: ./node_modules/@mui/material/ListItemText/ListItemText.js
+var ListItemText = __webpack_require__(82241);
+// EXTERNAL MODULE: ./node_modules/@mui/material/OutlinedInput/OutlinedInput.js + 2 modules
+var OutlinedInput = __webpack_require__(6757);
+// EXTERNAL MODULE: ./node_modules/@mui/material/InputAdornment/InputAdornment.js + 1 modules
+var InputAdornment = __webpack_require__(25239);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Send.js
+var Send = __webpack_require__(40443);
+// EXTERNAL MODULE: ./node_modules/@mui/material/CardContent/CardContent.js + 1 modules
+var CardContent = __webpack_require__(37636);
+// EXTERNAL MODULE: ./src/components/atomic/atom/dropdown/Dropdown.jsx + 1 modules
+var Dropdown = __webpack_require__(1310);
+// EXTERNAL MODULE: ./node_modules/@mui/material/Accordion/Accordion.js + 3 modules
+var Accordion = __webpack_require__(1710);
+// EXTERNAL MODULE: ./node_modules/@mui/material/AccordionSummary/AccordionSummary.js + 1 modules
+var AccordionSummary = __webpack_require__(48719);
+// EXTERNAL MODULE: ./node_modules/@mui/material/AccordionDetails/AccordionDetails.js + 1 modules
+var AccordionDetails = __webpack_require__(16576);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/Comment.js
+var Comment = __webpack_require__(15256);
+// EXTERNAL MODULE: ./node_modules/@mui/icons-material/ExpandMore.js
+var ExpandMore = __webpack_require__(72048);
+;// CONCATENATED MODULE: ./src/components/atomic/atom/customAccordion/CustomAccordion.jsx
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+var useStyles = (0,makeStyles/* default */.A)(function (theme) {
+  return {
+    root: {
+      maxWidth: 345
+    },
+    container: {
+      borderLeft: "5px solid ".concat(theme.palette.mode === "dark" ? "#99CCFF" : theme.palette.primary.main)
+      // marginRight: -16,
+    },
+    avatar: {
+      backgroundColor: red/* default */.A[500],
+      marginRight: 10
+    }
+  };
+});
+var CustomAccordion = function CustomAccordion(_ref) {
+  var title = _ref.title,
+    avatar = _ref.avatar,
+    children = _ref.children,
+    expanded = _ref.expanded,
+    onChange = _ref.onChange,
+    customButtons = _ref.customButtons,
+    _ref$showExpandIcon = _ref.showExpandIcon,
+    showExpandIcon = _ref$showExpandIcon === void 0 ? true : _ref$showExpandIcon;
+  var classes = useStyles();
+  var _useState = (0,index_js_.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    isExpanded = _useState2[0],
+    setIsExpanded = _useState2[1];
+  (0,index_js_.useEffect)(function () {
+    if (expanded !== undefined) {
+      setIsExpanded(expanded);
+    }
+  }, [expanded]);
+  var handleChange = function handleChange() {
+    if (expanded === undefined) {
+      setIsExpanded(!isExpanded);
+    } else {
+      onChange();
+    }
+  };
+  return /*#__PURE__*/index_js_default().createElement(Accordion/* default */.A, {
+    className: avatar ? classes.container : undefined,
+    expanded: expanded !== undefined ? expanded : isExpanded,
+    onChange: handleChange
+  }, /*#__PURE__*/index_js_default().createElement(AccordionSummary/* default */.A, {
+    expandIcon: showExpandIcon && /*#__PURE__*/index_js_default().createElement(ExpandMore/* default */.A, null),
+    "aria-controls": "panel1a-content",
+    id: "panel1a-header"
+  }, avatar ? /*#__PURE__*/index_js_default().createElement(Avatar/* default */.A, {
+    className: classes.avatar,
+    "aria-label": "recipe"
+  }, avatar) : /*#__PURE__*/index_js_default().createElement(Comment/* default */.A, {
+    style: {
+      marginRight: 5
+    }
+  }), /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
+    variant: "body2",
+    color: "text.secondary"
+  }, title), customButtons), /*#__PURE__*/index_js_default().createElement(AccordionDetails/* default */.A, null, children));
+};
+/* harmony default export */ const customAccordion_CustomAccordion = (CustomAccordion);
+;// CONCATENATED MODULE: ./src/components/atomic/atom/post/Post.jsx
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || Post_unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return Post_arrayLikeToArray(arr); }
+function Post_slicedToArray(arr, i) { return Post_arrayWithHoles(arr) || Post_iterableToArrayLimit(arr, i) || Post_unsupportedIterableToArray(arr, i) || Post_nonIterableRest(); }
+function Post_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function Post_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Post_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Post_arrayLikeToArray(o, minLen); }
+function Post_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function Post_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function Post_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+// import CardContent from '@mui/material/CardContent';
+// import CardActions from '@mui/material/CardActions';
+
+
+
+
+
+
+
+
+
+// import { useTheme } from '@mui/material/styles';
+// import useMediaQuery from '@mui/material/useMediaQuery';
+
+
+
+
+
+
+
+var Post_useStyles = (0,makeStyles/* default */.A)(function (theme) {
+  return {
+    root: {
+      maxWidth: 345
+    },
+    messageInputContainer: {
+      backgroundColor: "#f0f8ff",
+      padding: "0 10px",
+      margin: "10px 0",
+      width: "100%",
+      height: 40,
+      marginTop: "15px",
+      borderRadius: "30px !important"
+    },
+    messageInput: {
+      padding: 0,
+      // height: "100%",
+      width: "100%",
+      backgroundColor: theme.palette.mode === "dark" ? "#303030" : "#f0f8ff"
+    }
+  };
+});
+var Post = function Post(_ref) {
+  var _postDetails$payload, _postDetails$payload2;
+  var isDarkMode = _ref.isDarkMode,
+    imageId = _ref.imageId,
+    postDetails = _ref.postDetails;
+  var _useCryptography = (0,Cryptography.useCryptography)(),
+    chance = _useCryptography.chance;
+  var navigate = (0,dist/* useNavigate */.Zp)();
+  var _React$useState = index_js_default().useState(false),
+    _React$useState2 = Post_slicedToArray(_React$useState, 2),
+    dense = _React$useState2[0],
+    setDense = _React$useState2[1];
+  var _React$useState3 = index_js_default().useState(false),
+    _React$useState4 = Post_slicedToArray(_React$useState3, 2),
+    secondary = _React$useState4[0],
+    setSecondary = _React$useState4[1];
+
+  // pic a random number between  and including 1-9
+  var num = Math.floor(Math.random() * 9) + 1;
+  var randomNumber = (0,index_js_.useMemo)(function () {
+    return Math.floor(Math.random() * 9) + 1;
+  }, []);
+  var randomAnimalName = (0,index_js_.useMemo)(function () {
+    return chance.animal();
+  }, []);
+  var randomDate = (0,index_js_.useMemo)(function () {
+    return chance.date({
+      year: 2023,
+      string: true
+    });
+  }, []);
+  var randomLongSentence = (0,index_js_.useMemo)(function () {
+    return chance.sentence({
+      words: 30
+    });
+  }, []);
+  var randomShortSentence = (0,index_js_.useMemo)(function () {
+    return chance.sentence();
+  }, []);
+  var classes = Post_useStyles();
+  var _React$useState5 = index_js_default().useState([]),
+    _React$useState6 = Post_slicedToArray(_React$useState5, 2),
+    expanded = _React$useState6[0],
+    setExpanded = _React$useState6[1];
+  var handleChange = function handleChange(panel) {
+    return function (event, isExpanded) {
+      console.log("handleChange", panel, isExpanded);
+      if (isExpanded) {
+        setExpanded(function (prevExpanded) {
+          return [].concat(_toConsumableArray(prevExpanded), [panel]);
+        });
+      } else {
+        setExpanded(function (prevExpanded) {
+          return prevExpanded.filter(function (item) {
+            return item !== panel;
+          });
+        });
+      }
+    };
+  };
+  var sendNotification = (0,notificationManager/* useNotification */.hN)();
+  var defaultMenuItems = [{
+    text: "Go to message",
+    icon: "navigate",
+    onClick: function onClick() {
+      return navigate("/pods");
+    }
+  }, {
+    text: "Go to file",
+    icon: "navigate",
+    onClick: function onClick() {
+      return navigate("/pods");
+    }
+  }, {
+    text: "Delete Post",
+    icon: "navigate",
+    subMenuItems: [{
+      text: "Confirm delete",
+      onClick: function onClick() {
+        return sendNotification("Deleting post", {
+          variant: "info"
+        });
+      }
+    }]
+  }];
+  var InputComponent = function InputComponent() {
+    return /*#__PURE__*/index_js_default().createElement(OutlinedInput/* default */.A, {
+      className: classes.messageInputContainer,
+      id: "outlined-adornment-weight",
+      endAdornment: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(InputAdornment/* default */.A, {
+        position: "end"
+      }, /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
+        "aria-label": "send message"
+        //   onClick={handleSendMessage}
+        // icon is green when there is text in the input field
+        //   color={messageInputValue || imageAttachment ? "primary" : "disabled"}
+        //   disabled={(!messageInputValue && !imageAttachment) || !isOnline}
+        ,
+        edge: "end"
+      }, /*#__PURE__*/index_js_default().createElement(Send/* default */.A, null)))),
+      "aria-describedby": "outlined-weight-helper-text"
+      //   onChange={handleMessageChange}
+      // on Enter key press, send message
+      // but on on shift Enter
+      //   onKeyPress={(ev) => {
+      //     if (ev.key === 'Enter' && !ev.shiftKey) {
+      //       ev.preventDefault();
+      //       if (!!messageInputValue) handleSendMessage();
+      //     }
+      //   }}
+      //   value={messageInputValue}
+      ,
+      classes: {
+        root: classes.messageInput
+      },
+      sx: {
+        width: "100%"
+      },
+      autoComplete: "off"
+      // lightblue background
+      // style={{ backgroundColor: '#f0f8ff' }}
+      ,
+      multiline: true,
+      placeholder: "Reply...",
+      inputProps: {
+        "aria-label": "weight"
+      }
+    });
+  };
+  return /*#__PURE__*/index_js_default().createElement(Card/* default */.A, {
+    style: {
+      margin: "20px 0"
+    }
+  }, /*#__PURE__*/index_js_default().createElement(CardHeader/* default */.A, {
+    avatar: /*#__PURE__*/index_js_default().createElement(Avatar/* default */.A, {
+      sx: {
+        bgcolor: red/* default */.A[500]
+      },
+      "aria-label": "recipe",
+      src: "/avatars/".concat(randomNumber, ".jpg")
+    }, "R"),
+    action: /*#__PURE__*/index_js_default().createElement(Dropdown/* Dropdown */.ms, {
+      keepOpen: true,
+      trigger: /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
+        size: "large",
+        "aria-label": "account of current user",
+        "aria-controls": "menu-appbar",
+        "aria-haspopup": "true",
+        color: "inherit"
+      }, /*#__PURE__*/index_js_default().createElement(MoreVert/* default */.A, null)),
+      menu: defaultMenuItems.map(function (item, index) {
+        var _item$subMenuItems, _item$subMenuItems2;
+        return !((item === null || item === void 0 || (_item$subMenuItems = item.subMenuItems) === null || _item$subMenuItems === void 0 ? void 0 : _item$subMenuItems.length) > 0) ? /*#__PURE__*/index_js_default().createElement("div", null, /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownMenuItem */._2, {
+          onClick: item.onClick
+        }, /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, item.text))) : /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownNestedMenuItem */.Zn, {
+          label: item.text,
+          rightAnchored: true,
+          menu: _toConsumableArray(((_item$subMenuItems2 = item.subMenuItems) !== null && _item$subMenuItems2 !== void 0 ? _item$subMenuItems2 : []).map(function (subItem, index) {
+            return !!subItem && /*#__PURE__*/index_js_default().createElement(Dropdown/* DropdownMenuItem */._2, {
+              onClick: subItem.onClick
+            }, /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, subItem.text));
+          }))
+        }, /*#__PURE__*/index_js_default().createElement(ListItemText/* default */.A, null, item.text));
+      })
+    }),
+    title: randomAnimalName,
+    subheader: randomDate
+  }), /*#__PURE__*/index_js_default().createElement(CardMedia/* default */.A, {
+    component: "img",
+    image: imageId ? "/feed/".concat(isDarkMode ? "dark" : "light", "/").concat(imageId, ".jpg") : postDetails === null || postDetails === void 0 || (_postDetails$payload = postDetails.payload) === null || _postDetails$payload === void 0 || (_postDetails$payload = _postDetails$payload.image) === null || _postDetails$payload === void 0 ? void 0 : _postDetails$payload.data,
+    alt: "Paella dish"
+  }), /*#__PURE__*/index_js_default().createElement(CardContent/* default */.A, null, /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
+    variant: "body2",
+    color: "text.secondary"
+  }, postDetails === null || postDetails === void 0 || (_postDetails$payload2 = postDetails.payload) === null || _postDetails$payload2 === void 0 ? void 0 : _postDetails$payload2.content)), /*#__PURE__*/index_js_default().createElement(customAccordion_CustomAccordion, {
+    title: /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
+      variant: "body",
+      color: "text.primary"
+    }, "Comments"),
+    customButtons: /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
+      "aria-label": "add to favorites",
+      style: {
+        marginLeft: "auto",
+        padding: 0
+      },
+      onClick: function onClick(e) {
+        return e.stopPropagation();
+      },
+      disableRipple: true
+    }, /*#__PURE__*/index_js_default().createElement(Favorite/* default */.A, null)),
+    showExpandIcon: false
+  }, /*#__PURE__*/index_js_default().createElement(customAccordion_CustomAccordion, {
+    title: /*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment, null, /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
+      variant: "body",
+      color: "text.primary"
+    }, randomAnimalName, " - ", randomDate), /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
+      variant: "body2",
+      color: "text.secondary"
+    }, randomShortSentence)),
+    avatar: "R",
+    customButtons: /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
+      "aria-label": "add to favorites",
+      style: {
+        marginLeft: "auto",
+        padding: 0
+      },
+      onClick: function onClick(e) {
+        return e.stopPropagation();
+      },
+      disableRipple: true
+    }, /*#__PURE__*/index_js_default().createElement(Favorite/* default */.A, null)),
+    showExpandIcon: false
+  }, /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
+    variant: "body2",
+    color: "text.secondary"
+  }, randomLongSentence), /*#__PURE__*/index_js_default().createElement(InputComponent, null)), /*#__PURE__*/index_js_default().createElement(InputComponent, null)));
+};
+/* harmony default export */ const post_Post = (Post);
+;// CONCATENATED MODULE: ./src/components/atomic/molecules/thread/Thread.jsx
+function Thread_toConsumableArray(arr) { return Thread_arrayWithoutHoles(arr) || Thread_iterableToArray(arr) || Thread_unsupportedIterableToArray(arr) || Thread_nonIterableSpread(); }
+function Thread_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function Thread_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function Thread_arrayWithoutHoles(arr) { if (Array.isArray(arr)) return Thread_arrayLikeToArray(arr); }
+function Thread_slicedToArray(arr, i) { return Thread_arrayWithHoles(arr) || Thread_iterableToArrayLimit(arr, i) || Thread_unsupportedIterableToArray(arr, i) || Thread_nonIterableRest(); }
+function Thread_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function Thread_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return Thread_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Thread_arrayLikeToArray(o, minLen); }
+function Thread_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function Thread_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function Thread_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var Thread_useStyles = (0,makeStyles/* default */.A)(function (theme) {
+  return {
+    sentMessage: {
+      justifyContent: "flex-end !important"
+    },
+    list: {
+      paddingBottom: "".concat(theme.spacing(8), " !important")
+    },
+    swipeableListItem: {
+      background: "transparent !important"
+    },
+    fab: {
+      position: "fixed !important",
+      bottom: theme.spacing(2),
+      right: theme.spacing(2)
+    },
+    messageInputContainer: {
+      marginTop: "15px",
+      borderRadius: "30px !important"
+    },
+    messageInput: {
+      backgroundColor: theme.palette.mode === "dark" ? "#303030" : "#f0f8ff"
+    }
+  };
+});
+var formatDate = function formatDate(timestamp) {
+  var date = new Date(timestamp);
+  var month = ("0" + (date.getMonth() + 1)).slice(-2); // months are zero indexed
+  var day = ("0" + date.getDate()).slice(-2);
+  var year = date.getFullYear();
+  var hours = date.getHours();
+  var minutes = ("0" + date.getMinutes()).slice(-2);
+  var seconds = ("0" + date.getSeconds()).slice(-2);
+  var ampm = hours >= 12 ? "PM" : "AM";
+
+  // convert from 24-hour to 12-hour format
+  hours = hours % 12;
+  // the hour '0' should be '12'
+  hours = hours ? hours : 12;
+  var formattedTime = month + "/" + day + "/" + year + " " + hours + ":" + minutes + ":" + seconds + " " + ampm;
+  return formattedTime;
+};
+function Thread(_ref) {
+  var list = _ref.list,
+    isGroup = _ref.isGroup,
+    deleteItem = _ref.deleteItem,
+    loading = _ref.loading,
+    onReply = _ref.onReply,
+    onUpvote = _ref.onUpvote;
+  var scrollRef = (0,index_js_.useRef)(null);
+  var theme = (0,useTheme/* default */.A)();
+  var classes = Thread_useStyles();
+  (0,index_js_.useEffect)(function () {
+    // if (scrollRef.current) {
+    //     scrollRef.current.scrollIntoView({ behaviour: "smooth" });
+    // }
+
+    document.addEventListener("scroll", handleScroll);
+    return function () {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // calculate if the scroll is near the bottom of the scroll
+  // and it should update the value as the users changes the scroll position
+
+  var _React$useState = index_js_default().useState(true),
+    _React$useState2 = Thread_slicedToArray(_React$useState, 2),
+    isNearTop = _React$useState2[0],
+    setIsNearTop = _React$useState2[1];
+  var handleScroll = function handleScroll() {
+    var distantFromTop = document.documentElement.scrollTop;
+    setIsNearTop(distantFromTop < 400);
+  };
+  var handleScrollToTop = function handleScrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+  var handleDelete = function handleDelete(id) {
+    deleteItem(id);
+  };
+  var handleReply = function handleReply(message) {
+    onReply(message);
+  };
+  var handleUpvote = function handleUpvote(e) {
+    var messageId = e.target.parentNode.parentNode.parentNode.id;
+    console.log("handleUpvote", messageId);
+    onUpvote(messageId);
+  };
+  var bind = (0,use_long_press/* useLongPress */.HZ)(handleUpvote, {
+    threshold: 500,
+    cancelOnMovement: true,
+    captureEvent: true
+  });
+  var isDarkMode = theme.palette.mode === "dark";
+
+  // create array with number 1 to 24. the numbers are in a randomised order
+  var randomNumbers = (0,index_js_.useMemo)(function () {
+    return Thread_toConsumableArray(Array(24).keys()).map(function (i) {
+      return i + 1;
+    }).sort(function () {
+      return Math.random() - 0.5;
+    });
+  }, []);
+  //   const randomNumbers = [...Array(24).keys()].map(i => (i+1)).sort(() => Math.random() - 0.5);
+
+  return /*#__PURE__*/index_js_default().createElement(List/* default */.A, {
+    className: classes.list
+  }, /*#__PURE__*/index_js_default().createElement("li", {
+    ref: scrollRef
+  }), /*#__PURE__*/index_js_default().createElement(Container/* default */.A, null, list.map(function (item) {
+    return /*#__PURE__*/index_js_default().createElement(post_Post, {
+      isDarkMode: isDarkMode,
+      postDetails: item
+    });
+  })), /*#__PURE__*/index_js_default().createElement(Divider/* default */.A, null, /*#__PURE__*/index_js_default().createElement(Chip/* default */.A, {
+    label: "Test data:"
+  })), /*#__PURE__*/index_js_default().createElement(Container/* default */.A, null, randomNumbers.map(function (number) {
+    return /*#__PURE__*/index_js_default().createElement(post_Post, {
+      isDarkMode: isDarkMode,
+      imageId: number
+    });
+  })), !isNearTop && /*#__PURE__*/index_js_default().createElement(Fab/* default */.A, {
+    color: "primary",
+    "aria-label": "scroll to bottom",
+    className: classes.fab,
+    onClick: handleScrollToTop
+  }, /*#__PURE__*/index_js_default().createElement(KeyboardDoubleArrowUp/* default */.A, null)));
+}
+
+/***/ }),
+
+/***/ 93763:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ PageContainer)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50318);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(5556);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(8532);
+/* harmony import */ var _mui_material_CssBaseline__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(14519);
+/* harmony import */ var _mui_material_useScrollTrigger__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(59729);
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(69067);
+/* harmony import */ var _mui_material_Container__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(97834);
+/* harmony import */ var _mui_material_Slide__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(48875);
+/* harmony import */ var _molecules_app_header_AppHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(30471);
+/* harmony import */ var _mui_material_Fab__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(87992);
+/* harmony import */ var _mui_icons_material_Add__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(16718);
+/* harmony import */ var _mui_styles__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(80284);
+/* harmony import */ var _mui_styles__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(23668);
+/* harmony import */ var _mui_material_SpeedDial__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(36056);
+/* harmony import */ var _mui_material_SpeedDialIcon__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(10698);
+/* harmony import */ var _mui_material_SpeedDialAction__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(749);
+/* harmony import */ var _mui_icons_material_FileCopyOutlined__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(47152);
+/* harmony import */ var _mui_icons_material_Save__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(98984);
+/* harmony import */ var _mui_icons_material_Print__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(45234);
+/* harmony import */ var _mui_icons_material_Share__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(29422);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var presetIcons = {
+  add: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Add__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, null)
 };
 var actions = [{
-  icon: /*#__PURE__*/index_js_.createElement(FileCopyOutlined/* default */.A, null),
+  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_FileCopyOutlined__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, null),
   name: "Copy"
 }, {
-  icon: /*#__PURE__*/index_js_.createElement(Save/* default */.A, null),
+  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Save__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A, null),
   name: "Save"
 }, {
-  icon: /*#__PURE__*/index_js_.createElement(Print/* default */.A, null),
+  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Print__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A, null),
   name: "Print"
 }, {
-  icon: /*#__PURE__*/index_js_.createElement(Share/* default */.A, null),
+  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_icons_material_Share__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A, null),
   name: "Share"
 }];
-function PageContainer_HideOnScroll(props) {
+function HideOnScroll(props) {
   var children = props.children,
     window = props.window;
   // Note that you normally won't need to set the window ref as useScrollTrigger
   // will default to window.
   // This is only being set here because the demo is in an iframe.
-  var trigger = (0,useScrollTrigger/* default */.A)({
+  var trigger = (0,_mui_material_useScrollTrigger__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({
     target: window ? window() : undefined
   });
-  return /*#__PURE__*/index_js_.createElement(Slide/* default */.A, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Slide__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .A, {
     appear: false,
     direction: "down",
     "in": !trigger
   }, children);
 }
-PageContainer_HideOnScroll.propTypes = {
-  children: (prop_types_default()).element.isRequired,
+HideOnScroll.propTypes = {
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().element).isRequired,
   /**
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
    */
-  window: (prop_types_default()).func
+  window: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().func)
 };
-var useStyles = (0,makeStyles/* default */.A)(function (theme) {
+var useStyles = (0,_mui_styles__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .A)(function (theme) {
   return {
     // root: {
     //     flexGrow: 1,
@@ -19276,9 +19267,9 @@ function PageContainer(props) {
     speedDialProps = _props$speedDialProps === void 0 ? {} : _props$speedDialProps,
     backgroundImage = props.backgroundImage;
   var classes = useStyles();
-  var theme = (0,styles_useTheme/* default */.A)();
+  var theme = (0,_mui_styles__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A)();
   var defaultBackgroundImage = theme.palette.mode === "dark" ? defaultDarkBackgroundImage : defaultLightBackgroundImage;
-  return /*#__PURE__*/index_js_.createElement(index_js_.Fragment, null, /*#__PURE__*/index_js_.createElement(CssBaseline/* default */.Ay, null), /*#__PURE__*/index_js_.createElement(AppHeader, headerProps), /*#__PURE__*/index_js_.createElement(Toolbar/* default */.A, null), backgroundImage !== "" && /*#__PURE__*/index_js_.createElement(Box/* default */.A, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_CssBaseline__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_molecules_app_header_AppHeader__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, headerProps), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .A, null), backgroundImage !== "" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .A, {
     sx: {
       flexGrow: 1,
       backgroundImage: "url(".concat(backgroundImage !== null && backgroundImage !== void 0 ? backgroundImage : defaultBackgroundImage, ")"),
@@ -19288,28 +19279,28 @@ function PageContainer(props) {
       opacity: 0.05,
       zIndex: 0
     }
-  }), /*#__PURE__*/index_js_.createElement(Container/* default */.A, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Container__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .A, {
     disableGutters: true,
     className: "page-container",
     style: {
       flexGrow: 1,
       marginTop: 20
     }
-  }, children), Object.keys(fabProps).length > 0 && /*#__PURE__*/index_js_.createElement(Fab/* default */.A, {
+  }, children), Object.keys(fabProps).length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fab__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .A, {
     color: "primary",
     "aria-label": "add",
     className: classes.fab,
     onClick: fabProps === null || fabProps === void 0 ? void 0 : fabProps.onClick
-  }, PageContainer_presetIcons[fabProps === null || fabProps === void 0 ? void 0 : fabProps.icon]), Object.keys(speedDialProps).length > 0 && /*#__PURE__*/index_js_.createElement(SpeedDial/* default */.A, {
+  }, presetIcons[fabProps === null || fabProps === void 0 ? void 0 : fabProps.icon]), Object.keys(speedDialProps).length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_SpeedDial__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .A, {
     ariaLabel: "SpeedDial basic example",
     sx: {
       position: "absolute",
       bottom: 16,
       right: 16
     },
-    icon: (_speedDialProps$icon = speedDialProps.icon) !== null && _speedDialProps$icon !== void 0 ? _speedDialProps$icon : /*#__PURE__*/index_js_.createElement(SpeedDialIcon/* default */.A, null)
+    icon: (_speedDialProps$icon = speedDialProps.icon) !== null && _speedDialProps$icon !== void 0 ? _speedDialProps$icon : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_SpeedDialIcon__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .A, null)
   }, speedDialProps.actions.map(function (action) {
-    return /*#__PURE__*/index_js_.createElement(SpeedDialAction/* default */.A, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_SpeedDialAction__WEBPACK_IMPORTED_MODULE_19__/* ["default"] */ .A, {
       key: action.name,
       icon: action.icon,
       tooltipTitle: action.name,

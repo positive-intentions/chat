@@ -72,6 +72,10 @@ import CellTowerIcon from '@mui/icons-material/CellTower';
 import Copyright from "@mui/icons-material/Copyright";
 import Slide from "@mui/material/Slide";
 import { BiDesktop } from "rocketicons/bi";
+import AttachmentIcon from "@mui/icons-material/Attachment";
+import MicIcon from "@mui/icons-material/Mic";
+import ImageIcon from "@mui/icons-material/Image";
+import PlaceIcon from "@mui/icons-material/Place";
 
 import {
   Dropdown,
@@ -122,7 +126,7 @@ const OpenCollectiveIcon = () => (
   />
 );
 
-const presetIcons = {
+export const presetIcons = {
   account: <AccountCircle />,
   arrowBack: <ArrowBackIcon />,
   camera: <VideocamIcon />,
@@ -169,6 +173,10 @@ const presetIcons = {
   copyright: <Copyright />,
   computer: <BiDesktop height="20" width="20" />,
   discord: <SiDiscord height="20" width="20" />,
+  attachment: <AttachmentIcon />,
+  mic: <MicIcon />,
+  place: <PlaceIcon />,
+  image: <ImageIcon />,
 };
 
 function HideOnScroll(props) {

@@ -95,22 +95,22 @@ export const Dropdown = React.forwardRef(
           open={!!isOpen}
           disablePortal
           onClose={handleClose}
-          anchorOrigin={
-            floatLeft
-              ? {
-                  vertical: "top",
-                  horizontal: "left", // Set the anchor origin to left
-                }
-              : {}
-          }
-          transformOrigin={
-            floatLeft
-              ? {
-                  vertical: "top",
-                  horizontal: "right", // Set the transform origin to right
-                }
-              : {}
-          }
+          // anchorOrigin={
+          //   floatLeft
+          //     ? {
+          //         vertical: "top",
+          //         horizontal: "left", // Set the anchor origin to left
+          //       }
+          //     : {}
+          // }
+          // transformOrigin={
+          //   floatLeft
+          //     ? {
+          //         vertical: "top",
+          //         horizontal: "right", // Set the transform origin to right
+          //       }
+          //     : {}
+          // }
         >
           {React.Children.map(menu, renderMenu)}
         </Menu>
