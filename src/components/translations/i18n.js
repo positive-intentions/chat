@@ -144,6 +144,7 @@ i18n
             encrypt: "Encrypt",
             meshtastic: "BLE",
             computer: "Desk",
+            mastodon: "Mastodon",
             commingSoon: "Coming Soon",
           },
           contactDetailsPage: {

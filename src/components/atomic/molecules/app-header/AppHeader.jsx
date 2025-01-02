@@ -1,87 +1,75 @@
-import React, { useState, useEffect, useMemo } from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import AccountCircle from "@mui/icons-material/AccountCircle";
-import Switch from "@mui/material/Switch";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import FormGroup from "@mui/material/FormGroup";
-import Badge from "@mui/material/Badge";
-import { styled } from "@mui/material/styles";
-import MenuItem from "@mui/material/MenuItem";
-import Menu from "@mui/material/Menu";
-import Avatar from "@mui/material/Avatar";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import VideocamIcon from "@mui/icons-material/Videocam";
-import QrCode2Icon from "@mui/icons-material/QrCode2";
-import { useNavigate } from "react-router-dom";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import SettingsIcon from "@mui/icons-material/Settings";
-import LogoutIcon from "@mui/icons-material/Logout";
-import InfoIcon from "@mui/icons-material/Info";
-import ContentCut from "@mui/icons-material/ContentCut";
-import ScreenShareIcon from "@mui/icons-material/ScreenShare";
-import TranslateIcon from "@mui/icons-material/Translate";
+import AssistantDirectionIcon from "@mui/icons-material/AssistantDirection";
+import AttachmentIcon from "@mui/icons-material/Attachment";
 import CallIcon from "@mui/icons-material/Call";
+import CellTowerIcon from "@mui/icons-material/CellTower";
+import CollectionsIcon from "@mui/icons-material/Collections";
+import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
+import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
+import Copyright from "@mui/icons-material/Copyright";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import DataSaverOffIcon from "@mui/icons-material/DataSaverOff";
+import DeleteIcon from "@mui/icons-material/Delete";
+import DescriptionIcon from "@mui/icons-material/Description";
+import Download from "@mui/icons-material/DownloadForOffline";
 import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import FullscreenExitIcon from "@mui/icons-material/FullscreenExit";
-import LightModeIcon from "@mui/icons-material/LightMode";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
-import InstallMobileIcon from "@mui/icons-material/InstallMobile";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
-import AssistantDirectionIcon from "@mui/icons-material/AssistantDirection";
-import DeleteIcon from "@mui/icons-material/Delete";
-import ListItemText from "@mui/material/ListItemText";
-import CssBaseline from "@mui/material/CssBaseline";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
-import PermMediaIcon from "@mui/icons-material/PermMedia";
-import SupportIcon from "@mui/icons-material/Support";
-import DescriptionIcon from "@mui/icons-material/Description";
-import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
-import KeyIcon from "@mui/icons-material/Key";
-import ScienceIcon from "@mui/icons-material/Science";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import MenuBookIcon from "@mui/icons-material/MenuBook";
-import RedditIcon from "@mui/icons-material/Reddit";
-import CollectionsIcon from "@mui/icons-material/Collections";
-import ViewInArIcon from "@mui/icons-material/ViewInAr";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import ImageIcon from "@mui/icons-material/Image";
+import InfoIcon from "@mui/icons-material/Info";
+import InstallMobileIcon from "@mui/icons-material/InstallMobile";
+import KeyIcon from "@mui/icons-material/Key";
+import LightModeIcon from "@mui/icons-material/LightMode";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
-import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
-import Download from "@mui/icons-material/DownloadForOffline";
-import DataSaverOffIcon from "@mui/icons-material/DataSaverOff";
-import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
-import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
-import CoffeeIcon from "@mui/icons-material/Coffee";
-import LocalParkingIcon from "@mui/icons-material/LocalParking";
+import LogoutIcon from "@mui/icons-material/Logout";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
+import MicIcon from "@mui/icons-material/Mic";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 import NavigationIcon from "@mui/icons-material/Navigation";
+import PermMediaIcon from "@mui/icons-material/PermMedia";
+import PlaceIcon from "@mui/icons-material/Place";
 import PrivacyTipIcon from "@mui/icons-material/PrivacyTip";
-import WavingHandIcon from "@mui/icons-material/WavingHand";
+import QrCode2Icon from "@mui/icons-material/QrCode2";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
-import {
-  SiKofi,
-  SiPatreon,
-  SiOpencollective,
-  SiMedium,
-  SiDiscord,
-} from "rocketicons/si";
-import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
+import RedditIcon from "@mui/icons-material/Reddit";
+import ScienceIcon from "@mui/icons-material/Science";
+import ScreenShareIcon from "@mui/icons-material/ScreenShare";
+import SettingsIcon from "@mui/icons-material/Settings";
+import SupportIcon from "@mui/icons-material/Support";
+import TranslateIcon from "@mui/icons-material/Translate";
+import VideocamIcon from "@mui/icons-material/Videocam";
+import ViewInArIcon from "@mui/icons-material/ViewInAr";
+import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
+import WavingHandIcon from "@mui/icons-material/WavingHand";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import AppBar from "@mui/material/AppBar";
+import Avatar from "@mui/material/Avatar";
+import Badge from "@mui/material/Badge";
+import CssBaseline from "@mui/material/CssBaseline";
+import IconButton from "@mui/material/IconButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import Slide from "@mui/material/Slide";
+import { styled, useTheme } from "@mui/material/styles";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import React, { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import { BiDesktop } from "rocketicons/bi";
+import {
+  SiDiscord,
+  SiKofi,
+  SiMastodon,
+  SiMedium,
+  SiOpencollective,
+  SiPatreon,
+} from "rocketicons/si";
 import { ColorModeContext } from "../../../../App.tsx";
-import { useTheme } from "@mui/material/styles";
 import { useNotification } from "../../../notifications/notificationManager";
 import { languages } from "../../../translations/i18n";
-import CellTowerIcon from "@mui/icons-material/CellTower";
-import Copyright from "@mui/icons-material/Copyright";
-import Slide from "@mui/material/Slide";
-import { BiDesktop } from "rocketicons/bi";
-import AttachmentIcon from "@mui/icons-material/Attachment";
-import MicIcon from "@mui/icons-material/Mic";
-import ImageIcon from "@mui/icons-material/Image";
-import PlaceIcon from "@mui/icons-material/Place";
 
 import {
   Dropdown,
@@ -183,6 +171,7 @@ export const presetIcons = {
   mic: <MicIcon />,
   place: <PlaceIcon />,
   image: <ImageIcon />,
+  mastodon: <SiMastodon height="20" width="20" />,
 };
 
 function HideOnScroll(props) {
@@ -257,7 +246,7 @@ const CustomDropdown = ({ menuItems }) => {
     };
     window.addEventListener(
       "beforeinstallprompt",
-      handleBeforeInstallPromptEvent,
+      handleBeforeInstallPromptEvent
     );
 
     const bipEvent = new Event("beforeinstallprompt");
@@ -275,7 +264,7 @@ const CustomDropdown = ({ menuItems }) => {
     return () => {
       window.removeEventListener(
         "beforeinstallprompt",
-        handleBeforeInstallPromptEvent,
+        handleBeforeInstallPromptEvent
       );
     };
   }, []);
@@ -329,6 +318,11 @@ const CustomDropdown = ({ menuItems }) => {
           text: t("podsPage.computer"),
           icon: "computer",
           onClick: () => navigate("/desk"),
+        },
+        {
+          text: t("podsPage.mastodon"),
+          icon: "mastodon",
+          onClick: () => navigate("/mastodon"),
         },
       ],
     },
@@ -416,7 +410,7 @@ const CustomDropdown = ({ menuItems }) => {
               onClick: () => {
                 sendNotification?.(
                   t("components.menuItems.requestingToInstall"),
-                  { variant: "info" },
+                  { variant: "info" }
                 );
 
                 if (deferredPrompt) {
@@ -427,13 +421,13 @@ const CustomDropdown = ({ menuItems }) => {
                         console.log("Installation accepted");
                         sendNotification?.(
                           t("components.menuItems.installPossible"),
-                          { variant: "success" },
+                          { variant: "success" }
                         );
                       } else {
                         console.log("Installation dismissed");
                         sendNotification?.(
                           t("components.menuItems.installDismissed"),
-                          { variant: "warning" },
+                          { variant: "warning" }
                         );
                       }
                     })
@@ -441,16 +435,16 @@ const CustomDropdown = ({ menuItems }) => {
                       console.error("Installation prompt error:", error);
                       sendNotification?.(
                         t("components.menuItems.installFailed"),
-                        { variant: "warning" },
+                        { variant: "warning" }
                       );
                     });
                 } else {
                   console.error(
-                    "The beforeinstallprompt event has not been fired.",
+                    "The beforeinstallprompt event has not been fired."
                   );
                   sendNotification?.(
                     t("components.menuItems.installNotSupported"),
-                    { variant: "warning" },
+                    { variant: "warning" }
                   );
                 }
               },
