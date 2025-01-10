@@ -1,23 +1,18 @@
-import React, { useState, useEffect, createContext } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import Chance from "chance";
+import Peer from "peerjs";
+import React, { createContext, useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useBlockchain } from "../blockchain/Blockchain";
 import {
-  updatePeerId,
-  addToBlockchain,
-} from "../redux/slices/userProfileSlice";
-import Blockchain, { useBlockchain } from "../blockchain/Blockchain";
-import {
-  compiler as profileCompiler,
   blockBuilders,
+  compiler as profileCompiler,
 } from "../blockchain/chains/profileChain";
 import {
-  decrypt,
+  decryptWithSymmetricKey,
   encrypt,
   encryptWithSymmetricKey,
-  decryptWithSymmetricKey,
 } from "../encryption/Encryption";
-import Peer from "peerjs";
-import Chance from "chance";
-import { randomString } from "../cryptography/Cryptography";
+import { addToBlockchain } from "../redux/slices/userProfileSlice";
 const chance = new Chance();
 
 export const PeerContext = createContext();
@@ -129,11 +124,11 @@ export default function PeerProvider({
             return newConnections;
           });
           setActiveConnections(
-            Object.keys(connections).filter((c) => c !== connection?.peer),
+            Object.keys(connections).filter((c) => c !== connection?.peer)
           );
 
           const remoteStreamId = calls.find(
-            (call) => call.peer !== connection?.peer,
+            (call) => call.peer !== connection?.peer
           )?._remoteStream?.id;
 
           setCalls(calls.filter((call) => call.peer !== connection?.peer));
@@ -145,7 +140,7 @@ export default function PeerProvider({
           connection,
           sendMessageWithCallback,
           managedState,
-          Object.keys(connections).filter((c) => c !== connection?.peer),
+          Object.keys(connections).filter((c) => c !== connection?.peer)
         );
         setConnections({
           ...connections,
@@ -180,7 +175,7 @@ export default function PeerProvider({
 
   useEffect(() => {
     const activeConnectionsToManage = activeConnections.map(
-      (c) => connections[c],
+      (c) => connections[c]
     );
 
     activeConnectionsToManage.forEach((connection) => {
@@ -222,7 +217,7 @@ export default function PeerProvider({
                 hash: "SHA-256",
               },
               true,
-              ["decrypt"],
+              ["decrypt"]
             ));
           const deserializedRemotePublicKey =
             remotePublicKey &&
@@ -237,7 +232,7 @@ export default function PeerProvider({
                 hash: "SHA-256",
               },
               true,
-              ["encrypt"],
+              ["encrypt"]
             ));
           const deserializedSymmetricKey =
             symmetricKey &&
@@ -253,7 +248,7 @@ export default function PeerProvider({
                 length: 256,
               },
               true,
-              ["encrypt", "decrypt"],
+              ["encrypt", "decrypt"]
             ));
 
           function setClassPropsFromJson(json, instance) {
@@ -269,19 +264,19 @@ export default function PeerProvider({
             userId,
             privateKey: setClassPropsFromJson(
               privateKey,
-              deserializedPrivateKey,
+              deserializedPrivateKey
             ), // {...deserializedPrivateKey, ...privateKey},
             remotePublicKey: setClassPropsFromJson(
               remotePublicKey,
-              deserializedRemotePublicKey,
+              deserializedRemotePublicKey
             ), // {...deserializedRemotePublicKey, ...remotePublicKey},
             symmetricKey: setClassPropsFromJson(
               symmetricKey,
-              deserializedSymmetricKey,
+              deserializedSymmetricKey
             ), // {...deserializedSymmetricKey, ...symmetricKey},
             established,
           };
-        }),
+        })
       );
 
       setPeerEncryptionKeys(keyPairs);
@@ -293,7 +288,7 @@ export default function PeerProvider({
     const state = managedState;
     const { privateKey, remotePublicKey, established, symmetricKey } =
       peerEncryptionKeys.find(
-        (keyPair) => keyPair.userId === connection.peer,
+        (keyPair) => keyPair.userId === connection.peer
       ) ?? {};
     let data = rawData;
     if (symmetricKey) {
@@ -314,7 +309,7 @@ export default function PeerProvider({
       if (callback) {
         callback.recieved(data.payload);
         setPendingCallbacks(
-          pendingCallbacks.filter((cb) => cb.id !== data.callback),
+          pendingCallbacks.filter((cb) => cb.id !== data.callback)
         );
         return;
       }
@@ -329,7 +324,7 @@ export default function PeerProvider({
         payload: data.payload,
         // get sender from contacts by connectionId
         sender: managedState.contacts.find(
-          (contact) => contact.connectionId === connection.peer,
+          (contact) => contact.connectionId === connection.peer
         )?.id,
       };
       const response = {
@@ -345,7 +340,7 @@ export default function PeerProvider({
                 payload,
                 callback: data.callback,
               }),
-              symmetricKey,
+              symmetricKey
             ).catch((err) => {
               console.log("error encrypting", err);
             });
@@ -368,7 +363,7 @@ export default function PeerProvider({
   const handleConnectionDataWithManagedState = (
     connection,
     managedState,
-    data,
+    data
   ) => {
     return handleConnectionData(connection, managedState, data);
   };
@@ -378,7 +373,7 @@ export default function PeerProvider({
       connections[peerId].close();
       setConnections({ ...connections, [peerId]: null });
       setActiveConnections(
-        Object.keys(connections).filter((c) => c !== peerId),
+        Object.keys(connections).filter((c) => c !== peerId)
       );
     }
   };
@@ -387,30 +382,29 @@ export default function PeerProvider({
     // filter connected contacts and connect to the ones not connected.
     const connectedContacts = Object.keys(connections).filter(
       (contact) =>
-        connections[contact]?.peerConnection?.iceConnectionState ===
-        "connected",
+        connections[contact]?.peerConnection?.iceConnectionState === "connected"
     );
     const contactsToConnect = managedState.contacts.filter(
-      (contact) => !connectedContacts.includes(contact.connectionId),
+      (contact) => !connectedContacts.includes(contact.connectionId)
     );
     contactsToConnect.forEach((contact) =>
-      connectToPeer(contact.connectionId, peer),
+      connectToPeer(contact.connectionId, peer)
     );
 
     // filter connected contacts and disconnect from the ones not in the contacts list.
     const contactsToDisconnect = connectedContacts
       .filter(
         (contact) =>
-          !managedState.contacts.find((c) => c.connectionId === contact),
+          !managedState.contacts.find((c) => c.connectionId === contact)
       )
       .map((contact) => contact.connectionId);
     const disconnectedContacts = Object.keys(connections).filter(
       (contact) =>
         connections[contact]?.peerConnection?.iceConnectionState ===
-        "disconnected",
+        "disconnected"
     );
     [...contactsToDisconnect, ...disconnectedContacts].forEach((contact) =>
-      disconnectFromPeer(contact),
+      disconnectFromPeer(contact)
     );
   };
 
@@ -462,6 +456,8 @@ export default function PeerProvider({
     if (!peer && !!storedPeerId && !!agreedToTerms) {
       const newPeer = new Peer(storedPeerId, {
         host: compiledProfile?.peerjsServer || "0.peerjs.com",
+        port: 9000,
+        secure: false,
       });
       console.log("peer created");
 
@@ -482,7 +478,7 @@ export default function PeerProvider({
 
   useEffect(() => {
     const newActiveConnections = Object.keys(connections).filter(
-      (c) => connections[c]?.peerConnection?.iceConnectionState === "connected",
+      (c) => connections[c]?.peerConnection?.iceConnectionState === "connected"
     );
     if (
       newActiveConnections.length !== activeConnections.length ||
@@ -521,11 +517,11 @@ export default function PeerProvider({
             return newConnections;
           });
           setActiveConnections(
-            Object.keys(connections).filter((c) => c !== connection?.peer),
+            Object.keys(connections).filter((c) => c !== connection?.peer)
           );
 
           const remoteStreamId = calls.find(
-            (call) => call.peer !== connection?.peer,
+            (call) => call.peer !== connection?.peer
           )?._remoteStream?.id;
 
           // const newStreams = streams.filter((stream) => stream.id !== remoteStreamId);
@@ -540,7 +536,7 @@ export default function PeerProvider({
           connection,
           sendMessageWithCallback,
           managedState,
-          Object.keys(connections).filter((c) => c !== connection?.peer),
+          Object.keys(connections).filter((c) => c !== connection?.peer)
         );
         setConnections({
           ...connections,
@@ -630,7 +626,7 @@ export default function PeerProvider({
           ...message,
           callback: id,
         },
-        connection,
+        connection
       );
     });
   };
