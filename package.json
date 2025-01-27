@@ -93,7 +93,7 @@
     "workbox-webpack-plugin": "^7.0.0"
   },
   "dependencies": {
-    "@capacitor/android": "^6.0.0",
+    "@capacitor/android": "^7.0.1",
     "@capacitor/core": "^6.0.0",
     "@capacitor/ios": "^6.0.0",
     "@capacitor/push-notifications": "^6.0.0",
