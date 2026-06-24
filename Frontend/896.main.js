@@ -18328,29 +18328,7 @@ function AppHeader(_ref4) {
     setSubMenuOpen = _React$useState8[1];
   var AppBarRender = function AppBarRender() {
     var _avatarProps$src, _avatarProps$alt;
-    return /*#__PURE__*/index_js_default().createElement(AppBar/* default */.A, null, /*#__PURE__*/index_js_default().createElement(Toolbar/* default */.A, {
-      style: {
-        backgroundColor: "#41a4f5",
-        color: "white",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "0 20px",
-        minHeight: "20px"
-      }
-    }, /*#__PURE__*/index_js_default().createElement(Typography/* default */.A, {
-      component: "div",
-      sx: {
-        flexGrow: 1,
-        fontSize: '12px',
-        textAlign: 'center'
-      }
-    }, "For testing and demo purposes. See ", /*#__PURE__*/index_js_default().createElement("a", {
-      style: {
-        color: 'white'
-      },
-      href: "https://p2p.positive-intentions.com/iframe.html?globals=&id=demo-p2p-messaging--p-2-p-messaging&viewMode=story"
-    }, "latest version."))), /*#__PURE__*/index_js_default().createElement(Toolbar/* default */.A, null, backButton && /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
+    return /*#__PURE__*/index_js_default().createElement(AppBar/* default */.A, null, /*#__PURE__*/index_js_default().createElement(Toolbar/* default */.A, null, backButton && /*#__PURE__*/index_js_default().createElement(IconButton/* default */.A, {
       size: "large",
       edge: "start",
       color: "inherit",
