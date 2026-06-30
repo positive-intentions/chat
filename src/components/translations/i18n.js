@@ -11,6 +11,7 @@ i18n
     fallbackLng: "en", // use en if detected lng is not available
     saveMissing: true, // send not translated keys to endpoint
     resources: {
+      // english starts here
       en: {
         translation: {
           common: {
@@ -185,6 +186,7 @@ i18n
           },
         },
       },
+      // english ends here
       // gujrati fill in the language
       gu: {
         translation: {
@@ -921,7 +923,7 @@ i18n
           },
         },
       },
-      // japanese
+      // japanese starts here
       ja: {
         translation: {
           common: {
@@ -1043,6 +1045,7 @@ i18n
           },
         },
       },
+      // japanese ends here
       // french
       fr: {
         translation: {
