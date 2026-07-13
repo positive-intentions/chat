@@ -1,53 +1,39 @@
-import React, { useCallback, useEffect, useState, Suspense, lazy } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 
 import { useSelector } from "react-redux";
 
-import {
-  createHashRouter,
-  createBrowserRouter,
-  RouterProvider,
-  Navigate,
-} from "react-router-dom";
+import { createHashRouter, Navigate, RouterProvider } from "react-router-dom";
 // import App from "../pages/app/App";
 // import Chat from "../pages/chat/Chat";
 // import Conversations from "../pages/conversations/Conversations";
 // import ConversationDetails from "../pages/conversationDetails/ConversationDetails";
 // import Profile from "../pages/addContact/AddContact";
-import Login from "../pages/login/Login";
-import Pods from "../pages/pods/Pods";
-import Pod from "../pages/pod/Pod";
-import PodDetails from "../pages/podDetails/PodDetails";
-import Contacts from "../pages/contacts/Contacts";
-import ContactDetails from "../pages/contactDetails/ContactDetails";
-import Profile from "../pages/profile/Profile";
-import Files from "../pages/files/Files";
-import File from "../pages/file/File";
-import Feed from "../pages/feed/Feed";
-import Maintainance from "../pages/maintainance/Maintainance";
-import Hands from "../pages/hands/Hands";
-import ShareQR from "../pages/shareQr/ShareQR";
 import Encryption from "../pages/encryption/Encryption";
+import Feed from "../pages/feed/Feed";
+import File from "../pages/file/File";
+import Files from "../pages/files/Files";
+import Hands from "../pages/hands/Hands";
+import Login from "../pages/login/Login";
+import ShareQR from "../pages/shareQr/ShareQR";
 // import Verse from '../pages/verse/Verse'
-import Blockchain, { useBlockchain } from "../blockchain/Blockchain";
-import {
-  compiler as profileCompiler,
-  blockBuilders,
-} from "../blockchain/chains/profileChain";
 import TermsAndConditions from "../../components/atomic/atom/termsAndConditions";
-import TermsAndConditionsComponent from "../pages/termsAndConditions/TermsAndConditions";
-import PrivacyPolicyComponent from "../pages/privacyPolicy/PrivacyPolicy";
-import Map from "../pages/map/Map";
+import { useBlockchain } from "../blockchain/Blockchain";
+import { compiler as profileCompiler } from "../blockchain/chains/profileChain";
 import AI from "../pages/ai/AI";
-import WebRTC from "../pages/webrtc/WebRTC";
-import Layout from "../pages/layout/Layout";
-import Meshtastic from "../pages/meshtastic/Meshtastic";
 import Computer from "../pages/computer/Computer";
+import Layout from "../pages/layout/Layout";
+import Map from "../pages/map/Map";
+import Mastodon from "../pages/mastodon/Mastodon";
+import Meshtastic from "../pages/meshtastic/Meshtastic";
+import PrivacyPolicyComponent from "../pages/privacyPolicy/PrivacyPolicy";
+import TermsAndConditionsComponent from "../pages/termsAndConditions/TermsAndConditions";
+import WebRTC from "../pages/webrtc/WebRTC";
 
 const Verse = lazy(() => import("../pages/verse/Verse"));
 
 export default () => {
   const userProfileBlockchain = useSelector(
-    (state) => state.userProfile.blockchain,
+    (state) => state.userProfile.blockchain
   );
   const { compiledBlockchain: userProfile } = useBlockchain({
     compiler: profileCompiler,
@@ -60,7 +46,7 @@ export default () => {
   // const agreedToTerms = useSelector((state) => state.userProfile.agreedToTerms);
   const [router, setRouter] = useState(null);
   const agreedToLatestTerms = (agreedToTerms ?? []).includes(
-    TermsAndConditions[TermsAndConditions.length - 1]?.version,
+    TermsAndConditions[TermsAndConditions.length - 1]?.version
   );
 
   // useEffect(() => {
@@ -150,7 +136,11 @@ export default () => {
             path: "/desk",
             element: <Computer />,
           },
-        ]),
+          {
+            path: "/mastodon",
+            element: <Mastodon />,
+          },
+        ])
       );
     } else {
       setRouter(
@@ -280,7 +270,11 @@ export default () => {
             path: "/desk",
             element: <Computer />,
           },
-        ]),
+          {
+            path: "/mastodon",
+            element: <Mastodon />,
+          },
+        ])
       );
     }
   }, [storedUsername]);
